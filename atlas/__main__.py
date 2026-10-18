@@ -165,7 +165,7 @@ def _publish(folder: Path, kind: str, base_url: str, dry_run: bool):
         cap = (folder / "caption-carousel.txt").read_text().strip()
         return p.carousel([url("1-cover.jpg"), url("2-notes.jpg")], cap)
     cap = (folder / "caption-reel.txt").read_text().strip()
-    return p.reel(url("reel.mp4"), cap, cover_url=url("reel-cover.jpg"))
+    return p.reel_file(folder / "reel.mp4", cap, cover_url=url("reel-cover.jpg"))
 
 
 def cmd_publish(a):

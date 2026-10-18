@@ -94,6 +94,27 @@ class Publisher:
         c = self._call("POST", f"{self.user_id}/media", **params)["id"]
         return self._publish(c)
 
+    def reel_file(self, path, caption, cover_url=None):
+        """Upload a local video straight to Meta (resumable upload), no public URL needed."""
+        params = dict(media_type="REELS", upload_type="resumable", caption=caption, share_to_feed="true")
+        if cover_url:
+            params["cover_url"] = cover_url
+        c = self._call("POST", f"{self.user_id}/media", **params)
+        container = c["id"]
+        uri = c.get("uri") or f"https://rupload.facebook.com/ig-api-upload/{self.version}/{container}"
+        data = open(path, "rb").read()
+        if self.dry_run:
+            print(f"[dry-run] POST {uri} ({len(data):,} bytes)")
+        else:
+            req = urllib.request.Request(uri, data=data, method="POST", headers={
+                "Authorization": f"OAuth {self.token}", "offset": "0", "file_size": str(len(data))})
+            try:
+                with urllib.request.urlopen(req, timeout=300) as r:
+                    json.loads(r.read())
+            except urllib.error.HTTPError as e:
+                raise GraphError(f"upload {e.code} {e.read().decode(errors='replace')}") from None
+        return self._publish(container)
+
     def username(self):
         return self._call("GET", self.user_id, fields="username").get("username", "")
 
