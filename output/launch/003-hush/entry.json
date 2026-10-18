@@ -1,0 +1,35 @@
+{
+  "id": "003",
+  "name": "Hush",
+  "subtitle": "where sound arrives late",
+  "story": "Sound is slow on Hush. A shout across the valley arrives four or five days later, quieter, usually after everyone has moved on. Arguments are carried out by letter, which tends to calm them down. In midwinter you can stand at the bottom of the valley and hear last summer, very faintly: dogs, a wedding, someone practising the trumpet badly.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "2",
+    "Gravity": "1.1 g",
+    "Population": "9,300"
+  },
+  "hook": "On Hush, a shout takes five days to cross the valley.",
+  "reel_lines": [
+    "Arguments are carried out by letter.",
+    "In midwinter you can still hear last summer."
+  ],
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#winter"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "hills",
+    "horizon": 0.6,
+    "snow": true,
+    "trees": "pines",
+    "house": true,
+    "particles": "snow",
+    "moons": 2,
+    "suns": 0,
+    "layers": 5,
+    "mist": 0.45
+  }
+}

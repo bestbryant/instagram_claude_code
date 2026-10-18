@@ -1,0 +1,39 @@
+{
+  "id": "002",
+  "name": "Orrin",
+  "subtitle": "the eleven-year tide",
+  "story": "The giant that Orrin orbits pulls its ocean away for eleven years at a time. Whole towns are built on the seabed in between, and they're taken down, plank by plank, the season before the water comes back. People count their age in swims. My guide was thirty-four and had been twice. She said the second time was better, because she knew to bring a towel.",
+  "facts": {
+    "Day": "19 hours",
+    "Moons": "none",
+    "Gravity": "0.7 g",
+    "Population": "2.1 million"
+  },
+  "hook": "The tide on Orrin comes in once every eleven years.",
+  "reel_lines": [
+    "Whole towns are built on the seabed in between.",
+    "People count their age in swims."
+  ],
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#scifiart"
+  ],
+  "spec": {
+    "palette": "mint_dawn",
+    "terrain": "dunes",
+    "horizon": 0.62,
+    "giant": true,
+    "ring": true,
+    "giant_size": 0.3,
+    "giant_x": 0.32,
+    "giant_y": 0.26,
+    "suns": 1,
+    "sun_x": 0.8,
+    "sun_y": 0.5,
+    "sun_size": 0.03,
+    "figure": true,
+    "layers": 5,
+    "mist": 0.5
+  }
+}

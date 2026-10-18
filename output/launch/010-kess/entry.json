@@ -1,0 +1,35 @@
+{
+  "id": "010",
+  "name": "Kess",
+  "subtitle": "the aurora that stays on",
+  "story": "The aurora on Kess has been on for as long as anyone has kept records, so the people who live there stopped looking up a long time ago. Visitors lie down in the middle of the road to watch it. Locals step around them on the way to work. Every so often a local looks up by accident and has to sit down on the kerb for a minute.",
+  "facts": {
+    "Day": "21 hours",
+    "Moons": "2",
+    "Gravity": "1.0 g",
+    "Population": "250,000"
+  },
+  "hook": "The aurora on Kess never switches off.",
+  "reel_lines": [
+    "The locals stopped looking up centuries ago.",
+    "Visitors lie down in the road to watch it."
+  ],
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#aurora"
+  ],
+  "spec": {
+    "palette": "polar_night",
+    "terrain": "peaks",
+    "horizon": 0.6,
+    "aurora": true,
+    "snow": true,
+    "trees": "pines",
+    "house": true,
+    "moons": 2,
+    "suns": 0,
+    "layers": 5,
+    "mist": 0.4
+  }
+}

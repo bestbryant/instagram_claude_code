@@ -1,0 +1,36 @@
+{
+  "id": "011",
+  "name": "Bramble",
+  "subtitle": "the tall forest",
+  "story": "Trees on Bramble don't stop growing. The oldest are taller than the hills they stand on, and the tallest has a small cloud living in its upper branches that rains only on that tree. There's a village up there somewhere. Nobody in it has come down in four hundred years. They drop pinecones with notes tied to them, and the people on the ground answer by kite.",
+  "facts": {
+    "Day": "30 hours",
+    "Moons": "1",
+    "Gravity": "0.85 g",
+    "Population": "unknown"
+  },
+  "hook": "The trees on Bramble are taller than the hills.",
+  "reel_lines": [
+    "The tallest one has its own cloud.",
+    "There's a village at the top that never comes down."
+  ],
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#forest"
+  ],
+  "spec": {
+    "palette": "toxic",
+    "terrain": "hills",
+    "horizon": 0.66,
+    "trees": "giant",
+    "suns": 1,
+    "sun_x": 0.55,
+    "sun_y": 0.45,
+    "sun_size": 0.045,
+    "moons": 1,
+    "figure": true,
+    "layers": 5,
+    "mist": 0.7
+  }
+}

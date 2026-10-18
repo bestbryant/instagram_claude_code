@@ -1,0 +1,34 @@
+{
+  "id": "H03",
+  "name": "Mothwing",
+  "subtitle": "the light-eating moths",
+  "story": "The moths on Mothwing have wingspans like kites, and they live on light. Each night they lift the moonlight off the fields and carry it back up. Leave a candle in the window and they'll take that too, but they leave a little glowing dust on the sill, which lasts until morning.",
+  "facts": {
+    "Day": "36 hours",
+    "Moons": "2",
+    "Gravity": "0.7 g",
+    "Population": "19,000"
+  },
+  "hook": "The moths on Mothwing eat moonlight.",
+  "reel_lines": [
+    "Each night they carry it back up off the fields.",
+    "They leave glowing dust on the windowsill."
+  ],
+  "tags": [
+    "#halloween",
+    "#worldbuilding",
+    "#illustration"
+  ],
+  "spec": {
+    "palette": "lilac_dusk",
+    "terrain": "spires",
+    "horizon": 0.64,
+    "particles": "embers",
+    "moons": 2,
+    "suns": 0,
+    "figure": true,
+    "layers": 5,
+    "mist": 0.55,
+    "moths": 5
+  }
+}

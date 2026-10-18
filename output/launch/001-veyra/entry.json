@@ -1,0 +1,37 @@
+{
+  "id": "001",
+  "name": "Veyra",
+  "subtitle": "two suns, short nights",
+  "story": "Veyra has two suns, and one of them is nearly always up. The longest night of the year lasts nine minutes, so people sleep in chairs, in short shifts, with the blinds down. There's a lighthouse on the north cliff that is about four hundred years older than the first settlement. It still comes on every evening. Nobody has worked out what powers it, and the town council has asked people to stop trying.",
+  "facts": {
+    "Day": "31 hours",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "about 40,000"
+  },
+  "hook": "The longest night on Veyra lasts nine minutes.",
+  "reel_lines": [
+    "Two suns, and one of them is nearly always up.",
+    "People sleep in chairs, in short shifts."
+  ],
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#lighthouse"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "hills",
+    "horizon": 0.6,
+    "water": true,
+    "shore": "left",
+    "lighthouse": true,
+    "suns": 2,
+    "sun_x": 0.62,
+    "sun_y": 0.47,
+    "sun_size": 0.055,
+    "layers": 4,
+    "mist": 0.5,
+    "relief": 1.1
+  }
+}

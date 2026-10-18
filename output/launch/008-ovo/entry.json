@@ -1,0 +1,37 @@
+{
+  "id": "008",
+  "name": "Ovo",
+  "subtitle": "the small planet",
+  "story": "You can walk all the way around Ovo between breakfast and lunch. There is one bakery, one bench, one tree and one cat, and the cat is called Everything. When someone new arrives, all forty-one residents come out to say hello, which takes about four minutes. I was the forty-second for a weekend. Everything ignored me the entire time.",
+  "facts": {
+    "Day": "6 hours",
+    "Moons": "1",
+    "Gravity": "0.2 g",
+    "Population": "41"
+  },
+  "hook": "Ovo has one bakery, one tree and one cat.",
+  "reel_lines": [
+    "You can walk around it before lunch.",
+    "The cat is called Everything."
+  ],
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#cozy"
+  ],
+  "spec": {
+    "palette": "rose_fog",
+    "terrain": "hills",
+    "horizon": 0.68,
+    "trees": "lone",
+    "house": true,
+    "figure": true,
+    "suns": 1,
+    "sun_x": 0.3,
+    "sun_y": 0.42,
+    "sun_size": 0.05,
+    "moons": 1,
+    "layers": 4,
+    "mist": 0.6
+  }
+}

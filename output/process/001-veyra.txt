@@ -1,0 +1,5 @@
+How Veyra was made: sky first, then each ridge from the farthest to the nearest, then the inks. Every print in the atlas is drawn this way, in code, one layer at a time.
+
+Leave a name in the comments and I'll find its planet.
+
+#illustration #processvideo #worldbuilding

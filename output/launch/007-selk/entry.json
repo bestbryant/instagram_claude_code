@@ -1,0 +1,36 @@
+{
+  "id": "007",
+  "name": "Selk",
+  "subtitle": "the glass sea",
+  "story": "Selk used to be an ocean. When the water went, the waves stayed where they were, frozen mid-break in green glass, some of them two hundred metres high. Surfers still make the trip. They carry their boards out across the sand, stand under the curl for an hour or so, and go home. One of them told me it was the best wave he'd ever had.",
+  "facts": {
+    "Day": "33 hours",
+    "Moons": "2",
+    "Gravity": "0.95 g",
+    "Population": "about 5,000"
+  },
+  "hook": "Selk's ocean dried up and left the waves behind.",
+  "reel_lines": [
+    "Frozen mid-break, in green glass.",
+    "Surfers still come. They stand underneath."
+  ],
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#surf"
+  ],
+  "spec": {
+    "palette": "rust_desert",
+    "terrain": "dunes",
+    "horizon": 0.64,
+    "glass_waves": true,
+    "suns": 1,
+    "sun_x": 0.7,
+    "sun_y": 0.32,
+    "sun_size": 0.06,
+    "moons": 2,
+    "figure": true,
+    "layers": 5,
+    "mist": 0.35
+  }
+}

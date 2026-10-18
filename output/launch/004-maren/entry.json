@@ -1,0 +1,36 @@
+{
+  "id": "004",
+  "name": "Maren",
+  "subtitle": "the floating ranges",
+  "story": "At some point the mountains on Maren lifted off the ground and didn't come back down. Low gravity and a long time, people say. They farm the tops now. Rope ladders go up from the valley floor, and the post is delivered by a woman with a very long pole. The oldest island has a single pine on it. Children climb it once, on their tenth birthday, and are never quite as keen on heights again.",
+  "facts": {
+    "Day": "22 hours",
+    "Moons": "1",
+    "Gravity": "0.3 g",
+    "Population": "610,000"
+  },
+  "hook": "The mountains on Maren drifted off the ground.",
+  "reel_lines": [
+    "They farm the tops now.",
+    "The post goes up on a very long pole."
+  ],
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#fantasyart"
+  ],
+  "spec": {
+    "palette": "pastel",
+    "terrain": "hills",
+    "horizon": 0.7,
+    "islands": 3,
+    "moons": 1,
+    "suns": 1,
+    "sun_x": 0.25,
+    "sun_y": 0.3,
+    "sun_size": 0.04,
+    "figure": true,
+    "layers": 4,
+    "mist": 0.6
+  }
+}
