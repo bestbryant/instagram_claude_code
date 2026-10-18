@@ -35,6 +35,8 @@ class Publisher:
         self.dry_run = dry_run
         if not dry_run and not (self.user_id and self.token):
             raise GraphError("Set IG_USER_ID and IG_ACCESS_TOKEN (see docs/PUBLISHING.md).")
+        if dry_run and not self.user_id:
+            self.user_id = "<IG_USER_ID>"
         self._fake = 0
 
     def _call(self, method, path, **params):

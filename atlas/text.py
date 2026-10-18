@@ -96,7 +96,7 @@ def notes(detail: Image.Image, entry: dict, seed: int = 0) -> Image.Image:
     facts = list(entry.get("facts", {}).items())
     bottom = H - m - (92 if facts else 46)
     top = y + 40
-    size = 36
+    size = 42
     while True:
         f = font("serif", size)
         lines = wrap(d, entry["story"], f, W - 2 * m)

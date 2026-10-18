@@ -72,6 +72,8 @@ Everything for this is pre-rendered in `output/launch/`. The order is in `conten
 
 From day 3 on, **answer name requests every day** (section 5). Requests are the content that compounds.
 
+**Process Reels** (ready in `output/process/`): short videos of a print being built layer by layer, then inked. Post one a week, starting around day 8. They're the clearest answer to "is this AI?", and process videos tend to travel well. Make more with `python -m atlas process <id or name>`.
+
 **Halloween** (ready in `output/halloween/`): **H01 Hollow** (shy ghosts), **H02 Lantern** (the pumpkin coast) and **H03 Mothwing** (light-eating moths). Post them as Reels on Oct 27, 29 and 31, alongside the regular schedule.
 
 **Posting time:** start at 6–9 pm in your own timezone. After two weeks, check Insights → *Most active times* and adjust.
