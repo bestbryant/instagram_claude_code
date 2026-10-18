@@ -1,21 +1,31 @@
-"""Captions and alt text. Plain on purpose: the story, one line of context, three tags."""
+"""Captions and alt text. Searchable first line, the story, one closing line, three tags."""
 from __future__ import annotations
 
 from .render import Spec
-from .text import CTA
+from .text import INVITES, pick
 
 
-def _footer(entry, by):
-    found = f"Found for {by}. " if by else ""
-    return f"{found}No. {entry['id']} in the atlas. {CTA}"
+def _closing(entry, by):
+    lines = []
+    if by:
+        lines.append(f"Found for {by}. Repost it so they see their planet.")
+    q = entry.get("question")
+    lines.append((q + " " if q else "") + pick(INVITES, entry["id"] + entry["name"]))
+    return "\n".join(lines)
 
 
 def carousel(entry: dict, by: str | None = None) -> str:
-    return "\n\n".join([entry["name"], entry["story"], _footer(entry, by), " ".join(entry["tags"][:3])])
+    parts = [f"Imaginary planet No. {entry['id']}: {entry['name']}", entry["story"]]
+    if entry.get("rule"):
+        parts.append(f"Local rule: {entry['rule']}")
+    parts += [_closing(entry, by), " ".join(entry["tags"][:3])]
+    return "\n\n".join(parts)
 
 
 def reel(entry: dict, by: str | None = None) -> str:
-    return "\n\n".join([entry["story"], _footer(entry, by), " ".join(entry["tags"][:3])])
+    head = f"{entry['hook']} (Imaginary planet No. {entry['id']}: {entry['name']})"
+    parts = [head, entry.get("extra") or entry["story"], _closing(entry, by), " ".join(entry["tags"][:3])]
+    return "\n\n".join(parts)
 
 
 def alt_text(entry: dict, spec: Spec) -> str:
@@ -57,11 +67,30 @@ def alt_text(entry: dict, spec: Spec) -> str:
         scene.append("a lighthouse on a cliff")
     if spec.house:
         scene.append("a small house with a lit window")
-    if spec.figure:
-        scene.append("a tiny lone figure")
+    gag = GAG_ALT.get(spec.gag)
+    if gag:
+        scene.append(gag)
+    if spec.cartographer:
+        scene.append("a small figure in a yellow coat holding a map")
     sky = _join(bits) if bits else "a starry sky"
     return (f"Screen-print style illustration of the imaginary planet {entry['name']}: {sky} above "
-            f"{_join(scene)}. Printed on cream paper with the title '{entry['name']}, {entry['subtitle']}' underneath.")
+            f"{_join(scene)}. Printed on cream paper with the title '{entry['name']}' underneath.")
+
+
+GAG_ALT = {
+    "chair_sleepers": "people asleep in armchairs under blankets on the cliff",
+    "seabed_town": "small wooden houses on the dry seabed, two of them half taken apart, and people carrying planks",
+    "slow_shout": "a person shouting with cupped hands, the sound drawn as slow arcs crossing the valley, and someone far away reading a letter",
+    "pole_post": "a postwoman reaching a letter up to a floating island on a very long pole",
+    "kettles": "kettles steaming on warm rocks",
+    "moon_letters": "children holding letters up to the moon, with more letters stuck to its surface",
+    "glass_surfers": "surfers with boards standing under the frozen curl of a wave",
+    "tiny_planet": "a tiny round planet with one bakery, one tree, one bench, one cat and a person in a yellow coat",
+    "umbrella_feet": "people wearing red umbrellas on their feet",
+    "road_tourists": "tourists lying on their backs in the road while locals walk around them",
+    "tree_cloud": "one enormous tree with its own small rain cloud and a few lit houses in its branches",
+    "fainted_ghost": "a small ghost that has fainted on the grass and a person looking down at it",
+}
 
 
 def _join(items):

@@ -1,0 +1,462 @@
+"""Characters and visual gags.
+
+Each planet's funniest detail is drawn into the nearest layer at a readable
+size, so the picture carries the joke, not just the caption. Figures are posed
+from a small skeleton (stand, walk, sit, lie, reach, cup) and every print hides
+the cartographer: a figure in a yellow coat with a map.
+"""
+from __future__ import annotations
+
+import math
+from types import SimpleNamespace
+
+import numpy as np
+
+from .render import COAT as YELLOW
+from .render import glow, hexc, mix, round_tree, stamp
+
+LIGHT = hexc("#f1e9d8")
+
+# joint positions in units of figure height: u to the right (facing), v up from the feet
+POSES = {
+    "stand": dict(head=(0, .915), neck=(0, .83), hip=(0, .5), le=(-.13, .66), lh=(-.15, .5), re=(.13, .66), rh=(.15, .5),
+                  lk=(-.05, .25), lf=(-.07, 0), rk=(.05, .25), rf=(.07, 0)),
+    "walk": dict(head=(.02, .915), neck=(.01, .83), hip=(0, .5), le=(-.1, .66), lh=(-.2, .55), re=(.12, .66), rh=(.2, .52),
+                 lk=(-.1, .26), lf=(-.17, 0), rk=(.1, .26), rf=(.16, 0)),
+    "reach": dict(head=(0, .915), neck=(0, .83), hip=(0, .5), le=(-.13, .66), lh=(-.15, .5), re=(.1, .98), rh=(.12, 1.14),
+                  lk=(-.05, .25), lf=(-.07, 0), rk=(.05, .25), rf=(.07, 0)),
+    "cup": dict(head=(0, .915), neck=(0, .83), hip=(0, .5), le=(.14, .7), lh=(.1, .9), re=(.16, .72), rh=(.12, .9),
+                lk=(-.05, .25), lf=(-.07, 0), rk=(.05, .25), rf=(.07, 0)),
+    "sit": dict(head=(-.06, .76), neck=(-.04, .67), hip=(0, .34), le=(.04, .5), lh=(.16, .38), re=(.06, .5), rh=(.18, .4),
+                lk=(.26, .36), lf=(.26, 0), rk=(.28, .34), rf=(.3, 0)),
+    "doze": dict(head=(.04, .66), neck=(-.03, .64), hip=(0, .34), le=(.05, .48), lh=(.18, .38), re=(.07, .47), rh=(.2, .39),
+                 lk=(.26, .36), lf=(.26, 0), rk=(.28, .34), rf=(.3, 0)),
+}
+
+
+def _tf(x, y, h, facing, ang):
+    ca, sa = math.cos(ang), math.sin(ang)
+
+    def f(u, v):
+        uu, vv = u * ca - v * sa, u * sa + v * ca
+        return (x + facing * uu * h, y - vv * h)
+    return f
+
+
+def figure(x, y, h, pose="stand", facing=1, ang=0.0, coat=True):
+    """Return (body shapes, coat shape, anchor points) for a posed figure with feet at (x, y)."""
+    p = POSES[pose]
+    T = _tf(x, y, h, facing, ang)
+    leg, arm = h * 0.065, h * 0.05
+    body = []
+    for k, f in (("lk", "lf"), ("rk", "rf")):
+        pts = [T(*p["hip"]), T(*p[k]), T(*p[f])]
+        body.append(("line", (pts, leg)))
+        fx, fy = pts[-1]
+        body.append(("ellipse", (fx - leg * 0.7, fy - leg * 0.6, fx + leg * 0.9 * facing ** 2, fy + leg * 0.2)))
+    nu, nv = p["neck"]
+    hu, hv = p["hip"]
+    for side, e, hd in ((-1, "le", "lh"), (1, "re", "rh")):
+        pts = [T(nu + side * 0.08, nv - 0.03), T(*p[e]), T(*p[hd])]
+        body.append(("line", (pts, arm)))
+        for (jx, jy) in pts[1:]:
+            body.append(("ellipse", (jx - arm / 2, jy - arm / 2, jx + arm / 2, jy + arm / 2)))
+    hu2, hv2 = p["head"]
+    cx, cy = T(hu2, hv2)
+    r = h * 0.085
+    body.append(("ellipse", (cx - r, cy - r, cx + r, cy + r)))
+    hem = 0.2 if coat else 0.0
+    coat_shape = ("poly", [T(nu - 0.1, nv), T(nu + 0.1, nv), T(hu + 0.12, hv - hem), T(hu - 0.12, hv - hem)])
+    anchors = {k: T(*v) for k, v in p.items()}
+    return body, coat_shape, anchors
+
+
+def rotate(shapes, ax, ay, theta):
+    """Rotate shapes about (ax, ay); ellipses keep their size and move their centre."""
+    c, s = math.cos(theta), math.sin(theta)
+
+    def R(pt):
+        dx, dy = pt[0] - ax, pt[1] - ay
+        return (ax + dx * c - dy * s, ay + dx * s + dy * c)
+    out = []
+    for kind, g in shapes:
+        if kind == "poly":
+            out.append(("poly", [R(q) for q in g]))
+        elif kind == "line":
+            out.append(("line", ([R(q) for q in g[0]], g[1])))
+        else:
+            mx, my = R(((g[0] + g[2]) / 2, (g[1] + g[3]) / 2))
+            hw, hh = (g[2] - g[0]) / 2, (g[3] - g[1]) / 2
+            out.append(("ellipse", (mx - hw, my - hh, mx + hw, my + hh)))
+    return out
+
+
+# --------------------------------------------------------------------------
+# props (all anchored at the ground point (x, y), size s ~ figure height)
+
+def chair(x, y, s, facing=1):
+    f = facing
+    return [("poly", [(x - .05 * s * f, y - .36 * s), (x + .36 * s * f, y - .36 * s), (x + .36 * s * f, y - .3 * s), (x - .05 * s * f, y - .3 * s)]),
+            ("poly", [(x - .1 * s * f, y - .8 * s), (x - .02 * s * f, y - .8 * s), (x + .0 * s * f, y - .3 * s), (x - .08 * s * f, y - .3 * s)]),
+            ("line", ([(x - .02 * s * f, y - .3 * s), (x - .04 * s * f, y)], s * .035)),
+            ("line", ([(x + .32 * s * f, y - .3 * s), (x + .34 * s * f, y)], s * .035)),
+            ("poly", [(x - .1 * s * f, y - .55 * s), (x + .36 * s * f, y - .48 * s), (x + .36 * s * f, y - .42 * s), (x - .1 * s * f, y - .47 * s)])]
+
+
+def house(x, y, s, broken=False):
+    w = s * 0.55
+    if not broken:
+        return [("poly", [(x - w, y), (x - w, y - s * .6), (x, y - s), (x + w, y - s * .6), (x + w, y)])]
+    t = s * 0.05
+    return [("line", ([(x - w, y), (x - w, y - s * .6), (x, y - s), (x + w, y - s * .6), (x + w, y)], t)),
+            ("line", ([(x - w, y - s * .3), (x + w * .2, y - s * .3)], t)),
+            ("poly", [(x + w * .2, y), (x + w, y), (x + w, y - s * .6), (x + w * .6, y - s * .78), (x + w * .2, y - s * .5)])]
+
+
+def kettle(x, y, s):
+    return [("ellipse", (x - s * .3, y - s * .45, x + s * .3, y)),
+            ("poly", [(x + s * .22, y - s * .3), (x + s * .5, y - s * .5), (x + s * .52, y - s * .44), (x + s * .26, y - s * .18)]),
+            ("line", ([(x - s * .22, y - s * .38), (x - s * .1, y - s * .62), (x + s * .1, y - s * .62), (x + s * .22, y - s * .38)], s * .05)),
+            ("ellipse", (x - s * .05, y - s * .52, x + s * .05, y - s * .42))]
+
+
+def umbrella_down(x, y, s):
+    """An open umbrella with its canopy hanging below (x, y): for rain that falls up."""
+    arc = [(x + s * .5 * math.cos(a), y + s * .08 + s * .35 * math.sin(a)) for a in np.linspace(0, math.pi, 13)]
+    return [("poly", arc[::-1] + [(x + s * .5, y + s * .08)]), ("line", ([(x, y + s * .3), (x, y - s * .02)], s * .05))]
+
+
+def cat(x, y, s, facing=1):
+    f = facing
+    return [("ellipse", (x - s * .22, y - s * .3, x + s * .18, y)),
+            ("ellipse", (x + s * .06 * f, y - s * .5, x + s * .3 * f, y - s * .26) if f > 0 else (x - s * .3, y - s * .5, x - s * .06, y - s * .26)),
+            ("poly", [(x + s * .09 * f, y - s * .44), (x + s * .12 * f, y - s * .58), (x + s * .17 * f, y - s * .47)]),
+            ("poly", [(x + s * .2 * f, y - s * .47), (x + s * .26 * f, y - s * .58), (x + s * .28 * f, y - s * .44)]),
+            ("line", ([(x - s * .2 * f, y - s * .05), (x - s * .38 * f, y - s * .05), (x - s * .42 * f, y - s * .3)], s * .05))]
+
+
+def bench(x, y, s):
+    return [("poly", [(x - s * .5, y - s * .28), (x + s * .5, y - s * .28), (x + s * .5, y - s * .22), (x - s * .5, y - s * .22)]),
+            ("poly", [(x - s * .5, y - s * .5), (x + s * .5, y - s * .5), (x + s * .5, y - s * .44), (x - s * .5, y - s * .44)]),
+            ("line", ([(x - s * .42, y - s * .22), (x - s * .42, y)], s * .05)), ("line", ([(x + s * .42, y - s * .22), (x + s * .42, y)], s * .05))]
+
+
+def ghost(x, y, s):
+    pts = [(x - s * .3, y)]
+    for k in range(7):
+        pts.append((x - s * .3 + s * .6 * (k + .5) / 7, y - s * (.06 if k % 2 else 0)))
+    pts += [(x + s * .3, y), (x + s * .3, y - s * .55)] + [(x + s * .3 * math.cos(a), y - s * .55 - s * .3 * math.sin(a)) for a in np.linspace(0, math.pi, 9)] + [(x - s * .3, y - s * .55)]
+    return [("poly", pts)], [("ellipse", (x - s * .14, y - s * .7, x - s * .05, y - s * .58)), ("ellipse", (x + s * .05, y - s * .7, x + s * .14, y - s * .58))]
+
+
+def letter(x, y, s, ang=0.0):
+    w, h = s * .36, s * .24
+    shp = [("poly", [(x - w / 2, y - h / 2), (x + w / 2, y - h / 2), (x + w / 2, y + h / 2), (x - w / 2, y + h / 2)])]
+    return rotate(shp, x, y, ang)
+
+
+def arc_line(cx, cy, r, a0, a1, width, n=24):
+    return ("line", ([(cx + r * math.cos(a), cy + r * math.sin(a)) for a in np.linspace(a0, a1, n)], width))
+
+
+def cloud(x, y, w):
+    return [("ellipse", (x - w * .5, y - w * .12, x + w * .1, y + w * .08)), ("ellipse", (x - w * .25, y - w * .25, x + w * .2, y + w * .05)),
+            ("ellipse", (x - w * .05, y - w * .18, x + w * .5, y + w * .08))]
+
+
+# --------------------------------------------------------------------------
+# gags
+
+G = 0.075   # gag figure height as a fraction of the frame: readable on a phone
+
+
+def _ink(ctx, layer, shapes, color, value=1.0):
+    stamp(layer.P, layer.A, shapes, color, value)
+
+
+def _person(ctx, layer, x, y, h, pose="stand", facing=1, ang=0.0, coat_color=None, color=None):
+    body, coat, anchors = figure(x, y, h, pose, facing, ang)
+    col = ctx.dark if color is None else color
+    _ink(ctx, layer, body + [coat], col)
+    if coat_color is not None:
+        _ink(ctx, layer, [coat], coat_color)
+    return anchors
+
+
+def _ground(ctx, x):
+    if ctx.stage_y is not None:
+        return ctx.stage_y(x)
+    return ctx.ridge_at(ctx.near_ridge, x) + 2
+
+
+def _stage(ctx, y_frac, color=None):
+    """A flat foreground ledge across the frame for gags that need room."""
+    W, H = ctx.W, ctx.H
+    rng = ctx.rng("stage")
+    xs = np.linspace(-20, W * 3, 40)
+    ys = H * y_frac + H * 0.006 * np.sin(xs / W * 9 + rng.uniform(0, 6))
+    poly = list(zip(xs, ys)) + [(W * 3, H + 20), (-20, H + 20)]
+    _ink(ctx, ctx.near_layer, [("poly", poly)], ctx.ground if color is None else color)
+    ctx.stage_y = lambda x: float(np.interp(x, xs, ys)) + 2
+
+
+def cartographer(ctx, avoid_x=None):
+    """The narrator, in a yellow coat with a map, somewhere in every print."""
+    if ctx.globe is not None:
+        return
+    W, H = ctx.W, ctx.H
+    rng = ctx.rng("cartographer")
+    for _ in range(12):
+        x = W * rng.uniform(0.12, 0.88)
+        if avoid_x is None or abs(x - avoid_x) > W * 0.22:
+            break
+    layer = ctx.near_layer
+    y = _ground(ctx, x)
+    h = H * 0.06
+    a = _person(ctx, layer, x, y, h, "stand", rng.choice([-1, 1]), coat_color=YELLOW)
+    hx, hy = a["rh"]
+    _ink(ctx, layer, letter(hx, hy - h * .08, h * 1.1, 0.2), LIGHT)
+    ctx.marks["cartographer"] = (x / W, (y - h / 2) / H)
+
+
+def _gag_chair_sleepers(ctx):
+    """Veyra: nobody owns a bed, so people sleep in armchairs on the cliff."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    h = H * G
+    lx = ctx.geo.get("lighthouse")
+    left = ctx.spec.shore != "right"
+    base = lx if lx is not None else (W * 0.18 if left else W * 0.82)
+    step = W * 0.085 * (1 if left else -1)
+    xs = [base + step * (k + 0.9) for k in range(3)]
+    for i, x in enumerate(xs):
+        y = _ground(ctx, x)
+        f = -1 if left else 1
+        _ink(ctx, layer, chair(x, y, h, f), ctx.dark)
+        a = _person(ctx, layer, x + h * .04 * f, y - h * .02, h, "doze", f)
+        (kx, ky), (nx, ny) = a["lk"], a["neck"]
+        _ink(ctx, layer, [("poly", [(nx, ny + h * .06), (kx + h * .04 * f, ky - h * .02), (kx + h * .02 * f, ky + h * .2), (nx - h * .06 * f, ny + h * .3)])], LIGHT, 0.95)
+    ctx.focus = (xs[1] / W, (_ground(ctx, xs[1]) - h * .6) / H)
+
+
+def _gag_seabed_town(ctx):
+    """Orrin: a town on the dry seabed, taken apart plank by plank before the tide."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    far = ctx.far_layer
+    hy = ctx.ridge_at(ctx.far_ridge, W * 0.5) + H * 0.01
+    stamp(far.P, far.A, [("poly", [(0, hy - H * .004), (W * 3, hy - H * .004), (W * 3, hy + H * .004), (0, hy + H * .004)])], LIGHT, 0.85)
+    s = H * 0.1
+    xs = [W * 0.16, W * 0.4, W * 0.64, W * 0.86]
+    for i, x in enumerate(xs):
+        _ink(ctx, layer, house(x, _ground(ctx, x), s, broken=i in (1, 2)), ctx.dark)
+    for x in (W * 0.28, W * 0.52):
+        h = H * G
+        a = _person(ctx, layer, x, _ground(ctx, x), h, "walk", 1)
+        sx, sy = a["neck"]
+        _ink(ctx, layer, [("line", ([(sx - h * .6, sy + h * .03), (sx + h * .65, sy - h * .05)], h * .07))], LIGHT)
+    ctx.focus = (0.4, (_ground(ctx, W * .4) - s * .5) / H)
+
+
+def _gag_slow_shout(ctx):
+    """Hush: a shout crawls across the valley; the reply comes by letter."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    _stage(ctx, 0.86)
+    h = H * G
+    x = W * 0.2
+    y = _ground(ctx, x)
+    a = _person(ctx, layer, x, y, h, "cup", 1)
+    mx, my = a["rh"]
+    col = ctx.dark if ctx.spec.snow else LIGHT
+    for k in range(4):
+        r = W * (0.07 + 0.09 * k)
+        stamp(layer.P, layer.A, [arc_line(mx, my, r, -0.6, 0.45, H * 0.006)], col, 0.85 - 0.17 * k)
+    x2 = W * 0.8
+    a2 = _person(ctx, layer, x2, _ground(ctx, x2), h * 0.9, "cup", -1)
+    _ink(ctx, layer, letter(a2["rh"][0], a2["rh"][1], h * 1.3), LIGHT)
+    _ink(ctx, layer, [("poly", [(x2 - h * .78, a2["rh"][1] - h * .18), (x2 - h * .5, a2["rh"][1] - h * .18), (x2 - h * .5, a2["rh"][1] - h * .16), (x2 - h * .78, a2["rh"][1] - h * .16)])], ctx.dark)
+    ctx.focus = (0.3, (y - h * .7) / H)
+
+
+def _gag_pole_post(ctx):
+    """Maren: the post goes up to the floating farms on a very long pole."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    isl = ctx.geo.get("islands") or []
+    tx, ty = (isl[0][0], isl[0][1] + isl[0][2] * 0.6) if isl else (W * .4, H * .3)
+    x = min(max(tx + W * 0.14, W * .15), W * .85)
+    y = _ground(ctx, x)
+    h = H * G
+    a = _person(ctx, layer, x, y, h, "reach", -1 if tx < x else 1)
+    hx, hy = a["rh"]
+    _ink(ctx, layer, [("line", ([(hx, hy + h * .3), (tx, ty)], H * 0.005))], ctx.dark)
+    _ink(ctx, layer, letter(tx, ty + h * .1, h * 1.5, -0.3), LIGHT)
+    ctx.focus = ((x + tx) / 2 / W, (y + ty) / 2 / H)
+
+
+def _steam(ctx, layer, x, y, s):
+    for k in range(3):
+        pts = [(x + s * (0.12 * k - 0.1) + s * 0.08 * math.sin(t * 5 + k), y - s * t) for t in np.linspace(0, 1.1, 12)]
+        stamp(layer.P, layer.A, [("line", (pts, s * 0.05))], LIGHT, 0.65)
+
+
+def _gag_kettles(ctx):
+    """Cinderwake: the rock is warm enough to boil a kettle."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    _stage(ctx, 0.88)
+    s = H * 0.075
+    for x in (W * 0.32, W * 0.48, W * 0.64):
+        y = _ground(ctx, x)
+        _ink(ctx, layer, [("ellipse", (x - s * .5, y - s * .14, x + s * .5, y + s * .1))], ctx.dark)
+        _ink(ctx, layer, kettle(x, y - s * .1, s), ctx.dark)
+        _steam(ctx, layer, x + s * .48, y - s * .58, s * .9)
+    x = W * 0.8
+    _person(ctx, layer, x, _ground(ctx, x), H * G, "cup", -1)
+    ctx.focus = (0.48, (_ground(ctx, W * .48) - s * .7) / H)
+
+
+def _gag_moon_letters(ctx):
+    """Luma: children press letters against the moon as it drifts past."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    bm = ctx.geo.get("big_moon")
+    h = H * 0.065
+    xs = [W * 0.4, W * 0.5, W * 0.6]
+    for i, x in enumerate(xs):
+        a = _person(ctx, layer, x, _ground(ctx, x), h * (0.85 if i != 1 else 1.0), "reach", 1 if i < 1 else -1)
+        _ink(ctx, layer, letter(a["rh"][0], a["rh"][1] - h * .1, h * 1.3, 0.25 * (i - 1)), LIGHT)
+    if bm:
+        cx, cy, r = bm
+        rng = ctx.rng("moonletters")
+        for _ in range(8):
+            ang = rng.uniform(1.2 * math.pi, 1.8 * math.pi)       # upper half, above the hills
+            d = r * rng.uniform(0.35, 0.85)
+            lx, ly = cx + d * math.cos(ang), cy + d * math.sin(ang) * 0.85
+            ra = rng.uniform(-0.6, 0.6)
+            stamp(ctx.sky_P, ctx.sky_A, letter(lx, ly, h * 1.7, ra), ctx.dark, 0.9)
+            stamp(ctx.sky_P, ctx.sky_A, letter(lx, ly, h * 1.45, ra), LIGHT, 1.0)
+    ctx.focus = (0.5, (_ground(ctx, W * .5) - h * 1.2) / H)
+
+
+def _gag_glass_surfers(ctx):
+    """Selk: surfers stand very still under waves that froze mid-break."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    curls = ctx.geo.get("wave_curls") or [(W * .5, H * .7)]
+    h = H * G
+    picked = [c for c in curls if W * .12 < c[0] < W * .88][:2] or curls[:1]
+    for (cx, _) in picked:
+        for j, dx in enumerate((-0.05, 0.035)):
+            x = cx + W * dx
+            y = _ground(ctx, x)
+            _person(ctx, layer, x, y, h, "stand", 1 if j else -1)
+            bx = x + h * .24 * (1 if j else -1)
+            _ink(ctx, layer, [("ellipse", (bx - h * .08, y - h * 1.18, bx + h * .08, y))], LIGHT)
+    x0 = picked[0][0]
+    ctx.focus = (x0 / W, (_ground(ctx, x0) - h * 1.2) / H)
+
+
+def _gag_tiny_planet(ctx):
+    """Ovo: the ground is a small globe with one of everything on it."""
+    W, H = ctx.W, ctx.H
+    layer = ctx.globe
+    R = W * 0.78
+    cx, cy = W * 0.5, H * 0.6 + R
+    stamp(layer.P, layer.A, [("ellipse", (cx - R, cy - R, cx + R, cy + R))], ctx.land)
+    s = H * 0.065
+    items = [(-0.36, "bakery"), (-0.16, "tree"), (0.02, "person"), (0.15, "bench"), (0.27, "cat"), (0.4, "lamp")]
+    for th, kind in items:
+        ax, ay = cx + R * math.sin(th), cy - R * math.cos(th) + 2
+        if kind == "bakery":
+            shp = house(ax, ay, s * 1.3) + [("poly", [(ax - s * .8, ay - s * .78), (ax + s * .8, ay - s * .78), (ax + s * .7, ay - s * .62), (ax - s * .7, ay - s * .62)])]
+            stamp(layer.P, layer.A, rotate(shp, ax, ay, th), ctx.dark)
+            stamp(layer.P, layer.A, rotate([("poly", [(ax - s * .25, ay - s * .55), (ax + s * .25, ay - s * .55), (ax + s * .25, ay - s * .25), (ax - s * .25, ay - s * .25)])], ax, ay, th), ctx.light)
+        elif kind == "tree":
+            stamp(layer.P, layer.A, rotate(round_tree(ax, ay, s * 3.2, ctx.rng("ovo-tree")), ax, ay, th), ctx.dark)
+        elif kind == "person":
+            body, coat, _ = figure(ax, ay, s, "stand", 1)
+            stamp(layer.P, layer.A, rotate(body + [coat], ax, ay, th), ctx.dark)
+            stamp(layer.P, layer.A, rotate([coat], ax, ay, th), YELLOW)
+        elif kind == "bench":
+            stamp(layer.P, layer.A, rotate(bench(ax, ay, s * 1.1), ax, ay, th), ctx.dark)
+        elif kind == "cat":
+            stamp(layer.P, layer.A, rotate(cat(ax, ay, s * 1.3, -1), ax, ay, th), ctx.dark)
+        else:
+            stamp(layer.P, layer.A, rotate([("line", ([(ax, ay), (ax, ay - s * 1.6)], s * .06)), ("ellipse", (ax - s * .12, ay - s * 1.78, ax + s * .12, ay - s * 1.54))], ax, ay, th), ctx.dark)
+            lx, ly = ax + s * 1.66 * math.sin(th), ay - s * 1.66 * math.cos(th)
+            glow(layer.E, lx, ly, s * .18, ctx.pal.light, 0.8)
+    ctx.focus = (0.6, (cy - R * math.cos(0.2) - s) / H)
+
+
+def _gag_umbrella_feet(ctx):
+    """Thessaly: rain falls up, so umbrellas are worn on the feet."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    lo, hi = (0.62, 0.9) if ctx.spec.shore == "right" else (0.1, 0.38)
+    h = H * G
+    xs = np.linspace(W * lo, W * hi, 3)
+    for i, x in enumerate(xs):
+        y = _ground(ctx, x) - h * 0.22
+        a = _person(ctx, layer, x, y, h, "stand" if i != 1 else "walk", 1 if i % 2 else -1)
+        for foot in ("lf", "rf"):
+            fx, fy = a[foot]
+            _ink(ctx, layer, umbrella_down(fx, fy, h * .36), ctx.spot)
+    ctx.focus = (xs[1] / W, (_ground(ctx, xs[1]) - h * .55) / H)
+
+
+def _gag_road_tourists(ctx):
+    """Kess: tourists lie in the road to watch the aurora; locals step round them."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    _stage(ctx, 0.8)
+    road = mix(ctx.ground, ctx.dark, 0.3)
+    top = ctx.stage_y(W * 0.5) + H * 0.03
+    _ink(ctx, layer, [("poly", [(-20, top), (W * 3, top), (W * 3, top + H * .07), (-20, top + H * .07)])], road)
+    h = H * G
+    for x in (W * 0.3, W * 0.45, W * 0.6):
+        _person(ctx, layer, x, top + H * .04, h, "stand", 1, ang=math.pi / 2)
+    for x, f in ((W * 0.18, 1), (W * 0.78, -1)):
+        _person(ctx, layer, x, top + H * .055, h, "walk", f)
+    ctx.focus = (0.45, (top + H * .02) / H)
+
+
+def _gag_tree_cloud(ctx):
+    """Bramble: the tallest tree has its own small cloud and a village near the top."""
+    W, H = ctx.W, ctx.H
+    t = ctx.geo.get("tallest_tree")
+    if not t:
+        return
+    layer, x, top, h = t
+    if layer.E is None:
+        layer.E = np.zeros_like(layer.P)
+    cw = W * 0.22
+    cy = top - H * 0.03
+    stamp(layer.P, layer.A, cloud(x, cy, cw), ctx.light, 0.95)
+    for k in range(9):
+        rx = x - cw * .35 + cw * .7 * k / 8
+        stamp(layer.P, layer.A, [("line", ([(rx, cy + cw * .1), (rx - cw * .03, cy + cw * .1 + H * .06)], 2.0))], ctx.light, 0.75)
+    s = H * 0.04
+    for k, fy in enumerate((0.16, 0.26, 0.36)):
+        hx = x + (s * 1.3 if k % 2 else -s * 1.3)
+        hy = top + h * fy
+        stamp(layer.P, layer.A, house(hx, hy, s), ctx.dark)
+        glow(layer.E, hx, hy - s * .35, s * .22, ctx.pal.light, 1.0)
+    ctx.focus = (x / W, (top + h * .18) / H)
+
+
+def _gag_fainted_ghost(ctx):
+    """Hollow: say boo and the ghost faints."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    x = W * 0.44
+    y = _ground(ctx, x)
+    s = H * 0.11
+    body, eyes = ghost(x, y, s)
+    _ink(ctx, layer, rotate(body, x, y - s * .02, -math.pi / 2), ctx.light)
+    _ink(ctx, layer, rotate(eyes, x, y - s * .02, -math.pi / 2), ctx.dark)
+    _person(ctx, layer, x + W * 0.13, _ground(ctx, x + W * .13), H * G, "cup", -1)
+    ctx.focus = (x / W + 0.05, (y - s * .4) / H)
+
+
+GAGS = {
+    "chair_sleepers": _gag_chair_sleepers, "seabed_town": _gag_seabed_town, "slow_shout": _gag_slow_shout,
+    "pole_post": _gag_pole_post, "kettles": _gag_kettles, "moon_letters": _gag_moon_letters,
+    "glass_surfers": _gag_glass_surfers, "tiny_planet": _gag_tiny_planet, "umbrella_feet": _gag_umbrella_feet,
+    "road_tourists": _gag_road_tourists, "tree_cloud": _gag_tree_cloud, "fainted_ghost": _gag_fainted_ghost,
+}
+
+
+def make_ctx(**kw):
+    return SimpleNamespace(**kw)

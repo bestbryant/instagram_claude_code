@@ -1,26 +1,180 @@
 [
-  {"day": 1, "entry": "000", "kind": "carousel", "note": "pin this post"},
-  {"day": 1, "entry": "001", "kind": "carousel"},
-  {"day": 1, "entry": "002", "kind": "carousel"},
-  {"day": 2, "entry": "001", "kind": "reel"},
-  {"day": 3, "entry": "003", "kind": "reel"},
-  {"day": 4, "entry": "002", "kind": "reel"},
-  {"day": 4, "entry": "003", "kind": "carousel"},
-  {"day": 5, "entry": "004", "kind": "reel"},
-  {"day": 6, "entry": "005", "kind": "reel"},
-  {"day": 6, "entry": "004", "kind": "carousel"},
-  {"day": 7, "entry": "006", "kind": "reel"},
-  {"day": 8, "entry": "005", "kind": "carousel"},
-  {"day": 8, "entry": "007", "kind": "reel"},
-  {"day": 9, "entry": "006", "kind": "carousel"},
-  {"day": 10, "entry": "008", "kind": "reel"},
-  {"day": 10, "entry": "007", "kind": "carousel"},
-  {"day": 11, "entry": "009", "kind": "reel"},
-  {"day": 12, "entry": "008", "kind": "carousel"},
-  {"day": 12, "entry": "010", "kind": "reel"},
-  {"day": 13, "entry": "009", "kind": "carousel"},
-  {"day": 13, "entry": "011", "kind": "reel"},
-  {"day": 14, "entry": "010", "kind": "carousel"},
-  {"day": 14, "entry": "011", "kind": "carousel"},
-  {"day": 15, "entry": "000", "kind": "reel"}
+ {
+  "day": 1,
+  "entry": "000",
+  "kind": "carousel",
+  "note": "pin this post"
+ },
+ {
+  "day": 1,
+  "entry": "001",
+  "kind": "carousel"
+ },
+ {
+  "day": 1,
+  "entry": "002",
+  "kind": "carousel"
+ },
+ {
+  "day": 2,
+  "entry": "001",
+  "kind": "reel"
+ },
+ {
+  "day": 3,
+  "entry": "008",
+  "kind": "reel"
+ },
+ {
+  "day": 4,
+  "entry": "003",
+  "kind": "reel"
+ },
+ {
+  "day": 4,
+  "entry": "008",
+  "kind": "carousel"
+ },
+ {
+  "day": 5,
+  "entry": "010",
+  "kind": "reel"
+ },
+ {
+  "day": 5,
+  "entry": "003",
+  "kind": "carousel"
+ },
+ {
+  "day": 6,
+  "entry": "004",
+  "kind": "reel"
+ },
+ {
+  "day": 6,
+  "entry": "010",
+  "kind": "carousel"
+ },
+ {
+  "day": 7,
+  "entry": "003b",
+  "kind": "reel",
+  "note": "Hush part two lands on Thursday (US time)"
+ },
+ {
+  "day": 8,
+  "entry": "008",
+  "kind": "process",
+  "note": "pin as the 'how it's made' post"
+ },
+ {
+  "day": 9,
+  "entry": "009",
+  "kind": "reel"
+ },
+ {
+  "day": 9,
+  "entry": "004",
+  "kind": "carousel"
+ },
+ {
+  "day": 10,
+  "entry": "002",
+  "kind": "reel"
+ },
+ {
+  "day": 10,
+  "entry": "tap-to-stop",
+  "kind": "special"
+ },
+ {
+  "day": 11,
+  "entry": "H01",
+  "kind": "reel"
+ },
+ {
+  "day": 11,
+  "entry": "009",
+  "kind": "carousel"
+ },
+ {
+  "day": 12,
+  "entry": "006",
+  "kind": "reel"
+ },
+ {
+  "day": 13,
+  "entry": "H02",
+  "kind": "reel"
+ },
+ {
+  "day": 13,
+  "entry": "H01",
+  "kind": "carousel"
+ },
+ {
+  "day": 14,
+  "entry": "011",
+  "kind": "reel"
+ },
+ {
+  "day": 14,
+  "entry": "006",
+  "kind": "carousel"
+ },
+ {
+  "day": 15,
+  "entry": "H03",
+  "kind": "reel"
+ },
+ {
+  "day": 15,
+  "entry": "H02",
+  "kind": "carousel"
+ },
+ {
+  "day": 16,
+  "entry": "007",
+  "kind": "reel"
+ },
+ {
+  "day": 17,
+  "entry": "001",
+  "kind": "process"
+ },
+ {
+  "day": 17,
+  "entry": "011",
+  "kind": "carousel"
+ },
+ {
+  "day": 18,
+  "entry": "005",
+  "kind": "reel"
+ },
+ {
+  "day": 18,
+  "entry": "H03",
+  "kind": "carousel"
+ },
+ {
+  "day": 19,
+  "entry": "000",
+  "kind": "reel"
+ },
+ {
+  "day": 20,
+  "entry": "007",
+  "kind": "carousel"
+ },
+ {
+  "day": 21,
+  "entry": "010",
+  "kind": "process"
+ },
+ {
+  "day": 21,
+  "entry": "005",
+  "kind": "carousel"
+ }
 ]

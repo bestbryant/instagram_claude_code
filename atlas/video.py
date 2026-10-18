@@ -16,7 +16,7 @@ import numpy as np
 from PIL import Image
 
 from . import audio, text
-from .render import Spec, bloom_threshold, build, frame, ink_palette, print_finish, to_image
+from .render import Spec, bloom_threshold, build, frame, ink_palette, print_finish, spec_inks, to_image
 
 W, H = 1080, 1920
 
@@ -29,7 +29,7 @@ class Shot:
     still: np.ndarray | None = None          # use a ready image instead of a scene
     pan: float = 160.0                       # px the nearest layer travels during the shot
     zoom: tuple = (1.0, 1.0)                 # start and end scale (>= 1, centred on focus)
-    focus: tuple = (0.5, 0.5)                # zoom centre as fractions of the frame
+    focus: tuple | None = None               # zoom centre as fractions of the frame (None: the scene's gag)
     cards: list = field(default_factory=list)  # (rgba card array, t0, t1) in shot seconds
     tick: bool = True                        # click on the cut into this shot
 
@@ -57,15 +57,19 @@ def _ease(t):
 
 
 class _Prepared:
-    def __init__(self, shot: Shot):
+    def __init__(self, shot: Shot, cache: dict):
         self.shot = shot
         if shot.still is not None:
             self.scene = None
             return
-        self.scene = build(shot.spec, shot.seed, W, H, pan=shot.pan)
-        mid = frame(self.scene, 0.5, shot.pan, 0.0, grain=0)
-        self.thr = bloom_threshold(mid)
-        self.inks = ink_palette(mid)
+        key = (repr(shot.spec), shot.seed, shot.pan)
+        if key not in cache:
+            scene = build(shot.spec, shot.seed, W, H, pan=shot.pan)
+            mid = frame(scene, 0.5, shot.pan, 0.0, grain=0)
+            cache[key] = (scene, bloom_threshold(mid), ink_palette(mid, extra=spec_inks(shot.spec)))
+        self.scene, self.thr, self.inks = cache[key]
+        if shot.focus is None:
+            shot.focus = getattr(self.scene, "focus", (0.5, 0.5))
 
     def image(self, ts: float, t_global: float) -> np.ndarray:
         s = self.shot
@@ -77,12 +81,25 @@ class _Prepared:
             img = print_finish(img, self.inks, seed=s.seed & 0xFFFF, dither=0.045)
         z = s.zoom[0] + (s.zoom[1] - s.zoom[0]) * _ease(u)
         img = _zoom(img, z, s.focus)
-        for card, t0, t1 in s.cards:
-            op = _fade(ts, t0, t1, 0.12 if t1 - t0 < 1.5 else 0.3)
+        for c in s.cards:
+            card, t0, t1 = c[:3]
+            ramp_in = c[3] if len(c) > 3 else (0.12 if t1 - t0 < 1.5 else 0.25)
+            ramp_out = c[4] if len(c) > 4 else ramp_in
+            op = _fade2(ts, t0, t1, ramp_in, ramp_out)
             if op > 0:
                 al = card[..., 3:4] * op
                 img = img * (1 - al) + card[..., :3] * al
         return img
+
+
+def _fade2(ts, t0, t1, ramp_in, ramp_out):
+    """Opacity with separate in/out ramps; a ramp of 0 means fully on at that edge."""
+    if ts < t0 or ts > t1:
+        return 0.0
+    a = 1.0 if ramp_in <= 0 else min(1.0, (ts - t0) / ramp_in)
+    b = 1.0 if ramp_out <= 0 else min(1.0, (t1 - ts) / ramp_out)
+    v = min(a, b)
+    return v * v * (3 - 2 * v)
 
 
 def _mix_ticks(wav_path: str, times: list[float]):
@@ -113,7 +130,8 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
     """Render shots back to back. overlays: (card, t0, t1) on the whole timeline."""
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    prepared = [_Prepared(s) for s in shots]
+    cache = {}
+    prepared = [_Prepared(s, cache) for s in shots]
     starts = np.cumsum([0.0] + [s.seconds for s in shots])
     seconds = float(starts[-1])
     n = int(round(seconds * fps))
@@ -122,7 +140,7 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
         _mix_ticks(wav, [float(starts[i]) for i, s in enumerate(shots) if s.tick and i > 0])
         cmd = ["ffmpeg", "-y", "-loglevel", "error",
                "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-", "-i", wav,
-               "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", "14M", "-bufsize", "28M",
+               "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-maxrate", "7M", "-bufsize", "14M",
                "-pix_fmt", "yuv420p", "-profile:v", "high", "-r", str(fps),
                "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-shortest", "-movflags", "+faststart", str(out)]
         proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
@@ -132,8 +150,9 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
                 tg = f / fps
                 k = min(int(np.searchsorted(starts, tg, side="right")) - 1, len(shots) - 1)
                 img = prepared[k].image(tg - starts[k], tg)
-                for card, t0, t1 in overlays:
-                    op = _fade(tg, t0, t1, 0.15)
+                for c in overlays:
+                    card, t0, t1 = c[:3]
+                    op = _fade2(tg, t0, t1, c[3] if len(c) > 3 else 0.15, c[4] if len(c) > 4 else 0.15)
                     if op > 0:
                         al = card[..., 3:4] * op
                         img = img * (1 - al) + card[..., :3] * al
@@ -148,6 +167,11 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
     if cover_path is not None and cover is not None:
         to_image(cover).save(cover_path, quality=92)
     return out
+
+
+def still(shot: Shot) -> np.ndarray:
+    """One frame from the middle of a shot, for covers."""
+    return _Prepared(shot, {}).image(shot.seconds / 2, 0.0)
 
 
 def overlay(items: list[dict], scrim: float = 0.3, size=(W, H)) -> np.ndarray:

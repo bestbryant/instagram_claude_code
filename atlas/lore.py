@@ -110,6 +110,19 @@ CONCEPTS = [
          spec=dict(snow=True, particles="snow", palette=["violet_ice", "polar_night"])),
 ]
 
+RULES = ["Visitors must sign the guest book. The guest book signs back.",
+         "No whistling after dark. Something always whistles back.",
+         "Every new arrival is assigned a cat, whether they like it or not.",
+         "Maps may be borrowed but must be returned slightly improved.",
+         "Hats must be held on to at all times. The wind is a collector.",
+         "Complaints about the weather go to the weather, in writing.",
+         "It is illegal to be in a hurry before noon.",
+         "Anyone who names a star has to look after it.",
+         "Do not feed the clouds.",
+         "The last person awake turns off the moon."]
+QUESTIONS = ["Would you visit?", "Would you stay a week, or for good?", "Who would you take with you?",
+             "Would you get used to it?", "What would you pack?"]
+
 TAGS = ["#worldbuilding", "#illustration"]
 EXTRA_TAGS = ["#imaginaryworlds", "#scifiart", "#fantasyart", "#shortstory", "#spaceart"]
 
@@ -164,7 +177,11 @@ def chart(name: str, number: str | None = None) -> tuple[dict, Spec, int]:
         "story": concept["story"].format(name=display),
         "facts": facts,
         "hook": concept["hook"].format(name=display),
+        "beats": concept["reel"],
         "reel_lines": concept["reel"],
+        "odd_line": concept["reel"][1],
+        "rule": _pick(rng, RULES),
+        "question": _pick(rng, QUESTIONS),
         "tags": TAGS + [_pick(rng, EXTRA_TAGS)],
         "spec": asdict(spec),
     }

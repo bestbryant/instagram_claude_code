@@ -5,6 +5,7 @@
   python -m atlas grid
   python -m atlas avatar
   python -m atlas process 001              # "how it's made" Reel
+  python -m atlas tapstop                  # "Tap to stop. That's where you're moving."
   python -m atlas publish output/launch/001-veyra --kind reel --base-url https://… [--dry-run]
   python -m atlas next --base-url https://… [--dry-run]
   python -m atlas inbox [--chart]          # name requests from comments
@@ -22,7 +23,7 @@ import numpy as np
 from PIL import Image
 
 from . import captions, text
-from .render import Spec, build, frame, ink_palette, printed, render_raw, seed_from, to_image
+from .render import Spec, build, frame, ink_palette, printed, seed_from, spec_inks, to_image
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "output"
@@ -39,39 +40,42 @@ def _resize(img: np.ndarray, size) -> np.ndarray:
     return np.asarray(to_image(img).resize(size, Image.LANCZOS), np.float32) / 255
 
 
-def detail_crop(raw: np.ndarray, size=text.DETAIL, zoom=1.5) -> np.ndarray:
-    """The busiest window of the image (silhouettes, figures, lights) for the close-up."""
+def focus_crop(raw: np.ndarray, focus, size, zoom=2.0) -> np.ndarray:
+    """A close-up window centred on the gag."""
     H, W = raw.shape[:2]
     cw = int(W / zoom)
-    ch = int(cw * size[1] / size[0])
-    g = raw[::4, ::4].mean(2)
-    edges = np.abs(np.diff(g, axis=0))[:, :-1] + np.abs(np.diff(g, axis=1))[:-1]
-    best, pos = -1.0, (0, 0)
-    for y0 in np.linspace(int(H * 0.15), H - ch, 8).astype(int):
-        for x0 in np.linspace(0, W - cw, 7).astype(int):
-            score = edges[y0 // 4:(y0 + ch) // 4, x0 // 4:(x0 + cw) // 4].sum()
-            if score > best:
-                best, pos = score, (y0, x0)
-    y0, x0 = pos
+    ch = min(int(cw * size[1] / size[0]), H)
+    x0 = int(np.clip(focus[0] * W - cw / 2, 0, W - cw))
+    y0 = int(np.clip(focus[1] * H - ch * 0.55, 0, H - ch))
     return _resize(raw[y0:y0 + ch, x0:x0 + cw], size)
 
 
-def make(entry: dict, spec: Spec, seed: int, folder: Path, reel=True, by=None) -> Path:
+SLIDES = ("1-cover.jpg", "2-detail.jpg", "3-page.jpg", "4-guide.jpg", "5-invite.jpg")
+
+
+def make(entry: dict, spec: Spec, seed: int, folder: Path, reel=True, by=None, requested_by=None) -> Path:
     folder.mkdir(parents=True, exist_ok=True)
+    for old in ("2-notes.jpg",):
+        (folder / old).unlink(missing_ok=True)
     W, H = text.ART
-    raw = render_raw(spec, seed, int(W * 1.5), int(H * 1.5))
+    scene = build(spec, seed, int(W * 1.5), int(H * 1.5))
+    raw = frame(scene, grain=0)
     art = _resize(raw, text.ART)
-    inks = ink_palette(art)
-    text.cover(printed(art, inks, seed & 0xFFFF), entry, seed & 0xFFFF).save(folder / "1-cover.jpg", quality=93, subsampling=0)
-    detail = printed(detail_crop(raw), inks, (seed >> 16) & 0xFFFF)
-    text.notes(detail, entry, seed & 0xFFFF).save(folder / "2-notes.jpg", quality=93, subsampling=0)
+    inks = ink_palette(art, extra=spec_inks(spec))
+    s16 = seed & 0xFFFF
+    art_img = printed(art, inks, s16)
+    close = printed(focus_crop(raw, scene.focus, (text.PAGE[0] - 2 * text.MARGIN, 1010)), inks, (seed >> 16) & 0xFFFF)
+    slides = [text.cover(art_img, entry, s16), text.detail(close, entry, s16), text.page(entry, s16),
+              text.guide(entry, s16), text.invite(close, entry, s16)]
+    for name, img in zip(SLIDES, slides):
+        img.save(folder / name, quality=93, subsampling=0)
     (folder / "caption-carousel.txt").write_text(captions.carousel(entry, by) + "\n")
     (folder / "caption-reel.txt").write_text(captions.reel(entry, by) + "\n")
     (folder / "alt-text.txt").write_text(captions.alt_text(entry, spec) + "\n")
     (folder / "entry.json").write_text(json.dumps(entry, indent=2, ensure_ascii=False) + "\n")
     if reel:
         from .reel import render_reel
-        render_reel(spec, seed, entry, folder / "reel.mp4", cover_path=folder / "reel-cover.jpg")
+        render_reel(spec, seed, entry, folder / "reel.mp4", cover_path=folder / "reel-cover.jpg", requested_by=requested_by)
     return folder
 
 
@@ -99,10 +103,23 @@ def cmd_launch(a):
             print(_launch_one(j), flush=True)
 
 
+NUMBERS = ROOT / "content" / "numbers.json"
+
+
+def next_number() -> str:
+    """Requested planets get real atlas numbers, starting at 101."""
+    state = json.loads(NUMBERS.read_text()) if NUMBERS.exists() else {"next": 101}
+    n = state["next"]
+    NUMBERS.write_text(json.dumps({"next": n + 1}) + "\n")
+    return f"{n:03d}"
+
+
 def cmd_planet(a):
     from .lore import chart
-    entry, spec, seed = chart(a.name, a.number)
-    folder = make(entry, spec, seed, OUT / "requests" / slug(a.name), reel=not a.no_reel, by=a.by)
+    entry, spec, seed = chart(a.name, a.number or (next_number() if a.by else None))
+    if a.by:
+        entry["discovered_by"] = a.by
+    folder = make(entry, spec, seed, OUT / "requests" / slug(a.name), reel=not a.no_reel, by=a.by, requested_by=a.by)
     print(f"{entry['name']}: {entry['subtitle']} -> {folder.relative_to(ROOT)}")
 
 
@@ -136,10 +153,37 @@ def cmd_process(a):
         entry, spec, seed = chart(a.target)
     dest = OUT / "process" / f"{entry['id']}-{slug(entry['name'])}.mp4"
     render_process(spec, seed, entry, dest)
-    caption = (f"How {entry['name']} was made: sky first, then each ridge from the farthest to the nearest, "
-               f"then the inks. Every print in the atlas is drawn this way, in code, one layer at a time.\n\n"
-               f"{text.CTA}\n\n#illustration #processvideo #worldbuilding")
+    caption = (f"No image generator here. {entry['name']} is drawn in code: the sky first, then each ridge from "
+               f"the farthest to the nearest, then the people, then the inks, like a screen print.\n\n"
+               f"Leave a name in the comments and I'll draw its planet next.\n\n#illustration #creativecoding #worldbuilding")
     dest.with_suffix(".txt").write_text(caption + "\n")
+    print(dest.relative_to(ROOT))
+
+
+def cmd_tapstop(a):
+    """'Tap to stop' Reel: every planet flashes by; wherever you pause is where you're moving."""
+    from .video import H as VH, W as VW, Shot, overlay, render_shots
+    from .render import print_finish
+    entries = [e for f in (LAUNCH, ROOT / "content" / "halloween.json") for e in json.loads(f.read_text())]
+    stills = []
+    for e in entries:
+        spec, seed = Spec(**e["spec"]), seed_from(e["name"])
+        img = frame(build(spec, seed, VW, VH), grain=0)
+        stills.append((e, print_finish(img, ink_palette(img, extra=spec_inks(spec)), seed & 0xFFFF)))
+        print("drew", e["name"], flush=True)
+    top = overlay([dict(text="Tap to stop.", y=0.2, kind="serif", weight="Medium", size=92),
+                   dict(text="That's where you're moving.", y=0.255, kind="italic", size=62)], scrim=0.3)
+    shots = []
+    order = stills + stills[::-1][1:-1]     # there and back, so the loop has no jump
+    for e, img in order:
+        label = overlay([dict(text=e["name"], y=0.6, kind="serif", weight="Medium", size=130),
+                         dict(text=e["subtitle"], y=0.675, kind="italic", size=48)], scrim=0.25)
+        shots.append(Shot(a.beat, still=img, cards=[(label, 0, a.beat, 0, 0)], tick=True))
+    dest = OUT / "specials" / "tap-to-stop.mp4"
+    render_shots(shots, dest, seed=7, overlays=[(top, 0, sum(x.seconds for x in shots), 0, 0)])
+    dest.with_suffix(".txt").write_text(
+        "Tap to stop. Wherever it lands is where you're moving.\n\n"
+        "Tell me where you ended up, and what you'll miss about home.\n\n#worldbuilding #illustration #imaginaryworlds\n")
     print(dest.relative_to(ROOT))
 
 
@@ -158,12 +202,16 @@ def cmd_avatar(a):
 def _publish(folder: Path, kind: str, base_url: str, dry_run: bool):
     from .publish import Publisher
     folder = folder.resolve()
-    rel = folder.relative_to(OUT).as_posix()
+    rel = (folder.parent if kind in ("process", "special") else folder).relative_to(OUT).as_posix()
     url = lambda f: f"{base_url.rstrip('/')}/{rel}/{f}"
     p = Publisher(dry_run=dry_run)
+    if kind in ("process", "special"):
+        video = folder
+        return p.reel_file(video, video.with_suffix(".txt").read_text().strip())
     if kind == "carousel":
         cap = (folder / "caption-carousel.txt").read_text().strip()
-        return p.carousel([url("1-cover.jpg"), url("2-notes.jpg")], cap)
+        slides = sorted(f.name for f in folder.glob("[0-9]-*.jpg"))
+        return p.carousel([url(f) for f in slides], cap)
     cap = (folder / "caption-reel.txt").read_text().strip()
     return p.reel_file(folder / "reel.mp4", cap, cover_url=url("reel-cover.jpg"))
 
@@ -229,32 +277,52 @@ def cmd_inbox(a):
         for q in queue:
             if q["status"] != "new":
                 continue
-            entry, spec, seed = chart(q["name"])
-            folder = make(entry, spec, seed, OUT / "requests" / slug(q["name"]), reel=not a.no_reel, by=q["by"])
+            entry, spec, seed = chart(q["name"], next_number())
+            entry["discovered_by"] = q["by"]
+            folder = make(entry, spec, seed, OUT / "requests" / slug(q["name"]), reel=not a.no_reel, by=q["by"], requested_by=q["by"])
             q["status"], q["folder"] = "charted", str(folder.relative_to(ROOT))
             print(f"charted {q['name']} -> {q['folder']}")
         if not a.dry_run:
             REQUESTS.write_text(json.dumps(queue, indent=2, ensure_ascii=False) + "\n")
 
 
+LAUNCH_DAY = "2026-10-18"   # schedule day 1
+
+
+def _find(item):
+    if item["kind"] == "process":
+        return next((OUT / "process").glob(f"{item['entry']}-*.mp4"), None)
+    if item["kind"] == "special":
+        hit = OUT / "specials" / f"{item['entry']}.mp4"
+        return hit if hit.exists() else None
+    for group in ("launch", "halloween", "sequels", "requests"):
+        hit = next((OUT / group).glob(f"{item['entry']}-*"), None)
+        if hit:
+            return hit
+    return None
+
+
 def cmd_next(a):
+    """Post every scheduled item that is due (day <= today), oldest first, at most --max per run."""
+    from datetime import date, datetime, timezone
     schedule = json.loads(SCHEDULE.read_text())
     log = json.loads(LOG.read_text()) if LOG.exists() else []
     done = {(x["entry"], x["kind"]) for x in log}
-    todo = [s for s in schedule if (s["entry"], s["kind"]) not in done]
-    if not todo:
-        print("schedule complete; chart some requested planets next")
+    today = (date.today() - date.fromisoformat(LAUNCH_DAY)).days + 1
+    due = [s for s in schedule if (s["entry"], s["kind"]) not in done and s.get("day", 0) <= today]
+    if not due:
+        left = [s for s in schedule if (s["entry"], s["kind"]) not in done]
+        print(f"day {today}: nothing due" + (f"; next is day {left[0]['day']}" if left else "; schedule complete"))
         return
-    item = todo[0]
-    folder = next((OUT / "launch").glob(f"{item['entry']}-*"), None)
-    if folder is None:
-        sys.exit(f"missing output for {item['entry']}; run: python -m atlas launch --only {item['entry']}")
-    media = _publish(folder, item["kind"], a.base_url, a.dry_run)
-    print(f"posted {item['entry']} as {item['kind']}: {media}")
-    if not a.dry_run:
-        from datetime import datetime, timezone
-        log.append({**item, "media_id": media, "at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
-        LOG.write_text(json.dumps(log, indent=2) + "\n")
+    for item in due[: a.max]:
+        folder = _find(item)
+        if folder is None:
+            sys.exit(f"missing output for {item['entry']} ({item['kind']}); render it first")
+        media = _publish(folder, item["kind"], a.base_url, a.dry_run)
+        print(f"posted {item['entry']} as {item['kind']}: {media}")
+        if not a.dry_run:
+            log.append({**item, "media_id": media, "at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+            LOG.write_text(json.dumps(log, indent=2) + "\n")
 
 
 def main(argv=None):
@@ -278,6 +346,9 @@ def main(argv=None):
     s = sub.add_parser("process", help="'how it's made' Reel for an entry id or a name")
     s.add_argument("target")
     s.set_defaults(fn=cmd_process)
+    s = sub.add_parser("tapstop", help="'Tap to stop' Reel across every planet")
+    s.add_argument("--beat", type=float, default=0.27, help="seconds per planet")
+    s.set_defaults(fn=cmd_tapstop)
     s = sub.add_parser("avatar", help="render the profile picture")
     s.add_argument("--seed", default="Atlas of Elsewhere")
     s.set_defaults(fn=cmd_avatar)
@@ -287,8 +358,9 @@ def main(argv=None):
     s.add_argument("--base-url", required=True, help="public URL that serves the output/ directory")
     s.add_argument("--dry-run", action="store_true")
     s.set_defaults(fn=cmd_publish)
-    s = sub.add_parser("next", help="publish the next item in content/schedule.json")
+    s = sub.add_parser("next", help="publish what is due in content/schedule.json")
     s.add_argument("--base-url", required=True)
+    s.add_argument("--max", type=int, default=3)
     s.add_argument("--dry-run", action="store_true")
     s.set_defaults(fn=cmd_next)
     s = sub.add_parser("inbox", help="collect name requests from recent comments (Graph API)")

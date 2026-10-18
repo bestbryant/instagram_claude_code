@@ -167,6 +167,10 @@ class Spec:
     lanterns: int = 0              # glowing pumpkins along the hills
     moths: int = 0                 # giant moths against the sky
     mist: float = 0.5
+    gag: str = ""                  # the planet's visual joke (see props.GAGS)
+    cartographer: bool = True      # the narrator in a yellow coat, hidden in the print
+    spot: str = ""                 # extra spot-colour ink, e.g. red umbrellas
+    glow_rims: bool = False        # canyon edges that glow at night
 
 
 def random_spec(seed: int) -> Spec:
@@ -522,6 +526,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
             mask[y0:y1, x0:x1] *= 1 - al
 
     br = seeds.rng("bodies")
+    geo = {"islands": [], "wave_curls": [], "tallest_tree": None, "big_moon": None}
     if spec.giant:
         r = spec.giant_size * W
         gx_ = (spec.giant_x if spec.giant_x is not None else br.choice([br.uniform(0.12, 0.35), br.uniform(0.65, 0.88)])) * W
@@ -530,8 +535,9 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
         body(gx_, gy_, r, base, bands=True, ring=spec.ring, haze_amt=0.12, tag="giant")
     if spec.big_moon:
         r = 0.42 * W
-        body(br.uniform(0.35, 0.65) * W, hy - r * br.uniform(0.25, 0.55), r, mix(pal.accent, pal.haze, 0.25),
-             craters=True, haze_amt=0.28, tag="bigmoon")
+        mx_, my_ = br.uniform(0.35, 0.65) * W, hy - r * br.uniform(0.25, 0.55)
+        geo["big_moon"] = (mx_, my_, r)
+        body(mx_, my_, r, mix(pal.accent, pal.haze, 0.25), craters=True, haze_amt=0.28, tag="bigmoon")
     for k in range(spec.moons):
         r = br.uniform(0.012, 0.045) * W
         body(br.uniform(0.08, 0.92) * W, br.uniform(0.08, 0.6) * hy, r, mix(pal.accent, pal.haze, br.uniform(0, 0.5)),
@@ -654,6 +660,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
                 prof = 1 - abs(f - 0.5) * 2
                 bot.append((bx + ri.uniform(-0.03, 0.03) * iw, cy + depth * prof ** 0.7 * ri.uniform(0.6, 1.0)))
             stamp(P, A, [("poly", top + bot)], col)
+            geo["islands"].append((cx, cy, depth, iw))
             for _ in range(int(ri.integers(2, 6))):
                 tx = cx + ri.uniform(-0.4, 0.4) * iw
                 stamp(P, A, pine(tx, cy + 2, iw * ri.uniform(0.15, 0.3), ri), col)
@@ -679,6 +686,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
             yb = float(ridge_y[int(np.clip(x0 + ww / 2, 0, len(ridge_y) - 1))]) + H * 0.03
             pts = catmull([(x0 + ww * px, yb - wh * py) for px, py in WAVE], 6)
             stamp(P2, A2, [("poly", pts)], glass, value=0.82)
+            geo["wave_curls"].append((x0 + ww * 0.88, yb))
             crest = pts[len(pts) // 4: int(len(pts) * 0.52)]
             stamp(P2, A2, [("line", (crest, 2.2))], hi, value=0.7)
         scene.layers.insert(scene.layers.index(layer), Layer(P2, A2, layer.speed))
@@ -720,6 +728,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
         if spec.lighthouse:
             lo_, hi_ = ((0.08, reach - 0.16) if side == "left" else (1 - reach + 0.16, 0.92))
             lx = local_peak(ridge_y, lo_ * W, hi_ * W)
+            geo["lighthouse"] = lx
             gyl = ridge_at(ridge_y, lx) + 4
             th, bw = H * 0.13, W * 0.028
             top = gyl - th
@@ -754,6 +763,9 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
                 x = ro.uniform(0, layer.A.shape[1])
                 h = H * ro.uniform(0.35, 0.75) * (0.55 + 0.45 * t)
                 stamp(layer.P, layer.A, pine(x, ridge_at(r_, x) + 30, h, ro), colr)
+                best = geo["tallest_tree"]
+                if W * 0.15 < x < W * 0.85 and (best is None or h > best[3] or best[0] is not layer):
+                    geo["tallest_tree"] = (layer, x, ridge_at(r_, x) + 30 - h, h)
     elif spec.trees == "lone":
         x = W * ro.choice([ro.uniform(0.18, 0.35), ro.uniform(0.65, 0.82)])
         x = local_peak(near_ridge, max(x - W * 0.1, 0), min(x + W * 0.1, len(near_ridge) - 1))
@@ -825,6 +837,39 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
             stamp(P, A, moth(mx, my, sz), col)
             glow(E, mx, my + sz * 1.2, sz * 0.9, pal.accent, 0.25)
         scene.layers.insert(min(3, len(scene.layers)), Layer(P, A, speed, E))
+
+    if spec.glow_rims:
+        orange = hexc("#ff7a2a")
+        for layer, r_, t, _ in ridges[-3:]:
+            if layer.E is None:
+                layer.E = np.zeros_like(layer.P)
+            gy = np.arange(H, dtype=np.float32)[:, None]
+            d = gy - r_[None, :]
+            band = np.exp(-(d / (H * 0.007)) ** 2) * (d > -1) * (0.35 + 0.35 * t)
+            layer.E += (band * layer.A)[..., None].astype(np.float32) * orange
+
+    # the planet's visual joke and the cartographer
+    scene.focus, scene.marks = (0.5, 0.62), {}
+    if spec.gag or spec.cartographer:
+        from . import props
+        globe = None
+        if spec.gag == "tiny_planet":
+            globe = Layer(np.zeros((H, width(1.0), 3), np.float32), np.zeros((H, width(1.0)), np.float32), 1.0,
+                          np.zeros((H, width(1.0), 3), np.float32), stage=1)
+            scene.layers.append(globe)
+        ctx = props.make_ctx(
+            W=W, H=H, spec=spec, pal=pal, geo=geo, globe=globe,
+            near_layer=near_layer, near_ridge=near_ridge, ridge_at=ridge_at,
+            far_layer=ridges[0][0], far_ridge=ridges[0][1], mid_layer=ridges[len(ridges) // 2][0],
+            dark=tree_dark if spec.snow else near_lc, light=props.LIGHT, land=pal.land, ground=near_lc, stage_y=None,
+            spot=hexc(spec.spot) if spec.spot else hexc("#c8452f"),
+            sky_P=scene.sky, sky_A=np.ones(scene.sky.shape[:2], np.float32),
+            rng=lambda tag: seeds.rng("gag", tag), focus=(0.5, 0.62), marks={})
+        if spec.gag:
+            props.GAGS[spec.gag](ctx)
+        if spec.cartographer:
+            props.cartographer(ctx, avoid_x=ctx.focus[0] * W)
+        scene.focus, scene.marks = ctx.focus, ctx.marks
 
     # particles
     if spec.particles != "none":
@@ -997,6 +1042,8 @@ def _post(img: np.ndarray, grain: float, grain_seed, thr: float | None = None) -
     bloom = np.asarray(small.resize((W, H), Image.BILINEAR), np.float32) / 255
     img = img + bloom * 0.22
     img = img * _vignette(H, W)
+    # lift the mid-tones and add a little contrast so prints hold up on a phone screen
+    img = 0.5 + (np.clip(img, 0, 1) ** 0.88 - 0.5) * 1.07
     if grain:
         img = img + _grain(H, W, grain, grain_seed)
     return np.clip(img, 0, 1)
@@ -1010,8 +1057,19 @@ LUMA = np.array([0.2126, 0.7152, 0.0722], np.float32)
 PAPER = np.array([243, 236, 222], np.float32) / 255
 
 
-def ink_palette(img: np.ndarray, k: int = 8) -> np.ndarray:
-    """k-means inks for an image, plus a highlight ink (sun cores, stars) and a spot colour."""
+COAT = hexc("#e9b434")   # the cartographer's yellow coat, always its own ink
+
+
+def spec_inks(spec: Spec) -> list:
+    """Inks a print must keep exactly: the cartographer's coat and any gag spot colour."""
+    inks = [COAT] if spec.cartographer or spec.gag == "tiny_planet" else []
+    if spec.spot or spec.gag == "umbrella_feet":
+        inks.append(hexc(spec.spot or "#c8452f"))
+    return inks
+
+
+def ink_palette(img: np.ndarray, k: int = 8, extra=()) -> np.ndarray:
+    """k-means inks for an image, plus a highlight ink (sun cores, stars), a spot colour and any extra inks."""
     px = np.ascontiguousarray(img[::5, ::5].reshape(-1, 3), np.float32)
     order = np.argsort(px @ LUMA)
     cent = px[order[np.linspace(0, len(px) - 1, k).astype(int)]].copy()
@@ -1024,7 +1082,7 @@ def ink_palette(img: np.ndarray, k: int = 8) -> np.ndarray:
                 cent[j] = px[m].mean(0)
     sat = px.max(1) - px.min(1)
     spot = px[np.argsort(sat * (0.3 + px @ LUMA))[int(len(px) * 0.997)]]   # a spot colour, as riso prints have
-    return np.vstack([cent, px[order[int(len(px) * 0.999)]][None], spot[None]])
+    return np.vstack([cent, px[order[int(len(px) * 0.999)]][None], spot[None]] + [np.asarray(e, np.float32)[None] for e in extra])
 
 
 @lru_cache(maxsize=4)

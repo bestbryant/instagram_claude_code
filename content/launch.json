@@ -6,129 +6,549 @@
     "story": "I keep an atlas of places that aren't on any map. Most of its pages are still blank. Each day I fill one in, sometimes with a world I came across on my own, more often with one somebody asked me to find. If you leave a name in the comments, any name at all, I'll go looking for the planet that goes with it.",
     "facts": {},
     "hook": "Leave a name. I'll find the planet it belongs to.",
-    "reel_lines": ["I keep an atlas of places that aren't on any map.", "Leave a name in the comments and I'll go and find it."],
-    "tags": ["#worldbuilding", "#illustration", "#imaginaryworlds"],
-    "spec": {"palette": "lilac_dusk", "terrain": "peaks", "horizon": 0.66, "giant": true, "ring": true, "giant_size": 0.26, "giant_x": 0.7, "giant_y": 0.2, "moons": 3, "suns": 0, "figure": true, "trees": "pines", "mist": 0.6, "layers": 5}
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#imaginaryworlds"
+    ],
+    "spec": {
+      "palette": "lilac_dusk",
+      "terrain": "peaks",
+      "horizon": 0.66,
+      "giant": true,
+      "ring": true,
+      "giant_size": 0.26,
+      "giant_x": 0.7,
+      "giant_y": 0.2,
+      "moons": 3,
+      "suns": 0,
+      "figure": true,
+      "trees": "pines",
+      "mist": 0.6,
+      "layers": 5
+    },
+    "cover": "Every name has a planet.",
+    "beats": [
+      "I keep an atlas of places that aren't on any map.",
+      "Most of the pages are still blank. That's where you come in."
+    ],
+    "odd_line": "Most of the pages are still blank.",
+    "rule": "Anyone may add a page.",
+    "question": "Whose name should I look up first?",
+    "extra": "One planet a day, plus the ones you ask for.",
+    "reel_lines": [
+      "I keep an atlas of places that aren't on any map.",
+      "Most of the pages are still blank. That's where you come in."
+    ]
   },
   {
     "id": "001",
     "name": "Veyra",
     "subtitle": "two suns, short nights",
-    "story": "Veyra has two suns, and one of them is nearly always up. The longest night of the year lasts nine minutes, so people sleep in chairs, in short shifts, with the blinds down. There's a lighthouse on the north cliff that is about four hundred years older than the first settlement. It still comes on every evening. Nobody has worked out what powers it, and the town council has asked people to stop trying.",
-    "facts": {"Day": "31 hours", "Moons": "none", "Gravity": "0.9 g", "Population": "about 40,000"},
+    "story": "Veyra has two suns and one is nearly always up, so the longest night of the year lasts nine minutes. Nobody owns a bed, only very good chairs. The lighthouse on the cliff is four hundred years older than the town. Nobody knows what powers it. The council has asked people to stop trying.",
+    "facts": {
+      "Day": "31 hours",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "about 40,000"
+    },
     "hook": "The longest night on Veyra lasts nine minutes.",
-    "reel_lines": ["Two suns, and one of them is nearly always up.", "People sleep in chairs, in short shifts."],
-    "tags": ["#worldbuilding", "#illustration", "#lighthouse"],
-    "spec": {"palette": "gold_hour", "terrain": "hills", "horizon": 0.6, "water": true, "shore": "left", "lighthouse": true, "suns": 2, "sun_x": 0.62, "sun_y": 0.47, "sun_size": 0.055, "layers": 4, "mist": 0.5, "relief": 1.1}
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#lighthouse"
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "terrain": "hills",
+      "horizon": 0.6,
+      "water": true,
+      "shore": "left",
+      "lighthouse": true,
+      "suns": 2,
+      "sun_x": 0.62,
+      "sun_y": 0.47,
+      "sun_size": 0.055,
+      "layers": 4,
+      "mist": 0.5,
+      "relief": 1.1,
+      "gag": "chair_sleepers"
+    },
+    "cover": "Nobody here owns a bed.",
+    "beats": [
+      "Nobody owns a bed. Just very comfortable chairs.",
+      "Nobody knows what powers the lighthouse. The council has asked people to stop trying."
+    ],
+    "odd_line": "Population about 40,000. Most of them asleep in armchairs.",
+    "rule": "Naps longer than nine minutes must be registered with the council.",
+    "question": "Could you sleep in a chair?",
+    "extra": "Bedtime stories here are about thirty seconds long.",
+    "reel_lines": [
+      "Nobody owns a bed. Just very comfortable chairs.",
+      "Nobody knows what powers the lighthouse. The council has asked people to stop trying."
+    ]
   },
   {
     "id": "002",
     "name": "Orrin",
     "subtitle": "the eleven-year tide",
-    "story": "The giant that Orrin orbits pulls its ocean away for eleven years at a time. Whole towns are built on the seabed in between, and they're taken down, plank by plank, the season before the water comes back. People count their age in swims. My guide was thirty-four and had been twice. She said the second time was better, because she knew to bring a towel.",
-    "facts": {"Day": "19 hours", "Moons": "none", "Gravity": "0.7 g", "Population": "2.1 million"},
+    "story": "The giant that Orrin orbits pulls its ocean away for eleven years at a time. Whole towns go up on the seabed in between, and come down again, plank by plank, the week the water comes back. People count their age in swims. My guide was thirty-four and had been twice. The second time, she brought a towel.",
+    "facts": {
+      "Day": "19 hours",
+      "Moons": "none",
+      "Gravity": "0.7 g",
+      "Population": "2.1 million"
+    },
     "hook": "The tide on Orrin comes in once every eleven years.",
-    "reel_lines": ["Whole towns are built on the seabed in between.", "People count their age in swims."],
-    "tags": ["#worldbuilding", "#illustration", "#scifiart"],
-    "spec": {"palette": "mint_dawn", "terrain": "dunes", "horizon": 0.62, "giant": true, "ring": true, "giant_size": 0.3, "giant_x": 0.32, "giant_y": 0.26, "suns": 1, "sun_x": 0.8, "sun_y": 0.5, "sun_size": 0.03, "figure": true, "layers": 5, "mist": 0.5}
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#scifiart"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "dunes",
+      "horizon": 0.62,
+      "giant": true,
+      "ring": true,
+      "giant_size": 0.3,
+      "giant_x": 0.32,
+      "giant_y": 0.26,
+      "suns": 1,
+      "sun_x": 0.8,
+      "sun_y": 0.5,
+      "sun_size": 0.03,
+      "figure": true,
+      "layers": 5,
+      "mist": 0.5,
+      "gag": "seabed_town"
+    },
+    "cover": "They build towns on the seabed.",
+    "beats": [
+      "So they build whole towns on the seabed in between.",
+      "My guide was thirty-four and had swum twice. The second time, she brought a towel."
+    ],
+    "odd_line": "Moving day is every eleven years, and it is not optional.",
+    "rule": "Houses must be off the seabed before the tide arrives. The tide does not grant extensions.",
+    "question": "How many swims old would you be?",
+    "extra": "Mortgages here run for exactly eleven years.",
+    "reel_lines": [
+      "So they build whole towns on the seabed in between.",
+      "My guide was thirty-four and had swum twice. The second time, she brought a towel."
+    ]
   },
   {
     "id": "003",
     "name": "Hush",
     "subtitle": "where sound arrives late",
     "story": "Sound is slow on Hush. A shout across the valley arrives four or five days later, quieter, usually after everyone has moved on. Arguments are carried out by letter, which tends to calm them down. In midwinter you can stand at the bottom of the valley and hear last summer, very faintly: dogs, a wedding, someone practising the trumpet badly.",
-    "facts": {"Day": "26 hours", "Moons": "2", "Gravity": "1.1 g", "Population": "9,300"},
-    "hook": "On Hush, a shout takes five days to cross the valley.",
-    "reel_lines": ["Arguments are carried out by letter.", "In midwinter you can still hear last summer."],
-    "tags": ["#worldbuilding", "#illustration", "#winter"],
-    "spec": {"palette": "violet_ice", "terrain": "hills", "horizon": 0.6, "snow": true, "trees": "pines", "house": true, "particles": "snow", "moons": 2, "suns": 0, "layers": 5, "mist": 0.45}
+    "facts": {
+      "Day": "26 hours",
+      "Moons": "none",
+      "Gravity": "1.1 g",
+      "Population": "9,300"
+    },
+    "hook": "A planet for people who reply to texts five days late.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#winter"
+    ],
+    "spec": {
+      "palette": "violet_ice",
+      "terrain": "hills",
+      "horizon": 0.6,
+      "snow": true,
+      "trees": "pines",
+      "house": true,
+      "particles": "snow",
+      "moons": 0,
+      "suns": 0,
+      "layers": 5,
+      "mist": 0.45,
+      "gag": "slow_shout"
+    },
+    "cover": "A shout here takes five days.",
+    "beats": [
+      "Sound is slow on Hush. A shout takes five days to cross the valley.",
+      "So arguments are done by letter. By the time the reply lands, nobody remembers why."
+    ],
+    "odd_line": "He proposed across the valley in March. Her answer arrives Thursday.",
+    "rule": "No shouting after dark. It arrives on Tuesday and wakes everyone.",
+    "question": "Who do you know that replies like this?",
+    "extra": "A man proposed across the valley in March. Her answer is due on Thursday. I'll let you know.",
+    "reel_lines": [
+      "Sound is slow on Hush. A shout takes five days to cross the valley.",
+      "So arguments are done by letter. By the time the reply lands, nobody remembers why."
+    ]
   },
   {
     "id": "004",
     "name": "Maren",
     "subtitle": "the floating ranges",
-    "story": "At some point the mountains on Maren lifted off the ground and didn't come back down. Low gravity and a long time, people say. They farm the tops now. Rope ladders go up from the valley floor, and the post is delivered by a woman with a very long pole. The oldest island has a single pine on it. Children climb it once, on their tenth birthday, and are never quite as keen on heights again.",
-    "facts": {"Day": "22 hours", "Moons": "1", "Gravity": "0.3 g", "Population": "610,000"},
-    "hook": "The mountains on Maren drifted off the ground.",
-    "reel_lines": ["They farm the tops now.", "The post goes up on a very long pole."],
-    "tags": ["#worldbuilding", "#illustration", "#fantasyart"],
-    "spec": {"palette": "pastel", "terrain": "hills", "horizon": 0.7, "islands": 3, "moons": 1, "suns": 1, "sun_x": 0.25, "sun_y": 0.3, "sun_size": 0.04, "figure": true, "layers": 4, "mist": 0.6}
+    "story": "At some point the mountains on Maren lifted off the ground and didn't come back. Low gravity and a long time, people say. They farm the tops now. Rope ladders go up from the valley floor, and the post is delivered by a woman with a very long pole. She has never once lost a letter. She has lost several poles.",
+    "facts": {
+      "Day": "22 hours",
+      "Moons": "none",
+      "Gravity": "0.3 g",
+      "Population": "610,000"
+    },
+    "hook": "On Maren, the mountains drifted off the ground.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#fantasyart"
+    ],
+    "spec": {
+      "palette": "pastel",
+      "terrain": "hills",
+      "horizon": 0.7,
+      "islands": 3,
+      "moons": 0,
+      "suns": 1,
+      "sun_x": 0.25,
+      "sun_y": 0.3,
+      "sun_size": 0.04,
+      "figure": true,
+      "layers": 4,
+      "mist": 0.6,
+      "gag": "pole_post"
+    },
+    "cover": "The post goes up on a pole.",
+    "beats": [
+      "They farm the tops now. The post goes up on a very long pole.",
+      "The postwoman has never lost a letter. She has lost several poles."
+    ],
+    "odd_line": "Your parcel has been delivered. Please look up.",
+    "rule": "Anything dropped from an island belongs to whoever it lands on.",
+    "question": "Orchard island or the one with the view?",
+    "extra": "The postwoman's name is Ines. She has opinions about pole length.",
+    "reel_lines": [
+      "They farm the tops now. The post goes up on a very long pole.",
+      "The postwoman has never lost a letter. She has lost several poles."
+    ]
   },
   {
     "id": "005",
     "name": "Cinderwake",
     "subtitle": "the warm canyons",
-    "story": "The ground on Cinderwake is warm all year, and so is the rain. At night the canyon walls give off a dull orange light, enough to read by if you sit close. Tea grows wild in the cracks and people leave their kettles out on the rock to boil. Before I went, I was told to bring a cup and not much else. That turned out to be good advice.",
-    "facts": {"Day": "40 hours", "Moons": "3", "Gravity": "1.3 g", "Population": "88,000"},
-    "hook": "The rain on Cinderwake is warm.",
-    "reel_lines": ["At night the canyon walls glow.", "You can read by them if you sit close."],
-    "tags": ["#worldbuilding", "#illustration", "#desert"],
-    "spec": {"palette": "crimson", "terrain": "mesas", "horizon": 0.62, "particles": "embers", "moons": 3, "suns": 1, "sun_x": 0.45, "sun_y": 0.55, "sun_size": 0.08, "house": true, "layers": 5, "mist": 0.4}
+    "story": "The ground on Cinderwake is warm all year, and so is the rain. At night the canyon walls glow a dull orange, enough to read by if you sit close. Tea grows wild in the cracks. People leave their kettles out on the rock and come back when they whistle. Nobody here has ever owned a stove, or needed one.",
+    "facts": {
+      "Day": "40 hours",
+      "Moons": "none",
+      "Gravity": "1.3 g",
+      "Population": "88,000"
+    },
+    "hook": "The rain on Cinderwake is warm. So is the floor.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#desert"
+    ],
+    "spec": {
+      "palette": "crimson",
+      "terrain": "mesas",
+      "horizon": 0.62,
+      "particles": "embers",
+      "moons": 0,
+      "suns": 1,
+      "sun_x": 0.45,
+      "sun_y": 0.55,
+      "sun_size": 0.08,
+      "house": false,
+      "layers": 5,
+      "mist": 0.4,
+      "gag": "kettles",
+      "glow_rims": true
+    },
+    "cover": "Leave your kettle on the rock.",
+    "beats": [
+      "The rock is warm enough to boil a kettle, so people just leave theirs out.",
+      "Nobody here has ever owned a stove. Visitors are told to bring a cup."
+    ],
+    "odd_line": "Nobody here has ever owned a stove.",
+    "rule": "A kettle left on public rock must be shared with whoever is cold.",
+    "question": "Tea or coffee on Cinderwake?",
+    "extra": "The canyon walls are warm enough to dry socks on, and people do.",
+    "reel_lines": [
+      "The rock is warm enough to boil a kettle, so people just leave theirs out.",
+      "Nobody here has ever owned a stove. Visitors are told to bring a cup."
+    ]
   },
   {
     "id": "006",
     "name": "Luma",
     "subtitle": "the close moon",
     "story": "Once a year, Luma's moon comes in so close that it hums, a low note you feel in your teeth. Children climb the hill with letters and press them against its surface as it drifts past. Most of the letters are never seen again. Every few years one comes back the following autumn, answered, in handwriting nobody recognises. Those ones get framed.",
-    "facts": {"Day": "28 hours", "Moons": "1, very close", "Gravity": "0.8 g", "Population": "1.3 million"},
-    "hook": "Once a year, this moon passes close enough to touch.",
-    "reel_lines": ["Children press letters against it as it drifts past.", "Now and then, one comes back answered."],
-    "tags": ["#worldbuilding", "#illustration", "#moon"],
-    "spec": {"palette": "abyss", "terrain": "hills", "horizon": 0.72, "big_moon": true, "suns": 0, "figure": true, "trees": "lone", "layers": 4, "mist": 0.5}
+    "facts": {
+      "Day": "28 hours",
+      "Moons": "1, very close",
+      "Gravity": "0.8 g",
+      "Population": "1.3 million"
+    },
+    "hook": "Once a year, this moon comes close enough to touch.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#moon"
+    ],
+    "spec": {
+      "palette": "abyss",
+      "terrain": "hills",
+      "horizon": 0.72,
+      "big_moon": true,
+      "suns": 0,
+      "figure": false,
+      "trees": "none",
+      "layers": 4,
+      "mist": 0.5,
+      "gag": "moon_letters"
+    },
+    "cover": "Kids post letters to the moon.",
+    "beats": [
+      "Children press letters against it as it drifts past.",
+      "Most never come back. Every few years one does, answered, in handwriting nobody recognises."
+    ],
+    "odd_line": "Return address: the moon. Postage: none required.",
+    "rule": "Letters to the moon must be polite. It has answered rude ones, and nobody enjoyed it.",
+    "question": "What would you write on yours?",
+    "extra": "The longest reply so far ran to four pages. It was mostly questions about dogs.",
+    "reel_lines": [
+      "Children press letters against it as it drifts past.",
+      "Most never come back. Every few years one does, answered, in handwriting nobody recognises."
+    ]
   },
   {
     "id": "007",
     "name": "Selk",
     "subtitle": "the glass sea",
-    "story": "Selk used to be an ocean. When the water went, the waves stayed where they were, frozen mid-break in green glass, some of them two hundred metres high. Surfers still make the trip. They carry their boards out across the sand, stand under the curl for an hour or so, and go home. One of them told me it was the best wave he'd ever had.",
-    "facts": {"Day": "33 hours", "Moons": "2", "Gravity": "0.95 g", "Population": "about 5,000"},
+    "story": "Selk used to be an ocean. When the water went, the waves stayed where they were, frozen mid-break in green glass, some of them two hundred metres high. Surfers still make the trip. They carry their boards across the sand, stand under the curl for about an hour, and go home. One told me it was the best wave he'd ever had.",
+    "facts": {
+      "Day": "33 hours",
+      "Moons": "none",
+      "Gravity": "0.95 g",
+      "Population": "about 5,000"
+    },
     "hook": "Selk's ocean dried up and left the waves behind.",
-    "reel_lines": ["Frozen mid-break, in green glass.", "Surfers still come. They stand underneath."],
-    "tags": ["#worldbuilding", "#illustration", "#surf"],
-    "spec": {"palette": "rust_desert", "terrain": "dunes", "horizon": 0.64, "glass_waves": true, "suns": 1, "sun_x": 0.7, "sun_y": 0.32, "sun_size": 0.06, "moons": 2, "figure": true, "layers": 5, "mist": 0.35}
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#surf"
+    ],
+    "spec": {
+      "palette": "rust_desert",
+      "terrain": "dunes",
+      "horizon": 0.64,
+      "glass_waves": true,
+      "suns": 1,
+      "sun_x": 0.7,
+      "sun_y": 0.32,
+      "sun_size": 0.06,
+      "moons": 0,
+      "figure": false,
+      "layers": 5,
+      "mist": 0.35,
+      "gag": "glass_surfers"
+    },
+    "cover": "The waves froze mid-break.",
+    "beats": [
+      "They froze mid-break in green glass, two hundred metres high.",
+      "Surfers still come. They stand underneath for an hour, then go home happy."
+    ],
+    "odd_line": "Surf report: unchanged for nine thousand years.",
+    "rule": "No running under the waves. They have been patient for a very long time.",
+    "question": "Would you make the trip?",
+    "extra": "The surf forecast has said 'same as yesterday' for nine thousand years.",
+    "reel_lines": [
+      "They froze mid-break in green glass, two hundred metres high.",
+      "Surfers still come. They stand underneath for an hour, then go home happy."
+    ]
   },
   {
     "id": "008",
     "name": "Ovo",
     "subtitle": "the small planet",
     "story": "You can walk all the way around Ovo between breakfast and lunch. There is one bakery, one bench, one tree and one cat, and the cat is called Everything. When someone new arrives, all forty-one residents come out to say hello, which takes about four minutes. I was the forty-second for a weekend. Everything ignored me the entire time.",
-    "facts": {"Day": "6 hours", "Moons": "1", "Gravity": "0.2 g", "Population": "41"},
-    "hook": "Ovo has one bakery, one tree and one cat.",
-    "reel_lines": ["You can walk around it before lunch.", "The cat is called Everything."],
-    "tags": ["#worldbuilding", "#illustration", "#cozy"],
-    "spec": {"palette": "rose_fog", "terrain": "hills", "horizon": 0.68, "trees": "lone", "house": true, "figure": true, "suns": 1, "sun_x": 0.3, "sun_y": 0.42, "sun_size": 0.05, "moons": 1, "layers": 4, "mist": 0.6}
+    "facts": {
+      "Day": "6 hours",
+      "Moons": "1",
+      "Gravity": "0.2 g",
+      "Population": "41"
+    },
+    "hook": "Ovo has one bakery, one tree, one bench and one cat.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#cozy"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "hills",
+      "horizon": 1.3,
+      "trees": "none",
+      "house": false,
+      "figure": false,
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.42,
+      "sun_size": 0.05,
+      "moons": 1,
+      "layers": 1,
+      "mist": 0.6,
+      "gag": "tiny_planet"
+    },
+    "cover": "One of everything.",
+    "beats": [
+      "You can walk all the way round it before lunch.",
+      "The cat is called Everything. I stayed a weekend. Everything ignored me."
+    ],
+    "odd_line": "The cat is called Everything. It does not care for visitors.",
+    "rule": "The bench is first come, first served. The cat always comes first.",
+    "question": "What would you bring to a planet with one of everything?",
+    "extra": "The bakery sells one kind of bread. It's very good. There is one queue.",
+    "reel_lines": [
+      "You can walk all the way round it before lunch.",
+      "The cat is called Everything. I stayed a weekend. Everything ignored me."
+    ]
   },
   {
     "id": "009",
     "name": "Thessaly",
     "subtitle": "the upward rain",
     "story": "On Thessaly the rain goes up. It lifts off the sea in thin threads and collects in shallow pools on the undersides of the clouds, which catch the light at dusk. People wear their umbrellas on their feet. The pools in the sky all have names, and children argue about which one is deepest. There's no way to check.",
-    "facts": {"Day": "23 hours", "Moons": "2", "Gravity": "0.6 g", "Population": "300,000"},
-    "hook": "On Thessaly, the rain goes up.",
-    "reel_lines": ["It collects in pools under the clouds.", "People wear their umbrellas on their feet."],
-    "tags": ["#worldbuilding", "#illustration", "#rain"],
-    "spec": {"palette": "teal_night", "terrain": "peaks", "horizon": 0.58, "water": true, "shore": "right", "particles": "rain_up", "moons": 2, "suns": 1, "sun_x": 0.38, "sun_y": 0.4, "sun_size": 0.04, "figure": true, "layers": 4, "mist": 0.5}
+    "facts": {
+      "Day": "23 hours",
+      "Moons": "none",
+      "Gravity": "0.6 g",
+      "Population": "300,000"
+    },
+    "hook": "On Thessaly the rain falls up, so umbrellas go on your feet.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#rain"
+    ],
+    "spec": {
+      "palette": "teal_night",
+      "terrain": "peaks",
+      "horizon": 0.58,
+      "water": true,
+      "shore": "right",
+      "particles": "rain_up",
+      "moons": 0,
+      "suns": 1,
+      "sun_x": 0.38,
+      "sun_y": 0.4,
+      "sun_size": 0.04,
+      "figure": false,
+      "layers": 4,
+      "mist": 0.5,
+      "gag": "umbrella_feet",
+      "spot": "#c8452f"
+    },
+    "cover": "Umbrellas go on your feet.",
+    "beats": [
+      "It leaves the sea in thin threads and gathers under the clouds.",
+      "Every puddle in the sky has a name. Kids argue about which is deepest. Nobody can check."
+    ],
+    "odd_line": "Boots here are waterproof on top. Visitors find this confusing.",
+    "rule": "Umbrellas must be worn feet-first from October to March.",
+    "question": "Upward rain or sideways wind?",
+    "extra": "The puddles in the sky have been argued about for three hundred years.",
+    "reel_lines": [
+      "It leaves the sea in thin threads and gathers under the clouds.",
+      "Every puddle in the sky has a name. Kids argue about which is deepest. Nobody can check."
+    ]
   },
   {
     "id": "010",
     "name": "Kess",
     "subtitle": "the aurora that stays on",
     "story": "The aurora on Kess has been on for as long as anyone has kept records, so the people who live there stopped looking up a long time ago. Visitors lie down in the middle of the road to watch it. Locals step around them on the way to work. Every so often a local looks up by accident and has to sit down on the kerb for a minute.",
-    "facts": {"Day": "21 hours", "Moons": "2", "Gravity": "1.0 g", "Population": "250,000"},
-    "hook": "The aurora on Kess never switches off.",
-    "reel_lines": ["The locals stopped looking up centuries ago.", "Visitors lie down in the road to watch it."],
-    "tags": ["#worldbuilding", "#illustration", "#aurora"],
-    "spec": {"palette": "polar_night", "terrain": "peaks", "horizon": 0.6, "aurora": true, "snow": true, "trees": "pines", "house": true, "moons": 2, "suns": 0, "layers": 5, "mist": 0.4}
+    "facts": {
+      "Day": "21 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "250,000"
+    },
+    "hook": "The aurora on Kess never switches off. Locals stopped looking up.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#aurora"
+    ],
+    "spec": {
+      "palette": "polar_night",
+      "terrain": "peaks",
+      "horizon": 0.6,
+      "aurora": true,
+      "snow": true,
+      "trees": "pines",
+      "house": false,
+      "moons": 0,
+      "suns": 0,
+      "layers": 5,
+      "mist": 0.4,
+      "gag": "road_tourists"
+    },
+    "cover": "Locals stopped looking up.",
+    "beats": [
+      "Tourists lie down in the middle of the road to watch it.",
+      "Locals step around them on the way to work. Politely. Every morning."
+    ],
+    "odd_line": "Traffic report: three tourists lying in the high street, as usual.",
+    "rule": "Tourists lying in the road must keep to the left lane.",
+    "question": "Would you ever get used to it?",
+    "extra": "The bus timetable allows four minutes per tourist.",
+    "reel_lines": [
+      "Tourists lie down in the middle of the road to watch it.",
+      "Locals step around them on the way to work. Politely. Every morning."
+    ]
   },
   {
     "id": "011",
     "name": "Bramble",
     "subtitle": "the tall forest",
-    "story": "Trees on Bramble don't stop growing. The oldest are taller than the hills they stand on, and the tallest has a small cloud living in its upper branches that rains only on that tree. There's a village up there somewhere. Nobody in it has come down in four hundred years. They drop pinecones with notes tied to them, and the people on the ground answer by kite.",
-    "facts": {"Day": "30 hours", "Moons": "1", "Gravity": "0.85 g", "Population": "unknown"},
+    "story": "Trees on Bramble don't stop growing. The oldest are taller than the hills they stand on, and the tallest has a small cloud in its upper branches that rains only on that tree. Somewhere near the top is a village that hasn't come down in four hundred years. They drop pinecones with notes tied on. The ground answers by kite.",
+    "facts": {
+      "Day": "30 hours",
+      "Moons": "none",
+      "Gravity": "0.85 g",
+      "Population": "unknown"
+    },
     "hook": "The trees on Bramble are taller than the hills.",
-    "reel_lines": ["The tallest one has its own cloud.", "There's a village at the top that never comes down."],
-    "tags": ["#worldbuilding", "#illustration", "#forest"],
-    "spec": {"palette": "toxic", "terrain": "hills", "horizon": 0.66, "trees": "giant", "suns": 1, "sun_x": 0.55, "sun_y": 0.45, "sun_size": 0.045, "moons": 1, "figure": true, "layers": 5, "mist": 0.7}
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#forest"
+    ],
+    "spec": {
+      "palette": "toxic",
+      "terrain": "hills",
+      "horizon": 0.66,
+      "trees": "giant",
+      "suns": 1,
+      "sun_x": 0.55,
+      "sun_y": 0.45,
+      "sun_size": 0.045,
+      "moons": 0,
+      "figure": false,
+      "layers": 5,
+      "mist": 0.7,
+      "gag": "tree_cloud"
+    },
+    "cover": "This tree has its own weather.",
+    "beats": [
+      "The tallest one has a small cloud of its own. It only rains on that tree.",
+      "A village near the top hasn't come down in four hundred years. They send letters by pinecone."
+    ],
+    "odd_line": "Forecast for the tallest tree: light rain. Everywhere else: dry.",
+    "rule": "Do not shake the tall tree. Somebody's dinner is up there.",
+    "question": "Would you move up, or stay on the ground?",
+    "extra": "Pinecone mail takes about four seconds, six with a tailwind.",
+    "reel_lines": [
+      "The tallest one has a small cloud of its own. It only rains on that tree.",
+      "A village near the top hasn't come down in four hundred years. They send letters by pinecone."
+    ]
   }
 ]

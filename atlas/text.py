@@ -1,4 +1,4 @@
-"""Typography: the print (slide 1), the notes page (slide 2) and Reel captions."""
+"""Typography: the five carousel slides and the Reel captions."""
 from __future__ import annotations
 
 from functools import lru_cache
@@ -63,8 +63,22 @@ def paper(seed=0, size=PAGE):
     return Image.fromarray((np.clip(p, 0, 1) * 255).astype(np.uint8))
 
 
+INVITES = [
+    "Leave one in the comments. I chart a few every evening.",
+    "Names welcome below. I find a few planets each evening.",
+    "Comment a name (a pet's works) and I'll go looking for its planet.",
+    "Drop a name below and I'll chart where it lives.",
+]
+ASIDES = ["A dog's name works. So does your grandmother's.", "Pets, towns, nicknames. All of them have one.",
+          "The odder the name, the odder the planet.", "Your cat's name will do nicely."]
+
+
+def pick(options, key):
+    return options[sum(map(ord, key)) % len(options)]
+
+
 def cover(art: Image.Image, entry: dict, seed: int = 0) -> Image.Image:
-    """Slide 1: the image printed on paper, title set in the bottom margin."""
+    """Slide 1: the print on paper; title and hook set in the bottom margin."""
     W, H = PAGE
     m = MARGIN
     page = paper(seed)
@@ -75,53 +89,123 @@ def cover(art: Image.Image, entry: dict, seed: int = 0) -> Image.Image:
     d.text((W - m, y1), number, font=font("serif", 30), fill=MUTED, anchor="rs")
     d.text((W - m, y2), BRAND, font=font("italic", 27), fill=MUTED, anchor="rs")
     room = W - 2 * m - max(d.textlength(BRAND, font=font("italic", 27)), d.textlength(number, font=font("serif", 30))) - 40
+    line2 = entry.get("hook") or entry["subtitle"]
     d.text((m, y1), entry["name"], font=_fit(d, entry["name"], "serif", 66, room, "Medium"), fill=INK, anchor="ls")
-    d.text((m, y2), entry["subtitle"], font=_fit(d, entry["subtitle"], "italic", 31, room), fill=MUTED, anchor="ls")
+    d.text((m, y2), line2, font=_fit(d, line2, "italic", 31, room, floor=22), fill=MUTED, anchor="ls")
     return page
 
 
-def notes(detail: Image.Image, entry: dict, seed: int = 0) -> Image.Image:
-    """Slide 2: a close-up and the written entry, set like a book page."""
+def detail(close: Image.Image, entry: dict, seed: int = 0) -> Image.Image:
+    """Slide 2: a close-up of the joke and one odd line. Instagram re-serves
+    carousels from slide 2, so this has to work as a first impression."""
     W, H = PAGE
     m = MARGIN
+    size = (W - 2 * m, 1010)
     page = paper(seed + 1)
-    page.paste(detail.resize(DETAIL, Image.LANCZOS) if detail.size != DETAIL else detail, (m, m))
+    page.paste(close.resize(size, Image.LANCZOS) if close.size != size else close, (m, m))
     d = ImageDraw.Draw(page)
-    y = m + DETAIL[1] + 88
-    d.text((m, y), entry["name"], font=font("serif", 58, "Medium"), fill=INK, anchor="ls")
-    d.text((W - m, y), f"No. {entry['id']}", font=font("serif", 28), fill=MUTED, anchor="rs")
-    y += 44
-    d.text((m, y), entry["subtitle"], font=font("italic", 30), fill=MUTED, anchor="ls")
+    line = entry.get("odd_line") or entry["hook"]
+    f = font("italic", 46)
+    lines = wrap(d, line, f, W - 2 * m)
+    if len(lines) > 2:
+        f = font("italic", 38)
+        lines = wrap(d, line, f, W - 2 * m)
+    y = m + size[1] + 70
+    for j, ln in enumerate(lines[:3]):
+        d.text((m, y + j * int(f.size * 1.25)), ln, font=f, fill=INK, anchor="ls")
+    tail = f" · discovered by {entry['discovered_by']}" if entry.get("discovered_by") else ""
+    d.text((W - m, H - m + 4), f"{entry['name']} · No. {entry['id']}{tail}", font=font("serif", 25), fill=MUTED, anchor="rs")
+    return page
 
-    facts = list(entry.get("facts", {}).items())
-    bottom = H - m - (92 if facts else 46)
-    top = y + 40
-    size = 42
+
+def page(entry: dict, seed: int = 0) -> Image.Image:
+    """Slide 3: the written entry, set like a page from the atlas."""
+    W, H = PAGE
+    m = 96
+    pg = paper(seed + 2)
+    d = ImageDraw.Draw(pg)
+    d.text((m, 170), "From the atlas", font=font("italic", 30), fill=MUTED, anchor="ls")
+    d.text((m, 262), entry["name"], font=font("serif", 84, "Medium"), fill=INK, anchor="ls")
+    d.text((m, 316), entry["subtitle"], font=font("italic", 36), fill=MUTED, anchor="ls")
+    d.line([(m, 362), (W - m, 362)], fill=(200, 186, 164), width=2)
+    top, bottom = 410, H - 150
+    size = 50
     while True:
         f = font("serif", size)
         lines = wrap(d, entry["story"], f, W - 2 * m)
-        lh = int(size * 1.4)
-        if top + lh * len(lines) <= bottom or size <= 26:
+        lh = int(size * 1.42)
+        if top + lh * len(lines) <= bottom or size <= 30:
             break
         size -= 1
     for j, ln in enumerate(lines):
         d.text((m, top + j * lh), ln, font=f, fill=INK)
+    d.text((W / 2, H - 80), f"No. {entry['id']}", font=font("serif", 26), fill=MUTED, anchor="ms")
+    return pg
 
-    if facts:
-        lab, val = font("italic", 25), font("serif", 25)
-        while facts:
-            width = sum(d.textlength(k + " ", font=lab) + d.textlength(v, font=val) for k, v in facts) + 34 * (len(facts) - 1)
-            if width <= W - 2 * m:
-                break
-            facts = facts[:-1]
-        x, fy = m, H - m - 52
-        for k, v in facts:
-            d.text((x, fy), k + " ", font=lab, fill=MUTED, anchor="ls")
-            x += d.textlength(k + " ", font=lab)
-            d.text((x, fy), v, font=val, fill=INK, anchor="ls")
-            x += d.textlength(v, font=val) + 34
-    d.text((m, H - m - 6), CTA, font=font("italic", 25), fill=MUTED, anchor="ls")
-    return page
+
+def guide(entry: dict, seed: int = 0) -> Image.Image:
+    """Slide 4: a field-guide plate with the facts and one local rule."""
+    W, H = PAGE
+    pg = paper(seed + 3)
+    d = ImageDraw.Draw(pg)
+    x0, y0, x1, y1 = 90, 130, W - 90, H - 120
+    d.rectangle([x0, y0, x1, y1], outline=(150, 132, 110), width=3)
+    d.rectangle([x0 + 12, y0 + 12, x1 - 12, y1 - 12], outline=(190, 174, 150), width=1)
+    cx = W / 2
+    d.text((cx, y0 + 120), "Field guide to", font=font("italic", 44), fill=MUTED, anchor="ms")
+    d.text((cx, y0 + 235), entry["name"], font=_fit(d, entry["name"], "serif", 110, x1 - x0 - 120, "Medium"), fill=INK, anchor="ms")
+    y = y0 + 350
+    lab, val = font("italic", 42), font("serif", 44)
+    for k, v in list(entry.get("facts", {}).items())[:4]:
+        d.text((x0 + 70, y), k, font=lab, fill=MUTED, anchor="ls")
+        d.text((x1 - 70, y), v, font=val, fill=INK, anchor="rs")
+        d.line([(x0 + 70 + d.textlength(k, font=lab) + 18, y - 9), (x1 - 70 - d.textlength(v, font=val) - 18, y - 9)], fill=(205, 192, 170), width=2)
+        y += 86
+    rule = entry.get("rule")
+    if rule:
+        y += 40
+        d.line([(x0 + 70, y), (x1 - 70, y)], fill=(170, 152, 128), width=2)
+        y += 96
+        d.text((cx, y), f"Local rule No. {entry.get('rule_no', int(''.join(c for c in entry['id'] if c.isdigit()) or 1))}",
+               font=font("italic", 42), fill=(150, 92, 60), anchor="ms")
+        y += 40
+        f = font("serif", 52)
+        lines = wrap(d, rule, f, x1 - x0 - 160)
+        if len(lines) > 4:
+            f = font("serif", 44)
+            lines = wrap(d, rule, f, x1 - x0 - 160)
+        for j, ln in enumerate(lines):
+            d.text((cx, y + 30 + j * int(f.size * 1.3)), ln, font=f, fill=INK, anchor="ma")
+    credit = f"Discovered by {entry['discovered_by']}" if entry.get("discovered_by") else "Issued by the Atlas of Elsewhere"
+    d.text((cx, H - 62), credit, font=font("italic", 30 if entry.get("discovered_by") else 26), fill=MUTED, anchor="ms")
+    return pg
+
+
+def invite(close: Image.Image, entry: dict, seed: int = 0) -> Image.Image:
+    """Slide 5: the invitation, under a strip of the close-up."""
+    W, H = PAGE
+    m = MARGIN
+    pg = paper(seed + 4)
+    sh = int(close.width * 0.42)
+    top = max(0, min(close.height - sh, int(close.height * 0.5 - sh / 2)))
+    strip = close.crop((0, top, close.width, top + sh)).resize((W - 2 * m, int((W - 2 * m) * 0.42)), Image.LANCZOS)
+    pg.paste(strip, (m, m))
+    d = ImageDraw.Draw(pg)
+    y = m + strip.height + 250
+    f = font("serif", 84, "Medium")
+    for j, ln in enumerate(wrap(d, "Your name has a planet too.", f, W - 2 * 110)):
+        d.text((W / 2, y + j * 100), ln, font=f, fill=INK, anchor="ms")
+    y += 230
+    f2 = font("italic", 42)
+    for j, ln in enumerate(wrap(d, pick(INVITES, entry["id"]), f2, W - 2 * 130)):
+        d.text((W / 2, y + j * 56), ln, font=f2, fill=INK, anchor="ms")
+    y += 170
+    d.text((W / 2, y), pick(ASIDES, entry["name"]), font=font("italic", 32), fill=MUTED, anchor="ms")
+    d.text((W / 2, H - m - 10), f"No. {entry['id']} · {BRAND}", font=font("serif", 26), fill=MUTED, anchor="ms")
+    return pg
+
+
+notes = detail  # older name
 
 
 # --------------------------------------------------------------------------
