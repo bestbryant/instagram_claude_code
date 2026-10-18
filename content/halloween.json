@@ -1,0 +1,35 @@
+[
+  {
+    "id": "H01",
+    "name": "Hollow",
+    "subtitle": "the shy ghosts",
+    "story": "The ghosts on Hollow are shy. They live in wardrobes and under the stairs, and if you say boo they faint, which is awkward for everyone. At the end of October the living go door to door to apologise for the year's frights. The ghosts leave sweets out on the step to say it's fine, really.",
+    "facts": {"Day": "13 hours", "Moons": "1", "Gravity": "0.9 g", "Population": "4,000 living"},
+    "hook": "The ghosts on Hollow are scared of you.",
+    "reel_lines": ["If you say boo, they faint.", "In October, the living go door to door to apologise."],
+    "tags": ["#halloween", "#worldbuilding", "#illustration"],
+    "spec": {"palette": "pumpkin", "terrain": "hills", "horizon": 0.66, "big_moon": true, "suns": 0, "house": true, "trees": "pines", "figure": true, "layers": 4, "mist": 0.65}
+  },
+  {
+    "id": "H02",
+    "name": "Lantern",
+    "subtitle": "the pumpkin coast",
+    "story": "Pumpkins on Lantern grow as big as garden sheds and glow from the inside from September until the first frost. Fishing boats steer home by them. Every family carves a face into theirs, so the boats know whose house they're passing.",
+    "facts": {"Day": "20 hours", "Moons": "2", "Gravity": "1.1 g", "Population": "62,000"},
+    "hook": "On Lantern, the boats steer home by the pumpkins.",
+    "reel_lines": ["They grow as big as sheds and glow all autumn.", "Each family carves a face, so the boats know whose house it is."],
+    "tags": ["#halloween", "#worldbuilding", "#illustration"],
+    "spec": {"palette": "pumpkin", "terrain": "hills", "horizon": 0.6, "water": true, "shore": "left", "lighthouse": true, "moons": 2, "suns": 0, "layers": 4, "mist": 0.5, "lanterns": 9}
+  },
+  {
+    "id": "H03",
+    "name": "Mothwing",
+    "subtitle": "the light-eating moths",
+    "story": "The moths on Mothwing have wingspans like kites, and they live on light. Each night they lift the moonlight off the fields and carry it back up. Leave a candle in the window and they'll take that too, but they leave a little glowing dust on the sill, which lasts until morning.",
+    "facts": {"Day": "36 hours", "Moons": "2", "Gravity": "0.7 g", "Population": "19,000"},
+    "hook": "The moths on Mothwing eat moonlight.",
+    "reel_lines": ["Each night they carry it back up off the fields.", "They leave glowing dust on the windowsill."],
+    "tags": ["#halloween", "#worldbuilding", "#illustration"],
+    "spec": {"palette": "lilac_dusk", "terrain": "spires", "horizon": 0.64, "particles": "embers", "moons": 2, "suns": 0, "figure": true, "layers": 5, "mist": 0.55, "moths": 5}
+  }
+]
