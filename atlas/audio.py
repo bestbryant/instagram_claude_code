@@ -50,7 +50,7 @@ def ambient(seconds: float, seed: int, path: str) -> str:
 
     # a few soft bell notes
     for _ in range(int(rng.integers(5, 9))):
-        start = rng.uniform(0.8, seconds - 2.5)
+        start = rng.uniform(min(0.8, seconds * 0.2), max(seconds - 2.5, seconds * 0.6))
         f = root * 4 * 2 ** (PENTA[int(rng.integers(0, len(PENTA)))] / 12)
         dt = np.clip(t - start, 0, None)
         env = (t >= start) * np.exp(-dt / 1.4) * (1 - np.exp(-dt / 0.01))
@@ -65,7 +65,7 @@ def ambient(seconds: float, seed: int, path: str) -> str:
     sig += wind[:, None]
 
     sig = sig * 0.55 + _reverb(sig, rng) * 0.9
-    fade = np.minimum(1, t / 1.5) * np.minimum(1, (seconds - t) / 2.0)
+    fade = np.minimum(1, t / min(1.5, seconds / 4)) * np.minimum(1, (seconds - t) / min(2.0, seconds / 4))
     sig *= fade[:, None]
     sig *= 0.5 / (np.abs(sig).max() + 1e-9)
 

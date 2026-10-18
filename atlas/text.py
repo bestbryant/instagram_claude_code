@@ -178,3 +178,41 @@ def reel_card(size, lines, kind="hook"):
         scrim[..., 3] = band[:, None] * 255
         out = Image.alpha_composite(Image.fromarray(scrim.astype(np.uint8), "RGBA"), out)
     return np.asarray(out, np.float32) / 255
+
+
+def overlay(size, items, scrim=0.3):
+    """General text card for Reels.
+
+    items: dicts with text, y (fraction of height), kind ('serif'|'italic'|'sans'),
+    size, weight, align ('center'|'left'), x (px for left align), width (px wrap).
+    """
+    W, H = size
+    base = Image.new("RGBA", size, (0, 0, 0, 0))
+    white = (250, 246, 238, 255)
+
+    def paint(d):
+        for it in items:
+            f = font(it.get("kind", "serif"), it.get("size", 64), it.get("weight", "Regular"))
+            width = it.get("width", W - 2 * 96)
+            lines = wrap(d, it["text"], f, width)
+            lh = int(f.size * it.get("leading", 1.18))
+            y = H * it["y"]
+            for ln in lines:
+                if it.get("align", "center") == "center":
+                    d.text((W / 2, y), ln, font=f, fill=it.get("color", white), anchor="ma")
+                else:
+                    d.text((it.get("x", 96), y), ln, font=f, fill=it.get("color", white))
+                y += lh
+
+    out = _shadowed(base, paint, blur=12, strength=190)
+    if scrim:
+        a = np.asarray(out.getchannel("A"), np.float32)
+        rows = np.flatnonzero(a.max(axis=1) > 8)
+        if len(rows):
+            c, half = (rows[0] + rows[-1]) / 2, (rows[-1] - rows[0]) / 2 + 90
+            y = np.arange(H, dtype=np.float32)
+            band = np.exp(-np.maximum(np.abs(y - c) - half * 0.6, 0) ** 2 / (2 * (half * 0.5) ** 2)) * scrim
+            sc = np.zeros((H, W, 4), np.float32)
+            sc[..., 3] = band[:, None] * 255
+            out = Image.alpha_composite(Image.fromarray(sc.astype(np.uint8), "RGBA"), out)
+    return np.asarray(out, np.float32) / 255
