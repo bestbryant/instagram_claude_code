@@ -1,155 +1,153 @@
 # Atlas of Elsewhere: growth strategy
 
 **Goal:** 50,000 real followers.
-**Concept:** a small atlas of places that aren't on any map, one entry a day. Each entry is a screen-print style illustration on cream paper, a short written entry by a dry, well-travelled narrator, and a 13-second Reel. The core mechanic is that **anyone can leave a name in the comments and get the planet that goes with it.**
+**Concept:** an atlas of places that aren't on any map, one entry a day. Each planet has one absurd, very ordinary problem: nine-minute nights, rain that falls up, a tide that comes in every eleven years. It's told by a dry narrator who has been there and drawn as a screen-print style illustration. The growth mechanic is that **anyone can leave a name in the comments and get the planet that goes with it.**
+
+Account: **@bestblueberrys** (rename it, see §6). Posting is automatic through Meta's official API (§5).
 
 ---
 
-## 1. Why this can grow
+## 1. What the research said, and what changed
 
-| Lever | How the account uses it |
+A critique of the first version and a fact-checked research pass (Oct 2026) found:
+
+| Finding | Source | What we changed |
+|---|---|---|
+| Instagram's top ranking signals are **watch time, likes per reach and sends per reach**. Sends matter most for reaching non-followers. | Mosseri, via Social Media Today 2025 | Every planet is built around a joke worth sending to a friend, and hooks are framed around relatable habits ("A planet for people who reply to texts five days late"). |
+| Reels have a **skip rate**: the share of viewers who leave in the first 3 seconds. | Instagram, Aug 2025 | The hook is on screen from **frame 1**, with motion immediately (push-in). |
+| On-screen text needs **about 0.3 s per word**. | subtitle standards | Each text beat is timed to its word count. |
+| Carousels get **re-served starting from slide 2**. | Mosseri / Buffer | 5 slides. Slide 2 is a standalone close-up plus one odd line. |
+| **Replays count as views.** | Instagram, Apr 2025 | Reels end on the same wide shot they open on, so they loop. |
+| Personalised **"your name" content** has a viral precedent (accounts gained 100k+ in days, 2020). | Refinery29, 2020 | Name requests are the main growth series. They get a real atlas number and a "Discovered by @you" credit. |
+| Hashtags are capped at 5 and don't drive reach. Keywords do. | Dec 2025 | Captions open with "Imaginary planet No. 004: Maren". Max 3 tags. |
+| Strange Planet (6M+) grew on **one fixed style, one deadpan voice, one recurring cast**. | Wikipedia / Variety | A recurring character, **the cartographer in a yellow coat**, is hidden in every print, and running institutions recur (the council, the postwoman, local rules). |
+| Asking for a specific word or emoji in comments is down-ranked as engagement bait. | Meta guidelines | The invitation is worded differently each time. Questions are open-ended. |
+| "AI slop" means low effort, mass-produced and samey. Viewers try to tell AI from human work. | Merriam-Webster 2025; ACM 2026 | Every print draws its own joke, and weekly process Reels show the layers being drawn in code. |
+
+The old version's biggest problems were that the Reels cut the punchline, the prints didn't show the joke, and the first second was a static landscape. All three are fixed.
+
+---
+
+## 2. The content system
+
+**Daily planet: carousel, 5 slides**
+1. The print, with the hook in the margin ("The longest night on Veyra lasts nine minutes.")
+2. A close-up of the visual gag with one odd line ("Population about 40,000. Most of them asleep in armchairs.")
+3. The written entry, set like a book page
+4. Field guide: day length, moons, gravity, population, and a **local rule** ("Naps longer than nine minutes must be registered with the council.")
+5. "Your name has a planet too." (worded differently each time)
+
+**Daily planet: Reel, 12–15 s, loops**
+hook on frame 1 + push-in → close-up of the gag + setup line → punchline → name card on the opening shot. The cover is the gag plus a short hook.
+
+**Name requests (the growth engine)**
+"@sam asked for: Biscuit" on frame 1 → the planet → the punchline → "Found for @sam". The planet gets the next atlas number and "Discovered by @sam" on its plate. The caption asks them to repost it.
+
+**Sequels.** Some entries end on an open question that pays off later. *Hush* (Oct 21): "He proposed across the valley in March. Her answer arrives Thursday." Then *Hush, part two* goes up that Thursday.
+
+**Tap to stop.** Every planet flashes by. "Tap to stop. That's where you're moving." It drives comments ("I got Ovo").
+
+**Process Reels, weekly.** "No image generator. Ovo is drawn in code, one layer at a time." This is the honest answer to "is this AI?" The art is code; the writing was drafted with Claude.
+
+**Ideas queued for later** (from the research; build once the basics are working):
+- Birth-month planets (13 slides)
+- "Pick a planet" (3 doors)
+- Weekly "Discovered this week" request roundup (up to 20 slides)
+- Tourism-board posters
+- "Real or Elsewhere?" quiz (one real NASA exoplanet fact against three of ours)
+- A dictionary word per planet
+
+---
+
+## 3. Keeping it from looking like AI slop
+
+- **Every print draws its own joke.** No interchangeable landscapes, and props are rationed (no spare moons, no stock cabin in every scene).
+- **One narrator with a voice.** Specific details, harder punchlines, no em dashes, no "whimsical", no emoji bullets, no hashtag walls.
+- **Recurring cast and institutions** reward people who follow along.
+- **Show the process** every week.
+- **Be honest.** The art is code, not an image generator, and the writing is AI-assisted. Never claim it's hand-drawn or human-written. If asked, say so plainly.
+- **Add a human line** to request captions when you can. One sentence of your own beats any amount of polish.
+
+---
+
+## 4. Schedule (`content/schedule.json`)
+
+Day 1 = Oct 18. The daily run posts whatever is due, so a missed day catches up.
+
+| Day | Posts |
 |---|---|
-| **Comments** (a strong ranking signal) | Every post ends with "Leave a name in the comments and I'll find its planet." It costs nothing and feels personal. |
-| **Shares** (the strongest signal for reaching non-followers) | The entries are short, specific and a bit funny, which makes them easy to send to a friend. When someone gets a planet named after their dog or grandmother, they repost it, and their followers find the account. |
-| **Saves** | Slide 2 is the written entry, set like a page from a book, with a close-up of the print. People save it to read later. |
-| **Reels reach** | Every planet also comes as a Reel: a one-line hook, slow parallax motion, two lines of story, then the name. |
-| **A grid that converts** | Every post is printed on the same paper, with the same typesetting and the same ink treatment. A profile visit looks like a finished print series, not a content feed. |
-| **Endless content** | `python -m atlas planet "<any name>"` charts a new world in seconds. |
+| 1 ✅ | Carousels: Elsewhere (pin it), Veyra, Orrin |
+| 2 | Reel: Veyra |
+| 3 | Reel: Ovo |
+| 4 | Reel: Hush ("answer due Thursday"), carousel: Ovo |
+| 5 | Reel: Kess, carousel: Hush |
+| 6 | Reel: Maren, carousel: Kess |
+| 7 | **Reel: Hush, part two** |
+| 8 | Process Reel: Ovo (pin it) |
+| 9 | Reel: Thessaly, carousel: Maren |
+| 10 | Reel: Orrin, **Tap to stop** |
+| 11 | Reel: Hollow (Halloween), carousel: Thessaly |
+| 12 | Reel: Luma |
+| 13 | Reel: Lantern, carousel: Hollow |
+| 14 | Reel: Bramble, carousel: Luma |
+| 15 | Reel: Mothwing (Halloween night, US), carousel: Lantern |
+| 16–21 | Selk, process: Veyra, Cinderwake, Elsewhere Reel, process: Kess, remaining carousels |
 
-**The flywheel:** post → people leave names → you chart one to three of them and tag the requester → they share it → their friends leave names → repeat.
-
----
-
-## 2. Keeping it from looking like AI slop
-
-This matters more than anything else on this page. "AI slop" accounts get scrolled past, reported and unfollowed. What makes this one different:
-
-**The look**
-- The images are **not** from an AI image model. They are drawn by the code in this repo: layered silhouettes, then a screen-print finish (8 to 10 inks, grainy stochastic screening, a spot colour, paper texture). That gives them the slightly imperfect, limited-palette feel of risograph prints.
-- Everything sits on the same cream paper with a margin and a typeset title. **Don't mix in AI-generated images**: they would break the look straight away.
-- No text over the artwork on feed posts. The title lives in the margin, like a gallery print.
-
-**The writing**
-- **One narrator, who has been there.** Plain, specific details ("she knew to bring a towel", "someone practising the trumpet badly") rather than big adjectives.
-- **Vary the shape.** Not every entry needs a twist in the last line. Some just stop.
-- **Avoid the tells:** no em dashes, no "a tapestry of", "whimsical", "nestled", "ethereal", no lists of three in every sentence, no emoji bullet points, at most 3 hashtags.
-- **Add a human line to requests.** When you post a requested planet, add one sentence of your own about the person or the name ("Found for @sam, whose dog is apparently very loud"). That one line does more than any amount of polish.
-- **Rewrite freely.** The launch entries and the request templates were drafted with Claude. Edit them into your own voice whenever you like.
-
-**Honesty:** the illustrations are generated by code and the text was drafted with AI help. Don't claim otherwise. "Illustrated in code" in the bio is accurate, and if someone asks how it's made, tell them; people respect a clear process. Hiding it and getting caught is what turns an account into "AI slop" in the comments.
+Name-request planets go out on top of this, up to 2 a day.
 
 ---
 
-## 3. Account setup (about 10 minutes, on your phone)
+## 5. What runs automatically
 
-1. **Username** (first one available): `@atlasofelsewhere` · `@atlas.of.elsewhere` · `@elsewhere.atlas` · `@atlasofelsewhere.prints`
-2. **Name field** (searchable): `Atlas of Elsewhere · imaginary planets`
+A Claude routine wakes this session **every day at 00:13 UTC** (evening in the Americas). Each run:
+1. posts whatever is due in the schedule (official Graph API; images from GitHub, Reels uploaded directly)
+2. reads recent comments, turns name requests into planets, posts up to 2 a day, and replies to the people who asked
+3. refreshes the access token before it expires
+4. logs everything to `content/published.json` and `content/requests.json`
+
+To stop it, disable the routine "Atlas of Elsewhere: daily post" in your Claude routines.
+
+---
+
+## 6. Things only you can do (the API can't)
+
+1. **Rename the account.** Profile → Edit profile → Username → `atlasofelsewhere` (or the closest available). The current handle, @bestblueberrys, doesn't match the brand.
+2. **Name field:** `Atlas of Elsewhere · imaginary planets`
 3. **Bio:**
    ```
    Places that aren't on any map. One a day.
    Leave a name in the comments and I'll find its planet.
    Illustrated in code.
    ```
-4. **Profile picture:** `output/profile-picture.jpg`
-5. **Switch to a Creator account:** Settings → *Account type and tools* → *Switch to professional account* → Creator → category **Artist**. You need this for Insights and for the API publisher.
-6. **Security:** your password was shared in a chat, so **change it now and turn on two-factor authentication.**
-7. **Warm the account up** before the first post: follow about 20 accounts you actually like in illustration, printmaking, worldbuilding and space art, and like a few posts. A brand-new account that posts straight away gets less trust from the algorithm.
+4. **Profile photo:** `output/profile-picture.jpg`
+5. **Pin** the Elsewhere post now, and the Ovo process Reel when it goes up (day 8).
+6. **Stories** (they can't be fully automated with stickers): share each new post with a **Question sticker, "Name a planet"**, and once a week an **Add Yours** sticker ("the planet with your name").
+7. **Security:** change your Instagram password and turn on two-factor authentication. Rotate the Meta **app secret** (it was pasted in chat). The access token keeps working after both.
 
 ---
 
-## 4. Launch: the first 15 days
+## 7. What not to do
 
-Everything for this is pre-rendered in `output/launch/`. The order is in `content/schedule.json`.
-
-| Day | Post |
-|---|---|
-| 1 | Carousels **000 Elsewhere** (pin it), **001 Veyra**, **002 Orrin**. The profile opens with a full row. |
-| 2 | Reel 001 Veyra |
-| 3 | Reel 003 Hush |
-| 4 | Reel 002 Orrin + carousel 003 Hush |
-| 5–14 | One Reel a day, plus a carousel every other day (see the schedule) |
-| 15 | Reel 000 Elsewhere |
-
-From day 3 on, **answer name requests every day** (section 5). Requests are the content that compounds.
-
-**Process Reels** (ready in `output/process/`): short videos of a print being built layer by layer, then inked. Post one a week, starting around day 8. They're the clearest answer to "is this AI?", and process videos tend to travel well. Make more with `python -m atlas process <id or name>`.
-
-**Halloween** (ready in `output/halloween/`): **H01 Hollow** (shy ghosts), **H02 Lantern** (the pumpkin coast) and **H03 Mothwing** (light-eating moths). Post them as Reels on Oct 27, 29 and 31, alongside the regular schedule.
-
-**Posting time:** start at 6–9 pm in your own timezone. After two weeks, check Insights → *Most active times* and adjust.
-
-### How to post each type
-- **Carousel:** upload `1-cover.jpg` then `2-notes.jpg`. Paste `caption-carousel.txt`. Under *Advanced settings → Accessibility*, paste `alt-text.txt`.
-- **Reel:** upload `reel.mp4`, set `reel-cover.jpg` as the cover, and paste `caption-reel.txt`.
-  - **Audio:** the Reel has its own quiet ambient track. Swapping in a calm *trending* sound at low volume usually gets more reach.
-  - If your app offers *Show in profile grid*, turn it off for Reels to keep the grid all prints. Either way works.
+- No bought followers, likes or views. No follow/unfollow, no pods, no "growth services".
+- Don't reply to comments in bulk or with copy-paste text. Replies should be individual and spread out.
+- Never re-upload the same Reel file. Re-cut it instead (Instagram's originality rules).
+- Don't post AI-generated images or faces. They break the look, and AI-person profiles get labelled.
 
 ---
 
-## 5. The daily routine (15–20 minutes)
+## 8. Honest expectations
 
-1. **Post** the scheduled item.
-2. **Reply to every comment in the first hour**, like a person would: short, specific, and different each time.
-3. **Chart one to three name requests:**
-   ```bash
-   python -m atlas planet "Biscuit" --by @their_handle
-   ```
-   Add your one human line to the caption, post it, and **tag the requester**. Reply to their comment to say it's up. Most people reshare their own planet.
-   - Skip requests that are a celebrity's name, a slur, or a private person's full name.
-4. **Stories (2 minutes):** share each new post to your Story with a **Question sticker** ("Name a planet"). The answers become tomorrow's requests.
-5. **10 minutes of real engagement:** leave thoughtful comments on recent posts from illustration, printmaking, worldbuilding and sci-fi accounts. "Nice 🔥" doesn't count.
-
----
-
-## 6. Formats to rotate in after week 2
-
-- **Requested planets, part N:** a carousel of five requested planets, each one tagged.
-- **Pet planets:** pet names are the most-shared category.
-- **City planets:** "the planet called Lisbon". Locals share it.
-- **"Which one would you live on?":** a carousel of four prints, and the comments pick.
-- **Return visits:** follow-ups on popular planets ("Veyra, the night the lighthouse didn't come on").
-- **Process posts:** a Reel showing a print being built layer by layer. Process content is the strongest proof that this isn't AI slop, and it does well.
-
----
-
-## 7. Distribution beyond Instagram
-
-The same files work everywhere:
-- **TikTok and YouTube Shorts:** post `reel.mp4`, with your Instagram handle in the profile.
-- **Pinterest:** pin `1-cover.jpg`. Print-style illustration does well there, and pins keep sending traffic for months.
-- **Threads:** post the written entry plus the print.
-- **Reddit:** r/worldbuilding, r/ImaginaryLandscapes and r/generative. Read each subreddit's rules on self-promotion and contribute, don't just drop links.
-- **Collabs:** use Instagram *Collab* posts with illustrators or worldbuilding creators. The pitch is easy: "I found the planet for your name; want to co-post it?"
-
-**Optional paid boost:** once a Reel clearly beats your average organically, boosting it for **$5–10 a day** to interests like illustration, science fiction and astronomy is a legitimate way to speed up early growth. Only boost proven winners.
-
----
-
-## 8. What not to do (this gets accounts shadow-banned or disabled)
-
-- ❌ Buying followers, likes or views
-- ❌ Follow/unfollow bots, engagement pods, "growth services"
-- ❌ Any tool that logs in with your password (only use the official API: `docs/PUBLISHING.md`)
-- ❌ Hashtag walls (captions here use 3)
-- ❌ Deleting posts that underperform (archive them if you must)
-- ❌ Copy-paste comments on other accounts
-
----
-
-## 9. Honest expectations and how to measure progress
-
-50k is achievable for an account like this, but not overnight. A typical path with **daily posting and active request replies**:
-
-| Milestone | Typical timing | What usually gets you there |
+| Milestone | Typical timing | What gets you there |
 |---|---|---|
-| 1,000 | weeks 2–6 | launch batch + first requests + Stories |
-| 10,000 | months 2–5 | one or two Reels breaking out (100k+ views each) |
-| 50,000 | months 5–12 | daily Reels, the request flywheel, cross-posting |
+| 200 | first 2–3 weeks | daily Reels + first name requests. Unlocks Trial Reels, so hooks can be tested on non-followers. |
+| 1,000 | weeks 3–8 | request flywheel + reposts by requesters |
+| 10,000 | months 2–5 | one or two Reels breaking out (100k+ views) |
+| 50,000 | months 5–12 | daily posting, requests as the main series, cross-posting to TikTok/Shorts/Pinterest |
 
-One Reel taking off can compress this a lot, but plan for the steady path.
+**Check weekly in Insights:**
+- skip rate (lower is better)
+- sends per reach (the best growth predictor)
+- comments per post (name requests)
+- profile visits → follows
 
-**Check weekly (Insights):**
-- **Reach from non-followers %.** Reels should be above 50%. If it's lower, the hooks need work.
-- **Shares per 1,000 reach.** The best predictor of growth. Make more of whatever gets shared.
-- **Comments per post** (name requests). This is the flywheel's fuel.
-- **Profile visits → follows %.** If it's low, improve the bio or the pinned posts.
+Make more of what gets sent. Stop what gets skipped.
