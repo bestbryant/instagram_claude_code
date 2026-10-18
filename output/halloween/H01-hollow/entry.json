@@ -9,11 +9,7 @@
     "Gravity": "0.9 g",
     "Population": "4,000 living"
   },
-  "hook": "The ghosts on Hollow are scared of you.",
-  "reel_lines": [
-    "If you say boo, they faint.",
-    "In October, the living go door to door to apologise."
-  ],
+  "hook": "A planet for people who say sorry to furniture.",
   "tags": [
     "#halloween",
     "#worldbuilding",
@@ -27,8 +23,22 @@
     "suns": 0,
     "house": true,
     "trees": "pines",
-    "figure": true,
+    "figure": false,
     "layers": 4,
-    "mist": 0.65
-  }
+    "mist": 0.65,
+    "gag": "fainted_ghost"
+  },
+  "cover": "Say boo and they faint.",
+  "beats": [
+    "The ghosts on Hollow are shy. Say boo and they faint.",
+    "So at the end of October, the living go door to door to apologise."
+  ],
+  "odd_line": "Please don't say boo near the ghosts. It takes them an hour to come round.",
+  "rule": "Saying boo requires written consent.",
+  "question": "What's the last thing you apologised to?",
+  "extra": "The haunted house tour is mostly people whispering sorry into cupboards.",
+  "reel_lines": [
+    "The ghosts on Hollow are shy. Say boo and they faint.",
+    "So at the end of October, the living go door to door to apologise."
+  ]
 }

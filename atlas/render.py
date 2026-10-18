@@ -171,6 +171,10 @@ class Spec:
     cartographer: bool = True      # the narrator in a yellow coat, hidden in the print
     spot: str = ""                 # extra spot-colour ink, e.g. red umbrellas
     glow_rims: bool = False        # canyon edges that glow at night
+    sign: str = ""                 # a signpost; lines separated by "|"
+    crowd: int = 0                 # a row of people, each holding something
+    daisies: int = 0               # flowers across the foreground
+    lamp: bool = False             # a tall lamp aimed at the sky
 
 
 def random_spec(seed: int) -> Spec:
@@ -850,7 +854,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
 
     # the planet's visual joke and the cartographer
     scene.focus, scene.marks = (0.5, 0.62), {}
-    if spec.gag or spec.cartographer:
+    if spec.gag or spec.cartographer or spec.sign or spec.crowd or spec.daisies or spec.lamp:
         from . import props
         globe = None
         if spec.gag == "tiny_planet":
@@ -867,6 +871,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
             rng=lambda tag: seeds.rng("gag", tag), focus=(0.5, 0.62), marks={})
         if spec.gag:
             props.GAGS[spec.gag](ctx)
+        props.extras(ctx)
         if spec.cartographer:
             props.cartographer(ctx, avoid_x=ctx.focus[0] * W)
         scene.focus, scene.marks = ctx.focus, ctx.marks

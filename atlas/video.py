@@ -6,6 +6,7 @@ and a soft tick on the soundtrack so the edit has rhythm.
 """
 from __future__ import annotations
 
+import os
 import subprocess
 import tempfile
 import wave
@@ -129,6 +130,7 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
                  cover_path: Path | None = None) -> Path:
     """Render shots back to back. overlays: (card, t0, t1) on the whole timeline."""
     out = Path(out)
+    tmp_out = out.with_name(out.stem + ".partial.mp4")   # renamed into place only when complete
     out.parent.mkdir(parents=True, exist_ok=True)
     cache = {}
     prepared = [_Prepared(s, cache) for s in shots]
@@ -142,7 +144,7 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
                "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-", "-i", wav,
                "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-maxrate", "7M", "-bufsize", "14M",
                "-pix_fmt", "yuv420p", "-profile:v", "high", "-r", str(fps),
-               "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-shortest", "-movflags", "+faststart", str(out)]
+               "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-shortest", "-movflags", "+faststart", "-f", "mp4", str(tmp_out)]
         proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
         cover = None
         try:
@@ -163,7 +165,9 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
             proc.stdin.close()
             proc.wait()
         if proc.returncode:
+            tmp_out.unlink(missing_ok=True)
             raise RuntimeError(f"ffmpeg failed ({proc.returncode})")
+        os.replace(tmp_out, out)
     if cover_path is not None and cover is not None:
         to_image(cover).save(cover_path, quality=92)
     return out

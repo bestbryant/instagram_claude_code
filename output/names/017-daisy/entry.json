@@ -1,0 +1,35 @@
+{
+  "id": "017",
+  "name": "Daisy",
+  "subtitle": "every Daisy's planet",
+  "hook": "Every Daisy gets this planet.",
+  "cover": "The flowers know if he loves you.",
+  "beats": [
+    "The fields on Daisy are full of daisies, and each one knows whether he loves you or not.",
+    "First dates are held in car parks, well away from any flowers."
+  ],
+  "odd_line": "On a quiet evening the meadow sounds like very light applause, and some booing.",
+  "story": "The fields on Daisy are covered in daisies, and every one of them knows whether he loves you or not. People stopped pulling petals years ago and just ask the flowers directly. On a quiet evening the meadow sounds like very light applause, with the occasional boo. First dates are held in car parks, well away from any flowers.",
+  "rule": "Flowers may not be consulted about third parties.",
+  "question": "Know a Daisy? Send her this one.",
+  "extra": "Florists here need a licence and a good lawyer.",
+  "facts": {},
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#daisy"
+  ],
+  "spec": {
+    "palette": "pastel",
+    "terrain": "hills",
+    "horizon": 0.62,
+    "suns": 1,
+    "sun_x": 0.25,
+    "sun_y": 0.3,
+    "sun_size": 0.04,
+    "layers": 4,
+    "mist": 0.5,
+    "daisies": 140,
+    "crowd": 2
+  }
+}

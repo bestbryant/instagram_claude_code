@@ -1,0 +1,47 @@
+{
+  "id": "001",
+  "name": "Veyra",
+  "subtitle": "two suns, short nights",
+  "story": "Veyra has two suns, and one of them is nearly always up, so the whole night lasts nine minutes. Beds went out of fashion centuries ago. People sleep sitting up in good armchairs, shoes on, ready to go. The lighthouse works nine minutes a night and is widely thought to have the best job going. Hit snooze once and you miss the night entirely.",
+  "facts": {
+    "Day": "31 hours",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "about 40,000"
+  },
+  "hook": "A planet for people who always want five more minutes.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#lighthouse"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "hills",
+    "horizon": 0.6,
+    "water": true,
+    "shore": "left",
+    "lighthouse": true,
+    "suns": 2,
+    "sun_x": 0.62,
+    "sun_y": 0.47,
+    "sun_size": 0.055,
+    "layers": 4,
+    "mist": 0.5,
+    "relief": 1.1,
+    "gag": "chair_sleepers"
+  },
+  "cover": "Snooze once, miss the night.",
+  "beats": [
+    "Two suns, so the whole night lasts nine minutes. Everyone sleeps sitting up, in armchairs.",
+    "Hit snooze once and you miss the night entirely."
+  ],
+  "odd_line": "The lighthouse works nine minutes a night and has the easiest job on the planet.",
+  "rule": "Naps longer than nine minutes must be declared.",
+  "question": "What would you do with a nine-minute night?",
+  "extra": "Bedtime stories here are about four sentences long.",
+  "reel_lines": [
+    "Two suns, so the whole night lasts nine minutes. Everyone sleeps sitting up, in armchairs.",
+    "Hit snooze once and you miss the night entirely."
+  ]
+}

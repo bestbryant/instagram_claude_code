@@ -2,18 +2,14 @@
   "id": "010",
   "name": "Kess",
   "subtitle": "the aurora that stays on",
-  "story": "The aurora on Kess has been on for as long as anyone has kept records, so the people who live there stopped looking up a long time ago. Visitors lie down in the middle of the road to watch it. Locals step around them on the way to work. Every so often a local looks up by accident and has to sit down on the kerb for a minute.",
+  "story": "The aurora on Kess has been on since before anyone wrote things down, so the people who live there stopped looking up. Tourists lie down in the middle of the road to watch it. Commuters step around them without breaking stride. Now and then one of the commuters looks up by accident and has to sit down on the kerb for a minute.",
   "facts": {
     "Day": "21 hours",
-    "Moons": "2",
+    "Moons": "none",
     "Gravity": "1.0 g",
     "Population": "250,000"
   },
-  "hook": "The aurora on Kess never switches off.",
-  "reel_lines": [
-    "The locals stopped looking up centuries ago.",
-    "Visitors lie down in the road to watch it."
-  ],
+  "hook": "A planet for people who stopped noticing the view from their window.",
   "tags": [
     "#worldbuilding",
     "#illustration",
@@ -26,10 +22,24 @@
     "aurora": true,
     "snow": true,
     "trees": "pines",
-    "house": true,
-    "moons": 2,
+    "house": false,
+    "moons": 0,
     "suns": 0,
     "layers": 5,
-    "mist": 0.4
-  }
+    "mist": 0.4,
+    "gag": "road_tourists"
+  },
+  "cover": "They stopped looking up.",
+  "beats": [
+    "The aurora on Kess has never switched off, so the people who live there stopped looking up.",
+    "Now and then one of them looks up by accident and has to sit down on the kerb for a minute."
+  ],
+  "odd_line": "Traffic report: three tourists lying in the high street, as usual.",
+  "rule": "Tourists lying in the road must keep to the left lane.",
+  "question": "What did you stop noticing where you live?",
+  "extra": "The bus timetable allows four minutes per tourist.",
+  "reel_lines": [
+    "The aurora on Kess has never switched off, so the people who live there stopped looking up.",
+    "Now and then one of them looks up by accident and has to sit down on the kerb for a minute."
+  ]
 }

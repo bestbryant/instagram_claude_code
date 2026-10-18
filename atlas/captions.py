@@ -9,16 +9,15 @@ def _closing(entry, by):
     lines = []
     if by:
         lines.append(f"Found for {by}. Repost it so they see their planet.")
-    q = entry.get("question")
-    lines.append((q + " " if q else "") + pick(INVITES, entry["id"] + entry["name"]))
+    if entry.get("question"):
+        lines.append(entry["question"])
+    lines.append(pick(INVITES, entry["id"] + entry["name"]))
     return "\n".join(lines)
 
 
 def carousel(entry: dict, by: str | None = None) -> str:
-    parts = [f"Imaginary planet No. {entry['id']}: {entry['name']}", entry["story"]]
-    if entry.get("rule"):
-        parts.append(f"Local rule: {entry['rule']}")
-    parts += [_closing(entry, by), " ".join(entry["tags"][:3])]
+    parts = [f"Imaginary planet No. {entry['id']}: {entry['name']}. {entry['hook']}", entry["story"],
+             _closing(entry, by), " ".join(entry["tags"][:3])]
     return "\n\n".join(parts)
 
 

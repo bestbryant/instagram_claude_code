@@ -1,0 +1,35 @@
+{
+  "id": "013",
+  "name": "Max",
+  "subtitle": "every Max's planet",
+  "hook": "Every Max gets this planet.",
+  "cover": "Everything is set to maximum.",
+  "beats": [
+    "Everything on Max is set to maximum. The rivers, the sun, the birds.",
+    "The quiet setting was removed by public vote. The vote was very loud."
+  ],
+  "odd_line": "The library is the loudest building on the planet. It had to compete.",
+  "story": "Everything on Max is set to maximum. The rivers run at full volume, the sun is on its brightest setting, and the birds know one song, which is loud. There used to be a quiet setting. It was removed by public vote, and the vote was also very loud. The library is now the noisiest building on the planet, because it had to compete.",
+  "rule": "Whispering requires a licence.",
+  "question": "Know a Max? Is this accurate?",
+  "extra": "Bedtime is set to maximum too. It hasn't been reached yet.",
+  "facts": {},
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#max"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "hills",
+    "horizon": 0.64,
+    "suns": 1,
+    "sun_x": 0.5,
+    "sun_y": 0.4,
+    "sun_size": 0.08,
+    "layers": 5,
+    "mist": 0.4,
+    "gag": "slow_shout",
+    "sign": "QUIET ZONE|(CLOSED)"
+  }
+}

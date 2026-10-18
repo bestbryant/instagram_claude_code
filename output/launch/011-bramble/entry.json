@@ -2,18 +2,14 @@
   "id": "011",
   "name": "Bramble",
   "subtitle": "the tall forest",
-  "story": "Trees on Bramble don't stop growing. The oldest are taller than the hills they stand on, and the tallest has a small cloud living in its upper branches that rains only on that tree. There's a village up there somewhere. Nobody in it has come down in four hundred years. They drop pinecones with notes tied to them, and the people on the ground answer by kite.",
+  "story": "Trees on Bramble don't stop growing. The oldest are taller than the hills they stand on, and the tallest has a small cloud in its upper branches that rains on that tree and nowhere else. Somewhere near the top is a village that hasn't come down in four hundred years. They drop pinecones with notes tied on. The ground answers by kite, and complains about the noise.",
   "facts": {
     "Day": "30 hours",
-    "Moons": "1",
+    "Moons": "none",
     "Gravity": "0.85 g",
     "Population": "unknown"
   },
-  "hook": "The trees on Bramble are taller than the hills.",
-  "reel_lines": [
-    "The tallest one has its own cloud.",
-    "There's a village at the top that never comes down."
-  ],
+  "hook": "A planet for people who never come downstairs.",
   "tags": [
     "#worldbuilding",
     "#illustration",
@@ -28,9 +24,23 @@
     "sun_x": 0.55,
     "sun_y": 0.45,
     "sun_size": 0.045,
-    "moons": 1,
-    "figure": true,
+    "moons": 0,
+    "figure": false,
     "layers": 5,
-    "mist": 0.7
-  }
+    "mist": 0.7,
+    "gag": "tree_cloud"
+  },
+  "cover": "This tree has its own weather.",
+  "beats": [
+    "The trees never stop growing. The tallest one has a small rain cloud of its own.",
+    "A village near the top hasn't come down in four hundred years. They send post by pinecone."
+  ],
+  "odd_line": "Forecast for the tallest tree: light rain. Everywhere else: dry.",
+  "rule": "Do not shake the tall tree. Somebody's dinner is up there.",
+  "question": "Would you move up, or stay on the ground?",
+  "extra": "Pinecone mail takes about four seconds, six with a tailwind.",
+  "reel_lines": [
+    "The trees never stop growing. The tallest one has a small rain cloud of its own.",
+    "A village near the top hasn't come down in four hundred years. They send post by pinecone."
+  ]
 }

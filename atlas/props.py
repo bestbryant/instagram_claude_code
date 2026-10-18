@@ -450,6 +450,121 @@ def _gag_fainted_ghost(ctx):
     ctx.focus = (x / W + 0.05, (y - s * .4) / H)
 
 
+# --------------------------------------------------------------------------
+# extras: generic props a planet can combine with its gag
+
+ITEMS = ["spade", "spoon", "nothing", "book", "fish", "umbrella", "cup"]
+
+
+def _held(ctx, layer, kind, hx, hy, h):
+    if kind == "spade":
+        _ink(ctx, layer, [("line", ([(hx, hy - h * .2), (hx, hy + h * .45)], h * .05)),
+                          ("poly", [(hx - h * .09, hy + h * .42), (hx + h * .09, hy + h * .42), (hx + h * .07, hy + h * .62), (hx - h * .07, hy + h * .62)])], ctx.dark)
+    elif kind == "spoon":
+        _ink(ctx, layer, [("line", ([(hx, hy), (hx + h * .02, hy - h * .38)], h * .05)),
+                          ("ellipse", (hx - h * .07, hy - h * .56, hx + h * .1, hy - h * .34))], ctx.dark)
+    elif kind == "book":
+        _ink(ctx, layer, [("poly", [(hx - h * .12, hy - h * .1), (hx + h * .12, hy - h * .1), (hx + h * .12, hy + h * .08), (hx - h * .12, hy + h * .08)])], LIGHT)
+    elif kind == "fish":
+        _ink(ctx, layer, [("ellipse", (hx - h * .02, hy - h * .05, hx + h * .3, hy + h * .07)),
+                          ("poly", [(hx + h * .28, hy), (hx + h * .4, hy - h * .08), (hx + h * .4, hy + h * .1)])], LIGHT)
+    elif kind == "umbrella":
+        arc = [(hx + h * .3 * math.cos(a), hy - h * .55 - h * .22 * math.sin(a)) for a in np.linspace(0, math.pi, 11)]
+        _ink(ctx, layer, [("poly", arc + [(hx - h * .3, hy - h * .55)]), ("line", ([(hx, hy - h * .55), (hx, hy + h * .05)], h * .04))], ctx.spot)
+    elif kind == "cup":
+        _ink(ctx, layer, [("poly", [(hx - h * .06, hy - h * .1), (hx + h * .06, hy - h * .1), (hx + h * .05, hy + h * .04), (hx - h * .05, hy + h * .04)])], LIGHT)
+
+
+def _crowd(ctx):
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    n = ctx.spec.crowd
+    h = H * G
+    xs = np.linspace(W * 0.2, W * 0.8, n)
+    for i, x in enumerate(xs):
+        a = _person(ctx, layer, x, _ground(ctx, x), h * (0.92 + 0.08 * ((i * 7) % 3) / 2), "stand", 1 if i % 2 else -1)
+        _held(ctx, layer, ITEMS[i % len(ITEMS)], a["rh"][0], a["rh"][1], h)
+    ctx.focus = (0.5, (_ground(ctx, W * 0.5) - h * .6) / H)
+
+
+def _daisies(ctx):
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    rng = ctx.rng("daisies")
+    for _ in range(ctx.spec.daisies):
+        x = rng.uniform(0, W * 1.2)
+        y = _ground(ctx, x) + rng.uniform(H * 0.01, H * 0.12)
+        if y > H - 4:
+            continue
+        r = H * rng.uniform(0.008, 0.016)
+        _ink(ctx, layer, [("ellipse", (x - r, y - r * .7, x + r, y + r * .7))], LIGHT)
+        _ink(ctx, layer, [("ellipse", (x - r * .38, y - r * .3, x + r * .38, y + r * .3))], YELLOW)
+
+
+def _lamp(ctx):
+    """A tall lamp pointed at the sky, standing in for a moon."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    if layer.E is None:
+        layer.E = np.zeros_like(layer.P)
+    x = W * 0.5
+    y = _ground(ctx, x)
+    top = y - H * 0.22
+    _ink(ctx, layer, [("line", ([(x, y), (x, top)], H * 0.008)),
+                      ("poly", [(x - H * .025, top), (x + H * .025, top), (x + H * .035, top - H * .03), (x - H * .035, top - H * .03)])], ctx.dark)
+    beam = np.zeros_like(layer.A)
+    bP = np.zeros_like(layer.P)
+    stamp(bP, beam, [("poly", [(x - H * .03, top - H * .03), (x + H * .03, top - H * .03), (x + W * .2, 0), (x - W * .2, 0)])], np.ones(3))
+    gy = np.arange(beam.shape[0], dtype=np.float32)[:, None]
+    fade = np.clip(gy / max(top, 1), 0, 1) ** 1.5
+    layer.E += (beam * fade * 0.35)[..., None] * ctx.pal.light
+    glow(layer.E, x, top - H * .03, H * .02, ctx.pal.light, 1.2)
+    ctx.focus = (0.5, (top + H * .05) / H)
+
+
+def _sign(ctx):
+    """A signpost whose board carries a short line of text in the atlas typeface."""
+    from PIL import Image, ImageDraw
+    from .text import font
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    lines = [t for t in ctx.spec.sign.split("|") if t]
+    fx = ctx.focus[0] * W
+    x = W * 0.72 if fx < W * 0.55 else W * 0.28
+    y = _ground(ctx, x)
+    fs = max(10, int(H * 0.022))
+    f = font("serif", fs, "Medium")
+    probe = ImageDraw.Draw(Image.new("L", (1, 1)))
+    bw = int(max(probe.textlength(t, font=f) for t in lines) + fs * 1.4)
+    bh = int(len(lines) * fs * 1.25 + fs * 0.9)
+    post = H * 0.09
+    x0, y0 = int(x - bw / 2), int(y - post - bh)
+    _ink(ctx, layer, [("line", ([(x - bw * .3, y), (x - bw * .3, y0 + bh)], H * .007)),
+                      ("line", ([(x + bw * .3, y), (x + bw * .3, y0 + bh)], H * .007)),
+                      ("poly", [(x0 - 3, y0 - 3), (x0 + bw + 3, y0 - 3), (x0 + bw + 3, y0 + bh + 3), (x0 - 3, y0 + bh + 3)])], ctx.dark)
+    _ink(ctx, layer, [("poly", [(x0, y0), (x0 + bw, y0), (x0 + bw, y0 + bh), (x0, y0 + bh)])], LIGHT)
+    board = Image.new("L", (bw, bh), 0)
+    d = ImageDraw.Draw(board)
+    for j, t in enumerate(lines):
+        d.text((bw / 2, fs * 0.5 + j * fs * 1.25), t, font=f, fill=255, anchor="ma")
+    m = np.asarray(board, np.float32) / 255
+    h_, w_ = layer.A.shape
+    ys, xs = slice(max(y0, 0), min(y0 + bh, h_)), slice(max(x0, 0), min(x0 + bw, w_))
+    mm = m[ys.start - y0: ys.stop - y0, xs.start - x0: xs.stop - x0]
+    layer.P[ys, xs] = layer.P[ys, xs] * (1 - mm[..., None]) + ctx.dark * mm[..., None]
+    sx, sy = x / W, (y0 + bh / 2) / H
+    # the close-up has to show the sign: frame it on its own, or halfway between it and the gag
+    ctx.focus = (sx, sy) if ctx.focus == (0.5, 0.62) else ((ctx.focus[0] + sx) / 2, (ctx.focus[1] + sy) / 2)
+    ctx.marks["sign"] = (sx, sy)
+
+
+def extras(ctx):
+    if ctx.spec.daisies:
+        _daisies(ctx)
+    if ctx.spec.crowd:
+        _crowd(ctx)
+    if ctx.spec.lamp:
+        _lamp(ctx)
+    if ctx.spec.sign:
+        _sign(ctx)
+
+
 GAGS = {
     "chair_sleepers": _gag_chair_sleepers, "seabed_town": _gag_seabed_town, "slow_shout": _gag_slow_shout,
     "pole_post": _gag_pole_post, "kettles": _gag_kettles, "moon_letters": _gag_moon_letters,

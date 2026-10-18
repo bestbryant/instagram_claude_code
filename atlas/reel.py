@@ -1,6 +1,7 @@
 """Render a vertical Reel: parallax drift, timed text, ambient audio."""
 from __future__ import annotations
 
+import os
 import subprocess
 import tempfile
 from pathlib import Path
@@ -48,7 +49,8 @@ def render_reel(spec: Spec, seed: int, entry: dict, out: Path, cover_path: Path 
     t_setup, t_punch = read(beats[0]), read(beats[1], 1.2)
     shots = [
         Shot(t_hook, spec, seed, pan=50, zoom=(1.0, 1.12), cards=[(opener, 0.0, t_hook, 0.0, 0.12)]),
-        Shot(t_setup, spec, seed, pan=50, zoom=(1.9, 2.05), cards=[(setup, 0.05, t_setup, 0.15, 0.12)]),
+        Shot(t_setup, spec, seed, pan=50, zoom=(1.55, 1.65) if spec.sign and spec.gag else (1.9, 2.05),
+             cards=[(setup, 0.05, t_setup, 0.15, 0.12)]),
         Shot(t_punch, spec, seed, pan=50, zoom=(1.4, 1.28), cards=[(punch, 0.05, t_punch, 0.15, 0.12)]),
         Shot(2.4, spec, seed, pan=50, zoom=(1.08, 1.0), cards=[(name, 0.05, 2.4, 0.15, 0.0)], tick=True),
     ]
@@ -68,6 +70,7 @@ def render_process(spec: Spec, seed: int, entry: dict, out: Path, fps=30, W=1080
     from dataclasses import replace
 
     out = Path(out)
+    tmp_out = out.with_name(out.stem + ".partial.mp4")   # renamed into place only when complete
     out.parent.mkdir(parents=True, exist_ok=True)
     scene = build(spec, seed, W, H)
     full = frame(scene, grain=0)
@@ -85,7 +88,7 @@ def render_process(spec: Spec, seed: int, entry: dict, out: Path, fps=30, W=1080
     final = print_finish(steps[-1], inks, seed=seed & 0xFFFF, dither=0.045)
     steps.append(final)
 
-    title = text.reel_card((W, H), [f"No image generator. {entry['name']} is drawn in code, one layer at a time."], "hook")
+    title = text.reel_card((W, H), [f"How {entry['name']} gets made, one layer at a time."], "hook")
     name = text.reel_card((W, H), [entry["name"], entry["id"], text.CTA], "name")
     step_t = 0.55
     build_end = 0.6 + step_t * (len(steps) - 2)
@@ -98,7 +101,7 @@ def render_process(spec: Spec, seed: int, entry: dict, out: Path, fps=30, W=1080
                "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-", "-i", wav,
                "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-maxrate", "12M", "-bufsize", "24M",
                "-pix_fmt", "yuv420p", "-profile:v", "high", "-r", str(fps),
-               "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-shortest", "-movflags", "+faststart", str(out)]
+               "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-shortest", "-movflags", "+faststart", "-f", "mp4", str(tmp_out)]
         proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
         try:
             for f in range(n):
@@ -126,5 +129,7 @@ def render_process(spec: Spec, seed: int, entry: dict, out: Path, fps=30, W=1080
             proc.stdin.close()
             proc.wait()
         if proc.returncode:
+            tmp_out.unlink(missing_ok=True)
             raise RuntimeError(f"ffmpeg failed ({proc.returncode})")
+        os.replace(tmp_out, out)
     return out

@@ -1,0 +1,45 @@
+{
+  "id": "003b",
+  "name": "Hush",
+  "subtitle": "part two: Thursday",
+  "story": "On Thursday afternoon, as promised, her answer came across the valley. Half the town stood in the snow to hear it. It was yes. Then, about four seconds later and very faintly, a second word: 'obviously'. They are getting married in spring. The vows have to be shouted in January to arrive on time.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "none",
+    "Gravity": "1.1 g",
+    "Population": "9,300"
+  },
+  "hook": "Hush, part two. Her answer finally crossed the valley.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#winter"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "hills",
+    "horizon": 0.6,
+    "snow": true,
+    "trees": "pines",
+    "house": true,
+    "particles": "snow",
+    "moons": 0,
+    "suns": 0,
+    "layers": 5,
+    "mist": 0.45,
+    "gag": "slow_shout"
+  },
+  "cover": "Her answer arrived.",
+  "beats": [
+    "Half the town came out to hear it.",
+    "It was yes. Then, about four seconds later, very faintly: 'obviously'."
+  ],
+  "odd_line": "The wedding is in spring. The vows will be posted in January.",
+  "rule": "Wedding vows must be shouted at least ten weeks in advance.",
+  "question": "What would you shout across the valley?",
+  "extra": "If you missed part one: on Hush, a shout takes five days to cross the valley.",
+  "reel_lines": [
+    "Sound is slow on Hush. A shout takes five days to cross the valley.",
+    "So arguments are done by letter. By the time the reply lands, nobody remembers why."
+  ]
+}

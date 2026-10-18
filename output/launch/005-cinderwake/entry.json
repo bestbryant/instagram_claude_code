@@ -2,18 +2,14 @@
   "id": "005",
   "name": "Cinderwake",
   "subtitle": "the warm canyons",
-  "story": "The ground on Cinderwake is warm all year, and so is the rain. At night the canyon walls give off a dull orange light, enough to read by if you sit close. Tea grows wild in the cracks and people leave their kettles out on the rock to boil. Before I went, I was told to bring a cup and not much else. That turned out to be good advice.",
+  "story": "The ground on Cinderwake is warm all year, and so is the rain. At night the canyon walls glow a dull orange, enough to read by. Tea grows wild in the cracks. People leave their kettles out on the rock and come back when they whistle, and socks dry on the walls in about four minutes. The only stove on the planet is in a museum, behind a rope.",
   "facts": {
     "Day": "40 hours",
-    "Moons": "3",
+    "Moons": "none",
     "Gravity": "1.3 g",
     "Population": "88,000"
   },
-  "hook": "The rain on Cinderwake is warm.",
-  "reel_lines": [
-    "At night the canyon walls glow.",
-    "You can read by them if you sit close."
-  ],
+  "hook": "A planet for people who are always cold.",
   "tags": [
     "#worldbuilding",
     "#illustration",
@@ -24,13 +20,28 @@
     "terrain": "mesas",
     "horizon": 0.62,
     "particles": "embers",
-    "moons": 3,
+    "moons": 0,
     "suns": 1,
     "sun_x": 0.45,
     "sun_y": 0.55,
     "sun_size": 0.08,
-    "house": true,
+    "house": false,
     "layers": 5,
-    "mist": 0.4
-  }
+    "mist": 0.4,
+    "gag": "kettles",
+    "glow_rims": true
+  },
+  "cover": "The floor boils your kettle.",
+  "beats": [
+    "The ground is warm all year, warm enough to boil a kettle on.",
+    "So kettles live outside on the rocks, and the only stove on the planet is in a museum, behind a rope."
+  ],
+  "odd_line": "Socks dry on the canyon walls in about four minutes.",
+  "rule": "A kettle left on public rock must be shared with whoever is cold.",
+  "question": "Tea or coffee, if the floor boiled it for you?",
+  "extra": "Heating bills are something grandparents mention to frighten children.",
+  "reel_lines": [
+    "The ground is warm all year, warm enough to boil a kettle on.",
+    "So kettles live outside on the rocks, and the only stove on the planet is in a museum, behind a rope."
+  ]
 }

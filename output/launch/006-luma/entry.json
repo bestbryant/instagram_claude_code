@@ -2,18 +2,14 @@
   "id": "006",
   "name": "Luma",
   "subtitle": "the close moon",
-  "story": "Once a year, Luma's moon comes in so close that it hums, a low note you feel in your teeth. Children climb the hill with letters and press them against its surface as it drifts past. Most of the letters are never seen again. Every few years one comes back the following autumn, answered, in handwriting nobody recognises. Those ones get framed.",
+  "story": "Once a year Luma's moon comes in so close that it hums, a low note you feel in your teeth. Children climb the hill with letters and press them against it as it drifts past. Most are never seen again. Every few years one comes back the following autumn, answered, in handwriting no one recognises. The longest reply so far ran to four pages and was mostly questions about dogs.",
   "facts": {
     "Day": "28 hours",
     "Moons": "1, very close",
     "Gravity": "0.8 g",
     "Population": "1.3 million"
   },
-  "hook": "Once a year, this moon passes close enough to touch.",
-  "reel_lines": [
-    "Children press letters against it as it drifts past.",
-    "Now and then, one comes back answered."
-  ],
+  "hook": "A planet for people who still write letters.",
   "tags": [
     "#worldbuilding",
     "#illustration",
@@ -25,9 +21,23 @@
     "horizon": 0.72,
     "big_moon": true,
     "suns": 0,
-    "figure": true,
-    "trees": "lone",
+    "figure": false,
+    "trees": "none",
     "layers": 4,
-    "mist": 0.5
-  }
+    "mist": 0.5,
+    "gag": "moon_letters"
+  },
+  "cover": "Kids post letters to the moon.",
+  "beats": [
+    "Once a year the moon comes close enough to touch, so children press letters against it.",
+    "Most never come back. Every few years one does, answered, in handwriting no one recognises."
+  ],
+  "odd_line": "Return address: the moon. Postage: none required.",
+  "rule": "Letters to the moon must be polite. It has answered rude ones.",
+  "question": "What would you write on yours?",
+  "extra": "This year's letters go up next week. I'm told to bring a pen.",
+  "reel_lines": [
+    "Once a year the moon comes close enough to touch, so children press letters against it.",
+    "Most never come back. Every few years one does, answered, in handwriting no one recognises."
+  ]
 }

@@ -9,11 +9,7 @@
     "Gravity": "1.1 g",
     "Population": "62,000"
   },
-  "hook": "On Lantern, the boats steer home by the pumpkins.",
-  "reel_lines": [
-    "They grow as big as sheds and glow all autumn.",
-    "Each family carves a face, so the boats know whose house it is."
-  ],
+  "hook": "A planet for people who leave the porch light on.",
   "tags": [
     "#halloween",
     "#worldbuilding",
@@ -31,5 +27,18 @@
     "layers": 4,
     "mist": 0.5,
     "lanterns": 9
-  }
+  },
+  "cover": "The boats steer by pumpkin.",
+  "beats": [
+    "Pumpkins grow as big as sheds here and glow from the inside all autumn.",
+    "Every family carves a face into theirs, so the boats coming home know whose house it is."
+  ],
+  "odd_line": "Lighthouse budget: none. Pumpkin budget: considerable.",
+  "rule": "Do not carve a frightening face. The boats get nervous.",
+  "question": "What face would you carve?",
+  "extra": "The biggest pumpkin this year has its own postcode.",
+  "reel_lines": [
+    "Pumpkins grow as big as sheds here and glow from the inside all autumn.",
+    "Every family carves a face into theirs, so the boats coming home know whose house it is."
+  ]
 }

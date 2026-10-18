@@ -64,7 +64,7 @@ def paper(seed=0, size=PAGE):
 
 
 INVITES = [
-    "Leave one in the comments. I chart a few every evening.",
+    "Leave a name in the comments. I chart a few every evening.",
     "Names welcome below. I find a few planets each evening.",
     "Comment a name (a pet's works) and I'll go looking for its planet.",
     "Drop a name below and I'll chart where it lives.",
@@ -84,14 +84,18 @@ def cover(art: Image.Image, entry: dict, seed: int = 0) -> Image.Image:
     page = paper(seed)
     page.paste(art.resize(ART, Image.LANCZOS) if art.size != ART else art, (m, m))
     d = ImageDraw.Draw(page)
-    y1, y2 = m + ART[1] + 76, m + ART[1] + 122
+    y1 = m + ART[1] + 62
     number = f"No. {entry['id']}"
     d.text((W - m, y1), number, font=font("serif", 30), fill=MUTED, anchor="rs")
-    d.text((W - m, y2), BRAND, font=font("italic", 27), fill=MUTED, anchor="rs")
-    room = W - 2 * m - max(d.textlength(BRAND, font=font("italic", 27)), d.textlength(number, font=font("serif", 30))) - 40
+    d.text((m, y1), entry["name"], font=_fit(d, entry["name"], "serif", 60, W - 2 * m - 200, "Medium"), fill=INK, anchor="ls")
     line2 = entry.get("hook") or entry["subtitle"]
-    d.text((m, y1), entry["name"], font=_fit(d, entry["name"], "serif", 66, room, "Medium"), fill=INK, anchor="ls")
-    d.text((m, y2), line2, font=_fit(d, line2, "italic", 31, room, floor=22), fill=MUTED, anchor="ls")
+    f = font("italic", 37)
+    lines = wrap(d, line2, f, W - 2 * m)
+    if len(lines) > 2:
+        f = font("italic", 33)
+        lines = wrap(d, line2, f, W - 2 * m)
+    for j, ln in enumerate(lines[:2]):
+        d.text((m, y1 + 46 + j * 40), ln, font=f, fill=INK, anchor="ls")
     return page
 
 
@@ -128,7 +132,8 @@ def page(entry: dict, seed: int = 0) -> Image.Image:
     d.text((m, 262), entry["name"], font=font("serif", 84, "Medium"), fill=INK, anchor="ls")
     d.text((m, 316), entry["subtitle"], font=font("italic", 36), fill=MUTED, anchor="ls")
     d.line([(m, 362), (W - m, 362)], fill=(200, 186, 164), width=2)
-    top, bottom = 410, H - 150
+    rule = entry.get("rule")
+    top, bottom = 410, H - (300 if rule else 150)
     size = 50
     while True:
         f = font("serif", size)
@@ -139,7 +144,34 @@ def page(entry: dict, seed: int = 0) -> Image.Image:
         size -= 1
     for j, ln in enumerate(lines):
         d.text((m, top + j * lh), ln, font=f, fill=INK)
+    if rule:
+        y = top + lh * len(lines) + 50
+        d.text((m, y + 30), "Local rule", font=font("italic", 32), fill=(150, 92, 60), anchor="ls")
+        rf = font("italic", 40)
+        for j, ln in enumerate(wrap(d, rule, rf, W - 2 * m)[:3]):
+            d.text((m, y + 84 + j * 52), ln, font=rf, fill=INK, anchor="ls")
     d.text((W / 2, H - 80), f"No. {entry['id']}", font=font("serif", 26), fill=MUTED, anchor="ms")
+    return pg
+
+
+def punch(entry: dict, seed: int = 0) -> Image.Image:
+    """Slide 3: the punchline on its own, big enough to screenshot and send."""
+    W, H = PAGE
+    pg = paper(seed + 3)
+    d = ImageDraw.Draw(pg)
+    line = (entry.get("beats") or entry.get("reel_lines") or [entry["hook"]])[-1]
+    size = 84
+    while True:
+        f = font("serif", size, "Medium")
+        lines = wrap(d, line, f, W - 2 * 120)
+        if len(lines) <= 6 or size <= 56:
+            break
+        size -= 4
+    lh = int(size * 1.22)
+    y = H / 2 - lh * len(lines) / 2 + size * 0.7
+    for j, ln in enumerate(lines):
+        d.text((W / 2, y + j * lh), ln, font=f, fill=INK, anchor="ms")
+    d.text((W / 2, H - 90), f"{entry['name']} · No. {entry['id']}", font=font("italic", 30), fill=MUTED, anchor="ms")
     return pg
 
 

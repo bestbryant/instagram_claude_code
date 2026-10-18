@@ -1,0 +1,34 @@
+{
+  "id": "012",
+  "name": "Luna",
+  "subtitle": "every Luna's planet",
+  "hook": "Every Luna gets this planet.",
+  "cover": "The only planet without a moon.",
+  "beats": [
+    "Luna is the only planet in the atlas without a moon, and it takes this personally.",
+    "The moon fund has raised enough for a large lamp on a pole. They point it at the sky on birthdays."
+  ],
+  "odd_line": "Moon fund: three per cent of the way there.",
+  "story": "Luna is the only planet in the atlas without a moon of its own, and it takes this very personally. Every spring there is a fund-raiser. So far they have raised enough for one large lamp on a tall pole, which is switched on and pointed at the sky for birthdays, anniversaries and anyone having a bad week.",
+  "rule": "Do not mention other planets' moons in front of Luna.",
+  "question": "Know a Luna? This one's theirs.",
+  "extra": "The lamp has a waiting list. Birthdays get priority.",
+  "facts": {},
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#luna"
+  ],
+  "spec": {
+    "palette": "teal_night",
+    "terrain": "hills",
+    "horizon": 0.66,
+    "moons": 0,
+    "suns": 0,
+    "stars": 1.0,
+    "layers": 4,
+    "mist": 0.5,
+    "lamp": true,
+    "sign": "MOON FUND|3% RAISED"
+  }
+}

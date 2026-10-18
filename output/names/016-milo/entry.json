@@ -1,0 +1,35 @@
+{
+  "id": "016",
+  "name": "Milo",
+  "subtitle": "every Milo's planet",
+  "hook": "Every Milo gets this planet.",
+  "cover": "The soil is chocolate malt.",
+  "beats": [
+    "The soil on Milo is malted chocolate powder, three metres deep.",
+    "When it rains, the whole planet smells like the bottom of a school mug."
+  ],
+  "odd_line": "Farming here is mostly stirring.",
+  "story": "The soil on Milo is malted chocolate powder, three metres deep. Farming is mostly stirring. When the warm rain comes, the ground goes thick and glossy and the whole planet smells like the bottom of a school mug. Everyone on Milo is cheerful and very slightly over-energetic. A few of them eat the ground dry, by the spoonful, which the others consider showing off.",
+  "rule": "No dunking biscuits in the river.",
+  "question": "Know a Milo? Do they also eat it dry?",
+  "extra": "The kettles never go off. There have been no complaints.",
+  "facts": {},
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#milo"
+  ],
+  "spec": {
+    "palette": "rust_desert",
+    "terrain": "mesas",
+    "horizon": 0.62,
+    "suns": 1,
+    "sun_x": 0.7,
+    "sun_y": 0.35,
+    "sun_size": 0.05,
+    "layers": 5,
+    "mist": 0.35,
+    "gag": "kettles",
+    "sign": "JUST ADD|WATER"
+  }
+}

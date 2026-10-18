@@ -4,11 +4,7 @@
   "subtitle": "the first page",
   "story": "I keep an atlas of places that aren't on any map. Most of its pages are still blank. Each day I fill one in, sometimes with a world I came across on my own, more often with one somebody asked me to find. If you leave a name in the comments, any name at all, I'll go looking for the planet that goes with it.",
   "facts": {},
-  "hook": "Leave a name. I'll find the planet it belongs to.",
-  "reel_lines": [
-    "I keep an atlas of places that aren't on any map.",
-    "Leave a name in the comments and I'll go and find it."
-  ],
+  "hook": "Every name has a planet. Yours too.",
   "tags": [
     "#worldbuilding",
     "#illustration",
@@ -29,5 +25,18 @@
     "trees": "pines",
     "mist": 0.6,
     "layers": 5
-  }
+  },
+  "cover": "Every name has a planet.",
+  "beats": [
+    "I keep an atlas of places that aren't on any map.",
+    "Leave a name and I'll go and find where it lives."
+  ],
+  "odd_line": "Most of the pages are still blank.",
+  "rule": "Anyone may add a page.",
+  "question": "Whose name should I look up first?",
+  "extra": "One planet a day, plus the ones you ask for.",
+  "reel_lines": [
+    "I keep an atlas of places that aren't on any map.",
+    "Leave a name and I'll go and find where it lives."
+  ]
 }

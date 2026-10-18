@@ -39,13 +39,24 @@ def test_same_name_same_planet():
 
 
 def test_launch_entries_valid():
-    for f in ("launch.json", "halloween.json"):
+    for f in ("launch.json", "halloween.json", "sequels.json", "names.json"):
         for e in json.loads((ROOT / "content" / f).read_text()):
             spec = Spec(**e["spec"])
             img = to_image(frame(build(spec, seed_from(e["name"]), 216, 270), grain_seed=1))
             text.cover(img.resize((1080, 1350)), e)
             assert len(e["tags"]) <= 5
             assert len(captions.carousel(e)) < 2200, "Instagram caption limit"
+
+
+def test_voice_lint():
+    """Guard against the generated-whimsy template: at most one stock phrase per story."""
+    import re
+    bad = re.compile(r"\b(nobody|no one|council|visitors?|locals?|children argue|for as long as anyone)\b", re.I)
+    for f in ("launch.json", "halloween.json", "sequels.json", "names.json"):
+        for e in json.loads((ROOT / "content" / f).read_text()):
+            hits = bad.findall(e["story"])
+            assert len(hits) <= 1, (e["id"], hits)
+            assert "\u2014" not in e["story"] + e["hook"], (e["id"], "em dash")
 
 
 def test_request_names():
@@ -58,6 +69,7 @@ def test_request_names():
 
 
 if __name__ == "__main__":
+    test_voice_lint()
     test_request_names()
     test_same_name_same_planet()
     test_launch_entries_valid()

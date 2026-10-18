@@ -9,11 +9,7 @@
     "Gravity": "0.7 g",
     "Population": "19,000"
   },
-  "hook": "The moths on Mothwing eat moonlight.",
-  "reel_lines": [
-    "Each night they carry it back up off the fields.",
-    "They leave glowing dust on the windowsill."
-  ],
+  "hook": "A planet for people who sleep with the lamp on.",
   "tags": [
     "#halloween",
     "#worldbuilding",
@@ -30,5 +26,18 @@
     "layers": 5,
     "mist": 0.55,
     "moths": 5
-  }
+  },
+  "cover": "These moths eat moonlight.",
+  "beats": [
+    "The moths here are the size of kites, and they eat light.",
+    "Leave a candle out and they'll take it. They leave a little glowing dust as a thank you."
+  ],
+  "odd_line": "Missing: one candle. Found: a small pile of glowing dust.",
+  "rule": "Candles left out after dark are considered a donation.",
+  "question": "Would you leave a candle out?",
+  "extra": "They're very polite about it. They always leave the wick.",
+  "reel_lines": [
+    "The moths here are the size of kites, and they eat light.",
+    "Leave a candle out and they'll take it. They leave a little glowing dust as a thank you."
+  ]
 }

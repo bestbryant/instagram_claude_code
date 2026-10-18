@@ -4,9 +4,9 @@ name: Daily post
 # Instagram Graph API. Does nothing until IG_USER_ID / IG_ACCESS_TOKEN secrets
 # and the MEDIA_BASE_URL variable are configured (see docs/PUBLISHING.md).
 
+# Manual only: the daily Claude routine is the scheduler. Running both would
+# post everything twice.
 on:
-  schedule:
-    - cron: "17 0 * * *"   # 00:17 UTC daily; adjust to your audience
   workflow_dispatch:
 
 permissions:

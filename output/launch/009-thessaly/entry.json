@@ -2,18 +2,14 @@
   "id": "009",
   "name": "Thessaly",
   "subtitle": "the upward rain",
-  "story": "On Thessaly the rain goes up. It lifts off the sea in thin threads and collects in shallow pools on the undersides of the clouds, which catch the light at dusk. People wear their umbrellas on their feet. The pools in the sky all have names, and children argue about which one is deepest. There's no way to check.",
+  "story": "On Thessaly the rain goes up. It lifts off the sea in thin threads and gathers in shallow pools on the undersides of the clouds, which catch the light at dusk. People wear their umbrellas on their feet and buy boots that are waterproof on top. The weather app has one setting: from below. The pools in the sky all have names, and the argument about which is deepest is three hundred years old.",
   "facts": {
     "Day": "23 hours",
-    "Moons": "2",
+    "Moons": "none",
     "Gravity": "0.6 g",
     "Population": "300,000"
   },
-  "hook": "On Thessaly, the rain goes up.",
-  "reel_lines": [
-    "It collects in pools under the clouds.",
-    "People wear their umbrellas on their feet."
-  ],
+  "hook": "A planet for people who check the weather app ten times a day.",
   "tags": [
     "#worldbuilding",
     "#illustration",
@@ -26,13 +22,28 @@
     "water": true,
     "shore": "right",
     "particles": "rain_up",
-    "moons": 2,
+    "moons": 0,
     "suns": 1,
     "sun_x": 0.38,
     "sun_y": 0.4,
     "sun_size": 0.04,
-    "figure": true,
+    "figure": false,
     "layers": 4,
-    "mist": 0.5
-  }
+    "mist": 0.5,
+    "gag": "umbrella_feet",
+    "spot": "#c8452f"
+  },
+  "cover": "Umbrellas go on your feet.",
+  "beats": [
+    "On Thessaly the rain falls up, out of the sea and into the clouds.",
+    "So umbrellas go on your feet, and boots are waterproof on top."
+  ],
+  "odd_line": "Forecast: 90% chance of rain from below.",
+  "rule": "Umbrellas are worn feet-first from October to March.",
+  "question": "Upward rain or sideways wind?",
+  "extra": "The forecast here only ever says 'from below'.",
+  "reel_lines": [
+    "On Thessaly the rain falls up, out of the sea and into the clouds.",
+    "So umbrellas go on your feet, and boots are waterproof on top."
+  ]
 }

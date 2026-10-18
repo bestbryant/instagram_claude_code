@@ -1,0 +1,211 @@
+[
+  {
+    "id": "012",
+    "name": "Luna",
+    "subtitle": "every Luna's planet",
+    "hook": "Every Luna gets this planet.",
+    "cover": "The only planet without a moon.",
+    "beats": [
+      "Luna is the only planet in the atlas without a moon, and it takes this personally.",
+      "The moon fund has raised enough for a large lamp on a pole. They point it at the sky on birthdays."
+    ],
+    "odd_line": "Moon fund: three per cent of the way there.",
+    "story": "Luna is the only planet in the atlas without a moon of its own, and it takes this very personally. Every spring there is a fund-raiser. So far they have raised enough for one large lamp on a tall pole, which is switched on and pointed at the sky for birthdays, anniversaries and anyone having a bad week.",
+    "rule": "Do not mention other planets' moons in front of Luna.",
+    "question": "Know a Luna? This one's theirs.",
+    "extra": "The lamp has a waiting list. Birthdays get priority.",
+    "facts": {},
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#luna"
+    ],
+    "spec": {
+      "palette": "teal_night",
+      "terrain": "hills",
+      "horizon": 0.66,
+      "moons": 0,
+      "suns": 0,
+      "stars": 1.0,
+      "layers": 4,
+      "mist": 0.5,
+      "lamp": true,
+      "sign": "MOON FUND|3% RAISED"
+    }
+  },
+  {
+    "id": "013",
+    "name": "Max",
+    "subtitle": "every Max's planet",
+    "hook": "Every Max gets this planet.",
+    "cover": "Everything is set to maximum.",
+    "beats": [
+      "Everything on Max is set to maximum. The rivers, the sun, the birds.",
+      "The quiet setting was removed by public vote. The vote was very loud."
+    ],
+    "odd_line": "The library is the loudest building on the planet. It had to compete.",
+    "story": "Everything on Max is set to maximum. The rivers run at full volume, the sun is on its brightest setting, and the birds know one song, which is loud. There used to be a quiet setting. It was removed by public vote, and the vote was also very loud. The library is now the noisiest building on the planet, because it had to compete.",
+    "rule": "Whispering requires a licence.",
+    "question": "Know a Max? Is this accurate?",
+    "extra": "Bedtime is set to maximum too. It hasn't been reached yet.",
+    "facts": {},
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#max"
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "terrain": "hills",
+      "horizon": 0.64,
+      "suns": 1,
+      "sun_x": 0.5,
+      "sun_y": 0.4,
+      "sun_size": 0.08,
+      "layers": 5,
+      "mist": 0.4,
+      "gag": "slow_shout",
+      "sign": "QUIET ZONE|(CLOSED)"
+    }
+  },
+  {
+    "id": "014",
+    "name": "Bella",
+    "subtitle": "every Bella's planet",
+    "hook": "Every Bella gets this planet.",
+    "cover": "Everything here is beautiful. By law.",
+    "beats": [
+      "On Bella, everything has to be described as beautiful. It's the law.",
+      "The new tax office was declared 'genuinely beautiful' by a man who had clearly been told to."
+    ],
+    "odd_line": "Today's forecast: beautiful rain, followed by beautiful more rain.",
+    "story": "On Bella, everything has to be described as beautiful, by law. The weather report says beautiful rain. The dentist is beautiful. When the new tax office opened, it was declared 'genuinely beautiful' by a man in a hat who had clearly been told to. The people of Bella are very relaxed about all of this, which is, they would want me to say, beautiful.",
+    "rule": "Describing anything as 'fine' is a fineable offence.",
+    "question": "Know a Bella? Send her this. It's beautiful.",
+    "extra": "The tax office has a five-star rating. Leaving fewer stars is not beautiful.",
+    "facts": {},
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#bella"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "hills",
+      "horizon": 0.64,
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.42,
+      "sun_size": 0.05,
+      "layers": 4,
+      "mist": 0.6,
+      "house": true,
+      "sign": "THE BEAUTIFUL|TAX OFFICE"
+    }
+  },
+  {
+    "id": "015",
+    "name": "Charlie",
+    "subtitle": "every Charlie's planet",
+    "hook": "Every Charlie gets this planet.",
+    "cover": "Everyone here is called Charlie.",
+    "beats": [
+      "Everyone on Charlie is called Charlie. They tried surnames. Also Charlie.",
+      "So they go by what they're holding. Charlie Nothing is having a day off."
+    ],
+    "odd_line": "Charlie Spade does the gardens. Charlie Spoon runs the café.",
+    "story": "There are forty-one people on Charlie, and all of them are called Charlie. They tried surnames, but those turned out to be Charlie as well. So now everyone goes by whatever they're holding. Charlie Spade does the gardens. Charlie Spoon runs the café. Charlie Fish is not to be trusted with the café. Charlie Nothing is having a day off.",
+    "rule": "Anyone holding nothing is on holiday and must not be disturbed.",
+    "question": "How many Charlies do you know?",
+    "extra": "There was a Charlie Umbrella. It rained once and the whole system nearly collapsed.",
+    "facts": {},
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#charlie"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "horizon": 0.62,
+      "suns": 1,
+      "sun_x": 0.8,
+      "sun_y": 0.45,
+      "sun_size": 0.04,
+      "layers": 4,
+      "mist": 0.5,
+      "crowd": 6,
+      "sign": "POP. 41|ALL CHARLIE"
+    }
+  },
+  {
+    "id": "016",
+    "name": "Milo",
+    "subtitle": "every Milo's planet",
+    "hook": "Every Milo gets this planet.",
+    "cover": "The soil is chocolate malt.",
+    "beats": [
+      "The soil on Milo is malted chocolate powder, three metres deep.",
+      "When it rains, the whole planet smells like the bottom of a school mug."
+    ],
+    "odd_line": "Farming here is mostly stirring.",
+    "story": "The soil on Milo is malted chocolate powder, three metres deep. Farming is mostly stirring. When the warm rain comes, the ground goes thick and glossy and the whole planet smells like the bottom of a school mug. Everyone on Milo is cheerful and very slightly over-energetic. A few of them eat the ground dry, by the spoonful, which the others consider showing off.",
+    "rule": "No dunking biscuits in the river.",
+    "question": "Know a Milo? Do they also eat it dry?",
+    "extra": "The kettles never go off. There have been no complaints.",
+    "facts": {},
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#milo"
+    ],
+    "spec": {
+      "palette": "rust_desert",
+      "terrain": "mesas",
+      "horizon": 0.62,
+      "suns": 1,
+      "sun_x": 0.7,
+      "sun_y": 0.35,
+      "sun_size": 0.05,
+      "layers": 5,
+      "mist": 0.35,
+      "gag": "kettles",
+      "sign": "JUST ADD|WATER"
+    }
+  },
+  {
+    "id": "017",
+    "name": "Daisy",
+    "subtitle": "every Daisy's planet",
+    "hook": "Every Daisy gets this planet.",
+    "cover": "The flowers know if he loves you.",
+    "beats": [
+      "The fields on Daisy are full of daisies, and each one knows whether he loves you or not.",
+      "First dates are held in car parks, well away from any flowers."
+    ],
+    "odd_line": "On a quiet evening the meadow sounds like very light applause, and some booing.",
+    "story": "The fields on Daisy are covered in daisies, and every one of them knows whether he loves you or not. People stopped pulling petals years ago and just ask the flowers directly. On a quiet evening the meadow sounds like very light applause, with the occasional boo. First dates are held in car parks, well away from any flowers.",
+    "rule": "Flowers may not be consulted about third parties.",
+    "question": "Know a Daisy? Send her this one.",
+    "extra": "Florists here need a licence and a good lawyer.",
+    "facts": {},
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#daisy"
+    ],
+    "spec": {
+      "palette": "pastel",
+      "terrain": "hills",
+      "horizon": 0.62,
+      "suns": 1,
+      "sun_x": 0.25,
+      "sun_y": 0.3,
+      "sun_size": 0.04,
+      "layers": 4,
+      "mist": 0.5,
+      "daisies": 140,
+      "crowd": 2
+    }
+  }
+]

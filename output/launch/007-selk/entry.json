@@ -2,18 +2,14 @@
   "id": "007",
   "name": "Selk",
   "subtitle": "the glass sea",
-  "story": "Selk used to be an ocean. When the water went, the waves stayed where they were, frozen mid-break in green glass, some of them two hundred metres high. Surfers still make the trip. They carry their boards out across the sand, stand under the curl for an hour or so, and go home. One of them told me it was the best wave he'd ever had.",
+  "story": "Selk used to be an ocean. When the water went, the waves stayed where they were, frozen mid-break in green glass, some of them two hundred metres high. Surfers still make the trip. They carry their boards across the sand, stand under the curl for about an hour, take a photo and go home. One of them told me it was the best wave he'd ever had, and he meant it.",
   "facts": {
     "Day": "33 hours",
-    "Moons": "2",
+    "Moons": "none",
     "Gravity": "0.95 g",
     "Population": "about 5,000"
   },
-  "hook": "Selk's ocean dried up and left the waves behind.",
-  "reel_lines": [
-    "Frozen mid-break, in green glass.",
-    "Surfers still come. They stand underneath."
-  ],
+  "hook": "A planet for people who go to the beach and don't swim.",
   "tags": [
     "#worldbuilding",
     "#illustration",
@@ -28,9 +24,23 @@
     "sun_x": 0.7,
     "sun_y": 0.32,
     "sun_size": 0.06,
-    "moons": 2,
-    "figure": true,
+    "moons": 0,
+    "figure": false,
     "layers": 5,
-    "mist": 0.35
-  }
+    "mist": 0.35,
+    "gag": "glass_surfers"
+  },
+  "cover": "The waves froze mid-break.",
+  "beats": [
+    "The ocean dried up and left the waves behind, frozen mid-break in green glass.",
+    "Surfers still come. They stand under the curl for an hour and call it the best wave of their lives."
+  ],
+  "odd_line": "Surf report: same as yesterday, for nine thousand years.",
+  "rule": "No running under the waves. They have been patient for a very long time.",
+  "question": "Would you make the trip?",
+  "extra": "The surf shop still sells wax. As a souvenir.",
+  "reel_lines": [
+    "The ocean dried up and left the waves behind, frozen mid-break in green glass.",
+    "Surfers still come. They stand under the curl for an hour and call it the best wave of their lives."
+  ]
 }

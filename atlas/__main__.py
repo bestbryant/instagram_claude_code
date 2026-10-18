@@ -7,6 +7,7 @@
   python -m atlas process 001              # "how it's made" Reel
   python -m atlas tapstop                  # "Tap to stop. That's where you're moving."
   python -m atlas publish output/launch/001-veyra --kind reel --base-url https://… [--dry-run]
+  python -m atlas prepare --days 1         # render what is due today and tomorrow
   python -m atlas next --base-url https://… [--dry-run]
   python -m atlas inbox [--chart]          # name requests from comments
 """
@@ -50,12 +51,12 @@ def focus_crop(raw: np.ndarray, focus, size, zoom=2.0) -> np.ndarray:
     return _resize(raw[y0:y0 + ch, x0:x0 + cw], size)
 
 
-SLIDES = ("1-cover.jpg", "2-detail.jpg", "3-page.jpg", "4-guide.jpg", "5-invite.jpg")
+SLIDES = ("1-cover.jpg", "2-detail.jpg", "3-punch.jpg", "4-page.jpg", "5-invite.jpg")
 
 
 def make(entry: dict, spec: Spec, seed: int, folder: Path, reel=True, by=None, requested_by=None) -> Path:
     folder.mkdir(parents=True, exist_ok=True)
-    for old in ("2-notes.jpg",):
+    for old in ("2-notes.jpg", "3-page.jpg", "4-guide.jpg"):
         (folder / old).unlink(missing_ok=True)
     W, H = text.ART
     scene = build(spec, seed, int(W * 1.5), int(H * 1.5))
@@ -64,9 +65,10 @@ def make(entry: dict, spec: Spec, seed: int, folder: Path, reel=True, by=None, r
     inks = ink_palette(art, extra=spec_inks(spec))
     s16 = seed & 0xFFFF
     art_img = printed(art, inks, s16)
-    close = printed(focus_crop(raw, scene.focus, (text.PAGE[0] - 2 * text.MARGIN, 1010)), inks, (seed >> 16) & 0xFFFF)
-    slides = [text.cover(art_img, entry, s16), text.detail(close, entry, s16), text.page(entry, s16),
-              text.guide(entry, s16), text.invite(close, entry, s16)]
+    zoom = 1.6 if "sign" in scene.marks and spec.gag else 2.0
+    close = printed(focus_crop(raw, scene.focus, (text.PAGE[0] - 2 * text.MARGIN, 1010), zoom), inks, (seed >> 16) & 0xFFFF)
+    slides = [text.cover(art_img, entry, s16), text.detail(close, entry, s16), text.punch(entry, s16),
+              text.page(entry, s16), text.invite(close, entry, s16)]
     for name, img in zip(SLIDES, slides):
         img.save(folder / name, quality=93, subsampling=0)
     (folder / "caption-carousel.txt").write_text(captions.carousel(entry, by) + "\n")
@@ -76,6 +78,7 @@ def make(entry: dict, spec: Spec, seed: int, folder: Path, reel=True, by=None, r
     if reel:
         from .reel import render_reel
         render_reel(spec, seed, entry, folder / "reel.mp4", cover_path=folder / "reel-cover.jpg", requested_by=requested_by)
+        (folder / "reel-entry.json").write_text(json.dumps(entry, indent=2, ensure_ascii=False) + "\n")
     return folder
 
 
@@ -153,8 +156,8 @@ def cmd_process(a):
         entry, spec, seed = chart(a.target)
     dest = OUT / "process" / f"{entry['id']}-{slug(entry['name'])}.mp4"
     render_process(spec, seed, entry, dest)
-    caption = (f"No image generator here. {entry['name']} is drawn in code: the sky first, then each ridge from "
-               f"the farthest to the nearest, then the people, then the inks, like a screen print.\n\n"
+    caption = (f"How {entry['name']} gets made: the sky first, then each ridge from the farthest to the nearest, "
+               f"then the people, then the inks, like a screen print. Every layer is drawn in code.\n\n"
                f"Leave a name in the comments and I'll draw its planet next.\n\n#illustration #creativecoding #worldbuilding")
     dest.with_suffix(".txt").write_text(caption + "\n")
     print(dest.relative_to(ROOT))
@@ -210,7 +213,7 @@ def _publish(folder: Path, kind: str, base_url: str, dry_run: bool):
         return p.reel_file(video, video.with_suffix(".txt").read_text().strip())
     if kind == "carousel":
         cap = (folder / "caption-carousel.txt").read_text().strip()
-        slides = sorted(f.name for f in folder.glob("[0-9]-*.jpg"))
+        slides = sorted((f.name for f in folder.glob("[0-9]*-*.jpg")), key=lambda n: int(n.split("-")[0]))
         return p.carousel([url(f) for f in slides], cap)
     cap = (folder / "caption-reel.txt").read_text().strip()
     return p.reel_file(folder / "reel.mp4", cap, cover_url=url("reel-cover.jpg"))
@@ -249,6 +252,20 @@ def request_name(comment: str) -> str | None:
     return t
 
 
+SENSITIVE = re.compile(r"\b(passed|rip|r\.i\.p|rest in peace|rainbow bridge|in memory|memorial|died|put down|"
+                       r"lost (him|her|them|my)|miss(ing)? (him|her|them|you)|gone too soon|funeral)\b", re.I)
+TITLES = {"grandma", "grandpa", "granny", "nan", "nana", "nanna", "aunt", "auntie", "uncle", "mr", "mrs", "ms",
+          "dr", "captain", "sir", "lady", "baby", "little", "big", "old"}
+
+
+def first_name_only(name: str) -> str:
+    """'Emma Johnson' -> 'Emma': no private surnames on public posts. Keeps 'Grandma Rose'."""
+    words = name.split()
+    if len(words) >= 2 and all(w[:1].isupper() for w in words) and words[0].lower() not in TITLES:
+        return words[0]
+    return name
+
+
 def cmd_inbox(a):
     """Collect name requests from recent comments into content/requests.json."""
     from .publish import Publisher
@@ -261,14 +278,17 @@ def cmd_inbox(a):
         for c in p.recent_comments(media["id"]):
             if c["id"] in seen or c.get("username") == me:
                 continue
-            name = request_name(c.get("text", ""))
+            text_ = c.get("text", "")
+            name = request_name(text_)
             if name:
+                status = "needs_owner" if SENSITIVE.search(text_) else "new"   # memorial requests: owner answers by hand
                 new.append({"comment_id": c["id"], "media_id": media["id"], "by": "@" + c.get("username", ""),
-                            "name": name, "text": c.get("text", ""), "status": "new"})
+                            "name": first_name_only(name), "text": text_, "status": status})
     queue += new
     if not a.dry_run:
         REQUESTS.write_text(json.dumps(queue, indent=2, ensure_ascii=False) + "\n")
-    print(f"{len(new)} new request(s); {sum(q['status'] == 'new' for q in queue)} waiting")
+    print(f"{len(new)} new request(s); {sum(q['status'] == 'new' for q in queue)} waiting; "
+          f"{sum(q['status'] == 'needs_owner' for q in queue)} held for the owner (sensitive)")
     for q in queue:
         if q["status"] == "new":
             print(f"  {q['by']:<22} {q['name']:<24} ← “{q['text'][:50]}”")
@@ -295,15 +315,58 @@ def _find(item):
     if item["kind"] == "special":
         hit = OUT / "specials" / f"{item['entry']}.mp4"
         return hit if hit.exists() else None
-    for group in ("launch", "halloween", "sequels", "requests"):
+    for group in ("launch", "halloween", "sequels", "names", "requests"):
         hit = next((OUT / group).glob(f"{item['entry']}-*"), None)
         if hit:
             return hit
     return None
 
 
+CONTENT_FILES = ("launch.json", "halloween.json", "sequels.json", "names.json")
+
+
+def content_entries() -> dict:
+    out = {}
+    for f in CONTENT_FILES:
+        path = ROOT / "content" / f
+        if path.exists():
+            out.update({e["id"]: e for e in json.loads(path.read_text())})
+    return out
+
+
+def video_ok(path: Path) -> bool:
+    import subprocess
+    try:
+        r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                           capture_output=True, text=True, timeout=60)
+        return r.returncode == 0 and float(r.stdout.strip() or 0) > 3.0
+    except (ValueError, subprocess.SubprocessError):
+        return False
+
+
+def check_item(item, folder, entries) -> str | None:
+    """Why an item can't be posted yet, or None if it's ready."""
+    if folder is None:
+        return "not rendered"
+    if item["kind"] in ("process", "special"):
+        return None if video_ok(folder) else "video missing or broken"
+    src = entries.get(item["entry"])
+    rendered = folder / ("reel-entry.json" if item["kind"] == "reel" else "entry.json")
+    if src is not None and (not rendered.exists() or json.loads(rendered.read_text()) != src):
+        return "stale: content changed since it was rendered"
+    if item["kind"] == "reel":
+        if not video_ok(folder / "reel.mp4"):
+            return "reel missing or broken"
+        if not (folder / "reel-cover.jpg").exists():
+            return "reel cover missing"
+    elif not list(folder.glob("[0-9]*-*.jpg")):
+        return "slides missing"
+    return None
+
+
 def cmd_next(a):
-    """Post every scheduled item that is due (day <= today), oldest first, at most --max per run."""
+    """Post every scheduled item that is due (day <= today), oldest first, at most --max per run.
+    Items that aren't ready are skipped with a warning instead of stopping the run."""
     from datetime import date, datetime, timezone
     schedule = json.loads(SCHEDULE.read_text())
     log = json.loads(LOG.read_text()) if LOG.exists() else []
@@ -314,15 +377,58 @@ def cmd_next(a):
         left = [s for s in schedule if (s["entry"], s["kind"]) not in done]
         print(f"day {today}: nothing due" + (f"; next is day {left[0]['day']}" if left else "; schedule complete"))
         return
-    for item in due[: a.max]:
+    entries = content_entries()
+    posted = 0
+    for item in due:
+        if posted >= a.max:
+            break
         folder = _find(item)
-        if folder is None:
-            sys.exit(f"missing output for {item['entry']} ({item['kind']}); render it first")
+        problem = check_item(item, folder, entries)
+        if problem:
+            print(f"SKIP {item['entry']} {item['kind']} (day {item['day']}): {problem}")
+            continue
         media = _publish(folder, item["kind"], a.base_url, a.dry_run)
+        posted += 1
         print(f"posted {item['entry']} as {item['kind']}: {media}")
         if not a.dry_run:
             log.append({**item, "media_id": media, "at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
             LOG.write_text(json.dumps(log, indent=2) + "\n")
+
+
+def cmd_prepare(a):
+    """Render whatever is due in the next --days days and not ready yet (one day ahead, as the plan says)."""
+    from datetime import date
+    schedule = json.loads(SCHEDULE.read_text())
+    log = json.loads(LOG.read_text()) if LOG.exists() else []
+    done = {(x["entry"], x["kind"]) for x in log}
+    today = (date.today() - date.fromisoformat(LAUNCH_DAY)).days + 1
+    entries = content_entries()
+    groups = {}
+    for f in CONTENT_FILES:
+        path = ROOT / "content" / f
+        if path.exists():
+            groups.update({e["id"]: ("launch" if f == "launch.json" else Path(f).stem) for e in json.loads(path.read_text())})
+    for item in schedule:
+        if (item["entry"], item["kind"]) in done or item["day"] > today + a.days:
+            continue
+        problem = check_item(item, _find(item), entries)
+        if not problem:
+            continue
+        e = entries.get(item["entry"])
+        if e is None:
+            print(f"cannot prepare {item['entry']}: not in content files")
+            continue
+        print(f"preparing {item['entry']} {item['kind']} (day {item['day']}): {problem}", flush=True)
+        spec, seed = Spec(**e["spec"]), seed_from(e["name"])
+        if item["kind"] == "process":
+            from .reel import render_process
+            dest = OUT / "process" / f"{e['id']}-{slug(e['name'])}.mp4"
+            render_process(spec, seed, e, dest)
+            continue
+        folder = OUT / groups[e["id"]] / f"{e['id']}-{slug(e['name'])}"
+        need_reel = item["kind"] == "reel"
+        make(e, spec, seed, folder, reel=need_reel)
+    print("prepared")
 
 
 def main(argv=None):
@@ -363,6 +469,9 @@ def main(argv=None):
     s.add_argument("--max", type=int, default=3)
     s.add_argument("--dry-run", action="store_true")
     s.set_defaults(fn=cmd_next)
+    s = sub.add_parser("prepare", help="render what is due soon and not ready yet")
+    s.add_argument("--days", type=int, default=1, help="look this many days ahead of today")
+    s.set_defaults(fn=cmd_prepare)
     s = sub.add_parser("inbox", help="collect name requests from recent comments (Graph API)")
     s.add_argument("--limit", type=int, default=10, help="how many recent posts to scan")
     s.add_argument("--chart", action="store_true", help="also render planets for new requests")
