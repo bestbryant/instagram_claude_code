@@ -421,6 +421,9 @@
     "opener": "One of everything.",
     "text_y": {
       "name": 0.12
+    },
+    "framing": {
+      "cover": 1.0
     }
   },
   {

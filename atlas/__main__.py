@@ -63,11 +63,13 @@ def make(entry: dict, spec: Spec, seed: int, folder: Path, reel=True, by=None, r
     W, H = text.ART
     scene = build(spec, seed, int(W * 1.5), int(H * 1.5))
     raw = frame(scene, grain=0)
-    art = _resize(raw, text.ART)
-    inks = ink_palette(art, extra=spec_inks(spec))
+    inks = ink_palette(_resize(raw, text.ART), extra=spec_inks(spec))
     s16 = seed & 0xFFFF
+    # slide 1 leans in on the joke; slide 2 (where Instagram re-serves carousels) goes closer still
+    framing = entry.get("framing", {})
+    art = focus_crop(raw, scene.focus, text.ART, framing.get("cover", 1.3)) if framing.get("cover", 1.3) > 1 else _resize(raw, text.ART)
     art_img = printed(art, inks, s16)
-    zoom = 1.6 if "sign" in scene.marks and spec.gag else 2.0
+    zoom = framing.get("detail", 1.9 if "sign" in scene.marks and spec.gag else 2.4)
     close = printed(focus_crop(raw, scene.focus, (text.PAGE[0] - 2 * text.MARGIN, 1010), zoom), inks, (seed >> 16) & 0xFFFF)
     slides = [text.cover(art_img, entry, s16), text.detail(close, entry, s16), text.punch(entry, s16),
               text.page(entry, s16), text.invite(close, entry, s16)]
@@ -372,7 +374,10 @@ def check_item(item, folder, entries) -> str | None:
         return None if video_ok(folder) else "video missing or broken"
     src = entries.get(item["entry"])
     rendered = folder / ("reel-entry.json" if item["kind"] == "reel" else "entry.json")
-    if src is not None and (not rendered.exists() or json.loads(rendered.read_text()) != src):
+    # fields only the other format uses don't make this one stale
+    skip = {"framing", "odd_line", "rule", "subtitle", "facts"} if item["kind"] == "reel" else {"camera", "text_y", "opener", "kicker", "cta"}
+    same = lambda a, b: {k: v for k, v in a.items() if k not in skip} == {k: v for k, v in b.items() if k not in skip}
+    if src is not None and (not rendered.exists() or not same(json.loads(rendered.read_text()), src)):
         return "stale: content changed since it was rendered"
     if item["kind"] == "reel":
         if not video_ok(folder / "reel.mp4"):
