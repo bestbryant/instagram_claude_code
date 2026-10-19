@@ -8,13 +8,14 @@ Current gap: **3 h** (8 Reels a day), from 2026-10-19 21:20 UTC. Steps: 4 h, the
 - Log: 2026-10-19 21:20 UTC, gap set to 3 h at the owner's request. Baseline at about 12 h: Ovo reach 100 (posted 03:00, before the API block); Luna reach 2 (posted 12:24, just before the block).
 
 ## Now
-- [ ] **Batch 2 episodes (No. 019-030)**: twelve new planets from the writers' room's best unused ideas (scratchpad/room/B1/_blind_top.md: Pebb, Whisk, Lode, Fibb's horse, Pell on 18 November, "Every planet has one", "Your name is a job there", ...). Written to docs/HOUSE_RULES.md, checked with apply_episodes.py, rendered, frame-checked, added to schedule.json after Bramble so the 4-a-day rate continues past Friday 23 October.
+- [~] **Batch 2 episodes (No. 019-030)**: written, edited and queued 2026-10-19 (10 kept: 019, 021-026, 028-030); rendering now. Still to do: add their registry rows to docs/HOUSE_RULES.md, and frame-check each Reel as it finishes. Original plan:: twelve new planets from the writers' room's best unused ideas (scratchpad/room/B1/_blind_top.md: Pebb, Whisk, Lode, Fibb's horse, Pell on 18 November, "Every planet has one", "Your name is a job there", ...). Written to docs/HOUSE_RULES.md, checked with apply_episodes.py, rendered, frame-checked, added to schedule.json after Bramble so the 4-a-day rate continues past Friday 23 October.
 - [ ] **Read the first 48 h of story-episode stats** (Luna, Maren, Hush part one, Kess). Compare skip rate and average watch with Veyra and Ovo. If the opener is losing people in the first 2 s, rewrite the next five openers before they post.
 
 ## Next
+- [ ] **Batch 3 (No. 031-042)**, started as soon as batch 2 is rendered. The queue needs about 24 episodes ahead at 8 a day. Write 12 to the house rules; include more name planets if the stats favour them.
 - [ ] **Refresh docs/OWNER_TODO.md's comment list** when it runs low (about every 5 days): fresh, verified posts from the docs/community.md accounts, one specific comment each. The scratchpad workflow peer-post-comments does this; keep the owner's list to three a day.
 - [ ] **Name-planet episodes on demand**: requests get a story episode, not just a still. Write a short episode template the inbox can fill (resident, rule, turn) so a requested name posts within a day.
-- [ ] **Batch 3 (No. 031-042)**, chosen by what the stats say works (name planets vs. place planets, comic vs. tender, sign turns vs. picture turns).
+- [ ] **Batch 4**, chosen by what the stats say works (name planets vs. place planets, comic vs. tender, sign turns vs. picture turns).
 - [ ] **Series hooks**: a recurring "Atlas update" Reel every ten episodes (the cartographer's map filling in), which gives followers a reason to follow rather than just like.
 - [ ] **Trial Reels** once the account reaches 200 followers: A/B two openers for each new episode.
 - [ ] **Carousels with sound**: the held carousels go out once there are followers (API carousels can't carry audio, so they reach followers only).
