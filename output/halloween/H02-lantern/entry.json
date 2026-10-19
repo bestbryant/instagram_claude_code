@@ -40,5 +40,124 @@
   "reel_lines": [
     "Pumpkins grow as big as sheds here and glow from the inside all autumn.",
     "Every family carves a face into theirs, so the boats coming home know whose house it is."
-  ]
+  ],
+  "opener": "The boats steer by pumpkin.",
+  "episode": {
+    "opener": "Every pumpkin on Lantern\nis waiting for someone.",
+    "beats": [
+      {
+        "text": "Each family carves its own face,\nso the boats know\nwhose house they're passing.",
+        "shot": "close"
+      },
+      {
+        "text": "Never carve a frightening face. The boats get nervous.",
+        "shot": "left",
+        "spec": {
+          "cartographer": false
+        }
+      },
+      {
+        "text": "When the boats come in,\nthe pumpkins go out,\nhouse by house.",
+        "shot": "wide",
+        "spec": {
+          "lanterns": 5,
+          "cartographer": false
+        }
+      },
+      {
+        "text": "Dark means everyone's home.",
+        "shot": "wide",
+        "spec": {
+          "palette": "polar_night",
+          "particles": "snow",
+          "cartographer": false,
+          "lanterns": 2
+        }
+      },
+      {
+        "text": "All but Mrs Penhale's.\nHer son moved away\ntwelve years ago.",
+        "shot": {
+          "framing": "close",
+          "focus": [
+            0.22,
+            0.8
+          ],
+          "zoom": [
+            1.5,
+            1.7
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "particles": "snow",
+          "cartographer": false,
+          "lanterns": 1
+        }
+      },
+      {
+        "text": "He rings every Sunday.\nPumpkins don't count phone calls.",
+        "shot": {
+          "framing": "close",
+          "focus": [
+            0.22,
+            0.8
+          ],
+          "zoom": [
+            1.7,
+            1.85
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "particles": "snow",
+          "cartographer": false,
+          "lanterns": 1
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "close",
+          "focus": [
+            0.22,
+            0.8
+          ],
+          "zoom": [
+            1.85,
+            1.95
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "particles": "snow",
+          "cartographer": false,
+          "lanterns": 1
+        },
+        "seconds": 3.0
+      },
+      {
+        "text": "He came in at two.\nThe pumpkin went dark\nat five past.",
+        "shot": {
+          "framing": "close",
+          "focus": [
+            0.22,
+            0.8
+          ],
+          "zoom": [
+            1.95,
+            2.0
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "particles": "snow",
+          "cartographer": false,
+          "lanterns": 0
+        }
+      }
+    ],
+    "end": "Dark means everyone's home.",
+    "caption": "Watch the pumpkin by the lighthouse.\n\nLantern is a fishing coast of 62,000 people, with two moons, a twenty-hour day and no streetlights. Pumpkins grow on the hills above every harbour, as big as garden sheds, and glow from September until the first frost. The fleet steers home by them, which makes the lighthouse mostly ceremonial. This year's biggest has its own postcode. Mrs Penhale keeps the lighthouse, and every autumn she carves the face Jory drew for her as a boy. I lodged with her that week. If I stayed out late, the whole coast knew.\n\nOn Earth, the last Thursday of October is Punkie Night in Hinton St George, Somerset: the story goes that the village men stayed too long at Chiselborough fair, so their wives carved lanterns out of mangelwurzels and went to fetch them home. On Lantern, the lanterns stay home and wait.\n\nWhat face would you carve?"
+  },
+  "first_comment": "Mrs Penhale's pumpkin was lit again this evening. Jory's gone to the pub."
 }

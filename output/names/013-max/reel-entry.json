@@ -30,9 +30,123 @@
     "layers": 5,
     "mist": 0.4,
     "gag": "megaphones",
-    "stage": 0.74
+    "stage": 0.74,
+    "crowd": 1,
+    "crowd_items": "book",
+    "crowd_x": 0.6,
+    "crowd_facing": "left"
   },
   "opener": "Everything is set to maximum.",
   "kicker": "Every Max gets this planet.",
+  "text_y": {
+    "name": 0.2
+  },
+  "episode": {
+    "opener": "Nothing here has\na quiet setting.",
+    "beats": [
+      {
+        "text": "There used to be one.\nIt was removed by public vote.",
+        "shot": "wide",
+        "spec": {
+          "palette": "sepia",
+          "gag": "",
+          "sun_size": 0.04,
+          "sun_y": 0.42,
+          "mist": 0.7,
+          "crowd": 0
+        }
+      },
+      {
+        "text": "The vote was very loud.",
+        "shot": "gag"
+      },
+      {
+        "text": "Even the library is loud.\nIt had to compete.",
+        "shot": "sign",
+        "spec": {
+          "sign": "PUBLIC LIBRARY|NO WHISPERING"
+        }
+      },
+      {
+        "text": "Whispering requires a licence.\nYou apply by shouting.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.2,
+            1.25
+          ],
+          "focus": [
+            0.6,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "Only one was ever issued,\nto Nell, aged seven.\nI've seen it. It's laminated.",
+        "shot": "cartographer"
+      },
+      {
+        "text": "Seventy-nine years later,\nNell used it.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.25,
+            1.35
+          ],
+          "focus": [
+            0.42,
+            0.63
+          ]
+        },
+        "spec": {
+          "sign": "PUBLIC LIBRARY|NO WHISPERING",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "'Shh.'",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.35,
+            1.4
+          ],
+          "focus": [
+            0.42,
+            0.63
+          ]
+        },
+        "spec": {
+          "sign": "PUBLIC LIBRARY|NO WHISPERING",
+          "cartographer": false,
+          "palette": "sepia",
+          "gag": "",
+          "sun_size": 0.04,
+          "sun_y": 0.42,
+          "mist": 0.7
+        }
+      },
+      {
+        "text": "It worked.",
+        "shot": "wide",
+        "spec": {
+          "sign": "PUBLIC LIBRARY|NO WHISPERING",
+          "cartographer": false,
+          "palette": "sepia",
+          "gag": "",
+          "sun_size": 0.04,
+          "sun_y": 0.42,
+          "mist": 0.7
+        },
+        "seconds": 2.6
+      },
+      {
+        "text": "Now everyone shushes.\nAt maximum.",
+        "shot": "gag"
+      }
+    ],
+    "end": "There's going to be a vote.",
+    "caption": "Someone between the megaphones isn't shouting.\n\nThe sun is on its brightest setting, and so are the birds. The rivers run at full volume. Bedtime is set to maximum too, and nobody has reached it yet.\n\nNell got the planet's only whispering licence at seven, because she was the only child on Max who had never been told to keep it down. She grew up to be the librarian and kept it in a drawer at the issue desk, unspent, for seventy-nine years. The quiet didn't last. The shushing has.\n\nI applied for a licence while I was there. Turned down: nobody heard me apply.\n\nWhat would you spend one whisper on?"
+  },
   "_engine": 4
 }

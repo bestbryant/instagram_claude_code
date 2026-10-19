@@ -9,7 +9,7 @@
     "So they go by what they're holding. Charlie Nothing is having a day off."
   ],
   "odd_line": "They tried surnames. Those turned out to be Charlie as well.",
-  "story": "There are thirty-eight people on Charlie, and all of them are called Charlie. They tried surnames, but those turned out to be Charlie as well. So now everyone goes by whatever they're holding. Charlie Spade does the gardens. Charlie Spoon runs the café. Charlie Fish is not to be trusted with the café. Charlie Nothing is having a day off.",
+  "story": "There are thirty-eight people on Charlie, and all of them are called Charlie. They tried surnames, but those turned out to be Charlie as well. So now everyone goes by whatever they're holding. Charlie Spade does the gardens. Charlie Cup runs the café. Charlie Kettle is not to be trusted with the café. Charlie Nothing is having a day off.",
   "rule": "Anyone holding nothing is on holiday and must not be disturbed.",
   "question": "How many Charlies do you know?",
   "extra": "There was a Charlie Umbrella. It rained once and the whole system nearly collapsed.",
@@ -31,8 +31,109 @@
     "mist": 0.5,
     "crowd": 6,
     "sign": "POP. 38|ALL CHARLIE",
-    "stage": 0.74
+    "stage": 0.74,
+    "crowd_items": "spade,kettle,nothing,cup,kettle,spade"
   },
   "opener": "Everyone here is called Charlie.",
-  "kicker": "Every Charlie gets this planet."
+  "kicker": "Every Charlie gets this planet.",
+  "episode": {
+    "opener": "Everyone here\nis called Charlie.",
+    "beats": [
+      {
+        "text": "They tried surnames.\nAlso Charlie.",
+        "shot": "sign"
+      },
+      {
+        "text": "So you go by what you're holding.\nCharlie Cup runs the café.",
+        "shot": {
+          "framing": "close",
+          "focus": [
+            "x",
+            0.29
+          ]
+        }
+      },
+      {
+        "text": "Charlie Nothing\nis having a day off.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.4,
+            2.55
+          ],
+          "focus": [
+            "x",
+            0.264
+          ]
+        }
+      },
+      {
+        "text": "They called me Charlie Map.",
+        "shot": {
+          "framing": "cartographer",
+          "focus": [
+            0.77,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "When the café turned thirty,\nit gave everyone a free cup.",
+        "shot": "wide",
+        "spec": {
+          "palette": "abyss",
+          "crowd_items": "cup"
+        }
+      },
+      {
+        "text": "Thirty-eight Charlie Cups.\nOn his big day,\nnobody knew which was him.",
+        "shot": {
+          "framing": "close",
+          "focus": [
+            "x",
+            0.29
+          ]
+        },
+        "spec": {
+          "palette": "abyss",
+          "crowd_items": "cup"
+        }
+      },
+      {
+        "text": "Then they put them down.\nThirty-seven Charlies, on holiday.",
+        "shot": {
+          "framing": "close",
+          "focus": [
+            "x",
+            0.29
+          ]
+        },
+        "spec": {
+          "palette": "abyss",
+          "crowd_items": "nothing,nothing,nothing,cup,nothing,nothing"
+        }
+      },
+      {
+        "text": "He's Charlie Washing-Up now.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.4,
+            2.55
+          ],
+          "focus": [
+            "x",
+            0.32
+          ]
+        },
+        "spec": {
+          "palette": "abyss",
+          "crowd_items": "nothing,nothing,nothing,cup,nothing,nothing"
+        },
+        "seconds": 3.0
+      }
+    ],
+    "end": "You'd be Charlie Phone.",
+    "caption": "Frame one: find Charlie Cup.\n\nThere are thirty-eight people on Charlie, and every one of them is Charlie. Shout 'Charlie!' in the market and the whole street turns round. Babies are Charlie Nothing until they grab something, which is why nobody here wakes a baby. Hands in pockets count as holding nothing, so you can take a day off anywhere.\n\nThe morning after the party, thirty-seven Charlies were on holiday, so I dried. For a week I was Charlie Tea Towel.\n\nWelsh villages with too many Joneses did the same thing: Jones the Milk, Jones the Post.\n\nWhat's your Charlie always holding?"
+  }
 }
