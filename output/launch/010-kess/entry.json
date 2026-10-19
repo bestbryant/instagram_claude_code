@@ -27,7 +27,8 @@
     "suns": 0,
     "layers": 5,
     "mist": 0.4,
-    "gag": "road_tourists"
+    "gag": "road_tourists",
+    "stage": 0.7
   },
   "cover": "They stopped looking up.",
   "beats": [
@@ -37,9 +38,25 @@
   "odd_line": "Traffic report: three tourists lying in the high street, as usual.",
   "rule": "Tourists lying in the road must keep to the left lane.",
   "question": "What did you stop noticing where you live?",
-  "extra": "The bus timetable allows four minutes per tourist.",
+  "extra": "The bus timetable allows three minutes per tourist.",
   "reel_lines": [
     "The aurora on Kess has never switched off, so the people who live there stopped looking up.",
     "Now and then one of them looks up by accident and has to sit down on the kerb for a minute."
-  ]
+  ],
+  "opener": "They stopped looking up.",
+  "text_y": {
+    "setup": 0.1
+  },
+  "camera": {
+    "cover": {
+      "zoom": [
+        1.25,
+        1.25
+      ],
+      "focus": [
+        0.45,
+        0.5
+      ]
+    }
+  }
 }
