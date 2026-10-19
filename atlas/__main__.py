@@ -533,23 +533,42 @@ def cmd_stats(a):
     out = {}
     reel_metrics = ["reach", "views", "likes", "comments", "shares", "saved", "ig_reels_avg_watch_time", "reels_skip_rate"]
     feed_metrics = ["reach", "views", "likes", "comments", "shares", "saved"]
+    now = datetime.now(timezone.utc)
+    old = json.loads(STATS.read_text()).get("posts", {}) if STATS.exists() else {}
+    value = lambda d: (d.get("values") or [{}])[0].get("value", (d.get("total_value") or {}).get("value"))
+    history = []
     for x in log:
+        age = (now - datetime.fromisoformat(x["at"])).total_seconds() / 3600
+        if a.recent and age > a.recent:
+            if x["media_id"] in old:
+                out[x["media_id"]] = old[x["media_id"]]       # keep the last full pull for older posts
+            continue
         wanted = feed_metrics if x["kind"] == "carousel" else reel_metrics
         vals = {}
-        for m in wanted:                                   # one at a time: an unsupported metric fails the whole call
-            try:
-                d = p._call("GET", f"{x['media_id']}/insights", metric=m).get("data", [])
-                if d:
-                    vals[m] = (d[0].get("values") or [{}])[0].get("value", (d[0].get("total_value") or {}).get("value"))
-            except GraphError:
-                pass
+        try:                                               # one call for all metrics (stays well inside the hourly call budget)
+            vals = {d["name"]: value(d) for d in p._call("GET", f"{x['media_id']}/insights", metric=",".join(wanted)).get("data", [])}
+        except GraphError as err:
+            if "API on hold" in str(err) or "OAuthException" in str(err):
+                raise
+            for m in wanted:                               # an unsupported metric fails the whole call: fall back to one at a time
+                try:
+                    d = p._call("GET", f"{x['media_id']}/insights", metric=m).get("data", [])
+                    if d:
+                        vals[m] = value(d[0])
+                except GraphError:
+                    pass
         out[x["media_id"]] = {"entry": x["entry"], "kind": x["kind"], "at": x["at"], **vals}
+        history.append({"t": now.isoformat(timespec="seconds"), "entry": x["entry"], "kind": x["kind"], "age_h": round(age, 1), **vals})
         r = vals.get("reach") or 0
         print(f"{x['at'][:16]} {x['entry']:>4} {x['kind']:<8} reach {r:>5}  views {vals.get('views', '-'):>5}  "
               f"likes {vals.get('likes', '-'):>3}  shares {vals.get('shares', '-'):>3}  saves {vals.get('saved', '-'):>3}  "
               f"watch {vals.get('ig_reels_avg_watch_time', '-')}  skip {vals.get('reels_skip_rate', '-')}")
     acct = p._call("GET", p.user_id, fields="followers_count,media_count")
     print(f"followers {acct.get('followers_count')}  posts {acct.get('media_count')}")
+    with (ROOT / "content" / "stats_history.jsonl").open("a") as f:      # reach over time, for the posting-rate experiment
+        for h in history:
+            f.write(json.dumps(h) + "\n")
+        f.write(json.dumps({"t": now.isoformat(timespec="seconds"), "followers": acct.get("followers_count"), "posts": acct.get("media_count")}) + "\n")
     STATS.write_text(json.dumps({"fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                                  "followers": acct.get("followers_count"), "posts": out}, indent=1) + "\n")
 
@@ -654,6 +673,7 @@ def main(argv=None):
     s.add_argument("--jobs", type=int, default=1)
     s.set_defaults(fn=cmd_prepare)
     s = sub.add_parser("stats", help="reach, views, watch time, likes, shares and saves for every post")
+    s.add_argument("--recent", type=float, default=0, help="only posts younger than this many hours (a light hourly check)")
     s.set_defaults(fn=cmd_stats)
     s = sub.add_parser("inbox", help="collect name requests from recent comments (Graph API)")
     s.add_argument("--limit", type=int, default=10, help="how many recent posts to scan")
