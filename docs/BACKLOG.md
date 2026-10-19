@@ -19,7 +19,7 @@ Current gap: **3 h** (8 Reels a day), from 2026-10-19 21:20 UTC. Steps: 4 h, the
 - [ ] **Read the first 48 h of story-episode stats** (Luna, Maren, Hush part one, Kess). Compare skip rate and average watch with Veyra and Ovo. If the opener is losing people in the first 2 s, rewrite the next five openers before they post.
 
 ## Next
-- [ ] **Batch 3 (No. 031-042)**, started as soon as batch 2 is rendered. The queue needs about 24 episodes ahead at 8 a day. Write 12 to the house rules; include more name planets if the stats favour them.
+- [~] **Batch 3 (No. 031-042)**: written by the room 2026-10-19 (10 kept: Lode, Ruby, Fibb, Lull, Will, Miles, Grace, Norman, Simon, Fond; Fleet and Isla dropped), added to content and queued after Sooner (023). Not rendered yet on purpose: the reels research may change the format (motion, voice, length), so render once that decision is made.
 - [ ] **Name-planet episodes on demand**: requests get a story episode, not just a still. Write a short episode template the inbox can fill (resident, rule, turn) so a requested name posts within a day.
 - [ ] **Batch 4**, chosen by what the stats say works (name planets vs. place planets, comic vs. tender, sign turns vs. picture turns).
 - [ ] **Series hooks**: a recurring "Atlas update" Reel every ten episodes (the cartographer's map filling in), which gives followers a reason to follow rather than just like.

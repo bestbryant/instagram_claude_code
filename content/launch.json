@@ -2635,5 +2635,788 @@
       "caption": "Check the date on the café board.\n\nSooner has 3 million people, a 25-hour day and a café on every hill. Its calendar has one extra date, Sometime, which comes round every forty years. Every 'we should get coffee sometime' ever said falls due that morning, and the cafés bake for a year to be ready. Tables booked on the strength of a bad first date are free again by eleven, and nobody mentions it.\n\nI once ended a letter to an old flatmate with 'see you sometime'. She was at a table when I landed. She'd ordered for me.\n\nJapan's tea ceremony has a saying, ichigo ichie: treat each meeting as if it will never come again. On Sooner, it does, every forty years.\n\nHow many 'sometimes' do you owe?"
     },
     "first_comment": "Café owner: 40,112 coffees. 3 proposals. 1 man who came to the wrong sometime."
+  },
+  {
+    "id": "034",
+    "name": "Lode",
+    "subtitle": "the homing planet",
+    "story": "Everyone on Lode is born with a little iron in the blood, and it points to where they were born. Every December, the whole planet follows it home. Most of them were born in the hospital, which is a supermarket now, so every December thirty thousand people come home to aisle three. Sister Bridget delivered every one of them. She's on the tills now.",
+    "facts": {
+      "Day": "26 hours",
+      "Moons": "one",
+      "Gravity": "1.2 g",
+      "Population": "52,000"
+    },
+    "hook": "A planet for people who go home for Christmas.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#homeforchristmas"
+    ],
+    "spec": {
+      "palette": "violet_ice",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": 0.7,
+      "sun_y": 0.5,
+      "sun_size": 0.045,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 1,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "pines",
+      "snow": true,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "snow",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 8,
+      "crowd_items": "flower,nothing,nothing,flower",
+      "crowd_x": 0.76,
+      "crowd_facing": "left",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "Here, your blood points home.",
+    "episode": {
+      "opener": "On Lode, your blood\npoints home.",
+      "beats": [
+        {
+          "text": "There's iron in it.",
+          "shot": "crowd"
+        },
+        {
+          "text": "Home, meaning\nwhere you were born.",
+          "shot": "sky"
+        },
+        {
+          "text": "Every December,\neveryone follows it home.",
+          "shot": "left"
+        },
+        {
+          "text": "Most people were born\nin the hospital.",
+          "shot": "house"
+        },
+        {
+          "text": "It's a supermarket now.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.95,
+              2.02
+            ]
+          },
+          "seconds": 3.0,
+          "note": "turn line, a push in on the same building"
+        },
+        {
+          "text": "I tried it.\nMine points straight down.",
+          "shot": "cartographer",
+          "spec": {
+            "cartographer": true
+          }
+        },
+        {
+          "text": "Most of the year,\nit's quiet.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.55,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.45
+          }
+        },
+        {
+          "text": "Then it's December.\nThirty thousand people\ncome home to aisle three.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.55,
+              0.62
+            ]
+          },
+          "note": "identical camera, one thing changed: the queue"
+        },
+        {
+          "text": "Sister Bridget delivered\nevery one of them.",
+          "shot": "crowd"
+        },
+        {
+          "text": "She's on the tills now.",
+          "shot": "house"
+        }
+      ],
+      "end": "'Welcome home. Need a bag?'",
+      "caption": "The whole queue was born in that shop.\n\nLode is a snowy, hilly planet of 52,000 people, and none of them has ever been lost. You're born with a little iron in the blood, and it points, very gently, at the spot where you arrived. Sat-navs never caught on. In December the whole planet sets off home, and most of it ends up at the big supermarket on the ring road, which was the hospital until 1988. Midwives on Lode don't really retire.\n\nThe man on the next till asked where mine pointed. I said down. He went very quiet and gave me a free bag.\n\n(You have iron in your blood too: three or four grams of it, most of it in your red cells. Ours doesn't point anywhere. We go home anyway.)\n\nWhere does your iron point?"
+    },
+    "first_comment": "Bridget: Thirty thousand home this year. I've told every one of them to stand up straight."
+  },
+  {
+    "id": "040",
+    "name": "Fibb",
+    "subtitle": "where every lie comes true",
+    "story": "On Fibb, every lie comes true by morning, so fishermen are very popular. On their first date, Ned told Iris he lived by the sea. By morning, he did. Date two: a lighthouse. Date three: two moons. On date four, Iris said she'd liked date one better, so he told her the truth: it's a field, and he's just Ned. By then, that was a lie. By morning it was a field again. She stayed. She does miss the moons.",
+    "facts": {
+      "Day": "24 hours, allegedly",
+      "Moons": "none, usually",
+      "Gravity": "1.0 g",
+      "Population": "2.1 million"
+    },
+    "hook": "A planet for people who've oversold themselves on a first date.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#firstdate"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 2,
+      "horizon": 0.58,
+      "relief": 0.45,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.86,
+      "sun_y": 0.12,
+      "sun_size": 0.035,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.1,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.56,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "Every lie here comes true by morning.",
+    "episode": {
+      "opener": "On Fibb, every lie\ncomes true by morning.",
+      "beats": [
+        {
+          "text": "Fishermen are very popular.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.7,
+              1.78
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "fish",
+            "crowd_x": 0.5,
+            "crowd_facing": ""
+          }
+        },
+        {
+          "text": "First date: Ned told Iris\nhe lived by the sea.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.0,
+              1.03
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "note": "setup: the field"
+        },
+        {
+          "text": "By morning, he did.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.0,
+              1.03
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "water": true,
+            "shore": "left"
+          },
+          "note": "identical camera; the sea"
+        },
+        {
+          "text": "Date two:\n'There's a lighthouse.'",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.0,
+              1.03
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "water": true,
+            "shore": "left",
+            "lighthouse": true
+          }
+        },
+        {
+          "text": "Date three:\n'And two moons.'",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.0,
+              1.03
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "water": true,
+            "shore": "left",
+            "lighthouse": true,
+            "moons": 2,
+            "palette": "lilac_dusk",
+            "suns": 0
+          },
+          "text_y": 0.12
+        },
+        {
+          "text": "Date four, Iris said\nshe'd liked date one better.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.8,
+              1.85
+            ]
+          },
+          "spec": {
+            "water": true,
+            "shore": "left",
+            "lighthouse": true,
+            "moons": 2,
+            "palette": "lilac_dusk",
+            "suns": 0
+          }
+        },
+        {
+          "text": "So he told her:\n'It's a field. I'm just Ned.'",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.85,
+              1.9
+            ]
+          },
+          "spec": {
+            "water": true,
+            "shore": "left",
+            "lighthouse": true,
+            "moons": 2,
+            "palette": "lilac_dusk",
+            "suns": 0
+          }
+        },
+        {
+          "text": "By then, that was a lie.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.0,
+              1.03
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "water": true,
+            "shore": "left",
+            "lighthouse": true,
+            "moons": 2,
+            "palette": "lilac_dusk",
+            "suns": 0
+          },
+          "text_y": 0.12
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.0,
+              1.03
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "seconds": 2.5,
+          "note": "the turn: identical camera, everything gone, the field again"
+        },
+        {
+          "text": "She stayed.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.8,
+              1.85
+            ]
+          }
+        }
+      ],
+      "end": "She does miss the moons.",
+      "caption": "Everything in this picture is true. For now.\n\nFibb is 2.1 million people on a quiet, grassy world where anything you say that isn't true is true by morning. Children learn to be precise before they learn to be polite. CVs are accurate, eventually. Politicians speak very slowly.\n\nI told a customs officer I had nothing to declare. In the morning I had nothing at all, including my map.\n\n(The story goes that the English 'fib' began as 'fible-fable', an old word for nonsense. On Fibb, there's no such thing as a small one.)\n\nField, or the moons?"
+    },
+    "first_comment": "Two months on, the field is still a field. Iris keeps a seashell on the windowsill."
+  },
+  {
+    "id": "039",
+    "name": "Lull",
+    "subtitle": "the moon that minds the baby",
+    "story": "On Lull, the moon follows the youngest person on the planet and waits over their roof all night. When there's a new baby, it moves house, so gossip is mostly astronomy. For six years it sat over Alfie's. Then his sister was born, at home, and it didn't move an inch. It just wasn't his any more. Alfie took it badly, for about a week. Now he shows her where it is. She's usually asleep.",
+    "facts": {
+      "Day": "26 hours",
+      "Moons": "one, on loan to the youngest",
+      "Gravity": "0.9 g",
+      "Population": "290"
+    },
+    "hook": "A planet for people who stopped being the baby of the family.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#siblings"
+    ],
+    "spec": {
+      "palette": "teal_night",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.66,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.2,
+      "sun_y": 0.45,
+      "sun_size": 0.04,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 1.6,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "child,child_asleep",
+      "crowd_x": 0.36,
+      "crowd_facing": "left",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "The moon here follows the youngest person.",
+    "episode": {
+      "opener": "The moon here follows\nthe youngest person.",
+      "beats": [
+        {
+          "text": "It waits over their roof.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.3,
+              0.55
+            ]
+          },
+          "note": "frame-1 family, house and moon in one shot"
+        },
+        {
+          "text": "When there's a new baby,\nit moves house.",
+          "shot": "sky"
+        },
+        {
+          "text": "Gossip here\nis mostly astronomy.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.18
+            ]
+          },
+          "spec": {
+            "crowd": 4,
+            "crowd_items": "nothing",
+            "crowd_x": 0.62,
+            "crowd_facing": "left"
+          }
+        },
+        {
+          "text": "For six years,\nit sat over Alfie's.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.4,
+              1.43
+            ],
+            "focus": [
+              0.33,
+              0.56
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "child",
+            "crowd_x": 0.315
+          },
+          "note": "setup: one carrier, Alfie on his shoulders pointing at the moon"
+        },
+        {
+          "text": "Then his sister was born.",
+          "shot": "house"
+        },
+        {
+          "text": "It didn't move an inch.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.3,
+              0.55
+            ]
+          },
+          "note": "turn line: the identical frame to beat 1; nothing has moved"
+        },
+        {
+          "text": "It just wasn't his\nany more.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.4,
+              1.43
+            ],
+            "focus": [
+              0.33,
+              0.56
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "child_asleep",
+            "crowd_x": 0.405
+          },
+          "note": "identical camera to beat 4; one thing changed: the baby is under the moon, Alfie isn't"
+        },
+        {
+          "text": "Alfie took it badly.\nFor about a week.",
+          "shot": {
+            "framing": "sky",
+            "zoom": [
+              1.9,
+              1.95
+            ],
+            "focus": [
+              0.2,
+              0.45
+            ]
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.43,
+              1.47
+            ],
+            "focus": [
+              0.33,
+              0.56
+            ]
+          },
+          "seconds": 3.0,
+          "note": "hold: both carried, Alfie pointing, his sister asleep"
+        },
+        {
+          "text": "Now he shows her\nwhere it is.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.47,
+              1.5
+            ],
+            "focus": [
+              0.33,
+              0.56
+            ]
+          }
+        }
+      ],
+      "end": "She's usually asleep.",
+      "caption": "Guess whose moon that is.\n\nLull is 290 people, low hills and one moon, which follows the youngest person on the planet and waits over their roof all night. New parents never buy a night light. When the moon moves house, the whole planet knows by breakfast, and somebody takes round a cake. It hadn't moved for six years.\n\nI tried to read by it on my first night. It was over a farm two valleys away.\n\n(On Earth, the moon seems to chase the car because it's about 384,000 kilometres away, so a whole drive barely shifts it across the sky. On Lull, it really is following.)\n\nDid you sulk when the baby came?"
+    },
+    "first_comment": "Lull update: there's a new baby at the mill. Alfie's sister is taking it badly."
+  },
+  {
+    "id": "042",
+    "name": "Fond",
+    "subtitle": "where 'I love you' works once",
+    "story": "On Fond, 'I love you' only works once, so nobody wastes it. Instead they say 'Take a coat', or 'Text me when you're home'. Kath spent hers on Sam before he could talk. He doesn't remember it. She's said 'Take a coat' every day since. Last winter, at the station, Sam left for the city, and spent his on her. She said, 'Take a coat.'",
+    "facts": {
+      "Day": "23 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "880,000"
+    },
+    "hook": "A planet for people who hear 'Take a coat' and know what it means.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#mum"
+    ],
+    "spec": {
+      "palette": "violet_ice",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.62,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 0.8,
+      "islands": 0,
+      "trees": "pines",
+      "snow": true,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "snow",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "MIND HOW|YOU GO",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.38,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "'I love you' only works once here.",
+    "episode": {
+      "opener": "On Fond, 'I love you'\nonly works once.",
+      "beats": [
+        {
+          "text": "Nobody wastes it.",
+          "shot": "sky"
+        },
+        {
+          "text": "Instead, they say\n'Take a coat.'",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ]
+          },
+          "spec": {
+            "crowd": 5,
+            "crowd_items": "nothing",
+            "crowd_x": 0.42,
+            "crowd_facing": ""
+          }
+        },
+        {
+          "text": "'Text me when you're home.'\n'I saved you the crispy bit.'",
+          "shot": {
+            "framing": "left",
+            "zoom": [
+              1.8,
+              1.9
+            ],
+            "focus": [
+              "x",
+              0.25
+            ]
+          }
+        },
+        {
+          "text": "Kath spent hers on Sam\nbefore he could talk.",
+          "shot": "house",
+          "spec": {
+            "palette": "sepia",
+            "snow": false,
+            "particles": "none"
+          },
+          "note": "the past, in sepia: the same lit window"
+        },
+        {
+          "text": "He doesn't remember.\nShe's said 'Take a coat'\never since.",
+          "shot": "house",
+          "note": "identical camera to the sepia beat; the present"
+        },
+        {
+          "text": "Last winter, at the station,\nSam left for the city.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.48
+            ],
+            "focus": [
+              0.55,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_facing": "right"
+          },
+          "note": "side by side, facing the way the train goes"
+        },
+        {
+          "text": "He spent his on her.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.48
+            ],
+            "focus": [
+              0.55,
+              0.6
+            ]
+          },
+          "spec": {
+            "particles": "none"
+          },
+          "note": "turn: identical camera; the snow stops as he says it (they also turn to face each other)"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.48,
+              1.54
+            ],
+            "focus": [
+              0.55,
+              0.6
+            ]
+          },
+          "spec": {
+            "particles": "none"
+          },
+          "seconds": 3.0,
+          "note": "hold on the platform"
+        }
+      ],
+      "end": "She said, 'Take a coat.'",
+      "caption": "Even the station sign is saying it.\n\nFond is 880,000 people, long winters and a great deal of knitwear. Here, 'I love you' works once: say it a second time and it comes out as a cough. So everyone keeps theirs, and the language has filled up with stand-ins: 'Mind the step', 'Ring your nan', 'There's lasagne in the freezer'. Teenagers find all of it unbearable, then grow up and say every word.\n\nEleven strangers told me to take a coat on my first day. I've never felt so loved.\n\n(The story goes that plenty of Earth families never say it out loud either. In Chinese, asking whether you've eaten has been doing the job for generations. On Fond, it's mostly coats.)\n\nWhat's your family's 'Take a coat'?"
+    },
+    "first_comment": "Sam texted from the city: 'Got here. Wearing it.'"
   }
 ]

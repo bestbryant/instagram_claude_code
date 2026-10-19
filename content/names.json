@@ -1606,5 +1606,1198 @@
       "caption": "The man nearest the tree is waiting.\n\nWillow is a lake, 146,000 people and one tree, and every one of them is in the queue for it. When your turn comes you get one afternoon in its shade, as long as you like, and you can't swap it or sell it. Most people pick a wedding, a new baby or a very good book. Gaun's turn came up last spring. His family have stopped asking.\n\nI leaned on it on my first morning. Four hundred years of queue cleared its throat.\n\nIn Japan, offices send their newest recruit out early in cherry-blossom season to hold a spot under the trees for that evening's party. It's called basho-tori. On Willow, the whole planet is holding one spot.\n\nWhat would you save your afternoon for?"
     },
     "first_comment": "Gaun: Still thinking about it. Don't rush me."
+  },
+  {
+    "id": "031",
+    "name": "Ruby",
+    "subtitle": "the blushing sky",
+    "story": "On Ruby, the sky blushes. Whenever anyone on the planet is embarrassed it goes a little pink, so most sunsets are someone saying 'you too' to a waiter, and wedding speeches are given after dark. Nobody had ever seen it properly red. Then, live, to eleven million people, the evening newsreader signed off with 'Love you, bye.' Four million said it back. It stayed red for a week.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "12 million"
+    },
+    "hook": "A planet for everyone who's said 'you too' to a waiter.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#ruby"
+    ],
+    "spec": {
+      "palette": "crimson",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.72,
+      "sun_y": 0.56,
+      "sun_size": 0.045,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 4,
+      "crowd_items": "nothing",
+      "crowd_x": 0.36,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "On Ruby, the sky blushes.",
+    "kicker": "Every Ruby gets this planet.",
+    "episode": {
+      "opener": "On Ruby,\nthe sky blushes.",
+      "beats": [
+        {
+          "text": "Whenever anyone\nis embarrassed.",
+          "shot": "sky",
+          "spec": {
+            "palette": "pastel"
+          }
+        },
+        {
+          "text": "Most sunsets are someone\nsaying 'you too' to a waiter.",
+          "shot": "medium",
+          "spec": {
+            "palette": "rose_fog",
+            "sun_y": 0.6
+          }
+        },
+        {
+          "text": "A pink morning means somebody\ncalled their teacher\n'Mum'.",
+          "shot": "left",
+          "spec": {
+            "palette": "pastel",
+            "sun_x": 0.22,
+            "sun_y": 0.58
+          }
+        },
+        {
+          "text": "Wedding speeches\nare given after dark.",
+          "shot": "crowd",
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0
+          }
+        },
+        {
+          "text": "Nobody had ever seen it\nproperly red.",
+          "shot": "sky",
+          "spec": {
+            "palette": "cobalt_noon",
+            "sun_y": 0.3
+          }
+        },
+        {
+          "text": "Then the evening newsreader\nsigned off.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.8,
+              1.86
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "sun_y": 0.62
+          },
+          "note": "setup on the house camera: the evening news"
+        },
+        {
+          "text": "'Love you, bye.'",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.8,
+              1.86
+            ]
+          },
+          "spec": {
+            "sun_y": 0.62
+          },
+          "seconds": 3.0,
+          "note": "turn: identical camera, one thing changed (the sky goes crimson)"
+        },
+        {
+          "text": "Eleven million people\nwere watching.",
+          "shot": "crowd"
+        },
+        {
+          "text": "Four million\nsaid it back.",
+          "shot": "wide",
+          "note": "population-scale close on the frame-1 camera"
+        }
+      ],
+      "end": "It stayed red for a week.",
+      "caption": "Somebody is to blame for that sky.\n\nRuby is a mild, blue planet of twelve million people with nowhere to hide. The sky goes pink whenever anyone on it is embarrassed, and red when it's bad, so the whole planet knows by lunchtime. A trip on the stairs is a rosy afternoon. A reply-all is a week of sunsets. Poker never caught on, and the weather forecast is basically gossip. The evening newsreader had gone twenty years without a single blush.\n\nI waved back at a man who was waving at someone behind me. The whole planet knew by teatime.\n\n(On Earth, a sunset is red because low light crosses about thirty-eight times as much air as light from straight overhead, and the blue gets scattered out on the way. On Ruby, it's because somebody's dad is dancing.)\n\nWhat turned your sky red this week?"
+    },
+    "first_comment": "Day eight: back to blue. The newsreader now signs off with a firm handshake, to camera."
+  },
+  {
+    "id": "038",
+    "name": "Will",
+    "subtitle": "every Will's planet",
+    "story": "On Will, the sun only rises if enough people want it to, so every morning the whole planet gets up early and wants it. Teenagers are a national problem. School mornings are always a bit late. After New Year's Eve, the whole planet slept in, and the sky stayed dark. Then, at five, the sun rose anyway. One spaniel had wanted it very much.",
+    "facts": {
+      "Day": "24 hours, on request",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "6.2 million"
+    },
+    "hook": "A planet for people who are up at five because the dog is.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#will"
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.52,
+      "sun_y": 0.54,
+      "sun_size": 0.06,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": true,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "SUNRISE|WANTED BY|6,204,311",
+      "crowd": 4,
+      "crowd_items": "nothing",
+      "crowd_x": 0.4,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "The sun rises by popular demand.",
+    "kicker": "Every Will gets this planet.",
+    "text_y": {
+      "name": 0.2
+    },
+    "episode": {
+      "opener": "On Will, the sun rises\nby popular demand.",
+      "beats": [
+        {
+          "text": "No demand, no sunrise.",
+          "shot": {
+            "framing": "sky",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.52,
+              0.45
+            ]
+          }
+        },
+        {
+          "text": "So everyone gets up early\nand wants it.",
+          "shot": "medium",
+          "text_y": 0.12
+        },
+        {
+          "text": "Teenagers are\na national problem.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.28,
+              0.7
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.3,
+            "crowd_facing": "left",
+            "cartographer": false,
+            "sun_y": 0.68
+          },
+          "note": "one figure with its back to the sun"
+        },
+        {
+          "text": "School mornings\nare always a bit late.",
+          "shot": {
+            "framing": "sky",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.52,
+              0.45
+            ]
+          },
+          "spec": {
+            "sun_y": 0.63
+          },
+          "note": "the sun barely over the hills"
+        },
+        {
+          "text": "After New Year's Eve,\nthe whole planet slept in.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.04,
+              1.07
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "crowd": 0,
+            "sign": "SUNRISE|WANTED BY|0",
+            "cartographer": false
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.07,
+              1.09
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "crowd": 0,
+            "sign": "SUNRISE|WANTED BY|0",
+            "cartographer": false
+          },
+          "seconds": 2.0,
+          "note": "nothing happens; one lit window"
+        },
+        {
+          "text": "Then, at five, it rose.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.09,
+              1.1
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "sign": "SUNRISE|WANTED BY|1",
+            "cartographer": false
+          },
+          "note": "turn line: identical camera; the sun is back and the board reads 1"
+        },
+        {
+          "text": "One spaniel\nwanted it very much.",
+          "shot": "sign",
+          "spec": {
+            "crowd": 0,
+            "sign": "SUNRISE|WANTED BY|1",
+            "cartographer": false
+          }
+        },
+        {
+          "text": "Six million people\nslept through it.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.12
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "sign": "SUNRISE|WANTED BY|1",
+            "cartographer": false
+          }
+        }
+      ],
+      "end": "There's always a Will.",
+      "caption": "That board is counting votes.\n\nWill is 6.2 million people, rolling hills and a sun that only comes up if enough of them want it to. Most mornings it's a formality: the kettles go on, everyone stands at a window and wants it, and the count goes up on a board in every square. The very old are excused. They say they've wanted enough sunrises for one lifetime.\n\nI slept through my first morning. The street sent round a doctor.\n\n(On Earth, the air bends sunlight over the horizon, so you see the sun come up about two minutes before it really has. On Will, it waits to be asked.)\n\nWhat time would you set the sun for?"
+    },
+    "first_comment": "Council notice: sunrise will be at the usual time tomorrow. The usual time is now five."
+  },
+  {
+    "id": "041",
+    "name": "Miles",
+    "subtitle": "every Miles's planet",
+    "story": "On Miles, next door is ninety miles away, so nobody pops round. At dusk, every farm shines a lamp at the sky: once means 'All fine', twice means 'Come'. Edie had flashed once every dusk of her life. She'd never asked anyone for anything. In January, she flashed twice. By dawn, two hundred people had driven through the night. She'd made too much soup.",
+    "facts": {
+      "Day": "30 hours",
+      "Moons": "none",
+      "Gravity": "0.7 g",
+      "Population": "52,000, thinly spread"
+    },
+    "hook": "A planet for people who never ask anyone for anything.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#miles"
+    ],
+    "spec": {
+      "palette": "crimson",
+      "terrain": "hills",
+      "layers": 5,
+      "horizon": 0.62,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.2,
+      "sun_y": 0.6,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.55,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 0,
+      "crowd_items": "",
+      "crowd_x": 0.0,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": true,
+      "stage": 0.74
+    },
+    "cover": "Next door is ninety miles away.",
+    "kicker": "Every Miles gets this planet.",
+    "episode": {
+      "opener": "On Miles, next door\nis ninety miles away.",
+      "beats": [
+        {
+          "text": "Nobody pops round.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.15
+            ]
+          }
+        },
+        {
+          "text": "At dusk, every farm\nshines a lamp at the sky.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.35,
+              1.42
+            ],
+            "focus": [
+              0.5,
+              0.42
+            ]
+          }
+        },
+        {
+          "text": "Once means 'All fine.'\nTwice means 'Come.'",
+          "shot": "sky"
+        },
+        {
+          "text": "Edie had flashed once\nevery dusk of her life.",
+          "shot": "house"
+        },
+        {
+          "text": "She'd never asked anyone\nfor anything.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.25,
+              1.27
+            ],
+            "focus": [
+              0.62,
+              0.55
+            ]
+          }
+        },
+        {
+          "text": "In January, she flashed twice.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.27,
+              1.28
+            ],
+            "focus": [
+              0.62,
+              0.55
+            ]
+          },
+          "spec": {
+            "palette": "abyss",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow"
+          },
+          "note": "turn line: flash one"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.28,
+              1.285
+            ],
+            "focus": [
+              0.62,
+              0.55
+            ]
+          },
+          "spec": {
+            "palette": "abyss",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "lamp": false
+          },
+          "seconds": 0.6,
+          "note": "off"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.285,
+              1.29
+            ],
+            "focus": [
+              0.62,
+              0.55
+            ]
+          },
+          "spec": {
+            "palette": "abyss",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow"
+          },
+          "seconds": 1.0,
+          "note": "flash two, on the identical camera"
+        },
+        {
+          "text": "By dawn, two hundred people\nhad driven through the night.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.29,
+              1.32
+            ],
+            "focus": [
+              0.62,
+              0.55
+            ]
+          },
+          "spec": {
+            "palette": "rose_fog",
+            "suns": 1,
+            "sun_x": 0.84,
+            "sun_y": 0.58,
+            "snow": true,
+            "lamp": false,
+            "crowd": 7,
+            "crowd_items": "kettle,nothing,kettle,nothing,kettle,nothing,kettle",
+            "crowd_x": 0.45,
+            "cartographer": false
+          },
+          "note": "identical camera; the dawn yard full of people with kettles"
+        },
+        {
+          "text": "She'd made too much soup.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.6,
+              1.7
+            ]
+          },
+          "spec": {
+            "palette": "rose_fog",
+            "suns": 1,
+            "sun_x": 0.84,
+            "sun_y": 0.58,
+            "snow": true,
+            "lamp": false,
+            "crowd": 7,
+            "crowd_items": "kettle,nothing,kettle,nothing,kettle,nothing,kettle",
+            "crowd_x": 0.45,
+            "cartographer": false
+          }
+        }
+      ],
+      "end": "Always make too much soup.",
+      "caption": "One lamp, ninety miles from the next.\n\nMiles is a huge, flat, windy world with 52,000 people on it, most of them a day's drive from anyone else. So the planet runs on lamps: one flash at dusk for 'All fine', two for 'Come'. On a clear night every farm can see five or six others, and everyone knows whose is whose. Edie had lived alone at the top of the valley for years, and had never once flashed twice.\n\nI flashed twice on my first night, by accident, looking for the switch. Nine trucks and a vet.\n\n(On Earth, the story goes, the outback radio network kept a 'galah session', a daily slot when people on remote stations could just chat, named after a very noisy bird. On Miles, they flash.)\n\nWhen did you last ask anyone for anything?"
+    },
+    "first_comment": "Edie has flashed twice three times since. Leek and potato, mostly."
+  },
+  {
+    "id": "037",
+    "name": "Grace",
+    "subtitle": "every Grace's planet",
+    "story": "On Grace, the band never stops first: it plays until everyone sits down. Weddings run for weeks, and drummers retire mid-song. At Rosie's wedding, the dancing started at eight. By midnight, four were left. By breakfast, two: Rosie and her dad. The groom went to bed at ten. Her dad isn't ready to sit down yet. Nor is she.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "none",
+      "Gravity": "0.8 g",
+      "Population": "1.3 million"
+    },
+    "hook": "A planet for people who aren't ready for the last dance.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#grace"
+    ],
+    "spec": {
+      "palette": "rust_desert",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.75,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": true,
+      "ring": true,
+      "giant_size": 0.17,
+      "giant_x": 0.8,
+      "giant_y": 0.47,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,flower",
+      "crowd_x": 0.36,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "The band never stops first.",
+    "kicker": "Every Grace gets this planet.",
+    "text_y": {
+      "name": 0.15
+    },
+    "episode": {
+      "opener": "On Grace, the band\nnever stops first.",
+      "beats": [
+        {
+          "text": "Until everyone sits down.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.14
+            ]
+          },
+          "spec": {
+            "crowd": 6,
+            "crowd_items": "nothing",
+            "crowd_x": 0.36,
+            "crowd_facing": ""
+          }
+        },
+        {
+          "text": "Weddings run for weeks.",
+          "shot": "house",
+          "text_y": 0.3
+        },
+        {
+          "text": "Bands work in shifts.\nDrummers retire mid-song.",
+          "shot": "crowd",
+          "spec": {
+            "crowd": 6,
+            "crowd_items": "nothing",
+            "crowd_x": 0.36,
+            "crowd_facing": ""
+          }
+        },
+        {
+          "text": "At Rosie's wedding,\nthe dancing started at eight.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.4,
+              1.44
+            ],
+            "focus": [
+              0.42,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "crowd": 6,
+            "crowd_items": "nothing",
+            "crowd_x": 0.36,
+            "crowd_facing": ""
+          },
+          "note": "countdown starts: six dancers at dusk"
+        },
+        {
+          "text": "By midnight,\nfour were left.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.44,
+              1.48
+            ],
+            "focus": [
+              0.42,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "crowd": 4,
+            "crowd_items": "nothing",
+            "crowd_x": 0.36,
+            "crowd_facing": ""
+          }
+        },
+        {
+          "text": "By breakfast, two.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.48,
+              1.52
+            ],
+            "focus": [
+              0.42,
+              0.6
+            ]
+          },
+          "note": "turn line: identical camera, down to two; the bride has the bouquet"
+        },
+        {
+          "text": "Rosie, and her dad.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.95,
+              2.0
+            ]
+          }
+        },
+        {
+          "text": "The groom went to bed at ten.",
+          "shot": "house",
+          "text_y": 0.3,
+          "note": "text below the giant"
+        },
+        {
+          "text": "Her dad isn't ready\nto sit down yet.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.52,
+              1.55
+            ],
+            "focus": [
+              0.42,
+              0.6
+            ]
+          }
+        }
+      ],
+      "end": "Nor is she.",
+      "caption": "Look who's still dancing at breakfast.\n\nGrace is 1.3 million people in soft, low hills, with gravity light enough that nobody's feet ever get tired. The rule is older than anyone can remember: the band plays until the last dancer sits down. Musicians retire young. Wedding invitations give a start time and a polite estimate.\n\nOn my first night I was the last one on the floor, looking for my shoe. The band played until I found it.\n\n(On Earth, the story goes, the first dance at a wedding comes from the old formal balls, where the guests of honour opened the floor. On Grace, it's the last dance everyone remembers.)\n\nWhich song would keep you on your feet?"
+    },
+    "first_comment": "Rosie's back from honeymoon. Her dad would like to know when the first anniversary party is."
+  },
+  {
+    "id": "032",
+    "name": "Norman",
+    "subtitle": "the planet where north is a man",
+    "story": "On Norman, north is a man, also called Norman. Every compass points at him, and when he nips out for milk, so does the navy. For thirty-one years he kept still, for everyone's sake, and wrote to Pat in the far south. This year, he went. Every compass on the planet swung round to Pat's, and the navy has been very understanding.",
+    "facts": {
+      "Day": "23 hours",
+      "Moons": "one",
+      "Gravity": "1 g",
+      "Population": "300,000"
+    },
+    "hook": "A planet for the one everyone else steers by.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#norman"
+    ],
+    "spec": {
+      "palette": "cobalt_noon",
+      "terrain": "peaks",
+      "layers": 5,
+      "horizon": 0.62,
+      "relief": 0.9,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.86,
+      "sun_y": 0.16,
+      "sun_size": 0.035,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "pines",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.3,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "NORTH|PLEASE KNOCK",
+      "crowd": 1,
+      "crowd_items": "book",
+      "crowd_x": 0.56,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "North is a man called Norman.",
+    "kicker": "Every Norman gets this planet.",
+    "episode": {
+      "opener": "On Norman,\nnorth is a man.",
+      "beats": [
+        {
+          "text": "Every compass\npoints at him.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.4,
+              2.5
+            ],
+            "focus": [
+              0.68,
+              0.66
+            ]
+          }
+        },
+        {
+          "text": "When he nips out for milk,\nso does the navy.",
+          "shot": "wide"
+        },
+        {
+          "text": "Migrating geese\nland on his shed.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              2.2,
+              2.3
+            ],
+            "focus": [
+              0.72,
+              0.66
+            ]
+          }
+        },
+        {
+          "text": "So he's been asked\nto keep still.",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.9,
+              2.0
+            ],
+            "focus": [
+              0.25,
+              0.62
+            ]
+          },
+          "note": "frame-1 find in close-up; the overlay never quotes it"
+        },
+        {
+          "text": "For thirty-one years,\nhe's written to Pat,\nin the far south.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.74,
+              0.66
+            ]
+          },
+          "note": "setup: Norman at his door with his letter"
+        },
+        {
+          "text": "This year,\nhe went.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.74,
+              0.66
+            ]
+          },
+          "spec": {
+            "crowd_x": 1.5
+          },
+          "seconds": 3.0,
+          "note": "turn: identical camera, one thing changed (he's gone)"
+        },
+        {
+          "text": "Every compass on the planet\nswung round to Pat's.",
+          "shot": {
+            "framing": "sky",
+            "zoom": [
+              1.3,
+              1.4
+            ],
+            "focus": [
+              0.45,
+              0.3
+            ]
+          },
+          "spec": {
+            "crowd_x": 1.5
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.9,
+              2.0
+            ],
+            "focus": [
+              0.25,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_x": 1.5,
+            "sign": "NORTH|GONE SOUTH"
+          },
+          "seconds": 3.0,
+          "note": "button: the sign rewrite, same camera as beat 4"
+        }
+      ],
+      "end": "The navy's been very understanding.",
+      "caption": "Read the signpost on the left.\n\nNorman is a bright, blowy planet of 300,000 people and one fixed point: a retired joiner called Norman, who is north. Maps are drawn from his kitchen. Captains ring ahead before he goes to the shops. When he had his knee done, two ferries and a flock of geese turned up at the hospital. So he stayed put, for everyone, and wrote to Pat every week. She lives in the far south, which until this year was the bit of the map nobody visited.\n\nI tried to walk north to meet him and spent an afternoon following him round a garden centre.\n\n(Earth's north wanders too. Its magnetic pole has drifted from Canada towards Siberia, at more than fifty kilometres a year at its fastest. It has never once gone to see anyone.)\n\nHow far would you move for someone?"
+    },
+    "first_comment": "Pat: He's put up four shelves and the navy's been round twice. Lovely boys. Very polite."
+  },
+  {
+    "id": "033",
+    "name": "Simon",
+    "subtitle": "a planet that plays by the rules",
+    "story": "On Simon, everyone does what Simon says, and Simon is quite small. So the whole planet hops to work, eats pudding first and, as of this afternoon, holds a fish. At bedtime he yawned and told everyone to go to bed. Nobody moved: he hadn't said 'Simon says'. Then he fell asleep on his dad's shoulders, and nobody's waking him.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "none",
+      "Gravity": "0.8 g",
+      "Population": "6 million"
+    },
+    "hook": "A planet for the parents of very small bosses.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#parenting"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.8,
+      "sun_y": 0.55,
+      "sun_size": 0.04,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 5,
+      "crowd_items": "fish,fish,child,fish,fish",
+      "crowd_x": 0.4,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "Everyone does what Simon says.",
+    "kicker": "Every Simon gets this planet.",
+    "episode": {
+      "opener": "Everyone here does\nwhat Simon says.",
+      "beats": [
+        {
+          "text": "Simon is quite small.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.2,
+              2.3
+            ]
+          }
+        },
+        {
+          "text": "Simon says:\nhop to work.",
+          "shot": "house"
+        },
+        {
+          "text": "Simon says:\npudding first.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.6,
+              1.66
+            ]
+          },
+          "spec": {
+            "crowd_items": "spoon,spoon,child,spoon,spoon"
+          }
+        },
+        {
+          "text": "Simon says:\neverybody hold a fish.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.6,
+              1.66
+            ]
+          },
+          "note": "same camera; the held items swap back to fish"
+        },
+        {
+          "text": "They gave me mine\nat the border.",
+          "shot": "cartographer",
+          "spec": {
+            "cartographer": true
+          }
+        },
+        {
+          "text": "At bedtime, Simon yawned.\n'Everybody, go to bed.'",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.16
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "sun_y": 0.6
+          }
+        },
+        {
+          "text": "Nobody moved.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.16
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "sun_y": 0.6
+          },
+          "seconds": 2.6,
+          "note": "turn: the identical camera holds; nothing changes"
+        },
+        {
+          "text": "He hadn't said\n'Simon says'.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.16
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "sun_y": 0.6
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.16
+            ]
+          },
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0
+          },
+          "seconds": 2.5,
+          "note": "night falls on the same camera; every fish still up"
+        },
+        {
+          "text": "Nobody's waking him.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.2,
+              2.3
+            ]
+          },
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0,
+            "crowd_items": "fish,fish,child_asleep,fish,fish"
+          }
+        }
+      ],
+      "end": "He'll say it in the morning.",
+      "caption": "Count the fish in the first frame.\n\nSimon is a cheerful little planet of six million people and one law, which is the game. Simon has been in charge since before he could talk, which was a very quiet year. Now he talks all the time. The whole planet hops to work, pudding comes first and the cat is Chancellor of the Exchequer. Grown-ups listen very carefully for the first two words.\n\nI've been holding mine for three days. Simon says I'm doing very well.\n\n(In France, the same game is called 'Jacques a dit': Jacques said. Nobody has told Simon about Jacques.)\n\nWould you have woken him?"
+    },
+    "first_comment": "7:02: 'Simon says, put the fish down.' Six million people went straight back to bed."
   }
 ]
