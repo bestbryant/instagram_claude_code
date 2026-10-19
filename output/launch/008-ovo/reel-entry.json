@@ -2,7 +2,7 @@
   "id": "008",
   "name": "Ovo",
   "subtitle": "the small planet",
-  "story": "You can walk all the way around Ovo between breakfast and lunch. There is one bakery, one bench, one tree and one cat, and the cat is called Everything. When someone new arrives, all forty-one residents come out to say hello, which takes about four minutes. I was the forty-second for a weekend. Everything ignored me the entire time.",
+  "story": "You can walk all the way around Ovo between breakfast and lunch. There is one bakery, one bench, one tree and one cat, and the cat is called Everything. When someone new arrives, all forty-one residents come out to say hello, which takes about ten minutes. I was the forty-second for a weekend.",
   "facts": {
     "Day": "6 hours",
     "Moons": "1",
@@ -18,15 +18,12 @@
   "spec": {
     "palette": "rose_fog",
     "terrain": "hills",
-    "horizon": 1.3,
+    "horizon": 1.7,
     "trees": "none",
     "house": false,
     "figure": false,
-    "suns": 1,
-    "sun_x": 0.3,
-    "sun_y": 0.42,
-    "sun_size": 0.05,
-    "moons": 1,
+    "suns": 0,
+    "moons": 0,
     "layers": 1,
     "mist": 0.6,
     "gag": "tiny_planet"
@@ -36,12 +33,16 @@
     "Ovo has one bakery, one bench, one tree and one cat. You can walk round it before lunch.",
     "The cat is called Everything. I stayed a weekend. Everything ignored me."
   ],
-  "odd_line": "The cat is called Everything. It does not care for newcomers.",
+  "odd_line": "The bakery sells one kind of bread. There is one queue. It moves fast.",
   "rule": "The bench is first come, first served. The cat always comes first.",
   "question": "How small was the town you grew up in?",
-  "extra": "The bakery sells one kind of bread. There is one queue. It moves fast.",
+  "extra": "Rush hour is three people and a wheelbarrow.",
   "reel_lines": [
     "Ovo has one bakery, one bench, one tree and one cat. You can walk round it before lunch.",
     "The cat is called Everything. I stayed a weekend. Everything ignored me."
-  ]
+  ],
+  "opener": "One of everything.",
+  "text_y": {
+    "name": 0.12
+  }
 }

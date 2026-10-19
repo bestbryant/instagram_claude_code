@@ -2,7 +2,7 @@
   "id": "003",
   "name": "Hush",
   "subtitle": "where sound arrives late",
-  "story": "Sound is slow on Hush. A shout across the valley arrives four or five days later, quieter, usually after everyone has moved on. Arguments are carried out by letter, which tends to calm them down. In midwinter you can stand at the bottom of the valley and hear last summer: dogs, a wedding, someone practising the trumpet badly. In March a man proposed across the valley. Her answer is due on Thursday.",
+  "story": "Sound is slow on Hush. A shout across the valley arrives five days later, quieter, usually after everyone has moved on. Arguments are carried out by letter, which tends to calm them down. On a still day you can stand at the bottom of the valley and hear last week: dogs, a wedding, someone practising the trumpet badly. In March a man proposed across the valley. She has been thinking about it. Her answer is due on Thursday.",
   "facts": {
     "Day": "26 hours",
     "Moons": "none",
@@ -27,19 +27,24 @@
     "suns": 0,
     "layers": 5,
     "mist": 0.45,
-    "gag": "slow_shout"
+    "gag": "slow_shout",
+    "stage": 0.76
   },
   "cover": "Her answer arrives Thursday.",
   "beats": [
     "Sound is slow on Hush. A shout takes five days to cross the valley.",
-    "He proposed across the valley in March. Her answer arrives Thursday."
+    "He proposed in March. She's been thinking about it. Her answer arrives Thursday."
   ],
   "odd_line": "Arguments here are done by letter, which is why there are hardly any.",
-  "rule": "No shouting after dark. It arrives on Tuesday and wakes everyone.",
+  "rule": "No shouting after dark. It arrives five nights later and wakes everyone.",
   "question": "Who do you know who replies like this?",
   "extra": "I'll be in the valley on Thursday to hear the answer.",
   "reel_lines": [
     "Sound is slow on Hush. A shout takes five days to cross the valley.",
-    "He proposed across the valley in March. Her answer arrives Thursday."
-  ]
+    "He proposed in March. She's been thinking about it. Her answer arrives Thursday."
+  ],
+  "opener": "Her answer arrives Thursday.",
+  "text_y": {
+    "setup": 0.12
+  }
 }

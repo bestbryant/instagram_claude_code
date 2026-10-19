@@ -3,16 +3,16 @@
   "name": "Luna",
   "subtitle": "every Luna's planet",
   "hook": "Every Luna gets this planet.",
-  "cover": "The only planet without a moon.",
+  "cover": "Named after a moon it doesn't have.",
   "beats": [
-    "Luna is the only planet in the atlas without a moon, and it takes this personally.",
-    "The moon fund has raised enough for a large lamp on a pole. They point it at the sky on birthdays."
+    "Luna is named after a moon it has never had, and it takes this personally.",
+    "The moon fund has raised enough for one lamp. They point it at the sky on birthdays."
   ],
-  "odd_line": "Moon fund: three per cent of the way there.",
-  "story": "Luna is the only planet in the atlas without a moon of its own, and it takes this very personally. Every spring there is a fund-raiser. So far they have raised enough for one large lamp on a tall pole, which is switched on and pointed at the sky for birthdays, anniversaries and anyone having a bad week.",
+  "odd_line": "The lamp has a waiting list. Birthdays get priority.",
+  "story": "Luna is named after a moon it has never had, and it takes this very personally. Every spring there is a fund-raiser. So far they have raised enough for one large lamp on a tall pole, which is switched on and pointed at the sky for birthdays, anniversaries and anyone having a bad week.",
   "rule": "Do not mention other planets' moons in front of Luna.",
   "question": "Know a Luna? This one's theirs.",
-  "extra": "The lamp has a waiting list. Birthdays get priority.",
+  "extra": "There is a fund-raiser every spring. Moons are expensive.",
   "facts": {},
   "tags": [
     "#worldbuilding",
@@ -29,6 +29,27 @@
     "layers": 4,
     "mist": 0.5,
     "lamp": true,
-    "sign": "MOON FUND|3% RAISED"
-  }
+    "sign": "MOON FUND|3% RAISED",
+    "stage": 0.74
+  },
+  "opener": "Named after a moon it doesn't have.",
+  "text_y": {
+    "setup": 0.15,
+    "punch": 0.12,
+    "name": 0.12,
+    "cover": 0.12
+  },
+  "camera": {
+    "setup": {
+      "zoom": [
+        1.6,
+        1.7
+      ],
+      "focus": [
+        0.6,
+        0.5
+      ]
+    }
+  },
+  "kicker": "Every Luna gets this planet."
 }
