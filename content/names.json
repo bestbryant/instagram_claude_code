@@ -51,7 +51,8 @@
           0.5
         ]
       }
-    }
+    },
+    "kicker": "Every Luna gets this planet."
   },
   {
     "id": "013",
@@ -86,7 +87,9 @@
       "mist": 0.4,
       "gag": "slow_shout",
       "sign": "QUIET ZONE|(CLOSED)"
-    }
+    },
+    "opener": "Everything is set to maximum.",
+    "kicker": "Every Max gets this planet."
   },
   {
     "id": "014",
@@ -121,7 +124,9 @@
       "mist": 0.6,
       "house": true,
       "sign": "THE BEAUTIFUL|TAX OFFICE"
-    }
+    },
+    "opener": "Everything here is beautiful. By law.",
+    "kicker": "Every Bella gets this planet."
   },
   {
     "id": "015",
@@ -156,7 +161,9 @@
       "mist": 0.5,
       "crowd": 6,
       "sign": "POP. 38|ALL CHARLIE"
-    }
+    },
+    "opener": "Everyone here is called Charlie.",
+    "kicker": "Every Charlie gets this planet."
   },
   {
     "id": "016",
@@ -191,7 +198,9 @@
       "mist": 0.35,
       "gag": "kettles",
       "sign": "JUST ADD|WATER"
-    }
+    },
+    "opener": "The soil is chocolate malt.",
+    "kicker": "Every Milo gets this planet."
   },
   {
     "id": "017",
@@ -226,6 +235,8 @@
       "mist": 0.5,
       "daisies": 140,
       "crowd": 2
-    }
+    },
+    "opener": "The flowers know if he loves you.",
+    "kicker": "Every Daisy gets this planet."
   }
 ]

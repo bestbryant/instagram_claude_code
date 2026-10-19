@@ -235,7 +235,8 @@
     "reel_lines": [
       "The mountains drifted off the ground long ago. People farm the tops now.",
       "The post goes up on a very long pole. The postwoman has never lost a letter. She has lost a lot of poles."
-    ]
+    ],
+    "opener": "Your parcel is up there."
   },
   {
     "id": "005",
@@ -371,7 +372,8 @@
     "reel_lines": [
       "The ocean dried up and left the waves behind, frozen mid-break in green glass.",
       "Surfers still come. They stand under the curl for an hour and call it the best wave of their lives."
-    ]
+    ],
+    "opener": "The waves froze mid-break."
   },
   {
     "id": "008",
@@ -468,7 +470,8 @@
     "reel_lines": [
       "On Thessaly the rain falls up, out of the sea and into the clouds.",
       "So umbrellas go on your feet, and boots are waterproof on top."
-    ]
+    ],
+    "opener": "Umbrellas go on your feet."
   },
   {
     "id": "010",
@@ -513,7 +516,8 @@
     "reel_lines": [
       "The aurora on Kess has never switched off, so the people who live there stopped looking up.",
       "Now and then one of them looks up by accident and has to sit down on the kerb for a minute."
-    ]
+    ],
+    "opener": "They stopped looking up."
   },
   {
     "id": "011",
@@ -559,6 +563,7 @@
     "reel_lines": [
       "The trees never stop growing. The tallest one has a small rain cloud of its own.",
       "A village near the top hasn't come down in six hundred years. They send post by pinecone."
-    ]
+    ],
+    "opener": "This tree has its own weather."
   }
 ]

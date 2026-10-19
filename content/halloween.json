@@ -41,7 +41,8 @@
     "reel_lines": [
       "The ghosts on Hollow are shy. Say boo and they faint.",
       "So at the end of October, the living go door to door to apologise."
-    ]
+    ],
+    "opener": "Say boo and they faint."
   },
   {
     "id": "H02",
@@ -85,7 +86,8 @@
     "reel_lines": [
       "Pumpkins grow as big as sheds here and glow from the inside all autumn.",
       "Every family carves a face into theirs, so the boats coming home know whose house it is."
-    ]
+    ],
+    "opener": "The boats steer by pumpkin."
   },
   {
     "id": "H03",
@@ -128,6 +130,7 @@
     "reel_lines": [
       "The moths here are the size of kites, and they eat light.",
       "Leave a candle out and they'll take it. They leave a little glowing dust as a thank you."
-    ]
+    ],
+    "opener": "These moths eat moonlight."
   }
 ]

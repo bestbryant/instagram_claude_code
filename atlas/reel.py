@@ -58,7 +58,8 @@ def reel_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = No
         opener = overlay([dict(text=f"{requested_by} asked for", y=0.2, kind="italic", size=48, **left),
                           dict(text=entry["name"], y=0.235, kind="serif", weight="Medium", size=150, **left)])
     else:
-        opener = overlay([dict(text=series, y=0.2, kind="italic", size=36, **left),
+        # name planets carry "Every Luna gets this planet." as a small kicker above the joke
+        opener = overlay([dict(text=entry.get("kicker") or series, y=0.2, kind="italic", size=36 if not entry.get("kicker") else 42, **left),
                           dict(text=first, y=0.235, kind="serif", weight="Medium", size=84, leading=1.12, **left)])
     setup = overlay([dict(text=beats[0], y=ty["setup"], kind="italic", size=66, leading=1.15, **left)])
     punch = overlay([dict(text=beats[1], y=ty["punch"], kind="italic", size=66, leading=1.15, **left)])
