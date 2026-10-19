@@ -66,5 +66,68 @@
         0.711
       ]
     }
+  },
+  "episode": {
+    "opener": "Her answer arrives Thursday.",
+    "beats": [
+      {
+        "text": "Sound is slow on Hush.\nA shout takes five days\nto cross the valley.",
+        "shot": "gag"
+      },
+      {
+        "text": "In March, he shouted\nacross the valley.\nWould she marry him?",
+        "shot": "right",
+        "spec": {
+          "cartographer": false
+        }
+      },
+      {
+        "text": "Nobody argues out loud here.\nArguments go by letter.\nSo does bad news.",
+        "shot": "sign",
+        "spec": {
+          "sign": "BAD NEWS|BY LETTER",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "She's been thinking about it.",
+        "shot": "left",
+        "spec": {
+          "palette": "mint_dawn",
+          "snow": false,
+          "particles": "none",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "Sound is never early.\nHe's been out there\nall week anyway.",
+        "shot": "right",
+        "spec": {
+          "palette": "polar_night",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "At last, she answered.",
+        "shot": "left",
+        "spec": {
+          "cartographer": false
+        }
+      },
+      {
+        "text": "She didn't write.",
+        "shot": "sign",
+        "spec": {
+          "sign": "BAD NEWS|BY LETTER",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "She shouted.",
+        "shot": "gag"
+      }
+    ],
+    "end": "I'll be there on Thursday.",
+    "caption": "Those rings in the air are a shout.\n\nHush is a long, snowed-in valley: 9,300 people, a 26-hour day, no moons, and sound that crawls along slower than you can walk. A shout takes five days to cross it and arrives quieter, usually after everyone has moved on. On a still day you can stand at the bottom and hear last week: dogs, a wedding, someone practising the trumpet badly. Shouts must be signed, because five days later it's hard to tell who started it.\n\nHe's taken a flask and a blanket out into the snow. Nobody can talk him out of it in under five days. Half the town is taking Thursday afternoon off to listen. So am I. Part two goes up on Thursday, when it lands.\n\nWhat do you think she said?"
   }
 }
