@@ -10,9 +10,11 @@
 Goal: 50,000 followers. Every hourly run that isn't busy posting or fixing something takes the top unfinished item, moves it forward, and ticks it off or notes progress here. Keep items small enough to finish or advance in one run.
 
 ## Posting-rate experiment
-Current gap: **3 h** (8 Reels a day), from 2026-10-19 21:20 UTC. Steps: 4 h, then 3 h, then 2 h (the floor, 12 a day). Meta's hard cap is 50 API posts in 24 h.
-- After about 16 posts at a gap, compare reach and views at about 3 h and 12 h old (content/stats_history.jsonl) with earlier posts at the same age. If the median held within about 30%, go one step faster; if it fell clearly, or Meta blocked or limited us, go one step slower.
-- Log: 2026-10-19 21:20 UTC, gap set to 3 h at the owner's request. Baseline at about 12 h: Ovo reach 100 (posted 03:00, before the API block); Luna reach 2 (posted 12:24, just before the block).
+Current gap: **12 h** (2 Reels a day), from 2026-10-20 00:00 UTC. Steps: 12 h, 8 h, 6 h (the ceiling for now, 4 a day). Meta's hard cap is 50 API posts in 24 h, but that is not a target.
+- Why 12 h (decided 20 Oct from docs/RESEARCH.md): measured data only covers up to about 10 posts a week. Nothing measures 3+ a day, and Meta's spam policy names high frequency plus repetitive content. We are a 2-day-old automated account that was API-blocked on 19 Oct, and Luna got no stranger test showing at all. More posts of the same template into a possibly held account add nothing and add risk.
+- Go one step faster only when all of these hold: (1) Account Status is confirmed clean; (2) a week with no API blocks; (3) the median skip rate of the last 5 Reels is under 60% at 48 h, with reach of 20 or more each.
+- Judge every post at 48 h, not 3-12 h (new accounts are tested on strangers over the first 1-2 days).
+- Log: 2026-10-19 21:20 UTC, gap set to 3 h at the owner's request. 2026-10-20 00:00 UTC, back to 12 h after the research and critique (docs/RESEARCH.md): the evidence didn't support 8 a day, and the account may be held.
 
 ## Now
 - [~] **Batch 2 episodes (No. 019-030)**: written, edited and queued 2026-10-19 (10 kept: 019, 021-026, 028-030); rendering now. Still to do: add their registry rows to docs/HOUSE_RULES.md, and frame-check each Reel as it finishes. Original plan:: twelve new planets from the writers' room's best unused ideas (scratchpad/room/B1/_blind_top.md: Pebb, Whisk, Lode, Fibb's horse, Pell on 18 November, "Every planet has one", "Your name is a job there", ...). Written to docs/HOUSE_RULES.md, checked with apply_episodes.py, rendered, frame-checked, added to schedule.json after Bramble so the 4-a-day rate continues past Friday 23 October.
