@@ -391,13 +391,20 @@ def check_item(item, folder, entries) -> str | None:
 
 def cmd_next(a):
     """Post every scheduled item that is due (day <= today), oldest first, at most --max per run.
-    Items that aren't ready are skipped with a warning instead of stopping the run."""
-    from datetime import date, datetime, timezone
+    With --asap the days are ignored: post the next ready item in schedule order, once at least
+    --gap-hours have passed since the last post. Items that aren't ready are skipped with a warning."""
+    from datetime import date, datetime, timedelta, timezone
     schedule = json.loads(SCHEDULE.read_text())
     log = json.loads(LOG.read_text()) if LOG.exists() else []
     done = {(x["entry"], x["kind"]) for x in log}
+    now = datetime.now(timezone.utc)
     today = (date.today() - date.fromisoformat(LAUNCH_DAY)).days + 1
-    due = [s for s in schedule if (s["entry"], s["kind"]) not in done and s.get("day", 0) <= today]
+    if a.asap:
+        last = max((datetime.fromisoformat(x["at"]) for x in log), default=None)
+        if last and now - last < timedelta(hours=a.gap_hours):
+            print(f"last post {last:%H:%M} UTC; next one allowed after {last + timedelta(hours=a.gap_hours):%H:%M} UTC")
+            return
+    due = [s for s in schedule if (s["entry"], s["kind"]) not in done and (a.asap or s.get("day", 0) <= today)]
     if not due:
         left = [s for s in schedule if (s["entry"], s["kind"]) not in done]
         print(f"day {today}: nothing due" + (f"; next is day {left[0]['day']}" if left else "; schedule complete"))
@@ -407,6 +414,10 @@ def cmd_next(a):
     for item in due:
         if posted >= a.max:
             break
+        if item.get("not_before") and now < datetime.fromisoformat(item["not_before"].replace("Z", "+00:00")):
+            continue                                    # held for its date (e.g. Halloween night)
+        if item.get("after") and tuple(item["after"]) not in done:
+            continue                                    # a sequel waits for the post it follows
         folder = _find(item)
         problem = check_item(item, folder, entries)
         if problem:
@@ -418,10 +429,23 @@ def cmd_next(a):
         if not a.dry_run:
             log.append({**item, "media_id": media, "at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
             LOG.write_text(json.dumps(log, indent=2) + "\n")
+            done.add((item["entry"], item["kind"]))
+
+
+def _prepare_job(job):
+    e, folder, need_reel, process = job
+    spec, seed = Spec(**e["spec"]), seed_from(e["name"])
+    if process:
+        from .reel import render_process
+        render_process(spec, seed, e, Path(folder))
+        return f"{e['id']} process Reel"
+    make(e, spec, seed, Path(folder), reel=need_reel)
+    return f"{e['id']} {'Reel and slides' if need_reel else 'slides'}"
 
 
 def cmd_prepare(a):
-    """Render whatever is due in the next --days days and not ready yet (one day ahead, as the plan says)."""
+    """Render whatever is due in the next --days days (or, with --all, everything not yet posted)
+    that is missing or stale. One job per planet folder, so --jobs can render several at once."""
     from datetime import date
     schedule = json.loads(SCHEDULE.read_text())
     log = json.loads(LOG.read_text()) if LOG.exists() else []
@@ -433,8 +457,9 @@ def cmd_prepare(a):
         path = ROOT / "content" / f
         if path.exists():
             groups.update({e["id"]: ("launch" if f == "launch.json" else Path(f).stem) for e in json.loads(path.read_text())})
+    jobs = {}
     for item in schedule:
-        if (item["entry"], item["kind"]) in done or item["day"] > today + a.days:
+        if (item["entry"], item["kind"]) in done or (not a.all and item["day"] > today + a.days):
             continue
         problem = check_item(item, _find(item), entries)
         if not problem:
@@ -444,15 +469,20 @@ def cmd_prepare(a):
             print(f"cannot prepare {item['entry']}: not in content files")
             continue
         print(f"preparing {item['entry']} {item['kind']} (day {item['day']}): {problem}", flush=True)
-        spec, seed = Spec(**e["spec"]), seed_from(e["name"])
         if item["kind"] == "process":
-            from .reel import render_process
             dest = OUT / "process" / f"{e['id']}-{slug(e['name'])}.mp4"
-            render_process(spec, seed, e, dest)
+            jobs[str(dest)] = (e, str(dest), False, True)
             continue
-        folder = OUT / groups[e["id"]] / f"{e['id']}-{slug(e['name'])}"
-        need_reel = item["kind"] == "reel"
-        make(e, spec, seed, folder, reel=need_reel)
+        folder = str(OUT / groups[e["id"]] / f"{e['id']}-{slug(e['name'])}")
+        prev = jobs.get(folder)
+        jobs[folder] = (e, folder, item["kind"] == "reel" or bool(prev and prev[2]), False)
+    if a.jobs > 1 and len(jobs) > 1:
+        with ProcessPoolExecutor(a.jobs) as pool:
+            for line in pool.map(_prepare_job, jobs.values()):
+                print("done:", line, flush=True)
+    else:
+        for job in jobs.values():
+            print("done:", _prepare_job(job), flush=True)
     print("prepared")
 
 
@@ -492,10 +522,14 @@ def main(argv=None):
     s = sub.add_parser("next", help="publish what is due in content/schedule.json")
     s.add_argument("--base-url", required=True)
     s.add_argument("--max", type=int, default=3)
+    s.add_argument("--asap", action="store_true", help="ignore the days: post the next ready item once --gap-hours have passed")
+    s.add_argument("--gap-hours", type=float, default=2.5)
     s.add_argument("--dry-run", action="store_true")
     s.set_defaults(fn=cmd_next)
     s = sub.add_parser("prepare", help="render what is due soon and not ready yet")
     s.add_argument("--days", type=int, default=1, help="look this many days ahead of today")
+    s.add_argument("--all", action="store_true", help="everything not yet posted")
+    s.add_argument("--jobs", type=int, default=1)
     s.set_defaults(fn=cmd_prepare)
     s = sub.add_parser("inbox", help="collect name requests from recent comments (Graph API)")
     s.add_argument("--limit", type=int, default=10, help="how many recent posts to scan")
