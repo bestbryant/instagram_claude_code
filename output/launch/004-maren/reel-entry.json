@@ -1,0 +1,48 @@
+{
+  "id": "004",
+  "name": "Maren",
+  "subtitle": "the floating ranges",
+  "story": "At some point the mountains on Maren lifted off the ground and stayed up. Low gravity and a long time, apparently. They farm the tops now, and rope ladders hang down to the valley. The post goes up on a very long pole, held by a woman called Ines who has opinions about pole length. She has never lost a letter. She has lost a great many poles.",
+  "facts": {
+    "Day": "22 hours",
+    "Moons": "none",
+    "Gravity": "0.3 g",
+    "Population": "610,000"
+  },
+  "hook": "A planet where 'your parcel has been delivered' means look up.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#fantasyart"
+  ],
+  "spec": {
+    "palette": "pastel",
+    "terrain": "hills",
+    "horizon": 0.7,
+    "islands": 3,
+    "moons": 0,
+    "suns": 1,
+    "sun_x": 0.25,
+    "sun_y": 0.3,
+    "sun_size": 0.04,
+    "figure": true,
+    "layers": 4,
+    "mist": 0.6,
+    "gag": "pole_post"
+  },
+  "cover": "Your parcel is up there.",
+  "beats": [
+    "The mountains drifted off the ground long ago. People farm the tops now.",
+    "The post goes up on a very long pole. The postwoman has never lost a letter. She has lost a lot of poles."
+  ],
+  "odd_line": "Your parcel has been delivered. Please look up.",
+  "rule": "Anything dropped from an island belongs to whoever it lands on.",
+  "question": "Would you live up top or in the valley?",
+  "extra": "Ines retires next year. The job listing just says 'tall'.",
+  "reel_lines": [
+    "The mountains drifted off the ground long ago. People farm the tops now.",
+    "The post goes up on a very long pole. The postwoman has never lost a letter. She has lost a lot of poles."
+  ],
+  "opener": "Your parcel is up there.",
+  "_engine": 4
+}

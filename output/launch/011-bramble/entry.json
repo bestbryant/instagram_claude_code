@@ -2,7 +2,7 @@
   "id": "011",
   "name": "Bramble",
   "subtitle": "the tall forest",
-  "story": "Trees on Bramble don't stop growing. The oldest are taller than the hills they stand on, and the tallest has a small cloud in its upper branches that rains on that tree and nowhere else. Somewhere near the top is a village that hasn't come down in four hundred years. They drop pinecones with notes tied on. The ground answers by kite, and complains about the noise.",
+  "story": "Trees on Bramble don't stop growing. The oldest are taller than the hills they stand on, and the tallest has a small cloud in its upper branches that rains on that tree and nowhere else. Somewhere near the top is a village that hasn't come down in six hundred years. They drop pinecones with notes tied on. The ground answers by kite, and complains about the noise.",
   "facts": {
     "Day": "30 hours",
     "Moons": "none",
@@ -33,14 +33,15 @@
   "cover": "This tree has its own weather.",
   "beats": [
     "The trees never stop growing. The tallest one has a small rain cloud of its own.",
-    "A village near the top hasn't come down in four hundred years. They send post by pinecone."
+    "A village near the top hasn't come down in six hundred years. They send post by pinecone."
   ],
   "odd_line": "Forecast for the tallest tree: light rain. Everywhere else: dry.",
   "rule": "Do not shake the tall tree. Somebody's dinner is up there.",
   "question": "Would you move up, or stay on the ground?",
-  "extra": "Pinecone mail takes about four seconds, six with a tailwind.",
+  "extra": "Pinecone mail arrives in about eight seconds. Replies by kite take a week.",
   "reel_lines": [
     "The trees never stop growing. The tallest one has a small rain cloud of its own.",
-    "A village near the top hasn't come down in four hundred years. They send post by pinecone."
-  ]
+    "A village near the top hasn't come down in six hundred years. They send post by pinecone."
+  ],
+  "opener": "This tree has its own weather."
 }

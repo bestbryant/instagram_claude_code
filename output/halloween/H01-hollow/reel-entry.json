@@ -1,0 +1,47 @@
+{
+  "id": "H01",
+  "name": "Hollow",
+  "subtitle": "the shy ghosts",
+  "story": "The ghosts on Hollow are shy. They live in wardrobes and under the stairs, and if you say boo they faint, which is awkward for everyone. At the end of October the living go door to door to apologise for the year's frights. The ghosts leave sweets out on the step to say it's fine, really.",
+  "facts": {
+    "Day": "13 hours",
+    "Moons": "1",
+    "Gravity": "0.9 g",
+    "Population": "4,000 living"
+  },
+  "hook": "A planet for people who say sorry to furniture.",
+  "tags": [
+    "#halloween",
+    "#worldbuilding",
+    "#illustration"
+  ],
+  "spec": {
+    "palette": "pumpkin",
+    "terrain": "hills",
+    "horizon": 0.66,
+    "big_moon": true,
+    "suns": 0,
+    "house": true,
+    "trees": "pines",
+    "figure": false,
+    "layers": 4,
+    "mist": 0.65,
+    "gag": "fainted_ghost",
+    "stage": 0.72
+  },
+  "cover": "Say boo and they faint.",
+  "beats": [
+    "The ghosts on Hollow are shy. Say boo and they faint.",
+    "So at the end of October, the living go door to door to apologise."
+  ],
+  "odd_line": "Please don't say boo near the ghosts. It takes them an hour to come round.",
+  "rule": "Saying boo requires written consent.",
+  "question": "What's the last thing you apologised to?",
+  "extra": "The haunted house tour is mostly people whispering sorry into cupboards.",
+  "reel_lines": [
+    "The ghosts on Hollow are shy. Say boo and they faint.",
+    "So at the end of October, the living go door to door to apologise."
+  ],
+  "opener": "Say boo and they faint.",
+  "_engine": 4
+}

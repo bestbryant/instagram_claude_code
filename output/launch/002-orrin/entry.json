@@ -31,7 +31,8 @@
     "figure": true,
     "layers": 5,
     "mist": 0.5,
-    "gag": "seabed_town"
+    "gag": "seabed_town",
+    "stage": 0.72
   },
   "cover": "Everyone packs the night before.",
   "beats": [

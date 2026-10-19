@@ -432,6 +432,10 @@ def cmd_next(a):
     done = {(x["entry"], x["kind"]) for x in log}
     now = datetime.now(timezone.utc)
     today = (date.today() - date.fromisoformat(LAUNCH_DAY)).days + 1
+    pause = ROOT / "content" / "PAUSED"
+    if pause.exists():
+        print("posting paused:", pause.read_text().strip())
+        return
     if a.asap:
         last = max((datetime.fromisoformat(x["at"]) for x in log), default=None)
         if last and now - last < timedelta(hours=a.gap_hours):
