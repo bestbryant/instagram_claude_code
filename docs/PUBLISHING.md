@@ -84,4 +84,5 @@ Until the secrets exist, the workflow skips itself and does nothing.
 ### Limits worth knowing
 - Meta caps how many posts an account can publish through the API in 24 hours. The current number is in Meta's *Content Publishing* docs, and it's far more than this plan needs.
 - Reels must be 3 s to 15 min, 9:16, H.264 + AAC. The generated files meet this.
+- With Instagram Login the API only takes Reels by `video_url`. The publisher serves each video from this public repo through jsDelivr at the exact commit, which sends `video/mp4`. raw.githubusercontent sends `application/octet-stream`. Push before posting, or the URL check fails.
 - The API can't add trending audio. That's one reason to keep posting some Reels by hand.

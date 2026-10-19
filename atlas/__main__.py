@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 from concurrent.futures import ProcessPoolExecutor
@@ -31,6 +32,7 @@ OUT = ROOT / "output"
 LAUNCH = ROOT / "content" / "launch.json"
 SCHEDULE = ROOT / "content" / "schedule.json"
 LOG = ROOT / "content" / "published.json"
+GITHUB_REPO = os.environ.get("ATLAS_GITHUB_REPO", "bestbryant/instagram_claude_code")   # public repo that serves the videos
 
 
 def slug(name: str) -> str:
@@ -210,13 +212,31 @@ def _publish(folder: Path, kind: str, base_url: str, dry_run: bool):
     p = Publisher(dry_run=dry_run)
     if kind in ("process", "special"):
         video = folder
-        return p.reel_file(video, video.with_suffix(".txt").read_text().strip())
+        return p.reel(_video_url(video, dry_run), video.with_suffix(".txt").read_text().strip())
     if kind == "carousel":
         cap = (folder / "caption-carousel.txt").read_text().strip()
         slides = sorted((f.name for f in folder.glob("[0-9]*-*.jpg")), key=lambda n: int(n.split("-")[0]))
         return p.carousel([url(f) for f in slides], cap)
     cap = (folder / "caption-reel.txt").read_text().strip()
-    return p.reel_file(folder / "reel.mp4", cap, cover_url=url("reel-cover.jpg"))
+    return p.reel(_video_url(folder / "reel.mp4", dry_run), cap, cover_url=url("reel-cover.jpg"))
+
+
+def _video_url(path: Path, dry_run: bool = False) -> str:
+    """A public URL for a pushed video. The Instagram-login API needs video_url (no
+    resumable upload), and raw.githubusercontent serves octet-stream, so this uses
+    jsDelivr at the exact commit, which serves video/mp4 and never goes stale."""
+    import subprocess
+    import urllib.request
+    sha = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True, check=True).stdout.strip()
+    rel = path.resolve().relative_to(ROOT).as_posix()
+    u = f"https://cdn.jsdelivr.net/gh/{GITHUB_REPO}@{sha}/{rel}"
+    if dry_run:
+        return u
+    with urllib.request.urlopen(urllib.request.Request(u, method="HEAD"), timeout=60) as r:
+        size = int(r.headers.get("Content-Length", 0))
+        if size != path.stat().st_size or "video" not in r.headers.get("Content-Type", ""):
+            raise RuntimeError(f"{u} serves {size} bytes of {r.headers.get('Content-Type')}; push the commit first")
+    return u
 
 
 def cmd_publish(a):
