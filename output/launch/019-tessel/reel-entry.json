@@ -1,0 +1,136 @@
+{
+  "id": "019",
+  "name": "Tessel",
+  "subtitle": "the year-long winter",
+  "story": "Winter on Tessel lasts a year, with no sun and no calendar, so every village needs someone who knows what day it is. Jess keeps the count on a board by her door. She knows every birthday, even the goats'. She's paid in the first slice, and hasn't bought cake in years. One winter, Jess lost count. The village hadn't. On Tessel they say: for the cold, firewood. For the birthdays, a jess.",
+  "facts": {
+    "Day": "22 hours",
+    "Moons": "none",
+    "Gravity": "1.1 g",
+    "Population": "90,000"
+  },
+  "hook": "A planet for the friend who remembers every birthday.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#winter"
+  ],
+  "spec": {
+    "palette": "abyss",
+    "terrain": "hills",
+    "layers": 5,
+    "horizon": 0.6,
+    "relief": 0.8,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "pines",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "snow",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "WINTER|DAY 212",
+    "crowd": 1,
+    "crowd_items": "book",
+    "crowd_x": 0.5,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "Winter here lasts a year.",
+  "episode": {
+    "opener": "Winter on Tessel\nlasts a year.",
+    "beats": [
+      {
+        "text": "No sun. No calendar.",
+        "shot": "sky"
+      },
+      {
+        "text": "So every village needs someone\nwho knows what day it is.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.2
+          ]
+        }
+      },
+      {
+        "text": "Jess keeps count.\nShe knows every birthday.\nEven the goats'.",
+        "shot": "sign"
+      },
+      {
+        "text": "She's paid in the first slice.\nShe hasn't bought cake in years.",
+        "shot": "house"
+      },
+      {
+        "text": "One winter, Jess lost count.",
+        "shot": "crowd",
+        "spec": {
+          "cartographer": false
+        }
+      },
+      {
+        "text": "The village hadn't.",
+        "shot": "sign",
+        "spec": {
+          "sign": "DAY 213|HAPPY BIRTHDAY, JESS"
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.9,
+            1.3
+          ]
+        },
+        "spec": {
+          "sign": "DAY 213|HAPPY BIRTHDAY, JESS"
+        },
+        "seconds": 3.0
+      },
+      {
+        "text": "On Tessel they say:\nfor the cold, firewood.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.1
+          ]
+        },
+        "spec": {
+          "sign": "DAY 213|HAPPY BIRTHDAY, JESS"
+        }
+      }
+    ],
+    "end": "For the birthdays, a jess.",
+    "caption": "Somebody keeps that board up to date.\n\nTessel is 90,000 people on a slow, tilted world: winter lasts a year, and summer about a fortnight. With no sun to count by, every village has someone who keeps the date. Nobody applies. The village just notices who has been doing it. Jess has kept hers since she was a girl: days, birthdays, anniversaries, and the morning the goats came in.\n\nI dated my first page 'winter'. Jess crossed it out and wrote 212.\n\nIn Longyearbyen, on Svalbard, the sun doesn't reach the town from late October until early March, and there's a festival week for the day it first touches the steps of the old hospital. On Tessel, they wait a year, and somebody counts.\n\nCould you count a whole winter in chalk?"
+  },
+  "first_comment": "Day 214. Jess has her chalk back. She's checking everyone's sums.",
+  "_engine": 4
+}

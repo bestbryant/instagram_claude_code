@@ -1,0 +1,179 @@
+{
+  "id": "029",
+  "name": "Summer",
+  "subtitle": "every Summer's planet",
+  "story": "On Summer, it snows once every eighty years. Nan was six the last time, and she has mentioned it at every wedding and every funeral since. 'It's cold,' she says, 'and it squeaks.' At school, snow is taught next to dragons. Then, one morning, it snowed.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "210,000"
+  },
+  "hook": "A planet for every nan who was right all along.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#summer"
+  ],
+  "spec": {
+    "palette": "rust_desert",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.8,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.74,
+    "sun_y": 0.52,
+    "sun_size": 0.075,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.3,
+    "gag": "",
+    "cartographer": true,
+    "spot": "#c8452f",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 6,
+    "crowd_items": "umbrella,umbrella,nothing,umbrella,umbrella,umbrella",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "Nan says she's seen snow.",
+  "kicker": "Every Summer gets this planet.",
+  "text_y": {
+    "name": 0.2
+  },
+  "episode": {
+    "opener": "Nan says\nshe's seen snow.",
+    "beats": [
+      {
+        "text": "It snows on Summer\nonce every eighty years.",
+        "shot": "sky"
+      },
+      {
+        "text": "I packed a coat.\nIt's in a museum now.",
+        "shot": "cartographer",
+        "note": "her one framed beat: the planet's rule catches her out"
+      },
+      {
+        "text": "Nan was six.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.44,
+            0.69
+          ]
+        },
+        "spec": {
+          "cartographer": false
+        },
+        "note": "the one without a parasol"
+      },
+      {
+        "text": "She's mentioned it since.\nAt every wedding.\nAt every funeral.",
+        "shot": "crowd"
+      },
+      {
+        "text": "'It's cold,' she says.\n'And it squeaks.'",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.44,
+            0.69
+          ]
+        },
+        "spec": {
+          "cartographer": false
+        }
+      },
+      {
+        "text": "At school, snow is taught\nnext to dragons.",
+        "shot": "wide"
+      },
+      {
+        "text": "One morning, it snowed.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.0,
+            1.12
+          ]
+        },
+        "spec": {
+          "palette": "cobalt_noon",
+          "snow": true,
+          "particles": "snow",
+          "suns": 0
+        },
+        "note": "identical camera to frame 1; one thing changed: snow. Turn line"
+      },
+      {
+        "text": "",
+        "shot": "crowd",
+        "spec": {
+          "palette": "cobalt_noon",
+          "snow": true,
+          "particles": "snow",
+          "suns": 0
+        },
+        "seconds": 3.0,
+        "note": "the parasols, now for snow"
+      },
+      {
+        "text": "It squeaked.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.44,
+            0.69
+          ]
+        },
+        "spec": {
+          "palette": "cobalt_noon",
+          "snow": true,
+          "particles": "snow",
+          "suns": 0,
+          "cartographer": false
+        },
+        "seconds": 2.6
+      }
+    ],
+    "end": "She's accepting apologies.",
+    "caption": "Somewhere in that heatwave is Nan.\n\nSummer: 210,000 people, a 24-hour day, no moons, and one snowfall every eighty years, give or take. The rest of the time it's summer. Coats are museum pieces and 'cold' is something you say about soup. Nan was six the last time. She has described it at every family occasion since, in detail, while everyone else fanned themselves and exchanged looks.\n\n(On Earth, snow only squeaks underfoot when it's colder than about minus ten. So it was a cold one. She'd like that noted.)\n\nWhat did your nan swear was true?"
+  },
+  "first_comment": "Nan: Next one's due in eighty years. I'll be telling everyone."
+}

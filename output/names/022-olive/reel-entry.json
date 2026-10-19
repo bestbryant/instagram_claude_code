@@ -1,0 +1,196 @@
+{
+  "id": "022",
+  "name": "Olive",
+  "subtitle": "every Olive's planet",
+  "story": "On Olive, you can't go to bed angry: the sun won't go down until every argument on the planet is made up. Most evenings that's quick. Election night lasts a month. When Ruth and Dev had words about the dishwasher, the sun stayed up for three days, the neighbours came round, and then the Prime Minister. Then Ruth made him a tea, and it set before he'd had a sip.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "7 million"
+  },
+  "hook": "A planet for people who can't go to bed on an argument.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#olive"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.66,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.5,
+    "sun_y": 0.53,
+    "sun_size": 0.07,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": true,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.5,
+    "crowd_facing": "out",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "You can't go to bed angry here.",
+  "kicker": "Every Olive gets this planet.",
+  "text_y": {
+    "name": 0.22
+  },
+  "episode": {
+    "opener": "On Olive, you can't\ngo to bed angry.",
+    "beats": [
+      {
+        "text": "The sun won't go down.",
+        "shot": {
+          "framing": "sky",
+          "focus": [
+            0.5,
+            0.45
+          ],
+          "zoom": [
+            1.5,
+            1.6
+          ]
+        }
+      },
+      {
+        "text": "Not until every argument\non the planet\nis made up.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.05,
+            1.12
+          ]
+        }
+      },
+      {
+        "text": "Election night lasts a month.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.3,
+            1.36
+          ]
+        }
+      },
+      {
+        "text": "One evening, Ruth and Dev\nhad words about the dishwasher.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": [
+            1.5,
+            1.55
+          ]
+        },
+        "spec": {
+          "cartographer": false
+        }
+      },
+      {
+        "text": "Day three.\nThe neighbours came round.\nThen the Prime Minister.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.15,
+            1.2
+          ]
+        }
+      },
+      {
+        "text": "Ruth made him a tea.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": [
+            1.5,
+            1.55
+          ]
+        },
+        "spec": {
+          "crowd_facing": "in",
+          "crowd_items": "cup,nothing",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "The sun set\nbefore he'd had a sip.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": [
+            1.5,
+            1.55
+          ]
+        },
+        "spec": {
+          "crowd_facing": "in",
+          "crowd_items": "cup,nothing",
+          "cartographer": false,
+          "palette": "polar_night",
+          "suns": 0
+        },
+        "seconds": 4.1
+      },
+      {
+        "text": "Seven million people\nwent to bed.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.05
+          ]
+        },
+        "spec": {
+          "crowd_facing": "in",
+          "crowd_items": "cup,nothing",
+          "cartographer": false,
+          "palette": "polar_night",
+          "suns": 0
+        }
+      }
+    ],
+    "end": "Every Olive is an olive branch.",
+    "caption": "The sun behind those two is on overtime.\n\nOlive is a warm planet of 7 million people, terraced hills and very long evenings. The sun goes down when the last argument on the planet has been made up, and not a minute before, so it usually sets around nine, give or take a sulk. The papers print the time every morning, with names. Children learn 'sorry' before 'it was him'.\n\nI fell out with my own map on my first evening. Seven million people waited up until I apologised to it.\n\nOn Earth, 'do not let the sun go down on your anger' comes from Paul's letter to the Ephesians. On Olive, the sun enforces it.\n\nHow long would your house keep the sun up?"
+  },
+  "first_comment": "Ruth and Dev have bought a new dishwasher. The planet has asked them not to install it together.",
+  "_engine": 4
+}
