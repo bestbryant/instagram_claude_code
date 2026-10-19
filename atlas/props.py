@@ -127,12 +127,15 @@ def umbrella_down(x, y, s):
 
 
 def cat(x, y, s, facing=1):
+    """A cat sitting upright at (x, y), tail curled up behind it."""
     f = facing
-    return [("ellipse", (x - s * .22, y - s * .3, x + s * .18, y)),
-            ("ellipse", (x + s * .06 * f, y - s * .5, x + s * .3 * f, y - s * .26) if f > 0 else (x - s * .3, y - s * .5, x - s * .06, y - s * .26)),
-            ("poly", [(x + s * .09 * f, y - s * .44), (x + s * .12 * f, y - s * .58), (x + s * .17 * f, y - s * .47)]),
-            ("poly", [(x + s * .2 * f, y - s * .47), (x + s * .26 * f, y - s * .58), (x + s * .28 * f, y - s * .44)]),
-            ("line", ([(x - s * .2 * f, y - s * .05), (x - s * .38 * f, y - s * .05), (x - s * .42 * f, y - s * .3)], s * .05))]
+    hx = x + s * .04 * f
+    return [("ellipse", (x - s * .17, y - s * .5, x + s * .17, y)),
+            ("ellipse", (hx - s * .13, y - s * .72, hx + s * .13, y - s * .47)),
+            ("poly", [(hx - s * .125, y - s * .62), (hx - s * .1, y - s * .83), (hx - s * .02, y - s * .7)]),
+            ("poly", [(hx + s * .02, y - s * .7), (hx + s * .1, y - s * .83), (hx + s * .125, y - s * .62)]),
+            ("line", ([(x - s * .1 * f, y - s * .05), (x - s * .3 * f, y - s * .06), (x - s * .4 * f, y - s * .2),
+                       (x - s * .38 * f, y - s * .38)], s * .065))]
 
 
 def bench(x, y, s):
@@ -153,6 +156,27 @@ def letter(x, y, s, ang=0.0):
     w, h = s * .36, s * .24
     shp = [("poly", [(x - w / 2, y - h / 2), (x + w / 2, y - h / 2), (x + w / 2, y + h / 2), (x - w / 2, y + h / 2)])]
     return rotate(shp, x, y, ang)
+
+
+def folds(x, y, s, ang=0.0, kind="map"):
+    """The lines that make a letter() read as paper: a map's folds or an envelope flap."""
+    w, h = s * .36, s * .24
+    t = max(1.2, s * .02)
+    if kind == "map":
+        shp = [("line", ([(x + k * w / 6, y - h / 2), (x + k * w / 6, y + h / 2)], t)) for k in (-1, 1)]
+        shp.append(("line", ([(x - w * .32, y + h * .22), (x - w * .12, y - h * .05), (x + w * .1, y + h * .12), (x + w * .3, y - h * .2)], t * .8)))
+    else:
+        shp = [("line", ([(x - w / 2, y - h / 2), (x, y + h * .08), (x + w / 2, y - h / 2)], t))]
+    return rotate(shp, x, y, ang)
+
+
+def _paper(ctx, P, A, x, y, s, ang=0.0, kind="map", turn=None):
+    """Stamp a map or letter with its folds; turn=(ax, ay, theta) rotates it with its owner."""
+    sheet, marks = letter(x, y, s, ang), folds(x, y, s, ang, kind)
+    if turn:
+        sheet, marks = rotate(sheet, *turn), rotate(marks, *turn)
+    stamp(P, A, sheet, LIGHT)
+    stamp(P, A, marks, ctx.dark, 0.55)
 
 
 def arc_line(cx, cy, r, a0, a1, width, n=24):
@@ -192,6 +216,7 @@ def _ground(ctx, x):
 def _stage(ctx, y_frac, color=None):
     """A flat foreground ledge across the frame for gags that need room."""
     W, H = ctx.W, ctx.H
+    y_frac = ctx.spec.stage or y_frac      # an entry can lift the ledge clear of Instagram's caption area
     rng = ctx.rng("stage")
     xs = np.linspace(-20, W * 3, 40)
     ys = H * y_frac + H * 0.006 * np.sin(xs / W * 9 + rng.uniform(0, 6))
@@ -215,8 +240,28 @@ def cartographer(ctx, avoid_x=None):
     h = H * 0.06
     a = _person(ctx, layer, x, y, h, "stand", rng.choice([-1, 1]), coat_color=YELLOW)
     hx, hy = a["rh"]
-    _ink(ctx, layer, letter(hx, hy - h * .08, h * 1.1, 0.2), LIGHT)
+    _paper(ctx, layer.P, layer.A, hx, hy - h * .08, h * 1.1, 0.2)
     ctx.marks["cartographer"] = (x / W, (y - h / 2) / H)
+
+
+def armchair(x, y, s, facing=1):
+    """Side-on armchair standing at (x, y): high back, seat, a padded arm."""
+    f = facing
+    X = lambda u: x + u * s * f
+    return [("poly", [(X(-.16), y - s * .82), (X(-.04), y - s * .86), (X(.02), y - s * .36), (X(-.1), y - s * .3)]),   # back
+            ("poly", [(X(-.1), y - s * .42), (X(.42), y - s * .42), (X(.44), y - s * .26), (X(-.1), y - s * .26)]),     # seat
+            ("poly", [(X(-.02), y - s * .58), (X(.42), y - s * .55), (X(.46), y - s * .48), (X(.4), y - s * .42), (X(-.02), y - s * .46)]),  # arm
+            ("poly", [(X(.36), y - s * .55), (X(.44), y - s * .55), (X(.44), y - s * .26), (X(.36), y - s * .26)]),     # arm front
+            ("line", ([(X(-.06), y - s * .26), (X(-.08), y)], s * .05)), ("line", ([(X(.4), y - s * .26), (X(.42), y)], s * .05))]
+
+
+def zzz(x, y, s):
+    shapes = []
+    for k, (dx, dy, sz) in enumerate(((0, 0, 1.0), (.22, -.3, .75), (.4, -.55, .55))):
+        a, b = x + s * dx, y + s * dy
+        w = s * .16 * sz
+        shapes.append(("line", ([(a, b), (a + w, b), (a, b + w), (a + w, b + w)], max(1.5, s * .035))))
+    return shapes
 
 
 def _gag_chair_sleepers(ctx):
@@ -225,17 +270,29 @@ def _gag_chair_sleepers(ctx):
     h = H * G
     lx = ctx.geo.get("lighthouse")
     left = ctx.spec.shore != "right"
-    base = lx if lx is not None else (W * 0.18 if left else W * 0.82)
-    step = W * 0.085 * (1 if left else -1)
-    xs = [base + step * (k + 0.9) for k in range(3)]
-    for i, x in enumerate(xs):
+    # the flattest, highest ground on the cliff, away from the lighthouse
+    xs_all = np.linspace(W * (0.04 if left else 0.55), W * (0.45 if left else 0.96), 60)
+    ys_all = np.array([_ground(ctx, x) for x in xs_all])
+    order = np.argsort(ys_all)
+    xs = []
+    for i in order:
+        x = xs_all[i]
+        if lx is not None and abs(x - lx) < W * 0.06:
+            continue
+        if all(abs(x - q) > W * 0.09 for q in xs):
+            xs.append(x)
+        if len(xs) == 3:
+            break
+    xs.sort()
+    f = -1 if left else 1
+    for x in xs:
         y = _ground(ctx, x)
-        f = -1 if left else 1
-        _ink(ctx, layer, chair(x, y, h, f), ctx.dark)
-        a = _person(ctx, layer, x + h * .04 * f, y - h * .02, h, "doze", f)
-        (kx, ky), (nx, ny) = a["lk"], a["neck"]
-        _ink(ctx, layer, [("poly", [(nx, ny + h * .06), (kx + h * .04 * f, ky - h * .02), (kx + h * .02 * f, ky + h * .2), (nx - h * .06 * f, ny + h * .3)])], LIGHT, 0.95)
-    ctx.focus = (xs[1] / W, (_ground(ctx, xs[1]) - h * .6) / H)
+        _ink(ctx, layer, armchair(x, y, h, f), ctx.dark)
+        a = _person(ctx, layer, x + h * .1 * f, y - h * .06, h, "doze", f)
+        hx, hy = a["head"]
+        _ink(ctx, layer, zzz(hx + h * .1, hy - h * .22, h * .9), LIGHT)
+    mid = xs[len(xs) // 2] if xs else W * 0.3
+    ctx.focus = (mid / W, (_ground(ctx, mid) - h * .7) / H)
 
 
 def _gag_seabed_town(ctx):
@@ -271,7 +328,7 @@ def _gag_slow_shout(ctx):
         stamp(layer.P, layer.A, [arc_line(mx, my, r, -0.6, 0.45, H * 0.006)], col, 0.85 - 0.17 * k)
     x2 = W * 0.8
     a2 = _person(ctx, layer, x2, _ground(ctx, x2), h * 0.9, "cup", -1)
-    _ink(ctx, layer, letter(a2["rh"][0], a2["rh"][1], h * 1.3), LIGHT)
+    _paper(ctx, layer.P, layer.A, a2["rh"][0], a2["rh"][1], h * 1.3, kind="letter")
     _ink(ctx, layer, [("poly", [(x2 - h * .78, a2["rh"][1] - h * .18), (x2 - h * .5, a2["rh"][1] - h * .18), (x2 - h * .5, a2["rh"][1] - h * .16), (x2 - h * .78, a2["rh"][1] - h * .16)])], ctx.dark)
     ctx.focus = (0.3, (y - h * .7) / H)
 
@@ -287,7 +344,7 @@ def _gag_pole_post(ctx):
     a = _person(ctx, layer, x, y, h, "reach", -1 if tx < x else 1)
     hx, hy = a["rh"]
     _ink(ctx, layer, [("line", ([(hx, hy + h * .3), (tx, ty)], H * 0.005))], ctx.dark)
-    _ink(ctx, layer, letter(tx, ty + h * .1, h * 1.5, -0.3), LIGHT)
+    _paper(ctx, layer.P, layer.A, tx, ty + h * .1, h * 1.5, -0.3, kind="letter")
     ctx.focus = ((x + tx) / 2 / W, (y + ty) / 2 / H)
 
 
@@ -320,7 +377,7 @@ def _gag_moon_letters(ctx):
     xs = [W * 0.4, W * 0.5, W * 0.6]
     for i, x in enumerate(xs):
         a = _person(ctx, layer, x, _ground(ctx, x), h * (0.85 if i != 1 else 1.0), "reach", 1 if i < 1 else -1)
-        _ink(ctx, layer, letter(a["rh"][0], a["rh"][1] - h * .1, h * 1.3, 0.25 * (i - 1)), LIGHT)
+        _paper(ctx, layer.P, layer.A, a["rh"][0], a["rh"][1] - h * .1, h * 1.3, 0.25 * (i - 1), kind="letter")
     if bm:
         cx, cy, r = bm
         rng = ctx.rng("moonletters")
@@ -330,7 +387,7 @@ def _gag_moon_letters(ctx):
             lx, ly = cx + d * math.cos(ang), cy + d * math.sin(ang) * 0.85
             ra = rng.uniform(-0.6, 0.6)
             stamp(ctx.sky_P, ctx.sky_A, letter(lx, ly, h * 1.7, ra), ctx.dark, 0.9)
-            stamp(ctx.sky_P, ctx.sky_A, letter(lx, ly, h * 1.45, ra), LIGHT, 1.0)
+            _paper(ctx, ctx.sky_P, ctx.sky_A, lx, ly, h * 1.45, ra, kind="letter")
     ctx.focus = (0.5, (_ground(ctx, W * .5) - h * 1.2) / H)
 
 
@@ -355,11 +412,38 @@ def _gag_tiny_planet(ctx):
     """Ovo: the ground is a small globe with one of everything on it."""
     W, H = ctx.W, ctx.H
     layer = ctx.globe
-    R = W * 0.78
-    cx, cy = W * 0.5, H * 0.6 + R
+    # the whole planet in frame, so it reads as a planet and not a hill
+    R = min(W * 0.44, H * 0.36)
+    cx, cy = W * 0.5, H * 0.97 - R
     stamp(layer.P, layer.A, [("ellipse", (cx - R, cy - R, cx + R, cy + R))], ctx.land)
+    # lit from the upper left, so the globe has a round, printed shading
+    y0, y1 = max(int(cy - R) - 2, 0), min(int(cy + R) + 3, H)
+    x0, x1 = max(int(cx - R) - 2, 0), int(cx + R) + 3
+    yy, xx = np.mgrid[y0:y1, x0:x1].astype(np.float32)
+    nx, ny = (xx - cx) / R, (yy - cy) / R
+    nz = np.sqrt(np.clip(1 - nx * nx - ny * ny, 0, 1))
+    lam = np.clip(nx * -0.5 + ny * -0.62 + nz * 0.6, 0, 1) ** 1.3
+    lit = mix(ctx.pal.water, ctx.pal.haze, 0.3)
+    shade = ctx.land[None, None, :] * (1 - lam[..., None]) + lit[None, None, :] * lam[..., None]
+    a = layer.A[y0:y1, x0:x1, None]
+    layer.P[y0:y1, x0:x1] = shade * a
+    # the footpath that goes all the way round, on the near side of the globe
+    tilt = -0.32
+    for k in range(34):
+        p0, p1 = math.pi * (0.04 + k / 34 * 0.92), math.pi * (0.04 + (k + 0.45) / 34 * 0.92)
+        seg = []
+        for ph in np.linspace(p0, p1, 4):
+            u, v = R * 0.93 * math.cos(ph), R * 0.3 * math.sin(ph)
+            seg.append((cx + u * math.cos(tilt) - v * math.sin(tilt), cy + 0.12 * R + u * math.sin(tilt) + v * math.cos(tilt)))
+        stamp(layer.P, layer.A, [("line", (seg, max(1.5, R * 0.008)))], LIGHT, 0.45)
+    # its one moon
+    mr = W * 0.032
+    mx, my = W * 0.9, H * 0.31
+    stamp(ctx.sky_P, ctx.sky_A, [("ellipse", (mx - mr, my - mr, mx + mr, my + mr))], mix(LIGHT, ctx.pal.accent, 0.3))
+    stamp(ctx.sky_P, ctx.sky_A, [("ellipse", (mx - mr * .45, my - mr * .2, mx - mr * .05, my + mr * .2)),
+                                 ("ellipse", (mx + mr * .2, my + mr * .25, mx + mr * .45, my + mr * .5))], mix(LIGHT, ctx.pal.haze, 0.6))
     s = H * 0.065
-    items = [(-0.36, "bakery"), (-0.16, "tree"), (0.02, "person"), (0.15, "bench"), (0.27, "cat"), (0.4, "lamp")]
+    items = [(-0.68, "bakery"), (-0.34, "tree"), (-0.04, "person"), (0.26, "bench"), (0.6, "lamp")]
     for th, kind in items:
         ax, ay = cx + R * math.sin(th), cy - R * math.cos(th) + 2
         if kind == "bakery":
@@ -367,20 +451,23 @@ def _gag_tiny_planet(ctx):
             stamp(layer.P, layer.A, rotate(shp, ax, ay, th), ctx.dark)
             stamp(layer.P, layer.A, rotate([("poly", [(ax - s * .25, ay - s * .55), (ax + s * .25, ay - s * .55), (ax + s * .25, ay - s * .25), (ax - s * .25, ay - s * .25)])], ax, ay, th), ctx.light)
         elif kind == "tree":
-            stamp(layer.P, layer.A, rotate(round_tree(ax, ay, s * 3.2, ctx.rng("ovo-tree")), ax, ay, th), ctx.dark)
+            stamp(layer.P, layer.A, rotate(round_tree(ax, ay, s * 2.6, ctx.rng("ovo-tree")), ax, ay, th), ctx.dark)
         elif kind == "person":
-            body, coat, _ = figure(ax, ay, s, "stand", 1)
+            body, coat, anchors = figure(ax, ay, s * 1.2, "stand", 1)
+            hx, hy = anchors["rh"]
             stamp(layer.P, layer.A, rotate(body + [coat], ax, ay, th), ctx.dark)
             stamp(layer.P, layer.A, rotate([coat], ax, ay, th), YELLOW)
+            _paper(ctx, layer.P, layer.A, hx, hy - s * .1, s * 1.3, 0.2, turn=(ax, ay, th))
         elif kind == "bench":
-            stamp(layer.P, layer.A, rotate(bench(ax, ay, s * 1.1), ax, ay, th), ctx.dark)
-        elif kind == "cat":
-            stamp(layer.P, layer.A, rotate(cat(ax, ay, s * 1.3, -1), ax, ay, th), ctx.dark)
+            b = s * 1.25
+            # the cat always comes first: it has the bench
+            stamp(layer.P, layer.A, rotate(bench(ax, ay, b) + cat(ax + b * .18, ay - b * .27, s * 1.05, -1), ax, ay, th), ctx.dark)
         else:
             stamp(layer.P, layer.A, rotate([("line", ([(ax, ay), (ax, ay - s * 1.6)], s * .06)), ("ellipse", (ax - s * .12, ay - s * 1.78, ax + s * .12, ay - s * 1.54))], ax, ay, th), ctx.dark)
             lx, ly = ax + s * 1.66 * math.sin(th), ay - s * 1.66 * math.cos(th)
             glow(layer.E, lx, ly, s * .18, ctx.pal.light, 0.8)
-    ctx.focus = (0.6, (cy - R * math.cos(0.2) - s) / H)
+    mid = 0.11
+    ctx.focus = ((cx + R * math.sin(mid)) / W, (cy - R * math.cos(mid) - s * .7) / H)
 
 
 def _gag_umbrella_feet(ctx):
@@ -555,6 +642,8 @@ def _sign(ctx):
 
 
 def extras(ctx):
+    if ctx.spec.stage and ctx.stage_y is None:
+        _stage(ctx, ctx.spec.stage)
     if ctx.spec.daisies:
         _daisies(ctx)
     if ctx.spec.crowd:

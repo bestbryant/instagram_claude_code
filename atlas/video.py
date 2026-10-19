@@ -178,6 +178,6 @@ def still(shot: Shot) -> np.ndarray:
     return _Prepared(shot, {}).image(shot.seconds / 2, 0.0)
 
 
-def overlay(items: list[dict], scrim: float = 0.3, size=(W, H)) -> np.ndarray:
+def overlay(items: list[dict], scrim: float = 0.42, size=(W, H)) -> np.ndarray:
     """Text overlay card. items: dict(text, y, kind='serif'|'italic'|'sans', size, weight, align, x, width)."""
     return text.overlay(size, items, scrim)

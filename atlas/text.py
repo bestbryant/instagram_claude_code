@@ -1,6 +1,8 @@
 """Typography: the five carousel slides and the Reel captions."""
 from __future__ import annotations
 
+import json
+import re
 from functools import lru_cache
 from pathlib import Path
 
@@ -31,18 +33,32 @@ def font(kind: str, size: int, weight: str = "Regular") -> ImageFont.FreeTypeFon
     return f
 
 
+def typeset(text):
+    """Curly quotes and apostrophes for set text (captions stay plain ASCII)."""
+    text = re.sub(r"(?<=\w)'|'(?=[\s.,!?;:)]|$)", "’", text)
+    return text.replace("'", "‘")
+
+
 def wrap(draw, text, fnt, width):
+    """Greedy wrap that keeps non-breaking spaces together and never leaves one word alone on the last line."""
     lines, cur = [], ""
-    for word in text.split():
+    for word in typeset(text).split(" "):
+        if not word:
+            continue
         trial = (cur + " " + word).strip()
-        if draw.textlength(trial, font=fnt) <= width or not cur:
+        if draw.textlength(trial.replace(" ", " "), font=fnt) <= width or not cur:
             cur = trial
         else:
             lines.append(cur)
             cur = word
     if cur:
         lines.append(cur)
-    return lines
+    if len(lines) > 1 and " " not in lines[-1].replace(" ", " ").strip():
+        prev = lines[-2].split(" ")
+        moved = prev[-1] + " " + lines[-1]
+        if len(prev) > 1 and draw.textlength(moved.replace(" ", " "), font=fnt) <= width:
+            lines[-2], lines[-1] = " ".join(prev[:-1]), moved
+    return [ln.replace(" ", " ") for ln in lines]
 
 
 def _fit(draw, text, kind, size, width, weight="Regular", floor=24):
@@ -66,15 +82,54 @@ def paper(seed=0, size=PAGE):
 INVITES = [
     "Leave a name in the comments. I chart a few every evening.",
     "Names welcome below. I find a few planets each evening.",
-    "Comment a name (a pet's works) and I'll go looking for its planet.",
+    "Comment a name (a pet's name works) and I'll go looking for its planet.",
     "Drop a name below and I'll chart where it lives.",
+    "Got a name? Put it below and I'll find the planet it came from.",
+    "Any name will do. Leave one and I'll look it up in the atlas.",
+    "Tell me a name in the comments. I haven't found one without a planet yet.",
 ]
 ASIDES = ["A dog's name works. So does your grandmother's.", "Pets, towns, nicknames. All of them have one.",
           "The odder the name, the odder the planet.", "Your cat's name will do nicely."]
+SCHEDULE = Path(__file__).resolve().parent.parent / "content" / "schedule.json"
 
 
 def pick(options, key):
-    return options[sum(map(ord, key)) % len(options)]
+    """Rotate through options by atlas number, so consecutive posts don't repeat."""
+    digits = "".join(c for c in key if c.isdigit())
+    return options[(int(digits) if digits else sum(map(ord, key))) % len(options)]
+
+
+@lru_cache(maxsize=None)
+def _slots():
+    """Walk the schedule once: each post takes the next invite that neither of the two
+    posts before it used, nor any earlier post of the same planet."""
+    try:
+        schedule = json.loads(SCHEDULE.read_text())
+    except (OSError, ValueError):
+        return {}
+    out, recent, used = {}, [], {}
+    for i, x in enumerate(schedule):
+        for k in range(len(INVITES)):
+            j = (i + k) % len(INVITES)
+            if j not in recent[-2:] and j not in used.get(x["entry"], ()):
+                break
+        out[(x["entry"], x["kind"])] = j
+        recent.append(j)
+        used.setdefault(x["entry"], set()).add(j)
+    return out
+
+
+def invite_line(entry: dict, kind: str = "carousel") -> str:
+    """The comment invite for this post, so neighbouring posts (and a Reel and
+    carousel of the same planet) never share one."""
+    i = _slots().get((entry["id"], kind))
+    return INVITES[i] if i is not None else pick(INVITES, entry["id"])
+
+
+def aside_line(entry: dict, invite: str) -> str:
+    """A small line under the invite; it doesn't repeat a point the invite already made."""
+    options = [a for a in ASIDES if not re.search(r"pet|dog|cat", a, re.I)] if re.search(r"pet", invite) else ASIDES
+    return pick(options, entry["name"])
 
 
 def cover(art: Image.Image, entry: dict, seed: int = 0) -> Image.Image:
@@ -225,14 +280,15 @@ def invite(close: Image.Image, entry: dict, seed: int = 0) -> Image.Image:
     d = ImageDraw.Draw(pg)
     y = m + strip.height + 250
     f = font("serif", 84, "Medium")
-    for j, ln in enumerate(wrap(d, "Your name has a planet too.", f, W - 2 * 110)):
+    for j, ln in enumerate(wrap(d, "Your name has a planet too.", f, W - 2 * 110)):
         d.text((W / 2, y + j * 100), ln, font=f, fill=INK, anchor="ms")
     y += 230
     f2 = font("italic", 42)
-    for j, ln in enumerate(wrap(d, pick(INVITES, entry["id"]), f2, W - 2 * 130)):
+    line = invite_line(entry, "carousel")
+    for j, ln in enumerate(wrap(d, line, f2, W - 2 * 130)):
         d.text((W / 2, y + j * 56), ln, font=f2, fill=INK, anchor="ms")
     y += 170
-    d.text((W / 2, y), pick(ASIDES, entry["name"]), font=font("italic", 32), fill=MUTED, anchor="ms")
+    d.text((W / 2, y), typeset(aside_line(entry, line)), font=font("italic", 32), fill=MUTED, anchor="ms")
     d.text((W / 2, H - m - 10), f"No. {entry['id']} · {BRAND}", font=font("serif", 26), fill=MUTED, anchor="ms")
     return pg
 
@@ -296,7 +352,7 @@ def reel_card(size, lines, kind="hook"):
     return np.asarray(out, np.float32) / 255
 
 
-def overlay(size, items, scrim=0.3):
+def overlay(size, items, scrim=0.42):
     """General text card for Reels.
 
     items: dicts with text, y (fraction of height), kind ('serif'|'italic'|'sans'),

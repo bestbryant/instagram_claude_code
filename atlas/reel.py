@@ -26,40 +26,63 @@ def render_reel(spec: Spec, seed: int, entry: dict, out: Path, cover_path: Path 
     """About 12 s, built to loop: hook on frame 1 with a push-in, a close-up on the
     gag for the setup, the punchline, then the name card on the same wide shot
     the Reel opens on."""
-    from .video import Shot, overlay, render_shots, still
+    from .video import render_shots, still
+
+    render_shots(reel_shots(spec, seed, entry, requested_by), out, seed=seed)
+    if cover_path is not None:
+        to_image(still(cover_shot(spec, seed, entry))).save(cover_path, quality=92)
+    return Path(out)
+
+
+def cover_shot(spec: Spec, seed: int, entry: dict):
+    from .video import Shot, overlay
+
+    left = dict(align="left", x=96, width=W_SAFE)
+    hook = entry.get("cover") or entry["hook"]
+    y = entry.get("text_y", {}).get("cover", 0.24)
+    card = overlay([dict(text=hook, y=y, kind="serif", weight="Medium", size=96, leading=1.1, **left)])
+    return Shot(1.0, spec, seed, pan=50, zoom=(1.7, 1.7), cards=[(card, 0, 1, 0, 0)])
+
+
+def reel_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = None) -> list:
+    """The Reel's shot list (hook, setup, punchline, name card), also used to check frames before rendering."""
+    from .video import Shot, overlay
 
     series = f"No. {entry['id']} · {text.BRAND}"
     beats = entry.get("beats") or entry["reel_lines"]
     left = dict(align="left", x=96, width=W_SAFE)
+    # per-entry text heights, to keep lines off bright suns and lamps
+    ty = {"setup": 0.24, "punch": 0.24, "name": 0.3, **entry.get("text_y", {})}
+    first = entry.get("opener") or entry["hook"]
     if requested_by:
         opener = overlay([dict(text=f"{requested_by} asked for", y=0.2, kind="italic", size=48, **left),
                           dict(text=entry["name"], y=0.235, kind="serif", weight="Medium", size=150, **left)])
     else:
         opener = overlay([dict(text=series, y=0.2, kind="italic", size=36, **left),
-                          dict(text=entry["hook"], y=0.235, kind="serif", weight="Medium", size=84, leading=1.12, **left)])
-    setup = overlay([dict(text=beats[0], y=0.24, kind="italic", size=66, leading=1.15, **left)])
-    punch = overlay([dict(text=beats[1], y=0.24, kind="italic", size=66, leading=1.15, **left)])
+                          dict(text=first, y=0.235, kind="serif", weight="Medium", size=84, leading=1.12, **left)])
+    setup = overlay([dict(text=beats[0], y=ty["setup"], kind="italic", size=66, leading=1.15, **left)])
+    punch = overlay([dict(text=beats[1], y=ty["punch"], kind="italic", size=66, leading=1.15, **left)])
     cta = entry.get("cta") or ("Found for " + requested_by if requested_by else "Your name has a planet too.")
-    name = overlay([dict(text=series, y=0.3, kind="italic", size=36),
-                    dict(text=entry["name"], y=0.335, kind="serif", weight="Medium", size=170),
-                    dict(text=cta, y=0.445, kind="italic", size=46)])
+    name = overlay([dict(text=series, y=ty["name"], kind="italic", size=36),
+                    dict(text=entry["name"], y=ty["name"] + 0.035, kind="serif", weight="Medium", size=170),
+                    dict(text=cta, y=ty["name"] + 0.145, kind="italic", size=46)])
     # about 0.3 s per word plus time to settle, so every line can actually be read
     read = lambda line, extra=0.9: round(max(2.4, 0.3 * len(line.split()) + extra), 1)
-    t_hook = read(entry["name"] if requested_by else entry["hook"], 1.0 if requested_by else 0.9)
+    t_hook = read(entry["name"] if requested_by else first, 1.0 if requested_by else 0.9)
     t_setup, t_punch = read(beats[0]), read(beats[1], 1.2)
-    shots = [
-        Shot(t_hook, spec, seed, pan=50, zoom=(1.0, 1.12), cards=[(opener, 0.0, t_hook, 0.0, 0.12)]),
-        Shot(t_setup, spec, seed, pan=50, zoom=(1.55, 1.65) if spec.sign and spec.gag else (1.9, 2.05),
-             cards=[(setup, 0.05, t_setup, 0.15, 0.12)]),
-        Shot(t_punch, spec, seed, pan=50, zoom=(1.4, 1.28), cards=[(punch, 0.05, t_punch, 0.15, 0.12)]),
-        Shot(2.4, spec, seed, pan=50, zoom=(1.08, 1.0), cards=[(name, 0.05, 2.4, 0.15, 0.0)], tick=True),
+    # the punchline holds to the cut and the name card is on from its first frame:
+    # a fade between them uncovers the bright scene for a few frames, which flickers
+    # an entry can move the camera per shot: "camera": {"setup": {"zoom": [a, b], "focus": [x, y]}}
+    cam = entry.get("camera", {})
+    move = lambda k, zoom: dict(zoom=tuple(cam.get(k, {}).get("zoom", zoom)),
+                                focus=tuple(cam[k]["focus"]) if "focus" in cam.get(k, {}) else None)
+    return [
+        Shot(t_hook, spec, seed, pan=50, cards=[(opener, 0.0, t_hook, 0.0, 0.12)], **move("hook", (1.0, 1.12))),
+        Shot(t_setup, spec, seed, pan=50, cards=[(setup, 0.05, t_setup, 0.15, 0.12)],
+             **move("setup", (1.55, 1.65) if spec.sign and spec.gag else (1.9, 2.05))),
+        Shot(t_punch, spec, seed, pan=50, cards=[(punch, 0.05, t_punch, 0.15, 0.0)], **move("punch", (1.4, 1.28))),
+        Shot(2.4, spec, seed, pan=50, cards=[(name, 0.0, 2.4, 0.0, 0.0)], tick=True, **move("name", (1.08, 1.0))),
     ]
-    render_shots(shots, out, seed=seed)
-    if cover_path is not None:
-        hook = entry.get("cover") or entry["hook"]
-        card = overlay([dict(text=hook, y=0.24, kind="serif", weight="Medium", size=96, leading=1.1, **left)])
-        to_image(still(Shot(1.0, spec, seed, pan=50, zoom=(1.7, 1.7), cards=[(card, 0, 1, 0, 0)]))).save(cover_path, quality=92)
-    return Path(out)
 
 
 W_SAFE = W_REEL = 1080 - 96 - 170   # text width that stays clear of the like/comment buttons

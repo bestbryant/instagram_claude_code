@@ -2,28 +2,29 @@
 from __future__ import annotations
 
 from .render import Spec
-from .text import INVITES, pick
+from .text import invite_line
 
 
-def _closing(entry, by):
+def _closing(entry, by, kind):
     lines = []
     if by:
         lines.append(f"Found for {by}. Repost it so they see their planet.")
     if entry.get("question"):
         lines.append(entry["question"])
-    lines.append(pick(INVITES, entry["id"] + entry["name"]))
+    lines.append(invite_line(entry, kind))
     return "\n".join(lines)
 
 
 def carousel(entry: dict, by: str | None = None) -> str:
-    parts = [f"Imaginary planet No. {entry['id']}: {entry['name']}. {entry['hook']}", entry["story"],
-             _closing(entry, by), " ".join(entry["tags"][:3])]
+    # the story is already on slide 4, so the caption adds something the slides don't say
+    parts = [f"Imaginary planet No. {entry['id']}: {entry['name']}. {entry['hook']}", entry.get("extra") or entry["story"],
+             _closing(entry, by, "carousel"), " ".join(entry["tags"][:3])]
     return "\n\n".join(parts)
 
 
 def reel(entry: dict, by: str | None = None) -> str:
     head = f"{entry['hook']} (Imaginary planet No. {entry['id']}: {entry['name']})"
-    parts = [head, entry.get("extra") or entry["story"], _closing(entry, by), " ".join(entry["tags"][:3])]
+    parts = [head, entry.get("extra") or entry["story"], _closing(entry, by, "reel"), " ".join(entry["tags"][:3])]
     return "\n\n".join(parts)
 
 
@@ -37,8 +38,9 @@ def alt_text(entry: dict, spec: Spec) -> str:
         bits.append("two suns")
     elif spec.suns == 1:
         bits.append("a low sun")
-    if spec.moons:
-        bits.append(f"{spec.moons} small moon{'s' if spec.moons > 1 else ''}")
+    if spec.moons or spec.gag == "tiny_planet":
+        n = spec.moons or 1
+        bits.append(f"{['one', 'two', 'three', 'four'][min(n, 4) - 1]} small moon{'s' if n > 1 else ''}")
     if spec.aurora:
         bits.append("green and violet aurora")
     if spec.islands:
@@ -49,7 +51,7 @@ def alt_text(entry: dict, spec: Spec) -> str:
               "spires": "needle-like spires", "crystal": "angular crystal ridges"}[spec.terrain]
     if spec.snow:
         ground = "snowy " + ground
-    scene = [f"layers of {ground} fading into mist"]
+    scene = [] if spec.gag == "tiny_planet" else [f"layers of {ground} fading into mist"]
     if spec.water:
         scene.append("a still sea reflecting the sky")
     if spec.glass_waves:
@@ -69,7 +71,15 @@ def alt_text(entry: dict, spec: Spec) -> str:
     gag = GAG_ALT.get(spec.gag)
     if gag:
         scene.append(gag)
-    if spec.cartographer:
+    if spec.lamp:
+        scene.append("a tall lamp shining a beam straight up")
+    if spec.crowd:
+        scene.append("a row of people, each holding something different")
+    if spec.daisies:
+        scene.append("a meadow full of daisies")
+    if spec.sign:
+        scene.append("a sign reading '" + spec.sign.replace("|", " ") + "'")
+    if spec.cartographer and spec.gag != "tiny_planet":   # the globe has its own cartographer
         scene.append("a small figure in a yellow coat holding a map")
     sky = _join(bits) if bits else "a starry sky"
     return (f"Screen-print style illustration of the imaginary planet {entry['name']}: {sky} above "
@@ -84,7 +94,7 @@ GAG_ALT = {
     "kettles": "kettles steaming on warm rocks",
     "moon_letters": "children holding letters up to the moon, with more letters stuck to its surface",
     "glass_surfers": "surfers with boards standing under the frozen curl of a wave",
-    "tiny_planet": "a tiny round planet with one bakery, one tree, one bench, one cat and a person in a yellow coat",
+    "tiny_planet": "a tiny round planet floating in the dark, with one bakery, one tree, one lamp, one person in a yellow coat with a map, and one cat sitting on the only bench",
     "umbrella_feet": "people wearing red umbrellas on their feet",
     "road_tourists": "tourists lying on their backs in the road while locals walk around them",
     "tree_cloud": "one enormous tree with its own small rain cloud and a few lit houses in its branches",

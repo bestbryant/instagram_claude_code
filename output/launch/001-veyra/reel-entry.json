@@ -39,9 +39,13 @@
   "odd_line": "The lighthouse works nine minutes a night and has the easiest job on the planet.",
   "rule": "Naps longer than nine minutes must be declared.",
   "question": "What would you do with a nine-minute night?",
-  "extra": "Bedtime stories here are about four sentences long.",
+  "extra": "Bedtime stories here are three sentences long. Two if you're tired.",
   "reel_lines": [
     "Two suns, so the whole night lasts nine minutes. Everyone sleeps sitting up, in armchairs.",
     "Hit snooze once and you miss the night entirely."
-  ]
+  ],
+  "text_y": {
+    "setup": 0.19,
+    "punch": 0.15
+  }
 }

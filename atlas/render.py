@@ -175,6 +175,7 @@ class Spec:
     crowd: int = 0                 # a row of people, each holding something
     daisies: int = 0               # flowers across the foreground
     lamp: bool = False             # a tall lamp aimed at the sky
+    stage: float = 0.0             # flat foreground ledge at this height for the extras (0: natural ground)
 
 
 def random_spec(seed: int) -> Spec:

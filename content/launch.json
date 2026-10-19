@@ -82,11 +82,15 @@
     "odd_line": "The lighthouse works nine minutes a night and has the easiest job on the planet.",
     "rule": "Naps longer than nine minutes must be declared.",
     "question": "What would you do with a nine-minute night?",
-    "extra": "Bedtime stories here are about four sentences long.",
+    "extra": "Bedtime stories here are three sentences long. Two if you're tired.",
     "reel_lines": [
       "Two suns, so the whole night lasts nine minutes. Everyone sleeps sitting up, in armchairs.",
       "Hit snooze once and you miss the night entirely."
-    ]
+    ],
+    "text_y": {
+      "setup": 0.19,
+      "punch": 0.15
+    }
   },
   {
     "id": "002",
@@ -141,7 +145,7 @@
     "id": "003",
     "name": "Hush",
     "subtitle": "where sound arrives late",
-    "story": "Sound is slow on Hush. A shout across the valley arrives four or five days later, quieter, usually after everyone has moved on. Arguments are carried out by letter, which tends to calm them down. In midwinter you can stand at the bottom of the valley and hear last summer: dogs, a wedding, someone practising the trumpet badly. In March a man proposed across the valley. Her answer is due on Thursday.",
+    "story": "Sound is slow on Hush. A shout across the valley arrives five days later, quieter, usually after everyone has moved on. Arguments are carried out by letter, which tends to calm them down. On a still day you can stand at the bottom of the valley and hear last week: dogs, a wedding, someone practising the trumpet badly. In March a man proposed across the valley. She has been thinking about it. Her answer is due on Thursday.",
     "facts": {
       "Day": "26 hours",
       "Moons": "none",
@@ -166,21 +170,26 @@
       "suns": 0,
       "layers": 5,
       "mist": 0.45,
-      "gag": "slow_shout"
+      "gag": "slow_shout",
+      "stage": 0.76
     },
     "cover": "Her answer arrives Thursday.",
     "beats": [
       "Sound is slow on Hush. A shout takes five days to cross the valley.",
-      "He proposed across the valley in March. Her answer arrives Thursday."
+      "He proposed in March. She's been thinking about it. Her answer arrives Thursday."
     ],
     "odd_line": "Arguments here are done by letter, which is why there are hardly any.",
-    "rule": "No shouting after dark. It arrives on Tuesday and wakes everyone.",
+    "rule": "No shouting after dark. It arrives five nights later and wakes everyone.",
     "question": "Who do you know who replies like this?",
     "extra": "I'll be in the valley on Thursday to hear the answer.",
     "reel_lines": [
       "Sound is slow on Hush. A shout takes five days to cross the valley.",
-      "He proposed across the valley in March. Her answer arrives Thursday."
-    ]
+      "He proposed in March. She's been thinking about it. Her answer arrives Thursday."
+    ],
+    "opener": "Her answer arrives Thursday.",
+    "text_y": {
+      "setup": 0.12
+    }
   },
   {
     "id": "004",
@@ -232,7 +241,7 @@
     "id": "005",
     "name": "Cinderwake",
     "subtitle": "the warm canyons",
-    "story": "The ground on Cinderwake is warm all year, and so is the rain. At night the canyon walls glow a dull orange, enough to read by. Tea grows wild in the cracks. People leave their kettles out on the rock and come back when they whistle, and socks dry on the walls in about four minutes. The only stove on the planet is in a museum, behind a rope.",
+    "story": "The ground on Cinderwake is warm all year, and so is the rain. At night the canyon walls glow a dull orange, enough to read by. Tea grows wild in the cracks. People leave their kettles out on the rock and come back when they whistle, and socks dry on the walls in about ninety seconds. The only stove on the planet is in a museum, behind a rope.",
     "facts": {
       "Day": "40 hours",
       "Moons": "none",
@@ -266,7 +275,7 @@
       "The ground is warm all year, warm enough to boil a kettle on.",
       "So kettles live outside on the rocks, and the only stove on the planet is in a museum, behind a rope."
     ],
-    "odd_line": "Socks dry on the canyon walls in about four minutes.",
+    "odd_line": "Socks dry on the canyon walls in about ninety seconds.",
     "rule": "A kettle left on public rock must be shared with whoever is cold.",
     "question": "Tea or coffee, if the floor boiled it for you?",
     "extra": "Heating bills are something grandparents mention to frighten children.",
@@ -279,7 +288,7 @@
     "id": "006",
     "name": "Luma",
     "subtitle": "the close moon",
-    "story": "Once a year Luma's moon comes in so close that it hums, a low note you feel in your teeth. Children climb the hill with letters and press them against it as it drifts past. Most are never seen again. Every few years one comes back the following autumn, answered, in handwriting no one recognises. The longest reply so far ran to four pages and was mostly questions about dogs.",
+    "story": "Once a year Luma's moon comes in so close that it hums, a low note you feel in your teeth. Children climb the hill with letters and press them against it as it drifts past. Most are never seen again. Every few years one comes back the following autumn, answered, in handwriting no one recognises. The longest reply so far ran to eleven pages and was mostly questions about dogs.",
     "facts": {
       "Day": "28 hours",
       "Moons": "1, very close",
@@ -368,7 +377,7 @@
     "id": "008",
     "name": "Ovo",
     "subtitle": "the small planet",
-    "story": "You can walk all the way around Ovo between breakfast and lunch. There is one bakery, one bench, one tree and one cat, and the cat is called Everything. When someone new arrives, all forty-one residents come out to say hello, which takes about four minutes. I was the forty-second for a weekend. Everything ignored me the entire time.",
+    "story": "You can walk all the way around Ovo between breakfast and lunch. There is one bakery, one bench, one tree and one cat, and the cat is called Everything. When someone new arrives, all forty-one residents come out to say hello, which takes about ten minutes. I was the forty-second for a weekend.",
     "facts": {
       "Day": "6 hours",
       "Moons": "1",
@@ -384,15 +393,12 @@
     "spec": {
       "palette": "rose_fog",
       "terrain": "hills",
-      "horizon": 1.3,
+      "horizon": 1.7,
       "trees": "none",
       "house": false,
       "figure": false,
-      "suns": 1,
-      "sun_x": 0.3,
-      "sun_y": 0.42,
-      "sun_size": 0.05,
-      "moons": 1,
+      "suns": 0,
+      "moons": 0,
       "layers": 1,
       "mist": 0.6,
       "gag": "tiny_planet"
@@ -402,14 +408,18 @@
       "Ovo has one bakery, one bench, one tree and one cat. You can walk round it before lunch.",
       "The cat is called Everything. I stayed a weekend. Everything ignored me."
     ],
-    "odd_line": "The cat is called Everything. It does not care for newcomers.",
+    "odd_line": "The bakery sells one kind of bread. There is one queue. It moves fast.",
     "rule": "The bench is first come, first served. The cat always comes first.",
     "question": "How small was the town you grew up in?",
-    "extra": "The bakery sells one kind of bread. There is one queue. It moves fast.",
+    "extra": "Rush hour is three people and a wheelbarrow.",
     "reel_lines": [
       "Ovo has one bakery, one bench, one tree and one cat. You can walk round it before lunch.",
       "The cat is called Everything. I stayed a weekend. Everything ignored me."
-    ]
+    ],
+    "opener": "One of everything.",
+    "text_y": {
+      "name": 0.12
+    }
   },
   {
     "id": "009",
@@ -499,7 +509,7 @@
     "odd_line": "Traffic report: three tourists lying in the high street, as usual.",
     "rule": "Tourists lying in the road must keep to the left lane.",
     "question": "What did you stop noticing where you live?",
-    "extra": "The bus timetable allows four minutes per tourist.",
+    "extra": "The bus timetable allows three minutes per tourist.",
     "reel_lines": [
       "The aurora on Kess has never switched off, so the people who live there stopped looking up.",
       "Now and then one of them looks up by accident and has to sit down on the kerb for a minute."
@@ -509,7 +519,7 @@
     "id": "011",
     "name": "Bramble",
     "subtitle": "the tall forest",
-    "story": "Trees on Bramble don't stop growing. The oldest are taller than the hills they stand on, and the tallest has a small cloud in its upper branches that rains on that tree and nowhere else. Somewhere near the top is a village that hasn't come down in four hundred years. They drop pinecones with notes tied on. The ground answers by kite, and complains about the noise.",
+    "story": "Trees on Bramble don't stop growing. The oldest are taller than the hills they stand on, and the tallest has a small cloud in its upper branches that rains on that tree and nowhere else. Somewhere near the top is a village that hasn't come down in six hundred years. They drop pinecones with notes tied on. The ground answers by kite, and complains about the noise.",
     "facts": {
       "Day": "30 hours",
       "Moons": "none",
@@ -540,15 +550,15 @@
     "cover": "This tree has its own weather.",
     "beats": [
       "The trees never stop growing. The tallest one has a small rain cloud of its own.",
-      "A village near the top hasn't come down in four hundred years. They send post by pinecone."
+      "A village near the top hasn't come down in six hundred years. They send post by pinecone."
     ],
     "odd_line": "Forecast for the tallest tree: light rain. Everywhere else: dry.",
     "rule": "Do not shake the tall tree. Somebody's dinner is up there.",
     "question": "Would you move up, or stay on the ground?",
-    "extra": "Pinecone mail takes about four seconds, six with a tailwind.",
+    "extra": "Pinecone mail arrives in about eight seconds. Replies by kite take a week.",
     "reel_lines": [
       "The trees never stop growing. The tallest one has a small rain cloud of its own.",
-      "A village near the top hasn't come down in four hundred years. They send post by pinecone."
+      "A village near the top hasn't come down in six hundred years. They send post by pinecone."
     ]
   }
 ]
