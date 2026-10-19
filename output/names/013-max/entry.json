@@ -25,11 +25,13 @@
     "horizon": 0.64,
     "suns": 1,
     "sun_x": 0.5,
-    "sun_y": 0.4,
-    "sun_size": 0.08,
+    "sun_y": 0.5,
+    "sun_size": 0.12,
     "layers": 5,
     "mist": 0.4,
-    "gag": "slow_shout",
-    "sign": "QUIET ZONE|(CLOSED)"
-  }
+    "gag": "megaphones",
+    "stage": 0.74
+  },
+  "opener": "Everything is set to maximum.",
+  "kicker": "Every Max gets this planet."
 }

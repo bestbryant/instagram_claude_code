@@ -3,6 +3,6 @@ A planet for people who check the weather app ten times a day. (Imaginary planet
 The forecast here only ever says 'from below'.
 
 Upward rain or sideways wind?
-Comment a name (a pet's works) and I'll go looking for its planet.
+Drop a name below and I'll chart where it lives.
 
 #worldbuilding #illustration #rain

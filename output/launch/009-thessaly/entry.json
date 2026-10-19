@@ -31,7 +31,8 @@
     "layers": 4,
     "mist": 0.5,
     "gag": "umbrella_feet",
-    "spot": "#c8452f"
+    "spot": "#c8452f",
+    "stage": 0.72
   },
   "cover": "Umbrellas go on your feet.",
   "beats": [
@@ -45,5 +46,6 @@
   "reel_lines": [
     "On Thessaly the rain falls up, out of the sea and into the clouds.",
     "So umbrellas go on your feet, and boots are waterproof on top."
-  ]
+  ],
+  "opener": "Umbrellas go on your feet."
 }

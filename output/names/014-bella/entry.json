@@ -20,16 +20,19 @@
     "#bella"
   ],
   "spec": {
-    "palette": "rose_fog",
+    "palette": "cobalt_noon",
     "terrain": "hills",
     "horizon": 0.64,
     "suns": 1,
-    "sun_x": 0.3,
-    "sun_y": 0.42,
+    "sun_x": 0.78,
+    "sun_y": 0.3,
     "sun_size": 0.05,
     "layers": 4,
     "mist": 0.6,
     "house": true,
-    "sign": "THE BEAUTIFUL|TAX OFFICE"
-  }
+    "sign": "THE BEAUTIFUL|TAX OFFICE",
+    "stage": 0.74
+  },
+  "opener": "Everything here is beautiful. By law.",
+  "kicker": "Every Bella gets this planet."
 }
