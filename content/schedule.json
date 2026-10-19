@@ -141,56 +141,78 @@
  {
   "day": 5,
   "entry": "003",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  },
  {
   "day": 6,
   "entry": "008",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  },
  {
   "day": 8,
   "entry": "010",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  },
  {
   "day": 10,
   "entry": "004",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  },
  {
   "day": 12,
   "entry": "009",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  },
  {
   "day": 14,
   "entry": "H01",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  },
  {
   "day": 16,
   "entry": "011",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  },
  {
   "day": 17,
   "entry": "H02",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  },
  {
   "day": 18,
   "entry": "006",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  },
  {
   "day": 19,
   "entry": "007",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  },
  {
   "day": 20,
   "entry": "005",
-  "kind": "carousel"
+  "kind": "carousel",
+  "hold": true,
+  "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
  }
 ]

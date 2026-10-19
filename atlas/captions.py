@@ -8,7 +8,7 @@ from .text import invite_line
 def _closing(entry, by, kind):
     lines = []
     if by:
-        lines.append(f"Found for {by}. Repost it so they see their planet.")
+        lines.append(f"Found for {by}.")   # the @mention notifies them; asking for reposts gets posts down-ranked
     if entry.get("question"):
         lines.append(entry["question"])
     lines.append(invite_line(entry, kind))

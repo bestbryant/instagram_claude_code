@@ -32,6 +32,7 @@ OUT = ROOT / "output"
 LAUNCH = ROOT / "content" / "launch.json"
 SCHEDULE = ROOT / "content" / "schedule.json"
 LOG = ROOT / "content" / "published.json"
+STATS = ROOT / "content" / "stats.json"
 GITHUB_REPO = os.environ.get("ATLAS_GITHUB_REPO", "bestbryant/instagram_claude_code")   # public repo that serves the videos
 
 
@@ -214,13 +215,16 @@ def _publish(folder: Path, kind: str, base_url: str, dry_run: bool):
     p = Publisher(dry_run=dry_run)
     if kind in ("process", "special"):
         video = folder
-        return p.reel(_video_url(video, dry_run), video.with_suffix(".txt").read_text().strip())
+        return p.reel(_video_url(video, dry_run), video.with_suffix(".txt").read_text().strip(),
+                      audio_name=f"Atlas of Elsewhere · {video.stem.split('-', 1)[-1].replace('-', ' ').title()} (process)")
     if kind == "carousel":
         cap = (folder / "caption-carousel.txt").read_text().strip()
         slides = sorted((f.name for f in folder.glob("[0-9]*-*.jpg")), key=lambda n: int(n.split("-")[0]))
         return p.carousel([url(f) for f in slides], cap)
     cap = (folder / "caption-reel.txt").read_text().strip()
-    return p.reel(_video_url(folder / "reel.mp4", dry_run), cap, cover_url=url("reel-cover.jpg"))
+    name = json.loads((folder / "reel-entry.json").read_text()).get("name", "") if (folder / "reel-entry.json").exists() else ""
+    return p.reel(_video_url(folder / "reel.mp4", dry_run), cap, cover_url=url("reel-cover.jpg"),
+                  audio_name=f"Atlas of Elsewhere · {name}" if name else None)
 
 
 def _video_url(path: Path, dry_run: bool = False) -> str:
@@ -366,12 +370,37 @@ def video_ok(path: Path) -> bool:
         return False
 
 
+def file_hash(path: Path) -> str:
+    import hashlib
+    return hashlib.sha1(Path(path).read_bytes()).hexdigest()
+
+
+def preflight(path: Path) -> str | None:
+    """What would stop Instagram recommending this Reel: not full-frame 9:16, silent, or a re-upload."""
+    import subprocess
+    if not video_ok(path):
+        return "video missing or broken"
+    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+                        "-of", "csv=p=0", str(path)], capture_output=True, text=True, timeout=60)
+    if r.stdout.strip() != "1080,1920":
+        return f"not 1080x1920 ({r.stdout.strip()})"
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path), "-map", "0:a:0", "-af", "volumedetect", "-f", "null", "-"],
+                       capture_output=True, text=True, timeout=120)
+    m = re.search(r"mean_volume: (-?[\d.]+) dB", r.stderr)
+    if not m or float(m.group(1)) < -45:
+        return "no audible audio (Reels without sound are shown less)"
+    log = json.loads(LOG.read_text()) if LOG.exists() else []
+    if file_hash(path) in {x.get("sha1") for x in log}:
+        return "this exact file was already posted (re-uploads aren't recommended)"
+    return None
+
+
 def check_item(item, folder, entries) -> str | None:
     """Why an item can't be posted yet, or None if it's ready."""
     if folder is None:
         return "not rendered"
     if item["kind"] in ("process", "special"):
-        return None if video_ok(folder) else "video missing or broken"
+        return preflight(folder)
     src = entries.get(item["entry"])
     rendered = folder / ("reel-entry.json" if item["kind"] == "reel" else "entry.json")
     # fields only the other format uses don't make this one stale
@@ -380,8 +409,9 @@ def check_item(item, folder, entries) -> str | None:
     if src is not None and (not rendered.exists() or not same(json.loads(rendered.read_text()), src)):
         return "stale: content changed since it was rendered"
     if item["kind"] == "reel":
-        if not video_ok(folder / "reel.mp4"):
-            return "reel missing or broken"
+        problem = preflight(folder / "reel.mp4")
+        if problem:
+            return problem
         if not (folder / "reel-cover.jpg").exists():
             return "reel cover missing"
     elif not list(folder.glob("[0-9]*-*.jpg")):
@@ -414,6 +444,8 @@ def cmd_next(a):
     for item in due:
         if posted >= a.max:
             break
+        if item.get("hold"):
+            continue                                    # parked (see its note)
         if item.get("not_before") and now < datetime.fromisoformat(item["not_before"].replace("Z", "+00:00")):
             continue                                    # held for its date (e.g. Halloween night)
         if item.get("after") and tuple(item["after"]) not in done:
@@ -427,9 +459,41 @@ def cmd_next(a):
         posted += 1
         print(f"posted {item['entry']} as {item['kind']}: {media}")
         if not a.dry_run:
-            log.append({**item, "media_id": media, "at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+            video = folder if item["kind"] in ("process", "special") else folder / "reel.mp4"
+            sha = {"sha1": file_hash(video)} if item["kind"] != "carousel" else {}
+            log.append({**item, "media_id": media, "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **sha})
             LOG.write_text(json.dumps(log, indent=2) + "\n")
             done.add((item["entry"], item["kind"]))
+
+
+def cmd_stats(a):
+    """Pull reach, views, watch time, likes, shares and saves for every post into content/stats.json."""
+    from datetime import datetime, timezone
+    from .publish import GraphError, Publisher
+    p = Publisher()
+    log = json.loads(LOG.read_text()) if LOG.exists() else []
+    out = {}
+    reel_metrics = ["reach", "views", "likes", "comments", "shares", "saved", "ig_reels_avg_watch_time", "reels_skip_rate"]
+    feed_metrics = ["reach", "views", "likes", "comments", "shares", "saved"]
+    for x in log:
+        wanted = feed_metrics if x["kind"] == "carousel" else reel_metrics
+        vals = {}
+        for m in wanted:                                   # one at a time: an unsupported metric fails the whole call
+            try:
+                d = p._call("GET", f"{x['media_id']}/insights", metric=m).get("data", [])
+                if d:
+                    vals[m] = (d[0].get("values") or [{}])[0].get("value", (d[0].get("total_value") or {}).get("value"))
+            except GraphError:
+                pass
+        out[x["media_id"]] = {"entry": x["entry"], "kind": x["kind"], "at": x["at"], **vals}
+        r = vals.get("reach") or 0
+        print(f"{x['at'][:16]} {x['entry']:>4} {x['kind']:<8} reach {r:>5}  views {vals.get('views', '-'):>5}  "
+              f"likes {vals.get('likes', '-'):>3}  shares {vals.get('shares', '-'):>3}  saves {vals.get('saved', '-'):>3}  "
+              f"watch {vals.get('ig_reels_avg_watch_time', '-')}  skip {vals.get('reels_skip_rate', '-')}")
+    acct = p._call("GET", p.user_id, fields="followers_count,media_count")
+    print(f"followers {acct.get('followers_count')}  posts {acct.get('media_count')}")
+    STATS.write_text(json.dumps({"fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                                 "followers": acct.get("followers_count"), "posts": out}, indent=1) + "\n")
 
 
 def _prepare_job(job):
@@ -459,7 +523,7 @@ def cmd_prepare(a):
             groups.update({e["id"]: ("launch" if f == "launch.json" else Path(f).stem) for e in json.loads(path.read_text())})
     jobs = {}
     for item in schedule:
-        if (item["entry"], item["kind"]) in done or (not a.all and item["day"] > today + a.days):
+        if (item["entry"], item["kind"]) in done or item.get("hold") or (not a.all and item["day"] > today + a.days):
             continue
         problem = check_item(item, _find(item), entries)
         if not problem:
@@ -531,6 +595,8 @@ def main(argv=None):
     s.add_argument("--all", action="store_true", help="everything not yet posted")
     s.add_argument("--jobs", type=int, default=1)
     s.set_defaults(fn=cmd_prepare)
+    s = sub.add_parser("stats", help="reach, views, watch time, likes, shares and saves for every post")
+    s.set_defaults(fn=cmd_stats)
     s = sub.add_parser("inbox", help="collect name requests from recent comments (Graph API)")
     s.add_argument("--limit", type=int, default=10, help="how many recent posts to scan")
     s.add_argument("--chart", action="store_true", help="also render planets for new requests")

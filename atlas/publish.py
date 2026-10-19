@@ -87,11 +87,19 @@ class Publisher:
         c = self._call("POST", f"{self.user_id}/media", image_url=image_url, caption=caption)["id"]
         return self._publish(c)
 
-    def reel(self, video_url, caption, cover_url=None):
+    def reel(self, video_url, caption, cover_url=None, audio_name=None):
         params = dict(media_type="REELS", video_url=video_url, caption=caption, share_to_feed="true")
         if cover_url:
             params["cover_url"] = cover_url
-        c = self._call("POST", f"{self.user_id}/media", **params)["id"]
+        if audio_name:
+            params["audio_name"] = audio_name      # names the original audio; can only be set once
+        try:
+            c = self._call("POST", f"{self.user_id}/media", **params)["id"]
+        except GraphError as e:
+            if not audio_name or "audio" not in str(e).lower():
+                raise
+            params.pop("audio_name")
+            c = self._call("POST", f"{self.user_id}/media", **params)["id"]
         return self._publish(c)
 
     def reel_file(self, path, caption, cover_url=None):
