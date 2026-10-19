@@ -112,7 +112,7 @@ To stop it, disable the routine "Atlas of Elsewhere: daily post" in your Claude 
 ## 6. Things only you can do (the API can't)
 
 1. **Rename the account.** Profile → Edit profile → Username → `atlasofelsewhere` (or the closest available). The current handle, @bestblueberrys, doesn't match the brand.
-2. **Name field:** `Atlas of Elsewhere · imaginary planets`
+2. **Name field:** `Atlas of Elsewhere · imaginary planets`. It currently reads "Claude Code". The name field is searchable, and a mismatched name makes the account look like a bot.
 3. **Bio:**
    ```
    Places that aren't on any map. One a day.
@@ -122,7 +122,9 @@ To stop it, disable the routine "Atlas of Elsewhere: daily post" in your Claude 
 4. **Profile photo:** `output/profile-picture.jpg`
 5. **Pin** the Elsewhere post now, and the Ovo process Reel when it goes up (day 8).
 6. **Stories** (they can't be fully automated with stickers): share each new post with a **Question sticker, "Name a planet"**, and once a week an **Add Yours** sticker ("the planet with your name").
-7. **Security:** change your Instagram password and turn on two-factor authentication. Rotate the Meta **app secret** (it was pasted in chat). The access token keeps working after both.
+7. **Check Account Status:** Settings → Account Status. If it says some content "can't be recommended", follow its steps. Recommendations to non-followers are the only reach a new account gets.
+8. **Act like a person for a few minutes a day:** follow 15–20 illustration and worldbuilding accounts you actually like, and leave a real comment on two or three of their posts. An account that only ever posts through the API looks automated.
+9. **Security:** change your Instagram password and turn on two-factor authentication. Rotate the Meta **app secret** (it was pasted in chat). The access token keeps working after both.
 
 ---
 
