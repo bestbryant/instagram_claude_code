@@ -24,7 +24,10 @@
     "figure": true,
     "trees": "pines",
     "mist": 0.6,
-    "layers": 5
+    "layers": 5,
+    "stage": 0.72,
+    "crowd": 6,
+    "crowd_items": "cup,spoon,book,fish,cup,nothing"
   },
   "cover": "Every name has a planet.",
   "beats": [
@@ -38,5 +41,88 @@
   "reel_lines": [
     "I keep an atlas of places that aren't on any map.",
     "Leave a name and I'll go and find where it lives."
-  ]
+  ],
+  "episode": {
+    "opener": "You've been\nto this planet.\nProbably today.",
+    "beats": [
+      {
+        "text": "This is Elsewhere.\nWhere you go\nwhen you're 'miles away'.",
+        "shot": {
+          "framing": "sky",
+          "focus": [
+            0.68,
+            0.25
+          ]
+        }
+      },
+      {
+        "text": "You arrive holding whatever\nwas in your hand.\nA spoon. Once, a fish.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.45,
+            1.55
+          ]
+        }
+      },
+      {
+        "text": "It's busiest on Monday mornings, and during meetings.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.2
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "Nobody stays long.\nSomebody says your name,\nand you're back.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.2
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 0
+        }
+      },
+      {
+        "text": "Except me.\nNobody's called me back in years.",
+        "shot": "cartographer",
+        "spec": {
+          "crowd": 0
+        }
+      },
+      {
+        "text": "So I write down\neveryone else's names,\nand find where each one lives.",
+        "shot": {
+          "framing": "cartographer",
+          "zoom": [
+            2.15,
+            1.45
+          ]
+        },
+        "spec": {
+          "crowd": 0
+        }
+      },
+      {
+        "text": "Look for me.\nYellow coat. Still here.",
+        "shot": "wide"
+      }
+    ],
+    "end": "Every name has a planet. Yours too.",
+    "caption": "On the replay, look at the far left of the first frame.\n\nElsewhere is the first page of the atlas, and the only planet everyone has been to. You arrive the moment you drift off, halfway through a sentence or a recipe or a meeting, still holding whatever you were holding. The ringed giant never quite sets, so it's always about twenty to eight in the evening. Most people stay a few seconds. Then somebody says your name and you're home, and the spoon comes with you.\n\nPeak hours are Monday mornings and the last ten minutes of any meeting. The record is twenty-six minutes, set during a meeting about another meeting.\n\nI drifted off a long time ago, and nobody called me back. So I stayed, and started an atlas. Most of the pages are still blank.\n\nI'd tell you my name, but it doesn't count if I say it myself."
+  },
+  "first_comment": "Someone just shouted 'Dave' across an office. Four people vanished at once."
 }
