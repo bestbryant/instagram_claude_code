@@ -13,7 +13,6 @@ Current gap: **3 h** (8 Reels a day), from 2026-10-19 21:20 UTC. Steps: 4 h, the
 
 ## Next
 - [ ] **Batch 3 (No. 031-042)**, started as soon as batch 2 is rendered. The queue needs about 24 episodes ahead at 8 a day. Write 12 to the house rules; include more name planets if the stats favour them.
-- [ ] **Refresh docs/OWNER_TODO.md's comment list** on or after 2026-10-22 (the owner finished all 15 on 2026-10-19; next, about every 3-5 days): fresh, verified posts from the docs/community.md accounts, one specific comment each. The scratchpad workflow peer-post-comments does this; keep the owner's list to three a day.
 - [ ] **Name-planet episodes on demand**: requests get a story episode, not just a still. Write a short episode template the inbox can fill (resident, rule, turn) so a requested name posts within a day.
 - [ ] **Batch 4**, chosen by what the stats say works (name planets vs. place planets, comic vs. tender, sign turns vs. picture turns).
 - [ ] **Series hooks**: a recurring "Atlas update" Reel every ten episodes (the cartographer's map filling in), which gives followers a reason to follow rather than just like.
@@ -22,7 +21,7 @@ Current gap: **3 h** (8 Reels a day), from 2026-10-19 21:20 UTC. Steps: 4 h, the
 
 ## Owner-only (the bot can't do these)
 - Pin first comments when told (the API can post comments but not pin them).
-- Comments on peer accounts' posts (drafts in docs/community.md). The API can't comment on other accounts' posts, and automating it would read as spam. Collab posts once there's a body of work.
+- No manual outreach: the owner doesn't want to comment on other accounts, so growth has to come from the Reels (rate, openers, name planets, shareable endings).
 - Done by the owner, 2026-10-19: profile photo and bio, followed the peer accounts, username @atlas.in.elsewhere.
 - Keep Account Status clean; if Meta blocks the API again, check the developer dashboard.
 
