@@ -880,5 +880,731 @@
       "end": "Every Daisy gets a round of applause.",
       "caption": "Second time through, look at where Bert and May are standing.\n\nDaisy is mostly meadow, and the daisies are never wrong. They answer out loud: light applause, or some booing. They may not be asked about third parties, which is why florists here need a licence and a good lawyer. The car park was built after one very loud first date. Like ours, they shut at dusk (the name comes from 'day's eye'), and it takes a lot to open them again. There's one path across the middle of the meadow now. It's theirs.\n\nI tried asking about someone back home. Third parties, apparently.\n\nWould you ask the flowers?"
     }
+  },
+  {
+    "id": "022",
+    "name": "Olive",
+    "subtitle": "every Olive's planet",
+    "story": "On Olive, you can't go to bed angry: the sun won't go down until every argument on the planet is made up. Most evenings that's quick. Election night lasts a month. When Ruth and Dev had words about the dishwasher, the sun stayed up for three days, the neighbours came round, and then the Prime Minister. Then Ruth made him a tea, and it set before he'd had a sip.",
+    "facts": {
+      "Day": "26 hours",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "7 million"
+    },
+    "hook": "A planet for people who can't go to bed on an argument.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#olive"
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.66,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.5,
+      "sun_y": 0.53,
+      "sun_size": 0.07,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": true,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.5,
+      "crowd_facing": "out",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "You can't go to bed angry here.",
+    "kicker": "Every Olive gets this planet.",
+    "text_y": {
+      "name": 0.22
+    },
+    "episode": {
+      "opener": "On Olive, you can't\ngo to bed angry.",
+      "beats": [
+        {
+          "text": "The sun won't go down.",
+          "shot": {
+            "framing": "sky",
+            "focus": [
+              0.5,
+              0.45
+            ],
+            "zoom": [
+              1.5,
+              1.6
+            ]
+          }
+        },
+        {
+          "text": "Not until every argument\non the planet\nis made up.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.05,
+              1.12
+            ]
+          }
+        },
+        {
+          "text": "Election night lasts a month.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.3,
+              1.36
+            ]
+          }
+        },
+        {
+          "text": "One evening, Ruth and Dev\nhad words about the dishwasher.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.5,
+              0.6
+            ],
+            "zoom": [
+              1.5,
+              1.55
+            ]
+          },
+          "spec": {
+            "cartographer": false
+          }
+        },
+        {
+          "text": "Day three.\nThe neighbours came round.\nThen the Prime Minister.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.15,
+              1.2
+            ]
+          }
+        },
+        {
+          "text": "Ruth made him a tea.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.5,
+              0.6
+            ],
+            "zoom": [
+              1.5,
+              1.55
+            ]
+          },
+          "spec": {
+            "crowd_facing": "in",
+            "crowd_items": "cup,nothing",
+            "cartographer": false
+          }
+        },
+        {
+          "text": "The sun set\nbefore he'd had a sip.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.5,
+              0.6
+            ],
+            "zoom": [
+              1.5,
+              1.55
+            ]
+          },
+          "spec": {
+            "crowd_facing": "in",
+            "crowd_items": "cup,nothing",
+            "cartographer": false,
+            "palette": "polar_night",
+            "suns": 0
+          },
+          "seconds": 4.1
+        },
+        {
+          "text": "Seven million people\nwent to bed.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.05
+            ]
+          },
+          "spec": {
+            "crowd_facing": "in",
+            "crowd_items": "cup,nothing",
+            "cartographer": false,
+            "palette": "polar_night",
+            "suns": 0
+          }
+        }
+      ],
+      "end": "Every Olive is an olive branch.",
+      "caption": "The sun behind those two is on overtime.\n\nOlive is a warm planet of 7 million people, terraced hills and very long evenings. The sun goes down when the last argument on the planet has been made up, and not a minute before, so it usually sets around nine, give or take a sulk. The papers print the time every morning, with names. Children learn 'sorry' before 'it was him'.\n\nI fell out with my own map on my first evening. Seven million people waited up until I apologised to it.\n\nOn Earth, 'do not let the sun go down on your anger' comes from Paul's letter to the Ephesians. On Olive, the sun enforces it.\n\nHow long would your house keep the sun up?"
+    },
+    "first_comment": "Ruth and Dev have bought a new dishwasher. The planet has asked them not to install it together."
+  },
+  {
+    "id": "029",
+    "name": "Summer",
+    "subtitle": "every Summer's planet",
+    "story": "On Summer, it snows once every eighty years. Nan was six the last time, and she has mentioned it at every wedding and every funeral since. 'It's cold,' she says, 'and it squeaks.' At school, snow is taught next to dragons. Then, one morning, it snowed.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "210,000"
+    },
+    "hook": "A planet for every nan who was right all along.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#summer"
+    ],
+    "spec": {
+      "palette": "rust_desert",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.8,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.74,
+      "sun_y": 0.52,
+      "sun_size": 0.075,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.3,
+      "gag": "",
+      "cartographer": true,
+      "spot": "#c8452f",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 6,
+      "crowd_items": "umbrella,umbrella,nothing,umbrella,umbrella,umbrella",
+      "crowd_x": 0.0,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "Nan says she's seen snow.",
+    "kicker": "Every Summer gets this planet.",
+    "text_y": {
+      "name": 0.2
+    },
+    "episode": {
+      "opener": "Nan says\nshe's seen snow.",
+      "beats": [
+        {
+          "text": "It snows on Summer\nonce every eighty years.",
+          "shot": "sky"
+        },
+        {
+          "text": "I packed a coat.\nIt's in a museum now.",
+          "shot": "cartographer",
+          "note": "her one framed beat: the planet's rule catches her out"
+        },
+        {
+          "text": "Nan was six.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.44,
+              0.69
+            ]
+          },
+          "spec": {
+            "cartographer": false
+          },
+          "note": "the one without a parasol"
+        },
+        {
+          "text": "She's mentioned it since.\nAt every wedding.\nAt every funeral.",
+          "shot": "crowd"
+        },
+        {
+          "text": "'It's cold,' she says.\n'And it squeaks.'",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.44,
+              0.69
+            ]
+          },
+          "spec": {
+            "cartographer": false
+          }
+        },
+        {
+          "text": "At school, snow is taught\nnext to dragons.",
+          "shot": "wide"
+        },
+        {
+          "text": "One morning, it snowed.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.0,
+              1.12
+            ]
+          },
+          "spec": {
+            "palette": "cobalt_noon",
+            "snow": true,
+            "particles": "snow",
+            "suns": 0
+          },
+          "note": "identical camera to frame 1; one thing changed: snow. Turn line"
+        },
+        {
+          "text": "",
+          "shot": "crowd",
+          "spec": {
+            "palette": "cobalt_noon",
+            "snow": true,
+            "particles": "snow",
+            "suns": 0
+          },
+          "seconds": 3.0,
+          "note": "the parasols, now for snow"
+        },
+        {
+          "text": "It squeaked.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.44,
+              0.69
+            ]
+          },
+          "spec": {
+            "palette": "cobalt_noon",
+            "snow": true,
+            "particles": "snow",
+            "suns": 0,
+            "cartographer": false
+          },
+          "seconds": 2.6
+        }
+      ],
+      "end": "She's accepting apologies.",
+      "caption": "Somewhere in that heatwave is Nan.\n\nSummer: 210,000 people, a 24-hour day, no moons, and one snowfall every eighty years, give or take. The rest of the time it's summer. Coats are museum pieces and 'cold' is something you say about soup. Nan was six the last time. She has described it at every family occasion since, in detail, while everyone else fanned themselves and exchanged looks.\n\n(On Earth, snow only squeaks underfoot when it's colder than about minus ten. So it was a cold one. She'd like that noted.)\n\nWhat did your nan swear was true?"
+    },
+    "first_comment": "Nan: Next one's due in eighty years. I'll be telling everyone."
+  },
+  {
+    "id": "025",
+    "name": "Frank",
+    "subtitle": "every Frank's planet",
+    "story": "Frank prides itself on its honesty. Menus list which dishes the cook regrets, wedding speeches are short and alarming, and birthday cards just say 'Older.' A board in the square counts the days since anyone told a white lie. It had reached 11,042 the morning Ada made her father soup.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "none",
+      "Gravity": "1.1 g",
+      "Population": "60,000"
+    },
+    "hook": "A planet for people who can't fake a compliment.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#frank"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.9,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.2,
+      "sun_y": 0.52,
+      "sun_size": 0.04,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": true,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "DAYS SINCE|ANYONE LIED|11,042",
+      "crowd": 4,
+      "crowd_items": "spoon,nothing,flower,nothing",
+      "crowd_x": 0.0,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "Frank doesn't do white lies.",
+    "kicker": "Every Frank gets this planet.",
+    "episode": {
+      "opener": "Frank doesn't do\nwhite lies.",
+      "beats": [
+        {
+          "text": "Everyone checks it\non the way to work.",
+          "shot": "sign",
+          "note": "frame-1 find in close-up; the overlay never quotes it"
+        },
+        {
+          "text": "Menus list which dishes\nthe cook regrets.",
+          "shot": "crowd"
+        },
+        {
+          "text": "Wedding speeches\nare short and alarming.",
+          "shot": "sky"
+        },
+        {
+          "text": "Birthday cards just say\n'Older.'",
+          "shot": "medium"
+        },
+        {
+          "text": "Compliments are rare.\nPeople frame them.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.85,
+              1.95
+            ],
+            "focus": [
+              0.387,
+              0.7
+            ]
+          },
+          "spec": {
+            "cartographer": false
+          },
+          "note": "the one holding a flower"
+        },
+        {
+          "text": "Then Ada made her father soup.\nHer first.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.7,
+              1.76
+            ],
+            "focus": [
+              0.42,
+              0.7
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.42,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,spoon",
+            "cartographer": false
+          }
+        },
+        {
+          "text": "He finished the bowl.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.76,
+              1.82
+            ],
+            "focus": [
+              0.42,
+              0.7
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.42,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,spoon",
+            "cartographer": false
+          }
+        },
+        {
+          "text": "'Delicious,' he said.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.82,
+              1.88
+            ],
+            "focus": [
+              0.42,
+              0.7
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.42,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,spoon",
+            "cartographer": false
+          },
+          "seconds": 3.0,
+          "note": "turn line"
+        },
+        {
+          "text": "",
+          "shot": "sign",
+          "spec": {
+            "sign": "DAYS SINCE|ANYONE LIED|0"
+          },
+          "seconds": 3.5,
+          "note": "identical camera to beat 1; one thing changed: the count. The record goes, wordlessly"
+        }
+      ],
+      "end": "It was not delicious.",
+      "caption": "Eleven thousand days without a fib. So far.\n\nFrank: 60,000 people, a 25-hour day, no moons, and a board in every square counting the days since anyone told a white lie. Weather reports come with the forecaster's mood, and the estate agents have all retrained. For a big birthday, the card says 'Much older'. A compliment here is so rare that people have them framed, and Ada's father has three.\n\nVisitors don't count on the board, which was lucky for me. I told my landlady I loved her wallpaper. She's given me a roll to take home.\n\n(The story goes that April Fools' Day began when France moved New Year's Day to 1 January in the 1560s, and anyone still celebrating at the start of April got laughed at. Frank has never needed the day.)\n\nFinish the bowl, or tell her?"
+    },
+    "first_comment": "Ada's second soup is next week. The board has been warned."
+  },
+  {
+    "id": "024",
+    "name": "Willow",
+    "subtitle": "every Willow's planet",
+    "story": "Willow has one tree. Not one kind: one tree. Everyone gets one afternoon under it in their life, as long as they like, and the queue is four hundred years long. Bett had hers on her wedding day. Sol had his the morning his daughter was born. Last spring it was Gaun's turn, and he's still standing next to it, saving it for something special. His family say he's the same with the good plates.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "none",
+      "Gravity": "0.8 g",
+      "Population": "146,000, all in the queue"
+    },
+    "hook": "A planet for people who save the good plates for best.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#willow"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.7,
+      "relief": 2.0,
+      "water": true,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.8,
+      "sun_y": 0.24,
+      "sun_size": 0.04,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "lone",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 5,
+      "crowd_items": "nothing",
+      "crowd_x": 0.24,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.0
+    },
+    "cover": "Willow has one tree.",
+    "kicker": "Every Willow gets this planet.",
+    "episode": {
+      "opener": "Willow has one tree.",
+      "beats": [
+        {
+          "text": "Not one kind.\nOne tree.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.58,
+              0.5
+            ],
+            "zoom": [
+              1.5,
+              1.6
+            ]
+          }
+        },
+        {
+          "text": "Everyone gets one afternoon\nunder it in their life.",
+          "shot": {
+            "framing": "close",
+            "focus": [
+              0.6,
+              0.52
+            ]
+          }
+        },
+        {
+          "text": "The queue is\nfour hundred years long.",
+          "shot": {
+            "framing": "left",
+            "zoom": [
+              1.6,
+              1.7
+            ]
+          }
+        },
+        {
+          "text": "Bett had hers on her wedding day.\nSol, the morning\nhis daughter was born.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.2
+            ]
+          }
+        },
+        {
+          "text": "In spring, it was Gaun's turn.\nHe's still standing next to it.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.5,
+              0.55
+            ],
+            "zoom": [
+              1.75,
+              1.8
+            ]
+          }
+        },
+        {
+          "text": "Saving it\nfor something special.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.5,
+              0.55
+            ],
+            "zoom": [
+              1.75,
+              1.8
+            ]
+          },
+          "spec": {
+            "palette": "rust_desert",
+            "sun_y": 0.18
+          }
+        },
+        {
+          "text": "His family say he's the same\nwith the good plates.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.5,
+              0.55
+            ],
+            "zoom": [
+              1.75,
+              1.8
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "snow",
+            "suns": 0
+          },
+          "seconds": 5.4
+        }
+      ],
+      "end": "Every Willow is worth the wait.",
+      "caption": "The man nearest the tree is waiting.\n\nWillow is a lake, 146,000 people and one tree, and every one of them is in the queue for it. When your turn comes you get one afternoon in its shade, as long as you like, and you can't swap it or sell it. Most people pick a wedding, a new baby or a very good book. Gaun's turn came up last spring. His family have stopped asking.\n\nI leaned on it on my first morning. Four hundred years of queue cleared its throat.\n\nIn Japan, offices send their newest recruit out early in cherry-blossom season to hold a spot under the trees for that evening's party. It's called basho-tori. On Willow, the whole planet is holding one spot.\n\nWhat would you save your afternoon for?"
+    },
+    "first_comment": "Gaun: Still thinking about it. Don't rush me."
   }
 ]

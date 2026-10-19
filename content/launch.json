@@ -1609,5 +1609,1031 @@
       "end": "Carry them while they're light.",
       "caption": "Keep an eye on the child's arm.\n\nGravity on Brumm is twice ours, so the hills are low, the houses are one storey and nobody owns a ladder. A four-year-old here weighs what a ten-year-old does on Earth. The Last Carry is a holiday for the child's whole street, held in the week they get too heavy to carry far. The road out of every town has a bench every half mile. The parents don't use them.\n\nI offered to take a turn for a mile. The whole road went quiet. You don't help with a Last Carry. You bring tea.\n\nTomas is at school now. He says he remembers the sea. His dad says he was asleep by mile six.\n\nOn Earth, nobody knows which carry is the last one. On Brumm, everybody does, so they close the road.\n\nWhere would you have picked?"
     }
+  },
+  {
+    "id": "019",
+    "name": "Tessel",
+    "subtitle": "the year-long winter",
+    "story": "Winter on Tessel lasts a year, with no sun and no calendar, so every village needs someone who knows what day it is. Jess keeps the count on a board by her door. She knows every birthday, even the goats'. She's paid in the first slice, and hasn't bought cake in years. One winter, Jess lost count. The village hadn't. On Tessel they say: for the cold, firewood. For the birthdays, a jess.",
+    "facts": {
+      "Day": "22 hours",
+      "Moons": "none",
+      "Gravity": "1.1 g",
+      "Population": "90,000"
+    },
+    "hook": "A planet for the friend who remembers every birthday.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#winter"
+    ],
+    "spec": {
+      "palette": "abyss",
+      "terrain": "hills",
+      "layers": 5,
+      "horizon": 0.6,
+      "relief": 0.8,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "pines",
+      "snow": true,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "snow",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "WINTER|DAY 212",
+      "crowd": 1,
+      "crowd_items": "book",
+      "crowd_x": 0.5,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "Winter here lasts a year.",
+    "episode": {
+      "opener": "Winter on Tessel\nlasts a year.",
+      "beats": [
+        {
+          "text": "No sun. No calendar.",
+          "shot": "sky"
+        },
+        {
+          "text": "So every village needs someone\nwho knows what day it is.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.2
+            ]
+          }
+        },
+        {
+          "text": "Jess keeps count.\nShe knows every birthday.\nEven the goats'.",
+          "shot": "sign"
+        },
+        {
+          "text": "She's paid in the first slice.\nShe hasn't bought cake in years.",
+          "shot": "house"
+        },
+        {
+          "text": "One winter, Jess lost count.",
+          "shot": "crowd",
+          "spec": {
+            "cartographer": false
+          }
+        },
+        {
+          "text": "The village hadn't.",
+          "shot": "sign",
+          "spec": {
+            "sign": "DAY 213|HAPPY BIRTHDAY, JESS"
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.9,
+              1.3
+            ]
+          },
+          "spec": {
+            "sign": "DAY 213|HAPPY BIRTHDAY, JESS"
+          },
+          "seconds": 3.0
+        },
+        {
+          "text": "On Tessel they say:\nfor the cold, firewood.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.1
+            ]
+          },
+          "spec": {
+            "sign": "DAY 213|HAPPY BIRTHDAY, JESS"
+          }
+        }
+      ],
+      "end": "For the birthdays, a jess.",
+      "caption": "Somebody keeps that board up to date.\n\nTessel is 90,000 people on a slow, tilted world: winter lasts a year, and summer about a fortnight. With no sun to count by, every village has someone who keeps the date. Nobody applies. The village just notices who has been doing it. Jess has kept hers since she was a girl: days, birthdays, anniversaries, and the morning the goats came in.\n\nI dated my first page 'winter'. Jess crossed it out and wrote 212.\n\nIn Longyearbyen, on Svalbard, the sun doesn't reach the town from late October until early March, and there's a festival week for the day it first touches the steps of the old hospital. On Tessel, they wait a year, and somebody counts.\n\nCould you count a whole winter in chalk?"
+    },
+    "first_comment": "Day 214. Jess has her chalk back. She's checking everyone's sums."
+  },
+  {
+    "id": "026",
+    "name": "Sefe",
+    "subtitle": "the planet with no mirrors",
+    "story": "On Sefe nothing shines: not water, not glass, not eyes. So nobody sees their own face, and other people have to tell you what it looks like. Lovers trade descriptions on the first night, mothers go first, and barbers finish every haircut with a long, careful one. Oskar's wife died in the winter. He still comes in every month, and the barber doesn't say a word.",
+    "facts": {
+      "Day": "30 hours",
+      "Moons": "none",
+      "Gravity": "0.8 g",
+      "Population": "8,000"
+    },
+    "hook": "A planet for people who keep every nice thing anyone's said about them.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#love"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.85,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 0.0,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.7,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.4,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "Nobody here knows what they look like.",
+    "episode": {
+      "opener": "On Sefe, nobody knows\nwhat they look like.",
+      "beats": [
+        {
+          "text": "Nothing shines.\nNot even eyes.",
+          "shot": "sky",
+          "note": "a sunless fog: no stars, no moon, nothing to catch the light"
+        },
+        {
+          "text": "Other people\nhave to tell you.",
+          "shot": "crowd",
+          "spec": {
+            "crowd": 5,
+            "crowd_x": 0.0,
+            "crowd_facing": "",
+            "house": false
+          }
+        },
+        {
+          "text": "Lovers trade descriptions\non the first night.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.7,
+              1.78
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.55,
+            "crowd_facing": "in",
+            "house": false,
+            "cartographer": false
+          }
+        },
+        {
+          "text": "'A face like bread,\nwhen it's done.'",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.85,
+              1.95
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.55,
+            "crowd_facing": "in",
+            "house": false,
+            "cartographer": false
+          }
+        },
+        {
+          "text": "Mothers go first.\nEvery man on Sefe\nthinks he's handsome.",
+          "shot": "crowd",
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.5,
+            "crowd_items": "child",
+            "crowd_facing": "right",
+            "house": false,
+            "cartographer": false
+          }
+        },
+        {
+          "text": "Barbers end each haircut\nwith a long, careful description.",
+          "shot": "house",
+          "spec": {
+            "cartographer": false
+          }
+        },
+        {
+          "text": "Oskar's wife died in the winter.\nHe still comes in every month.",
+          "shot": "crowd",
+          "spec": {
+            "cartographer": false
+          }
+        },
+        {
+          "text": "He'd rather not hear it.",
+          "shot": "crowd",
+          "spec": {
+            "crowd_items": "nothing,cup",
+            "cartographer": false
+          },
+          "seconds": 3.5
+        }
+      ],
+      "end": "He stays the way she said.",
+      "caption": "Two men outside a barber's, saying nothing.\n\nSefe: 8,000 people, a 30-hour day, no moons, and not one shiny thing. Water is matte, glass is frosted, and eyes don't catch the light, so you never see your own face. You know it the way you know the weather somewhere else: from what people tell you. Parents describe a new baby to itself every night. Portrait painters mainly listen. A good description is the most romantic thing you can give anyone here, and people keep theirs for life.\n\nI asked a stranger what I looked like. She said 'lost'.\n\n(On Earth, still water sends back only about 2% of the light that falls straight onto it. It was enough for Narcissus.)\n\nWhere do you keep the nicest thing anyone's said about you?"
+    },
+    "first_comment": "Oskar's barber: Every month. Not a word. He tips double."
+  },
+  {
+    "id": "028",
+    "name": "Whisk",
+    "subtitle": "the six-minute day",
+    "story": "A day on Whisk lasts six minutes, so a year is over in a day and a half and birthdays are relentless. Wren has twins, a kettle and one small ambition: a hot cup of tea, started and finished on the same day.",
+    "facts": {
+      "Day": "6 minutes",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "18,000"
+    },
+    "hook": "A planet for parents who find their tea in the microwave.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#parenting"
+    ],
+    "spec": {
+      "palette": "cobalt_noon",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.9,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.62,
+      "sun_y": 0.5,
+      "sun_size": 0.045,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "cup",
+      "crowd_x": 0.4,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "Wren would like one hot cup of tea.",
+    "episode": {
+      "opener": "Wren would like\none hot cup of tea.",
+      "beats": [
+        {
+          "text": "Days here last\nsix minutes.",
+          "shot": "sky",
+          "spec": {
+            "palette": "gold_hour",
+            "sun_x": 0.72,
+            "sun_y": 0.5
+          },
+          "note": "palette clock: the afternoon has already gone"
+        },
+        {
+          "text": "Just one,\nstarted and finished\non the same day.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.58,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0
+          }
+        },
+        {
+          "text": "Monday: the twins.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.42,
+              0.68
+            ]
+          },
+          "spec": {
+            "palette": "mint_dawn",
+            "sun_x": 0.24,
+            "sun_y": 0.6
+          }
+        },
+        {
+          "text": "Tuesday: the twins.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.42,
+              0.68
+            ]
+          },
+          "spec": {
+            "palette": "cobalt_noon",
+            "sun_x": 0.62,
+            "sun_y": 0.45
+          },
+          "note": "identical camera to Monday; only the hour changes"
+        },
+        {
+          "text": "Wednesday: she found\nMonday's cup\nin the airing cupboard.",
+          "shot": "house",
+          "spec": {
+            "palette": "lilac_dusk",
+            "sun_x": 0.9,
+            "sun_y": 0.62
+          }
+        },
+        {
+          "text": "Thursday: the twins\nfell asleep at dusk.\nKettle on.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.58,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "gold_hour",
+            "sun_x": 0.9,
+            "sun_y": 0.62
+          }
+        },
+        {
+          "text": "One sip. Two.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.45,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0
+          }
+        },
+        {
+          "text": "Last sip\nas the sun came up.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.45,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "sun_x": 0.24,
+            "sun_y": 0.6
+          },
+          "note": "identical camera; one thing changed: dawn"
+        },
+        {
+          "text": "Technically,\nthat's Friday.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.45,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "sun_x": 0.24,
+            "sun_y": 0.6
+          },
+          "seconds": 3.0,
+          "note": "turn line"
+        }
+      ],
+      "end": "Close enough.",
+      "caption": "Wren's cup has been going cold since Monday.\n\nWhisk spins so fast that a day lasts six minutes. A year is over in a day and a half, so birthdays are relentless, lunch is largely theoretical and every calendar is a flipbook. Wren has twins, a kettle and one small ambition. The twins have other plans, and very good timing.\n\nI tried keeping a diary. By the time I'd written the date, it was wrong.\n\n(On Earth, the day gets about 1.8 thousandths of a second longer every century, as the tides drag on us. It won't help.)\n\nWhen did you last finish a hot drink?"
+    },
+    "first_comment": "Wren: For the record, that was a twenty-four-minute week. I stand by it."
+  },
+  {
+    "id": "021",
+    "name": "Pebb",
+    "subtitle": "a very small world",
+    "story": "Pebb is a rock about forty kilometres across, small enough that a good throw goes into orbit and comes home two hours later from the other side. Juno lives there alone, she thinks. Every morning she throws her ball east, has a long breakfast, and catches it coming in from the west. One morning it came home wet. The next, wet and chewed. The next, she threw two.",
+    "facts": {
+      "Day": "40 hours",
+      "Moons": "one (a ball)",
+      "Gravity": "0.0015 g",
+      "Population": "1 (she thinks)"
+    },
+    "hook": "A planet for people who've just moved somewhere quiet.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#tinyplanet"
+    ],
+    "spec": {
+      "palette": "violet_ice",
+      "terrain": "hills",
+      "layers": 3,
+      "horizon": 0.66,
+      "relief": 0.45,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.86,
+      "sun_y": 0.1,
+      "sun_size": 0.03,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 1,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 3.0,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.2,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.42,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.72
+    },
+    "cover": "Every ball you throw comes home.",
+    "episode": {
+      "opener": "On Pebb, every ball\nyou throw comes home.",
+      "beats": [
+        {
+          "text": "The planet is that small.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.0
+            ]
+          }
+        },
+        {
+          "text": "Juno lives here alone.\nShe thinks.",
+          "shot": "crowd"
+        },
+        {
+          "text": "Her first ball\nwas thrown too hard.\nIt's still up there.",
+          "shot": {
+            "framing": "sky",
+            "focus": [
+              0.62,
+              0.27
+            ],
+            "zoom": [
+              2.0,
+              2.05
+            ]
+          }
+        },
+        {
+          "text": "Each morning she throws it east.\nTwo hours later,\nit comes home from the west.",
+          "shot": "house"
+        },
+        {
+          "text": "One morning,\nit came home wet.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.4,
+              0.6
+            ],
+            "zoom": [
+              1.5,
+              1.55
+            ]
+          }
+        },
+        {
+          "text": "The next,\nwet and chewed.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.4,
+              0.6
+            ],
+            "zoom": [
+              1.55,
+              1.6
+            ]
+          }
+        },
+        {
+          "text": "The next,\nJuno threw two.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.4,
+              0.6
+            ],
+            "zoom": [
+              1.6,
+              1.65
+            ]
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "sky",
+            "focus": [
+              0.62,
+              0.27
+            ],
+            "zoom": [
+              2.0,
+              2.05
+            ]
+          },
+          "spec": {
+            "moons": 3
+          },
+          "seconds": 3.5
+        }
+      ],
+      "end": "Both came home wet.",
+      "caption": "That's no moon in the first frame.\n\nPebb is a rock about forty kilometres across: one house, one resident, and a horizon you could walk to before lunch. Juno moved here for the quiet. Every morning she throws her ball east, has a long breakfast, and turns round to catch it coming in over the roof. She has never walked round to the far side. It isn't far.\n\nI threw my compass on my first morning, to check. It's still up there, next to her first ball.\n\nOn a rock this size, a throw of about 18 metres a second goes into orbit and comes round again in just under two hours. On Earth, you'd need nearly 8 kilometres a second.\n\nWould you throw two?"
+    },
+    "first_comment": "Next morning: one came home chewed. The other came home with a stick."
+  },
+  {
+    "id": "030",
+    "name": "Sedge",
+    "subtitle": "the night of the close moon",
+    "story": "Once in a lifetime, Sedge's moon swings close enough to smell its orchards, and everyone goes up the hill to wave. Almost everyone. Dot drives the night bus. She stops at every stop, and nobody gets on. Up on the moon, nobody was watching the hill. They were watching the only light that moved.",
+    "facts": {
+      "Day": "22 hours",
+      "Moons": "one, usually far away",
+      "Gravity": "0.95 g",
+      "Population": "31,000"
+    },
+    "hook": "A planet for everyone who's working while everyone else is out.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#nightshift"
+    ],
+    "spec": {
+      "palette": "abyss",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.66,
+      "relief": 0.9,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": true,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "BUS STOP|NIGHT ROUTE",
+      "crowd": 5,
+      "crowd_items": "child,nothing,child,nothing,nothing",
+      "crowd_x": 0.3,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.76
+    },
+    "cover": "Everyone went up the hill. Almost.",
+    "text_y": {
+      "name": 0.12
+    },
+    "episode": {
+      "opener": "Everyone on Sedge\nwent up the hill.",
+      "beats": [
+        {
+          "text": "Almost everyone.",
+          "shot": "sign",
+          "spec": {
+            "crowd": 0
+          },
+          "note": "frame-1 find: the empty stop (the hill crowd is out of this shot)"
+        },
+        {
+          "text": "Once in a lifetime,\nthe moon comes close enough\nto smell its orchards.",
+          "shot": {
+            "framing": "sky",
+            "zoom": [
+              1.3,
+              1.38
+            ],
+            "focus": [
+              0.45,
+              0.42
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "sign": ""
+          }
+        },
+        {
+          "text": "Both worlds had practised\ntheir waving for weeks.",
+          "shot": "crowd"
+        },
+        {
+          "text": "Dot was driving the night bus.\nSomeone always is.",
+          "shot": "sign",
+          "spec": {
+            "crowd": 0
+          }
+        },
+        {
+          "text": "She stopped at every stop.\nNobody got on.",
+          "shot": "sign",
+          "spec": {
+            "crowd": 0
+          }
+        },
+        {
+          "text": "Up on the moon,\nnobody was watching the hill.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.0,
+              1.12
+            ]
+          }
+        },
+        {
+          "text": "They watched\nthe only light that moved.",
+          "shot": {
+            "framing": "sky",
+            "zoom": [
+              1.3,
+              1.38
+            ],
+            "focus": [
+              0.45,
+              0.42
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "sign": ""
+          }
+        },
+        {
+          "text": "Her bus.",
+          "shot": "sign",
+          "spec": {
+            "crowd": 0
+          },
+          "note": "turn line, on the stop's camera"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.0,
+              1.12
+            ]
+          },
+          "spec": {
+            "big_moon": false
+          },
+          "seconds": 3.0,
+          "note": "identical camera to frame 1; one thing changed: the moon has gone"
+        }
+      ],
+      "end": "She was the view.",
+      "caption": "Not everyone is up that hill.\n\nSedge and its moon go round each other the long way. Once in a lifetime the moon comes close enough to see its towns: orchards, washing lines, a great many people waving. Sedge practises for weeks. On the night, every light on the planet goes off so the moon can see the hill, and everyone climbs it with a flask and the children.\n\nI waved until my arm went numb. In fairness to the moon, I wasn't moving.\n\n(On Earth, our own moon drifts about 3.8 centimetres further away every year, and nobody waves it off.)\n\nHave you ever worked the night everyone else was out?"
+    },
+    "first_comment": "Dot: Nineteen stops. Nobody. Lovely night for it."
+  },
+  {
+    "id": "023",
+    "name": "Sooner",
+    "subtitle": "where 'sometime' is a date",
+    "story": "On Sooner, 'sometime' is an actual date. It comes round every forty years, and every 'we should get coffee sometime' anyone has ever said falls due that morning. So does every 'let's do this again' said after a bad first date; those tables finish early. For the first hour, nobody knows what to say. Then nobody else leaves early, and nobody says 'sometime' on the way out, because that gets you another forty years. They say 'Saturday'.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "none",
+      "Gravity": "0.95 g",
+      "Population": "3 million"
+    },
+    "hook": "A planet for people who keep saying 'we should catch up'.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#friendship"
+    ],
+    "spec": {
+      "palette": "pastel",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.62,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.84,
+      "sun_y": 0.11,
+      "sun_size": 0.04,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": true,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "TODAY:|SOMETIME",
+      "crowd": 7,
+      "crowd_items": "cup",
+      "crowd_x": 0.0,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "'Sometime' is an actual date.",
+    "episode": {
+      "opener": "On Sooner, 'sometime'\nis an actual date.",
+      "beats": [
+        {
+          "text": "Every forty years.",
+          "shot": "sign"
+        },
+        {
+          "text": "Every 'coffee sometime?'\nfalls due at once.",
+          "shot": "crowd"
+        },
+        {
+          "text": "Bad first dates count too.\nThose tables finish early.",
+          "shot": {
+            "framing": "close",
+            "focus": [
+              0.1,
+              0.68
+            ],
+            "zoom": [
+              2.0,
+              2.1
+            ]
+          }
+        },
+        {
+          "text": "Old schoolfriends. Cousins.\nEsme, and a man she met\nonce, on a train.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.9,
+              2.0
+            ]
+          }
+        },
+        {
+          "text": "For the first hour,\nnobody knows what to say.",
+          "shot": {
+            "framing": "wide",
+            "focus": [
+              0.45,
+              0.62
+            ],
+            "zoom": [
+              1.2,
+              1.25
+            ]
+          }
+        },
+        {
+          "text": "Nobody else leaves early.",
+          "shot": {
+            "framing": "wide",
+            "focus": [
+              0.45,
+              0.62
+            ],
+            "zoom": [
+              1.2,
+              1.25
+            ]
+          },
+          "spec": {
+            "palette": "pumpkin",
+            "suns": 0
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "focus": [
+              0.45,
+              0.62
+            ],
+            "zoom": [
+              1.2,
+              1.25
+            ]
+          },
+          "spec": {
+            "palette": "pumpkin",
+            "suns": 0
+          },
+          "seconds": 3.5
+        },
+        {
+          "text": "'Sometime' gets you\nanother forty years.",
+          "shot": {
+            "framing": "wide",
+            "focus": [
+              0.45,
+              0.62
+            ],
+            "zoom": [
+              1.2,
+              1.25
+            ]
+          },
+          "spec": {
+            "palette": "pumpkin",
+            "suns": 0
+          }
+        }
+      ],
+      "end": "So they say 'Saturday'.",
+      "caption": "Check the date on the café board.\n\nSooner has 3 million people, a 25-hour day and a café on every hill. Its calendar has one extra date, Sometime, which comes round every forty years. Every 'we should get coffee sometime' ever said falls due that morning, and the cafés bake for a year to be ready. Tables booked on the strength of a bad first date are free again by eleven, and nobody mentions it.\n\nI once ended a letter to an old flatmate with 'see you sometime'. She was at a table when I landed. She'd ordered for me.\n\nJapan's tea ceremony has a saying, ichigo ichie: treat each meeting as if it will never come again. On Sooner, it does, every forty years.\n\nHow many 'sometimes' do you owe?"
+    },
+    "first_comment": "Café owner: 40,112 coffees. 3 proposals. 1 man who came to the wrong sometime."
   }
 ]
