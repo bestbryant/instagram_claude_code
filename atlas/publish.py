@@ -80,8 +80,14 @@ class Publisher:
                 return json.loads(r.read())
         except urllib.error.HTTPError as e:
             body = e.read().decode(errors="replace")
-            if e.code == 429 or "OAuthException" in body:
-                _set_hold(body)       # Meta is limiting or blocking us: back off instead of retrying every hour
+            try:
+                code = json.loads(body).get("error", {}).get("code")
+            except ValueError:
+                code = None
+            # rate limits (4, 17, 32, 613), a dead token (190), access blocked (200), action blocked (368): back off.
+            # An invalid parameter (100) is our mistake, not Meta's verdict, so it doesn't stop posting.
+            if e.code == 429 or code in (4, 17, 32, 190, 200, 368, 613):
+                _set_hold(body)
             raise GraphError(f"{e.code} {body}") from None
 
     def _wait(self, container, timeout=600):
