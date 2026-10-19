@@ -1,0 +1,183 @@
+{
+  "id": "025",
+  "name": "Frank",
+  "subtitle": "every Frank's planet",
+  "story": "Frank prides itself on its honesty. Menus list which dishes the cook regrets, wedding speeches are short and alarming, and birthday cards just say 'Older.' A board in the square counts the days since anyone told a white lie. It had reached 11,042 the morning Ada made her father soup.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "none",
+    "Gravity": "1.1 g",
+    "Population": "60,000"
+  },
+  "hook": "A planet for people who can't fake a compliment.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#frank"
+  ],
+  "spec": {
+    "palette": "mint_dawn",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.9,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.2,
+    "sun_y": 0.52,
+    "sun_size": 0.04,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": true,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "DAYS SINCE|ANYONE LIED|11,042",
+    "crowd": 4,
+    "crowd_items": "spoon,nothing,flower,nothing",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "Frank doesn't do white lies.",
+  "kicker": "Every Frank gets this planet.",
+  "episode": {
+    "opener": "Frank doesn't do\nwhite lies.",
+    "beats": [
+      {
+        "text": "Everyone checks it\non the way to work.",
+        "shot": "sign",
+        "note": "frame-1 find in close-up; the overlay never quotes it"
+      },
+      {
+        "text": "Menus list which dishes\nthe cook regrets.",
+        "shot": "crowd"
+      },
+      {
+        "text": "Wedding speeches\nare short and alarming.",
+        "shot": "sky"
+      },
+      {
+        "text": "Birthday cards just say\n'Older.'",
+        "shot": "medium"
+      },
+      {
+        "text": "Compliments are rare.\nPeople frame them.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.85,
+            1.95
+          ],
+          "focus": [
+            0.387,
+            0.7
+          ]
+        },
+        "spec": {
+          "cartographer": false
+        },
+        "note": "the one holding a flower"
+      },
+      {
+        "text": "Then Ada made her father soup.\nHer first.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.7,
+            1.76
+          ],
+          "focus": [
+            0.42,
+            0.7
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_x": 0.42,
+          "crowd_facing": "in",
+          "crowd_items": "nothing,spoon",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "He finished the bowl.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.76,
+            1.82
+          ],
+          "focus": [
+            0.42,
+            0.7
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_x": 0.42,
+          "crowd_facing": "in",
+          "crowd_items": "nothing,spoon",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "'Delicious,' he said.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.82,
+            1.88
+          ],
+          "focus": [
+            0.42,
+            0.7
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_x": 0.42,
+          "crowd_facing": "in",
+          "crowd_items": "nothing,spoon",
+          "cartographer": false
+        },
+        "seconds": 3.0,
+        "note": "turn line"
+      },
+      {
+        "text": "",
+        "shot": "sign",
+        "spec": {
+          "sign": "DAYS SINCE|ANYONE LIED|0"
+        },
+        "seconds": 3.5,
+        "note": "identical camera to beat 1; one thing changed: the count. The record goes, wordlessly"
+      }
+    ],
+    "end": "It was not delicious.",
+    "caption": "Eleven thousand days without a fib. So far.\n\nFrank: 60,000 people, a 25-hour day, no moons, and a board in every square counting the days since anyone told a white lie. Weather reports come with the forecaster's mood, and the estate agents have all retrained. For a big birthday, the card says 'Much older'. A compliment here is so rare that people have them framed, and Ada's father has three.\n\nVisitors don't count on the board, which was lucky for me. I told my landlady I loved her wallpaper. She's given me a roll to take home.\n\n(The story goes that April Fools' Day began when France moved New Year's Day to 1 January in the 1560s, and anyone still celebrating at the start of April got laughed at. Frank has never needed the day.)\n\nFinish the bowl, or tell her?"
+  },
+  "first_comment": "Ada's second soup is next week. The board has been warned.",
+  "_engine": 4
+}

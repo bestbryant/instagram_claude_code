@@ -1,0 +1,229 @@
+{
+  "id": "028",
+  "name": "Whisk",
+  "subtitle": "the six-minute day",
+  "story": "A day on Whisk lasts six minutes, so a year is over in a day and a half and birthdays are relentless. Wren has twins, a kettle and one small ambition: a hot cup of tea, started and finished on the same day.",
+  "facts": {
+    "Day": "6 minutes",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "18,000"
+  },
+  "hook": "A planet for parents who find their tea in the microwave.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#parenting"
+  ],
+  "spec": {
+    "palette": "cobalt_noon",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.9,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.62,
+    "sun_y": 0.5,
+    "sun_size": 0.045,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "cup",
+    "crowd_x": 0.4,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "Wren would like one hot cup of tea.",
+  "episode": {
+    "opener": "Wren would like\none hot cup of tea.",
+    "beats": [
+      {
+        "text": "Days here last\nsix minutes.",
+        "shot": "sky",
+        "spec": {
+          "palette": "gold_hour",
+          "sun_x": 0.72,
+          "sun_y": 0.5
+        },
+        "note": "palette clock: the afternoon has already gone"
+      },
+      {
+        "text": "Just one,\nstarted and finished\non the same day.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.58,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0
+        }
+      },
+      {
+        "text": "Monday: the twins.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.42,
+            0.68
+          ]
+        },
+        "spec": {
+          "palette": "mint_dawn",
+          "sun_x": 0.24,
+          "sun_y": 0.6
+        }
+      },
+      {
+        "text": "Tuesday: the twins.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.42,
+            0.68
+          ]
+        },
+        "spec": {
+          "palette": "cobalt_noon",
+          "sun_x": 0.62,
+          "sun_y": 0.45
+        },
+        "note": "identical camera to Monday; only the hour changes"
+      },
+      {
+        "text": "Wednesday: she found\nMonday's cup\nin the airing cupboard.",
+        "shot": "house",
+        "spec": {
+          "palette": "lilac_dusk",
+          "sun_x": 0.9,
+          "sun_y": 0.62
+        }
+      },
+      {
+        "text": "Thursday: the twins\nfell asleep at dusk.\nKettle on.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.58,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "gold_hour",
+          "sun_x": 0.9,
+          "sun_y": 0.62
+        }
+      },
+      {
+        "text": "One sip. Two.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0
+        }
+      },
+      {
+        "text": "Last sip\nas the sun came up.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_x": 0.24,
+          "sun_y": 0.6
+        },
+        "note": "identical camera; one thing changed: dawn"
+      },
+      {
+        "text": "Technically,\nthat's Friday.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_x": 0.24,
+          "sun_y": 0.6
+        },
+        "seconds": 3.0,
+        "note": "turn line"
+      }
+    ],
+    "end": "Close enough.",
+    "caption": "Wren's cup has been going cold since Monday.\n\nWhisk spins so fast that a day lasts six minutes. A year is over in a day and a half, so birthdays are relentless, lunch is largely theoretical and every calendar is a flipbook. Wren has twins, a kettle and one small ambition. The twins have other plans, and very good timing.\n\nI tried keeping a diary. By the time I'd written the date, it was wrong.\n\n(On Earth, the day gets about 1.8 thousandths of a second longer every century, as the tides drag on us. It won't help.)\n\nWhen did you last finish a hot drink?"
+  },
+  "first_comment": "Wren: For the record, that was a twenty-four-minute week. I stand by it.",
+  "_engine": 4
+}
