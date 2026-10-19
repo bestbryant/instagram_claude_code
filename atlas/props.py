@@ -239,13 +239,17 @@ def cartographer(ctx, avoid_x=None):
         return
     W, H = ctx.W, ctx.H
     rng = ctx.rng("cartographer")
-    for _ in range(12):
-        x = W * rng.uniform(0.12, 0.88)
-        if avoid_x is None or abs(x - avoid_x) > W * 0.22:
-            break
     layer = ctx.near_layer
-    y = _ground(ctx, x)
     h = H * 0.06
+
+    def cost(x):      # standing in front of the gag's figures, a sign or a house hides the joke
+        y = int(_ground(ctx, x))
+        box = layer.A[max(y - int(h * 1.3), 0): max(y - 3, 1), max(int(x - h * .45), 0): int(x + h * .45)]
+        ink = float(box.mean()) if box.size else 1.0
+        low = y > H * 0.8          # under Instagram's caption strip, or down at the waterline off the land
+        return ink + (0.5 if avoid_x is not None and abs(x - avoid_x) < W * 0.22 else 0.0) + (2.0 if low else 0.0)
+    x = min((W * rng.uniform(0.12, 0.88) for _ in range(12)), key=cost)
+    y = _ground(ctx, x)
     a = _person(ctx, layer, x, y, h, "stand", rng.choice([-1, 1]), coat_color=YELLOW)
     hx, hy = a["rh"]
     _paper(ctx, layer.P, layer.A, hx, hy - h * .08, h * 1.1, 0.2)
@@ -583,7 +587,7 @@ def _gag_stirrers(ctx):
 # --------------------------------------------------------------------------
 # extras: generic props a planet can combine with its gag
 
-ITEMS = ["spade", "spoon", "nothing", "book", "fish", "umbrella", "cup"]
+ITEMS = ["spade", "spoon", "nothing", "book", "fish", "umbrella", "cup"]   # also: flower, kettle, child, child_asleep (by name)
 
 
 def _held(ctx, layer, kind, hx, hy, h):
@@ -609,6 +613,8 @@ def _held(ctx, layer, kind, hx, hy, h):
         petals = [(cx + r * .55 * math.cos(t), cy + r * .55 * math.sin(t)) for t in np.linspace(0, 2 * math.pi, 8, endpoint=False)]
         _ink(ctx, layer, [("ellipse", (px - r * .4, py - r * .3, px + r * .4, py + r * .3)) for px, py in petals], LIGHT)
         _ink(ctx, layer, [("ellipse", (cx - r * .3, cy - r * .3, cx + r * .3, cy + r * .3))], YELLOW)
+    elif kind == "kettle":
+        _ink(ctx, layer, kettle(hx, hy + h * .14, h * .32), LIGHT)
     elif kind == "cup":
         _ink(ctx, layer, [("poly", [(hx - h * .06, hy - h * .1), (hx + h * .06, hy - h * .1), (hx + h * .05, hy + h * .04), (hx - h * .05, hy + h * .04)])], LIGHT)
 
@@ -748,8 +754,6 @@ def _house(ctx):
 def extras(ctx):
     if ctx.spec.stage and ctx.stage_y is None:
         _stage(ctx, ctx.spec.stage)
-    if ctx.spec.house and ctx.spec.stage:
-        _house(ctx)
     if ctx.spec.daisies:
         _daisies(ctx)
     if ctx.spec.crowd:
@@ -758,6 +762,8 @@ def extras(ctx):
         _lamp(ctx)
     if ctx.spec.sign:
         _sign(ctx)
+    if ctx.spec.house and ctx.spec.stage:
+        _house(ctx)        # last, so it can find a patch of ledge the others left empty
 
 
 GAGS = {

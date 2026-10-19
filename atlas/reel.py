@@ -57,6 +57,7 @@ FRAMINGS = {
     "right": ((1.5, 1.6), ("x", 0.7)),
     "sign": ((1.8, 1.9), "sign"),
     "cartographer": ((2.0, 2.15), "cartographer"),
+    "house": ((1.8, 1.9), "house"),          # a house standing on the stage (else the gag)
 }
 
 
