@@ -99,6 +99,8 @@ GAG_ALT = {
     "road_tourists": "tourists lying on their backs in the road while locals walk around them",
     "tree_cloud": "one enormous tree with its own small rain cloud and a few lit houses in its branches",
     "fainted_ghost": "a small ghost that has fainted on the grass and a person looking down at it",
+    "megaphones": "three people shouting through megaphones, sound rings spreading from each one",
+    "stirrers": "people stirring the brown ground with giant wooden spoons",
 }
 
 

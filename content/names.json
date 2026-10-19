@@ -81,12 +81,12 @@
       "horizon": 0.64,
       "suns": 1,
       "sun_x": 0.5,
-      "sun_y": 0.4,
-      "sun_size": 0.08,
+      "sun_y": 0.5,
+      "sun_size": 0.12,
       "layers": 5,
       "mist": 0.4,
-      "gag": "slow_shout",
-      "sign": "QUIET ZONE|(CLOSED)"
+      "gag": "megaphones",
+      "stage": 0.74
     },
     "opener": "Everything is set to maximum.",
     "kicker": "Every Max gets this planet."
@@ -113,17 +113,18 @@
       "#bella"
     ],
     "spec": {
-      "palette": "rose_fog",
+      "palette": "cobalt_noon",
       "terrain": "hills",
       "horizon": 0.64,
       "suns": 1,
-      "sun_x": 0.3,
-      "sun_y": 0.42,
+      "sun_x": 0.78,
+      "sun_y": 0.3,
       "sun_size": 0.05,
       "layers": 4,
       "mist": 0.6,
       "house": true,
-      "sign": "THE BEAUTIFUL|TAX OFFICE"
+      "sign": "THE BEAUTIFUL|TAX OFFICE",
+      "stage": 0.74
     },
     "opener": "Everything here is beautiful. By law.",
     "kicker": "Every Bella gets this planet."
@@ -160,7 +161,8 @@
       "layers": 4,
       "mist": 0.5,
       "crowd": 6,
-      "sign": "POP. 38|ALL CHARLIE"
+      "sign": "POP. 38|ALL CHARLIE",
+      "stage": 0.74
     },
     "opener": "Everyone here is called Charlie.",
     "kicker": "Every Charlie gets this planet."
@@ -196,8 +198,8 @@
       "sun_size": 0.05,
       "layers": 5,
       "mist": 0.35,
-      "gag": "kettles",
-      "sign": "JUST ADD|WATER"
+      "gag": "stirrers",
+      "stage": 0.74
     },
     "opener": "The soil is chocolate malt.",
     "kicker": "Every Milo gets this planet."

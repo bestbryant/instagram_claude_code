@@ -537,6 +537,43 @@ def _gag_fainted_ghost(ctx):
     ctx.focus = (x / W + 0.05, (y - s * .4) / H)
 
 
+def _gag_megaphones(ctx):
+    """Max: the vote to remove the quiet setting, cast by megaphone."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    _stage(ctx, 0.8)
+    h = H * G
+    for x, f in ((W * 0.3, -1), (W * 0.5, 1), (W * 0.7, 1)):
+        y = _ground(ctx, x)
+        a = _person(ctx, layer, x, y, h, "cup", f)
+        hx, hy = a["head"]
+        nx, ny = hx + h * .1 * f, hy + h * .02
+        wx, wy = hx + h * .5 * f, hy - h * .14
+        _ink(ctx, layer, [("poly", [(nx, ny - h * .04), (nx, ny + h * .04), (wx, wy + h * .15), (wx, wy - h * .15)])], LIGHT)
+        a0, a1 = (-0.95, 0.25) if f > 0 else (math.pi - 0.25, math.pi + 0.95)
+        for k, r in enumerate((.22, .38, .54)):
+            stamp(layer.P, layer.A, [arc_line(wx, wy, h * r, a0, a1, max(1.5, h * .035))], LIGHT, 0.9 - 0.25 * k)
+    ctx.focus = (0.5, (_ground(ctx, W * .5) - h * .8) / H)
+
+
+def _gag_stirrers(ctx):
+    """Milo: the soil is chocolate malt, so farming is mostly stirring."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    _stage(ctx, 0.8)
+    h = H * G
+    swirl = mix(ctx.ground, LIGHT, 0.4)
+    for i, x in enumerate((W * 0.26, W * 0.5, W * 0.74)):
+        f = 1 if i % 2 == 0 else -1
+        y = _ground(ctx, x)
+        _person(ctx, layer, x, y, h, "stand", f)
+        tx, ty = x + h * .5 * f, y + h * .05
+        pts = [(tx + h * (.06 + .05 * t) * math.cos(t * 2.4), ty + h * (.06 + .05 * t) * .3 * math.sin(t * 2.4))
+               for t in np.linspace(0, 6.5, 60)]
+        _ink(ctx, layer, [("line", (pts, max(1.5, h * .025)))], swirl)
+        _ink(ctx, layer, [("line", ([(x + h * .02 * f, y - h * 1.0), (tx, ty)], h * .05)),
+                          ("ellipse", (x - h * .02 * f - h * .07, y - h * 1.12, x - h * .02 * f + h * .07, y - h * .96))], LIGHT)
+    ctx.focus = (0.5, (_ground(ctx, W * .5) - h * .6) / H)
+
+
 # --------------------------------------------------------------------------
 # extras: generic props a planet can combine with its gag
 
@@ -544,12 +581,14 @@ ITEMS = ["spade", "spoon", "nothing", "book", "fish", "umbrella", "cup"]
 
 
 def _held(ctx, layer, kind, hx, hy, h):
+    # held up and printed light, so they read against the dark figures
     if kind == "spade":
-        _ink(ctx, layer, [("line", ([(hx, hy - h * .2), (hx, hy + h * .45)], h * .05)),
-                          ("poly", [(hx - h * .09, hy + h * .42), (hx + h * .09, hy + h * .42), (hx + h * .07, hy + h * .62), (hx - h * .07, hy + h * .62)])], ctx.dark)
+        tx, ty = hx + h * .12, hy - h * .62
+        _ink(ctx, layer, [("line", ([(hx - h * .03, hy + h * .12), (tx, ty)], h * .045)),
+                          ("poly", [(tx - h * .1, ty + h * .02), (tx + h * .12, ty - h * .02), (tx + h * .1, ty - h * .26), (tx + h * .01, ty - h * .32), (tx - h * .1, ty - h * .22)])], LIGHT)
     elif kind == "spoon":
-        _ink(ctx, layer, [("line", ([(hx, hy), (hx + h * .02, hy - h * .38)], h * .05)),
-                          ("ellipse", (hx - h * .07, hy - h * .56, hx + h * .1, hy - h * .34))], ctx.dark)
+        _ink(ctx, layer, [("line", ([(hx, hy + h * .08), (hx + h * .02, hy - h * .42)], h * .045)),
+                          ("ellipse", (hx - h * .08, hy - h * .68, hx + h * .12, hy - h * .38))], LIGHT)
     elif kind == "book":
         _ink(ctx, layer, [("poly", [(hx - h * .12, hy - h * .1), (hx + h * .12, hy - h * .1), (hx + h * .12, hy + h * .08), (hx - h * .12, hy + h * .08)])], LIGHT)
     elif kind == "fish":
@@ -566,11 +605,13 @@ def _crowd(ctx):
     layer, W, H = ctx.near_layer, ctx.W, ctx.H
     n = ctx.spec.crowd
     h = H * G
-    xs = np.linspace(W * 0.2, W * 0.8, n)
+    # with a sign, the crowd keeps to the left so the board (placed right) hides no one
+    xs = np.linspace(W * 0.08, W * 0.54, n) if ctx.spec.sign else np.linspace(W * 0.2, W * 0.8, n)
     for i, x in enumerate(xs):
         a = _person(ctx, layer, x, _ground(ctx, x), h * (0.92 + 0.08 * ((i * 7) % 3) / 2), "stand", 1 if i % 2 else -1)
         _held(ctx, layer, ITEMS[i % len(ITEMS)], a["rh"][0], a["rh"][1], h)
-    ctx.focus = (0.5, (_ground(ctx, W * 0.5) - h * .6) / H)
+    mid = float(xs.mean())
+    ctx.focus = (mid / W, (_ground(ctx, mid) - h * .6) / H)
 
 
 def _daisies(ctx):
@@ -659,6 +700,7 @@ GAGS = {
     "pole_post": _gag_pole_post, "kettles": _gag_kettles, "moon_letters": _gag_moon_letters,
     "glass_surfers": _gag_glass_surfers, "tiny_planet": _gag_tiny_planet, "umbrella_feet": _gag_umbrella_feet,
     "road_tourists": _gag_road_tourists, "tree_cloud": _gag_tree_cloud, "fainted_ghost": _gag_fainted_ghost,
+    "megaphones": _gag_megaphones, "stirrers": _gag_stirrers,
 }
 
 
