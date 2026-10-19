@@ -173,6 +173,9 @@ class Spec:
     glow_rims: bool = False        # canyon edges that glow at night
     sign: str = ""                 # a signpost; lines separated by "|"
     crowd: int = 0                 # a row of people, each holding something
+    crowd_items: str = ""          # what each one holds, comma-separated (default: a mixed set); "child"/"child_asleep" are carried
+    crowd_x: float = 0.0           # centre of a close group (0: spread across the frame)
+    crowd_facing: str = ""         # in | out | left | right (default: alternating)
     daisies: int = 0               # flowers across the foreground
     lamp: bool = False             # a tall lamp aimed at the sky
     stage: float = 0.0             # flat foreground ledge at this height for the extras (0: natural ground)
@@ -777,7 +780,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
         h = H * ro.uniform(0.14, 0.22)
         stamp(near_layer.P, near_layer.A, round_tree(x, ridge_at(near_ridge, x) + 6, h, ro), tree_dark if spec.snow else near_lc)
 
-    if spec.house:
+    if spec.house and not spec.stage:       # on a stage the house stands on the ledge instead (props.extras)
         layer, r_, t, lc = ridges[-1] if not spec.water else (near_layer, near_ridge, 1.0, near_lc)
         hx = local_peak(r_, W * 0.55, W * 0.9) if ro.random() < 0.5 else local_peak(r_, W * 0.1, W * 0.45)
         hy_ = ridge_at(r_, hx) + 6
@@ -855,7 +858,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
 
     # the planet's visual joke and the cartographer
     scene.focus, scene.marks = (0.5, 0.62), {}
-    if spec.gag or spec.cartographer or spec.sign or spec.crowd or spec.daisies or spec.lamp:
+    if spec.gag or spec.cartographer or spec.sign or spec.crowd or spec.daisies or spec.lamp or (spec.house and spec.stage):
         from . import props
         globe = None
         if spec.gag == "tiny_planet":

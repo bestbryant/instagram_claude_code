@@ -31,6 +31,14 @@ POSES = {
                 lk=(.26, .36), lf=(.26, 0), rk=(.28, .34), rf=(.3, 0)),
     "doze": dict(head=(.04, .66), neck=(-.03, .64), hip=(0, .34), le=(.05, .48), lh=(.18, .38), re=(.07, .47), rh=(.2, .39),
                  lk=(.26, .36), lf=(.26, 0), rk=(.28, .34), rf=(.3, 0)),
+    # a child on the shoulders: both hands up holding its shins
+    "carry": dict(head=(0, .915), neck=(0, .83), hip=(0, .5), le=(.12, .68), lh=(.16, .8), re=(.14, .67), rh=(.18, .79),
+                  lk=(-.05, .25), lf=(-.07, 0), rk=(.05, .25), rf=(.07, 0)),
+    # the child up there: pointing at something ahead, or asleep, slumped over the carrier's head
+    "point": dict(head=(.02, .92), neck=(0, .82), hip=(0, .45), le=(-.08, .62), lh=(-.04, .5), re=(.22, .9), rh=(.44, 1.06),
+                  lk=(.2, .42), lf=(.24, .12), rk=(.23, .4), rf=(.28, .1)),
+    "asleep": dict(head=(.3, .6), neck=(.18, .66), hip=(0, .45), le=(.24, .56), lh=(.34, .44), re=(.26, .55), rh=(.36, .42),
+                   lk=(.2, .42), lf=(.24, .12), rk=(.23, .4), rf=(.28, .1)),
 }
 
 
@@ -595,20 +603,48 @@ def _held(ctx, layer, kind, hx, hy, h):
     elif kind == "umbrella":
         arc = [(hx + h * .3 * math.cos(a), hy - h * .55 - h * .22 * math.sin(a)) for a in np.linspace(0, math.pi, 11)]
         _ink(ctx, layer, [("poly", arc + [(hx - h * .3, hy - h * .55)]), ("line", ([(hx, hy - h * .55), (hx, hy + h * .05)], h * .04))], ctx.spot)
+    elif kind == "flower":
+        _ink(ctx, layer, [("line", ([(hx, hy + h * .06), (hx + h * .03, hy - h * .36)], h * .03))], ctx.dark)
+        cx, cy, r = hx + h * .03, hy - h * .42, h * .09
+        petals = [(cx + r * .55 * math.cos(t), cy + r * .55 * math.sin(t)) for t in np.linspace(0, 2 * math.pi, 8, endpoint=False)]
+        _ink(ctx, layer, [("ellipse", (px - r * .4, py - r * .3, px + r * .4, py + r * .3)) for px, py in petals], LIGHT)
+        _ink(ctx, layer, [("ellipse", (cx - r * .3, cy - r * .3, cx + r * .3, cy + r * .3))], YELLOW)
     elif kind == "cup":
         _ink(ctx, layer, [("poly", [(hx - h * .06, hy - h * .1), (hx + h * .06, hy - h * .1), (hx + h * .05, hy + h * .04), (hx - h * .05, hy + h * .04)])], LIGHT)
 
 
+def _child(ctx, layer, a, h, facing, asleep=False):
+    """A child riding on the carrier's shoulders: pointing ahead, or asleep over the carrier's head."""
+    nx, ny = a["neck"]
+    hc = h * 0.55
+    hip_y = ny - h * 0.13                    # sitting on the shoulders, the carrier's head showing in front
+    _person(ctx, layer, nx - h * 0.07 * facing, hip_y + hc * 0.45, hc, "asleep" if asleep else "point", facing)
+
+
 def _crowd(ctx):
     layer, W, H = ctx.near_layer, ctx.W, ctx.H
-    n = ctx.spec.crowd
+    sp = ctx.spec
+    n = sp.crowd
     h = H * G
-    # with a sign, the crowd keeps to the left so the board (placed right) hides no one
-    xs = np.linspace(W * 0.08, W * 0.54, n) if ctx.spec.sign else np.linspace(W * 0.2, W * 0.8, n)
-    for i, x in enumerate(xs):
-        a = _person(ctx, layer, x, _ground(ctx, x), h * (0.92 + 0.08 * ((i * 7) % 3) / 2), "stand", 1 if i % 2 else -1)
-        _held(ctx, layer, ITEMS[i % len(ITEMS)], a["rh"][0], a["rh"][1], h)
+    items = [t.strip() for t in sp.crowd_items.split(",") if t.strip()] or ITEMS
+    if sp.crowd_x:
+        xs = sp.crowd_x * W + (np.arange(n) - (n - 1) / 2) * W * 0.09
+    elif sp.sign:
+        # with a sign, the crowd keeps to the left so the board (placed right) hides no one
+        xs = np.linspace(W * 0.08, W * 0.54, n)
+    else:
+        xs = np.linspace(W * 0.2, W * 0.8, n)
     mid = float(xs.mean())
+    for i, x in enumerate(xs):
+        face = {"in": 1 if x < mid or (n == 1) else -1, "out": -1 if x < mid else 1,
+                "left": -1, "right": 1}.get(sp.crowd_facing, 1 if i % 2 else -1)
+        kind = items[i % len(items)]
+        carry = kind.startswith("child")
+        a = _person(ctx, layer, x, _ground(ctx, x), h * (0.92 + 0.08 * ((i * 7) % 3) / 2), "carry" if carry else "stand", face)
+        if carry:
+            _child(ctx, layer, a, h, face, asleep=kind == "child_asleep")
+        else:
+            _held(ctx, layer, kind, a["rh"][0], a["rh"][1], h)
     ctx.focus = (mid / W, (_ground(ctx, mid) - h * .6) / H)
 
 
@@ -621,8 +657,16 @@ def _daisies(ctx):
         if y > H - 4:
             continue
         r = H * rng.uniform(0.008, 0.016)
-        _ink(ctx, layer, [("ellipse", (x - r, y - r * .7, x + r, y + r * .7))], LIGHT)
-        _ink(ctx, layer, [("ellipse", (x - r * .38, y - r * .3, x + r * .38, y + r * .3))], YELLOW)
+        # separate petals with gaps between them, seen a little from above, so a close-up reads as a daisy
+        k0 = rng.uniform(0, 1)
+        petals = []
+        for k in range(11):
+            t = 2 * math.pi * (k + k0) / 11
+            c, s_ = math.cos(t), math.sin(t)
+            petals.append(("poly", [(x + r * (u * c - v * s_), y + r * .62 * (u * s_ + v * c))
+                                    for u, v in ((.3, 0), (.55, .13), (.92, .1), (1, 0), (.92, -.1), (.55, -.13))]))
+        _ink(ctx, layer, petals, LIGHT)
+        _ink(ctx, layer, [("ellipse", (x - r * .3, y - r * .22, x + r * .3, y + r * .22))], YELLOW)
 
 
 def _lamp(ctx):
@@ -680,9 +724,32 @@ def _sign(ctx):
     ctx.marks["sign"] = (sx, sy)
 
 
+def _house(ctx):
+    """A small house with a lit window, standing on the stage clear of the gag."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    s = H * 0.06
+
+    def crowded(x):   # ink already standing on the ledge where the house would go, plus a pull away from the gag
+        y = int(_ground(ctx, x))
+        box = layer.A[max(y - int(s * 1.4), 0): max(y - 3, 1), max(int(x - s * .8), 0): int(x + s * .8)]
+        return float(box.mean()) if box.size else 1.0 + 0.3 * max(0.0, 0.3 - abs(x / W - ctx.focus[0]))
+    x = min((W * f for f in (0.82, 0.18, 0.7, 0.3, 0.9, 0.1)), key=crowded)
+    y = _ground(ctx, x)
+    _ink(ctx, layer, house(x, y, s), ctx.dark)
+    if layer.E is None:
+        layer.E = np.zeros_like(layer.P)
+    wP, wA = np.zeros_like(layer.P), np.zeros_like(layer.A)
+    stamp(wP, wA, [("poly", [(x - s * .22, y - s * .22), (x + s * .02, y - s * .22), (x + s * .02, y - s * .44), (x - s * .22, y - s * .44)])], np.ones(3))
+    layer.E += wA[..., None] * ctx.pal.light * 1.1
+    glow(layer.E, x - s * .1, y - s * .33, 6, ctx.pal.light, 0.5)
+    ctx.marks["house"] = (x / W, (y - s / 2) / H)
+
+
 def extras(ctx):
     if ctx.spec.stage and ctx.stage_y is None:
         _stage(ctx, ctx.spec.stage)
+    if ctx.spec.house and ctx.spec.stage:
+        _house(ctx)
     if ctx.spec.daisies:
         _daisies(ctx)
     if ctx.spec.crowd:
