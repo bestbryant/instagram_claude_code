@@ -1,13 +1,13 @@
 {
- "fetched_at": "2026-10-19T03:36:17+00:00",
- "followers": 0,
+ "fetched_at": "2026-10-19T11:18:08+00:00",
+ "followers": 1,
  "posts": {
   "17874537072639047": {
    "entry": "000",
    "kind": "carousel",
    "at": "2026-10-18T19:24:34+00:00",
-   "reach": 0,
-   "views": 0,
+   "reach": 1,
+   "views": 4,
    "likes": 0,
    "comments": 0,
    "shares": 0,
@@ -17,8 +17,8 @@
    "entry": "001",
    "kind": "carousel",
    "at": "2026-10-18T19:27:17+00:00",
-   "reach": 0,
-   "views": 0,
+   "reach": 1,
+   "views": 5,
    "likes": 0,
    "comments": 0,
    "shares": 0,
@@ -28,8 +28,8 @@
    "entry": "002",
    "kind": "carousel",
    "at": "2026-10-18T19:27:54+00:00",
-   "reach": 0,
-   "views": 0,
+   "reach": 1,
+   "views": 4,
    "likes": 0,
    "comments": 0,
    "shares": 0,
@@ -39,27 +39,27 @@
    "entry": "001",
    "kind": "reel",
    "at": "2026-10-19T00:07:10+00:00",
-   "reach": 2,
-   "views": 5,
+   "reach": 16,
+   "views": 21,
    "likes": 0,
    "comments": 0,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 75301,
-   "reels_skip_rate": 66.7
+   "ig_reels_avg_watch_time": 17737,
+   "reels_skip_rate": 57.9
   },
   "18098496407407746": {
    "entry": "008",
    "kind": "reel",
    "at": "2026-10-19T03:00:51+00:00",
-   "reach": 0,
-   "views": 0,
-   "likes": 0,
+   "reach": 91,
+   "views": 109,
+   "likes": 1,
    "comments": 0,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 18611,
-   "reels_skip_rate": 0
+   "ig_reels_avg_watch_time": 3884,
+   "reels_skip_rate": 73.9
   }
  }
 }
