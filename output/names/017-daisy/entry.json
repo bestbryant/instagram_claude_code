@@ -30,6 +30,9 @@
     "layers": 4,
     "mist": 0.5,
     "daisies": 140,
-    "crowd": 2
-  }
+    "crowd": 2,
+    "stage": 0.72
+  },
+  "opener": "The flowers know if he loves you.",
+  "kicker": "Every Daisy gets this planet."
 }
