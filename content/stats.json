@@ -1,13 +1,13 @@
 {
- "fetched_at": "2026-10-19T11:18:08+00:00",
+ "fetched_at": "2026-10-19T21:15:37+00:00",
  "followers": 1,
  "posts": {
   "17874537072639047": {
    "entry": "000",
    "kind": "carousel",
    "at": "2026-10-18T19:24:34+00:00",
-   "reach": 1,
-   "views": 4,
+   "reach": 2,
+   "views": 5,
    "likes": 0,
    "comments": 0,
    "shares": 0,
@@ -17,9 +17,9 @@
    "entry": "001",
    "kind": "carousel",
    "at": "2026-10-18T19:27:17+00:00",
-   "reach": 1,
-   "views": 5,
-   "likes": 0,
+   "reach": 2,
+   "views": 6,
+   "likes": 1,
    "comments": 0,
    "shares": 0,
    "saved": 0
@@ -28,9 +28,9 @@
    "entry": "002",
    "kind": "carousel",
    "at": "2026-10-18T19:27:54+00:00",
-   "reach": 1,
-   "views": 4,
-   "likes": 0,
+   "reach": 3,
+   "views": 9,
+   "likes": 1,
    "comments": 0,
    "shares": 0,
    "saved": 0
@@ -39,27 +39,53 @@
    "entry": "001",
    "kind": "reel",
    "at": "2026-10-19T00:07:10+00:00",
-   "reach": 16,
-   "views": 21,
+   "reach": 34,
+   "views": 39,
    "likes": 0,
    "comments": 0,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 17737,
-   "reels_skip_rate": 57.9
+   "ig_reels_avg_watch_time": 11299,
+   "reels_skip_rate": 58.3
   },
   "18098496407407746": {
    "entry": "008",
    "kind": "reel",
    "at": "2026-10-19T03:00:51+00:00",
-   "reach": 91,
-   "views": 109,
-   "likes": 1,
+   "reach": 100,
+   "views": 118,
+   "likes": 2,
+   "comments": 0,
+   "shares": 0,
+   "saved": 1,
+   "ig_reels_avg_watch_time": 3872,
+   "reels_skip_rate": 73.3
+  },
+  "18165380785511678": {
+   "entry": "012",
+   "kind": "reel",
+   "at": "2026-10-19T12:24:02+00:00",
+   "reach": 2,
+   "views": 3,
+   "likes": 0,
+   "comments": 1,
+   "shares": 0,
+   "saved": 0,
+   "ig_reels_avg_watch_time": 8704,
+   "reels_skip_rate": 0
+  },
+  "17866148727675536": {
+   "entry": "004",
+   "kind": "reel",
+   "at": "2026-10-19T21:15:09+00:00",
+   "reach": 0,
+   "views": 0,
+   "likes": 0,
    "comments": 0,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 3884,
-   "reels_skip_rate": 73.9
+   "ig_reels_avg_watch_time": 0,
+   "reels_skip_rate": 0
   }
  }
 }
