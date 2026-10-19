@@ -89,7 +89,7 @@ def alt_text(entry: dict, spec: Spec) -> str:
 GAG_ALT = {
     "chair_sleepers": "people asleep in armchairs under blankets on the cliff",
     "seabed_town": "small wooden houses on the dry seabed, two of them half taken apart, and people carrying planks",
-    "slow_shout": "a person shouting with cupped hands, the sound drawn as slow arcs crossing the valley, and someone far away reading a letter",
+    "slow_shout": "a person shouting with cupped hands, the sound drawn as slow arcs crossing the valley towards someone far away, cupping an ear",
     "pole_post": "a postwoman reaching a letter up to a floating island on a very long pole",
     "kettles": "kettles steaming on warm rocks",
     "moon_letters": "children holding letters up to the moon, with more letters stuck to its surface",

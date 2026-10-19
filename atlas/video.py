@@ -33,6 +33,7 @@ class Shot:
     focus: tuple | None = None               # zoom centre as fractions of the frame (None: the scene's gag)
     cards: list = field(default_factory=list)  # (rgba card array, t0, t1) in shot seconds
     tick: bool = True                        # click on the cut into this shot
+    reverse: bool = False                    # pan backwards (the end card, so its last frame is the hook's first)
 
 
 def _fade(ts, start, end, ramp):
@@ -78,7 +79,7 @@ class _Prepared:
         if self.scene is None:
             img = s.still
         else:
-            img = frame(self.scene, t=u, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=self.thr)
+            img = frame(self.scene, t=1 - u if s.reverse else u, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=self.thr)
             img = print_finish(img, self.inks, seed=s.seed & 0xFFFF, dither=0.045)
         z = s.zoom[0] + (s.zoom[1] - s.zoom[0]) * _ease(u)
         img = _zoom(img, z, s.focus)
@@ -138,7 +139,7 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
     seconds = float(starts[-1])
     n = int(round(seconds * fps))
     with tempfile.TemporaryDirectory() as tmp:
-        wav = audio.ambient(max(seconds, 3.0), seed, str(Path(tmp) / "a.wav"))
+        wav = audio.ambient(max(seconds, 3.0), seed, str(Path(tmp) / "a.wav"), loop=True)
         _mix_ticks(wav, [float(starts[i]) for i, s in enumerate(shots) if s.tick and i > 0])
         cmd = ["ffmpeg", "-y", "-loglevel", "error",
                "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-", "-i", wav,

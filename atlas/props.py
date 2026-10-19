@@ -314,7 +314,7 @@ def _gag_seabed_town(ctx):
 
 
 def _gag_slow_shout(ctx):
-    """Hush: a shout crawls across the valley; the reply comes by letter."""
+    """Hush: a shout crawls across the valley towards someone waiting to hear it."""
     layer, W, H = ctx.near_layer, ctx.W, ctx.H
     _stage(ctx, 0.86)
     h = H * G
@@ -327,9 +327,7 @@ def _gag_slow_shout(ctx):
         r = W * (0.07 + 0.09 * k)
         stamp(layer.P, layer.A, [arc_line(mx, my, r, -0.6, 0.45, H * 0.006)], col, 0.85 - 0.17 * k)
     x2 = W * 0.8
-    a2 = _person(ctx, layer, x2, _ground(ctx, x2), h * 0.9, "cup", -1)
-    _paper(ctx, layer.P, layer.A, a2["rh"][0], a2["rh"][1], h * 1.3, kind="letter")
-    _ink(ctx, layer, [("poly", [(x2 - h * .78, a2["rh"][1] - h * .18), (x2 - h * .5, a2["rh"][1] - h * .18), (x2 - h * .5, a2["rh"][1] - h * .16), (x2 - h * .78, a2["rh"][1] - h * .16)])], ctx.dark)
+    _person(ctx, layer, x2, _ground(ctx, x2), h * 0.9, "cup", -1)
     ctx.focus = (0.3, (y - h * .7) / H)
 
 

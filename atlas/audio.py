@@ -31,9 +31,12 @@ def _reverb(x, rng, seconds=2.8):
     return out
 
 
-def ambient(seconds: float, seed: int, path: str) -> str:
+def ambient(seconds: float, seed: int, path: str, loop: bool = False) -> str:
+    """Ambient bed. With loop=True the tail is crossfaded over the head, so a Reel that
+    loops never dips in level at the seam."""
     rng = np.random.default_rng(seed & 0xFFFFFFFF)
-    n = int(seconds * SR)
+    over = 1.5 if loop else 0.0
+    n = int((seconds + over) * SR)
     t = np.arange(n) / SR
     root = 98.0 * 2 ** (int(rng.integers(0, 9)) / 12)
     chord = CHORDS[int(rng.integers(0, len(CHORDS)))]
@@ -65,8 +68,14 @@ def ambient(seconds: float, seed: int, path: str) -> str:
     sig += wind[:, None]
 
     sig = sig * 0.55 + _reverb(sig, rng) * 0.9
-    fade = np.minimum(1, t / min(1.5, seconds / 4)) * np.minimum(1, (seconds - t) / min(2.0, seconds / 4))
-    sig *= fade[:, None]
+    if loop:
+        m, n0 = int(over * SR), int(seconds * SR)
+        a = np.linspace(0, np.pi / 2, m)[:, None]
+        head = sig[:m] * np.sin(a) + sig[n0:n0 + m] * np.cos(a)   # equal-power: the end flows into the start
+        sig = np.concatenate([head, sig[m:n0]])
+    else:
+        fade = np.minimum(1, t / min(1.5, seconds / 4)) * np.minimum(1, (seconds - t) / min(2.0, seconds / 4))
+        sig *= fade[:, None]
     sig *= 0.5 / (np.abs(sig).max() + 1e-9)
 
     pcm = (np.clip(sig, -1, 1) * 32767).astype("<i2")

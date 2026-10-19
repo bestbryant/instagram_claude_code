@@ -59,11 +59,12 @@
   "day": 6,
   "entry": "003b",
   "kind": "reel",
-  "note": "Hush part two: Thursday evening, US time",
+  "note": "Hush part two: the answer arrives Thursday, so not before Thursday evening (US)",
   "after": [
    "003",
    "reel"
-  ]
+  ],
+  "not_before": "2026-10-22T22:00:00Z"
  },
  {
   "day": 11,

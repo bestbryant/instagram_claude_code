@@ -71,20 +71,22 @@ def reel_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = No
                     dict(text=cta, y=ty["name"] + 0.145, kind="italic", size=46)])
     # about 0.3 s per word plus time to settle, so every line can actually be read
     read = lambda line, extra=0.9: round(max(2.4, 0.3 * len(line.split()) + extra), 1)
-    t_hook = read(entry["name"] if requested_by else first, 1.0 if requested_by else 0.9)
+    t_hook = read(entry["name"] if requested_by else f"{entry.get('kicker', '')} {first}".strip(), 1.0 if requested_by else 0.9)
     t_setup, t_punch = read(beats[0]), read(beats[1], 1.2)
-    # the punchline holds to the cut and the name card is on from its first frame:
-    # a fade between them uncovers the bright scene for a few frames, which flickers
+    # text cuts with the picture: fading a card also fades the dark band behind it, which
+    # flashes the bright scene for a few frames. The end card pans backwards so its last
+    # frame is the hook's first, and the loop has no jump.
     # an entry can move the camera per shot: "camera": {"setup": {"zoom": [a, b], "focus": [x, y]}}
     cam = entry.get("camera", {})
     move = lambda k, zoom: dict(zoom=tuple(cam.get(k, {}).get("zoom", zoom)),
                                 focus=tuple(cam[k]["focus"]) if "focus" in cam.get(k, {}) else None)
     return [
-        Shot(t_hook, spec, seed, pan=50, cards=[(opener, 0.0, t_hook, 0.0, 0.12)], **move("hook", (1.0, 1.12))),
-        Shot(t_setup, spec, seed, pan=50, cards=[(setup, 0.05, t_setup, 0.15, 0.12)],
+        Shot(t_hook, spec, seed, pan=50, cards=[(opener, 0.0, t_hook, 0.0, 0.0)], **move("hook", (1.0, 1.12))),
+        Shot(t_setup, spec, seed, pan=50, cards=[(setup, 0.0, t_setup, 0.0, 0.0)],
              **move("setup", (1.55, 1.65) if spec.sign and spec.gag else (1.9, 2.05))),
-        Shot(t_punch, spec, seed, pan=50, cards=[(punch, 0.05, t_punch, 0.15, 0.0)], **move("punch", (1.4, 1.28))),
-        Shot(2.4, spec, seed, pan=50, cards=[(name, 0.0, 2.4, 0.0, 0.0)], tick=True, **move("name", (1.08, 1.0))),
+        Shot(t_punch, spec, seed, pan=50, cards=[(punch, 0.0, t_punch, 0.0, 0.0)], **move("punch", (1.4, 1.28))),
+        Shot(2.4, spec, seed, pan=50, cards=[(name, 0.0, 2.4, 0.0, 0.0)], tick=True, reverse=True,
+             **move("name", (1.08, 1.0))),
     ]
 
 

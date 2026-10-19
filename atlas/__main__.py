@@ -33,6 +33,7 @@ LAUNCH = ROOT / "content" / "launch.json"
 SCHEDULE = ROOT / "content" / "schedule.json"
 LOG = ROOT / "content" / "published.json"
 STATS = ROOT / "content" / "stats.json"
+ENGINE = 4   # bump when a change to the Reel renderer should re-render every unposted Reel
 GITHUB_REPO = os.environ.get("ATLAS_GITHUB_REPO", "bestbryant/instagram_claude_code")   # public repo that serves the videos
 
 
@@ -83,7 +84,7 @@ def make(entry: dict, spec: Spec, seed: int, folder: Path, reel=True, by=None, r
     if reel:
         from .reel import render_reel
         render_reel(spec, seed, entry, folder / "reel.mp4", cover_path=folder / "reel-cover.jpg", requested_by=requested_by)
-        (folder / "reel-entry.json").write_text(json.dumps(entry, indent=2, ensure_ascii=False) + "\n")
+        (folder / "reel-entry.json").write_text(json.dumps({**entry, "_engine": ENGINE}, indent=2, ensure_ascii=False) + "\n")
     return folder
 
 
@@ -404,7 +405,9 @@ def check_item(item, folder, entries) -> str | None:
     src = entries.get(item["entry"])
     rendered = folder / ("reel-entry.json" if item["kind"] == "reel" else "entry.json")
     # fields only the other format uses don't make this one stale
-    skip = {"framing", "odd_line", "rule", "subtitle", "facts"} if item["kind"] == "reel" else {"camera", "text_y", "opener", "kicker", "cta"}
+    skip = {"framing", "odd_line", "rule", "subtitle", "facts", "_engine"} if item["kind"] == "reel" else {"camera", "text_y", "opener", "kicker", "cta"}
+    if item["kind"] == "reel" and rendered.exists() and json.loads(rendered.read_text()).get("_engine") != ENGINE:
+        return "stale: rendered with an older Reel engine"
     same = lambda a, b: {k: v for k, v in a.items() if k not in skip} == {k: v for k, v in b.items() if k not in skip}
     if src is not None and (not rendered.exists() or not same(json.loads(rendered.read_text()), src)):
         return "stale: content changed since it was rendered"

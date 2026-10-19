@@ -176,20 +176,40 @@
     },
     "cover": "Her answer arrives Thursday.",
     "beats": [
-      "Sound is slow on Hush. A shout takes five days to cross the valley.",
-      "He proposed in March. She's been thinking about it. Her answer arrives Thursday."
+      "Sound is slow on Hush.\nA shout takes five days\nto cross the valley.",
+      "He proposed in March.\nShe's been thinking about it.\nHer answer arrives Thursday."
     ],
     "odd_line": "Arguments here are done by letter, which is why there are hardly any.",
-    "rule": "No shouting after dark. It arrives five nights later and wakes everyone.",
-    "question": "Who do you know who replies like this?",
+    "rule": "Shouts must be signed. Five days later it's hard to tell who started it.",
+    "question": "What's the longest you've ever taken to reply to a message?",
     "extra": "I'll be in the valley on Thursday to hear the answer.",
     "reel_lines": [
-      "Sound is slow on Hush. A shout takes five days to cross the valley.",
-      "He proposed in March. She's been thinking about it. Her answer arrives Thursday."
+      "Sound is slow on Hush.\nA shout takes five days\nto cross the valley.",
+      "He proposed in March.\nShe's been thinking about it.\nHer answer arrives Thursday."
     ],
     "opener": "Her answer arrives Thursday.",
     "text_y": {
       "setup": 0.12
+    },
+    "camera": {
+      "hook": {
+        "focus": [
+          0.5,
+          0.711
+        ]
+      },
+      "punch": {
+        "focus": [
+          0.7,
+          0.711
+        ]
+      },
+      "name": {
+        "focus": [
+          0.5,
+          0.711
+        ]
+      }
     }
   },
   {

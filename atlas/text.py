@@ -40,9 +40,14 @@ def typeset(text):
 
 
 def wrap(draw, text, fnt, width):
-    """Greedy wrap that keeps non-breaking spaces together and never leaves one word alone on the last line."""
+    """Greedy wrap that keeps non-breaking spaces together, honours newlines as hard breaks,
+    and never leaves one word alone on the last line of a paragraph."""
+    return [ln for para in typeset(text).split("\n") for ln in _wrap_para(draw, para, fnt, width)]
+
+
+def _wrap_para(draw, text, fnt, width):
     lines, cur = [], ""
-    for word in typeset(text).split(" "):
+    for word in text.split(" "):
         if not word:
             continue
         trial = (cur + " " + word).strip()
