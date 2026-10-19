@@ -32,7 +32,8 @@
     "layers": 5,
     "mist": 0.5,
     "gag": "seabed_town",
-    "stage": 0.72
+    "stage": 0.72,
+    "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!|WE DIDN'T."
   },
   "cover": "Everyone packs the night before.",
   "beats": [
@@ -46,5 +47,112 @@
   "reel_lines": [
     "The tide comes back once every eleven years. Whole towns are built on the seabed in between.",
     "Everyone knows the date. Everyone still packs the night before."
-  ]
+  ],
+  "episode": {
+    "opener": "This town is\nat the bottom of the sea.",
+    "beats": [
+      {
+        "text": "The tide's just out.\nThe giant borrows it\nfor eleven years.",
+        "shot": "sky"
+      },
+      {
+        "text": "So they build: houses, a school,\na very optimistic swimming pool.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": [
+            1.3,
+            1.4
+          ]
+        }
+      },
+      {
+        "text": "Everyone knows the date.\nEveryone still packs\nthe night before.",
+        "shot": {
+          "framing": "gag",
+          "focus": [
+            0.24,
+            0.575
+          ],
+          "zoom": [
+            1.95,
+            2.05
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "suns": 0,
+          "giant_x": 0.5,
+          "giant_y": 0.1
+        }
+      },
+      {
+        "text": "Houses come down plank by plank,\nall season.\nThe mugs take all night.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": [
+            1.3,
+            1.4
+          ]
+        },
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "giant_x": 0.5,
+          "giant_y": 0.1
+        }
+      },
+      {
+        "text": "Nobody packs the sign.\nEach town adds a line.",
+        "shot": "sign",
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "giant_x": 0.5,
+          "giant_y": 0.1
+        },
+        "seconds": 4.8
+      },
+      {
+        "text": "The tide does not do extensions.",
+        "shot": "wide",
+        "spec": {
+          "water": true,
+          "gag": "",
+          "giant_x": 0.5,
+          "giant_y": 0.1
+        },
+        "seconds": 3.1
+      },
+      {
+        "text": "The pool is finally full.",
+        "shot": {
+          "framing": "left",
+          "focus": [
+            0.22,
+            0.55
+          ],
+          "zoom": [
+            2.0,
+            2.1
+          ]
+        },
+        "spec": {
+          "water": true,
+          "gag": "",
+          "giant_x": 0.5,
+          "giant_y": 0.1
+        }
+      }
+    ],
+    "end": "Next time, a bigger pool.",
+    "caption": "Most of Orrin's 2.1 million people take their houses down plank by plank all season, then leave on the same night. The sign is bolted to the seabed, and its oldest line has been under four tides. This town's line goes on in the small hours. Nobody has decided what it says. Anything left behind goes to the sea, and eleven years later to whoever digs it up, so everyone here drinks out of a stranger's mug. My guide has moved twice. This time she's packing a towel and a snorkel.\n\nOrrin keeps almost the same face to its giant and slips round underneath it once every 22 years. A tide has two bulges, so the sea comes round every 11. The giant climbs about a finger's width a month, and when it's overhead, so is the sea.\n\nThe sea is due back at 6:12 on 14 March. I'll pack the night before.\n\nPack-early person or night-before person?"
+  }
 }
