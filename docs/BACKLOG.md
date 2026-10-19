@@ -12,6 +12,7 @@ Current gap: **3 h** (8 Reels a day), from 2026-10-19 21:20 UTC. Steps: 4 h, the
 - [ ] **Read the first 48 h of story-episode stats** (Luna, Maren, Hush part one, Kess). Compare skip rate and average watch with Veyra and Ovo. If the opener is losing people in the first 2 s, rewrite the next five openers before they post.
 
 ## Next
+- [ ] **Refresh docs/OWNER_TODO.md's comment list** when it runs low (about every 5 days): fresh, verified posts from the docs/community.md accounts, one specific comment each. The scratchpad workflow peer-post-comments does this; keep the owner's list to three a day.
 - [ ] **Name-planet episodes on demand**: requests get a story episode, not just a still. Write a short episode template the inbox can fill (resident, rule, turn) so a requested name posts within a day.
 - [ ] **Batch 3 (No. 031-042)**, chosen by what the stats say works (name planets vs. place planets, comic vs. tender, sign turns vs. picture turns).
 - [ ] **Series hooks**: a recurring "Atlas update" Reel every ten episodes (the cartographer's map filling in), which gives followers a reason to follow rather than just like.
