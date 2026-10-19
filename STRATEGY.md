@@ -124,9 +124,15 @@ To stop it, disable the routine "Atlas of Elsewhere: daily post" in your Claude 
 6. **Stories** (they can't be fully automated with stickers): share each new post with a **Question sticker, "Name a planet"**, and once a week an **Add Yours** sticker ("the planet with your name").
 7. **Check Account Status:** Settings → Account Status. If it says some content "can't be recommended", follow its steps. Recommendations to non-followers are the only reach a new account gets.
 8. **Act like a person for a few minutes a day:** follow 15–20 illustration and worldbuilding accounts you actually like, and leave a real comment on two or three of their posts. An account that only ever posts through the API looks automated.
-9. **Security:** change your Instagram password and turn on two-factor authentication. Rotate the Meta **app secret** (it was pasted in chat). The access token keeps working after both.
+9. **Collabs, the only way to reach someone else's followers.** Once the profile is fixed, DM 3–5 small sci-fi or worldbuilding artists and offer them a planet named after them as a Collab Reel. The agent renders it and you post it from the app with the Collab invite: the API's collaborators field needs Facebook Login. Accept any collab invites you receive; that can't be done through this API either.
+10. **After about a week, pin the 3 Reels with the most shares** (`python -m atlas stats` lists them).
+11. **Security:** change your Instagram password and turn on two-factor authentication. Rotate the Meta **app secret** (it was pasted in chat). The access token keeps working after both.
 
 ---
+
+## 6b. Cadence (changed 19 Oct after the reach research)
+
+Reels only, about three a day (`next --asap --gap-hours 8`), so the queue runs in about a week and every Reel tests a hook. Not faster: Meta's spam policy covers "very high frequencies", accounts posting only through the API have drawn "suspected automation" warnings at 1–3 posts a day, and more volume didn't bring small accounts more followers. Carousels are held, because the API can't give them audio and Instagram doesn't show silent carousels to non-followers. Judge each Reel 48–72 h after it posts by shares, likes, watch time and skip rate, not day-1 reach. Trial Reels open at 200 followers (`trial_params`).
 
 ## 7. What not to do
 
