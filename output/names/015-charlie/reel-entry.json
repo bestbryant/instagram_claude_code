@@ -1,0 +1,38 @@
+{
+  "id": "015",
+  "name": "Charlie",
+  "subtitle": "every Charlie's planet",
+  "hook": "Every Charlie gets this planet.",
+  "cover": "Everyone here is called Charlie.",
+  "beats": [
+    "Everyone on Charlie is called Charlie. They tried surnames. Also Charlie.",
+    "So they go by what they're holding. Charlie Nothing is having a day off."
+  ],
+  "odd_line": "They tried surnames. Those turned out to be Charlie as well.",
+  "story": "There are thirty-eight people on Charlie, and all of them are called Charlie. They tried surnames, but those turned out to be Charlie as well. So now everyone goes by whatever they're holding. Charlie Spade does the gardens. Charlie Spoon runs the café. Charlie Fish is not to be trusted with the café. Charlie Nothing is having a day off.",
+  "rule": "Anyone holding nothing is on holiday and must not be disturbed.",
+  "question": "How many Charlies do you know?",
+  "extra": "There was a Charlie Umbrella. It rained once and the whole system nearly collapsed.",
+  "facts": {},
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#charlie"
+  ],
+  "spec": {
+    "palette": "mint_dawn",
+    "terrain": "hills",
+    "horizon": 0.62,
+    "suns": 1,
+    "sun_x": 0.8,
+    "sun_y": 0.45,
+    "sun_size": 0.04,
+    "layers": 4,
+    "mist": 0.5,
+    "crowd": 6,
+    "sign": "POP. 38|ALL CHARLIE",
+    "stage": 0.74
+  },
+  "opener": "Everyone here is called Charlie.",
+  "kicker": "Every Charlie gets this planet."
+}

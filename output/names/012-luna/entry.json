@@ -3,16 +3,16 @@
   "name": "Luna",
   "subtitle": "every Luna's planet",
   "hook": "Every Luna gets this planet.",
-  "cover": "Named after a moon it doesn't have.",
+  "cover": "Luna has no moon. It’s named after one.",
   "beats": [
-    "Luna is named after a moon it has never had, and it takes this personally.",
-    "The moon fund has raised enough for one lamp. They point it at the sky on birthdays."
+    "It takes this personally.\nEvery spring there is a fund-raiser.",
+    "The moon fund has raised enough for one lamp.\nThey point it at the sky on birthdays."
   ],
   "odd_line": "The lamp has a waiting list. Birthdays get priority.",
   "story": "Luna is named after a moon it has never had, and it takes this very personally. Every spring there is a fund-raiser. So far they have raised enough for one large lamp on a tall pole, which is switched on and pointed at the sky for birthdays, anniversaries and anyone having a bad week.",
   "rule": "Do not mention other planets' moons in front of Luna.",
   "question": "Know a Luna? This one's theirs.",
-  "extra": "There is a fund-raiser every spring. Moons are expensive.",
+  "extra": "The lamp has a waiting list. Birthdays get priority.",
   "facts": {},
   "tags": [
     "#worldbuilding",
@@ -32,12 +32,12 @@
     "sign": "MOON FUND|3% RAISED",
     "stage": 0.74
   },
-  "opener": "Named after a moon it doesn't have.",
+  "opener": "Named after a moon it doesn't have.",
   "text_y": {
     "setup": 0.15,
     "punch": 0.12,
     "name": 0.12,
-    "cover": 0.12
+    "cover": 0.2
   },
   "camera": {
     "setup": {
@@ -46,8 +46,14 @@
         1.7
       ],
       "focus": [
-        0.6,
+        0.645,
         0.5
+      ]
+    },
+    "cover": {
+      "focus": [
+        0.61,
+        0.515
       ]
     }
   },

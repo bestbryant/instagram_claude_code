@@ -1,0 +1,70 @@
+{
+  "id": "003",
+  "name": "Hush",
+  "subtitle": "where sound arrives late",
+  "story": "Sound is slow on Hush. A shout across the valley arrives five days later, quieter, usually after everyone has moved on. Arguments are carried out by letter, which tends to calm them down. On a still day you can stand at the bottom of the valley and hear last week: dogs, a wedding, someone practising the trumpet badly. In March a man proposed across the valley. She has been thinking about it. Her answer is due on Thursday.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "none",
+    "Gravity": "1.1 g",
+    "Population": "9,300"
+  },
+  "hook": "A planet for people who reply to texts five days late.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#winter"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "hills",
+    "horizon": 0.6,
+    "snow": true,
+    "trees": "pines",
+    "house": true,
+    "particles": "snow",
+    "moons": 0,
+    "suns": 0,
+    "layers": 5,
+    "mist": 0.45,
+    "gag": "slow_shout",
+    "stage": 0.76
+  },
+  "cover": "Her answer arrives Thursday.",
+  "beats": [
+    "Sound is slow on Hush.\nA shout takes five days\nto cross the valley.",
+    "He proposed in March.\nShe's been thinking about it.\nHer answer arrives Thursday."
+  ],
+  "odd_line": "Arguments here are done by letter, which is why there are hardly any.",
+  "rule": "Shouts must be signed. Five days later it's hard to tell who started it.",
+  "question": "What's the longest you've ever taken to reply to a message?",
+  "extra": "I'll be in the valley on Thursday to hear the answer.",
+  "reel_lines": [
+    "Sound is slow on Hush.\nA shout takes five days\nto cross the valley.",
+    "He proposed in March.\nShe's been thinking about it.\nHer answer arrives Thursday."
+  ],
+  "opener": "Her answer arrives Thursday.",
+  "text_y": {
+    "setup": 0.12
+  },
+  "camera": {
+    "hook": {
+      "focus": [
+        0.5,
+        0.711
+      ]
+    },
+    "punch": {
+      "focus": [
+        0.7,
+        0.711
+      ]
+    },
+    "name": {
+      "focus": [
+        0.5,
+        0.711
+      ]
+    }
+  }
+}

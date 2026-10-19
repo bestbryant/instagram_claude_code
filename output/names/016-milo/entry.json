@@ -29,7 +29,9 @@
     "sun_size": 0.05,
     "layers": 5,
     "mist": 0.35,
-    "gag": "kettles",
-    "sign": "JUST ADD|WATER"
-  }
+    "gag": "stirrers",
+    "stage": 0.74
+  },
+  "opener": "The soil is chocolate malt.",
+  "kicker": "Every Milo gets this planet."
 }
