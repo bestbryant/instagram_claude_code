@@ -1074,7 +1074,9 @@ COAT = hexc("#e9b434")   # the cartographer's yellow coat, always its own ink
 def spec_inks(spec: Spec) -> list:
     """Inks a print must keep exactly: the cartographer's coat and any gag spot colour."""
     inks = [COAT] if spec.cartographer or spec.gag == "tiny_planet" else []
-    if spec.spot or spec.gag == "umbrella_feet":
+    # held umbrellas are spot-coloured too: crowds hold one in their default set, or by name
+    umbrellas = spec.crowd and ("umbrella" in spec.crowd_items if spec.crowd_items else spec.crowd >= 6)
+    if spec.spot or spec.gag == "umbrella_feet" or umbrellas:
         inks.append(hexc(spec.spot or "#c8452f"))
     return inks
 
