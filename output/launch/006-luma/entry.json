@@ -2,7 +2,7 @@
   "id": "006",
   "name": "Luma",
   "subtitle": "the close moon",
-  "story": "Once a year Luma's moon comes in so close that it hums, a low note you feel in your teeth. Children climb the hill with letters and press them against it as it drifts past. Most are never seen again. Every few years one comes back the following autumn, answered, in handwriting no one recognises. The longest reply so far ran to four pages and was mostly questions about dogs.",
+  "story": "Once a year Luma's moon comes in so close that it hums, a low note you feel in your teeth. Children climb the hill with letters and press them against it as it drifts past. Most are never seen again. Every few years one comes back the following autumn, answered, in handwriting no one recognises. The longest reply so far ran to eleven pages and was mostly questions about dogs.",
   "facts": {
     "Day": "28 hours",
     "Moons": "1, very close",
@@ -25,7 +25,8 @@
     "trees": "none",
     "layers": 4,
     "mist": 0.5,
-    "gag": "moon_letters"
+    "gag": "moon_letters",
+    "stage": 0.72
   },
   "cover": "Kids post letters to the moon.",
   "beats": [
@@ -39,5 +40,87 @@
   "reel_lines": [
     "Once a year the moon comes close enough to touch, so children press letters against it.",
     "Most never come back. Every few years one does, answered, in handwriting no one recognises."
-  ]
+  ],
+  "text_y": {
+    "name": 0.2
+  },
+  "episode": {
+    "opener": "The moon has questions about dogs.",
+    "beats": [
+      {
+        "text": "Each autumn it passes\nclose enough to touch.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.45,
+            0.47
+          ]
+        }
+      },
+      {
+        "text": "Children press letters to it.\nMost never come back.",
+        "shot": {
+          "framing": "sky",
+          "focus": [
+            0.45,
+            0.56
+          ],
+          "zoom": [
+            1.25,
+            1.3
+          ]
+        }
+      },
+      {
+        "text": "Every few years, one does.\nAnswered, in handwriting nobody recognises.",
+        "shot": "wide"
+      },
+      {
+        "text": "I read the longest one.\nEleven pages. Mostly dogs.\nA whole page on sticks.",
+        "shot": "cartographer",
+        "spec": {
+          "big_moon": false,
+          "moons": 1
+        }
+      },
+      {
+        "text": "Frank has written to the moon\nevery autumn of his life.\nNot one reply.",
+        "shot": "medium",
+        "spec": {
+          "big_moon": false,
+          "moons": 1
+        }
+      },
+      {
+        "text": "Still, he writes.\nMostly about his dogs.",
+        "shot": {
+          "framing": "gag",
+          "zoom": [
+            2.2,
+            2.35
+          ]
+        },
+        "spec": {
+          "big_moon": false,
+          "moons": 1
+        }
+      },
+      {
+        "text": "",
+        "shot": "wide",
+        "spec": {
+          "big_moon": false,
+          "moons": 1,
+          "palette": "mint_dawn"
+        },
+        "seconds": 2.5
+      },
+      {
+        "text": "This autumn, one came back.\n'Dear Biscuit,\nhow is Frank?'",
+        "shot": "wide"
+      }
+    ],
+    "end": "Allow one orbit for a reply.",
+    "caption": "Luma's moon comes round every October, low enough to clip the hilltops. You hear it a day before you see it: a hum in your back teeth. Every dog on the planet lies down.\n\nA letter pressed to the moon sticks for the whole orbit. Be polite: it has answered rude ones. The eleven-page reply ended with a drawing of a dog, done from description. It was mostly ears. So is Biscuit, Frank's eighth dog and the first to get post.\n\nIt has been late once, in 1987. It won't say where it went.\n\nOur own moon drifts 3.8 cm further away every year. Luma's keeps coming back.\n\nI went up this year and wrote about a cat called Everything. Nothing yet.\n\nWhat would you tell the moon about your dog?"
+  }
 }

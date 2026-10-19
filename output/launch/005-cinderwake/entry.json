@@ -2,7 +2,7 @@
   "id": "005",
   "name": "Cinderwake",
   "subtitle": "the warm canyons",
-  "story": "The ground on Cinderwake is warm all year, and so is the rain. At night the canyon walls glow a dull orange, enough to read by. Tea grows wild in the cracks. People leave their kettles out on the rock and come back when they whistle, and socks dry on the walls in about four minutes. The only stove on the planet is in a museum, behind a rope.",
+  "story": "The ground on Cinderwake is warm all year, and so is the rain. At night the canyon walls glow a dull orange, enough to read by. Tea grows wild in the cracks. People leave their kettles out on the rock and come back when they whistle, and socks dry on the walls in about ninety seconds. The only stove on the planet is in a museum, behind a rope.",
   "facts": {
     "Day": "40 hours",
     "Moons": "none",
@@ -29,19 +29,127 @@
     "layers": 5,
     "mist": 0.4,
     "gag": "kettles",
-    "glow_rims": true
+    "glow_rims": true,
+    "stage": 0.72
   },
   "cover": "The floor boils your kettle.",
   "beats": [
     "The ground is warm all year, warm enough to boil a kettle on.",
     "So kettles live outside on the rocks, and the only stove on the planet is in a museum, behind a rope."
   ],
-  "odd_line": "Socks dry on the canyon walls in about four minutes.",
+  "odd_line": "Socks dry on the canyon walls in about ninety seconds.",
   "rule": "A kettle left on public rock must be shared with whoever is cold.",
   "question": "Tea or coffee, if the floor boiled it for you?",
   "extra": "Heating bills are something grandparents mention to frighten children.",
   "reel_lines": [
     "The ground is warm all year, warm enough to boil a kettle on.",
     "So kettles live outside on the rocks, and the only stove on the planet is in a museum, behind a rope."
-  ]
+  ],
+  "episode": {
+    "opener": "The ground here\nboils your kettle.",
+    "beats": [
+      {
+        "text": "So kettles live outdoors.",
+        "shot": "gag"
+      },
+      {
+        "text": "The only stove on the planet\nis in a museum, behind a rope.",
+        "shot": "medium"
+      },
+      {
+        "text": "The oldest law on Cinderwake\nis about kettles.",
+        "shot": "sign",
+        "spec": {
+          "sign": "COLD?|HELP YOURSELF"
+        },
+        "seconds": 4.2
+      },
+      {
+        "text": "Nobody here is ever cold.\nWilf is.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.25
+          ],
+          "focus": [
+            0.8,
+            0.67
+          ]
+        }
+      },
+      {
+        "text": "So, legally, every kettle\non the planet is Wilf's.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.2,
+            1.28
+          ],
+          "focus": [
+            0.55,
+            0.67
+          ]
+        }
+      },
+      {
+        "text": "At dusk the kettles whistle.\nThe whole canyon looks round\nfor Wilf.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.2,
+            1.28
+          ],
+          "focus": [
+            0.55,
+            0.67
+          ]
+        },
+        "spec": {
+          "suns": 0,
+          "palette": "pumpkin",
+          "crowd": 6,
+          "crowd_items": "kettle",
+          "crowd_x": 0.42,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "He's had tea in every house\non Cinderwake.",
+        "shot": "crowd",
+        "spec": {
+          "suns": 0,
+          "palette": "pumpkin",
+          "crowd": 6,
+          "crowd_items": "kettle",
+          "crowd_x": 0.42,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "No warmer.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.25
+          ],
+          "focus": [
+            0.8,
+            0.67
+          ]
+        },
+        "spec": {
+          "suns": 0,
+          "palette": "pumpkin",
+          "crowd": 6,
+          "crowd_items": "kettle",
+          "crowd_x": 0.42,
+          "crowd_facing": "right"
+        }
+      }
+    ],
+    "end": "Wilf says bring a cardigan.",
+    "caption": "On a warm planet, one man is blowing on his hands.\n\nCinderwake is big and young and still cooling from the inside, so its heat comes up through the rock, not down from its sun. Towns grew round the hottest stones, the way ours grew round wells. You put a kettle down, wander off, and come back when it whistles. The rain falls warm, tea grows wild in the cracks, and socks dry on the canyon walls in about ninety seconds. Nights last twenty hours, and the canyon walls glow dull orange, enough to read by. The air is thicker than ours, so water boils at about 107°C and visitors burn their tongues. Heating bills are something grandparents mention to frighten children.\n\nI packed a hot-water bottle. It's in the museum now, next to the stove.\n\nEveryone knows a Wilf. Who's yours?"
+  }
 }

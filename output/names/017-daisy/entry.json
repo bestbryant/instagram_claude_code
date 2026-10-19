@@ -31,8 +31,148 @@
     "mist": 0.5,
     "daisies": 140,
     "crowd": 2,
-    "stage": 0.72
+    "stage": 0.72,
+    "crowd_items": "nothing,nothing",
+    "crowd_facing": "out",
+    "cartographer": false
   },
   "opener": "The flowers know if he loves you.",
-  "kicker": "Every Daisy gets this planet."
+  "kicker": "Every Daisy gets this planet.",
+  "episode": {
+    "opener": "The flowers know\nif he loves you.",
+    "beats": [
+      {
+        "text": "Nobody pulls petals.\nYou ask, and the meadow claps.\nOr boos.",
+        "shot": {
+          "framing": "close",
+          "focus": [
+            0.5,
+            0.76
+          ]
+        }
+      },
+      {
+        "text": "So first dates are held\nin the car park.",
+        "shot": "sign",
+        "spec": {
+          "daisies": 0,
+          "crowd": 0,
+          "sign": "CAR PARK|NO FLOWERS"
+        }
+      },
+      {
+        "text": "Bert walked round the meadow\nevery evening.\nThe long way.",
+        "shot": "left",
+        "spec": {
+          "cartographer": false
+        }
+      },
+      {
+        "text": "So did May.",
+        "shot": "right"
+      },
+      {
+        "text": "One evening,\nBert took the short way.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.35,
+            1.41
+          ],
+          "focus": [
+            0.5,
+            0.63
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "daisies": 0,
+          "crowd": 1,
+          "crowd_x": 0.455,
+          "crowd_facing": "in",
+          "crowd_items": "flower,nothing",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "So did May.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.41,
+            1.47
+          ],
+          "focus": [
+            0.5,
+            0.63
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "daisies": 0,
+          "crowd": 2,
+          "crowd_x": 0.5,
+          "crowd_facing": "in",
+          "crowd_items": "flower,nothing",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.47,
+            1.53
+          ],
+          "focus": [
+            0.5,
+            0.63
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "daisies": 420,
+          "crowd": 2,
+          "crowd_x": 0.5,
+          "crowd_facing": "in",
+          "crowd_items": "flower,nothing",
+          "cartographer": false
+        },
+        "seconds": 3.0
+      },
+      {
+        "text": "The meadow still claps\nfor them.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.53,
+            1.59
+          ],
+          "focus": [
+            0.5,
+            0.63
+          ]
+        },
+        "spec": {
+          "daisies": 420,
+          "crowd": 2,
+          "crowd_x": 0.5,
+          "crowd_facing": "in",
+          "crowd_items": "flower,nothing",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "Most days.",
+        "shot": "wide",
+        "spec": {
+          "cartographer": false
+        },
+        "seconds": 3.0
+      }
+    ],
+    "end": "Every Daisy gets a round of applause.",
+    "caption": "Second time through, look at where Bert and May are standing.\n\nDaisy is mostly meadow, and the daisies are never wrong. They answer out loud: light applause, or some booing. They may not be asked about third parties, which is why florists here need a licence and a good lawyer. The car park was built after one very loud first date. Like ours, they shut at dusk (the name comes from 'day's eye'), and it takes a lot to open them again. There's one path across the middle of the meadow now. It's theirs.\n\nI tried asking about someone back home. Third parties, apparently.\n\nWould you ask the flowers?"
+  }
 }

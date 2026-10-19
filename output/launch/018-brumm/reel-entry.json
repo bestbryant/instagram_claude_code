@@ -1,0 +1,147 @@
+{
+  "id": "018",
+  "name": "Brumm",
+  "subtitle": "the heavy coast",
+  "story": "Gravity on Brumm is twice ours, so the hills are low, the houses are one storey and nobody owns a ladder. By four, a child is too heavy to carry far. So, in the week they get too heavy, every child gets one Last Carry: the street closes the road, the neighbours come out to cheer, and a parent carries them wherever they choose. Most choose the bakery. Every child on Brumm is asleep by the end.",
+  "facts": {
+    "Day": "27 hours",
+    "Moons": "none",
+    "Gravity": "2 g",
+    "Population": "140,000"
+  },
+  "hook": "A planet for everyone who was carried home asleep.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#family"
+  ],
+  "spec": {
+    "palette": "rose_fog",
+    "terrain": "hills",
+    "horizon": 0.64,
+    "suns": 1,
+    "sun_x": 0.72,
+    "sun_y": 0.4,
+    "sun_size": 0.05,
+    "layers": 4,
+    "mist": 0.5,
+    "daisies": 0,
+    "crowd": 5,
+    "stage": 0.74,
+    "relief": 0.55,
+    "water": false,
+    "shore": "none",
+    "moons": 0,
+    "figure": false,
+    "gag": "",
+    "house": true,
+    "crowd_items": "nothing,nothing,child,nothing,nothing",
+    "crowd_facing": "in"
+  },
+  "cover": "Every child gets one last carry.",
+  "episode": {
+    "opener": "Every child here\ngets one last carry.",
+    "beats": [
+      {
+        "text": "Gravity here is twice ours.\nBy four, a child is\ntoo heavy to carry far.",
+        "shot": "sky"
+      },
+      {
+        "text": "Parents train for four years.\nMostly by carrying them.",
+        "shot": "close"
+      },
+      {
+        "text": "Neighbours line the road and cheer.",
+        "shot": "medium",
+        "spec": {
+          "sign": "LAST CARRY|ROAD CLOSED"
+        }
+      },
+      {
+        "text": "The child picks where to go.\nMost pick the bakery.",
+        "shot": "house"
+      },
+      {
+        "text": "Tomas picked the sea,\neight miles away.\nHis dad made it.",
+        "shot": "wide",
+        "spec": {
+          "palette": "gold_hour",
+          "suns": 1,
+          "sun_x": 0.55,
+          "sun_y": 0.6,
+          "sun_size": 0.06,
+          "water": true,
+          "shore": "left",
+          "crowd": 1,
+          "crowd_x": 0.55,
+          "crowd_items": "child",
+          "crowd_facing": "left",
+          "house": false,
+          "cartographer": false
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.1
+          ],
+          "focus": [
+            0.55,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "gold_hour",
+          "suns": 1,
+          "sun_x": 0.55,
+          "sun_y": 0.6,
+          "sun_size": 0.06,
+          "water": true,
+          "shore": "left",
+          "crowd": 1,
+          "crowd_x": 0.55,
+          "crowd_items": "child",
+          "crowd_facing": "left",
+          "house": false,
+          "cartographer": false
+        },
+        "seconds": 3.0
+      },
+      {
+        "text": "Every child on Brumm\nis asleep by the end.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.1
+          ],
+          "focus": [
+            0.55,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "gold_hour",
+          "suns": 1,
+          "sun_x": 0.55,
+          "sun_y": 0.6,
+          "sun_size": 0.06,
+          "water": true,
+          "shore": "left",
+          "crowd": 1,
+          "crowd_x": 0.55,
+          "crowd_items": "child_asleep",
+          "crowd_facing": "left",
+          "house": false,
+          "cartographer": false
+        }
+      }
+    ],
+    "end": "Carry them while they're light.",
+    "caption": "Keep an eye on the child's arm.\n\nGravity on Brumm is twice ours, so the hills are low, the houses are one storey and nobody owns a ladder. A four-year-old here weighs what a ten-year-old does on Earth. The Last Carry is a holiday for the child's whole street, held in the week they get too heavy to carry far. The road out of every town has a bench every half mile. The parents don't use them.\n\nI offered to take a turn for a mile. The whole road went quiet. You don't help with a Last Carry. You bring tea.\n\nTomas is at school now. He says he remembers the sea. His dad says he was asleep by mile six.\n\nOn Earth, nobody knows which carry is the last one. On Brumm, everybody does, so they close the road.\n\nWhere would you have picked?"
+  },
+  "_engine": 4
+}
