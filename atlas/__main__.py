@@ -390,6 +390,8 @@ def preflight(path: Path) -> str | None:
     import subprocess
     if not video_ok(path):
         return "video missing or broken"
+    if path.stat().st_size >= 19.5e6:
+        return "over jsDelivr's 20 MB file limit (re-encode at a lower bitrate)"
     r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
                         "-of", "csv=p=0", str(path)], capture_output=True, text=True, timeout=60)
     if r.stdout.strip() != "1080,1920":

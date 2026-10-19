@@ -148,7 +148,7 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
         _mix_ticks(wav, [float(starts[i]) for i, s in enumerate(shots) if s.tick and i > 0])
         cmd = ["ffmpeg", "-y", "-loglevel", "error",
                "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-", "-i", wav,
-               "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-maxrate", "7M", "-bufsize", "14M",
+               "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-maxrate", "3800k", "-bufsize", "7600k",   # stays under jsDelivr's 20 MB per file at 40 s
                "-pix_fmt", "yuv420p", "-profile:v", "high", "-r", str(fps),
                "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-shortest", "-movflags", "+faststart", "-f", "mp4", str(tmp_out)]
         proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
