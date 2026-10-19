@@ -41,7 +41,9 @@ def cover_shot(spec: Spec, seed: int, entry: dict):
     hook = entry.get("cover") or entry["hook"]
     y = entry.get("text_y", {}).get("cover", 0.24)
     card = overlay([dict(text=hook, y=y, kind="serif", weight="Medium", size=96, leading=1.1, **left)])
-    return Shot(1.0, spec, seed, pan=50, zoom=(1.7, 1.7), cards=[(card, 0, 1, 0, 0)])
+    cam = entry.get("camera", {}).get("cover", {})
+    return Shot(1.0, spec, seed, pan=50, zoom=tuple(cam.get("zoom", (1.7, 1.7))), focus=tuple(cam["focus"]) if "focus" in cam else None,
+                cards=[(card, 0, 1, 0, 0)])
 
 
 def reel_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = None) -> list:
