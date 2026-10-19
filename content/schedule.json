@@ -33,7 +33,9 @@
  {
   "day": 4,
   "entry": "003",
-  "kind": "reel"
+  "kind": "reel",
+  "not_before": "2026-10-20T21:30:00Z",
+  "note": "Hush part one: the room wants it Tuesday evening, two days before her answer lands (part two, Thursday 22:00 UTC)"
  },
  {
   "day": 7,

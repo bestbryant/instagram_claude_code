@@ -30,7 +30,11 @@
     "mist": 0.5,
     "lamp": true,
     "sign": "MOON FUND|3% RAISED",
-    "stage": 0.74
+    "stage": 0.74,
+    "crowd": 1,
+    "crowd_items": "book",
+    "crowd_x": 0.38,
+    "crowd_facing": "right"
   },
   "opener": "Named after a moon it doesn't have.",
   "text_y": {
@@ -58,5 +62,95 @@
     }
   },
   "kicker": "Every Luna gets this planet.",
+  "episode": {
+    "opener": "Luna has no moon.\nIt’s named after one.",
+    "beats": [
+      {
+        "text": "It takes this personally.",
+        "shot": "sky",
+        "spec": {}
+      },
+      {
+        "text": "In 1987, a moon came very close.\nIt didn’t stop.",
+        "shot": "wide",
+        "spec": {
+          "palette": "sepia",
+          "big_moon": true,
+          "lamp": false,
+          "sign": "",
+          "cartographer": false,
+          "crowd": 0
+        }
+      },
+      {
+        "text": "Every spring since, a fund-raiser.\nThey’re getting there.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.65,
+            1.75
+          ],
+          "focus": [
+            0.61,
+            0.515
+          ]
+        },
+        "spec": {}
+      },
+      {
+        "text": "Meanwhile,\nthey’ve bought a lamp.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            1.85
+          ],
+          "focus": [
+            0.5,
+            0.47
+          ]
+        },
+        "spec": {}
+      },
+      {
+        "text": "It’s lit for birthdays, anniversaries\nand anyone having a bad week.",
+        "shot": "medium",
+        "spec": {}
+      },
+      {
+        "text": "Mr Okafor keeps the waiting list.\n‘Birthdays first. No exceptions.’",
+        "shot": "crowd",
+        "spec": {}
+      },
+      {
+        "text": "Once a year, he makes one.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.65,
+            1.75
+          ],
+          "focus": [
+            0.61,
+            0.515
+          ]
+        },
+        "spec": {
+          "sign": "BOOKED TONIGHT|LUNA"
+        },
+        "seconds": 3.6
+      },
+      {
+        "text": "",
+        "shot": "sky",
+        "spec": {
+          "sign": "BOOKED TONIGHT|LUNA"
+        },
+        "seconds": 3.0
+      }
+    ],
+    "end": "Nobody says it’s a lamp.",
+    "caption": "Watch the sign by the lamp.\n\nLuna is named after a moon it has never had. In the autumn of 1987 one came very close, slowed down, and kept going. Nobody says its name. It knows what it did.\n\nThe Moon Fund has met every spring since: bake sales, a sponsored silence, one raffle that got out of hand. It stands at 3%. Meanwhile there's the lamp, on a forty-metre pole on the hill above town. When it comes on, the whole town goes 'ooh'. Every time. Mr Okafor keeps the waiting list in a ring binder at the post office. Bad weeks are on the honour system. The night it's booked for Luna is the anniversary. Nobody mentions that either.\n\nLocal rule: do not mention other planets' moons in front of Luna. Especially Luma's.\n\nEvery Luna is on the list. For life."
+  },
   "_engine": 4
 }
