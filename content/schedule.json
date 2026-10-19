@@ -108,7 +108,11 @@
  {
   "day": 6,
   "entry": "000",
-  "kind": "reel"
+  "kind": "reel",
+  "after": [
+   "003b",
+   "reel"
+  ]
  },
  {
   "day": 6,
