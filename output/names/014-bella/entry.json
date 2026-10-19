@@ -34,5 +34,126 @@
     "stage": 0.74
   },
   "opener": "Everything here is beautiful. By law.",
-  "kicker": "Every Bella gets this planet."
+  "kicker": "Every Bella gets this planet.",
+  "episode": {
+    "opener": "Everything here\nis beautiful.\nBy law.",
+    "beats": [
+      {
+        "text": "The new tax office was declared\n'genuinely beautiful'.",
+        "shot": "sign",
+        "spec": {
+          "cartographer": false
+        }
+      },
+      {
+        "text": "By a man who had\nclearly been told to.",
+        "shot": "medium",
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.45,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Teo thinks Nina is beautiful.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.36,
+            1.3
+          ],
+          "focus": [
+            0.59,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "gold_hour",
+          "sun_y": 0.44,
+          "crowd": 2,
+          "crowd_items": "nothing,nothing",
+          "crowd_x": 0.33,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "So, by law, is the tax office.",
+        "shot": "sign",
+        "spec": {
+          "palette": "gold_hour",
+          "sun_y": 0.44,
+          "cartographer": false
+        }
+      },
+      {
+        "text": "'Stunning'? Taken. The dentist.\n'Gorgeous'? The bins.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            2.05,
+            2.15
+          ]
+        },
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "moons": 1,
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.2,
+          "crowd_facing": "left"
+        }
+      },
+      {
+        "text": "So he rented\nthe tax office's sign.",
+        "shot": "sign",
+        "spec": {
+          "palette": "mint_dawn",
+          "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE",
+          "cartographer": false
+        },
+        "seconds": 4.5
+      },
+      {
+        "text": "The most romantic sentence\nin Bella's history.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.36,
+            1.3
+          ],
+          "focus": [
+            0.59,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "mint_dawn",
+          "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE",
+          "crowd": 2,
+          "crowd_items": "nothing,nothing",
+          "crowd_x": 0.33,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Legally,\nan insult to a building.",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.85,
+            2.0
+          ]
+        },
+        "spec": {
+          "palette": "mint_dawn",
+          "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE",
+          "cartographer": false
+        }
+      }
+    ],
+    "end": "Every Bella outranks the tax office.",
+    "caption": "The tax office would like a word.\n\nBella is low blue hills, one long view of the sea, and the Beauty Act. It passed in a hurry, the morning after the old mayor called his own wedding 'fine'. Saying 'fine' now costs three compliments, paid in person, and 'not bad' is under review. The tax office has a perfect five-star rating, because leaving fewer stars is not beautiful. Teo was fined for insulting a public building by comparison. Nina had the fine framed. I called the view 'fine' on my first morning. I still owe one compliment.\n\nWhat would your sign say?"
+  }
 }

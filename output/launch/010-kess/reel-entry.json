@@ -28,7 +28,8 @@
     "layers": 5,
     "mist": 0.4,
     "gag": "road_tourists",
-    "stage": 0.7
+    "stage": 0.62,
+    "stars": 0.0
   },
   "cover": "They stopped looking up.",
   "beats": [
@@ -59,5 +60,94 @@
       ]
     }
   },
+  "episode": {
+    "opener": "On Kess, only tourists look up.",
+    "beats": [
+      {
+        "text": "The aurora has been on\nsince before anyone\nwrote things down.",
+        "shot": "sky"
+      },
+      {
+        "text": "Locals step round them\nwithout breaking stride.",
+        "shot": {
+          "framing": "left",
+          "zoom": [
+            1.65,
+            1.8
+          ],
+          "focus": [
+            "x",
+            0.36
+          ]
+        }
+      },
+      {
+        "text": "The bus timetable allows\nthree minutes per tourist.",
+        "shot": "sign",
+        "spec": {
+          "sign": "TOURISTS LYING DOWN|PLEASE KEEP LEFT"
+        }
+      },
+      {
+        "text": "Arne, 44, walks this road to work.\nHe hasn't looked up\nsince he was six.",
+        "shot": {
+          "framing": "right",
+          "zoom": [
+            1.55,
+            1.75
+          ],
+          "focus": [
+            "x",
+            0.76
+          ]
+        }
+      },
+      {
+        "text": "Then one night, it went out.",
+        "shot": "wide",
+        "spec": {
+          "aurora": false
+        },
+        "seconds": 4.0
+      },
+      {
+        "text": "Arne looked up.",
+        "shot": "sky",
+        "spec": {
+          "aurora": false
+        },
+        "seconds": 3.0
+      },
+      {
+        "text": "Behind it, all this time,\nthere had been stars.",
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.45,
+            1.6
+          ],
+          "focus": [
+            0.5,
+            0.22
+          ]
+        },
+        "spec": {
+          "aurora": false,
+          "stars": 7.0
+        }
+      },
+      {
+        "text": "Four minutes later,\nit was back on.",
+        "shot": "sign",
+        "spec": {
+          "sign": "LOCALS LYING DOWN|PLEASE KEEP LEFT"
+        },
+        "seconds": 4.0
+      }
+    ],
+    "end": "That night, everyone was a tourist.",
+    "caption": "Watch the man walking on the right.\n\nKess: 250,000 people, a 21-hour day, no moons, and an aurora bright enough to cast shadows. A local who looks up at it by accident has to sit on the kerb for a minute. The night it went out, every kerb on Kess was full. I was lying in the left lane outside the laundrette, where the road stays warm. For four minutes, nobody stepped round me.\n\nNobody knows why it went out. The council put up a plaque about it at eye level, so nobody has read it. The buses now allow three minutes per local.\n\n(On Earth, the brightest aurora lights the ground about as well as a full moon, and a full moon cuts the stars you can see from a few thousand to a few hundred.)\n\nWhat did you stop noticing where you live?"
+  },
+  "first_comment": "Earth's aurora runs on the solar wind. On 10-11 May 1999, that wind almost stopped.",
   "_engine": 4
 }
