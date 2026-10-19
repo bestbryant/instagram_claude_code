@@ -223,9 +223,18 @@ def _publish(folder: Path, kind: str, base_url: str, dry_run: bool):
         slides = sorted((f.name for f in folder.glob("[0-9]*-*.jpg")), key=lambda n: int(n.split("-")[0]))
         return p.carousel([url(f) for f in slides], cap)
     cap = (folder / "caption-reel.txt").read_text().strip()
-    name = json.loads((folder / "reel-entry.json").read_text()).get("name", "") if (folder / "reel-entry.json").exists() else ""
-    return p.reel(_video_url(folder / "reel.mp4", dry_run), cap, cover_url=url("reel-cover.jpg"),
-                  audio_name=f"Atlas of Elsewhere · {name}" if name else None)
+    entry = json.loads((folder / "reel-entry.json").read_text()) if (folder / "reel-entry.json").exists() else {}
+    name = entry.get("name", "")
+    media = p.reel(_video_url(folder / "reel.mp4", dry_run), cap, cover_url=url("reel-cover.jpg"),
+                   audio_name=f"Atlas of Elsewhere · {name}" if name else None)
+    epilogue = content_entries().get(entry.get("id"), {}).get("first_comment")
+    if epilogue and not dry_run:
+        # the planet's one-line epilogue, as the first comment (the owner can pin it from the app)
+        try:
+            p.comment(media, epilogue)
+        except Exception as err:   # the Reel is up either way
+            print("epilogue comment failed:", err)
+    return media
 
 
 def _video_url(path: Path, dry_run: bool = False) -> str:
@@ -405,9 +414,11 @@ def check_item(item, folder, entries) -> str | None:
     src = entries.get(item["entry"])
     rendered = folder / ("reel-entry.json" if item["kind"] == "reel" else "entry.json")
     # fields only the other format uses don't make this one stale
-    skip = {"framing", "odd_line", "rule", "subtitle", "facts", "_engine"} if item["kind"] == "reel" else {"camera", "text_y", "opener", "kicker", "cta"}
+    skip = ({"framing", "odd_line", "rule", "subtitle", "facts", "_engine"} if item["kind"] == "reel" else {"camera", "text_y", "opener", "kicker", "cta", "episode"}) | {"first_comment"}
     if item["kind"] == "reel" and rendered.exists() and json.loads(rendered.read_text()).get("_engine") != ENGINE:
         return "stale: rendered with an older Reel engine"
+    if item["kind"] == "reel" and src is not None and not src.get("episode"):
+        return "waiting for its story episode"      # every Reel from here on is a story; older cuts stay unposted
     same = lambda a, b: {k: v for k, v in a.items() if k not in skip} == {k: v for k, v in b.items() if k not in skip}
     if src is not None and (not rendered.exists() or not same(json.loads(rendered.read_text()), src)):
         return "stale: content changed since it was rendered"
