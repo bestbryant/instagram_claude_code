@@ -125,9 +125,10 @@ def story_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = N
                     dict(text=entry["name"], y=ty + 0.035, kind="serif", weight="Medium", size=170),
                     dict(text=end, y=ty + 0.145, kind="italic", size=46)])
     ncam = entry.get("camera", {}).get("name", {})
-    shots.append(Shot(2.6, spec, seed, pan=50, zoom=tuple(ncam.get("zoom", (1.08, 1.0))),
+    t_end = max(2.6, read(end, 1.4))     # the end line is the one people screenshot: long enough to read twice
+    shots.append(Shot(t_end, spec, seed, pan=50, zoom=tuple(ncam.get("zoom", (1.08, 1.0))),
                       focus=tuple(ncam["focus"]) if "focus" in ncam else (tuple(cam["focus"]) if "focus" in cam else None),
-                      cards=[(name, 0.0, 2.6, 0.0, 0.0)], tick=True, reverse=True))
+                      cards=[(name, 0.0, t_end, 0.0, 0.0)], tick=True, reverse=True))
     return shots
 
 

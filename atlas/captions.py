@@ -106,6 +106,7 @@ GAG_ALT = {
     "fainted_ghost": "a small ghost that has fainted on the grass and a person looking down at it",
     "megaphones": "three people shouting through megaphones, sound rings spreading from each one",
     "stirrers": "people stirring the brown ground with giant wooden spoons",
+    "moth_roof": "a cottage with one lit window and a moth the size of a kite sitting on its roof, looking in",
 }
 
 

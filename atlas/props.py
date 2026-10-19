@@ -13,7 +13,7 @@ from types import SimpleNamespace
 import numpy as np
 
 from .render import COAT as YELLOW
-from .render import glow, hexc, mix, round_tree, stamp
+from .render import glow, hexc, mix, moth, round_tree, stamp
 
 LIGHT = hexc("#f1e9d8")
 
@@ -590,6 +590,25 @@ def _gag_stirrers(ctx):
 ITEMS = ["spade", "spoon", "nothing", "book", "fish", "umbrella", "cup"]   # also: flower, kettle, child, child_asleep (by name)
 
 
+def _gag_moth_roof(ctx):
+    """A cottage with a lit window and a kite-sized moth sitting on its roof, looking in (when the planet has moths)."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    if ctx.stage_y is None:
+        _stage(ctx, 0.74)
+    x = W * 0.42
+    y = _ground(ctx, x)
+    s = H * 0.085
+    _ink(ctx, layer, house(x, y, s), ctx.dark)
+    if layer.E is None:
+        layer.E = np.zeros_like(layer.P)
+    _ink(ctx, layer, [("poly", [(x - s * .22, y - s * .45), (x + s * .02, y - s * .45), (x + s * .02, y - s * .22), (x - s * .22, y - s * .22)])], ctx.pal.light)
+    glow(layer.E, x - s * .1, y - s * .33, s * .2, ctx.pal.light, 0.9)
+    if ctx.spec.moths:
+        _ink(ctx, layer, moth(x + s * 0.12, y - s * 1.08, s * 0.42), ctx.dark)
+    ctx.marks["house"] = (x / W, (y - s / 2) / H)
+    ctx.focus = (x / W, (y - s * 0.7) / H)
+
+
 def _held(ctx, layer, kind, hx, hy, h):
     # held up and printed light, so they read against the dark figures
     if kind == "spade":
@@ -772,7 +791,7 @@ GAGS = {
     "pole_post": _gag_pole_post, "kettles": _gag_kettles, "moon_letters": _gag_moon_letters,
     "glass_surfers": _gag_glass_surfers, "tiny_planet": _gag_tiny_planet, "umbrella_feet": _gag_umbrella_feet,
     "road_tourists": _gag_road_tourists, "tree_cloud": _gag_tree_cloud, "fainted_ghost": _gag_fainted_ghost,
-    "megaphones": _gag_megaphones, "stirrers": _gag_stirrers,
+    "megaphones": _gag_megaphones, "stirrers": _gag_stirrers, "moth_roof": _gag_moth_roof,
 }
 
 
