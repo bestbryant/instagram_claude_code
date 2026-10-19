@@ -187,10 +187,124 @@
       "layers": 5,
       "mist": 0.4,
       "gag": "megaphones",
-      "stage": 0.74
+      "stage": 0.74,
+      "crowd": 1,
+      "crowd_items": "book",
+      "crowd_x": 0.6,
+      "crowd_facing": "left"
     },
     "opener": "Everything is set to maximum.",
-    "kicker": "Every Max gets this planet."
+    "kicker": "Every Max gets this planet.",
+    "text_y": {
+      "name": 0.2
+    },
+    "episode": {
+      "opener": "Nothing here has\na quiet setting.",
+      "beats": [
+        {
+          "text": "There used to be one.\nIt was removed by public vote.",
+          "shot": "wide",
+          "spec": {
+            "palette": "sepia",
+            "gag": "",
+            "sun_size": 0.04,
+            "sun_y": 0.42,
+            "mist": 0.7,
+            "crowd": 0
+          }
+        },
+        {
+          "text": "The vote was very loud.",
+          "shot": "gag"
+        },
+        {
+          "text": "Even the library is loud.\nIt had to compete.",
+          "shot": "sign",
+          "spec": {
+            "sign": "PUBLIC LIBRARY|NO WHISPERING"
+          }
+        },
+        {
+          "text": "Whispering requires a licence.\nYou apply by shouting.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.2,
+              1.25
+            ],
+            "focus": [
+              0.6,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "Only one was ever issued,\nto Nell, aged seven.\nI've seen it. It's laminated.",
+          "shot": "cartographer"
+        },
+        {
+          "text": "Seventy-nine years later,\nNell used it.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.25,
+              1.35
+            ],
+            "focus": [
+              0.42,
+              0.63
+            ]
+          },
+          "spec": {
+            "sign": "PUBLIC LIBRARY|NO WHISPERING",
+            "cartographer": false
+          }
+        },
+        {
+          "text": "'Shh.'",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.35,
+              1.4
+            ],
+            "focus": [
+              0.42,
+              0.63
+            ]
+          },
+          "spec": {
+            "sign": "PUBLIC LIBRARY|NO WHISPERING",
+            "cartographer": false,
+            "palette": "sepia",
+            "gag": "",
+            "sun_size": 0.04,
+            "sun_y": 0.42,
+            "mist": 0.7
+          }
+        },
+        {
+          "text": "It worked.",
+          "shot": "wide",
+          "spec": {
+            "sign": "PUBLIC LIBRARY|NO WHISPERING",
+            "cartographer": false,
+            "palette": "sepia",
+            "gag": "",
+            "sun_size": 0.04,
+            "sun_y": 0.42,
+            "mist": 0.7
+          },
+          "seconds": 2.6
+        },
+        {
+          "text": "Now everyone shushes.\nAt maximum.",
+          "shot": "gag"
+        }
+      ],
+      "end": "There's going to be a vote.",
+      "caption": "Someone between the megaphones isn't shouting.\n\nThe sun is on its brightest setting, and so are the birds. The rivers run at full volume. Bedtime is set to maximum too, and nobody has reached it yet.\n\nNell got the planet's only whispering licence at seven, because she was the only child on Max who had never been told to keep it down. She grew up to be the librarian and kept it in a drawer at the issue desk, unspent, for seventy-nine years. The quiet didn't last. The shushing has.\n\nI applied for a licence while I was there. Turned down: nobody heard me apply.\n\nWhat would you spend one whisper on?"
+    }
   },
   {
     "id": "014",
@@ -228,7 +342,128 @@
       "stage": 0.74
     },
     "opener": "Everything here is beautiful. By law.",
-    "kicker": "Every Bella gets this planet."
+    "kicker": "Every Bella gets this planet.",
+    "episode": {
+      "opener": "Everything here\nis beautiful.\nBy law.",
+      "beats": [
+        {
+          "text": "The new tax office was declared\n'genuinely beautiful'.",
+          "shot": "sign",
+          "spec": {
+            "cartographer": false
+          }
+        },
+        {
+          "text": "By a man who had\nclearly been told to.",
+          "shot": "medium",
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.45,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Teo thinks Nina is beautiful.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.36,
+              1.3
+            ],
+            "focus": [
+              0.59,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "gold_hour",
+            "sun_y": 0.44,
+            "crowd": 2,
+            "crowd_items": "nothing,nothing",
+            "crowd_x": 0.33,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "So, by law, is the tax office.",
+          "shot": "sign",
+          "spec": {
+            "palette": "gold_hour",
+            "sun_y": 0.44,
+            "cartographer": false
+          }
+        },
+        {
+          "text": "'Stunning'? Taken. The dentist.\n'Gorgeous'? The bins.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              2.05,
+              2.15
+            ]
+          },
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0,
+            "moons": 1,
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.2,
+            "crowd_facing": "left"
+          }
+        },
+        {
+          "text": "So he rented\nthe tax office's sign.",
+          "shot": "sign",
+          "spec": {
+            "palette": "mint_dawn",
+            "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE",
+            "cartographer": false
+          },
+          "seconds": 4.5
+        },
+        {
+          "text": "The most romantic sentence\nin Bella's history.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.36,
+              1.3
+            ],
+            "focus": [
+              0.59,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "mint_dawn",
+            "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE",
+            "crowd": 2,
+            "crowd_items": "nothing,nothing",
+            "crowd_x": 0.33,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Legally,\nan insult to a building.",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.85,
+              2.0
+            ]
+          },
+          "spec": {
+            "palette": "mint_dawn",
+            "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE",
+            "cartographer": false
+          }
+        }
+      ],
+      "end": "Every Bella outranks the tax office.",
+      "caption": "The tax office would like a word.\n\nBella is low blue hills, one long view of the sea, and the Beauty Act. It passed in a hurry, the morning after the old mayor called his own wedding 'fine'. Saying 'fine' now costs three compliments, paid in person, and 'not bad' is under review. The tax office has a perfect five-star rating, because leaving fewer stars is not beautiful. Teo was fined for insulting a public building by comparison. Nina had the fine framed. I called the view 'fine' on my first morning. I still owe one compliment.\n\nWhat would your sign say?"
+    }
   },
   {
     "id": "015",
@@ -241,7 +476,7 @@
       "So they go by what they're holding. Charlie Nothing is having a day off."
     ],
     "odd_line": "They tried surnames. Those turned out to be Charlie as well.",
-    "story": "There are thirty-eight people on Charlie, and all of them are called Charlie. They tried surnames, but those turned out to be Charlie as well. So now everyone goes by whatever they're holding. Charlie Spade does the gardens. Charlie Spoon runs the café. Charlie Fish is not to be trusted with the café. Charlie Nothing is having a day off.",
+    "story": "There are thirty-eight people on Charlie, and all of them are called Charlie. They tried surnames, but those turned out to be Charlie as well. So now everyone goes by whatever they're holding. Charlie Spade does the gardens. Charlie Cup runs the café. Charlie Kettle is not to be trusted with the café. Charlie Nothing is having a day off.",
     "rule": "Anyone holding nothing is on holiday and must not be disturbed.",
     "question": "How many Charlies do you know?",
     "extra": "There was a Charlie Umbrella. It rained once and the whole system nearly collapsed.",
@@ -263,10 +498,111 @@
       "mist": 0.5,
       "crowd": 6,
       "sign": "POP. 38|ALL CHARLIE",
-      "stage": 0.74
+      "stage": 0.74,
+      "crowd_items": "spade,kettle,nothing,cup,kettle,spade"
     },
     "opener": "Everyone here is called Charlie.",
-    "kicker": "Every Charlie gets this planet."
+    "kicker": "Every Charlie gets this planet.",
+    "episode": {
+      "opener": "Everyone here\nis called Charlie.",
+      "beats": [
+        {
+          "text": "They tried surnames.\nAlso Charlie.",
+          "shot": "sign"
+        },
+        {
+          "text": "So you go by what you're holding.\nCharlie Cup runs the café.",
+          "shot": {
+            "framing": "close",
+            "focus": [
+              "x",
+              0.29
+            ]
+          }
+        },
+        {
+          "text": "Charlie Nothing\nis having a day off.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.4,
+              2.55
+            ],
+            "focus": [
+              "x",
+              0.264
+            ]
+          }
+        },
+        {
+          "text": "They called me Charlie Map.",
+          "shot": {
+            "framing": "cartographer",
+            "focus": [
+              0.77,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "When the café turned thirty,\nit gave everyone a free cup.",
+          "shot": "wide",
+          "spec": {
+            "palette": "abyss",
+            "crowd_items": "cup"
+          }
+        },
+        {
+          "text": "Thirty-eight Charlie Cups.\nOn his big day,\nnobody knew which was him.",
+          "shot": {
+            "framing": "close",
+            "focus": [
+              "x",
+              0.29
+            ]
+          },
+          "spec": {
+            "palette": "abyss",
+            "crowd_items": "cup"
+          }
+        },
+        {
+          "text": "Then they put them down.\nThirty-seven Charlies, on holiday.",
+          "shot": {
+            "framing": "close",
+            "focus": [
+              "x",
+              0.29
+            ]
+          },
+          "spec": {
+            "palette": "abyss",
+            "crowd_items": "nothing,nothing,nothing,cup,nothing,nothing"
+          }
+        },
+        {
+          "text": "He's Charlie Washing-Up now.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.4,
+              2.55
+            ],
+            "focus": [
+              "x",
+              0.32
+            ]
+          },
+          "spec": {
+            "palette": "abyss",
+            "crowd_items": "nothing,nothing,nothing,cup,nothing,nothing"
+          },
+          "seconds": 3.0
+        }
+      ],
+      "end": "You'd be Charlie Phone.",
+      "caption": "Frame one: find Charlie Cup.\n\nThere are thirty-eight people on Charlie, and every one of them is Charlie. Shout 'Charlie!' in the market and the whole street turns round. Babies are Charlie Nothing until they grab something, which is why nobody here wakes a baby. Hands in pockets count as holding nothing, so you can take a day off anywhere.\n\nThe morning after the party, thirty-seven Charlies were on holiday, so I dried. For a week I was Charlie Tea Towel.\n\nWelsh villages with too many Joneses did the same thing: Jones the Milk, Jones the Post.\n\nWhat's your Charlie always holding?"
+    }
   },
   {
     "id": "016",
@@ -300,10 +636,72 @@
       "layers": 5,
       "mist": 0.35,
       "gag": "stirrers",
-      "stage": 0.74
+      "stage": 0.74,
+      "sign": "DO NOT EAT|THE MOUNTAINS"
     },
     "opener": "The soil is chocolate malt.",
-    "kicker": "Every Milo gets this planet."
+    "kicker": "Every Milo gets this planet.",
+    "episode": {
+      "opener": "The soil here\nis chocolate malt.",
+      "beats": [
+        {
+          "text": "Three metres deep.\nFarming is mostly stirring.",
+          "shot": "right"
+        },
+        {
+          "text": "Those aren't mountains.",
+          "shot": "wide",
+          "seconds": 3.0
+        },
+        {
+          "text": "They're lumps.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.62,
+              0.5
+            ]
+          }
+        },
+        {
+          "text": "When it rains,\nthe whole planet smells like\nthe bottom of a school mug.",
+          "shot": "wide",
+          "spec": {
+            "particles": "rain",
+            "palette": "crimson",
+            "suns": 0
+          }
+        },
+        {
+          "text": "Everyone stirs all night.\nNobody wants another mountain.",
+          "shot": "medium",
+          "spec": {
+            "palette": "teal_night"
+          }
+        },
+        {
+          "text": "At dawn the children\ngo out with spoons.\nLumps are the best bit.",
+          "shot": "crowd",
+          "spec": {
+            "gag": "",
+            "crowd": 3,
+            "crowd_items": "spoon",
+            "crowd_x": 0.3,
+            "sign": "",
+            "sun_y": 0.5
+          }
+        },
+        {
+          "text": "The farmers are very careful\nto miss a few.",
+          "shot": "right",
+          "spec": {
+            "sun_y": 0.5
+          }
+        }
+      ],
+      "end": "One spoonful of mountain per Milo.",
+      "caption": "Look again at the mountains.\n\nThe soil on Milo is malted chocolate powder, three metres deep, and the rain falls warm. Everyone here is cheerful and very slightly over-energetic. Morale is excellent. The tallest lump dates from a very good party in 1911. Dunking biscuits in the river is against the law, and a few grown-ups still eat the field dry, by the spoonful, which the others consider showing off.\n\nI went out with the children at dawn. I found four.\n\nOn Earth, malt powder lumps the same way: the outside of a clump turns sticky and seals the dry powder in, which is why the lumps crunch.\n\nLumps: the best bit, or bad stirring?"
+    }
   },
   {
     "id": "017",
@@ -338,9 +736,149 @@
       "mist": 0.5,
       "daisies": 140,
       "crowd": 2,
-      "stage": 0.72
+      "stage": 0.72,
+      "crowd_items": "nothing,nothing",
+      "crowd_facing": "out",
+      "cartographer": false
     },
     "opener": "The flowers know if he loves you.",
-    "kicker": "Every Daisy gets this planet."
+    "kicker": "Every Daisy gets this planet.",
+    "episode": {
+      "opener": "The flowers know\nif he loves you.",
+      "beats": [
+        {
+          "text": "Nobody pulls petals.\nYou ask, and the meadow claps.\nOr boos.",
+          "shot": {
+            "framing": "close",
+            "focus": [
+              0.5,
+              0.76
+            ]
+          }
+        },
+        {
+          "text": "So first dates are held\nin the car park.",
+          "shot": "sign",
+          "spec": {
+            "daisies": 0,
+            "crowd": 0,
+            "sign": "CAR PARK|NO FLOWERS"
+          }
+        },
+        {
+          "text": "Bert walked round the meadow\nevery evening.\nThe long way.",
+          "shot": "left",
+          "spec": {
+            "cartographer": false
+          }
+        },
+        {
+          "text": "So did May.",
+          "shot": "right"
+        },
+        {
+          "text": "One evening,\nBert took the short way.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.35,
+              1.41
+            ],
+            "focus": [
+              0.5,
+              0.63
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "daisies": 0,
+            "crowd": 1,
+            "crowd_x": 0.455,
+            "crowd_facing": "in",
+            "crowd_items": "flower,nothing",
+            "cartographer": false
+          }
+        },
+        {
+          "text": "So did May.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.41,
+              1.47
+            ],
+            "focus": [
+              0.5,
+              0.63
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "daisies": 0,
+            "crowd": 2,
+            "crowd_x": 0.5,
+            "crowd_facing": "in",
+            "crowd_items": "flower,nothing",
+            "cartographer": false
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.47,
+              1.53
+            ],
+            "focus": [
+              0.5,
+              0.63
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "daisies": 420,
+            "crowd": 2,
+            "crowd_x": 0.5,
+            "crowd_facing": "in",
+            "crowd_items": "flower,nothing",
+            "cartographer": false
+          },
+          "seconds": 3.0
+        },
+        {
+          "text": "The meadow still claps\nfor them.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.53,
+              1.59
+            ],
+            "focus": [
+              0.5,
+              0.63
+            ]
+          },
+          "spec": {
+            "daisies": 420,
+            "crowd": 2,
+            "crowd_x": 0.5,
+            "crowd_facing": "in",
+            "crowd_items": "flower,nothing",
+            "cartographer": false
+          }
+        },
+        {
+          "text": "Most days.",
+          "shot": "wide",
+          "spec": {
+            "cartographer": false
+          },
+          "seconds": 3.0
+        }
+      ],
+      "end": "Every Daisy gets a round of applause.",
+      "caption": "Second time through, look at where Bert and May are standing.\n\nDaisy is mostly meadow, and the daisies are never wrong. They answer out loud: light applause, or some booing. They may not be asked about third parties, which is why florists here need a licence and a good lawyer. The car park was built after one very loud first date. Like ours, they shut at dusk (the name comes from 'day's eye'), and it takes a lot to open them again. There's one path across the middle of the meadow now. It's theirs.\n\nI tried asking about someone back home. Third parties, apparently.\n\nWould you ask the flowers?"
+    }
   }
 ]

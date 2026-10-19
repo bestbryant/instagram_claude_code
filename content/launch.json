@@ -25,7 +25,10 @@
       "figure": true,
       "trees": "pines",
       "mist": 0.6,
-      "layers": 5
+      "layers": 5,
+      "stage": 0.72,
+      "crowd": 6,
+      "crowd_items": "cup,spoon,book,fish,cup,nothing"
     },
     "cover": "Every name has a planet.",
     "beats": [
@@ -39,7 +42,90 @@
     "reel_lines": [
       "I keep an atlas of places that aren't on any map.",
       "Leave a name and I'll go and find where it lives."
-    ]
+    ],
+    "episode": {
+      "opener": "You've been\nto this planet.\nProbably today.",
+      "beats": [
+        {
+          "text": "This is Elsewhere.\nWhere you go\nwhen you're 'miles away'.",
+          "shot": {
+            "framing": "sky",
+            "focus": [
+              0.68,
+              0.25
+            ]
+          }
+        },
+        {
+          "text": "You arrive holding whatever\nwas in your hand.\nA spoon. Once, a fish.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.45,
+              1.55
+            ]
+          }
+        },
+        {
+          "text": "It's busiest on Monday mornings, and during meetings.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.2
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "Nobody stays long.\nSomebody says your name,\nand you're back.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.2
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 0
+          }
+        },
+        {
+          "text": "Except me.\nNobody's called me back in years.",
+          "shot": "cartographer",
+          "spec": {
+            "crowd": 0
+          }
+        },
+        {
+          "text": "So I write down\neveryone else's names,\nand find where each one lives.",
+          "shot": {
+            "framing": "cartographer",
+            "zoom": [
+              2.15,
+              1.45
+            ]
+          },
+          "spec": {
+            "crowd": 0
+          }
+        },
+        {
+          "text": "Look for me.\nYellow coat. Still here.",
+          "shot": "wide"
+        }
+      ],
+      "end": "Every name has a planet. Yours too.",
+      "caption": "On the replay, look at the far left of the first frame.\n\nElsewhere is the first page of the atlas, and the only planet everyone has been to. You arrive the moment you drift off, halfway through a sentence or a recipe or a meeting, still holding whatever you were holding. The ringed giant never quite sets, so it's always about twenty to eight in the evening. Most people stay a few seconds. Then somebody says your name and you're home, and the spoon comes with you.\n\nPeak hours are Monday mornings and the last ten minutes of any meeting. The record is twenty-six minutes, set during a meeting about another meeting.\n\nI drifted off a long time ago, and nobody called me back. So I stayed, and started an atlas. Most of the pages are still blank.\n\nI'd tell you my name, but it doesn't count if I say it myself."
+    },
+    "first_comment": "Someone just shouted 'Dave' across an office. Four people vanished at once."
   },
   {
     "id": "001",
@@ -126,7 +212,8 @@
       "layers": 5,
       "mist": 0.5,
       "gag": "seabed_town",
-      "stage": 0.72
+      "stage": 0.72,
+      "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!|WE DIDN'T."
     },
     "cover": "Everyone packs the night before.",
     "beats": [
@@ -140,7 +227,114 @@
     "reel_lines": [
       "The tide comes back once every eleven years. Whole towns are built on the seabed in between.",
       "Everyone knows the date. Everyone still packs the night before."
-    ]
+    ],
+    "episode": {
+      "opener": "This town is\nat the bottom of the sea.",
+      "beats": [
+        {
+          "text": "The tide's just out.\nThe giant borrows it\nfor eleven years.",
+          "shot": "sky"
+        },
+        {
+          "text": "So they build: houses, a school,\na very optimistic swimming pool.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.5,
+              0.6
+            ],
+            "zoom": [
+              1.3,
+              1.4
+            ]
+          }
+        },
+        {
+          "text": "Everyone knows the date.\nEveryone still packs\nthe night before.",
+          "shot": {
+            "framing": "gag",
+            "focus": [
+              0.24,
+              0.575
+            ],
+            "zoom": [
+              1.95,
+              2.05
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "suns": 0,
+            "giant_x": 0.5,
+            "giant_y": 0.1
+          }
+        },
+        {
+          "text": "Houses come down plank by plank,\nall season.\nThe mugs take all night.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.5,
+              0.6
+            ],
+            "zoom": [
+              1.3,
+              1.4
+            ]
+          },
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0,
+            "giant_x": 0.5,
+            "giant_y": 0.1
+          }
+        },
+        {
+          "text": "Nobody packs the sign.\nEach town adds a line.",
+          "shot": "sign",
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0,
+            "giant_x": 0.5,
+            "giant_y": 0.1
+          },
+          "seconds": 4.8
+        },
+        {
+          "text": "The tide does not do extensions.",
+          "shot": "wide",
+          "spec": {
+            "water": true,
+            "gag": "",
+            "giant_x": 0.5,
+            "giant_y": 0.1
+          },
+          "seconds": 3.1
+        },
+        {
+          "text": "The pool is finally full.",
+          "shot": {
+            "framing": "left",
+            "focus": [
+              0.22,
+              0.55
+            ],
+            "zoom": [
+              2.0,
+              2.1
+            ]
+          },
+          "spec": {
+            "water": true,
+            "gag": "",
+            "giant_x": 0.5,
+            "giant_y": 0.1
+          }
+        }
+      ],
+      "end": "Next time, a bigger pool.",
+      "caption": "Most of Orrin's 2.1 million people take their houses down plank by plank all season, then leave on the same night. The sign is bolted to the seabed, and its oldest line has been under four tides. This town's line goes on in the small hours. Nobody has decided what it says. Anything left behind goes to the sea, and eleven years later to whoever digs it up, so everyone here drinks out of a stranger's mug. My guide has moved twice. This time she's packing a towel and a snorkel.\n\nOrrin keeps almost the same face to its giant and slips round underneath it once every 22 years. A tide has two bulges, so the sea comes round every 11. The giant climbs about a finger's width a month, and when it's overhead, so is the sea.\n\nThe sea is due back at 6:12 on 14 March. I'll pack the night before.\n\nPack-early person or night-before person?"
+    }
   },
   {
     "id": "003",
@@ -305,7 +499,8 @@
       "figure": true,
       "layers": 4,
       "mist": 0.6,
-      "gag": "pole_post"
+      "gag": "pole_post",
+      "stage": 0.74
     },
     "cover": "Your parcel is up there.",
     "beats": [
@@ -315,12 +510,93 @@
     "odd_line": "Your parcel has been delivered. Please look up.",
     "rule": "Anything dropped from an island belongs to whoever it lands on.",
     "question": "Would you live up top or in the valley?",
-    "extra": "Ines retires next year. The job listing just says 'tall'.",
+    "extra": "Ines retires tomorrow. The job listing just says 'tall'.",
     "reel_lines": [
       "The mountains drifted off the ground long ago. People farm the tops now.",
       "The post goes up on a very long pole. The postwoman has never lost a letter. She has lost a lot of poles."
     ],
-    "opener": "Your parcel is up there."
+    "opener": "Your parcel is up there.",
+    "episode": {
+      "opener": "Your parcel\nhas been delivered.\nUpstairs.",
+      "beats": [
+        {
+          "text": "Ines has never lost a letter.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              1.5,
+              1.6
+            ],
+            "focus": [
+              0.38,
+              0.55
+            ]
+          }
+        },
+        {
+          "text": "She has lost 312 poles.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.05
+            ]
+          }
+        },
+        {
+          "text": "Anything upstairs drops\nbelongs to whoever it lands on.\nMostly spades.",
+          "shot": "crowd",
+          "spec": {
+            "crowd": 4,
+            "crowd_x": 0.66,
+            "crowd_items": "spade,spade,flower,spade"
+          }
+        },
+        {
+          "text": "Ines retires tomorrow.\nThe advert's already up.",
+          "shot": "sign",
+          "spec": {
+            "sign": "HELP WANTED|Tall."
+          },
+          "seconds": 4.0
+        },
+        {
+          "text": "She knows every address upstairs.\nShe's never been. 'Heights.'",
+          "shot": "medium"
+        },
+        {
+          "text": "On her last round, all of upstairs\nleaned over the edge.",
+          "shot": "sky",
+          "spec": {
+            "palette": "rose_fog",
+            "sun_y": 0.64
+          }
+        },
+        {
+          "text": "",
+          "shot": "medium",
+          "spec": {
+            "palette": "rose_fog",
+            "sun_y": 0.64,
+            "daisies": 110,
+            "particles": "snow"
+          },
+          "seconds": 3.0
+        },
+        {
+          "text": "They all aimed for her.\nBy law, every one is hers.",
+          "shot": "medium",
+          "spec": {
+            "palette": "rose_fog",
+            "sun_y": 0.64,
+            "daisies": 110,
+            "particles": "snow"
+          }
+        }
+      ],
+      "end": "Also returned: 311 poles.",
+      "caption": "Gravity on Maren is about a third of yours, and long ago the mountains lifted off and stayed up, farms and all. The valley calls them upstairs. Most of Maren's 610,000 people live up there and have never been down. Rope ladders hang for weddings and emergencies, and nobody likes them, so the post goes up at first light on a twelve-metre pole. Ines thinks anything longer is cheating. At a third of a g, a dropped thing takes nearly twice as long to land as it would here, which gives you time to see what it is and decide whether you want it. On a still night in the valley, you can hear upstairs snoring.\n\nI was in the valley for her last round, and something landed on me too: pole number 312. By law, it's mine. Ines has written to me about it twice. She spelled my name wrong both times.\n\nWhat's the best thing that's ever landed on you?"
+    }
   },
   {
     "id": "005",
@@ -368,7 +644,114 @@
     "reel_lines": [
       "The ground is warm all year, warm enough to boil a kettle on.",
       "So kettles live outside on the rocks, and the only stove on the planet is in a museum, behind a rope."
-    ]
+    ],
+    "episode": {
+      "opener": "The ground here\nboils your kettle.",
+      "beats": [
+        {
+          "text": "So kettles live outdoors.",
+          "shot": "gag"
+        },
+        {
+          "text": "The only stove on the planet\nis in a museum, behind a rope.",
+          "shot": "medium"
+        },
+        {
+          "text": "The oldest law on Cinderwake\nis about kettles.",
+          "shot": "sign",
+          "spec": {
+            "sign": "COLD?|HELP YOURSELF"
+          },
+          "seconds": 4.2
+        },
+        {
+          "text": "Nobody here is ever cold.\nWilf is.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.25
+            ],
+            "focus": [
+              0.8,
+              0.67
+            ]
+          }
+        },
+        {
+          "text": "So, legally, every kettle\non the planet is Wilf's.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.2,
+              1.28
+            ],
+            "focus": [
+              0.55,
+              0.67
+            ]
+          }
+        },
+        {
+          "text": "At dusk the kettles whistle.\nThe whole canyon looks round\nfor Wilf.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.2,
+              1.28
+            ],
+            "focus": [
+              0.55,
+              0.67
+            ]
+          },
+          "spec": {
+            "suns": 0,
+            "palette": "pumpkin",
+            "crowd": 6,
+            "crowd_items": "kettle",
+            "crowd_x": 0.42,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "He's had tea in every house\non Cinderwake.",
+          "shot": "crowd",
+          "spec": {
+            "suns": 0,
+            "palette": "pumpkin",
+            "crowd": 6,
+            "crowd_items": "kettle",
+            "crowd_x": 0.42,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "No warmer.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.25
+            ],
+            "focus": [
+              0.8,
+              0.67
+            ]
+          },
+          "spec": {
+            "suns": 0,
+            "palette": "pumpkin",
+            "crowd": 6,
+            "crowd_items": "kettle",
+            "crowd_x": 0.42,
+            "crowd_facing": "right"
+          }
+        }
+      ],
+      "end": "Wilf says bring a cardigan.",
+      "caption": "On a warm planet, one man is blowing on his hands.\n\nCinderwake is big and young and still cooling from the inside, so its heat comes up through the rock, not down from its sun. Towns grew round the hottest stones, the way ours grew round wells. You put a kettle down, wander off, and come back when it whistles. The rain falls warm, tea grows wild in the cracks, and socks dry on the canyon walls in about ninety seconds. Nights last twenty hours, and the canyon walls glow dull orange, enough to read by. The air is thicker than ours, so water boils at about 107°C and visitors burn their tongues. Heating bills are something grandparents mention to frighten children.\n\nI packed a hot-water bottle. It's in the museum now, next to the stove.\n\nEveryone knows a Wilf. Who's yours?"
+    }
   },
   {
     "id": "006",
@@ -412,7 +795,89 @@
     "reel_lines": [
       "Once a year the moon comes close enough to touch, so children press letters against it.",
       "Most never come back. Every few years one does, answered, in handwriting no one recognises."
-    ]
+    ],
+    "text_y": {
+      "name": 0.2
+    },
+    "episode": {
+      "opener": "The moon has questions about dogs.",
+      "beats": [
+        {
+          "text": "Each autumn it passes\nclose enough to touch.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.45,
+              0.47
+            ]
+          }
+        },
+        {
+          "text": "Children press letters to it.\nMost never come back.",
+          "shot": {
+            "framing": "sky",
+            "focus": [
+              0.45,
+              0.56
+            ],
+            "zoom": [
+              1.25,
+              1.3
+            ]
+          }
+        },
+        {
+          "text": "Every few years, one does.\nAnswered, in handwriting nobody recognises.",
+          "shot": "wide"
+        },
+        {
+          "text": "I read the longest one.\nEleven pages. Mostly dogs.\nA whole page on sticks.",
+          "shot": "cartographer",
+          "spec": {
+            "big_moon": false,
+            "moons": 1
+          }
+        },
+        {
+          "text": "Frank has written to the moon\nevery autumn of his life.\nNot one reply.",
+          "shot": "medium",
+          "spec": {
+            "big_moon": false,
+            "moons": 1
+          }
+        },
+        {
+          "text": "Still, he writes.\nMostly about his dogs.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              2.2,
+              2.35
+            ]
+          },
+          "spec": {
+            "big_moon": false,
+            "moons": 1
+          }
+        },
+        {
+          "text": "",
+          "shot": "wide",
+          "spec": {
+            "big_moon": false,
+            "moons": 1,
+            "palette": "mint_dawn"
+          },
+          "seconds": 2.5
+        },
+        {
+          "text": "This autumn, one came back.\n'Dear Biscuit,\nhow is Frank?'",
+          "shot": "wide"
+        }
+      ],
+      "end": "Allow one orbit for a reply.",
+      "caption": "Luma's moon comes round every October, low enough to clip the hilltops. You hear it a day before you see it: a hum in your back teeth. Every dog on the planet lies down.\n\nA letter pressed to the moon sticks for the whole orbit. Be polite: it has answered rude ones. The eleven-page reply ended with a drawing of a dog, done from description. It was mostly ears. So is Biscuit, Frank's eighth dog and the first to get post.\n\nIt has been late once, in 1987. It won't say where it went.\n\nOur own moon drifts 3.8 cm further away every year. Luma's keeps coming back.\n\nI went up this year and wrote about a cat called Everything. Nothing yet.\n\nWhat would you tell the moon about your dog?"
+    }
   },
   {
     "id": "007",
@@ -460,7 +925,75 @@
       "The ocean dried up and left the waves behind, frozen mid-break in green glass.",
       "Surfers still come. They stand under the curl for an hour and call it the best wave of their lives."
     ],
-    "opener": "The waves froze mid-break."
+    "opener": "The waves froze mid-break.",
+    "episode": {
+      "opener": "Surf's been up\nfor nine thousand years.",
+      "beats": [
+        {
+          "text": "The waves are glass.\nHere, glass really is a liquid.",
+          "shot": {
+            "framing": "left",
+            "focus": [
+              0.3,
+              0.42
+            ],
+            "zoom": [
+              2.0,
+              2.15
+            ]
+          },
+          "note": "CHECK frame 1 (the opener): 'years.' sits near the pale sun disc (retention); nudge the hook camera if it touches."
+        },
+        {
+          "text": "So they're still breaking.\nAbout as fast as toenails grow.",
+          "shot": "sign",
+          "spec": {
+            "sign": "NO RUNNING|UNDER THE WAVES"
+          },
+          "seconds": 4.4
+        },
+        {
+          "text": "Surfers wait hours for a wave.\nOn Selk, families take shifts.",
+          "shot": "wide",
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0
+          }
+        },
+        {
+          "text": "Bo teaches surfing.\n'Best surfers anywhere.\nNot one of them can swim.'",
+          "shot": "gag",
+          "spec": {
+            "palette": "mint_dawn",
+            "sun_y": 0.55
+          }
+        },
+        {
+          "text": "I asked Bo how the surf was.\n'Bit choppy.'",
+          "shot": "cartographer",
+          "spec": {
+            "palette": "mint_dawn",
+            "sun_y": 0.55
+          }
+        },
+        {
+          "text": "It lands in three thousand years.\nBo's family will be on it.",
+          "shot": "medium",
+          "spec": {
+            "palette": "gold_hour",
+            "sun_y": 0.56,
+            "sun_size": 0.07
+          }
+        },
+        {
+          "text": "Then straight back out.",
+          "shot": "wide",
+          "seconds": 3.0
+        }
+      ],
+      "end": "Surf report: still breaking.",
+      "caption": "That big wave is moving. Very slowly.\n\nThe sea on Selk left one summer, nine thousand years ago, and the waves stayed where they were. The biggest is two hundred metres from sand to lip, and the sand still smells of salt. Houses under the curl rent cheap because they never get the afternoon sun, and a day here lasts 33 hours, so that's a lot of afternoon. Bo's shop still sells wax. Nobody needs it; everybody buys a bar to smell on the flight home. The surf report has said 'same as yesterday' for nine thousand years, and it's very nearly right. Every surfer here will tell you it's the best wave of their life. They all mean the same one.\n\nOn Earth, glass flowing is a myth: old church windows were uneven from the start, and room-temperature glass would take far longer than the age of the universe to sag. Nobody told Selk. Toenails really do grow about 1.6 mm a month.\n\nHow long would you wait for a wave?"
+    }
   },
   {
     "id": "008",
@@ -547,7 +1080,10 @@
       "mist": 0.5,
       "gag": "umbrella_feet",
       "spot": "#c8452f",
-      "stage": 0.72
+      "stage": 0.72,
+      "crowd": 1,
+      "crowd_items": "umbrella",
+      "crowd_x": 0.5
     },
     "cover": "Umbrellas go on your feet.",
     "beats": [
@@ -562,7 +1098,83 @@
       "On Thessaly the rain falls up, out of the sea and into the clouds.",
       "So umbrellas go on your feet, and boots are waterproof on top."
     ],
-    "opener": "Umbrellas go on your feet."
+    "opener": "Umbrellas go on your feet.",
+    "episode": {
+      "opener": "Umbrellas go\non your feet.",
+      "beats": [
+        {
+          "text": "Because here, the rain goes up.",
+          "shot": "gag"
+        },
+        {
+          "text": "Nobody on Thessaly has ever had\na bad hair day.\nEveryone has damp knees.",
+          "shot": "sky"
+        },
+        {
+          "text": "The forecast hasn't changed\nin three hundred years.",
+          "shot": "sign",
+          "spec": {
+            "sign": "FORECAST|FROM BELOW",
+            "crowd": 0
+          }
+        },
+        {
+          "text": "Rosa checks it ten times a day.\nShe doesn't trust it.",
+          "shot": "crowd"
+        },
+        {
+          "text": "One afternoon, it was wrong.",
+          "shot": "sign",
+          "spec": {
+            "sign": "FORECAST|FROM BELOW",
+            "crowd": 0,
+            "particles": "rain",
+            "suns": 0
+          }
+        },
+        {
+          "text": "",
+          "shot": "wide",
+          "spec": {
+            "particles": "rain",
+            "suns": 0
+          },
+          "seconds": 2.0
+        },
+        {
+          "text": "Everyone had their first\nbad hair day.",
+          "shot": "gag",
+          "spec": {
+            "particles": "rain",
+            "suns": 0
+          }
+        },
+        {
+          "text": "Only one umbrella\nwas the right way up.",
+          "shot": "crowd",
+          "spec": {
+            "particles": "rain",
+            "suns": 0
+          }
+        },
+        {
+          "text": "She let in the three\nwho'd laughed loudest.",
+          "shot": "crowd",
+          "spec": {
+            "particles": "rain",
+            "suns": 0,
+            "gag": "",
+            "cartographer": false,
+            "crowd": 4,
+            "crowd_items": "nothing,umbrella,nothing,nothing",
+            "crowd_x": 0.55,
+            "crowd_facing": "in"
+          }
+        }
+      ],
+      "end": "Just in case.",
+      "caption": "Rosa is in the first frame, before anyone mentions her.\n\nThe rain on Thessaly lifts off the sea in thin threads and gathers in shallow pools on the undersides of the clouds, which turn gold at dusk. Every pool has a name, and the argument about which is deepest is three hundred years old. Umbrellas are worn feet-first from October to March, and boots are waterproof on top. People now date things 'before the Down' and 'after the Down'.\n\nOn my first day I held my umbrella over my head too. Rosa was the only one who didn't laugh. She has not said 'I told you so'. She's had it embroidered on a cushion.\n\nThe forecast now reads: from below. Probably.\n\n300,000 people, a 23-hour day, 0.6 g. The rain rides a steady updraft off the warm sea. (On Earth, an updraft of about 90 km/h can hold a golf-ball-sized hailstone in the air.) That afternoon, Thessaly's dropped for most of an hour.\n\nWhat do you always carry just in case?"
+    }
   },
   {
     "id": "010",
@@ -594,7 +1206,8 @@
       "layers": 5,
       "mist": 0.4,
       "gag": "road_tourists",
-      "stage": 0.7
+      "stage": 0.62,
+      "stars": 0.0
     },
     "cover": "They stopped looking up.",
     "beats": [
@@ -624,7 +1237,96 @@
           0.5
         ]
       }
-    }
+    },
+    "episode": {
+      "opener": "On Kess, only tourists look up.",
+      "beats": [
+        {
+          "text": "The aurora has been on\nsince before anyone\nwrote things down.",
+          "shot": "sky"
+        },
+        {
+          "text": "Locals step round them\nwithout breaking stride.",
+          "shot": {
+            "framing": "left",
+            "zoom": [
+              1.65,
+              1.8
+            ],
+            "focus": [
+              "x",
+              0.36
+            ]
+          }
+        },
+        {
+          "text": "The bus timetable allows\nthree minutes per tourist.",
+          "shot": "sign",
+          "spec": {
+            "sign": "TOURISTS LYING DOWN|PLEASE KEEP LEFT"
+          }
+        },
+        {
+          "text": "Arne, 44, walks this road to work.\nHe hasn't looked up\nsince he was six.",
+          "shot": {
+            "framing": "right",
+            "zoom": [
+              1.55,
+              1.75
+            ],
+            "focus": [
+              "x",
+              0.76
+            ]
+          }
+        },
+        {
+          "text": "Then one night, it went out.",
+          "shot": "wide",
+          "spec": {
+            "aurora": false
+          },
+          "seconds": 4.0
+        },
+        {
+          "text": "Arne looked up.",
+          "shot": "sky",
+          "spec": {
+            "aurora": false
+          },
+          "seconds": 3.0
+        },
+        {
+          "text": "Behind it, all this time,\nthere had been stars.",
+          "shot": {
+            "framing": "sky",
+            "zoom": [
+              1.45,
+              1.6
+            ],
+            "focus": [
+              0.5,
+              0.22
+            ]
+          },
+          "spec": {
+            "aurora": false,
+            "stars": 7.0
+          }
+        },
+        {
+          "text": "Four minutes later,\nit was back on.",
+          "shot": "sign",
+          "spec": {
+            "sign": "LOCALS LYING DOWN|PLEASE KEEP LEFT"
+          },
+          "seconds": 4.0
+        }
+      ],
+      "end": "That night, everyone was a tourist.",
+      "caption": "Watch the man walking on the right.\n\nKess: 250,000 people, a 21-hour day, no moons, and an aurora bright enough to cast shadows. A local who looks up at it by accident has to sit on the kerb for a minute. The night it went out, every kerb on Kess was full. I was lying in the left lane outside the laundrette, where the road stays warm. For four minutes, nobody stepped round me.\n\nNobody knows why it went out. The council put up a plaque about it at eye level, so nobody has read it. The buses now allow three minutes per local.\n\n(On Earth, the brightest aurora lights the ground about as well as a full moon, and a full moon cuts the stars you can see from a few thousand to a few hundred.)\n\nWhat did you stop noticing where you live?"
+    },
+    "first_comment": "Earth's aurora runs on the solar wind. On 10-11 May 1999, that wind almost stopped."
   },
   {
     "id": "011",
@@ -656,7 +1358,10 @@
       "figure": false,
       "layers": 5,
       "mist": 0.7,
-      "gag": "tree_cloud"
+      "gag": "tree_cloud",
+      "sign": "DINNER'S READY.",
+      "stage": 0.74,
+      "house": true
     },
     "cover": "This tree has its own weather.",
     "beats": [
@@ -666,11 +1371,242 @@
     "odd_line": "Forecast for the tallest tree: light rain. Everywhere else: dry.",
     "rule": "Do not shake the tall tree. Somebody's dinner is up there.",
     "question": "Would you move up, or stay on the ground?",
-    "extra": "Pinecone mail arrives in about eight seconds. Replies by kite take a week.",
+    "extra": "Pinecone mail arrives in about two minutes. Replies by kite take a week.",
     "reel_lines": [
       "The trees never stop growing. The tallest one has a small rain cloud of its own.",
       "A village near the top hasn't come down in six hundred years. They send post by pinecone."
     ],
-    "opener": "This tree has its own weather."
+    "opener": "This tree has its own weather.",
+    "episode": {
+      "opener": "This tree has\nits own weather.",
+      "beats": [
+        {
+          "text": "And its own village.\nNobody up there has come down\nin six hundred years.",
+          "shot": {
+            "framing": "sky",
+            "focus": [
+              0.567,
+              0.29
+            ],
+            "zoom": [
+              1.7,
+              1.8
+            ]
+          }
+        },
+        {
+          "text": "It's a day's climb down\nand a week back up.\nNobody bothers.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.45,
+              0.45
+            ],
+            "zoom": [
+              1.3,
+              1.4
+            ]
+          }
+        },
+        {
+          "text": "Their relatives on the ground\nstill cook for them.",
+          "shot": "house"
+        },
+        {
+          "text": "I stayed for dinner once.\nThere was a lot of it.",
+          "shot": "cartographer"
+        },
+        {
+          "text": "",
+          "shot": "wide",
+          "spec": {
+            "palette": "lilac_dusk"
+          },
+          "seconds": 2.5
+        },
+        {
+          "text": "Every evening, a pinecone drops\nfrom the top\nwith the same answer.",
+          "shot": {
+            "framing": "medium",
+            "focus": [
+              0.45,
+              0.45
+            ],
+            "zoom": [
+              1.3,
+              1.4
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk"
+          }
+        },
+        {
+          "text": "'Coming!'",
+          "shot": {
+            "framing": "close",
+            "focus": [
+              0.567,
+              0.33
+            ],
+            "zoom": [
+              1.9,
+              2.05
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk"
+          }
+        }
+      ],
+      "end": "Dinner's still ready.",
+      "caption": "Look at the foot of the tree.\n\nField note, day three. The cloud rains on the tallest tree and nowhere else, so the village has its own water as well as its own weather. Notes come down by pinecone in about two minutes. Anything going up goes by kite and takes a week, so dinner stays on the ground. Agnes has cooked for the top of the tree for fifty-one years, and she repaints the sign every spring. They have food of their own up there. She cooks anyway.\n\nAt a Polish Christmas Eve supper, one extra place is laid for whoever might turn up. On Bramble, it's most of the table.\n\nWho's the 'Coming!' in your house?"
+    }
+  },
+  {
+    "id": "018",
+    "name": "Brumm",
+    "subtitle": "the heavy coast",
+    "story": "Gravity on Brumm is twice ours, so the hills are low, the houses are one storey and nobody owns a ladder. By four, a child is too heavy to carry far. So, in the week they get too heavy, every child gets one Last Carry: the street closes the road, the neighbours come out to cheer, and a parent carries them wherever they choose. Most choose the bakery. Every child on Brumm is asleep by the end.",
+    "facts": {
+      "Day": "27 hours",
+      "Moons": "none",
+      "Gravity": "2 g",
+      "Population": "140,000"
+    },
+    "hook": "A planet for everyone who was carried home asleep.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#family"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "hills",
+      "horizon": 0.64,
+      "suns": 1,
+      "sun_x": 0.72,
+      "sun_y": 0.4,
+      "sun_size": 0.05,
+      "layers": 4,
+      "mist": 0.5,
+      "daisies": 0,
+      "crowd": 5,
+      "stage": 0.74,
+      "relief": 0.55,
+      "water": false,
+      "shore": "none",
+      "moons": 0,
+      "figure": false,
+      "gag": "",
+      "house": true,
+      "crowd_items": "nothing,nothing,child,nothing,nothing",
+      "crowd_facing": "in"
+    },
+    "cover": "Every child gets one last carry.",
+    "episode": {
+      "opener": "Every child here\ngets one last carry.",
+      "beats": [
+        {
+          "text": "Gravity here is twice ours.\nBy four, a child is\ntoo heavy to carry far.",
+          "shot": "sky"
+        },
+        {
+          "text": "Parents train for four years.\nMostly by carrying them.",
+          "shot": "close"
+        },
+        {
+          "text": "Neighbours line the road and cheer.",
+          "shot": "medium",
+          "spec": {
+            "sign": "LAST CARRY|ROAD CLOSED"
+          }
+        },
+        {
+          "text": "The child picks where to go.\nMost pick the bakery.",
+          "shot": "house"
+        },
+        {
+          "text": "Tomas picked the sea,\neight miles away.\nHis dad made it.",
+          "shot": "wide",
+          "spec": {
+            "palette": "gold_hour",
+            "suns": 1,
+            "sun_x": 0.55,
+            "sun_y": 0.6,
+            "sun_size": 0.06,
+            "water": true,
+            "shore": "left",
+            "crowd": 1,
+            "crowd_x": 0.55,
+            "crowd_items": "child",
+            "crowd_facing": "left",
+            "house": false,
+            "cartographer": false
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.0,
+              2.1
+            ],
+            "focus": [
+              0.55,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "gold_hour",
+            "suns": 1,
+            "sun_x": 0.55,
+            "sun_y": 0.6,
+            "sun_size": 0.06,
+            "water": true,
+            "shore": "left",
+            "crowd": 1,
+            "crowd_x": 0.55,
+            "crowd_items": "child",
+            "crowd_facing": "left",
+            "house": false,
+            "cartographer": false
+          },
+          "seconds": 3.0
+        },
+        {
+          "text": "Every child on Brumm\nis asleep by the end.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.0,
+              2.1
+            ],
+            "focus": [
+              0.55,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "gold_hour",
+            "suns": 1,
+            "sun_x": 0.55,
+            "sun_y": 0.6,
+            "sun_size": 0.06,
+            "water": true,
+            "shore": "left",
+            "crowd": 1,
+            "crowd_x": 0.55,
+            "crowd_items": "child_asleep",
+            "crowd_facing": "left",
+            "house": false,
+            "cartographer": false
+          }
+        }
+      ],
+      "end": "Carry them while they're light.",
+      "caption": "Keep an eye on the child's arm.\n\nGravity on Brumm is twice ours, so the hills are low, the houses are one storey and nobody owns a ladder. A four-year-old here weighs what a ten-year-old does on Earth. The Last Carry is a holiday for the child's whole street, held in the week they get too heavy to carry far. The road out of every town has a bench every half mile. The parents don't use them.\n\nI offered to take a turn for a mile. The whole road went quiet. You don't help with a Last Carry. You bring tea.\n\nTomas is at school now. He says he remembers the sea. His dad says he was asleep by mile six.\n\nOn Earth, nobody knows which carry is the last one. On Brumm, everybody does, so they close the road.\n\nWhere would you have picked?"
+    }
   }
 ]

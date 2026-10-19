@@ -10,7 +10,7 @@
       "Gravity": "1.1 g",
       "Population": "9,300"
     },
-    "hook": "Hush, part two. Her answer finally crossed the valley.",
+    "hook": "On Hush, walking is quicker than shouting.",
     "tags": [
       "#worldbuilding",
       "#illustration",
@@ -31,7 +31,7 @@
       "gag": "slow_shout",
       "stage": 0.76
     },
-    "cover": "Her answer arrived.",
+    "cover": "She got there before her answer did.",
     "beats": [
       "Half the town came out to hear it.",
       "It was yes. Then, a few seconds later, very faintly: 'obviously'."
@@ -48,6 +48,88 @@
       "setup": 0.12
     },
     "opener": "Her answer arrived.",
-    "kicker": "Hush, part two"
+    "kicker": "Thursday, on Hush",
+    "episode": {
+      "opener": "She got there\nbefore her answer did.",
+      "beats": [
+        {
+          "text": "A shout takes five days\nto cross Hush.\nWalking is quicker.",
+          "shot": "gag"
+        },
+        {
+          "text": "In March, he shouted\nacross the valley.\nWould she marry him?",
+          "shot": "right",
+          "spec": {
+            "cartographer": false
+          }
+        },
+        {
+          "text": "Seven months to decide.\nThen five days was too long.",
+          "shot": "left",
+          "spec": {
+            "cartographer": false
+          }
+        },
+        {
+          "text": "She got there Wednesday,\nand said nothing.\nYou never spoil a shout.",
+          "shot": "house",
+          "spec": {
+            "gag": "",
+            "cartographer": false,
+            "palette": "polar_night"
+          }
+        },
+        {
+          "text": "I said I'd be there on Thursday.\nHalf the town came too.",
+          "shot": {
+            "framing": "cartographer",
+            "zoom": [
+              1.5,
+              1.6
+            ]
+          },
+          "spec": {
+            "gag": "",
+            "crowd": 6,
+            "crowd_items": "nothing",
+            "crowd_facing": "left"
+          }
+        },
+        {
+          "text": "Ten past four.\n'Yes.'",
+          "shot": {
+            "framing": "right",
+            "zoom": [
+              1.35,
+              1.5
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.71,
+            "crowd_facing": "right",
+            "crowd_items": "nothing",
+            "particles": "none",
+            "cartographer": false
+          },
+          "seconds": 3.4,
+          "note": "CHECK at full res: the couple at right, arcs arriving from the left edge, no shouter and no yellow coat in frame (render tested this camera at half res only). Pushes on into beat 7's 'right'."
+        },
+        {
+          "text": "Then, a few seconds later,\nvery faintly: 'obviously.'",
+          "shot": "right",
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.71,
+            "crowd_facing": "right",
+            "crowd_items": "nothing",
+            "particles": "none",
+            "cartographer": false
+          }
+        }
+      ],
+      "end": "His reply arrives Tuesday. She won't be in.",
+      "caption": "Part one is No. 003, a few posts down: in March he shouted a proposal across the valley, and her answer was due on Thursday.\n\nShe shouted her answer and set off straight after it. On Wednesday night she found him on the valley floor, where he'd been all week, and walked him home through snow up to her knees. They sat up by the stove and said nothing. You never spoil a shout.\n\nOn Thursday the bakery shut at three. Half the town stood on the valley floor with flasks, not talking, so as not to drown it out. At ten past four the snow stopped, as if it wanted to listen too.\n\nCustom says you answer a shout with a shout, so he did, with her standing next to him. It reaches her empty house on Tuesday. I'm walking round to hear it, and I'll put what he said in the comments.\n\nThe wedding is in spring. The vows go out five days early.\n\nWhat would you shout across the valley?"
+    }
   }
 ]

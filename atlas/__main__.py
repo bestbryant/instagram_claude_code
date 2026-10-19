@@ -278,6 +278,7 @@ def request_name(comment: str) -> str | None:
     while LEAD_RE.match(t):
         t = LEAD_RE.sub("", t, count=1)
     t = t.strip(" .!?:;,\"'“”")
+    t = re.sub(r"[\s,]+(please|pls|plz|thanks|thank you|thx|ty)$", "", t, flags=re.I).strip(" .!?:;,\"'“”")
     words = t.split()
     if not 1 <= len(words) <= 3 or len(t) > 24 or not any(c.isalpha() for c in t):
         return None
@@ -288,8 +289,10 @@ def request_name(comment: str) -> str | None:
     return t
 
 
-SENSITIVE = re.compile(r"\b(passed|rip|r\.i\.p|rest in peace|rainbow bridge|in memory|memorial|died|put down|"
-                       r"lost (him|her|them|my)|miss(ing)? (him|her|them|you)|gone too soon|funeral)\b", re.I)
+SENSITIVE = re.compile(r"\b(passed|rip|r\.i\.p|rest in peace|rainbow bridge|in memory|memorial|died|dying|put down|"
+                       r"lost (him|her|them|my)|miss(ing)? (him|her|them|you)|gone too soon|funeral|late (mum|mom|dad|"
+                       r"husband|wife|son|daughter|brother|sister|grandma|grandpa|nan)|grave|angel|cancer|hospice|"
+                       r"miscarriage|stillborn|loss|grief|grieving)\b", re.I)
 TITLES = {"grandma", "grandpa", "granny", "nan", "nana", "nanna", "aunt", "auntie", "uncle", "mr", "mrs", "ms",
           "dr", "captain", "sir", "lady", "baby", "little", "big", "old"}
 
@@ -311,23 +314,27 @@ def cmd_inbox(a):
     me = "" if a.dry_run else p.username()
     new = []
     for media in ([] if a.dry_run else p.recent_media(a.limit)):
+        # a story episode's caption ends on a question, so a short comment there may be an answer
+        # ("Mum", "Umbrella") rather than a name: those wait for a person to read them
+        asks = any(line.strip().endswith("?") for line in (media.get("caption") or "").split("\n"))
         for c in p.recent_comments(media["id"]):
             if c["id"] in seen or c.get("username") == me:
                 continue
             text_ = c.get("text", "")
             name = request_name(text_)
             if name:
-                status = "needs_owner" if SENSITIVE.search(text_) else "new"   # memorial requests: owner answers by hand
+                status = "needs_owner" if SENSITIVE.search(text_) else ("check" if asks and not LEAD_RE.match(text_.strip()) else "new")
                 new.append({"comment_id": c["id"], "media_id": media["id"], "by": "@" + c.get("username", ""),
                             "name": first_name_only(name), "text": text_, "status": status})
     queue += new
     if not a.dry_run:
         REQUESTS.write_text(json.dumps(queue, indent=2, ensure_ascii=False) + "\n")
     print(f"{len(new)} new request(s); {sum(q['status'] == 'new' for q in queue)} waiting; "
+          f"{sum(q['status'] == 'check' for q in queue)} to check (maybe an answer to the caption's question); "
           f"{sum(q['status'] == 'needs_owner' for q in queue)} held for the owner (sensitive)")
     for q in queue:
-        if q["status"] == "new":
-            print(f"  {q['by']:<22} {q['name']:<24} ← “{q['text'][:50]}”")
+        if q["status"] in ("new", "check"):
+            print(f"  [{q['status']}] {q['by']:<22} {q['name']:<24} ← “{q['text'][:60]}”")
     if a.chart:
         from .lore import chart
         for q in queue:
@@ -435,6 +442,34 @@ def check_item(item, folder, entries) -> str | None:
     return None
 
 
+COMMENTS = ROOT / "content" / "comments.json"
+
+
+def post_due_comments(now, dry_run=False):
+    """Comments the account adds to its own posts later (a sequel's 'part two is up', an epilogue a few
+    days on), once their time has come and the post they belong on is live. The owner pins them in the app."""
+    if not COMMENTS.exists():
+        return
+    from .publish import Publisher
+    from datetime import datetime
+    todo = json.loads(COMMENTS.read_text())
+    media = {x["entry"]: x["media_id"] for x in (json.loads(LOG.read_text()) if LOG.exists() else []) if x["kind"] == "reel"}
+    changed = False
+    for c in todo:
+        if c.get("posted") or now < datetime.fromisoformat(c["post_at"].replace("Z", "+00:00")) or c["on"] not in media:
+            continue
+        if c.get("after") and c["after"] not in media:
+            continue                                    # e.g. 'part two is up' waits for part two
+        if dry_run:
+            print(f"would comment on {c['on']}: {c['text'][:60]}")
+            continue
+        c["comment_id"] = Publisher().comment(media[c["on"]], c["text"])
+        c["posted"], changed = True, True
+        print(f"commented on {c['on']}" + (" -- PIN THIS in the app" if c.get("pin") else "") + f": {c['text'][:60]}")
+    if changed:
+        COMMENTS.write_text(json.dumps(todo, indent=2, ensure_ascii=False) + "\n")
+
+
 def cmd_next(a):
     """Post every scheduled item that is due (day <= today), oldest first, at most --max per run.
     With --asap the days are ignored: post the next ready item in schedule order, once at least
@@ -449,6 +484,7 @@ def cmd_next(a):
     if pause.exists():
         print("posting paused:", pause.read_text().strip())
         return
+    post_due_comments(now, a.dry_run)
     if a.asap:
         last = max((datetime.fromisoformat(x["at"]) for x in log), default=None)
         if last and now - last < timedelta(hours=a.gap_hours):
@@ -484,6 +520,8 @@ def cmd_next(a):
             log.append({**item, "media_id": media, "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **sha})
             LOG.write_text(json.dumps(log, indent=2) + "\n")
             done.add((item["entry"], item["kind"]))
+    if posted:
+        post_due_comments(datetime.now(timezone.utc), a.dry_run)   # a sequel's note on the part before it goes up with it
 
 
 def cmd_stats(a):

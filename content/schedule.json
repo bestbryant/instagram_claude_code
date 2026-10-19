@@ -31,115 +31,135 @@
   "kind": "reel"
  },
  {
-  "day": 4,
-  "entry": "003",
+  "day": 2,
+  "entry": "004",
   "kind": "reel",
-  "not_before": "2026-10-20T21:30:00Z",
-  "note": "Hush part one: the room wants it Tuesday evening, two days before her answer lands (part two, Thursday 22:00 UTC)"
+  "not_before": "2026-10-19T22:00:00Z"
  },
  {
-  "day": 7,
-  "entry": "013",
-  "kind": "reel"
+  "day": 3,
+  "entry": "003",
+  "kind": "reel",
+  "not_before": "2026-10-20T22:00:00Z"
+ },
+ {
+  "day": 4,
+  "entry": "010",
+  "kind": "reel",
+  "not_before": "2026-10-21T22:00:00Z"
  },
  {
   "day": 5,
-  "entry": "010",
-  "kind": "reel"
- },
- {
-  "day": 9,
-  "entry": "014",
-  "kind": "reel"
- },
- {
-  "day": 9,
-  "entry": "009",
-  "kind": "reel"
- },
- {
-  "day": 6,
   "entry": "003b",
   "kind": "reel",
-  "note": "Hush part two: the answer arrives Thursday, so not before Thursday evening (US)",
+  "not_before": "2026-10-22T22:00:00Z",
   "after": [
    "003",
    "reel"
-  ],
-  "not_before": "2026-10-22T22:00:00Z"
+  ]
  },
  {
-  "day": 11,
-  "entry": "015",
-  "kind": "reel"
+  "day": 6,
+  "entry": "000",
+  "kind": "reel",
+  "not_before": "2026-10-23T22:00:00Z"
  },
  {
   "day": 7,
-  "entry": "004",
-  "kind": "reel"
+  "entry": "014",
+  "kind": "reel",
+  "not_before": "2026-10-24T14:00:00Z"
  },
  {
-  "day": 13,
+  "day": 7,
+  "entry": "018",
+  "kind": "reel",
+  "not_before": "2026-10-24T22:00:00Z"
+ },
+ {
+  "day": 8,
   "entry": "016",
-  "kind": "reel"
+  "kind": "reel",
+  "not_before": "2026-10-25T14:00:00Z"
  },
  {
-  "day": 11,
-  "entry": "H01",
-  "kind": "reel"
+  "day": 8,
+  "entry": "006",
+  "kind": "reel",
+  "not_before": "2026-10-25T22:00:00Z"
  },
  {
-  "day": 15,
+  "day": 9,
+  "entry": "005",
+  "kind": "reel",
+  "not_before": "2026-10-26T22:00:00Z"
+ },
+ {
+  "day": 10,
   "entry": "017",
-  "kind": "reel"
+  "kind": "reel",
+  "not_before": "2026-10-27T14:00:00Z"
  },
  {
   "day": 10,
   "entry": "002",
-  "kind": "reel"
+  "kind": "reel",
+  "not_before": "2026-10-27T22:00:00Z"
+ },
+ {
+  "day": 11,
+  "entry": "009",
+  "kind": "reel",
+  "not_before": "2026-10-28T22:00:00Z"
  },
  {
   "day": 12,
-  "entry": "011",
-  "kind": "reel"
+  "entry": "013",
+  "kind": "reel",
+  "not_before": "2026-10-29T14:00:00Z"
+ },
+ {
+  "day": 12,
+  "entry": "H02",
+  "kind": "reel",
+  "not_before": "2026-10-29T22:00:00Z"
  },
  {
   "day": 13,
-  "entry": "H02",
-  "kind": "reel"
+  "entry": "015",
+  "kind": "reel",
+  "not_before": "2026-10-30T14:00:00Z"
+ },
+ {
+  "day": 13,
+  "entry": "H01",
+  "kind": "reel",
+  "not_before": "2026-10-30T22:00:00Z"
  },
  {
   "day": 14,
-  "entry": "006",
-  "kind": "reel"
- },
- {
-  "day": 16,
   "entry": "007",
-  "kind": "reel"
+  "kind": "reel",
+  "not_before": "2026-10-31T14:00:00Z"
  },
  {
-  "day": 17,
-  "entry": "005",
-  "kind": "reel"
- },
- {
-  "day": 18,
-  "entry": "000",
-  "kind": "reel"
- },
- {
-  "day": 8,
-  "entry": "008",
-  "kind": "process",
-  "note": "pin as the 'how it's made' post"
+  "day": 14,
+  "entry": "H03",
+  "kind": "reel",
+  "not_before": "2026-10-31T22:00:00Z"
  },
  {
   "day": 15,
-  "entry": "H03",
+  "entry": "011",
   "kind": "reel",
-  "note": "Halloween night, US time",
-  "not_before": "2026-10-31T21:00:00Z"
+  "not_before": "2026-11-01T22:00:00Z"
+ },
+ {
+  "day": 11,
+  "entry": "008",
+  "kind": "process",
+  "note": "pin as the 'how it's made' post",
+  "not_before": "2026-10-28T14:00:00Z"
  },
  {
   "day": 5,
