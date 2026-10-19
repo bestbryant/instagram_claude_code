@@ -28,7 +28,8 @@
     "figure": true,
     "layers": 4,
     "mist": 0.6,
-    "gag": "pole_post"
+    "gag": "pole_post",
+    "stage": 0.74
   },
   "cover": "Your parcel is up there.",
   "beats": [
@@ -38,11 +39,92 @@
   "odd_line": "Your parcel has been delivered. Please look up.",
   "rule": "Anything dropped from an island belongs to whoever it lands on.",
   "question": "Would you live up top or in the valley?",
-  "extra": "Ines retires next year. The job listing just says 'tall'.",
+  "extra": "Ines retires tomorrow. The job listing just says 'tall'.",
   "reel_lines": [
     "The mountains drifted off the ground long ago. People farm the tops now.",
     "The post goes up on a very long pole. The postwoman has never lost a letter. She has lost a lot of poles."
   ],
   "opener": "Your parcel is up there.",
+  "episode": {
+    "opener": "Your parcel\nhas been delivered.\nUpstairs.",
+    "beats": [
+      {
+        "text": "Ines has never lost a letter.",
+        "shot": {
+          "framing": "gag",
+          "zoom": [
+            1.5,
+            1.6
+          ],
+          "focus": [
+            0.38,
+            0.55
+          ]
+        }
+      },
+      {
+        "text": "She has lost 312 poles.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.05
+          ]
+        }
+      },
+      {
+        "text": "Anything upstairs drops\nbelongs to whoever it lands on.\nMostly spades.",
+        "shot": "crowd",
+        "spec": {
+          "crowd": 4,
+          "crowd_x": 0.66,
+          "crowd_items": "spade,spade,flower,spade"
+        }
+      },
+      {
+        "text": "Ines retires tomorrow.\nThe advert's already up.",
+        "shot": "sign",
+        "spec": {
+          "sign": "HELP WANTED|Tall."
+        },
+        "seconds": 4.0
+      },
+      {
+        "text": "She knows every address upstairs.\nShe's never been. 'Heights.'",
+        "shot": "medium"
+      },
+      {
+        "text": "On her last round, all of upstairs\nleaned over the edge.",
+        "shot": "sky",
+        "spec": {
+          "palette": "rose_fog",
+          "sun_y": 0.64
+        }
+      },
+      {
+        "text": "",
+        "shot": "medium",
+        "spec": {
+          "palette": "rose_fog",
+          "sun_y": 0.64,
+          "daisies": 110,
+          "particles": "snow"
+        },
+        "seconds": 3.0
+      },
+      {
+        "text": "They all aimed for her.\nBy law, every one is hers.",
+        "shot": "medium",
+        "spec": {
+          "palette": "rose_fog",
+          "sun_y": 0.64,
+          "daisies": 110,
+          "particles": "snow"
+        }
+      }
+    ],
+    "end": "Also returned: 311 poles.",
+    "caption": "Gravity on Maren is about a third of yours, and long ago the mountains lifted off and stayed up, farms and all. The valley calls them upstairs. Most of Maren's 610,000 people live up there and have never been down. Rope ladders hang for weddings and emergencies, and nobody likes them, so the post goes up at first light on a twelve-metre pole. Ines thinks anything longer is cheating. At a third of a g, a dropped thing takes nearly twice as long to land as it would here, which gives you time to see what it is and decide whether you want it. On a still night in the valley, you can hear upstairs snoring.\n\nI was in the valley for her last round, and something landed on me too: pole number 312. By law, it's mine. Ines has written to me about it twice. She spelled my name wrong both times.\n\nWhat's the best thing that's ever landed on you?"
+  },
   "_engine": 4
 }
