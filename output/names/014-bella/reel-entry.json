@@ -1,0 +1,38 @@
+{
+  "id": "014",
+  "name": "Bella",
+  "subtitle": "every Bella's planet",
+  "hook": "Every Bella gets this planet.",
+  "cover": "Everything here is beautiful. By law.",
+  "beats": [
+    "On Bella, everything has to be described as beautiful. It's the law.",
+    "The new tax office was declared 'genuinely beautiful' by a man who had clearly been told to."
+  ],
+  "odd_line": "Today's forecast: beautiful rain, followed by beautiful more rain.",
+  "story": "On Bella, everything has to be described as beautiful, by law. The weather report says beautiful rain. The dentist is beautiful. When the new tax office opened, it was declared 'genuinely beautiful' by a man in a hat who had clearly been told to. The people of Bella are very relaxed about all of this, which is, they would want me to say, beautiful.",
+  "rule": "Describing anything as 'fine' is a fineable offence.",
+  "question": "Know a Bella? Send her this. It's beautiful.",
+  "extra": "The tax office has a five-star rating. Leaving fewer stars is not beautiful.",
+  "facts": {},
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#bella"
+  ],
+  "spec": {
+    "palette": "cobalt_noon",
+    "terrain": "hills",
+    "horizon": 0.64,
+    "suns": 1,
+    "sun_x": 0.78,
+    "sun_y": 0.3,
+    "sun_size": 0.05,
+    "layers": 4,
+    "mist": 0.6,
+    "house": true,
+    "sign": "THE BEAUTIFUL|TAX OFFICE",
+    "stage": 0.74
+  },
+  "opener": "Everything here is beautiful. By law.",
+  "kicker": "Every Bella gets this planet."
+}
