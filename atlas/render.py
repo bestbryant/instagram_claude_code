@@ -870,6 +870,8 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
             spot=hexc(spec.spot) if spec.spot else hexc("#c8452f"),
             sky_P=scene.sky, sky_A=np.ones(scene.sky.shape[:2], np.float32),
             rng=lambda tag: seeds.rng("gag", tag), focus=(0.5, 0.62), marks={})
+        if spec.stage:
+            props._stage(ctx, spec.stage)   # raise the ground before anything stands on it
         if spec.gag:
             props.GAGS[spec.gag](ctx)
         props.extras(ctx)

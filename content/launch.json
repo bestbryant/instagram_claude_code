@@ -125,7 +125,8 @@
       "figure": true,
       "layers": 5,
       "mist": 0.5,
-      "gag": "seabed_town"
+      "gag": "seabed_town",
+      "stage": 0.72
     },
     "cover": "Everyone packs the night before.",
     "beats": [
@@ -269,7 +270,8 @@
       "layers": 5,
       "mist": 0.4,
       "gag": "kettles",
-      "glow_rims": true
+      "glow_rims": true,
+      "stage": 0.72
     },
     "cover": "The floor boils your kettle.",
     "beats": [
@@ -312,7 +314,8 @@
       "trees": "none",
       "layers": 4,
       "mist": 0.5,
-      "gag": "moon_letters"
+      "gag": "moon_letters",
+      "stage": 0.72
     },
     "cover": "Kids post letters to the moon.",
     "beats": [
@@ -358,7 +361,8 @@
       "figure": false,
       "layers": 5,
       "mist": 0.35,
-      "gag": "glass_surfers"
+      "gag": "glass_surfers",
+      "stage": 0.72
     },
     "cover": "The waves froze mid-break.",
     "beats": [
@@ -459,7 +463,8 @@
       "layers": 4,
       "mist": 0.5,
       "gag": "umbrella_feet",
-      "spot": "#c8452f"
+      "spot": "#c8452f",
+      "stage": 0.72
     },
     "cover": "Umbrellas go on your feet.",
     "beats": [

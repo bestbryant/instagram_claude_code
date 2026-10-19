@@ -27,7 +27,8 @@
       "figure": false,
       "layers": 4,
       "mist": 0.65,
-      "gag": "fainted_ghost"
+      "gag": "fainted_ghost",
+      "stage": 0.72
     },
     "cover": "Say boo and they faint.",
     "beats": [
