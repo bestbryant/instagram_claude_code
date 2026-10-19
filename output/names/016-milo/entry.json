@@ -30,8 +30,70 @@
     "layers": 5,
     "mist": 0.35,
     "gag": "stirrers",
-    "stage": 0.74
+    "stage": 0.74,
+    "sign": "DO NOT EAT|THE MOUNTAINS"
   },
   "opener": "The soil is chocolate malt.",
-  "kicker": "Every Milo gets this planet."
+  "kicker": "Every Milo gets this planet.",
+  "episode": {
+    "opener": "The soil here\nis chocolate malt.",
+    "beats": [
+      {
+        "text": "Three metres deep.\nFarming is mostly stirring.",
+        "shot": "right"
+      },
+      {
+        "text": "Those aren't mountains.",
+        "shot": "wide",
+        "seconds": 3.0
+      },
+      {
+        "text": "They're lumps.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.62,
+            0.5
+          ]
+        }
+      },
+      {
+        "text": "When it rains,\nthe whole planet smells like\nthe bottom of a school mug.",
+        "shot": "wide",
+        "spec": {
+          "particles": "rain",
+          "palette": "crimson",
+          "suns": 0
+        }
+      },
+      {
+        "text": "Everyone stirs all night.\nNobody wants another mountain.",
+        "shot": "medium",
+        "spec": {
+          "palette": "teal_night"
+        }
+      },
+      {
+        "text": "At dawn the children\ngo out with spoons.\nLumps are the best bit.",
+        "shot": "crowd",
+        "spec": {
+          "gag": "",
+          "crowd": 3,
+          "crowd_items": "spoon",
+          "crowd_x": 0.3,
+          "sign": "",
+          "sun_y": 0.5
+        }
+      },
+      {
+        "text": "The farmers are very careful\nto miss a few.",
+        "shot": "right",
+        "spec": {
+          "sun_y": 0.5
+        }
+      }
+    ],
+    "end": "One spoonful of mountain per Milo.",
+    "caption": "Look again at the mountains.\n\nThe soil on Milo is malted chocolate powder, three metres deep, and the rain falls warm. Everyone here is cheerful and very slightly over-energetic. Morale is excellent. The tallest lump dates from a very good party in 1911. Dunking biscuits in the river is against the law, and a few grown-ups still eat the field dry, by the spoonful, which the others consider showing off.\n\nI went out with the children at dawn. I found four.\n\nOn Earth, malt powder lumps the same way: the outside of a clump turns sticky and seals the dry powder in, which is why the lumps crunch.\n\nLumps: the best bit, or bad stirring?"
+  }
 }
