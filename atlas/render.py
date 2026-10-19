@@ -877,6 +877,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
             props._stage(ctx, spec.stage)   # raise the ground before anything stands on it
         if spec.gag:
             props.GAGS[spec.gag](ctx)
+            ctx.marks["gag"] = ctx.focus      # a sign drawn later moves the focus; the gag framing stays on the joke
         props.extras(ctx)
         if spec.cartographer:
             props.cartographer(ctx, avoid_x=ctx.focus[0] * W)

@@ -652,6 +652,7 @@ def _crowd(ctx):
         else:
             _held(ctx, layer, kind, a["rh"][0], a["rh"][1], h)
     ctx.focus = (mid / W, (_ground(ctx, mid) - h * .6) / H)
+    ctx.marks["crowd"] = ctx.focus
 
 
 def _daisies(ctx):

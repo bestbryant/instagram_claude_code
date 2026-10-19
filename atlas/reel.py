@@ -51,7 +51,8 @@ FRAMINGS = {
     "wide": ((1.0, 1.08), None),
     "medium": ((1.35, 1.45), None),
     "close": ((1.9, 2.05), None),
-    "gag": ((1.9, 2.05), None),
+    "gag": ((1.9, 2.05), "gag"),             # the joke itself, even when a sign shares the frame
+    "crowd": ((1.7, 1.8), "crowd"),
     "sky": ((1.3, 1.4), (0.5, 0.3)),
     "left": ((1.5, 1.6), ("x", 0.3)),       # this x, at the height of the scene's gag
     "right": ((1.5, 1.6), ("x", 0.7)),
