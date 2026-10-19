@@ -18,12 +18,33 @@ import json
 import os
 import time
 import urllib.error
+from pathlib import Path
 import urllib.parse
 import urllib.request
 
 
 class GraphError(RuntimeError):
     pass
+
+
+HOLD = Path(__file__).resolve().parent.parent / "content" / "API_HOLD"
+HOLD_HOURS = 3
+
+
+def _set_hold(reason):
+    from datetime import datetime, timedelta, timezone
+    until = datetime.now(timezone.utc) + timedelta(hours=HOLD_HOURS)
+    HOLD.write_text(json.dumps({"until": until.isoformat(timespec="seconds"), "reason": reason[:300]}) + "\n")
+
+
+def _check_hold():
+    """No API calls while a hold from a recent 429 or OAuthException is in force (delete content/API_HOLD to lift it)."""
+    if not HOLD.exists():
+        return
+    from datetime import datetime, timezone
+    hold = json.loads(HOLD.read_text())
+    if datetime.now(timezone.utc) < datetime.fromisoformat(hold["until"]):
+        raise GraphError(f"API on hold until {hold['until']} after: {hold['reason'][:120]}")
 
 
 class Publisher:
@@ -41,6 +62,8 @@ class Publisher:
 
     def _call(self, method, path, **params):
         url = f"https://{self.host}/{self.version}/{path}"
+        if not self.dry_run:
+            _check_hold()
         if self.dry_run:
             shown = {k: (v[:60] + "…" if isinstance(v, str) and len(v) > 60 else v) for k, v in params.items()}
             print(f"[dry-run] {method} {url} {json.dumps(shown, ensure_ascii=False)}")
@@ -56,7 +79,10 @@ class Publisher:
             with urllib.request.urlopen(req, timeout=60) as r:
                 return json.loads(r.read())
         except urllib.error.HTTPError as e:
-            raise GraphError(f"{e.code} {e.read().decode(errors='replace')}") from None
+            body = e.read().decode(errors="replace")
+            if e.code == 429 or "OAuthException" in body:
+                _set_hold(body)       # Meta is limiting or blocking us: back off instead of retrying every hour
+            raise GraphError(f"{e.code} {body}") from None
 
     def _wait(self, container, timeout=600):
         start = time.time()

@@ -28,7 +28,10 @@
     "figure": false,
     "layers": 5,
     "mist": 0.7,
-    "gag": "tree_cloud"
+    "gag": "tree_cloud",
+    "sign": "DINNER'S READY.",
+    "stage": 0.74,
+    "house": true
   },
   "cover": "This tree has its own weather.",
   "beats": [
@@ -38,10 +41,95 @@
   "odd_line": "Forecast for the tallest tree: light rain. Everywhere else: dry.",
   "rule": "Do not shake the tall tree. Somebody's dinner is up there.",
   "question": "Would you move up, or stay on the ground?",
-  "extra": "Pinecone mail arrives in about eight seconds. Replies by kite take a week.",
+  "extra": "Pinecone mail arrives in about two minutes. Replies by kite take a week.",
   "reel_lines": [
     "The trees never stop growing. The tallest one has a small rain cloud of its own.",
     "A village near the top hasn't come down in six hundred years. They send post by pinecone."
   ],
-  "opener": "This tree has its own weather."
+  "opener": "This tree has its own weather.",
+  "episode": {
+    "opener": "This tree has\nits own weather.",
+    "beats": [
+      {
+        "text": "And its own village.\nNobody up there has come down\nin six hundred years.",
+        "shot": {
+          "framing": "sky",
+          "focus": [
+            0.567,
+            0.29
+          ],
+          "zoom": [
+            1.7,
+            1.8
+          ]
+        }
+      },
+      {
+        "text": "It's a day's climb down\nand a week back up.\nNobody bothers.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.45,
+            0.45
+          ],
+          "zoom": [
+            1.3,
+            1.4
+          ]
+        }
+      },
+      {
+        "text": "Their relatives on the ground\nstill cook for them.",
+        "shot": "house"
+      },
+      {
+        "text": "I stayed for dinner once.\nThere was a lot of it.",
+        "shot": "cartographer"
+      },
+      {
+        "text": "",
+        "shot": "wide",
+        "spec": {
+          "palette": "lilac_dusk"
+        },
+        "seconds": 2.5
+      },
+      {
+        "text": "Every evening, a pinecone drops\nfrom the top\nwith the same answer.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.45,
+            0.45
+          ],
+          "zoom": [
+            1.3,
+            1.4
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk"
+        }
+      },
+      {
+        "text": "'Coming!'",
+        "shot": {
+          "framing": "close",
+          "focus": [
+            0.567,
+            0.33
+          ],
+          "zoom": [
+            1.9,
+            2.05
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk"
+        }
+      }
+    ],
+    "end": "Dinner's still ready.",
+    "caption": "Look at the foot of the tree.\n\nField note, day three. The cloud rains on the tallest tree and nowhere else, so the village has its own water as well as its own weather. Notes come down by pinecone in about two minutes. Anything going up goes by kite and takes a week, so dinner stays on the ground. Agnes has cooked for the top of the tree for fifty-one years, and she repaints the sign every spring. They have food of their own up there. She cooks anyway.\n\nAt a Polish Christmas Eve supper, one extra place is laid for whoever might turn up. On Bramble, it's most of the table.\n\nWho's the 'Coming!' in your house?"
+  }
 }

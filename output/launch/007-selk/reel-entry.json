@@ -1,0 +1,117 @@
+{
+  "id": "007",
+  "name": "Selk",
+  "subtitle": "the glass sea",
+  "story": "Selk used to be an ocean. When the water went, the waves stayed where they were, frozen mid-break in green glass, some of them two hundred metres high. Surfers still make the trip. They carry their boards across the sand, stand under the curl for about an hour, take a photo and go home. One of them told me it was the best wave he'd ever had, and he meant it.",
+  "facts": {
+    "Day": "33 hours",
+    "Moons": "none",
+    "Gravity": "0.95 g",
+    "Population": "about 5,000"
+  },
+  "hook": "A planet for people who go to the beach and don't swim.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#surf"
+  ],
+  "spec": {
+    "palette": "rust_desert",
+    "terrain": "dunes",
+    "horizon": 0.64,
+    "glass_waves": true,
+    "suns": 1,
+    "sun_x": 0.7,
+    "sun_y": 0.32,
+    "sun_size": 0.06,
+    "moons": 0,
+    "figure": false,
+    "layers": 5,
+    "mist": 0.35,
+    "gag": "glass_surfers",
+    "stage": 0.72
+  },
+  "cover": "The waves froze mid-break.",
+  "beats": [
+    "The ocean dried up and left the waves behind, frozen mid-break in green glass.",
+    "Surfers still come. They stand under the curl for an hour and call it the best wave of their lives."
+  ],
+  "odd_line": "Surf report: same as yesterday, for nine thousand years.",
+  "rule": "No running under the waves. They have been patient for a very long time.",
+  "question": "Would you make the trip?",
+  "extra": "The surf shop still sells wax. As a souvenir.",
+  "reel_lines": [
+    "The ocean dried up and left the waves behind, frozen mid-break in green glass.",
+    "Surfers still come. They stand under the curl for an hour and call it the best wave of their lives."
+  ],
+  "opener": "The waves froze mid-break.",
+  "episode": {
+    "opener": "Surf's been up\nfor nine thousand years.",
+    "beats": [
+      {
+        "text": "The waves are glass.\nHere, glass really is a liquid.",
+        "shot": {
+          "framing": "left",
+          "focus": [
+            0.3,
+            0.42
+          ],
+          "zoom": [
+            2.0,
+            2.15
+          ]
+        },
+        "note": "CHECK frame 1 (the opener): 'years.' sits near the pale sun disc (retention); nudge the hook camera if it touches."
+      },
+      {
+        "text": "So they're still breaking.\nAbout as fast as toenails grow.",
+        "shot": "sign",
+        "spec": {
+          "sign": "NO RUNNING|UNDER THE WAVES"
+        },
+        "seconds": 4.4
+      },
+      {
+        "text": "Surfers wait hours for a wave.\nOn Selk, families take shifts.",
+        "shot": "wide",
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0
+        }
+      },
+      {
+        "text": "Bo teaches surfing.\n'Best surfers anywhere.\nNot one of them can swim.'",
+        "shot": "gag",
+        "spec": {
+          "palette": "mint_dawn",
+          "sun_y": 0.55
+        }
+      },
+      {
+        "text": "I asked Bo how the surf was.\n'Bit choppy.'",
+        "shot": "cartographer",
+        "spec": {
+          "palette": "mint_dawn",
+          "sun_y": 0.55
+        }
+      },
+      {
+        "text": "It lands in three thousand years.\nBo's family will be on it.",
+        "shot": "medium",
+        "spec": {
+          "palette": "gold_hour",
+          "sun_y": 0.56,
+          "sun_size": 0.07
+        }
+      },
+      {
+        "text": "Then straight back out.",
+        "shot": "wide",
+        "seconds": 3.0
+      }
+    ],
+    "end": "Surf report: still breaking.",
+    "caption": "That big wave is moving. Very slowly.\n\nThe sea on Selk left one summer, nine thousand years ago, and the waves stayed where they were. The biggest is two hundred metres from sand to lip, and the sand still smells of salt. Houses under the curl rent cheap because they never get the afternoon sun, and a day here lasts 33 hours, so that's a lot of afternoon. Bo's shop still sells wax. Nobody needs it; everybody buys a bar to smell on the flight home. The surf report has said 'same as yesterday' for nine thousand years, and it's very nearly right. Every surfer here will tell you it's the best wave of their life. They all mean the same one.\n\nOn Earth, glass flowing is a myth: old church windows were uneven from the start, and room-temperature glass would take far longer than the age of the universe to sag. Nobody told Selk. Toenails really do grow about 1.6 mm a month.\n\nHow long would you wait for a wave?"
+  },
+  "_engine": 4
+}

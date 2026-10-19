@@ -1,0 +1,111 @@
+{
+  "id": "H03",
+  "name": "Mothwing",
+  "subtitle": "the light-eating moths",
+  "story": "The moths on Mothwing have wingspans like kites, and they live on light. Each night they lift the moonlight off the fields and carry it back up. Leave a candle in the window and they'll take that too, but they leave a little glowing dust on the sill, which lasts until morning.",
+  "facts": {
+    "Day": "36 hours",
+    "Moons": "2",
+    "Gravity": "0.7 g",
+    "Population": "19,000"
+  },
+  "hook": "A planet for people who pretend to be out on Halloween.",
+  "tags": [
+    "#halloween",
+    "#worldbuilding",
+    "#illustration"
+  ],
+  "spec": {
+    "palette": "lilac_dusk",
+    "terrain": "spires",
+    "horizon": 0.64,
+    "particles": "embers",
+    "moons": 2,
+    "suns": 0,
+    "figure": false,
+    "layers": 5,
+    "mist": 0.55,
+    "moths": 5,
+    "stage": 0.74,
+    "gag": "moth_roof"
+  },
+  "cover": "These moths eat moonlight.",
+  "beats": [
+    "The moths here are the size of kites, and they eat light.",
+    "Leave a candle out and they'll take it. They leave a little glowing dust as a thank you."
+  ],
+  "odd_line": "Missing: one candle. Found: a small pile of glowing dust.",
+  "rule": "Candles left out after dark are considered a donation.",
+  "question": "Would you leave a candle out?",
+  "extra": "They're very polite about it. They always leave the wick.",
+  "reel_lines": [
+    "The moths here are the size of kites, and they eat light.",
+    "Leave a candle out and they'll take it. They leave a little glowing dust as a thank you."
+  ],
+  "opener": "These moths eat moonlight.",
+  "episode": {
+    "opener": "Something is eating the moonlight.",
+    "beats": [
+      {
+        "text": "Moths. The size of kites.",
+        "shot": "sky"
+      },
+      {
+        "text": "Leave a candle out\nand your moth will take it.",
+        "shot": "medium"
+      },
+      {
+        "text": "They're very polite about it.\nThey always leave the wick.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.25
+          ],
+          "focus": [
+            0.17,
+            0.34
+          ]
+        }
+      },
+      {
+        "text": "Everyone leaves one out.\nNot Gordon.",
+        "shot": "sign",
+        "spec": {
+          "sign": "CANDLES AFTER DARK|ARE A DONATION"
+        }
+      },
+      {
+        "text": "He says he's not made of candles.",
+        "shot": "left"
+      },
+      {
+        "text": "His moth sat on the roof all night,\nlooking in.",
+        "shot": "gag"
+      },
+      {
+        "text": "It wasn't cross.\nJust disappointed.",
+        "shot": {
+          "framing": "gag",
+          "zoom": [
+            2.3,
+            2.45
+          ]
+        },
+        "seconds": 3.5
+      },
+      {
+        "text": "Now Gordon leaves out thirteen.",
+        "shot": "wide",
+        "spec": {
+          "moths": 13
+        },
+        "seconds": 3.2
+      }
+    ],
+    "end": "Your moth is on the roof tonight.",
+    "caption": "Mothwing has 19,000 people, two moons and a 36-hour day, so the nights run to eighteen hours and the moths are never short of work. They have wingspans like kites and live on light. Every night they lift the moonlight off the fields and carry it back up, and each one keeps the same round of windows all its life. A candle left on the sill after dark counts as a donation. They take the flame, leave the wick, and leave a little glowing dust that lasts until breakfast. Nobody sells nightlights. There'd be no point.\n\nNobody has ever been hurt by one. Several people have been made to feel terrible.\n\nI left a torch out on my first night, to be helpful. I got it back. Switched off.\n\nWhat does your family say they're not made of?"
+  },
+  "first_comment": "Gordon would like it known that he is still not made of candles. He has ordered more.",
+  "_engine": 4
+}

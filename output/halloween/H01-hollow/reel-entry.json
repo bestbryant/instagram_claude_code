@@ -27,7 +27,8 @@
     "layers": 4,
     "mist": 0.65,
     "gag": "fainted_ghost",
-    "stage": 0.72
+    "stage": 0.72,
+    "cartographer": false
   },
   "cover": "Say boo and they faint.",
   "beats": [
@@ -43,5 +44,88 @@
     "So at the end of October, the living go door to door to apologise."
   ],
   "opener": "Say boo and they faint.",
+  "episode": {
+    "opener": "Say boo and they faint.",
+    "beats": [
+      {
+        "text": "Hollow's ghosts are shy.\nThey take an hour to come round.",
+        "shot": "gag"
+      },
+      {
+        "text": "Bump a wardrobe, you say sorry. It might be occupied.",
+        "shot": "house"
+      },
+      {
+        "text": "Every October, on Sorry Night,\nthe living go\nwardrobe to wardrobe.",
+        "shot": "sky"
+      },
+      {
+        "text": "Mo, 9, has a list. Slammed doors. One boo, by accident. The recorder.",
+        "shot": {
+          "framing": "gag",
+          "zoom": [
+            1.45,
+            1.55
+          ]
+        }
+      },
+      {
+        "text": "Mo's doing the whole street.",
+        "shot": "wide"
+      },
+      {
+        "text": "By morning there are sweets\non every step. Cold ones.",
+        "shot": "wide",
+        "spec": {
+          "palette": "rose_fog",
+          "gag": "",
+          "big_moon": false,
+          "suns": 1,
+          "sign": "It's fine,|really."
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.4,
+            1.75
+          ]
+        },
+        "spec": {
+          "palette": "rose_fog",
+          "gag": "",
+          "big_moon": false,
+          "suns": 1,
+          "sign": "It's fine,|really."
+        },
+        "seconds": 3.0
+      },
+      {
+        "text": "Mo has already written back. 'Sorry for the trouble.'",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.75,
+            1.9
+          ]
+        },
+        "spec": {
+          "palette": "rose_fog",
+          "gag": "",
+          "big_moon": false,
+          "suns": 1,
+          "sign": "It's fine,|really.",
+          "crowd": 1,
+          "crowd_x": 0.52,
+          "crowd_items": "book",
+          "crowd_facing": "right"
+        }
+      }
+    ],
+    "end": "For people who apologise to furniture.",
+    "caption": "Who's that standing by the ghost?\n\nHollow has 4,000 living residents. The other kind won't come out to be counted. They keep to wardrobes, airing cupboards and the space under the stairs, and a sneeze can floor one. Saying boo needs written consent. One lives in the school piano, so lessons are recorder only.\n\nSorry Night is the last night of October: knock on each wardrobe once, softly, say what you did, and go. Mo got the most sweets on the street. Nobody's sure what that says about the recorder.\n\nOn Earth, one root of Halloween door-knocking is souling: in medieval Britain the poor went house to house at Hallowtide and were given soul cakes for praying for the household's dead. On Hollow the living knock, and the dead hand out the treats.\n\nWhat's the last thing you apologised to?"
+  },
   "_engine": 4
 }
