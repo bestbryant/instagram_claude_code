@@ -5,11 +5,11 @@ from .render import Spec
 from .text import invite_line
 
 
-def _closing(entry, by, kind):
+def _closing(entry, by, kind, question=True):
     lines = []
     if by:
         lines.append(f"Found for {by}.")   # the @mention notifies them; asking for reposts gets posts down-ranked
-    if entry.get("question"):
+    if question and entry.get("question"):
         lines.append(entry["question"])
     lines.append(invite_line(entry, kind))
     return "\n".join(lines)
@@ -24,6 +24,11 @@ def carousel(entry: dict, by: str | None = None) -> str:
 
 def reel(entry: dict, by: str | None = None) -> str:
     head = f"{entry['hook']} (Imaginary planet No. {entry['id']}: {entry['name']})"
+    ep = entry.get("episode") or {}
+    if ep.get("caption"):
+        # an episode's caption carries the setting the video has no room for, and ends on its own question
+        parts = [head, ep["caption"].strip(), _closing(entry, by, "reel", question=False), " ".join(entry["tags"][:3])]
+        return "\n\n".join(parts)
     parts = [head, entry.get("extra") or entry["story"], _closing(entry, by, "reel"), " ".join(entry["tags"][:3])]
     return "\n\n".join(parts)
 

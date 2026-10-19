@@ -30,7 +30,8 @@ class Shot:
     still: np.ndarray | None = None          # use a ready image instead of a scene
     pan: float = 160.0                       # px the nearest layer travels during the shot
     zoom: tuple = (1.0, 1.0)                 # start and end scale (>= 1, centred on focus)
-    focus: tuple | None = None               # zoom centre as fractions of the frame (None: the scene's gag)
+    focus: tuple | str | None = None         # zoom centre as fractions of the frame, a scene mark ("sign",
+                                             # "cartographer"), or None for the scene's gag
     cards: list = field(default_factory=list)  # (rgba card array, t0, t1) in shot seconds
     tick: bool = True                        # click on the cut into this shot
     reverse: bool = False                    # pan backwards (the end card, so its last frame is the hook's first)
@@ -70,8 +71,12 @@ class _Prepared:
             mid = frame(scene, 0.5, shot.pan, 0.0, grain=0)
             cache[key] = (scene, bloom_threshold(mid), ink_palette(mid, extra=spec_inks(shot.spec)))
         self.scene, self.thr, self.inks = cache[key]
+        if isinstance(shot.focus, str):
+            shot.focus = tuple(getattr(self.scene, "marks", {}).get(shot.focus) or getattr(self.scene, "focus", (0.5, 0.5)))
         if shot.focus is None:
             shot.focus = getattr(self.scene, "focus", (0.5, 0.5))
+        elif shot.focus[0] == "x":                # ("x", fx): that x, at the height of the scene's gag
+            shot.focus = (shot.focus[1], getattr(self.scene, "focus", (0.5, 0.5))[1])
 
     def image(self, ts: float, t_global: float) -> np.ndarray:
         s = self.shot

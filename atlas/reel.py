@@ -46,9 +46,94 @@ def cover_shot(spec: Spec, seed: int, entry: dict):
                 cards=[(card, 0, 1, 0, 0)])
 
 
+# camera presets a story beat can ask for by name: (zoom start, zoom end, focus)
+FRAMINGS = {
+    "wide": ((1.0, 1.08), None),
+    "medium": ((1.35, 1.45), None),
+    "close": ((1.9, 2.05), None),
+    "gag": ((1.9, 2.05), None),
+    "sky": ((1.3, 1.4), (0.5, 0.3)),
+    "left": ((1.5, 1.6), ("x", 0.3)),       # this x, at the height of the scene's gag
+    "right": ((1.5, 1.6), ("x", 0.7)),
+    "sign": ((1.8, 1.9), "sign"),
+    "cartographer": ((2.0, 2.15), "cartographer"),
+}
+
+
+def _beat_shot(spec: Spec, seed: int, beat: dict, card, seconds: float):
+    """One story beat: its framing (a preset name or an explicit camera) and any scene variant."""
+    from dataclasses import replace
+    from .video import Shot
+    shot = beat.get("shot") or "medium"
+    if isinstance(shot, str):
+        shot = {"framing": shot}
+    zoom, focus = FRAMINGS.get(shot.get("framing", "medium"), FRAMINGS["medium"])
+    zoom = tuple(shot.get("zoom", zoom))
+    focus = tuple(shot["focus"]) if "focus" in shot else focus
+    variant = replace(spec, **beat["spec"]) if beat.get("spec") else spec
+    return Shot(seconds, variant, seed, pan=50, zoom=zoom, focus=focus, cards=[(card, 0.0, seconds, 0.0, 0.0)])
+
+
+def next_stop(entry: dict) -> str:
+    """The planet that follows this one in the posting queue (for the end card's teaser)."""
+    import json
+    from pathlib import Path
+    try:
+        from .__main__ import content_entries
+        sched = json.loads((Path(__file__).resolve().parent.parent / "content" / "schedule.json").read_text())
+        reels = [x for x in sched if x["kind"] == "reel" and not x.get("hold")]
+        ids = [x["entry"] for x in reels]
+        i = ids.index(entry["id"])
+        names = content_entries()
+        for x in ids[i + 1:]:
+            if x in names and x != entry["id"]:
+                return names[x]["name"]
+    except (ValueError, OSError, KeyError):
+        pass
+    return ""
+
+
+def story_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = None) -> list:
+    """A story episode: the opener on a wide shot, then one shot per beat, then the end card,
+    which pans back to the opening frame so the Reel loops cleanly."""
+    from .video import Shot, overlay
+    ep = entry["episode"]
+    series = f"No. {entry['id']} · {text.BRAND}"
+    left = dict(align="left", x=96, width=W_SAFE)
+    first = ep.get("opener") or entry.get("opener") or entry["hook"]
+    kicker = entry.get("kicker")
+    opener = overlay([dict(text=kicker or series, y=0.2, kind="italic", size=42 if kicker else 36, **left),
+                      dict(text=first, y=0.235, kind="serif", weight="Medium", size=84, leading=1.12, **left)])
+    read = lambda line, extra=0.9: round(max(2.4, 0.3 * len(line.split()) + extra), 1)
+    t_hook = read(f"{kicker or ''} {first}".strip())
+    cam = entry.get("camera", {}).get("hook", {})
+    shots = [Shot(t_hook, spec, seed, pan=50, zoom=tuple(cam.get("zoom", (1.0, 1.12))),
+                  focus=tuple(cam["focus"]) if "focus" in cam else None, cards=[(opener, 0.0, t_hook, 0.0, 0.0)])]
+    for i, beat in enumerate(ep["beats"]):
+        last = i == len(ep["beats"]) - 1
+        secs = beat.get("seconds") or read(beat["text"], 1.3 if last else 0.9)
+        card = overlay([dict(text=beat["text"], y=beat.get("text_y", 0.2), kind="italic", size=64, leading=1.16, **left)])
+        shots.append(_beat_shot(spec, seed, beat, card, secs))
+    end = ep.get("end") or ("Found for " + requested_by if requested_by else "Your name has a planet too.")
+    if "{next}" in end:
+        nxt = next_stop(entry)
+        end = end.replace("{next}", nxt) if nxt else "Your name has a planet too."
+    ty = entry.get("text_y", {}).get("name", 0.3)
+    name = overlay([dict(text=series, y=ty, kind="italic", size=36),
+                    dict(text=entry["name"], y=ty + 0.035, kind="serif", weight="Medium", size=170),
+                    dict(text=end, y=ty + 0.145, kind="italic", size=46)])
+    ncam = entry.get("camera", {}).get("name", {})
+    shots.append(Shot(2.6, spec, seed, pan=50, zoom=tuple(ncam.get("zoom", (1.08, 1.0))),
+                      focus=tuple(ncam["focus"]) if "focus" in ncam else (tuple(cam["focus"]) if "focus" in cam else None),
+                      cards=[(name, 0.0, 2.6, 0.0, 0.0)], tick=True, reverse=True))
+    return shots
+
+
 def reel_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = None) -> list:
     """The Reel's shot list (hook, setup, punchline, name card), also used to check frames before rendering."""
     from .video import Shot, overlay
+    if entry.get("episode"):
+        return story_shots(spec, seed, entry, requested_by)
 
     series = f"No. {entry['id']} · {text.BRAND}"
     beats = entry.get("beats") or entry["reel_lines"]
