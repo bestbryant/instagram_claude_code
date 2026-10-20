@@ -151,5 +151,73 @@
     ],
     "end": "Wilf says bring a cardigan.",
     "caption": "On a warm planet, one man is blowing on his hands.\n\nCinderwake is big and young and still cooling from the inside, so its heat comes up through the rock, not down from its sun. Towns grew round the hottest stones, the way ours grew round wells. You put a kettle down, wander off, and come back when it whistles. The rain falls warm, tea grows wild in the cracks, and socks dry on the canyon walls in about ninety seconds. Nights last twenty hours, and the canyon walls glow dull orange, enough to read by. The air is thicker than ours, so water boils at about 107°C and visitors burn their tongues. Heating bills are something grandparents mention to frighten children.\n\nI packed a hot-water bottle. It's in the museum now, next to the stove.\n\nEveryone knows a Wilf. Who's yours?"
+  },
+  "short": {
+    "version": "B",
+    "title": "The ground here\nboils your kettle.",
+    "sub": "Nobody is ever cold.\nExcept Wilf.",
+    "framing": "gag",
+    "spec": {
+      "palette": "violet_ice",
+      "particles": "none",
+      "glow_rims": false,
+      "suns": 0,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "palette": "crimson",
+        "suns": 0,
+        "cartographer": false
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "So, legally, every kettle\non the planet is his.",
+        "shot": "crowd",
+        "spec": {
+          "suns": 0,
+          "palette": "pumpkin",
+          "crowd": 6,
+          "crowd_items": "kettle",
+          "crowd_x": 0.42,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "He's had tea in every house.\nNo warmer.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.25
+          ],
+          "focus": [
+            0.8,
+            0.67
+          ]
+        },
+        "spec": {
+          "suns": 0,
+          "palette": "pumpkin",
+          "crowd": 6,
+          "crowd_items": "kettle",
+          "crowd_x": 0.42,
+          "crowd_facing": "right",
+          "cartographer": false
+        }
+      }
+    ],
+    "end": "Wilf says bring a cardigan.",
+    "zoom": [
+      1.5,
+      1.55
+    ],
+    "focus": [
+      0.54,
+      0.66
+    ]
   }
 }
