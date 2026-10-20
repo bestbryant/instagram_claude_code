@@ -10,7 +10,7 @@ Newest first. Each entry gives the symptom (numbers), the hypotheses, the eviden
 - **How we'll know:** Luna and Maren at 48 h (21 Oct) say whether the account is held. Then, per version over about 5 Reels at 48 h: skip 60% or less, at least 40% of the Reel watched by strangers, at least 1 share or save per 100 reached. If no version passes after about 30 Reels, rethink the concept (for example, a recurring character series), not the posting rate.
 
 ## 2026-10-19: low reach and high early skip
-- **Symptom:** Ovo reach 100 with a 73% skip rate and 3.9 s average watch on a 20 s Reel. Veyra 58% skip. Luna and Maren reach 2-3 after several hours. 1 follower.
+- **Symptom:** Ovo reach 100 with a 73% skip rate and 3.9 s average watch on a 16 s Reel (corrected 20 Oct; it was logged as 20 s). Veyra 58% skip. Luna and Maren reach 2-3 after several hours. 1 follower.
 - **Hypotheses:**
   1. Frame 1 doesn't stop the scroll: a static landscape with no motion and a text block to read.
   2. Text-only with ambient sound is weak against voiceover and music in the feed.

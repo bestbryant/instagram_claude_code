@@ -517,7 +517,8 @@ def cmd_next(a):
         if not a.dry_run:
             video = folder if item["kind"] in ("process", "special") else folder / "reel.mp4"
             sha = {"sha1": file_hash(video)} if item["kind"] != "carousel" else {}
-            log.append({**item, "media_id": media, "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **sha})
+            fmt = {"format": reel_format(entries.get(item["entry"], {}))} if item["kind"] == "reel" else {}
+            log.append({**item, "media_id": media, "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **sha, **fmt})
             LOG.write_text(json.dumps(log, indent=2) + "\n")
             done.add((item["entry"], item["kind"]))
     if posted:
@@ -571,6 +572,69 @@ def cmd_stats(a):
         f.write(json.dumps({"t": now.isoformat(timespec="seconds"), "followers": acct.get("followers_count"), "posts": acct.get("media_count")}) + "\n")
     STATS.write_text(json.dumps({"fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                                  "followers": acct.get("followers_count"), "posts": out}, indent=1) + "\n")
+
+
+def reel_format(entry: dict) -> str:
+    """Which format test version a Reel is (docs/PLAN.md): short-A/B/C, long (34 s story) or postcard."""
+    if entry.get("short"):
+        return "short-" + entry["short"].get("version", "A")
+    return "long" if entry.get("episode") else "postcard"
+
+
+def cmd_score(a):
+    """Stranger-only scoreboard from content/stats_history.jsonl, read at about 48 h (docs/PLAN.md).
+
+    Our own plays come first (the owner, the bot's checks): the first snapshot with reach of 3 or less is
+    taken as that baseline and subtracted. Pass lines: skip 60% or less, strangers watch at least 40% of the
+    Reel, at least 1 share or save per 100 strangers reached."""
+    import statistics
+    import subprocess
+    log = json.loads(LOG.read_text()) if LOG.exists() else []
+    hist = [json.loads(line) for line in (ROOT / "content" / "stats_history.jsonl").read_text().splitlines() if line.strip()]
+    entries = content_entries()
+    rows = []
+    for x in log:
+        if x["kind"] != "reel":
+            continue
+        snaps = sorted((h for h in hist if h.get("entry") == x["entry"] and h.get("kind") == "reel"), key=lambda h: h["age_h"])
+        if not snaps:
+            continue
+        base = next((h for h in snaps if (h.get("reach") or 0) <= 3), None) or {}
+        if base is snaps[-1]:
+            base = {}                                         # nothing after it to compare: no strangers yet
+        at48 = min(snaps, key=lambda h: abs(h["age_h"] - a.hours))
+        g = lambda h, k: h.get(k) or 0
+        reach = g(at48, "reach") - g(base, "reach")
+        views = g(at48, "views") - g(base, "views")
+        watch_total = g(at48, "ig_reels_avg_watch_time") * g(at48, "views") - g(base, "ig_reels_avg_watch_time") * g(base, "views")
+        skips = g(at48, "reels_skip_rate") * g(at48, "views") - g(base, "reels_skip_rate") * g(base, "views")
+        watch = watch_total / views / 1000 if views > 0 else None
+        skip = skips / views if views > 0 else None
+        mp4 = _find({"entry": x["entry"], "kind": "reel"})
+        length = None
+        if mp4 is not None and (mp4 / "reel.mp4").exists():
+            r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp4 / "reel.mp4")],
+                               capture_output=True, text=True)
+            length = float(r.stdout.strip() or 0) or None
+        sends = g(at48, "shares") + g(at48, "saved")
+        fmt = x.get("format") or {"001": "postcard", "008": "postcard"}.get(x["entry"]) or reel_format(entries.get(x["entry"], {}))
+        row = dict(entry=x["entry"], name=entries.get(x["entry"], {}).get("name", "?"), format=fmt, age=at48["age_h"],
+                   reach=reach, views=views, skip=skip, watch=watch, length=length,
+                   watched=(watch / length if watch is not None and length else None), per100=(100 * sends / reach if reach > 0 else None))
+        row["pass"] = (reach >= 20 and skip is not None and skip <= 60 and (row["watched"] or 0) >= 0.4 and (row["per100"] or 0) >= 1)
+        rows.append(row)
+    f = lambda v, fmt_: "-" if v is None else fmt_.format(v)
+    print(f"{'entry':>5} {'name':<11} {'format':<9} {'age':>5} {'reach':>5} {'skip%':>5} {'watch':>6} {'len':>5} {'watched':>7} {'sends/100':>9}  pass")
+    for r in rows:
+        print(f"{r['entry']:>5} {r['name'][:11]:<11} {r['format']:<9} {r['age']:>5.1f} {r['reach']:>5} {f(r['skip'], '{:.0f}'):>5} "
+              f"{f(r['watch'], '{:.1f}s'):>6} {f(r['length'], '{:.0f}s'):>5} {f(r['watched'], '{:.0%}'):>7} {f(r['per100'], '{:.1f}'):>9}  "
+              f"{'yes' if r['pass'] else ('too early' if r['age'] < a.hours - 6 else 'no')}")
+    print("\nby format (Reels at least 40 h old with reach 20+; medians):")
+    for fmt in sorted({r["format"] for r in rows}):
+        rs = [r for r in rows if r["format"] == fmt and r["age"] >= 40 and r["reach"] >= 20]
+        med = lambda k: statistics.median([r[k] for r in rs if r[k] is not None]) if any(r[k] is not None for r in rs) else None
+        print(f"  {fmt:<9} n={len(rs)}  reach {f(med('reach'), '{:.0f}')}  skip {f(med('skip'), '{:.0f}%')}  "
+              f"watched {f(med('watched'), '{:.0%}')}  sends/100 {f(med('per100'), '{:.1f}')}")
 
 
 def _prepare_job(job):
@@ -675,6 +739,9 @@ def main(argv=None):
     s = sub.add_parser("stats", help="reach, views, watch time, likes, shares and saves for every post")
     s.add_argument("--recent", type=float, default=0, help="only posts younger than this many hours (a light hourly check)")
     s.set_defaults(fn=cmd_stats)
+    s = sub.add_parser("score", help="stranger-only scoreboard at about 48 h, by format version (no API calls)")
+    s.add_argument("--hours", type=float, default=48)
+    s.set_defaults(fn=cmd_score)
     s = sub.add_parser("inbox", help="collect name requests from recent comments (Graph API)")
     s.add_argument("--limit", type=int, default=10, help="how many recent posts to scan")
     s.add_argument("--chart", action="store_true", help="also render planets for new requests")

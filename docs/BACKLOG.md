@@ -16,7 +16,7 @@ Goal: 50,000 followers. Every hourly run that isn't busy posting or fixing somet
 ## Now (docs/PLAN.md, in order)
 - [ ] **Short-format engine**: an episode's `short` (hook, kicker/identity line, onset spec at about 0.4 s with a sound hit, 2-3 beats, end) renders as a 14-20 s Reel. It opens close on the joke, has a big identity line, and the end card lasts 2 s at most. It works voiced (B, C) and silent (A).
 - [ ] **Short scripts** for the first 15 planets in the new order (funny or awe first), written by the room from the existing episodes, with the version (A/B/C) assigned in rotation. Then render, check frames and check the voice by transcript (scratchpad/voice_qa.py), and un-hold them in the schedule.
-- [ ] **Scoreboard**: stats subtract each Reel's plays from before Instagram's stranger test showing (the first snapshot with reach of 3 or less), read at 48 h, and tag the format version (schedule `version`). Fix the Reel lengths in DIAGNOSIS.md.
+- [x] **Scoreboard** (20 Oct): `python -m atlas score` reads content/stats_history.jsonl (backfilled from every committed stats.json), subtracts our own early plays, reads at about 48 h, groups by format (published.json now records each Reel's format), and checks the pass lines. First read: strangers watched Veyra 1.9 s (12%) and Ovo 3.9 s (24%).
 - [ ] **Captions**: open with a plain keyword line, use 3-5 specific tags (#worldbuilding #imaginaryworlds #scifiart #conceptart), and vary or drop the "drop a name below" ask.
 - [ ] **Read Luna and Maren at 48 h** (21 Oct about 12:30 and 21:15 UTC) and the owner's Account Status answer. If the account is held, stop posting and ask the owner to request a review.
 
