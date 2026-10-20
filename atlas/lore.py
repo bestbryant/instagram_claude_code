@@ -143,7 +143,7 @@ SHORTS = {
         beats=[("gag", None), ({"framing": "medium", "focus": [0.5, 0.5]}, None)],
         end="The engineers say not to worry."),
     "the kind echoes": dict(
-        title="Echoes on {name} come back kinder.", before=dict(crowd_items="nothing"), framing="wide",
+        title="Echoes on {name} come back kinder.", before=dict(crowd_items="nothing"), framing="group",
         beats=[("close", None), ("medium", dict(crowd_items="echo", palette="gold_hour"))],
         end="Couples drive out there after a row."),
     "the Sunday wind": dict(
