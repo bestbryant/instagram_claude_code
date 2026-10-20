@@ -221,7 +221,8 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
     # the end card is the aftermath: the last beat's scene (the turn), plus any end_spec on top
     last = sh["beats"][-1].get("spec") if sh["beats"] else None
     end_scene = replace(after, **{**(last or {}), **(sh.get("end_spec") or {})})
-    shots.append(Shot(t_end, end_scene, seed, pan=50, zoom=(1.12, 1.04), focus=focus if isinstance(focus, tuple) else None,
+    end_focus = tuple(sh["end_focus"]) if "end_focus" in sh else (focus if isinstance(focus, tuple) else None)
+    shots.append(Shot(t_end, end_scene, seed, pan=50, zoom=tuple(sh.get("end_zoom", (1.12, 1.04))), focus=end_focus,
                       cards=[(name, 0.0, t_end, 0.0, 0.0)], say=end if speak else "", say_at=0.15))
     return shots
 

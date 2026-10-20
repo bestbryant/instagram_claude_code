@@ -125,7 +125,67 @@
       "end": "Every name has a planet. Yours too.",
       "caption": "On the replay, look at the far left of the first frame.\n\nElsewhere is the first page of the atlas, and the only planet everyone has been to. You arrive the moment you drift off, halfway through a sentence or a recipe or a meeting, still holding whatever you were holding. The ringed giant never quite sets, so it's always about twenty to eight in the evening. Most people stay a few seconds. Then somebody says your name and you're home, and the spoon comes with you.\n\nPeak hours are Monday mornings and the last ten minutes of any meeting. The record is twenty-six minutes, set during a meeting about another meeting.\n\nI drifted off a long time ago, and nobody called me back. So I stayed, and started an atlas. Most of the pages are still blank.\n\nI'd tell you my name, but it doesn't count if I say it myself."
     },
-    "first_comment": "Someone just shouted 'Dave' across an office. Four people vanished at once."
+    "first_comment": "Someone just shouted 'Dave' across an office. Four people vanished at once.",
+    "short": {
+      "version": "C",
+      "title": "You've been\nto this planet today.",
+      "sub": "Probably in a meeting.",
+      "framing": "crowd",
+      "zoom": [
+        1.35,
+        1.4
+      ],
+      "focus": [
+        0.46,
+        0.64
+      ],
+      "spec": {
+        "crowd": 0,
+        "figure": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "crowd": 6,
+          "figure": false
+        }
+      },
+      "beats": [
+        {
+          "text": "You arrive holding whatever\nwas in your hand. Once, a fish.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.0,
+              2.1
+            ],
+            "focus": [
+              0.5,
+              0.66
+            ]
+          }
+        },
+        {
+          "text": "Someone says your name,\nand you're back.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.35,
+              1.4
+            ],
+            "focus": [
+              0.46,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "figure": false
+          }
+        }
+      ],
+      "end": "Except me. Nobody says mine."
+    }
   },
   {
     "id": "001",
@@ -1021,6 +1081,69 @@
       ],
       "end": "Allow one orbit for a reply.",
       "caption": "Luma's moon comes round every October, low enough to clip the hilltops. You hear it a day before you see it: a hum in your back teeth. Every dog on the planet lies down.\n\nA letter pressed to the moon sticks for the whole orbit. Be polite: it has answered rude ones. The eleven-page reply ended with a drawing of a dog, done from description. It was mostly ears. So is Biscuit, Frank's eighth dog and the first to get post.\n\nIt has been late once, in 1987. It won't say where it went.\n\nOur own moon drifts 3.8 cm further away every year. Luma's keeps coming back.\n\nI went up this year and wrote about a cat called Everything. Nothing yet.\n\nWhat would you tell the moon about your dog?"
+    },
+    "short": {
+      "version": "B",
+      "title": "The moon here\nwrites back.",
+      "sub": "Each autumn,\nit's close enough to touch.",
+      "framing": "gag",
+      "zoom": [
+        1.3,
+        1.36
+      ],
+      "focus": [
+        0.45,
+        0.54
+      ],
+      "spec": {
+        "palette": "polar_night",
+        "big_moon": false,
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "palette": "polar_night",
+          "big_moon": true,
+          "cartographer": false
+        },
+        "motion": "rise"
+      },
+      "beats": [
+        {
+          "text": "Frank writes to it every year,\nmostly about his dog, Biscuit.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.45,
+              0.56
+            ]
+          }
+        },
+        {
+          "text": "No reply. Then the moon wrote:\n'Dear Biscuit, how is Frank?'",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.45,
+              0.56
+            ]
+          },
+          "spec": {
+            "palette": "mint_dawn",
+            "cartographer": false
+          }
+        }
+      ],
+      "end": "Biscuit hasn't written back."
     }
   },
   {
@@ -1137,6 +1260,66 @@
       ],
       "end": "Surf report: still breaking.",
       "caption": "That big wave is moving. Very slowly.\n\nThe sea on Selk left one summer, nine thousand years ago, and the waves stayed where they were. The biggest is two hundred metres from sand to lip, and the sand still smells of salt. Houses under the curl rent cheap because they never get the afternoon sun, and a day here lasts 33 hours, so that's a lot of afternoon. Bo's shop still sells wax. Nobody needs it; everybody buys a bar to smell on the flight home. The surf report has said 'same as yesterday' for nine thousand years, and it's very nearly right. Every surfer here will tell you it's the best wave of their life. They all mean the same one.\n\nOn Earth, glass flowing is a myth: old church windows were uneven from the start, and room-temperature glass would take far longer than the age of the universe to sag. Nobody told Selk. Toenails really do grow about 1.6 mm a month.\n\nHow long would you wait for a wave?"
+    },
+    "short": {
+      "version": "C",
+      "title": "The sea left.\nThe waves stayed.",
+      "sub": "You've just landed on Selk.",
+      "framing": "medium",
+      "spec": {
+        "glass_waves": false,
+        "gag": "",
+        "crowd": 1,
+        "crowd_x": 1.8,
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "glass_waves": true,
+          "gag": "glass_surfers",
+          "crowd": 0,
+          "cartographer": false
+        },
+        "motion": "rise"
+      },
+      "beats": [
+        {
+          "text": "They're still breaking.\nAs fast as your toenails grow.",
+          "shot": "gag"
+        },
+        {
+          "text": "Surfers wait hours for a wave.\nHere, families take shifts.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.3,
+              1.35
+            ],
+            "focus": [
+              0.55,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0,
+            "crowd": 3,
+            "crowd_items": "child_asleep,child,nothing",
+            "crowd_x": 0.8,
+            "crowd_facing": "left"
+          }
+        }
+      ],
+      "end": "Best surfers. Not one can swim.",
+      "focus": [
+        0.5,
+        0.62
+      ],
+      "zoom": [
+        1.35,
+        1.4
+      ]
     }
   },
   {
@@ -1716,6 +1899,71 @@
       ],
       "end": "Dinner's still ready.",
       "caption": "Look at the foot of the tree.\n\nField note, day three. The cloud rains on the tallest tree and nowhere else, so the village has its own water as well as its own weather. Notes come down by pinecone in about two minutes. Anything going up goes by kite and takes a week, so dinner stays on the ground. Agnes has cooked for the top of the tree for fifty-one years, and she repaints the sign every spring. They have food of their own up there. She cooks anyway.\n\nAt a Polish Christmas Eve supper, one extra place is laid for whoever might turn up. On Bramble, it's most of the table.\n\nWho's the 'Coming!' in your house?"
+    },
+    "short": {
+      "version": "A",
+      "title": "This tree has\nits own weather.",
+      "sub": "And a village that hasn't come down\nin 600 years.",
+      "framing": "sky",
+      "zoom": [
+        1.85,
+        1.9
+      ],
+      "focus": [
+        0.567,
+        0.2
+      ],
+      "spec": {
+        "gag": "",
+        "sign": "",
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "gag": "tree_cloud",
+          "sign": "",
+          "cartographer": false
+        }
+      },
+      "beats": [
+        {
+          "text": "Their family below\nstill calls them for dinner.",
+          "shot": "house",
+          "spec": {
+            "palette": "lilac_dusk",
+            "sign": "DINNER'S READY."
+          }
+        },
+        {
+          "text": "Each evening, a pinecone drops:\n'Coming!'",
+          "shot": {
+            "framing": "sky",
+            "zoom": [
+              1.85,
+              1.9
+            ],
+            "focus": [
+              0.567,
+              0.2
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk"
+          }
+        }
+      ],
+      "end": "Dinner's still ready.",
+      "title_y": 0.1,
+      "name_y": 0.55,
+      "end_zoom": [
+        1.06,
+        1.0
+      ],
+      "end_focus": [
+        0.5,
+        0.45
+      ]
     }
   },
   {
@@ -1862,6 +2110,92 @@
       ],
       "end": "Carry them while they're light.",
       "caption": "Keep an eye on the child's arm.\n\nGravity on Brumm is twice ours, so the hills are low, the houses are one storey and nobody owns a ladder. A four-year-old here weighs what a ten-year-old does on Earth. The Last Carry is a holiday for the child's whole street, held in the week they get too heavy to carry far. The road out of every town has a bench every half mile. The parents don't use them.\n\nI offered to take a turn for a mile. The whole road went quiet. You don't help with a Last Carry. You bring tea.\n\nTomas is at school now. He says he remembers the sea. His dad says he was asleep by mile six.\n\nOn Earth, nobody knows which carry is the last one. On Brumm, everybody does, so they close the road.\n\nWhere would you have picked?"
+    },
+    "short": {
+      "version": "A",
+      "title": "Every child here\ngets one last carry.",
+      "sub": "Gravity is double.\nBy four, they're too heavy.",
+      "framing": "medium",
+      "zoom": [
+        1.7,
+        1.76
+      ],
+      "focus": [
+        0.48,
+        0.6
+      ],
+      "spec": {
+        "crowd": 0,
+        "sign": "",
+        "sun_x": 0.6,
+        "sun_y": 0.56,
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "crowd": 5,
+          "crowd_x": 0.4,
+          "sign": "",
+          "sun_x": 0.6,
+          "sun_y": 0.56,
+          "cartographer": false
+        }
+      },
+      "beats": [
+        {
+          "text": "The child picks where to go.\nMost pick the bakery.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.85,
+              1.9
+            ],
+            "focus": [
+              0.59,
+              0.64
+            ]
+          },
+          "seconds": 3.0
+        },
+        {
+          "text": "Tomas picked the sea.\nEight miles. His dad made it.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.55,
+              0.61
+            ]
+          },
+          "spec": {
+            "palette": "gold_hour",
+            "suns": 1,
+            "sun_x": 0.55,
+            "sun_y": 0.6,
+            "sun_size": 0.06,
+            "water": false,
+            "shore": "none",
+            "crowd": 1,
+            "crowd_x": 0.55,
+            "crowd_items": "child",
+            "crowd_facing": "left",
+            "house": false,
+            "sign": "",
+            "cartographer": false
+          }
+        }
+      ],
+      "end": "Tomas was asleep by mile six.",
+      "end_spec": {
+        "water": true,
+        "shore": "left",
+        "crowd_items": "child_asleep"
+      },
+      "scrim": 0.6
     }
   },
   {
@@ -3231,7 +3565,88 @@
       "end": "'Welcome home. Need a bag?'",
       "caption": "The whole queue was born in that shop.\n\nLode is a snowy, hilly planet of 52,000 people, and none of them has ever been lost. You're born with a little iron in the blood, and it points, very gently, at the spot where you arrived. Sat-navs never caught on. In December the whole planet sets off home, and most of it ends up at the big supermarket on the ring road, which was the hospital until 1988. Midwives on Lode don't really retire.\n\nThe man on the next till asked where mine pointed. I said down. He went very quiet and gave me a free bag.\n\n(You have iron in your blood too: three or four grams of it, most of it in your red cells. Ours doesn't point anywhere. We go home anyway.)\n\nWhere does your iron point?"
     },
-    "first_comment": "Bridget: Thirty thousand home this year. I've told every one of them to stand up straight."
+    "first_comment": "Bridget: Thirty thousand home this year. I've told every one of them to stand up straight.",
+    "short": {
+      "version": "B",
+      "title": "Your blood\npoints home.",
+      "sub": "To wherever you were born.",
+      "framing": "medium",
+      "zoom": [
+        1.75,
+        1.8
+      ],
+      "focus": [
+        0.5,
+        0.66
+      ],
+      "spec": {
+        "crowd": 0,
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "crowd": 8,
+          "crowd_x": 0.775,
+          "crowd_items": "flower,nothing,nothing,flower",
+          "crowd_facing": "left",
+          "cartographer": false
+        }
+      },
+      "beats": [
+        {
+          "text": "For most people,\nthat's the hospital.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.8,
+              1.9
+            ],
+            "focus": [
+              0.36,
+              0.68
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "palette": "sepia",
+            "particles": "none",
+            "snow": false,
+            "moons": 0
+          }
+        },
+        {
+          "text": "It's a supermarket now.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.8,
+              1.9
+            ],
+            "focus": [
+              0.36,
+              0.68
+            ]
+          },
+          "seconds": 1.9
+        },
+        {
+          "text": "At Christmas, thirty thousand\ncome home to aisle three.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.6,
+              0.64
+            ]
+          }
+        }
+      ],
+      "end": "'Welcome home! Need a bag?'"
+    }
   },
   {
     "id": "040",
@@ -3754,7 +4169,86 @@
       "end": "She's usually asleep.",
       "caption": "Guess whose moon that is.\n\nLull is 290 people, low hills and one moon, which follows the youngest person on the planet and waits over their roof all night. New parents never buy a night light. When the moon moves house, the whole planet knows by breakfast, and somebody takes round a cake. It hadn't moved for six years.\n\nI tried to read by it on my first night. It was over a farm two valleys away.\n\n(On Earth, the moon seems to chase the car because it's about 384,000 kilometres away, so a whole drive barely shifts it across the sky. On Lull, it really is following.)\n\nDid you sulk when the baby came?"
     },
-    "first_comment": "Lull update: there's a new baby at the mill. Alfie's sister is taking it badly."
+    "first_comment": "Lull update: there's a new baby at the mill. Alfie's sister is taking it badly.",
+    "short": {
+      "version": "B",
+      "title": "The moon here follows\nthe youngest person.",
+      "sub": "New baby? It moves house.",
+      "framing": "medium",
+      "zoom": [
+        1.8,
+        1.86
+      ],
+      "focus": [
+        0.27,
+        0.608
+      ],
+      "spec": {
+        "sun_x": 0.46,
+        "sun_y": 0.56,
+        "sun_size": 0.06,
+        "crowd": 0
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "sun_x": 0.18,
+          "sun_y": 0.575,
+          "sun_size": 0.06,
+          "crowd": 0
+        },
+        "motion": "cut"
+      },
+      "beats": [
+        {
+          "text": "For six years, it was Alfie's.\nThen his sister was born.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.27,
+              0.608
+            ]
+          },
+          "spec": {
+            "sun_x": 0.18,
+            "sun_y": 0.575,
+            "sun_size": 0.06,
+            "crowd": 1,
+            "crowd_items": "child",
+            "crowd_x": 0.315,
+            "crowd_facing": "left"
+          }
+        },
+        {
+          "text": "It just wasn't his any more.\nNow he shows it to her.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.27,
+              0.608
+            ]
+          },
+          "spec": {
+            "sun_x": 0.18,
+            "sun_y": 0.575,
+            "sun_size": 0.06,
+            "crowd": 2,
+            "crowd_items": "child,child_asleep",
+            "crowd_x": 0.36,
+            "crowd_facing": "left"
+          }
+        }
+      ],
+      "end": "She's usually asleep."
+    }
   },
   {
     "id": "042",
