@@ -1326,7 +1326,7 @@
     "first_comment": "Ruth and Dev have bought a new dishwasher. The planet has asked them not to install it together.",
     "short": {
       "version": "C",
-      "title": "The sun won't go down\non an argument.",
+      "title": "The sun\nwon't go down\non an argument.",
       "sub": "You've just landed on Olive.",
       "title_y": 0.1,
       "framing": "medium",

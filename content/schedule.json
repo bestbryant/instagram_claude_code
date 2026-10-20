@@ -92,13 +92,6 @@
   "not_before": "2026-10-27T18:00:00Z"
  },
  {
-  "day": 8,
-  "entry": "025",
-  "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-10-28T18:00:00Z"
- },
- {
   "day": 12,
   "entry": "H02",
   "kind": "reel",
@@ -118,6 +111,13 @@
   "kind": "reel",
   "not_before": "2026-10-31T22:00:00Z",
   "note": "short cut, checked"
+ },
+ {
+  "day": 8,
+  "entry": "025",
+  "kind": "reel",
+  "note": "short cut, checked",
+  "not_before": "2026-10-28T18:00:00Z"
  },
  {
   "day": 3,
