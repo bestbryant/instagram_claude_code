@@ -183,6 +183,7 @@ class Spec:
     house_x: float = 0.0           # where the house on the ledge stands (fraction of width; 0: wherever is clear)
     bright_stars: bool = False     # a few dozen big, sparkling stars on top of the field (stars as the subject)
     flake_size: float = 1.0        # snow particles: bigger, fewer, brighter flakes (and faster when they rise)
+    crowd_gap: float = 0.09        # spacing of a crowd placed with crowd_x (fraction of width)
     stage: float = 0.0             # flat foreground ledge at this height for the extras (0: natural ground)
 
 

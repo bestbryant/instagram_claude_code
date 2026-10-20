@@ -194,7 +194,7 @@ SHORTS = {
         end="Sweet. Occasionally a bit much."),
     "the long jumps": dict(
         title="On {name}, one jump lasts a minute.", before=dict(crowd_items="nothing,nothing"), motion="cut", framing="wide",
-        beats=[({"framing": "medium", "focus": [0.5, 0.5]}, dict(crowd_items="aloft,aloft")), ("wide", None)],
+        beats=[({"framing": "medium", "focus": [0.5, 0.5]}, dict(crowd_items="aloft,aloft", crowd_gap=0.24)), ("wide", None)],
         end="Goodbyes take a while.", name_y=0.12),
     "the humming ridges": dict(
         title="The crystals on {name} remember every song.", before=dict(glow_rims=False, crowd_items="nothing"),

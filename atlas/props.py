@@ -239,6 +239,10 @@ def _stage(ctx, y_frac, color=None):
     ys = H * y_frac + H * 0.006 * np.sin(xs / W * 9 + rng.uniform(0, 6))
     poly = list(zip(xs, ys)) + [(W * 3, H + 20), (-20, H + 20)]
     _ink(ctx, ctx.near_layer, [("poly", poly)], ctx.ground if color is None else color)
+    if ctx.near_layer.E is not None:              # light drawn on the ridge behind (glowing rims) stays behind the ledge
+        cover = np.zeros_like(ctx.near_layer.A)
+        stamp(np.zeros_like(ctx.near_layer.P), cover, [("poly", poly)], np.ones(3))
+        ctx.near_layer.E *= (1 - cover)[..., None]
     ctx.stage_y = lambda x: float(np.interp(x, xs, ys)) + 2
 
 
@@ -704,7 +708,7 @@ def _crowd(ctx):
     h = H * G
     items = [t.strip() for t in sp.crowd_items.split(",") if t.strip()] or ITEMS
     if sp.crowd_x:
-        xs = sp.crowd_x * W + (np.arange(n) - (n - 1) / 2) * W * 0.09
+        xs = sp.crowd_x * W + (np.arange(n) - (n - 1) / 2) * W * sp.crowd_gap
     elif sp.sign:
         # with a sign, the crowd keeps to the left so the board (placed right) hides no one
         xs = np.linspace(W * 0.08, W * 0.54, n)
