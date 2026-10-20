@@ -142,5 +142,91 @@
     ],
     "end": "Carry them while they're light.",
     "caption": "Keep an eye on the child's arm.\n\nGravity on Brumm is twice ours, so the hills are low, the houses are one storey and nobody owns a ladder. A four-year-old here weighs what a ten-year-old does on Earth. The Last Carry is a holiday for the child's whole street, held in the week they get too heavy to carry far. The road out of every town has a bench every half mile. The parents don't use them.\n\nI offered to take a turn for a mile. The whole road went quiet. You don't help with a Last Carry. You bring tea.\n\nTomas is at school now. He says he remembers the sea. His dad says he was asleep by mile six.\n\nOn Earth, nobody knows which carry is the last one. On Brumm, everybody does, so they close the road.\n\nWhere would you have picked?"
+  },
+  "short": {
+    "version": "A",
+    "title": "Every child here\ngets one last carry.",
+    "sub": "Gravity is double.\nBy four, they're too heavy.",
+    "framing": "medium",
+    "zoom": [
+      1.7,
+      1.76
+    ],
+    "focus": [
+      0.48,
+      0.6
+    ],
+    "spec": {
+      "crowd": 0,
+      "sign": "",
+      "sun_x": 0.6,
+      "sun_y": 0.56,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "crowd": 5,
+        "crowd_x": 0.4,
+        "sign": "",
+        "sun_x": 0.6,
+        "sun_y": 0.56,
+        "cartographer": false
+      }
+    },
+    "beats": [
+      {
+        "text": "The child picks where to go.\nMost pick the bakery.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.85,
+            1.9
+          ],
+          "focus": [
+            0.59,
+            0.64
+          ]
+        },
+        "seconds": 3.0
+      },
+      {
+        "text": "Tomas picked the sea.\nEight miles. His dad made it.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.55,
+            0.61
+          ]
+        },
+        "spec": {
+          "palette": "gold_hour",
+          "suns": 1,
+          "sun_x": 0.55,
+          "sun_y": 0.6,
+          "sun_size": 0.06,
+          "water": false,
+          "shore": "none",
+          "crowd": 1,
+          "crowd_x": 0.55,
+          "crowd_items": "child",
+          "crowd_facing": "left",
+          "house": false,
+          "sign": "",
+          "cartographer": false
+        }
+      }
+    ],
+    "end": "Tomas was asleep by mile six.",
+    "end_spec": {
+      "water": true,
+      "shore": "left",
+      "crowd_items": "child_asleep"
+    },
+    "scrim": 0.6
   }
 }
