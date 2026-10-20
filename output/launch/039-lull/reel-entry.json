@@ -1,0 +1,290 @@
+{
+  "id": "039",
+  "name": "Lull",
+  "subtitle": "the moon that minds the baby",
+  "story": "On Lull, the moon follows the youngest person on the planet and waits over their roof all night. When there's a new baby, it moves house, so gossip is mostly astronomy. For six years it sat over Alfie's. Then his sister was born, at home, and it didn't move an inch. It just wasn't his any more. Alfie took it badly, for about a week. Now he shows her where it is. She's usually asleep.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "one, on loan to the youngest",
+    "Gravity": "0.9 g",
+    "Population": "290"
+  },
+  "hook": "A planet for people who stopped being the baby of the family.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#siblings"
+  ],
+  "spec": {
+    "palette": "teal_night",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.66,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.2,
+    "sun_y": 0.45,
+    "sun_size": 0.04,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 1.6,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "child,child_asleep",
+    "crowd_x": 0.36,
+    "crowd_facing": "left",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "The moon here follows the youngest person.",
+  "episode": {
+    "opener": "The moon here follows\nthe youngest person.",
+    "beats": [
+      {
+        "text": "It waits over their roof.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.3,
+            0.55
+          ]
+        },
+        "note": "frame-1 family, house and moon in one shot"
+      },
+      {
+        "text": "When there's a new baby,\nit moves house.",
+        "shot": "sky"
+      },
+      {
+        "text": "Gossip here\nis mostly astronomy.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.18
+          ]
+        },
+        "spec": {
+          "crowd": 4,
+          "crowd_items": "nothing",
+          "crowd_x": 0.62,
+          "crowd_facing": "left"
+        }
+      },
+      {
+        "text": "For six years,\nit sat over Alfie's.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.43
+          ],
+          "focus": [
+            0.33,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "child",
+          "crowd_x": 0.315
+        },
+        "note": "setup: one carrier, Alfie on his shoulders pointing at the moon"
+      },
+      {
+        "text": "Then his sister was born.",
+        "shot": "house"
+      },
+      {
+        "text": "It didn't move an inch.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.3,
+            0.55
+          ]
+        },
+        "note": "turn line: the identical frame to beat 1; nothing has moved"
+      },
+      {
+        "text": "It just wasn't his\nany more.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.43
+          ],
+          "focus": [
+            0.33,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "child_asleep",
+          "crowd_x": 0.405
+        },
+        "note": "identical camera to beat 4; one thing changed: the baby is under the moon, Alfie isn't"
+      },
+      {
+        "text": "Alfie took it badly.\nFor about a week.",
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.9,
+            1.95
+          ],
+          "focus": [
+            0.2,
+            0.45
+          ]
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.43,
+            1.47
+          ],
+          "focus": [
+            0.33,
+            0.56
+          ]
+        },
+        "seconds": 3.0,
+        "note": "hold: both carried, Alfie pointing, his sister asleep"
+      },
+      {
+        "text": "Now he shows her\nwhere it is.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.47,
+            1.5
+          ],
+          "focus": [
+            0.33,
+            0.56
+          ]
+        }
+      }
+    ],
+    "end": "She's usually asleep.",
+    "caption": "Guess whose moon that is.\n\nLull is 290 people, low hills and one moon, which follows the youngest person on the planet and waits over their roof all night. New parents never buy a night light. When the moon moves house, the whole planet knows by breakfast, and somebody takes round a cake. It hadn't moved for six years.\n\nI tried to read by it on my first night. It was over a farm two valleys away.\n\n(On Earth, the moon seems to chase the car because it's about 384,000 kilometres away, so a whole drive barely shifts it across the sky. On Lull, it really is following.)\n\nDid you sulk when the baby came?"
+  },
+  "first_comment": "Lull update: there's a new baby at the mill. Alfie's sister is taking it badly.",
+  "short": {
+    "version": "B",
+    "title": "The moon here follows\nthe youngest person.",
+    "sub": "New baby? It moves house.",
+    "framing": "medium",
+    "zoom": [
+      1.8,
+      1.86
+    ],
+    "focus": [
+      0.27,
+      0.608
+    ],
+    "spec": {
+      "sun_x": 0.46,
+      "sun_y": 0.56,
+      "sun_size": 0.06,
+      "crowd": 0
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "sun_x": 0.18,
+        "sun_y": 0.575,
+        "sun_size": 0.06,
+        "crowd": 0
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "For six years, it was Alfie's.\nThen his sister was born.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.27,
+            0.608
+          ]
+        },
+        "spec": {
+          "sun_x": 0.18,
+          "sun_y": 0.575,
+          "sun_size": 0.06,
+          "crowd": 1,
+          "crowd_items": "child",
+          "crowd_x": 0.315,
+          "crowd_facing": "left"
+        }
+      },
+      {
+        "text": "It just wasn't his any more.\nNow he shows it to her.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.27,
+            0.608
+          ]
+        },
+        "spec": {
+          "sun_x": 0.18,
+          "sun_y": 0.575,
+          "sun_size": 0.06,
+          "crowd": 2,
+          "crowd_items": "child,child_asleep",
+          "crowd_x": 0.36,
+          "crowd_facing": "left"
+        }
+      }
+    ],
+    "end": "She's usually asleep."
+  },
+  "_engine": 5
+}

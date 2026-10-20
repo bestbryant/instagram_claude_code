@@ -124,5 +124,65 @@
     "end": "Every name has a planet. Yours too.",
     "caption": "On the replay, look at the far left of the first frame.\n\nElsewhere is the first page of the atlas, and the only planet everyone has been to. You arrive the moment you drift off, halfway through a sentence or a recipe or a meeting, still holding whatever you were holding. The ringed giant never quite sets, so it's always about twenty to eight in the evening. Most people stay a few seconds. Then somebody says your name and you're home, and the spoon comes with you.\n\nPeak hours are Monday mornings and the last ten minutes of any meeting. The record is twenty-six minutes, set during a meeting about another meeting.\n\nI drifted off a long time ago, and nobody called me back. So I stayed, and started an atlas. Most of the pages are still blank.\n\nI'd tell you my name, but it doesn't count if I say it myself."
   },
-  "first_comment": "Someone just shouted 'Dave' across an office. Four people vanished at once."
+  "first_comment": "Someone just shouted 'Dave' across an office. Four people vanished at once.",
+  "short": {
+    "version": "C",
+    "title": "You've been\nto this planet today.",
+    "sub": "Probably in a meeting.",
+    "framing": "crowd",
+    "zoom": [
+      1.35,
+      1.4
+    ],
+    "focus": [
+      0.46,
+      0.64
+    ],
+    "spec": {
+      "crowd": 0,
+      "figure": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "crowd": 6,
+        "figure": false
+      }
+    },
+    "beats": [
+      {
+        "text": "You arrive holding whatever\nwas in your hand. Once, a fish.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.1
+          ],
+          "focus": [
+            0.5,
+            0.66
+          ]
+        }
+      },
+      {
+        "text": "Someone says your name,\nand you're back.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.35,
+            1.4
+          ],
+          "focus": [
+            0.46,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "figure": false
+        }
+      }
+    ],
+    "end": "Except me. Nobody says mine."
+  }
 }
