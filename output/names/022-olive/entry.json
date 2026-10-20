@@ -191,5 +191,69 @@
     "end": "Every Olive is an olive branch.",
     "caption": "The sun behind those two is on overtime.\n\nOlive is a warm planet of 7 million people, terraced hills and very long evenings. The sun goes down when the last argument on the planet has been made up, and not a minute before, so it usually sets around nine, give or take a sulk. The papers print the time every morning, with names. Children learn 'sorry' before 'it was him'.\n\nI fell out with my own map on my first evening. Seven million people waited up until I apologised to it.\n\nOn Earth, 'do not let the sun go down on your anger' comes from Paul's letter to the Ephesians. On Olive, the sun enforces it.\n\nHow long would your house keep the sun up?"
   },
-  "first_comment": "Ruth and Dev have bought a new dishwasher. The planet has asked them not to install it together."
+  "first_comment": "Ruth and Dev have bought a new dishwasher. The planet has asked them not to install it together.",
+  "short": {
+    "version": "C",
+    "title": "You've just landed\non Olive.",
+    "sub": "The sun won't go down\non an argument.",
+    "title_y": 0.1,
+    "framing": "medium",
+    "focus": [
+      0.5,
+      0.6
+    ],
+    "zoom": [
+      1.6,
+      1.65
+    ],
+    "spec": {
+      "sun_y": 0.64,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "sun_y": 0.54,
+        "cartographer": false
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "Don't mention the dishwasher.\nThose two are on day three.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": [
+            1.8,
+            1.85
+          ]
+        }
+      },
+      {
+        "text": "She makes him a tea.\nThe sun sets before his first sip.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": [
+            1.8,
+            1.85
+          ]
+        },
+        "spec": {
+          "crowd_facing": "in",
+          "crowd_items": "nothing,cup",
+          "palette": "polar_night",
+          "suns": 0
+        }
+      }
+    ],
+    "end": "Every cup is an olive branch."
+  }
 }

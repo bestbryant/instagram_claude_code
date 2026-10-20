@@ -96,5 +96,84 @@
     "end": "One spoonful of mountain per Milo.",
     "caption": "Look again at the mountains.\n\nThe soil on Milo is malted chocolate powder, three metres deep, and the rain falls warm. Everyone here is cheerful and very slightly over-energetic. Morale is excellent. The tallest lump dates from a very good party in 1911. Dunking biscuits in the river is against the law, and a few grown-ups still eat the field dry, by the spoonful, which the others consider showing off.\n\nI went out with the children at dawn. I found four.\n\nOn Earth, malt powder lumps the same way: the outside of a clump turns sticky and seals the dry powder in, which is why the lumps crunch.\n\nLumps: the best bit, or bad stirring?"
   },
-  "_engine": 4
+  "short": {
+    "version": "A",
+    "title": "Every Milo\ngets this planet.",
+    "sub": "The soil is chocolate malt.",
+    "framing": "gag",
+    "zoom": [
+      1.5,
+      1.55
+    ],
+    "focus": [
+      0.5,
+      0.64
+    ],
+    "spec": {
+      "sign": "",
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "particles": "rain",
+        "palette": "crimson",
+        "suns": 0,
+        "sign": "",
+        "cartographer": false
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "When it rains,\nfarming is mostly stirring.",
+        "shot": {
+          "framing": "gag",
+          "zoom": [
+            2.1,
+            2.2
+          ],
+          "focus": [
+            0.5,
+            0.68
+          ]
+        }
+      },
+      {
+        "text": "Those aren't mountains.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.6,
+            0.56
+          ]
+        },
+        "seconds": 1.9
+      },
+      {
+        "text": "They're lumps.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.6,
+            0.56
+          ]
+        },
+        "spec": {
+          "sign": "DO NOT EAT|THE MOUNTAINS"
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "One spoonful of mountain per Milo."
+  },
+  "_engine": 5
 }
