@@ -1,0 +1,229 @@
+{
+  "id": "034",
+  "name": "Lode",
+  "subtitle": "the homing planet",
+  "story": "Everyone on Lode is born with a little iron in the blood, and it points to where they were born. Every December, the whole planet follows it home. Most of them were born in the hospital, which is a supermarket now, so every December thirty thousand people come home to aisle three. Sister Bridget delivered every one of them. She's on the tills now.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "one",
+    "Gravity": "1.2 g",
+    "Population": "52,000"
+  },
+  "hook": "A planet for people who go home for Christmas.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#homeforchristmas"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": 0.7,
+    "sun_y": 0.5,
+    "sun_size": 0.045,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 1,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "pines",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "snow",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 8,
+    "crowd_items": "flower,nothing,nothing,flower",
+    "crowd_x": 0.76,
+    "crowd_facing": "left",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "Here, your blood points home.",
+  "episode": {
+    "opener": "On Lode, your blood\npoints home.",
+    "beats": [
+      {
+        "text": "There's iron in it.",
+        "shot": "crowd"
+      },
+      {
+        "text": "Home, meaning\nwhere you were born.",
+        "shot": "sky"
+      },
+      {
+        "text": "Every December,\neveryone follows it home.",
+        "shot": "left"
+      },
+      {
+        "text": "Most people were born\nin the hospital.",
+        "shot": "house"
+      },
+      {
+        "text": "It's a supermarket now.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.95,
+            2.02
+          ]
+        },
+        "seconds": 3.0,
+        "note": "turn line, a push in on the same building"
+      },
+      {
+        "text": "I tried it.\nMine points straight down.",
+        "shot": "cartographer",
+        "spec": {
+          "cartographer": true
+        }
+      },
+      {
+        "text": "Most of the year,\nit's quiet.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.55,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_x": 0.45
+        }
+      },
+      {
+        "text": "Then it's December.\nThirty thousand people\ncome home to aisle three.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.55,
+            0.62
+          ]
+        },
+        "note": "identical camera, one thing changed: the queue"
+      },
+      {
+        "text": "Sister Bridget delivered\nevery one of them.",
+        "shot": "crowd"
+      },
+      {
+        "text": "She's on the tills now.",
+        "shot": "house"
+      }
+    ],
+    "end": "'Welcome home. Need a bag?'",
+    "caption": "The whole queue was born in that shop.\n\nLode is a snowy, hilly planet of 52,000 people, and none of them has ever been lost. You're born with a little iron in the blood, and it points, very gently, at the spot where you arrived. Sat-navs never caught on. In December the whole planet sets off home, and most of it ends up at the big supermarket on the ring road, which was the hospital until 1988. Midwives on Lode don't really retire.\n\nThe man on the next till asked where mine pointed. I said down. He went very quiet and gave me a free bag.\n\n(You have iron in your blood too: three or four grams of it, most of it in your red cells. Ours doesn't point anywhere. We go home anyway.)\n\nWhere does your iron point?"
+  },
+  "first_comment": "Bridget: Thirty thousand home this year. I've told every one of them to stand up straight.",
+  "short": {
+    "version": "B",
+    "title": "Your blood\npoints home.",
+    "sub": "To wherever you were born.",
+    "framing": "medium",
+    "zoom": [
+      1.75,
+      1.8
+    ],
+    "focus": [
+      0.5,
+      0.66
+    ],
+    "spec": {
+      "crowd": 0,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "crowd": 8,
+        "crowd_x": 0.775,
+        "crowd_items": "flower,nothing,nothing,flower",
+        "crowd_facing": "left",
+        "cartographer": false
+      }
+    },
+    "beats": [
+      {
+        "text": "For most people,\nthat's the hospital.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.8,
+            1.9
+          ],
+          "focus": [
+            0.36,
+            0.68
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "palette": "sepia",
+          "particles": "none",
+          "snow": false,
+          "moons": 0
+        }
+      },
+      {
+        "text": "It's a supermarket now.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.8,
+            1.9
+          ],
+          "focus": [
+            0.36,
+            0.68
+          ]
+        },
+        "seconds": 1.9
+      },
+      {
+        "text": "At Christmas, thirty thousand\ncome home to aisle three.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.6,
+            0.64
+          ]
+        }
+      }
+    ],
+    "end": "'Welcome home! Need a bag?'"
+  }
+}

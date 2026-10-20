@@ -1,0 +1,305 @@
+{
+  "id": "038",
+  "name": "Will",
+  "subtitle": "every Will's planet",
+  "story": "On Will, the sun only rises if enough people want it to, so every morning the whole planet gets up early and wants it. Teenagers are a national problem. School mornings are always a bit late. After New Year's Eve, the whole planet slept in, and the sky stayed dark. Then, at five, the sun rose anyway. One spaniel had wanted it very much.",
+  "facts": {
+    "Day": "24 hours, on request",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "6.2 million"
+  },
+  "hook": "A planet for people who are up at five because the dog is.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#will"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.52,
+    "sun_y": 0.54,
+    "sun_size": 0.06,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": true,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "SUNRISE|WANTED BY|6,204,311",
+    "crowd": 4,
+    "crowd_items": "nothing",
+    "crowd_x": 0.4,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "The sun rises by popular demand.",
+  "kicker": "Every Will gets this planet.",
+  "text_y": {
+    "name": 0.2
+  },
+  "episode": {
+    "opener": "On Will, the sun rises\nby popular demand.",
+    "beats": [
+      {
+        "text": "No demand, no sunrise.",
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.52,
+            0.45
+          ]
+        }
+      },
+      {
+        "text": "So everyone gets up early\nand wants it.",
+        "shot": "medium",
+        "text_y": 0.12
+      },
+      {
+        "text": "Teenagers are\na national problem.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.28,
+            0.7
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.3,
+          "crowd_facing": "left",
+          "cartographer": false,
+          "sun_y": 0.68
+        },
+        "note": "one figure with its back to the sun"
+      },
+      {
+        "text": "School mornings\nare always a bit late.",
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.52,
+            0.45
+          ]
+        },
+        "spec": {
+          "sun_y": 0.63
+        },
+        "note": "the sun barely over the hills"
+      },
+      {
+        "text": "After New Year's Eve,\nthe whole planet slept in.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.04,
+            1.07
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd": 0,
+          "sign": "SUNRISE|WANTED BY|0",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.07,
+            1.09
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd": 0,
+          "sign": "SUNRISE|WANTED BY|0",
+          "cartographer": false
+        },
+        "seconds": 2.0,
+        "note": "nothing happens; one lit window"
+      },
+      {
+        "text": "Then, at five, it rose.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.09,
+            1.1
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "sign": "SUNRISE|WANTED BY|1",
+          "cartographer": false
+        },
+        "note": "turn line: identical camera; the sun is back and the board reads 1"
+      },
+      {
+        "text": "One spaniel\nwanted it very much.",
+        "shot": "sign",
+        "spec": {
+          "crowd": 0,
+          "sign": "SUNRISE|WANTED BY|1",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "Six million people\nslept through it.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.12
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "sign": "SUNRISE|WANTED BY|1",
+          "cartographer": false
+        }
+      }
+    ],
+    "end": "There's always a Will.",
+    "caption": "That board is counting votes.\n\nWill is 6.2 million people, rolling hills and a sun that only comes up if enough of them want it to. Most mornings it's a formality: the kettles go on, everyone stands at a window and wants it, and the count goes up on a board in every square. The very old are excused. They say they've wanted enough sunrises for one lifetime.\n\nI slept through my first morning. The street sent round a doctor.\n\n(On Earth, the air bends sunlight over the horizon, so you see the sun come up about two minutes before it really has. On Will, it waits to be asked.)\n\nWhat time would you set the sun for?"
+  },
+  "first_comment": "Council notice: sunrise will be at the usual time tomorrow. The usual time is now five.",
+  "short": {
+    "version": "A",
+    "title": "The sun rises\nby popular demand.",
+    "sub": "Every Will gets this planet.",
+    "framing": "medium",
+    "zoom": [
+      1.4,
+      1.45
+    ],
+    "focus": [
+      0.55,
+      0.6
+    ],
+    "spec": {
+      "palette": "polar_night",
+      "suns": 0,
+      "sign": "SUNRISE|WANTED BY|6,204,310",
+      "cartographer": false,
+      "sun_y": 0.54
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "palette": "gold_hour",
+        "suns": 1,
+        "sign": "SUNRISE|WANTED BY|6,204,311",
+        "cartographer": false,
+        "sun_y": 0.54
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "After New Year's Eve,\neveryone slept in.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.15,
+            1.18
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd": 0,
+          "sign": "SUNRISE|WANTED BY|0",
+          "cartographer": false,
+          "house": false
+        }
+      },
+      {
+        "text": "At five, it rose. One spaniel\nwanted it very much.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.15,
+            1.18
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "sign": "SUNRISE|WANTED BY|1",
+          "cartographer": false,
+          "house": false
+        }
+      }
+    ],
+    "end": "There's always a Will."
+  }
+}

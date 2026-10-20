@@ -1,0 +1,216 @@
+{
+  "id": "031",
+  "name": "Ruby",
+  "subtitle": "the blushing sky",
+  "story": "On Ruby, the sky blushes. Whenever anyone on the planet is embarrassed it goes a little pink, so most sunsets are someone saying 'you too' to a waiter, and wedding speeches are given after dark. Nobody had ever seen it properly red. Then, live, to eleven million people, the evening newsreader signed off with 'Love you, bye.' Four million said it back. It stayed red for a week.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "12 million"
+  },
+  "hook": "A planet for everyone who's said 'you too' to a waiter.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#ruby"
+  ],
+  "spec": {
+    "palette": "crimson",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.72,
+    "sun_y": 0.56,
+    "sun_size": 0.045,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 4,
+    "crowd_items": "nothing",
+    "crowd_x": 0.36,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "On Ruby, the sky blushes.",
+  "kicker": "Every Ruby gets this planet.",
+  "episode": {
+    "opener": "On Ruby,\nthe sky blushes.",
+    "beats": [
+      {
+        "text": "Whenever anyone\nis embarrassed.",
+        "shot": "sky",
+        "spec": {
+          "palette": "pastel"
+        }
+      },
+      {
+        "text": "Most sunsets are someone\nsaying 'you too' to a waiter.",
+        "shot": "medium",
+        "spec": {
+          "palette": "rose_fog",
+          "sun_y": 0.6
+        }
+      },
+      {
+        "text": "A pink morning means somebody\ncalled their teacher\n'Mum'.",
+        "shot": "left",
+        "spec": {
+          "palette": "pastel",
+          "sun_x": 0.22,
+          "sun_y": 0.58
+        }
+      },
+      {
+        "text": "Wedding speeches\nare given after dark.",
+        "shot": "crowd",
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0
+        }
+      },
+      {
+        "text": "Nobody had ever seen it\nproperly red.",
+        "shot": "sky",
+        "spec": {
+          "palette": "cobalt_noon",
+          "sun_y": 0.3
+        }
+      },
+      {
+        "text": "Then the evening newsreader\nsigned off.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.8,
+            1.86
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "sun_y": 0.62
+        },
+        "note": "setup on the house camera: the evening news"
+      },
+      {
+        "text": "'Love you, bye.'",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.8,
+            1.86
+          ]
+        },
+        "spec": {
+          "sun_y": 0.62
+        },
+        "seconds": 3.0,
+        "note": "turn: identical camera, one thing changed (the sky goes crimson)"
+      },
+      {
+        "text": "Eleven million people\nwere watching.",
+        "shot": "crowd"
+      },
+      {
+        "text": "Four million\nsaid it back.",
+        "shot": "wide",
+        "note": "population-scale close on the frame-1 camera"
+      }
+    ],
+    "end": "It stayed red for a week.",
+    "caption": "Somebody is to blame for that sky.\n\nRuby is a mild, blue planet of twelve million people with nowhere to hide. The sky goes pink whenever anyone on it is embarrassed, and red when it's bad, so the whole planet knows by lunchtime. A trip on the stairs is a rosy afternoon. A reply-all is a week of sunsets. Poker never caught on, and the weather forecast is basically gossip. The evening newsreader had gone twenty years without a single blush.\n\nI waved back at a man who was waving at someone behind me. The whole planet knew by teatime.\n\n(On Earth, a sunset is red because low light crosses about thirty-eight times as much air as light from straight overhead, and the blue gets scattered out on the way. On Ruby, it's because somebody's dad is dancing.)\n\nWhat turned your sky red this week?"
+  },
+  "first_comment": "Day eight: back to blue. The newsreader now signs off with a firm handshake, to camera.",
+  "short": {
+    "version": "C",
+    "title": "The sky blushes\nif you're embarrassed.",
+    "sub": "You've just landed on Ruby.",
+    "framing": "medium",
+    "zoom": [
+      1.35,
+      1.4
+    ],
+    "focus": [
+      0.5,
+      0.62
+    ],
+    "spec": {
+      "palette": "cobalt_noon",
+      "suns": 0
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "palette": "rose_fog",
+        "suns": 0
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "That pink is you. You just said\n'you too' to a waiter.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.36,
+            0.66
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_x": 0.36,
+          "crowd_items": "nothing,cup",
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "Then the newsreader signs off:\n'Love you, bye.'",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.8,
+            1.86
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_y": 0.6
+        }
+      }
+    ],
+    "end": "Four million people say it back."
+  }
+}
