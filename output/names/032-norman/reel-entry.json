@@ -1,0 +1,262 @@
+{
+  "id": "032",
+  "name": "Norman",
+  "subtitle": "the planet where north is a man",
+  "story": "On Norman, north is a man, also called Norman. Every compass points at him, and when he nips out for milk, so does the navy. For thirty-one years he kept still, for everyone's sake, and wrote to Pat in the far south. This year, he went. Every compass on the planet swung round to Pat's, and the navy has been very understanding.",
+  "facts": {
+    "Day": "23 hours",
+    "Moons": "one",
+    "Gravity": "1 g",
+    "Population": "300,000"
+  },
+  "hook": "A planet for the one everyone else steers by.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#norman"
+  ],
+  "spec": {
+    "palette": "cobalt_noon",
+    "terrain": "peaks",
+    "layers": 5,
+    "horizon": 0.62,
+    "relief": 0.9,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.86,
+    "sun_y": 0.16,
+    "sun_size": 0.035,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "pines",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.3,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "NORTH|PLEASE KNOCK",
+    "crowd": 1,
+    "crowd_items": "book",
+    "crowd_x": 0.56,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "North is a man called Norman.",
+  "kicker": "Every Norman gets this planet.",
+  "episode": {
+    "opener": "On Norman,\nnorth is a man.",
+    "beats": [
+      {
+        "text": "Every compass\npoints at him.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.4,
+            2.5
+          ],
+          "focus": [
+            0.68,
+            0.66
+          ]
+        }
+      },
+      {
+        "text": "When he nips out for milk,\nso does the navy.",
+        "shot": "wide"
+      },
+      {
+        "text": "Migrating geese\nland on his shed.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            2.2,
+            2.3
+          ],
+          "focus": [
+            0.72,
+            0.66
+          ]
+        }
+      },
+      {
+        "text": "So he's been asked\nto keep still.",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.9,
+            2.0
+          ],
+          "focus": [
+            0.25,
+            0.62
+          ]
+        },
+        "note": "frame-1 find in close-up; the overlay never quotes it"
+      },
+      {
+        "text": "For thirty-one years,\nhe's written to Pat,\nin the far south.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.74,
+            0.66
+          ]
+        },
+        "note": "setup: Norman at his door with his letter"
+      },
+      {
+        "text": "This year,\nhe went.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.74,
+            0.66
+          ]
+        },
+        "spec": {
+          "crowd_x": 1.5
+        },
+        "seconds": 3.0,
+        "note": "turn: identical camera, one thing changed (he's gone)"
+      },
+      {
+        "text": "Every compass on the planet\nswung round to Pat's.",
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.3,
+            1.4
+          ],
+          "focus": [
+            0.45,
+            0.3
+          ]
+        },
+        "spec": {
+          "crowd_x": 1.5
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.9,
+            2.0
+          ],
+          "focus": [
+            0.25,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_x": 1.5,
+          "sign": "NORTH|GONE SOUTH"
+        },
+        "seconds": 3.0,
+        "note": "button: the sign rewrite, same camera as beat 4"
+      }
+    ],
+    "end": "The navy's been very understanding.",
+    "caption": "Read the signpost on the left.\n\nNorman is a bright, blowy planet of 300,000 people and one fixed point: a retired joiner called Norman, who is north. Maps are drawn from his kitchen. Captains ring ahead before he goes to the shops. When he had his knee done, two ferries and a flock of geese turned up at the hospital. So he stayed put, for everyone, and wrote to Pat every week. She lives in the far south, which until this year was the bit of the map nobody visited.\n\nI tried to walk north to meet him and spent an afternoon following him round a garden centre.\n\n(Earth's north wanders too. Its magnetic pole has drifted from Canada towards Siberia, at more than fifty kilometres a year at its fastest. It has never once gone to see anyone.)\n\nHow far would you move for someone?"
+  },
+  "first_comment": "Pat: He's put up four shelves and the navy's been round twice. Lovely boys. Very polite.",
+  "short": {
+    "version": "B",
+    "title": "North is a man.",
+    "sub": "When Norman nips out for milk,\nso does the navy.",
+    "framing": "left",
+    "zoom": [
+      1.42,
+      1.46
+    ],
+    "spec": {
+      "crowd_x": 1.5,
+      "sign": "",
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "crowd_x": 0.56,
+        "sign": "NORTH|PLEASE KNOCK",
+        "cartographer": false
+      }
+    },
+    "beats": [
+      {
+        "text": "For thirty years, he's written\nto Pat, in the far south.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.62,
+            0.66
+          ]
+        },
+        "seconds": 3.0,
+        "spec": {
+          "sign": ""
+        }
+      },
+      {
+        "text": "This year, he went.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.62,
+            0.66
+          ]
+        },
+        "spec": {
+          "crowd_x": 1.5,
+          "sign": ""
+        },
+        "seconds": 2.6
+      }
+    ],
+    "end": "The navy's been very understanding.",
+    "end_spec": {
+      "sign": "NORTH|GONE SOUTH"
+    },
+    "focus": [
+      0.44,
+      0.63
+    ]
+  },
+  "_engine": 5
+}
