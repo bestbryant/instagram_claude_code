@@ -324,8 +324,9 @@
   "day": 7,
   "entry": "008",
   "kind": "process",
-  "note": "pin as the 'how it's made' post",
-  "not_before": "2026-10-24T17:00:00Z"
+  "note": "held during the short-format test (docs/PLAN.md); revisit after",
+  "not_before": "2026-10-24T17:00:00Z",
+  "hold": true
  },
  {
   "day": 5,

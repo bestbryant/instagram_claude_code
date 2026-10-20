@@ -39,9 +39,12 @@ VOICE_DEFAULT = False   # story Reels read aloud by the cartographer; an entry o
 
 
 def voiced(entry: dict) -> bool:
-    if not entry.get("episode"):
+    if entry.get("short"):
+        want = entry["short"].get("version", "A") in ("B", "C")
+    elif entry.get("episode"):
+        want = entry["episode"].get("voice", entry.get("voice", VOICE_DEFAULT))
+    else:
         return False
-    want = entry["episode"].get("voice", entry.get("voice", VOICE_DEFAULT))
     if want:
         from . import voice
         return voice.available()
@@ -158,9 +161,63 @@ def story_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = N
     return shots
 
 
+def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list:
+    """The short, hook-first cut (about 14-20 s), from docs/PLAN.md: frame 0 is close on the joke with the
+    premise as one big line and the reason to send it under it; something appears or changes at about 0.4 s
+    (with a hit on the soundtrack); two or three beats put the turn by about 8 s; a 2 s end card."""
+    from dataclasses import replace
+    from .video import Shot, overlay
+    sh = entry["short"]
+    left = dict(align="left", x=96, width=W_SAFE)
+    if speak:
+        from . import voice
+        spoken = lambda line, at, breath: at + voice.seconds(line) + breath if line.strip() else 0.0
+    else:
+        spoken = lambda line, at, breath: 0.0
+    read = lambda line, extra=0.6: round(max(1.8, 0.28 * len(line.split()) + extra), 2)
+
+    title, sub = sh["title"], sh.get("sub", "")
+    items = [dict(text=title, y=sh.get("title_y", 0.17), kind="serif", weight="Medium", size=88, leading=1.1, **left)]
+    if sub:
+        items.append(dict(text=sub, y="after", gap=0.02, kind="italic", size=58, leading=1.14, **left))
+    hook_card = overlay(items)
+    say_hook = f"{title}\n{sub}".strip()
+    t_hook = round(max(read(say_hook, 1.0), spoken(say_hook, 0.05, 0.35)), 2)
+    onset = sh.get("onset") or {}
+    swap = (float(onset.get("at", 0.4)), replace(spec, **onset["spec"])) if onset.get("spec") else None
+    base = replace(spec, **sh["spec"]) if sh.get("spec") else spec       # the scene before the onset
+    zoom, focus = FRAMINGS.get(sh.get("framing", "gag"), FRAMINGS["gag"])
+    zoom = tuple(sh.get("zoom", (zoom[0] * 0.92, zoom[1] * 0.92)))
+    shots = [Shot(t_hook, base, seed, pan=50, zoom=zoom, focus=tuple(sh["focus"]) if "focus" in sh else focus,
+                  cards=[(hook_card, 0.0, t_hook, 0.0, 0.0)], tick=False, say=say_hook if speak else "", say_at=0.05,
+                  swap=swap)]
+    after = swap[1] if swap else spec         # beats continue from the changed scene
+    for i, beat in enumerate(sh["beats"]):
+        last = i == len(sh["beats"]) - 1
+        secs = beat.get("seconds") or read(beat["text"], 1.0 if last else 0.6)
+        secs = round(max(secs, spoken(beat["text"], 0.1, 0.55 if last else 0.3)), 2)
+        card = overlay([dict(text=beat["text"], y=beat.get("text_y", 0.18), kind="italic", size=70, leading=1.14, **left)])
+        shot = _beat_shot(after, seed, beat, card, secs)
+        shot.say = beat["text"] if speak else ""
+        shot.say_at = 0.1
+        shots.append(shot)
+    series = f"No. {entry['id']} · {text.BRAND}"
+    end = sh.get("end") or entry["episode"].get("end", "")
+    ty = sh.get("name_y", entry.get("text_y", {}).get("name", 0.3))
+    name = overlay([dict(text=series, y=ty, kind="italic", size=36),
+                    dict(text=entry["name"], y=ty + 0.035, kind="serif", weight="Medium", size=170),
+                    dict(text=end, y=ty + 0.145, kind="italic", size=50)])
+    t_end = round(max(2.0, spoken(end, 0.15, 0.5)), 2)
+    shots.append(Shot(t_end, after, seed, pan=50, zoom=(1.12, 1.04), focus=focus if isinstance(focus, tuple) else None,
+                      cards=[(name, 0.0, t_end, 0.0, 0.0)], say=end if speak else "", say_at=0.15))
+    return shots
+
+
 def reel_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = None, speak: bool = False) -> list:
     """The Reel's shot list (hook, setup, punchline, name card), also used to check frames before rendering."""
     from .video import Shot, overlay
+    if entry.get("short"):
+        return short_shots(spec, seed, entry, speak=speak)
     if entry.get("episode"):
         return story_shots(spec, seed, entry, requested_by, speak=speak)
 

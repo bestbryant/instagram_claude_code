@@ -37,6 +37,7 @@ class Shot:
     reverse: bool = False                    # pan backwards (the end card, so its last frame is the hook's first)
     say: str = ""                            # what the narrator reads over this shot (voiced Reels only)
     say_at: float = 0.15                     # seconds into the shot she starts
+    swap: tuple | None = None                # (t, Spec): the scene becomes this variant t s in, with a pop and a hit
 
 
 def _fade(ts, start, end, ramp):
@@ -57,6 +58,43 @@ def _zoom(img: np.ndarray, s: float, focus) -> np.ndarray:
     return np.asarray(im, np.float32) / 255
 
 
+def _whole(box, focus, z_lo, z_hi, margin=0.06):   # margin covers the parallax pan (up to ~5% of the width)
+    """Nudge the camera so a sign board is either fully in the crop or fully out of it, never cut at the edge.
+    The crop window is checked at both ends of the shot's zoom (and the punch on an onset)."""
+    def window(c, z):
+        w = 1 / z
+        a = min(max(c - w / 2, 0.0), 1 - w)
+        return a, a + w
+
+    def state(f):
+        """'in' if the board is whole in every crop of the shot, 'out' if it never shows, else 'cut'."""
+        ins, outs = [], []
+        for ax, (b0, b1) in enumerate(((box[0], box[2]), (box[1], box[3]))):
+            lo_a, lo_b = window(f[ax], z_lo)
+            hi_a, hi_b = window(f[ax], z_hi)
+            ins.append(hi_a <= b0 - 0.01 and b1 + 0.01 <= hi_b)
+            outs.append(b1 <= lo_a - 0.01 or b0 >= lo_b + 0.01)
+        return "in" if all(ins) else "out" if any(outs) else "cut"
+
+    f = list(focus)
+    if state(f) != "cut":
+        return tuple(f), True
+    for ax, (b0, b1) in enumerate(((box[0], box[2]), (box[1], box[3]))):
+        lo_a, lo_b = window(f[ax], z_lo)          # widest crop
+        hi_a, hi_b = window(f[ax], z_hi)          # tightest crop
+        w_hi, w_lo = 1 / z_hi, 1 / z_lo
+        moves = []
+        if b1 - b0 + 2 * margin <= w_hi:          # bring it fully in
+            moves.append((b0 - margin) - hi_a if b0 - margin < hi_a else (b1 + margin) - hi_b)
+        moves.append((b1 + margin) - lo_a if (b0 + b1) / 2 < (lo_a + lo_b) / 2 else (b0 - margin) - lo_b)   # push it out
+        for d in sorted(moves, key=abs):
+            g = list(f)
+            g[ax] += d
+            if abs(d) <= 0.3 * w_lo and state(g) != "cut":    # don't swing the camera off its subject
+                return tuple(g), True
+    return tuple(focus), False
+
+
 def _ease(t):
     return t * t * (3 - 2 * t)
 
@@ -67,28 +105,42 @@ class _Prepared:
         if shot.still is not None:
             self.scene = None
             return
-        key = (repr(shot.spec), shot.seed, shot.pan)
-        if key not in cache:
-            scene = build(shot.spec, shot.seed, W, H, pan=shot.pan)
-            mid = frame(scene, 0.5, shot.pan, 0.0, grain=0)
-            cache[key] = (scene, bloom_threshold(mid), ink_palette(mid, extra=spec_inks(shot.spec)))
-        self.scene, self.thr, self.inks = cache[key]
+        self.scene, self.thr, self.inks = self._built(shot.spec, cache)
+        self.after = self._built(shot.swap[1], cache) if shot.swap else None
         if isinstance(shot.focus, str):
             shot.focus = tuple(getattr(self.scene, "marks", {}).get(shot.focus) or getattr(self.scene, "focus", (0.5, 0.5)))
         if shot.focus is None:
             shot.focus = getattr(self.scene, "focus", (0.5, 0.5))
         elif shot.focus[0] == "x":                # ("x", fx): that x, at the height of the scene's gag
             shot.focus = (shot.focus[1], getattr(self.scene, "focus", (0.5, 0.5))[1])
+        box = getattr(self.scene, "marks", {}).get("sign_box")
+        if box and max(shot.zoom) > 1.05:
+            shot.focus, ok = _whole(box, shot.focus, min(shot.zoom), max(shot.zoom) * 1.04)
+            if not ok and not shot.swap:              # no camera fixes it: this close shot simply doesn't show the board
+                from dataclasses import replace
+                self.scene, self.thr, self.inks = self._built(replace(shot.spec, sign=""), cache)
+
+    def _built(self, spec, cache):
+        key = (repr(spec), self.shot.seed, self.shot.pan)
+        if key not in cache:
+            scene = build(spec, self.shot.seed, W, H, pan=self.shot.pan)
+            mid = frame(scene, 0.5, self.shot.pan, 0.0, grain=0)
+            cache[key] = (scene, bloom_threshold(mid), ink_palette(mid, extra=spec_inks(spec)))
+        return cache[key]
 
     def image(self, ts: float, t_global: float) -> np.ndarray:
         s = self.shot
         u = ts / max(s.seconds, 1e-6)
+        swapped = s.swap is not None and ts >= s.swap[0]
         if self.scene is None:
             img = s.still
         else:
-            img = frame(self.scene, t=1 - u if s.reverse else u, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=self.thr)
-            img = print_finish(img, self.inks, seed=s.seed & 0xFFFF, dither=0.045)
+            scene, thr, inks = self.after if swapped else (self.scene, self.thr, self.inks)
+            img = frame(scene, t=1 - u if s.reverse else u, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=thr)
+            img = print_finish(img, inks, seed=s.seed & 0xFFFF, dither=0.045)
         z = s.zoom[0] + (s.zoom[1] - s.zoom[0]) * _ease(u)
+        if swapped:
+            z *= 1 + 0.04 * np.exp(-(ts - s.swap[0]) / 0.14)     # a small punch on the change, settling in about 0.4 s
         img = _zoom(img, z, s.focus)
         for c in s.cards:
             card, t0, t1 = c[:3]
@@ -126,6 +178,30 @@ def _mix_ticks(wav_path: str, times: list[float]):
         j = min(i + L, len(pcm))
         if i < j:
             pcm[i:j] += click[: j - i, None]
+    pcm = np.clip(pcm, -1, 1)
+    with wave.open(wav_path, "wb") as f:
+        f.setnchannels(2)
+        f.setsampwidth(2)
+        f.setframerate(sr)
+        f.writeframes((pcm * 32767).astype("<i2").tobytes())
+
+
+def _mix_hits(wav_path: str, times: list[float]):
+    """A soft, low pluck where something appears or changes on screen."""
+    with wave.open(wav_path, "rb") as f:
+        sr, n = f.getframerate(), f.getnframes()
+        pcm = np.frombuffer(f.readframes(n), "<i2").reshape(-1, 2).astype(np.float32) / 32767
+    L = int(0.6 * sr)
+    t = np.arange(L) / sr
+    rng = np.random.default_rng(5)
+    body = (np.sin(2 * np.pi * 196 * t) + 0.45 * np.sin(2 * np.pi * 392 * t) + 0.2 * np.sin(2 * np.pi * 587 * t)) * np.exp(-t / 0.16)
+    click = np.convolve(rng.normal(0, 1, L) * np.exp(-t / 0.004), np.ones(8) / 8, mode="same")
+    hit = ((body * 0.32 + click * 0.18) * (1 - np.exp(-t / 0.002))).astype(np.float32)
+    for tt in times:
+        i = int(tt * sr)
+        j = min(i + L, len(pcm))
+        if i < j:
+            pcm[i:j] += hit[: j - i, None]
     pcm = np.clip(pcm, -1, 1)
     with wave.open(wav_path, "wb") as f:
         f.setnchannels(2)
@@ -175,6 +251,9 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
     with tempfile.TemporaryDirectory() as tmp:
         wav = audio.ambient(max(seconds, 3.0), seed, str(Path(tmp) / "a.wav"), loop=True)
         _mix_ticks(wav, [float(starts[i]) for i, s in enumerate(shots) if s.tick and i > 0])
+        hits = [float(starts[i]) + s.swap[0] for i, s in enumerate(shots) if s.swap]
+        if hits:
+            _mix_hits(wav, hits)
         if speak:
             from . import voice as vo
             _mix_voice(wav, [(float(starts[i]) + s.say_at, vo.line(s.say)) for i, s in enumerate(shots) if s.say])

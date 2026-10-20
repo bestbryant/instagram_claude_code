@@ -360,20 +360,21 @@ def reel_card(size, lines, kind="hook"):
 def overlay(size, items, scrim=0.42):
     """General text card for Reels.
 
-    items: dicts with text, y (fraction of height), kind ('serif'|'italic'|'sans'),
-    size, weight, align ('center'|'left'), x (px for left align), width (px wrap).
+    items: dicts with text, y (fraction of height, or "after": below the previous item plus gap),
+    kind ('serif'|'italic'|'sans'), size, weight, align ('center'|'left'), x (px for left align), width (px wrap).
     """
     W, H = size
     base = Image.new("RGBA", size, (0, 0, 0, 0))
     white = (250, 246, 238, 255)
 
     def paint(d):
+        y = 0.0
         for it in items:
             f = font(it.get("kind", "serif"), it.get("size", 64), it.get("weight", "Regular"))
             width = it.get("width", W - 2 * 96)
             lines = wrap(d, it["text"], f, width)
             lh = int(f.size * it.get("leading", 1.18))
-            y = H * it["y"]
+            y = y + H * it.get("gap", 0.012) if it["y"] == "after" else H * it["y"]
             for ln in lines:
                 if it.get("align", "center") == "center":
                     d.text((W / 2, y), ln, font=f, fill=it.get("color", white), anchor="ma")

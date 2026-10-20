@@ -748,6 +748,7 @@ def _sign(ctx):
     # the close-up has to show the sign: frame it on its own, or halfway between it and the gag
     ctx.focus = (sx, sy) if ctx.focus == (0.5, 0.62) else ((ctx.focus[0] + sx) / 2, (ctx.focus[1] + sy) / 2)
     ctx.marks["sign"] = (sx, sy)
+    ctx.marks["sign_box"] = (x0 / W, y0 / H, (x0 + bw) / W, (y0 + bh) / H)   # so a camera never cuts the board in half
 
 
 def _house(ctx):
