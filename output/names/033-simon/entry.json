@@ -1,0 +1,261 @@
+{
+  "id": "033",
+  "name": "Simon",
+  "subtitle": "a planet that plays by the rules",
+  "story": "On Simon, everyone does what Simon says, and Simon is quite small. So the whole planet hops to work, eats pudding first and, as of this afternoon, holds a fish. At bedtime he yawned and told everyone to go to bed. Nobody moved: he hadn't said 'Simon says'. Then he fell asleep on his dad's shoulders, and nobody's waking him.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "none",
+    "Gravity": "0.8 g",
+    "Population": "6 million"
+  },
+  "hook": "A planet for the parents of very small bosses.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#parenting"
+  ],
+  "spec": {
+    "palette": "mint_dawn",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.8,
+    "sun_y": 0.55,
+    "sun_size": 0.04,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "fish,fish,child,fish,fish",
+    "crowd_x": 0.4,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "Everyone does what Simon says.",
+  "kicker": "Every Simon gets this planet.",
+  "episode": {
+    "opener": "Everyone here does\nwhat Simon says.",
+    "beats": [
+      {
+        "text": "Simon is quite small.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.2,
+            2.3
+          ]
+        }
+      },
+      {
+        "text": "Simon says:\nhop to work.",
+        "shot": "house"
+      },
+      {
+        "text": "Simon says:\npudding first.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.6,
+            1.66
+          ]
+        },
+        "spec": {
+          "crowd_items": "spoon,spoon,child,spoon,spoon"
+        }
+      },
+      {
+        "text": "Simon says:\neverybody hold a fish.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.6,
+            1.66
+          ]
+        },
+        "note": "same camera; the held items swap back to fish"
+      },
+      {
+        "text": "They gave me mine\nat the border.",
+        "shot": "cartographer",
+        "spec": {
+          "cartographer": true
+        }
+      },
+      {
+        "text": "At bedtime, Simon yawned.\n'Everybody, go to bed.'",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.16
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "sun_y": 0.6
+        }
+      },
+      {
+        "text": "Nobody moved.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.16
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "sun_y": 0.6
+        },
+        "seconds": 2.6,
+        "note": "turn: the identical camera holds; nothing changes"
+      },
+      {
+        "text": "He hadn't said\n'Simon says'.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.16
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "sun_y": 0.6
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.16
+          ]
+        },
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0
+        },
+        "seconds": 2.5,
+        "note": "night falls on the same camera; every fish still up"
+      },
+      {
+        "text": "Nobody's waking him.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.2,
+            2.3
+          ]
+        },
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "crowd_items": "fish,fish,child_asleep,fish,fish"
+        }
+      }
+    ],
+    "end": "He'll say it in the morning.",
+    "caption": "Count the fish in the first frame.\n\nSimon is a cheerful little planet of six million people and one law, which is the game. Simon has been in charge since before he could talk, which was a very quiet year. Now he talks all the time. The whole planet hops to work, pudding comes first and the cat is Chancellor of the Exchequer. Grown-ups listen very carefully for the first two words.\n\nI've been holding mine for three days. Simon says I'm doing very well.\n\n(In France, the same game is called 'Jacques a dit': Jacques said. Nobody has told Simon about Jacques.)\n\nWould you have woken him?"
+  },
+  "first_comment": "7:02: 'Simon says, put the fish down.' Six million people went straight back to bed.",
+  "short": {
+    "version": "C",
+    "title": "Everyone does\nwhat Simon says.",
+    "sub": "You've just landed on Simon.",
+    "framing": "crowd",
+    "zoom": [
+      1.9,
+      2.0
+    ],
+    "spec": {
+      "crowd_items": "nothing,nothing,child,nothing,nothing",
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "crowd_items": "fish,fish,child,fish,fish",
+        "cartographer": false
+      }
+    },
+    "beats": [
+      {
+        "text": "Simon is quite small.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.9,
+            3.0
+          ],
+          "focus": [
+            0.4,
+            0.66
+          ]
+        }
+      },
+      {
+        "text": "He yawns:\n'Everybody, bed.'",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.6,
+            1.65
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "sun_y": 0.6
+        }
+      },
+      {
+        "text": "Don't move. He didn't say\n'Simon says'. Now he's asleep.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.6,
+            1.65
+          ]
+        },
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "crowd_items": "fish,fish,child_asleep,fish,fish"
+        }
+      }
+    ],
+    "end": "He'll say it in the morning.",
+    "scrim": 0.65
+  }
+}

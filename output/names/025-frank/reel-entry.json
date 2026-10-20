@@ -179,5 +179,90 @@
     "caption": "Eleven thousand days without a fib. So far.\n\nFrank: 60,000 people, a 25-hour day, no moons, and a board in every square counting the days since anyone told a white lie. Weather reports come with the forecaster's mood, and the estate agents have all retrained. For a big birthday, the card says 'Much older'. A compliment here is so rare that people have them framed, and Ada's father has three.\n\nVisitors don't count on the board, which was lucky for me. I told my landlady I loved her wallpaper. She's given me a roll to take home.\n\n(The story goes that April Fools' Day began when France moved New Year's Day to 1 January in the 1560s, and anyone still celebrating at the start of April got laughed at. Frank has never needed the day.)\n\nFinish the bowl, or tell her?"
   },
   "first_comment": "Ada's second soup is next week. The board has been warned.",
-  "_engine": 4
+  "short": {
+    "version": "A",
+    "title": "Every Frank\ngets this planet.",
+    "sub": "Nobody here lies.",
+    "framing": "sign",
+    "zoom": [
+      1.65,
+      1.75
+    ],
+    "spec": {
+      "sign": "DAYS SINCE|ANYONE LIED|11,041",
+      "crowd": 0,
+      "palette": "teal_night",
+      "suns": 0,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "sign": "DAYS SINCE|ANYONE LIED|11,042",
+        "crowd": 4,
+        "crowd_x": 0.5,
+        "crowd_facing": "right",
+        "cartographer": false
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "Birthday cards just say\n'Older.'",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.15,
+            1.2
+          ],
+          "focus": [
+            0.6,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "Ada made her father soup.\nHer first.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.42,
+            0.68
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_x": 0.42,
+          "crowd_facing": "in",
+          "crowd_items": "nothing,spoon",
+          "cartographer": false,
+          "palette": "teal_night",
+          "suns": 0
+        }
+      },
+      {
+        "text": "'Delicious,' he said.",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.65,
+            1.75
+          ]
+        },
+        "spec": {
+          "sign": "DAYS SINCE|ANYONE LIED|0",
+          "cartographer": false,
+          "palette": "teal_night",
+          "suns": 0
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "It was not delicious."
+  },
+  "_engine": 5
 }
