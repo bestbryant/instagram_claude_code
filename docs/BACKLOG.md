@@ -21,7 +21,7 @@ Goal: 50,000 followers. Every hourly run that isn't busy posting or fixing somet
 - [ ] **Read Luna and Maren at 48 h** (21 Oct about 12:30 and 21:15 UTC) and the owner's Account Status answer. If the account is held, stop posting and ask the owner to request a review.
 
 ## Next
-- [ ] **Grey smear behind the text** (critic, 20 Oct): not the mist. A low sun's wide glow sits behind the text at close framings; the black text scrim turns it grey and the print dither makes it blotchy (seen on Frank, Maren, Daisy, Sefe, Bella, Mothwing). Fix: tint the scrim with the scene's darkest ink instead of black, and/or keep the glow out of the top-left text zone at close framings. Test on Frank beat 6 (scratchpad/mist_test.py).
+- [x] **Grey smear behind the text** (20 Oct): the cause was the full-width black text scrim over pale skies (and low suns). The scrim now takes the palette's mid-sky hue at 40% (video._Prepared._tint), so it reads as sky, not dirt. A further step if needed: scale the scrim by the brightness under the text.
 - [~] **Batch 3 (No. 031-042)**: written by the room 2026-10-19 (10 kept: Lode, Ruby, Fibb, Lull, Will, Miles, Grace, Norman, Simon, Fond; Fleet and Isla dropped), added to content and queued after Sooner (023). Not rendered yet on purpose: the reels research may change the format (motion, voice, length), so render once that decision is made.
 - [ ] **Name-planet episodes on demand**: requests get a story episode, not just a still. Write a short episode template the inbox can fill (resident, rule, turn) so a requested name posts within a day.
 - [ ] **Series hooks**: a recurring "Atlas update" Reel every ten episodes (the cartographer's map filling in), which gives followers a reason to follow rather than just like.

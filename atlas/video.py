@@ -142,6 +142,7 @@ class _Prepared:
         if swapped:
             z *= 1 + 0.04 * np.exp(-(ts - s.swap[0]) / 0.14)     # a small punch on the change, settling in about 0.4 s
         img = _zoom(img, z, s.focus)
+        tint = self._tint()
         for c in s.cards:
             card, t0, t1 = c[:3]
             ramp_in = c[3] if len(c) > 3 else (0.12 if t1 - t0 < 1.5 else 0.25)
@@ -149,8 +150,18 @@ class _Prepared:
             op = _fade2(ts, t0, t1, ramp_in, ramp_out)
             if op > 0:
                 al = card[..., 3:4] * op
-                img = img * (1 - al) + card[..., :3] * al
+                rgb = card[..., :3]
+                if tint is not None:          # the shade behind the text takes the sky's own hue, not grey
+                    rgb = rgb + tint * (1 - rgb)
+                img = img * (1 - al) + rgb * al
         return img
+
+    def _tint(self):
+        if self.scene is None:
+            return None
+        if not hasattr(self, "_tint_rgb"):
+            self._tint_rgb = (np.asarray(self.scene.pal.sky[1], np.float32) * 0.4).astype(np.float32)
+        return self._tint_rgb
 
 
 def _fade2(ts, t0, t1, ramp_in, ramp_out):
