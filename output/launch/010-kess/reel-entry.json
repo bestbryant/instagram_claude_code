@@ -149,5 +149,66 @@
     "caption": "Watch the man walking on the right.\n\nKess: 250,000 people, a 21-hour day, no moons, and an aurora bright enough to cast shadows. A local who looks up at it by accident has to sit on the kerb for a minute. The night it went out, every kerb on Kess was full. I was lying in the left lane outside the laundrette, where the road stays warm. For four minutes, nobody stepped round me.\n\nNobody knows why it went out. The council put up a plaque about it at eye level, so nobody has read it. The buses now allow three minutes per local.\n\n(On Earth, the brightest aurora lights the ground about as well as a full moon, and a full moon cuts the stars you can see from a few thousand to a few hundred.)\n\nWhat did you stop noticing where you live?"
   },
   "first_comment": "Earth's aurora runs on the solar wind. On 10-11 May 1999, that wind almost stopped.",
-  "_engine": 4
+  "short": {
+    "version": "B",
+    "title": "On Kess, only\ntourists look up.",
+    "sub": "For anyone who's stopped\nnoticing their view.",
+    "framing": "medium",
+    "zoom": [
+      1.45,
+      1.52
+    ],
+    "focus": [
+      0.48,
+      0.58
+    ],
+    "spec": {
+      "aurora": false,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "aurora": true,
+        "cartographer": false
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "Locals step round them\nwithout breaking stride.",
+        "shot": {
+          "framing": "left",
+          "zoom": [
+            1.65,
+            1.8
+          ],
+          "focus": [
+            "x",
+            0.36
+          ]
+        }
+      },
+      {
+        "text": "One night, the aurora went out.\nBehind it, there were stars.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.52
+          ],
+          "focus": [
+            0.48,
+            0.58
+          ]
+        },
+        "spec": {
+          "aurora": false,
+          "stars": 7.0
+        }
+      }
+    ],
+    "end": "That night, everyone was a tourist."
+  },
+  "_engine": 5
 }
