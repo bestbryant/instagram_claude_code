@@ -1,0 +1,313 @@
+{
+  "id": "040",
+  "name": "Fibb",
+  "subtitle": "where every lie comes true",
+  "story": "On Fibb, every lie comes true by morning, so fishermen are very popular. On their first date, Ned told Iris he lived by the sea. By morning, he did. Date two: a lighthouse. Date three: two moons. On date four, Iris said she'd liked date one better, so he told her the truth: it's a field, and he's just Ned. By then, that was a lie. By morning it was a field again. She stayed. She does miss the moons.",
+  "facts": {
+    "Day": "24 hours, allegedly",
+    "Moons": "none, usually",
+    "Gravity": "1.0 g",
+    "Population": "2.1 million"
+  },
+  "hook": "A planet for people who've oversold themselves on a first date.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#firstdate"
+  ],
+  "spec": {
+    "palette": "mint_dawn",
+    "terrain": "hills",
+    "layers": 2,
+    "horizon": 0.58,
+    "relief": 0.45,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.86,
+    "sun_y": 0.12,
+    "sun_size": 0.035,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.1,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.56,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "Every lie here comes true by morning.",
+  "episode": {
+    "opener": "On Fibb, every lie\ncomes true by morning.",
+    "beats": [
+      {
+        "text": "Fishermen are very popular.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.7,
+            1.78
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "fish",
+          "crowd_x": 0.5,
+          "crowd_facing": ""
+        }
+      },
+      {
+        "text": "First date: Ned told Iris\nhe lived by the sea.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "note": "setup: the field"
+      },
+      {
+        "text": "By morning, he did.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "water": true,
+          "shore": "left"
+        },
+        "note": "identical camera; the sea"
+      },
+      {
+        "text": "Date two:\n'There's a lighthouse.'",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "water": true,
+          "shore": "left",
+          "lighthouse": true
+        }
+      },
+      {
+        "text": "Date three:\n'And two moons.'",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "water": true,
+          "shore": "left",
+          "lighthouse": true,
+          "moons": 2,
+          "palette": "lilac_dusk",
+          "suns": 0
+        },
+        "text_y": 0.12
+      },
+      {
+        "text": "Date four, Iris said\nshe'd liked date one better.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.8,
+            1.85
+          ]
+        },
+        "spec": {
+          "water": true,
+          "shore": "left",
+          "lighthouse": true,
+          "moons": 2,
+          "palette": "lilac_dusk",
+          "suns": 0
+        }
+      },
+      {
+        "text": "So he told her:\n'It's a field. I'm just Ned.'",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.85,
+            1.9
+          ]
+        },
+        "spec": {
+          "water": true,
+          "shore": "left",
+          "lighthouse": true,
+          "moons": 2,
+          "palette": "lilac_dusk",
+          "suns": 0
+        }
+      },
+      {
+        "text": "By then, that was a lie.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "water": true,
+          "shore": "left",
+          "lighthouse": true,
+          "moons": 2,
+          "palette": "lilac_dusk",
+          "suns": 0
+        },
+        "text_y": 0.12
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "seconds": 2.5,
+        "note": "the turn: identical camera, everything gone, the field again"
+      },
+      {
+        "text": "She stayed.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.8,
+            1.85
+          ]
+        }
+      }
+    ],
+    "end": "She does miss the moons.",
+    "caption": "Everything in this picture is true. For now.\n\nFibb is 2.1 million people on a quiet, grassy world where anything you say that isn't true is true by morning. Children learn to be precise before they learn to be polite. CVs are accurate, eventually. Politicians speak very slowly.\n\nI told a customs officer I had nothing to declare. In the morning I had nothing at all, including my map.\n\n(The story goes that the English 'fib' began as 'fible-fable', an old word for nonsense. On Fibb, there's no such thing as a small one.)\n\nField, or the moons?"
+  },
+  "first_comment": "Two months on, the field is still a field. Iris keeps a seashell on the windowsill.",
+  "short": {
+    "version": "A",
+    "title": "Every lie comes true\nby morning.",
+    "sub": "Ned oversold his field\non a first date.",
+    "framing": "medium",
+    "zoom": [
+      1.25,
+      1.3
+    ],
+    "focus": [
+      0.42,
+      0.58
+    ],
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "water": true,
+        "shore": "left",
+        "lighthouse": true,
+        "moons": 2,
+        "palette": "lilac_dusk",
+        "suns": 0
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "Iris preferred the field.\nSo he told her the truth.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.8,
+            1.85
+          ]
+        }
+      },
+      {
+        "text": "'It's a field.'\nBy then, that was a lie.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.42,
+            0.58
+          ]
+        },
+        "spec": {
+          "water": false,
+          "shore": "none",
+          "lighthouse": false,
+          "moons": 0,
+          "palette": "mint_dawn",
+          "suns": 1
+        }
+      }
+    ],
+    "end": "She does miss the moons.",
+    "end_spec": {
+      "suns": 0
+    }
+  }
+}
