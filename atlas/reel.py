@@ -184,7 +184,9 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
     say_hook = f"{title}\n{sub}".strip()
     t_hook = round(max(read(say_hook, 1.0), spoken(say_hook, 0.05, 0.35)), 2)
     onset = sh.get("onset") or {}
-    swap = (float(onset.get("at", 0.4)), replace(spec, **onset["spec"])) if onset.get("spec") else None
+    flips = {"sign", "palette", "particles", "aurora", "stars", "lamp", "glow_rims", "mist", "snow"}   # changes, not objects: cut
+    motion = onset.get("motion") or ("cut" if set(onset.get("spec") or {}) <= flips else "auto")
+    swap = (float(onset.get("at", 0.4)), replace(spec, **onset["spec"]), motion) if onset.get("spec") else None
     base = replace(spec, **sh["spec"]) if sh.get("spec") else spec       # the scene before the onset
     zoom, focus = FRAMINGS.get(sh.get("framing", "gag"), FRAMINGS["gag"])
     zoom = tuple(sh.get("zoom", (zoom[0] * 0.92, zoom[1] * 0.92)))

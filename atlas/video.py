@@ -37,7 +37,10 @@ class Shot:
     reverse: bool = False                    # pan backwards (the end card, so its last frame is the hook's first)
     say: str = ""                            # what the narrator reads over this shot (voiced Reels only)
     say_at: float = 0.15                     # seconds into the shot she starts
-    swap: tuple | None = None                # (t, Spec): the scene becomes this variant t s in, with a pop and a hit
+    swap: tuple | None = None                # (t, Spec[, motion]): the scene becomes this variant t s in, with a hit on the
+                                             # soundtrack. motion "auto" (default): what it adds rises into place from its
+                                             # own baseline like a pop-up page (a big change, like a palette, just cuts);
+                                             # "rise" forces that, "cut" forces a hard cut with a small camera punch
 
 
 def _fade(ts, start, end, ramp):
@@ -99,9 +102,13 @@ def _ease(t):
     return t * t * (3 - 2 * t)
 
 
+RISE = 0.45   # seconds an onset object takes to rise into place
+
+
 class _Prepared:
     def __init__(self, shot: Shot, cache: dict):
         self.shot = shot
+        self._grew = False
         if shot.still is not None:
             self.scene = None
             return
@@ -132,15 +139,20 @@ class _Prepared:
         s = self.shot
         u = ts / max(s.seconds, 1e-6)
         swapped = s.swap is not None and ts >= s.swap[0]
+        rose = False
         if self.scene is None:
             img = s.still
         else:
-            scene, thr, inks = self.after if swapped else (self.scene, self.thr, self.inks)
-            img = frame(scene, t=1 - u if s.reverse else u, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=thr)
-            img = print_finish(img, inks, seed=s.seed & 0xFFFF, dither=0.045)
+            tt = 1 - u if s.reverse else u
+            if swapped and ts < s.swap[0] + RISE and (s.swap[2] if len(s.swap) > 2 else "auto") != "cut":
+                img, rose = self._rise((ts - s.swap[0]) / RISE, tt, t_global, force=len(s.swap) > 2 and s.swap[2] == "rise")
+            if not rose:
+                scene, thr, inks = self.after if swapped else (self.scene, self.thr, self.inks)
+                img = frame(scene, t=tt, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=thr)
+            img = print_finish(img, (self.after if swapped else (self.scene, self.thr, self.inks))[2], seed=s.seed & 0xFFFF, dither=0.045)
         z = s.zoom[0] + (s.zoom[1] - s.zoom[0]) * _ease(u)
-        if swapped:
-            z *= 1 + 0.04 * np.exp(-(ts - s.swap[0]) / 0.14)     # a small punch on the change, settling in about 0.4 s
+        if swapped and not self._grew:
+            z *= 1 + 0.04 * np.exp(-(ts - s.swap[0]) / 0.14)     # a hard change gets a small punch, settling in about 0.4 s
         img = _zoom(img, z, s.focus)
         tint = self._tint()
         for c in s.cards:
@@ -155,6 +167,36 @@ class _Prepared:
                     rgb = rgb + tint * (1 - rgb)
                 img = img * (1 - al) + rgb * al
         return img
+
+    def _rise(self, p, tt, t_global, force=False):
+        """The onset as motion: whatever the new scene adds (pixels that differ) rises out of its own baseline,
+        easing out with a slight overshoot. Returns (raw image, True), or (None, False) when the change is too big
+        to be an object (then the caller cuts)."""
+        s = self.shot
+        a = frame(self.scene, t=tt, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=self.thr)
+        b = frame(self.after[0], t=tt, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=self.after[1])
+        m = (np.abs(b - a).max(axis=-1) > 0.035).astype(np.float32)
+        if not force and m.mean() > 0.22:
+            self._grew = False
+            return None, False
+        self._grew = True
+        rows = np.flatnonzero(m.max(axis=1))
+        if not len(rows):
+            return b, True
+        h_obj = rows[-1] - rows[0] + 1
+        base = np.where(m.any(axis=0), m.shape[0] - 1 - np.argmax(m[::-1], axis=0), -1)    # lowest changed row per column
+        c1 = 1.4
+        e = 1 + (c1 + 1) * (p - 1) ** 3 + c1 * (p - 1) ** 2      # ease-out with overshoot
+        off = int(round((1 - e) * h_obj))                       # >0: still below its baseline; <0: overshooting up
+        bs, ms = np.zeros_like(b), np.zeros_like(m)
+        if off >= 0:
+            bs[off:], ms[off:] = b[:b.shape[0] - off], m[:m.shape[0] - off]
+        else:
+            bs[:off], ms[:off] = b[-off:], m[-off:]
+        yy = np.arange(m.shape[0])[:, None]
+        ms *= (yy <= base[None, :])                               # hidden below its own baseline, like a pop-up page
+        ms = ms[..., None]
+        return a * (1 - ms) + bs * ms, True
 
     def _tint(self):
         if self.scene is None:
