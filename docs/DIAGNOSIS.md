@@ -2,6 +2,13 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-20: research back; the format and the cadence change
+- **Symptom (corrected):** Veyra and Ovo were 16 s Reels, not 20-37 s. Ovo reach 100, 73% skip, 3.9 s average watch (about 24% of its length). Veyra's 11.3 s watch includes our own early plays (it read 75 s at reach 2), so strangers watched about 2-7 s. Luna (34 s): reach 2, frozen from 8.9 h to 10.7 h, posted about 4 h before the API block.
+- **Findings (docs/RESEARCH.md, docs/PLAN.md):** the first 2-3 s decide distribution (Meta's Reels card predicts "watch less than 3 s"); sends per reach drive non-follower reach; speech in the first 3 s is the strongest measured retention lever; motion onset, not ongoing motion, grabs attention; nothing supports 3+ posts a day; Meta's spam policy names high-frequency, repetitive posting.
+- **Hypotheses ranked:** (1) a recommendation hold on the account (Luna got no stranger showing at all); (2) a near-still first second with a wide shot and tiny joke; (3) payoffs at 20-30 s when strangers leave at about 4 s; (4) no voice or character, and the reason to send is the smallest text; (5) every Reel looks alike.
+- **Changes:** posting rate 8 a day -> paused, then 1 a day; the 39 queued long Reels held; the owner asked to check Account Status; a short, hook-first format with a 0.4 s onset event; the narrator's voice (atlas/voice.py) as test version B; a labelled A/B/C format test.
+- **How we'll know:** Luna and Maren at 48 h (21 Oct) say whether the account is held. Then, per version over about 5 Reels at 48 h: skip 60% or less, at least 40% of the Reel watched by strangers, at least 1 share or save per 100 reached. If no version passes after about 30 Reels, rethink the concept (for example, a recurring character series), not the posting rate.
+
 ## 2026-10-19: low reach and high early skip
 - **Symptom:** Ovo reach 100 with a 73% skip rate and 3.9 s average watch on a 20 s Reel. Veyra 58% skip. Luna and Maren reach 2-3 after several hours. 1 follower.
 - **Hypotheses:**

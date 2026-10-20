@@ -38,62 +38,86 @@
  {
   "day": 2,
   "entry": "003",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "two-parter: held, almost every viewer arrives cold (docs/RESEARCH.md)"
  },
  {
   "day": 3,
   "entry": "010",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 3,
   "entry": "014",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 3,
   "entry": "018",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 3,
   "entry": "016",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 4,
   "entry": "006",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 4,
   "entry": "005",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 4,
   "entry": "017",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 4,
   "entry": "002",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 5,
   "entry": "009",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 5,
   "entry": "013",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 5,
   "entry": "015",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 5,
@@ -103,7 +127,9 @@
   "after": [
    "003",
    "reel"
-  ]
+  ],
+  "hold": true,
+  "note": "two-parter: held, almost every viewer arrives cold (docs/RESEARCH.md)"
  },
  {
   "day": 6,
@@ -112,135 +138,187 @@
   "after": [
    "003b",
    "reel"
-  ]
+  ],
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 6,
   "entry": "007",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 6,
   "entry": "011",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "019",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "026",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "022",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "028",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "029",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "021",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "025",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "030",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "024",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "023",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "034",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "031",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "040",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "039",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "038",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "041",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "037",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "032",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "033",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 8,
   "entry": "042",
-  "kind": "reel"
+  "kind": "reel",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 12,
   "entry": "H02",
   "kind": "reel",
-  "not_before": "2026-10-29T22:00:00Z"
+  "not_before": "2026-10-29T22:00:00Z",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 13,
   "entry": "H01",
   "kind": "reel",
-  "not_before": "2026-10-30T22:00:00Z"
+  "not_before": "2026-10-30T22:00:00Z",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 14,
   "entry": "H03",
   "kind": "reel",
-  "not_before": "2026-10-31T22:00:00Z"
+  "not_before": "2026-10-31T22:00:00Z",
+  "hold": true,
+  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
  },
  {
   "day": 7,
