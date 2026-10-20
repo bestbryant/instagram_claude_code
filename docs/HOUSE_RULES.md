@@ -15,6 +15,16 @@ Settled by the head writer after the round-3 final pass (19 October 2026), from 
 11. **The cartographer's runner** (P-sitcom-1.4, P-romance-1.2): she gets at most one framed beat per episode, never frame 1, the turn or the closer, and not on two posts in a row. Turn her off in any shot that frames one lover or one lone figure. Her line in the caption is the planet's rule catching her out (wrong name, wrong custom).
 12. **Plant the ending in frame 1, point at it fresh** (P-picture-book-1.1): frame 1 holds the evidence the last beat pays off, and the caption's first line (45 characters or fewer) points at it in new wording. 'Second time through' belongs to Daisy and 'On the replay' to Elsewhere.
 
+## The short cut (from 20 October 2026; docs/PLAN.md)
+New Reels post as an entry's `short` (atlas/reel.py short_shots), 12-18 s. The long episode stays as the source and the caption. These rules come first for shorts; rules 1-12 still apply where they fit.
+- **S1. Frame 0 is the hook.** The joke object is large (a close framing: gag, sign, crowd, house) and above the bottom 25%. The `title` (the big line, 2 lines at most) is the whole premise, concrete and strange: a specific noun plus an impossible verb, no explanation. On name planets the title is the identity line ("Every Max\ngets this planet.").
+- **S2. The reason to send it is on screen.** The `sub` says who it's for, or carries the premise the title didn't. Never "send this to...".
+- **S3. Something starts at 0.4 s.** The `onset` must be a big, visible change tied to the title. Objects it adds (a crowd, a moon, a house, a sign) rise into place on their own; text, palette, light and weather changes cut, with a camera punch and a sound hit.
+- **S4. The turn by about 8 s; 2-3 beats.** Each beat is 12 words or fewer, 1-2 lines. The end line is 6 words or fewer: the last laugh.
+- **S5. Write for the ear (versions B and C).** The cartographer reads every line, and every word she says is on screen. No abbreviations; numbers that say easily. Version C is second person and present tense ("You've just landed on Kess."). Check with scratchpad/voice_qa.py (word error rate 15% or less).
+- **S6. Amusement and awe first.** Wistful premises wait until a format is working.
+- **S7. Preview before rendering:** scratchpad/short_preview.py (frame 0, just after the onset, each beat, the end card; prints the voiced timing and the turn time).
+
 ## Registry: the episodes as shipped (21 from the room, then batch 2 and batch 3), in posting order (P-standup-1.2, with P-animated-short-1.3's ending-shape column)
 
 | # | Slot (UTC) | Planet | Names / ages | Days, clocks and numbers | Phrases it owns, templates | Props | Turn device | Turn palette | Ending shape | End-card form | Pointer | Question | Sent to |
