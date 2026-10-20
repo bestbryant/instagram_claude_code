@@ -825,7 +825,7 @@ def _house(ctx):
         y = int(_ground(ctx, x))
         box = layer.A[max(y - int(s * 1.4), 0): max(y - 3, 1), max(int(x - s * .8), 0): int(x + s * .8)]
         return float(box.mean()) if box.size else 1.0 + 0.3 * max(0.0, 0.3 - abs(x / W - ctx.focus[0]))
-    x = min((W * f for f in (0.82, 0.18, 0.7, 0.3, 0.9, 0.1)), key=crowded)
+    x = ctx.spec.house_x * W if ctx.spec.house_x else min((W * f for f in (0.82, 0.18, 0.7, 0.3, 0.9, 0.1)), key=crowded)
     y = _ground(ctx, x)
     _ink(ctx, layer, house(x, y, s), ctx.dark)
     if layer.E is None:
@@ -882,7 +882,7 @@ def _two_moons(ctx, aligned):
     layer = ctx.far_layer
     y = H * 0.4
     big, small = W * 0.13, W * 0.075
-    bx, sx = (W * 0.5, W * 0.52) if aligned else (W * 0.3, W * 0.72)
+    bx, sx = (W * 0.5, W * 0.52) if aligned else (W * 0.37, W * 0.67)
     _moon_disc(ctx, layer, bx, y, big, "moon_big")
     _moon_disc(ctx, layer, sx, y + (H * 0.01 if aligned else -H * 0.05), small, "moon_small")
     ctx.focus = (0.5, y / H)

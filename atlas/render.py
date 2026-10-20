@@ -180,6 +180,7 @@ class Spec:
     lamp: bool = False             # a tall lamp aimed at the sky
     moon_window: bool = False      # a lit window high on the big moon (somebody is home)
     sea_glow: bool = False         # the sea lit from underneath, blue-green (water planets)
+    house_x: float = 0.0           # where the house on the ledge stands (fraction of width; 0: wherever is clear)
     stage: float = 0.0             # flat foreground ledge at this height for the extras (0: natural ground)
 
 

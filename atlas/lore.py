@@ -65,8 +65,9 @@ CONCEPTS = [
     dict(subtitle="the lingering shadows",
          story="Shadows on {name} stay where they fall for about an hour after you've gone, so you can see where your friends have been all afternoon. People in love leave theirs on each other's doorsteps. This is considered sweet, and occasionally a bit much.",
          hook="Your shadow stays behind on {name}.", reel=["It lingers for about an hour.", "People in love leave theirs on doorsteps."],
-         spec=dict(snow=True, palette=["pastel", "violet_ice"], suns=1, sun_x=0.12, sun_y=0.5, house=True, trees="none",
-                   giant=False, big_moon=False, islands=0, crowd=2, crowd_items="shadowed,shadow")),
+         spec=dict(snow=True, palette=["pastel", "violet_ice"], suns=1, sun_x=0.12, sun_y=0.5, house=False, trees="none",
+                   giant=False, big_moon=False, islands=0, crowd=2, crowd_items="shadowed,shadow",
+                   cartographer=False)),     # nobody else on the snow: the shadow has to read as nobody's
     dict(subtitle="the long jumps",
          story="Gravity on {name} is light enough that a decent jump lasts about a minute. A lot of conversations happen in the air. It's considered rude to land before the other person has finished their sentence.",
          hook="One jump on {name} lasts about a minute.", reel=["Conversations happen mid-air.", "It's rude to land before someone has finished talking."],
@@ -135,6 +136,7 @@ SHORTS = {
                               framing="sky",
                               beats=[("sky", None), ("wide", dict(house=True))], end="People who like silence move away."),
     "the slow moons": dict(title="The moons of {name} take forty years to line up.", before=dict(gag=""), framing="gag",
+                           zoom=(1.3, 1.36),
                            beats=[("wide", dict(gag="two_moons_aligned", crowd=2, crowd_items="nothing", crowd_facing="in", crowd_x=0.5)),
                                   ("wide", dict(crowd=2, crowd_items="nothing", crowd_facing="in", crowd_x=0.5))],
                            end="A few renegotiate."),
@@ -153,9 +155,9 @@ SHORTS = {
                               framing="crowd", beats=[("wide", None), ({"framing": "medium", "focus": [0.5, 0.42]}, None)],
                               end="On a good day, it's nearly a song."),
     "the lingering shadows": dict(title="Your shadow stays behind on {name}.", before=dict(crowd_items="shadowed,shadowed"),
-                                  motion="cut", framing="wide",
-                                  beats=[({"framing": "medium", "focus": [0.8, 0.66]}, None),
-                                         ("wide", dict(crowd_items="shadow,shadow"))],
+                                  motion="cut", framing="wide", zoom=(1.6, 1.68), focus=(0.8, 0.68),
+                                  beats=[("wide", None),
+                                         ("house", dict(house=True, house_x=0.84, crowd=1, crowd_items="shadow", crowd_x=0.7))],
                                   end="Sweet. Occasionally a bit much."),
     "the long jumps": dict(title="One jump on {name} lasts about a minute.", before=dict(crowd_items="nothing,nothing"),
                            motion="cut", framing="wide",
@@ -260,6 +262,8 @@ def chart(name: str, number: str | None = None, by: str | None = None) -> tuple[
         spec.layers = min(spec.layers, 4)
     if spec.big_moon:
         spec.giant = False
+    if spec.lighthouse:
+        spec.house = False         # a house would raise the ledge in front of the lighthouse
     if spec.particles in ("snow", "snow_up"):
         spec.snow = True
     later = [c for _, c in SHORTS[concept["subtitle"]]["beats"] if c]
