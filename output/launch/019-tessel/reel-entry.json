@@ -132,5 +132,64 @@
     "caption": "Somebody keeps that board up to date.\n\nTessel is 90,000 people on a slow, tilted world: winter lasts a year, and summer about a fortnight. With no sun to count by, every village has someone who keeps the date. Nobody applies. The village just notices who has been doing it. Jess has kept hers since she was a girl: days, birthdays, anniversaries, and the morning the goats came in.\n\nI dated my first page 'winter'. Jess crossed it out and wrote 212.\n\nIn Longyearbyen, on Svalbard, the sun doesn't reach the town from late October until early March, and there's a festival week for the day it first touches the steps of the old hospital. On Tessel, they wait a year, and somebody counts.\n\nCould you count a whole winter in chalk?"
   },
   "first_comment": "Day 214. Jess has her chalk back. She's checking everyone's sums.",
-  "_engine": 4
+  "short": {
+    "version": "A",
+    "title": "Winter here\nlasts a year.",
+    "sub": "For whoever remembers\nevery birthday.",
+    "framing": "crowd",
+    "zoom": [
+      1.9,
+      2.0
+    ],
+    "focus": [
+      0.42,
+      0.68
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "suns": 0,
+      "particles": "none",
+      "snow": false,
+      "sign": ""
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "sign": ""
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "Jess keeps count.\nEven the goats' birthdays.",
+        "shot": "sign",
+        "spec": {
+          "sign": "WINTER|DAY 212"
+        }
+      },
+      {
+        "text": "One winter, Jess lost count.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.2,
+            2.3
+          ],
+          "focus": [
+            0.5,
+            0.68
+          ]
+        }
+      },
+      {
+        "text": "The village hadn't.",
+        "shot": "sign",
+        "spec": {
+          "sign": "DAY 213|HAPPY BIRTHDAY, JESS"
+        }
+      }
+    ],
+    "end": "Even the goats signed it."
+  },
+  "_engine": 5
 }
