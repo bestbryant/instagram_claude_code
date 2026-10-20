@@ -10,8 +10,8 @@
 Goal: 50,000 followers. Every hourly run that isn't busy posting or fixing something takes the top unfinished item, moves it forward, and ticks it off or notes progress here. Keep items small enough to finish or advance in one run.
 
 ## Posting rate
-**Paused** for the old 34 s cut (all held in content/schedule.json). Resume with short re-cuts only, once at least one is rendered and checked, and not before 21 Oct about 21:15 UTC (Luna and Maren at 48 h) unless Account Status comes back clean first. Then **1 Reel a day** for 7 days, at varied times between 13:00 and 02:00 UTC (routine: --gap-hours 20). Going to 2 a day (at least 6 h apart) needs a week with no API errors and no fall in median 48 h stranger reach. 2 a day is the ceiling until a format passes the lines. Roll back on any block error (codes 368, 200, subcode 2207051).
-- Log: 19 Oct 21:20 UTC, 3 h gap at the owner's request. 20 Oct 00:00 UTC, 12 h. 20 Oct 00:30 UTC, paused, then 1 a day (docs/PLAN.md).
+**1 short Reel a day** (routine: --gap-hours 20), at a varied time between 13:00 and 02:00 UTC, never in bursts. The old 34 s cut and the process Reel are held (content/schedule.json); only checked short re-cuts post. The first one goes out on 20 Oct, after 17:15 UTC: Maren drew stranger showings within 3 h, so a full account hold is unlikely, and waiting until 21 Oct would only cost a day of data. Going to 2 a day (at least 6 h apart) needs a week with no API errors and no fall in median 48 h stranger reach (`python -m atlas score`). 2 a day is the ceiling until a format passes the lines. Roll back on any block error (codes 368, 200, subcode 2207051).
+- Log: 19 Oct 21:20 UTC, 3 h gap at the owner's request. 20 Oct 00:00, 12 h. 20 Oct 00:30, paused (docs/PLAN.md). 20 Oct 01:00, 1 a day from 20 Oct evening with the short cut.
 
 ## Now (docs/PLAN.md, in order)
 - [ ] **Short-format engine**: an episode's `short` (hook, kicker/identity line, onset spec at about 0.4 s with a sound hit, 2-3 beats, end) renders as a 14-20 s Reel. It opens close on the joke, has a big identity line, and the end card lasts 2 s at most. It works voiced (B, C) and silent (A).

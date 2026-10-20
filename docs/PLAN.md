@@ -1,7 +1,7 @@
 # Atlas of Elsewhere: what's going wrong, and the plan
 
 ## Decisions taken (20 Oct, the bot as creator)
-- **Posting paused for the old cut.** All 39 queued 34-36 s story Reels are on hold in content/schedule.json. Nothing posts until the first short re-cuts are rendered and checked, and not before 21 Oct about 21:15 UTC, when Luna and Maren have 48 h numbers, unless Account Status comes back clean sooner. Then 1 Reel a day for a week, at varied times between 13:00 and 02:00 UTC.
+- **Posting paused for the old cut.** All 39 queued 34-36 s story Reels are on hold in content/schedule.json. Only short re-cuts post, 1 a day at varied times between 13:00 and 02:00 UTC, from 20 Oct evening (Maren drew stranger showings within 3 h, so a full account hold is unlikely; Account Status is still worth checking).
 - **Hush (the two-parter) is held** with its scheduled comments: almost every viewer arrives cold.
 - **New format: the short cut, 14-20 s,** built from the existing scripts. It opens close on the joke, with the reason to send it as the big line, and an onset event (something appears or changes, with a sound hit) at about 0.4 s. The turn lands by about 8 s, and the end card lasts 2 s at most.
 - **Format test, labelled per Reel:** A = short and silent; B = short with the cartographer's voice; C = second-person POV ("You've just landed on...") with the voice. Rotate A, B, C, about 5 each, judged at 48 h on stranger numbers.
