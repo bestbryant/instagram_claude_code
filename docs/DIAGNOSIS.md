@@ -2,6 +2,11 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-20 21:10 UTC: watch, Max has no showings after 3 h
+- **What:** Max (013, short-B, posted 18:09 UTC) has reach 0 and views 0 at 1, 2 and 3 h. The media is fine (REELS, shared to feed, thumbnail present). Maren had 3 at 1.9 h and 12 at 3.2 h.
+- **Pattern so far (n=5 Reels):** the two Reels posted in the European/US daytime both stalled: Luna (12:24 UTC) has been stuck at 2-3, and Max (18:09 UTC) is at 0. The three posted 21:00-03:00 UTC (Veyra 00:07, Ovo 03:00, Maren 21:15) all reached 37-100 strangers. By chance alone that split has odds of about 1 in 10, so it's a hypothesis, not a finding. Other candidates: an account-level limit (Account Status is still unchecked; it's the owner's top item) or slow first showings that catch up.
+- **Next:** read Max at 6 h and 12 h. If it is still under 10 at 12 h, treat the slot as the likely cause and test a 23:00 UTC slot for the next three shorts (Thessaly, Pebb, Cinderwake), then compare first-12 h reach. Ask the owner once, in the morning, to check Account Status.
+
 ## 2026-10-20 daily review (12:15 UTC)
 - **Numbers (strangers only, `python -m atlas score`):** Maren, 34 s, 15 h: reach 68 and still rising about 4-5 an hour; skip 61%; watch 6.4 s (19% of the Reel); 0 shares or saves. Its first test audiences skipped 29-43%, and the wider pools from hour 6 on about 60% (the usual cold-start shape). Luna is stuck at reach 3 at 24 h. Veyra 62% skip, 1.5 s; Ovo 73%, 4.3 s. Followers: 1.
 - **Against the targets:** skip under 50% missed (61%); 40% watched missed (19%); 1 send or save per 100 missed (0); follower growth none. The one positive: Maren is getting steady stranger distribution, so a full account hold is ruled out (Luna was probably a weak first test).
