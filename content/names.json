@@ -526,8 +526,8 @@
     },
     "short": {
       "version": "C",
-      "title": "You've just landed\non Bella.",
-      "sub": "Everything here is beautiful.\nBy law.",
+      "title": "Everything here\nis beautiful. By law.",
+      "sub": "You've just landed on Bella.",
       "framing": "sign",
       "spec": {
         "sign": "TAX OFFICE",
@@ -565,7 +565,7 @@
           }
         },
         {
-          "text": "So you rent its sign.",
+          "text": "So you rent its billboard.",
           "shot": "sign",
           "seconds": 3.4,
           "spec": {
@@ -718,8 +718,8 @@
     },
     "short": {
       "version": "C",
-      "title": "You've just landed\non Charlie.",
-      "sub": "Everyone here is called Charlie.",
+      "title": "Everyone here\nis called Charlie.",
+      "sub": "You've just landed.\nYou're Charlie too.",
       "framing": "crowd",
       "zoom": [
         1.65,
@@ -1347,7 +1347,8 @@
         "spec": {
           "sun_y": 0.54,
           "cartographer": false
-        }
+        },
+        "motion": "cut"
       },
       "beats": [
         {
@@ -1379,13 +1380,13 @@
           },
           "spec": {
             "crowd_facing": "in",
-            "crowd_items": "cup,nothing",
+            "crowd_items": "nothing,cup",
             "palette": "polar_night",
             "suns": 0
           }
         }
       ],
-      "end": "Every Olive is an olive branch."
+      "end": "Every cup is an olive branch."
     }
   },
   {
@@ -1808,7 +1809,9 @@
             "crowd_x": 0.42,
             "crowd_facing": "in",
             "crowd_items": "nothing,spoon",
-            "cartographer": false
+            "cartographer": false,
+            "palette": "teal_night",
+            "suns": 0
           }
         },
         {
@@ -1822,7 +1825,9 @@
           },
           "spec": {
             "sign": "DAYS SINCE|ANYONE LIED|0",
-            "cartographer": false
+            "cartographer": false,
+            "palette": "teal_night",
+            "suns": 0
           },
           "seconds": 2.4
         }
@@ -3194,8 +3199,8 @@
     "first_comment": "7:02: 'Simon says, put the fish down.' Six million people went straight back to bed.",
     "short": {
       "version": "C",
-      "title": "You've just landed\non Simon.",
-      "sub": "Everyone does what Simon says.",
+      "title": "Everyone does\nwhat Simon says.",
+      "sub": "You've just landed on Simon.",
       "framing": "crowd",
       "zoom": [
         1.9,
@@ -3228,7 +3233,7 @@
           }
         },
         {
-          "text": "Bedtime. He yawns:\n'Everybody, bed.'",
+          "text": "He yawns:\n'Everybody, bed.'",
           "shot": {
             "framing": "crowd",
             "zoom": [
@@ -3242,7 +3247,7 @@
           }
         },
         {
-          "text": "Don't move.\nHe didn't say 'Simon says'.",
+          "text": "Don't move. He didn't say\n'Simon says'. Now he's asleep.",
           "shot": {
             "framing": "crowd",
             "zoom": [
@@ -3252,11 +3257,13 @@
           },
           "spec": {
             "palette": "teal_night",
-            "suns": 0
+            "suns": 0,
+            "crowd_items": "fish,fish,child_asleep,fish,fish"
           }
         }
       ],
-      "end": "He'll say it in the morning."
+      "end": "He'll say it in the morning.",
+      "scrim": 0.65
     }
   }
 ]

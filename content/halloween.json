@@ -168,7 +168,7 @@
           "shot": "house"
         }
       ],
-      "end": "For people who apologise to furniture."
+      "end": "Now you apologise to furniture."
     }
   },
   {
@@ -557,7 +557,7 @@
         }
       ],
       "end": "Now Gordon leaves out thirteen.",
-      "title_y": 0.09
+      "title_y": 0.135
     }
   }
 ]

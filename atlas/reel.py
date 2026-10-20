@@ -187,7 +187,7 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
     items = [dict(text=title, y=sh.get("title_y", 0.17), kind="serif", weight="Medium", size=88, leading=1.1, **left)]
     if sub:
         items.append(dict(text=sub, y="after", gap=0.02, kind="italic", size=58, leading=1.14, **left))
-    hook_card = overlay(items)
+    hook_card = overlay(items, scrim=sh.get("scrim", 0.42))     # a pale sky can ask for a stronger shade
     say_hook = f"{title}\n{sub}".strip()
     t_hook = round(max(read(say_hook, 1.0), spoken(say_hook, 0.05, 0.35)), 2)
     onset = sh.get("onset") or {}
@@ -205,7 +205,8 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
         last = i == len(sh["beats"]) - 1
         secs = beat.get("seconds") or read(beat["text"], 1.0 if last else 0.6)
         secs = round(max(secs, spoken(beat["text"], 0.1, 0.55 if last else 0.3)), 2)
-        card = overlay([dict(text=beat["text"], y=beat.get("text_y", 0.18), kind="italic", size=70, leading=1.14, **left)])
+        card = overlay([dict(text=beat["text"], y=beat.get("text_y", 0.18), kind="italic", size=70, leading=1.14, **left)],
+                       scrim=sh.get("scrim", 0.42))
         shot = _beat_shot(after, seed, beat, card, secs)
         shot.say = beat["text"] if speak else ""
         shot.say_at = 0.1

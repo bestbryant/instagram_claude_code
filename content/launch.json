@@ -359,9 +359,9 @@
         "at": 0.4,
         "spec": {
           "giant": true,
-          "giant_x": 0.66,
-          "giant_y": 0.46,
-          "giant_size": 0.26,
+          "giant_x": 0.72,
+          "giant_y": 0.37,
+          "giant_size": 0.2,
           "palette": "lilac_dusk",
           "suns": 0,
           "cartographer": false
@@ -370,7 +370,7 @@
       },
       "beats": [
         {
-          "text": "The giant's had the sea\neleven years. It's back at dawn.",
+          "text": "The sea left eleven years ago.\nIt's back at dawn.",
           "shot": {
             "framing": "medium",
             "zoom": [
@@ -851,7 +851,7 @@
       },
       "beats": [
         {
-          "text": "So, legally, every kettle\non the planet is his.",
+          "text": "By law, the cold get the kettles.\nSo every kettle is his.",
           "shot": "crowd",
           "spec": {
             "suns": 0,
@@ -1561,7 +1561,7 @@
           }
         },
         {
-          "text": "Then one night, it went out.\nBehind it, there were stars.",
+          "text": "One night, the aurora went out.\nBehind it, there were stars.",
           "shot": {
             "framing": "medium",
             "zoom": [
@@ -2027,7 +2027,7 @@
       },
       "beats": [
         {
-          "text": "No sun. No calendar.\nJess keeps count.",
+          "text": "Jess keeps count.\nEven the goats' birthdays.",
           "shot": "sign",
           "spec": {
             "sign": "WINTER|DAY 212"
@@ -2443,8 +2443,8 @@
     "first_comment": "Wren: For the record, that was a twenty-four-minute week. I stand by it.",
     "short": {
       "version": "B",
-      "title": "Days on Whisk\nlast six minutes.",
-      "sub": "Wren would like\none hot cup of tea.",
+      "title": "Days here last\nsix minutes.",
+      "sub": "Wren would like to finish\na cup of tea in one day.",
       "framing": "crowd",
       "zoom": [
         2.0,
@@ -2468,7 +2468,7 @@
       },
       "beats": [
         {
-          "text": "Monday to Wednesday:\nthe twins.",
+          "text": "Monday to Wednesday:\nher twins.",
           "shot": {
             "framing": "crowd",
             "zoom": [
@@ -2483,7 +2483,10 @@
           "spec": {
             "palette": "polar_night",
             "suns": 0,
-            "crowd_items": "child"
+            "crowd_items": "child,child",
+            "crowd": 2,
+            "crowd_x": 0.42,
+            "crowd_facing": "in"
           }
         },
         {
@@ -3481,7 +3484,7 @@
     "short": {
       "version": "A",
       "title": "Every lie comes true\nby morning.",
-      "sub": "Ned oversold himself\non a first date.",
+      "sub": "Ned oversold his field\non a first date.",
       "framing": "medium",
       "zoom": [
         1.25,
@@ -3537,7 +3540,10 @@
           }
         }
       ],
-      "end": "She does miss the moons."
+      "end": "She does miss the moons.",
+      "end_spec": {
+        "suns": 0
+      }
     }
   },
   {
