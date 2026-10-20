@@ -135,5 +135,62 @@
     ],
     "end": "You'd be Charlie Phone.",
     "caption": "Frame one: find Charlie Cup.\n\nThere are thirty-eight people on Charlie, and every one of them is Charlie. Shout 'Charlie!' in the market and the whole street turns round. Babies are Charlie Nothing until they grab something, which is why nobody here wakes a baby. Hands in pockets count as holding nothing, so you can take a day off anywhere.\n\nThe morning after the party, thirty-seven Charlies were on holiday, so I dried. For a week I was Charlie Tea Towel.\n\nWelsh villages with too many Joneses did the same thing: Jones the Milk, Jones the Post.\n\nWhat's your Charlie always holding?"
+  },
+  "short": {
+    "version": "C",
+    "title": "Everyone here\nis called Charlie.",
+    "sub": "You've just landed.\nYou're Charlie too.",
+    "framing": "crowd",
+    "zoom": [
+      1.65,
+      1.7
+    ],
+    "focus": [
+      0.62,
+      0.6
+    ],
+    "spec": {
+      "crowd": 0,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "crowd": 4,
+        "crowd_x": 0.53,
+        "crowd_items": "spade,nothing,cup,kettle",
+        "cartographer": false
+      }
+    },
+    "beats": [
+      {
+        "text": "You go by what you're holding.\nCharlie Nothing is on holiday.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.2,
+            2.3
+          ],
+          "focus": [
+            "x",
+            0.485
+          ]
+        }
+      },
+      {
+        "text": "You're holding a phone.\nHi, Charlie Phone.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.9,
+            1.98
+          ]
+        },
+        "spec": {
+          "crowd_facing": "in"
+        }
+      }
+    ],
+    "end": "Put it down. You're on holiday."
   }
 }

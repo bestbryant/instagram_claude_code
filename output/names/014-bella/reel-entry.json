@@ -156,5 +156,58 @@
     "end": "Every Bella outranks the tax office.",
     "caption": "The tax office would like a word.\n\nBella is low blue hills, one long view of the sea, and the Beauty Act. It passed in a hurry, the morning after the old mayor called his own wedding 'fine'. Saying 'fine' now costs three compliments, paid in person, and 'not bad' is under review. The tax office has a perfect five-star rating, because leaving fewer stars is not beautiful. Teo was fined for insulting a public building by comparison. Nina had the fine framed. I called the view 'fine' on my first morning. I still owe one compliment.\n\nWhat would your sign say?"
   },
-  "_engine": 4
+  "short": {
+    "version": "C",
+    "title": "Everything here\nis beautiful. By law.",
+    "sub": "You've just landed on Bella.",
+    "framing": "sign",
+    "spec": {
+      "sign": "TAX OFFICE",
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "sign": "THE BEAUTIFUL|TAX OFFICE",
+        "cartographer": false
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "Your date is beautiful.\nBy law, so is the tax office.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.36,
+            1.3
+          ],
+          "focus": [
+            0.59,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "gold_hour",
+          "crowd": 2,
+          "crowd_items": "nothing,nothing",
+          "crowd_x": 0.33,
+          "crowd_facing": "in",
+          "suns": 0
+        }
+      },
+      {
+        "text": "So you rent its billboard.",
+        "shot": "sign",
+        "seconds": 3.4,
+        "spec": {
+          "palette": "mint_dawn",
+          "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE",
+          "cartographer": false
+        }
+      }
+    ],
+    "end": "Legally, an insult to a building."
+  },
+  "_engine": 5
 }

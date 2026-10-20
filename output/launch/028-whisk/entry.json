@@ -224,5 +224,75 @@
     "end": "Close enough.",
     "caption": "Wren's cup has been going cold since Monday.\n\nWhisk spins so fast that a day lasts six minutes. A year is over in a day and a half, so birthdays are relentless, lunch is largely theoretical and every calendar is a flipbook. Wren has twins, a kettle and one small ambition. The twins have other plans, and very good timing.\n\nI tried keeping a diary. By the time I'd written the date, it was wrong.\n\n(On Earth, the day gets about 1.8 thousandths of a second longer every century, as the tides drag on us. It won't help.)\n\nWhen did you last finish a hot drink?"
   },
-  "first_comment": "Wren: For the record, that was a twenty-four-minute week. I stand by it."
+  "first_comment": "Wren: For the record, that was a twenty-four-minute week. I stand by it.",
+  "short": {
+    "version": "B",
+    "title": "Days here last\nsix minutes.",
+    "sub": "Wren would like to finish\na cup of tea in one day.",
+    "framing": "crowd",
+    "zoom": [
+      2.0,
+      2.06
+    ],
+    "focus": [
+      0.55,
+      0.63
+    ],
+    "spec": {
+      "sun_x": 0.72,
+      "sun_y": 0.42
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "palette": "gold_hour",
+        "sun_x": 0.62,
+        "sun_y": 0.62
+      }
+    },
+    "beats": [
+      {
+        "text": "Monday to Wednesday:\nher twins.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.42,
+            0.64
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd_items": "child,child",
+          "crowd": 2,
+          "crowd_x": 0.42,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "Thursday: last sip at sunrise.\nTechnically, that's Friday.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.55,
+            0.63
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "sun_x": 0.34,
+          "sun_y": 0.62
+        }
+      }
+    ],
+    "end": "Close enough."
+  }
 }
