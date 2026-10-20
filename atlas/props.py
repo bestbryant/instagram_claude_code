@@ -547,6 +547,20 @@ def _gag_fainted_ghost(ctx):
     ctx.focus = (x / W + 0.05, (y - s * .4) / H)
 
 
+def _gag_ghost(ctx):
+    """Hollow, a moment earlier: the ghost still upright, the visitor about to say boo. Same place and camera
+    as fainted_ghost, so an onset from one to the other is the ghost keeling over."""
+    layer, W, H = ctx.near_layer, ctx.W, ctx.H
+    x = W * 0.44
+    y = _ground(ctx, x)
+    s = H * 0.11
+    body, eyes = ghost(x, y, s)
+    _ink(ctx, layer, body, ctx.light)
+    _ink(ctx, layer, eyes, ctx.dark)
+    _person(ctx, layer, x + W * 0.13, _ground(ctx, x + W * .13), H * G, "cup", -1)
+    ctx.focus = (x / W + 0.05, (y - s * .4) / H)
+
+
 def _gag_megaphones(ctx):
     """Max: the vote to remove the quiet setting, cast by megaphone."""
     layer, W, H = ctx.near_layer, ctx.W, ctx.H
@@ -791,7 +805,7 @@ GAGS = {
     "chair_sleepers": _gag_chair_sleepers, "seabed_town": _gag_seabed_town, "slow_shout": _gag_slow_shout,
     "pole_post": _gag_pole_post, "kettles": _gag_kettles, "moon_letters": _gag_moon_letters,
     "glass_surfers": _gag_glass_surfers, "tiny_planet": _gag_tiny_planet, "umbrella_feet": _gag_umbrella_feet,
-    "road_tourists": _gag_road_tourists, "tree_cloud": _gag_tree_cloud, "fainted_ghost": _gag_fainted_ghost,
+    "road_tourists": _gag_road_tourists, "tree_cloud": _gag_tree_cloud, "fainted_ghost": _gag_fainted_ghost, "ghost": _gag_ghost,
     "megaphones": _gag_megaphones, "stirrers": _gag_stirrers, "moth_roof": _gag_moth_roof,
 }
 
