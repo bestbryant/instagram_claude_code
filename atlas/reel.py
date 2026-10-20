@@ -29,9 +29,16 @@ def render_reel(spec: Spec, seed: int, entry: dict, out: Path, cover_path: Path 
     from .video import render_shots, still
 
     speak = voiced(entry)
-    render_shots(reel_shots(spec, seed, entry, requested_by, speak=speak), out, seed=seed, speak=speak)
+    shots = reel_shots(spec, seed, entry, requested_by, speak=speak)
+    render_shots(shots, out, seed=seed, speak=speak)
     if cover_path is not None:
-        to_image(still(cover_shot(spec, seed, entry))).save(cover_path, quality=92)
+        if entry.get("short"):            # the grid tile is the hook itself, just after the onset has landed
+            from .video import _Prepared
+            s = shots[0]
+            ts = min((s.swap[0] + 0.8) if s.swap else 0.5, s.seconds - 0.05)
+            to_image(_Prepared(s, {}).image(ts, ts)).save(cover_path, quality=92)
+        else:
+            to_image(still(cover_shot(spec, seed, entry))).save(cover_path, quality=92)
     return Path(out)
 
 
