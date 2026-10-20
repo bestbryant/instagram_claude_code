@@ -334,6 +334,82 @@
       ],
       "end": "Next time, a bigger pool.",
       "caption": "Most of Orrin's 2.1 million people take their houses down plank by plank all season, then leave on the same night. The sign is bolted to the seabed, and its oldest line has been under four tides. This town's line goes on in the small hours. Nobody has decided what it says. Anything left behind goes to the sea, and eleven years later to whoever digs it up, so everyone here drinks out of a stranger's mug. My guide has moved twice. This time she's packing a towel and a snorkel.\n\nOrrin keeps almost the same face to its giant and slips round underneath it once every 22 years. A tide has two bulges, so the sea comes round every 11. The giant climbs about a finger's width a month, and when it's overhead, so is the sea.\n\nThe sea is due back at 6:12 on 14 March. I'll pack the night before.\n\nPack-early person or night-before person?"
+    },
+    "short": {
+      "version": "B",
+      "title": "This town is at\nthe bottom of the sea.",
+      "sub": "For night-before packers.",
+      "title_y": 0.12,
+      "framing": "medium",
+      "zoom": [
+        1.45,
+        1.5
+      ],
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "spec": {
+        "giant": false,
+        "palette": "lilac_dusk",
+        "suns": 0,
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "giant": true,
+          "giant_x": 0.66,
+          "giant_y": 0.46,
+          "giant_size": 0.26,
+          "palette": "lilac_dusk",
+          "suns": 0,
+          "cartographer": false
+        },
+        "motion": "rise"
+      },
+      "beats": [
+        {
+          "text": "The giant's had the sea\neleven years. It's back at dawn.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.75,
+              1.85
+            ],
+            "focus": [
+              0.36,
+              0.61
+            ]
+          },
+          "spec": {
+            "palette": "teal_night",
+            "sign": ""
+          }
+        },
+        {
+          "text": "The tide does not do extensions.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "mint_dawn",
+            "water": true,
+            "gag": "",
+            "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!|WE DIDN'T.| "
+          }
+        }
+      ],
+      "end": "Next time, they'll pack early.",
+      "name_y": 0.2
     }
   },
   {
@@ -751,6 +827,74 @@
       ],
       "end": "Wilf says bring a cardigan.",
       "caption": "On a warm planet, one man is blowing on his hands.\n\nCinderwake is big and young and still cooling from the inside, so its heat comes up through the rock, not down from its sun. Towns grew round the hottest stones, the way ours grew round wells. You put a kettle down, wander off, and come back when it whistles. The rain falls warm, tea grows wild in the cracks, and socks dry on the canyon walls in about ninety seconds. Nights last twenty hours, and the canyon walls glow dull orange, enough to read by. The air is thicker than ours, so water boils at about 107°C and visitors burn their tongues. Heating bills are something grandparents mention to frighten children.\n\nI packed a hot-water bottle. It's in the museum now, next to the stove.\n\nEveryone knows a Wilf. Who's yours?"
+    },
+    "short": {
+      "version": "B",
+      "title": "The ground here\nboils your kettle.",
+      "sub": "Nobody is ever cold.\nExcept Wilf.",
+      "framing": "gag",
+      "spec": {
+        "palette": "violet_ice",
+        "particles": "none",
+        "glow_rims": false,
+        "suns": 0,
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "palette": "crimson",
+          "suns": 0,
+          "cartographer": false
+        },
+        "motion": "cut"
+      },
+      "beats": [
+        {
+          "text": "So, legally, every kettle\non the planet is his.",
+          "shot": "crowd",
+          "spec": {
+            "suns": 0,
+            "palette": "pumpkin",
+            "crowd": 6,
+            "crowd_items": "kettle",
+            "crowd_x": 0.42,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "He's had tea in every house.\nNo warmer.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.25
+            ],
+            "focus": [
+              0.8,
+              0.67
+            ]
+          },
+          "spec": {
+            "suns": 0,
+            "palette": "pumpkin",
+            "crowd": 6,
+            "crowd_items": "kettle",
+            "crowd_x": 0.42,
+            "crowd_facing": "right",
+            "cartographer": false
+          }
+        }
+      ],
+      "end": "Wilf says bring a cardigan.",
+      "zoom": [
+        1.5,
+        1.55
+      ],
+      "focus": [
+        0.54,
+        0.66
+      ]
     }
   },
   {
@@ -1174,6 +1318,55 @@
       ],
       "end": "Just in case.",
       "caption": "Rosa is in the first frame, before anyone mentions her.\n\nThe rain on Thessaly lifts off the sea in thin threads and gathers in shallow pools on the undersides of the clouds, which turn gold at dusk. Every pool has a name, and the argument about which is deepest is three hundred years old. Umbrellas are worn feet-first from October to March, and boots are waterproof on top. People now date things 'before the Down' and 'after the Down'.\n\nOn my first day I held my umbrella over my head too. Rosa was the only one who didn't laugh. She has not said 'I told you so'. She's had it embroidered on a cushion.\n\nThe forecast now reads: from below. Probably.\n\n300,000 people, a 23-hour day, 0.6 g. The rain rides a steady updraft off the warm sea. (On Earth, an updraft of about 90 km/h can hold a golf-ball-sized hailstone in the air.) That afternoon, Thessaly's dropped for most of an hour.\n\nWhat do you always carry just in case?"
+    },
+    "short": {
+      "version": "C",
+      "title": "Your umbrella\ngoes on your feet.",
+      "sub": "You've just landed on Thessaly.\nThe rain falls up.",
+      "framing": "gag",
+      "spec": {
+        "particles": "none",
+        "crowd": 0,
+        "spot": "#22343c",
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "particles": "rain_up",
+          "crowd": 0,
+          "cartographer": false
+        },
+        "motion": "cut"
+      },
+      "beats": [
+        {
+          "text": "Your hair stays perfect.\nYour knees don't.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              2.1,
+              2.2
+            ]
+          }
+        },
+        {
+          "text": "Then, this afternoon,\nit rains down.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              2.1,
+              2.2
+            ]
+          },
+          "spec": {
+            "particles": "rain",
+            "suns": 0,
+            "palette": "polar_night"
+          }
+        }
+      ],
+      "end": "Everyone's first bad hair day."
     }
   },
   {
@@ -1326,7 +1519,68 @@
       "end": "That night, everyone was a tourist.",
       "caption": "Watch the man walking on the right.\n\nKess: 250,000 people, a 21-hour day, no moons, and an aurora bright enough to cast shadows. A local who looks up at it by accident has to sit on the kerb for a minute. The night it went out, every kerb on Kess was full. I was lying in the left lane outside the laundrette, where the road stays warm. For four minutes, nobody stepped round me.\n\nNobody knows why it went out. The council put up a plaque about it at eye level, so nobody has read it. The buses now allow three minutes per local.\n\n(On Earth, the brightest aurora lights the ground about as well as a full moon, and a full moon cuts the stars you can see from a few thousand to a few hundred.)\n\nWhat did you stop noticing where you live?"
     },
-    "first_comment": "Earth's aurora runs on the solar wind. On 10-11 May 1999, that wind almost stopped."
+    "first_comment": "Earth's aurora runs on the solar wind. On 10-11 May 1999, that wind almost stopped.",
+    "short": {
+      "version": "B",
+      "title": "On Kess, only\ntourists look up.",
+      "sub": "For anyone who's stopped\nnoticing their view.",
+      "framing": "medium",
+      "zoom": [
+        1.45,
+        1.52
+      ],
+      "focus": [
+        0.48,
+        0.58
+      ],
+      "spec": {
+        "aurora": false,
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "aurora": true,
+          "cartographer": false
+        },
+        "motion": "cut"
+      },
+      "beats": [
+        {
+          "text": "Locals step round them\nwithout breaking stride.",
+          "shot": {
+            "framing": "left",
+            "zoom": [
+              1.65,
+              1.8
+            ],
+            "focus": [
+              "x",
+              0.36
+            ]
+          }
+        },
+        {
+          "text": "Then one night, it went out.\nBehind it, there were stars.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.52
+            ],
+            "focus": [
+              0.48,
+              0.58
+            ]
+          },
+          "spec": {
+            "aurora": false,
+            "stars": 7.0
+          }
+        }
+      ],
+      "end": "That night, everyone was a tourist."
+    }
   },
   {
     "id": "011",
@@ -1743,7 +1997,66 @@
       "end": "For the birthdays, a jess.",
       "caption": "Somebody keeps that board up to date.\n\nTessel is 90,000 people on a slow, tilted world: winter lasts a year, and summer about a fortnight. With no sun to count by, every village has someone who keeps the date. Nobody applies. The village just notices who has been doing it. Jess has kept hers since she was a girl: days, birthdays, anniversaries, and the morning the goats came in.\n\nI dated my first page 'winter'. Jess crossed it out and wrote 212.\n\nIn Longyearbyen, on Svalbard, the sun doesn't reach the town from late October until early March, and there's a festival week for the day it first touches the steps of the old hospital. On Tessel, they wait a year, and somebody counts.\n\nCould you count a whole winter in chalk?"
     },
-    "first_comment": "Day 214. Jess has her chalk back. She's checking everyone's sums."
+    "first_comment": "Day 214. Jess has her chalk back. She's checking everyone's sums.",
+    "short": {
+      "version": "A",
+      "title": "Winter here\nlasts a year.",
+      "sub": "For whoever remembers\nevery birthday.",
+      "framing": "crowd",
+      "zoom": [
+        1.9,
+        2.0
+      ],
+      "focus": [
+        0.42,
+        0.68
+      ],
+      "spec": {
+        "palette": "rose_fog",
+        "suns": 0,
+        "particles": "none",
+        "snow": false,
+        "sign": ""
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "sign": ""
+        },
+        "motion": "cut"
+      },
+      "beats": [
+        {
+          "text": "No sun. No calendar.\nJess keeps count.",
+          "shot": "sign",
+          "spec": {
+            "sign": "WINTER|DAY 212"
+          }
+        },
+        {
+          "text": "One winter, Jess lost count.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.2,
+              2.3
+            ],
+            "focus": [
+              0.5,
+              0.68
+            ]
+          }
+        },
+        {
+          "text": "The village hadn't.",
+          "shot": "sign",
+          "spec": {
+            "sign": "DAY 213|HAPPY BIRTHDAY, JESS"
+          }
+        }
+      ],
+      "end": "Even the goats signed it."
+    }
   },
   {
     "id": "026",
@@ -2127,7 +2440,74 @@
       "end": "Close enough.",
       "caption": "Wren's cup has been going cold since Monday.\n\nWhisk spins so fast that a day lasts six minutes. A year is over in a day and a half, so birthdays are relentless, lunch is largely theoretical and every calendar is a flipbook. Wren has twins, a kettle and one small ambition. The twins have other plans, and very good timing.\n\nI tried keeping a diary. By the time I'd written the date, it was wrong.\n\n(On Earth, the day gets about 1.8 thousandths of a second longer every century, as the tides drag on us. It won't help.)\n\nWhen did you last finish a hot drink?"
     },
-    "first_comment": "Wren: For the record, that was a twenty-four-minute week. I stand by it."
+    "first_comment": "Wren: For the record, that was a twenty-four-minute week. I stand by it.",
+    "short": {
+      "version": "B",
+      "title": "Days on Whisk\nlast six minutes.",
+      "sub": "Wren would like\none hot cup of tea.",
+      "framing": "crowd",
+      "zoom": [
+        2.0,
+        2.06
+      ],
+      "focus": [
+        0.55,
+        0.63
+      ],
+      "spec": {
+        "sun_x": 0.72,
+        "sun_y": 0.42
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "palette": "gold_hour",
+          "sun_x": 0.62,
+          "sun_y": 0.62
+        }
+      },
+      "beats": [
+        {
+          "text": "Monday to Wednesday:\nthe twins.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.42,
+              0.64
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "crowd_items": "child"
+          }
+        },
+        {
+          "text": "Thursday: last sip at sunrise.\nTechnically, that's Friday.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.55,
+              0.63
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "sun_x": 0.34,
+            "sun_y": 0.62
+          }
+        }
+      ],
+      "end": "Close enough."
+    }
   },
   {
     "id": "021",
@@ -2291,7 +2671,73 @@
       "end": "Both came home wet.",
       "caption": "That's no moon in the first frame.\n\nPebb is a rock about forty kilometres across: one house, one resident, and a horizon you could walk to before lunch. Juno moved here for the quiet. Every morning she throws her ball east, has a long breakfast, and turns round to catch it coming in over the roof. She has never walked round to the far side. It isn't far.\n\nI threw my compass on my first morning, to check. It's still up there, next to her first ball.\n\nOn a rock this size, a throw of about 18 metres a second goes into orbit and comes round again in just under two hours. On Earth, you'd need nearly 8 kilometres a second.\n\nWould you throw two?"
     },
-    "first_comment": "Next morning: one came home chewed. The other came home with a stick."
+    "first_comment": "Next morning: one came home chewed. The other came home with a stick.",
+    "short": {
+      "version": "A",
+      "title": "Throw a ball on Pebb\nand it orbits.",
+      "sub": "Juno lives here alone. She thinks.",
+      "framing": "medium",
+      "zoom": [
+        1.65,
+        1.7
+      ],
+      "focus": [
+        0.52,
+        0.56
+      ],
+      "spec": {
+        "moons": 0,
+        "stage": 0.68
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "moons": 0,
+          "stage": 0.68,
+          "giant": true,
+          "giant_size": 0.05,
+          "giant_x": 0.62,
+          "giant_y": 0.53,
+          "ring": false
+        }
+      },
+      "beats": [
+        {
+          "text": "It comes home two hours later,\nfrom the west.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "One day it came home wet.\nThe next, wet and chewed.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_facing": "left",
+            "palette": "rose_fog"
+          }
+        }
+      ],
+      "end": "Now she throws two.",
+      "name_y": 0.24
+    }
   },
   {
     "id": "030",
@@ -3031,7 +3477,68 @@
       "end": "She does miss the moons.",
       "caption": "Everything in this picture is true. For now.\n\nFibb is 2.1 million people on a quiet, grassy world where anything you say that isn't true is true by morning. Children learn to be precise before they learn to be polite. CVs are accurate, eventually. Politicians speak very slowly.\n\nI told a customs officer I had nothing to declare. In the morning I had nothing at all, including my map.\n\n(The story goes that the English 'fib' began as 'fible-fable', an old word for nonsense. On Fibb, there's no such thing as a small one.)\n\nField, or the moons?"
     },
-    "first_comment": "Two months on, the field is still a field. Iris keeps a seashell on the windowsill."
+    "first_comment": "Two months on, the field is still a field. Iris keeps a seashell on the windowsill.",
+    "short": {
+      "version": "A",
+      "title": "Every lie comes true\nby morning.",
+      "sub": "Ned oversold himself\non a first date.",
+      "framing": "medium",
+      "zoom": [
+        1.25,
+        1.3
+      ],
+      "focus": [
+        0.42,
+        0.58
+      ],
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "water": true,
+          "shore": "left",
+          "lighthouse": true,
+          "moons": 2,
+          "palette": "lilac_dusk",
+          "suns": 0
+        },
+        "motion": "cut"
+      },
+      "beats": [
+        {
+          "text": "Iris preferred the field.\nSo he told her the truth.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.8,
+              1.85
+            ]
+          }
+        },
+        {
+          "text": "'It's a field.'\nBy then, that was a lie.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.42,
+              0.58
+            ]
+          },
+          "spec": {
+            "water": false,
+            "shore": "none",
+            "lighthouse": false,
+            "moons": 0,
+            "palette": "mint_dawn",
+            "suns": 1
+          }
+        }
+      ],
+      "end": "She does miss the moons."
+    }
   },
   {
     "id": "039",

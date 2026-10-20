@@ -127,6 +127,48 @@
       ],
       "end": "For people who apologise to furniture.",
       "caption": "Who's that standing by the ghost?\n\nHollow has 4,000 living residents. The other kind won't come out to be counted. They keep to wardrobes, airing cupboards and the space under the stairs, and a sneeze can floor one. Saying boo needs written consent. One lives in the school piano, so lessons are recorder only.\n\nSorry Night is the last night of October: knock on each wardrobe once, softly, say what you did, and go. Mo got the most sweets on the street. Nobody's sure what that says about the recorder.\n\nOn Earth, one root of Halloween door-knocking is souling: in medieval Britain the poor went house to house at Hallowtide and were given soul cakes for praying for the household's dead. On Hollow the living knock, and the dead hand out the treats.\n\nWhat's the last thing you apologised to?"
+    },
+    "short": {
+      "version": "C",
+      "title": "You've just said boo\nto a ghost.",
+      "sub": "On Hollow, they faint.",
+      "framing": "gag",
+      "zoom": [
+        1.4,
+        1.46
+      ],
+      "focus": [
+        0.55,
+        0.6
+      ],
+      "spec": {
+        "palette": "rose_fog",
+        "big_moon": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "palette": "pumpkin",
+          "big_moon": true
+        }
+      },
+      "beats": [
+        {
+          "text": "It takes an hour to come round.\nYou should apologise.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              2.2,
+              2.3
+            ]
+          }
+        },
+        {
+          "text": "Nudge a wardrobe? Say sorry.\nIt might be occupied.",
+          "shot": "house"
+        }
+      ],
+      "end": "For people who apologise to furniture."
     }
   },
   {
@@ -290,7 +332,71 @@
       "end": "Dark means everyone's home.",
       "caption": "Watch the pumpkin by the lighthouse.\n\nLantern is a fishing coast of 62,000 people, with two moons, a twenty-hour day and no streetlights. Pumpkins grow on the hills above every harbour, as big as garden sheds, and glow from September until the first frost. The fleet steers home by them, which makes the lighthouse mostly ceremonial. This year's biggest has its own postcode. Mrs Penhale keeps the lighthouse, and every autumn she carves the face Jory drew for her as a boy. I lodged with her that week. If I stayed out late, the whole coast knew.\n\nOn Earth, the last Thursday of October is Punkie Night in Hinton St George, Somerset: the story goes that the village men stayed too long at Chiselborough fair, so their wives carved lanterns out of mangelwurzels and went to fetch them home. On Lantern, the lanterns stay home and wait.\n\nWhat face would you carve?"
     },
-    "first_comment": "Mrs Penhale's pumpkin was lit again this evening. Jory's gone to the pub."
+    "first_comment": "Mrs Penhale's pumpkin was lit again this evening. Jory's gone to the pub.",
+    "short": {
+      "version": "B",
+      "title": "The boats here\nsteer by pumpkin.",
+      "sub": "For anyone who leaves\nthe porch light on.",
+      "framing": "wide",
+      "zoom": [
+        1.35,
+        1.4
+      ],
+      "focus": [
+        0.42,
+        0.6
+      ],
+      "spec": {
+        "palette": "lilac_dusk",
+        "lanterns": 3,
+        "horizon": 0.5,
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "palette": "teal_night",
+          "lanterns": 14,
+          "horizon": 0.5,
+          "cartographer": false
+        },
+        "motion": "cut"
+      },
+      "beats": [
+        {
+          "text": "Never carve a scary face.\nThe boats get nervous.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.2
+            ],
+            "focus": [
+              0.47,
+              0.5
+            ]
+          }
+        },
+        {
+          "text": "When the boats come in,\nthe pumpkins go out.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.35,
+              1.4
+            ],
+            "focus": [
+              0.42,
+              0.6
+            ]
+          },
+          "spec": {
+            "lanterns": 0
+          }
+        }
+      ],
+      "end": "Dark means everyone's home."
+    }
   },
   {
     "id": "H03",
@@ -400,6 +506,58 @@
       "end": "Your moth is on the roof tonight.",
       "caption": "Mothwing has 19,000 people, two moons and a 36-hour day, so the nights run to eighteen hours and the moths are never short of work. They have wingspans like kites and live on light. Every night they lift the moonlight off the fields and carry it back up, and each one keeps the same round of windows all its life. A candle left on the sill after dark counts as a donation. They take the flame, leave the wick, and leave a little glowing dust that lasts until breakfast. Nobody sells nightlights. There'd be no point.\n\nNobody has ever been hurt by one. Several people have been made to feel terrible.\n\nI left a torch out on my first night, to be helpful. I got it back. Switched off.\n\nWhat does your family say they're not made of?"
     },
-    "first_comment": "Gordon would like it known that he is still not made of candles. He has ordered more."
+    "first_comment": "Gordon would like it known that he is still not made of candles. He has ordered more.",
+    "short": {
+      "version": "A",
+      "title": "The moths here\neat moonlight.",
+      "sub": "Everyone leaves them a candle.\nExcept Gordon.",
+      "framing": "gag",
+      "zoom": [
+        1.15,
+        1.2
+      ],
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "spec": {
+        "big_moon": true,
+        "stage": 0.68,
+        "cartographer": false
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "big_moon": false,
+          "stage": 0.68,
+          "cartographer": false
+        },
+        "motion": "cut"
+      },
+      "beats": [
+        {
+          "text": "So his moth sat on the roof\nall night, looking in.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              2.0,
+              2.1
+            ]
+          }
+        },
+        {
+          "text": "It wasn't cross.\nJust disappointed.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              2.4,
+              2.5
+            ]
+          }
+        }
+      ],
+      "end": "Now Gordon leaves out thirteen.",
+      "title_y": 0.09
+    }
   }
 ]
