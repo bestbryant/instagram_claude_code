@@ -248,7 +248,7 @@ SHORTS = {
         title="Every snowflake on {name} is the same shape.", before=dict(particles="none", gag=""), motion="cut",
         framing="gag",
         beats=[("wide", dict(crowd=1, crowd_items="nothing", crowd_x=0.3)),
-               ("medium", dict(crowd=1, crowd_items="book", crowd_x=0.5))],
+               ({"framing": "wide", "zoom": [1.12, 1.18], "focus": [0.5, 0.6]}, dict(crowd=1, crowd_items="book", crowd_x=0.5))],
         end="Six hundred years so far.", name_y=0.12),
 }
 
