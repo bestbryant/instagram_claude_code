@@ -25,6 +25,13 @@ New Reels post as an entry's `short` (atlas/reel.py short_shots), 12-18 s. The l
 - **S6. Amusement and awe first.** Wistful premises wait until a format is working.
 - **S7. Preview before rendering:** scratchpad/short_preview.py (frame 0, just after the onset, each beat, the end card; prints the voiced timing and the turn time).
 
+## Request shorts (atlas/lore.py SHORTS, from 20 October 2026)
+R1. **The onset is the premise.** What appears or changes at 0.4 s is the thing the title says (the one cloud, the moons, the glowing sea), never a palette shift standing in for it. If no prop can show it, draw one.
+R2. **Every beat is a new shot.** A beat never repeats the hook's framing on the same scene; change the camera, the scene, or both.
+R3. **People do what the line says.** Sitting, walking, napping, voting, listening: use the pose, not a row of standing silhouettes.
+R4. **Nothing under the text or the caption.** Key parts sit between 0.38 and 0.72 H in the shot that shows them; end cards move the name (name_y) off the subject. Random islands and small moons are cleared for requests; pin anything else random that lands in the way.
+R5. **Templates hold for any name.** Check a long name and a long handle; the end-card name shrinks to fit.
+
 ## Registry: the episodes as shipped (21 from the room, then batch 2 and batch 3), in posting order (P-standup-1.2, with P-animated-short-1.3's ending-shape column)
 
 | # | Slot (UTC) | Planet | Names / ages | Days, clocks and numbers | Phrases it owns, templates | Props | Turn device | Turn palette | Ending shape | End-card form | Pointer | Question | Sent to |
