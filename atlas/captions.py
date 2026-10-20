@@ -22,7 +22,22 @@ def carousel(entry: dict, by: str | None = None) -> str:
     return "\n\n".join(parts)
 
 
+SHORT_TAGS = "#worldbuilding #imaginaryworlds #scifiart #conceptart"   # specific and on-topic; Instagram caps tags at 5
+
+
 def reel(entry: dict, by: str | None = None) -> str:
+    if entry.get("short"):
+        # a plain, searchable first line; the episode's setting for anyone who reads on; the comment invite only on
+        # name planets, where it's natural (repeating one ask on every post reads as engagement bait)
+        ep = entry.get("episode") or {}
+        parts = [f"Invented planet No. {entry['id']}: {entry['name']}. {entry['hook']}",
+                 (ep.get("caption") or entry.get("extra") or entry["story"]).strip()]
+        if by:
+            parts.append(f"Found for {by}.")
+        if entry.get("kicker") and not by:
+            parts.append(invite_line(entry, "reel"))
+        parts.append(SHORT_TAGS)
+        return "\n\n".join(parts)
     head = f"{entry['hook']} (Imaginary planet No. {entry['id']}: {entry['name']})"
     ep = entry.get("episode") or {}
     if ep.get("caption"):
