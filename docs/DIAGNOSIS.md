@@ -2,6 +2,13 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-20 daily review (12:15 UTC)
+- **Numbers (strangers only, `python -m atlas score`):** Maren, 34 s, 15 h: reach 68 and still rising about 4-5 an hour; skip 61%; watch 6.4 s (19% of the Reel); 0 shares or saves. Its first test audiences skipped 29-43%, and the wider pools from hour 6 on about 60% (the usual cold-start shape). Luna is stuck at reach 3 at 24 h. Veyra 62% skip, 1.5 s; Ovo 73%, 4.3 s. Followers: 1.
+- **Against the targets:** skip under 50% missed (61%); 40% watched missed (19%); 1 send or save per 100 missed (0); follower growth none. The one positive: Maren is getting steady stranger distribution, so a full account hold is ruled out (Luna was probably a weak first test).
+- **What it means:** strangers give the long cut about 6 s and leave before its payoff (25 s+). This is the evidence behind the switch to the short, hook-first format, whose first Reel (Max, version B) posts tonight at 18:00 UTC.
+- **Change today:** measurement. The test is judged on each Reel at 48 h, but posts older than 12 h were only snapshotted every 6 h, so a 48 h read could be 3 h off. The hourly run now pulls every post up to 50 h old (`stats --recent 50`): one more API call per live post, well inside the budget.
+- **Next read:** Max at 48 h (22 Oct, 18:00 UTC); the first three versions (Max B, Thessaly C, Pebb A) by 24 Oct.
+
 ## 2026-10-20: research back; the format and the cadence change
 - **Symptom (corrected):** Veyra and Ovo were 16 s Reels, not 20-37 s. Ovo reach 100, 73% skip, 3.9 s average watch (about 24% of its length). Veyra's 11.3 s watch includes our own early plays (it read 75 s at reach 2), so strangers watched about 2-7 s. Luna (34 s): reach 2, frozen from 8.9 h to 10.7 h, posted about 4 h before the API block.
 - **Findings (docs/RESEARCH.md, docs/PLAN.md):** the first 2-3 s decide distribution (Meta's Reels card predicts "watch less than 3 s"); sends per reach drive non-follower reach; speech in the first 3 s is the strongest measured retention lever; motion onset, not ongoing motion, grabs attention; nothing supports 3+ posts a day; Meta's spam policy names high-frequency, repetitive posting.
