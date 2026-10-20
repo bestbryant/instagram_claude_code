@@ -160,5 +160,69 @@
     "caption": "Watch the pumpkin by the lighthouse.\n\nLantern is a fishing coast of 62,000 people, with two moons, a twenty-hour day and no streetlights. Pumpkins grow on the hills above every harbour, as big as garden sheds, and glow from September until the first frost. The fleet steers home by them, which makes the lighthouse mostly ceremonial. This year's biggest has its own postcode. Mrs Penhale keeps the lighthouse, and every autumn she carves the face Jory drew for her as a boy. I lodged with her that week. If I stayed out late, the whole coast knew.\n\nOn Earth, the last Thursday of October is Punkie Night in Hinton St George, Somerset: the story goes that the village men stayed too long at Chiselborough fair, so their wives carved lanterns out of mangelwurzels and went to fetch them home. On Lantern, the lanterns stay home and wait.\n\nWhat face would you carve?"
   },
   "first_comment": "Mrs Penhale's pumpkin was lit again this evening. Jory's gone to the pub.",
-  "_engine": 4
+  "short": {
+    "version": "B",
+    "title": "The boats here\nsteer by pumpkin.",
+    "sub": "For anyone who leaves\nthe porch light on.",
+    "framing": "wide",
+    "zoom": [
+      1.35,
+      1.4
+    ],
+    "focus": [
+      0.42,
+      0.6
+    ],
+    "spec": {
+      "palette": "lilac_dusk",
+      "lanterns": 3,
+      "horizon": 0.5,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "palette": "teal_night",
+        "lanterns": 14,
+        "horizon": 0.5,
+        "cartographer": false
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "Never carve a scary face.\nThe boats get nervous.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.2
+          ],
+          "focus": [
+            0.47,
+            0.5
+          ]
+        }
+      },
+      {
+        "text": "When the boats come in,\nthe pumpkins go out.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.35,
+            1.4
+          ],
+          "focus": [
+            0.42,
+            0.6
+          ]
+        },
+        "spec": {
+          "lanterns": 0
+        }
+      }
+    ],
+    "end": "Dark means everyone's home."
+  },
+  "_engine": 5
 }
