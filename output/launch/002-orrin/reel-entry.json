@@ -155,5 +155,81 @@
     "end": "Next time, a bigger pool.",
     "caption": "Most of Orrin's 2.1 million people take their houses down plank by plank all season, then leave on the same night. The sign is bolted to the seabed, and its oldest line has been under four tides. This town's line goes on in the small hours. Nobody has decided what it says. Anything left behind goes to the sea, and eleven years later to whoever digs it up, so everyone here drinks out of a stranger's mug. My guide has moved twice. This time she's packing a towel and a snorkel.\n\nOrrin keeps almost the same face to its giant and slips round underneath it once every 22 years. A tide has two bulges, so the sea comes round every 11. The giant climbs about a finger's width a month, and when it's overhead, so is the sea.\n\nThe sea is due back at 6:12 on 14 March. I'll pack the night before.\n\nPack-early person or night-before person?"
   },
-  "_engine": 4
+  "short": {
+    "version": "B",
+    "title": "This town is at\nthe bottom of the sea.",
+    "sub": "For night-before packers.",
+    "title_y": 0.12,
+    "framing": "medium",
+    "zoom": [
+      1.45,
+      1.5
+    ],
+    "focus": [
+      0.5,
+      0.6
+    ],
+    "spec": {
+      "giant": false,
+      "palette": "lilac_dusk",
+      "suns": 0,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "giant": true,
+        "giant_x": 0.72,
+        "giant_y": 0.37,
+        "giant_size": 0.2,
+        "palette": "lilac_dusk",
+        "suns": 0,
+        "cartographer": false
+      },
+      "motion": "rise"
+    },
+    "beats": [
+      {
+        "text": "The sea left eleven years ago.\nIt's back at dawn.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.75,
+            1.85
+          ],
+          "focus": [
+            0.36,
+            0.61
+          ]
+        },
+        "spec": {
+          "palette": "teal_night",
+          "sign": ""
+        }
+      },
+      {
+        "text": "The tide does not do extensions.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "mint_dawn",
+          "water": true,
+          "gag": "",
+          "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!|WE DIDN'T.| "
+        }
+      }
+    ],
+    "end": "Next time, they'll pack early.",
+    "name_y": 0.2
+  },
+  "_engine": 5
 }
