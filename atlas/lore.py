@@ -110,7 +110,7 @@ CONCEPTS = [
     dict(subtitle="the one snowflake",
          story="Every snowflake on {name} is exactly the same shape. The people who live there find this restful. Their poets have been writing about the one shape for six hundred years and say they're nowhere near done.",
          hook="Every snowflake on {name} is the same shape.", reel=["People there find it restful.", "The poets aren't done with it yet."],
-         spec=dict(snow=True, particles="snow", palette=["violet_ice", "polar_night"])),
+         spec=dict(snow=True, particles="snow", gag="same_flakes", palette=["violet_ice", "polar_night"])),
 ]
 
 
@@ -178,8 +178,9 @@ SHORTS = {
                                                     ("wide", None)],
                              end="Nobody knew the way to the station."),
     "the honest flowers": dict(title="Flowers on {name} only open for the truth.", before=dict(daisies=0), framing="wide",
+                               zoom=(1.3, 1.36), focus=(0.5, 0.6),
                                beats=[("medium", dict(daisies=90)),
-                                      ("crowd", dict(crowd=2, crowd_items="nothing", crowd_facing="in"))],
+                                      ("crowd", dict(crowd=2, crowd_items="nothing", crowd_facing="in", crowd_x=0.5))],
                                end="Compliments are taken seriously."),
     "the lit moon": dict(title="A light comes on inside the moon of {name}.", before=dict(moon_window=False), framing="moon",
                          beats=[("wide", dict(crowd=2, crowd_items="nothing")), ("moon", None)], end="Somebody's home."),
@@ -189,7 +190,7 @@ SHORTS = {
     "the voted weather": dict(title="On {name}, the weather is decided by vote.", before=dict(particles="none", crowd_items="nothing"),
                               motion="cut", framing="crowd", beats=[("crowd", None), ("house", None)],
                               end="Sunshine has a small, loyal following."),
-    "the one snowflake": dict(title="Every snowflake on {name} is the same shape.", before=dict(particles="none"), framing="medium",
+    "the one snowflake": dict(title="Every snowflake on {name} is the same shape.", before=dict(particles="none", gag=""), framing="gag",
                               beats=[("wide", dict(crowd=1, crowd_items="nothing")), ("medium", None)],
                               end="Six hundred years so far."),
 }
@@ -233,9 +234,10 @@ def short_cut(concept: dict, spec: Spec, display: str, by: str | None = None) ->
     beats = []
     for line, (shot, change) in zip(concept["reel"], t["beats"]):
         beats.append({"text": line, "shot": shot, **({"spec": dict(change)} if change else {})})
+    camera = {k: list(t[k]) for k in ("zoom", "focus") if k in t}
     return {"version": REQUEST_VERSION, "title": t["title"].format(name=display),
             "sub": f"{by} asked for this one." if by else "Every name has a planet.",
-            "framing": t["framing"], "spec": dict(t["before"]), "onset": onset, "beats": beats, "end": t["end"]}
+            "framing": t["framing"], **camera, "spec": dict(t["before"]), "onset": onset, "beats": beats, "end": t["end"]}
 
 
 def chart(name: str, number: str | None = None, by: str | None = None) -> tuple[dict, Spec, int]:

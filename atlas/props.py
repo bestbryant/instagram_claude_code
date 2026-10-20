@@ -888,8 +888,38 @@ def _two_moons(ctx, aligned):
     ctx.focus = (0.5, y / H)
 
 
+def snowflake(x, y, r, width):
+    """Six arms, each with two pairs of side branches: always the same shape."""
+    shapes = []
+    for k in range(6):
+        a = math.pi / 2 + k * math.pi / 3
+        ca, sa = math.cos(a), math.sin(a)
+        shapes.append(("line", ([(x, y), (x + r * ca, y - r * sa)], width)))
+        for f, b in ((0.45, 0.32), (0.72, 0.22)):
+            bx, by = x + r * f * ca, y - r * f * sa
+            for side in (-1, 1):
+                ab = a + side * math.pi / 4
+                shapes.append(("line", ([(bx, by), (bx + r * b * math.cos(ab), by - r * b * math.sin(ab))], width * 0.8)))
+    return shapes
+
+
+def _gag_same_flakes(ctx):
+    """Every snowflake the same shape: a few big ones drifting down, all identical."""
+    W, H = ctx.W, ctx.H
+    layer = ctx.far_layer
+    rng = ctx.rng("flakes")
+    col = mix(LIGHT, ctx.pal.sky[1], 0.1)
+    big = (W * 0.5, H * 0.42, W * 0.12)
+    flakes = [big] + [(rng.uniform(0.08, 0.92) * W, rng.uniform(0.3, 0.6) * H, W * rng.uniform(0.025, 0.06)) for _ in range(9)]
+    for x, y, r in flakes:
+        if (x, y, r) != big and abs(x - big[0]) < big[2] * 1.6 and abs(y - big[1]) < big[2] * 1.6:
+            continue
+        stamp(layer.P, layer.A, snowflake(x, y, r, max(2.0, r * 0.07)), col, 0.95)
+    ctx.focus = (big[0] / W, big[1] / H)
+
+
 GAGS = {
-    "big_cloud": _gag_big_cloud,
+    "big_cloud": _gag_big_cloud, "same_flakes": _gag_same_flakes,
     "two_moons": lambda ctx: _two_moons(ctx, False), "two_moons_aligned": lambda ctx: _two_moons(ctx, True),
     "chair_sleepers": _gag_chair_sleepers, "seabed_town": _gag_seabed_town, "slow_shout": _gag_slow_shout,
     "pole_post": _gag_pole_post, "kettles": _gag_kettles, "moon_letters": _gag_moon_letters,
