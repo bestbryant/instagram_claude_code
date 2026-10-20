@@ -33,7 +33,7 @@ LAUNCH = ROOT / "content" / "launch.json"
 SCHEDULE = ROOT / "content" / "schedule.json"
 LOG = ROOT / "content" / "published.json"
 STATS = ROOT / "content" / "stats.json"
-ENGINE = 4   # bump when a change to the Reel renderer should re-render every unposted Reel
+ENGINE = 5   # bump when a change to the Reel renderer should re-render every unposted Reel
 GITHUB_REPO = os.environ.get("ATLAS_GITHUB_REPO", "bestbryant/instagram_claude_code")   # public repo that serves the videos
 
 
