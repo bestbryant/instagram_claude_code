@@ -227,6 +227,7 @@ SHORTS = {
         end="Nobody knew the way to the station."),
     "the honest flowers": dict(
         title="Flowers on {name} only open for the truth.", before=dict(daisies=0), framing="group", scrim=0.55,
+        zoom=(1.3, 1.36), focus=(0.5, 0.7),
         beats=[("sign", dict(daisies=90, sign="Courthouse|Gardens")), ("close", dict(daisies=70))],
         end="Compliments are taken seriously."),
     "the lit moon": dict(
