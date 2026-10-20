@@ -5,6 +5,7 @@ Newest first. Each entry gives the symptom (numbers), the hypotheses, the eviden
 ## 2026-10-20 21:10 UTC: watch, Max has no showings after 3 h
 - **What:** Max (013, short-B, posted 18:09 UTC) has reach 0 and views 0 at 1, 2 and 3 h. The media is fine (REELS, shared to feed, thumbnail present). Maren had 3 at 1.9 h and 12 at 3.2 h.
 - **Pattern so far (n=5 Reels):** the two Reels posted in the European/US daytime both stalled: Luna (12:24 UTC) has been stuck at 2-3, and Max (18:09 UTC) is at 0. The three posted 21:00-03:00 UTC (Veyra 00:07, Ovo 03:00, Maren 21:15) all reached 37-100 strangers. By chance alone that split has odds of about 1 in 10, so it's a hypothesis, not a finding. Other candidates: an account-level limit (Account Status is still unchecked; it's the owner's top item) or slow first showings that catch up.
+- **22:08 UTC (4 h):** reach and views still 0, but average watch time now reads 27 s, so someone has watched it and reach is lagging behind watch time in the API. That points to slow reporting more than no showings. Keep watching.
 - **Next:** read Max at 6 h and 12 h. If it is still under 10 at 12 h, treat the slot as the likely cause and test a 23:00 UTC slot for the next three shorts (Thessaly, Pebb, Cinderwake), then compare first-12 h reach. Ask the owner once, in the morning, to check Account Status.
 
 ## 2026-10-20 daily review (12:15 UTC)
