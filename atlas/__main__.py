@@ -129,6 +129,9 @@ def cmd_planet(a):
     if a.by:
         entry["discovered_by"] = a.by
     folder = make(entry, spec, seed, OUT / "requests" / f"{entry['id']}-{slug(entry['name'])}", reel=not a.no_reel, by=a.by, requested_by=a.by)
+    charted = json.loads(CHARTED.read_text()) if CHARTED.exists() else []
+    if any(e["id"] == entry["id"] for e in charted):     # a re-render of a queued request: keep its entry in step
+        CHARTED.write_text(json.dumps([entry if e["id"] == entry["id"] else e for e in charted], indent=2, ensure_ascii=False) + "\n")
     print(f"{entry['name']}: {entry['subtitle']} -> {folder.relative_to(ROOT)}")
 
 
