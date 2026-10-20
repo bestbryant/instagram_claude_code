@@ -1,0 +1,268 @@
+{
+  "id": "037",
+  "name": "Grace",
+  "subtitle": "every Grace's planet",
+  "story": "On Grace, the band never stops first: it plays until everyone sits down. Weddings run for weeks, and drummers retire mid-song. At Rosie's wedding, the dancing started at eight. By midnight, four were left. By breakfast, two: Rosie and her dad. The groom went to bed at ten. Her dad isn't ready to sit down yet. Nor is she.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "none",
+    "Gravity": "0.8 g",
+    "Population": "1.3 million"
+  },
+  "hook": "A planet for people who aren't ready for the last dance.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#grace"
+  ],
+  "spec": {
+    "palette": "rust_desert",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.75,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": true,
+    "ring": true,
+    "giant_size": 0.17,
+    "giant_x": 0.8,
+    "giant_y": 0.47,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,flower",
+    "crowd_x": 0.36,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "The band never stops first.",
+  "kicker": "Every Grace gets this planet.",
+  "text_y": {
+    "name": 0.15
+  },
+  "episode": {
+    "opener": "On Grace, the band\nnever stops first.",
+    "beats": [
+      {
+        "text": "Until everyone sits down.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.08,
+            1.14
+          ]
+        },
+        "spec": {
+          "crowd": 6,
+          "crowd_items": "nothing",
+          "crowd_x": 0.36,
+          "crowd_facing": ""
+        }
+      },
+      {
+        "text": "Weddings run for weeks.",
+        "shot": "house",
+        "text_y": 0.3
+      },
+      {
+        "text": "Bands work in shifts.\nDrummers retire mid-song.",
+        "shot": "crowd",
+        "spec": {
+          "crowd": 6,
+          "crowd_items": "nothing",
+          "crowd_x": 0.36,
+          "crowd_facing": ""
+        }
+      },
+      {
+        "text": "At Rosie's wedding,\nthe dancing started at eight.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.44
+          ],
+          "focus": [
+            0.42,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "crowd": 6,
+          "crowd_items": "nothing",
+          "crowd_x": 0.36,
+          "crowd_facing": ""
+        },
+        "note": "countdown starts: six dancers at dusk"
+      },
+      {
+        "text": "By midnight,\nfour were left.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.44,
+            1.48
+          ],
+          "focus": [
+            0.42,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "crowd": 4,
+          "crowd_items": "nothing",
+          "crowd_x": 0.36,
+          "crowd_facing": ""
+        }
+      },
+      {
+        "text": "By breakfast, two.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.48,
+            1.52
+          ],
+          "focus": [
+            0.42,
+            0.6
+          ]
+        },
+        "note": "turn line: identical camera, down to two; the bride has the bouquet"
+      },
+      {
+        "text": "Rosie, and her dad.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.95,
+            2.0
+          ]
+        }
+      },
+      {
+        "text": "The groom went to bed at ten.",
+        "shot": "house",
+        "text_y": 0.3,
+        "note": "text below the giant"
+      },
+      {
+        "text": "Her dad isn't ready\nto sit down yet.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.52,
+            1.55
+          ],
+          "focus": [
+            0.42,
+            0.6
+          ]
+        }
+      }
+    ],
+    "end": "Nor is she.",
+    "caption": "Look who's still dancing at breakfast.\n\nGrace is 1.3 million people in soft, low hills, with gravity light enough that nobody's feet ever get tired. The rule is older than anyone can remember: the band plays until the last dancer sits down. Musicians retire young. Wedding invitations give a start time and a polite estimate.\n\nOn my first night I was the last one on the floor, looking for my shoe. The band played until I found it.\n\n(On Earth, the story goes, the first dance at a wedding comes from the old formal balls, where the guests of honour opened the floor. On Grace, it's the last dance everyone remembers.)\n\nWhich song would keep you on your feet?"
+  },
+  "first_comment": "Rosie's back from honeymoon. Her dad would like to know when the first anniversary party is.",
+  "short": {
+    "version": "A",
+    "title": "Every Grace\ngets this planet.",
+    "sub": "The band plays until\neveryone sits down.",
+    "framing": "medium",
+    "zoom": [
+      1.5,
+      1.56
+    ],
+    "focus": [
+      0.43,
+      0.585
+    ],
+    "spec": {
+      "crowd": 0,
+      "palette": "lilac_dusk"
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "crowd": 6,
+        "crowd_items": "nothing",
+        "crowd_x": 0.36,
+        "crowd_facing": "",
+        "palette": "lilac_dusk"
+      }
+    },
+    "beats": [
+      {
+        "text": "Rosie's wedding. By breakfast,\ntwo were still dancing.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.43,
+            0.585
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nothing,flower",
+          "crowd_x": 0.36,
+          "crowd_facing": "in",
+          "palette": "rust_desert"
+        }
+      },
+      {
+        "text": "Rosie, and her dad.\nNeither will sit down first.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.38,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nothing,flower",
+          "crowd_x": 0.36,
+          "crowd_facing": "in",
+          "palette": "rust_desert"
+        }
+      }
+    ],
+    "end": "The groom's been asleep since ten."
+  }
+}
