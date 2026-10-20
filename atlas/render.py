@@ -550,7 +550,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
         geo["big_moon"] = (mx_, my_, r)
         body(mx_, my_, r, mix(pal.accent, pal.haze, 0.25), craters=True, haze_amt=0.28, tag="bigmoon")
         if spec.moon_window:
-            wx, wy, ww = mx_ - r * 0.16, my_ - r * 0.5, r * 0.05
+            wx, wy, ww = mx_ - r * 0.16, my_ - r * 0.5, r * 0.075
             warm = hexc("#ffc867")
             x0, x1, y0, y1 = int(wx - ww * 2), int(wx + ww * 2), int(wy - ww * 2), int(wy + ww * 2)
             gy, gx = np.mgrid[y0:y1, x0:x1].astype(np.float32)
