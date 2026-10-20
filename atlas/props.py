@@ -39,6 +39,15 @@ POSES = {
                   lk=(.2, .42), lf=(.24, .12), rk=(.23, .4), rf=(.28, .1)),
     "asleep": dict(head=(.3, .6), neck=(.18, .66), hip=(0, .45), le=(.24, .56), lh=(.34, .44), re=(.26, .55), rh=(.36, .42),
                    lk=(.2, .42), lf=(.24, .12), rk=(.23, .4), rf=(.28, .1)),
+    # sitting on the ground, knees up, arms round them
+    "ground": dict(head=(.0, .52), neck=(.0, .44), hip=(-.04, .08), le=(.1, .3), lh=(.2, .24), re=(.12, .29), rh=(.22, .23),
+                   lk=(.2, .28), lf=(.3, 0), rk=(.22, .26), rf=(.32, 0)),
+    # asleep sitting up, head down on the knees
+    "nap": dict(head=(.13, .4), neck=(.05, .42), hip=(-.04, .08), le=(.1, .3), lh=(.2, .24), re=(.12, .29), rh=(.22, .23),
+                lk=(.2, .28), lf=(.3, 0), rk=(.22, .26), rf=(.32, 0)),
+    # a hand cupped behind the ear, listening
+    "listen": dict(head=(0, .915), neck=(0, .83), hip=(0, .5), le=(-.13, .66), lh=(-.15, .5), re=(.17, .8), rh=(.08, .93),
+                   lk=(-.05, .25), lf=(-.07, 0), rk=(.05, .25), rf=(.07, 0)),
 }
 
 
@@ -603,7 +612,8 @@ def _gag_stirrers(ctx):
 
 ITEMS = ["spade", "spoon", "nothing", "book", "fish", "umbrella", "cup"]
 # also by name: flower, kettle, kite, child, child_asleep; and as the whole figure: shadow (only the shadow is left),
-# shadowed (a person and their shadow), aloft (a person in mid-jump), shout and echo (sound going out, coming back)
+# shadowed (a person and their shadow), aloft (a person in mid-jump), shout and echo (sound going out, coming back),
+# sing (warm arcs going out), sit (on the ground), nap, doze, walk and hand (a raised hand: a vote)
 
 
 def _gag_moth_roof(ctx):
@@ -625,7 +635,7 @@ def _gag_moth_roof(ctx):
     ctx.focus = (x / W, (y - s * 0.7) / H)
 
 
-def _held(ctx, layer, kind, hx, hy, h):
+def _held(ctx, layer, kind, hx, hy, h, i=0):
     # held up and printed light, so they read against the dark figures
     if kind == "spade":
         tx, ty = hx + h * .12, hy - h * .62
@@ -654,8 +664,9 @@ def _held(ctx, layer, kind, hx, hy, h):
         _ink(ctx, layer, [("poly", [(hx - h * .06, hy - h * .1), (hx + h * .06, hy - h * .1), (hx + h * .05, hy + h * .04), (hx - h * .05, hy + h * .04)])], LIGHT)
     elif kind == "kite":
         # every kite leans the same way: it's one wind
-        kx, ky, k = hx + h * .8, hy - h * 2.1, h * .3
-        _ink(ctx, layer, [("line", ([(hx, hy), (hx + h * .45, hy - h * 1.05), (kx, ky + k)], h * .012))], LIGHT)
+        lift = 2.1 + 0.9 * ((i * 5) % 3)          # strings of different lengths, so a crowd of kites fills the sky
+        kx, ky, k = hx + h * .38 * lift, hy - h * lift, h * .3
+        _ink(ctx, layer, [("line", ([(hx, hy), (hx + (kx - hx) * .55, hy + (ky + k - hy) * .5), (kx, ky + k)], h * .012))], LIGHT)
         _ink(ctx, layer, [("line", ([(kx, ky + k), (kx - h * .08, ky + k * 1.8), (kx + h * .04, ky + k * 2.5), (kx - h * .05, ky + k * 3.2)], h * .012))], LIGHT)
         _ink(ctx, layer, [("poly", [(kx, ky - k), (kx + k * .7, ky), (kx, ky + k), (kx - k * .7, ky)])], ctx.spot)
 
@@ -711,32 +722,51 @@ def _crowd(ctx):
             if kind == "shadow":
                 continue
             kind = "nothing"
-        if kind in ("shout", "echo"):
-            # a shout goes out across the canyon as arcs; an echo comes back as arcs facing the listener, warmer
+        if kind == "shout":
+            # an unkind shout: jagged red arcs going out
             a = _person(ctx, layer, x, _ground(ctx, x), hi, "cup", face)
             mx, my = a["rh"]
-            col = ctx.dark if sp.snow else LIGHT
             for k in range(3):
-                if kind == "shout":
-                    r, cx_ = W * (0.05 + 0.06 * k), mx
-                else:
-                    r, cx_ = W * (0.05 + 0.06 * k), mx + face * W * 0.3
-                a0, a1 = (-0.55, 0.45) if (face > 0) == (kind == "shout") else (math.pi - 0.45, math.pi + 0.55)
-                stamp(layer.P, layer.A, [arc_line(cx_, my, r, a0, a1, H * 0.005)],
-                      col if kind == "shout" else mix(LIGHT, YELLOW, 0.5), 0.85 - 0.2 * k)
+                r = W * (0.05 + 0.06 * k)
+                ang = np.linspace(-0.5, 0.45, 9)
+                pts = [(mx + face * r * (1 + (0.09 if j % 2 else -0.09)) * math.cos(t), my + r * (1 + (0.09 if j % 2 else -0.09)) * math.sin(t))
+                       for j, t in enumerate(ang)]
+                stamp(layer.P, layer.A, [("line", (pts, H * 0.005))], ctx.spot, 0.9 - 0.2 * k)
+            continue
+        if kind == "sing":
+            # a song going out: smooth warm arcs from cupped hands
+            a = _person(ctx, layer, x, _ground(ctx, x), hi, "cup", face)
+            mx, my = a["rh"]
+            for k in range(3):
+                r = W * (0.05 + 0.06 * k)
+                a0, a1 = (-0.45, 0.45) if face > 0 else (math.pi - 0.45, math.pi + 0.45)
+                stamp(layer.P, layer.A, [arc_line(mx, my, r, a0, a1, H * 0.007)], YELLOW, 0.95 - 0.2 * k)
+            continue
+        if kind == "echo":
+            # the echo coming back: smooth, thicker, warm arcs facing the listener, who has a hand to the ear
+            a = _person(ctx, layer, x, _ground(ctx, x), hi, "listen", face)
+            mx, my = a["head"]
+            for k in range(3):
+                r = W * (0.05 + 0.06 * k)
+                a0, a1 = (math.pi - 0.45, math.pi + 0.45) if face > 0 else (-0.45, 0.45)
+                stamp(layer.P, layer.A, [arc_line(mx + face * W * 0.3, my, r, a0, a1, H * 0.008)], YELLOW, 0.95 - 0.2 * k)
+            continue
+        if kind in ("sit", "doze", "walk", "hand", "nap"):
+            _person(ctx, layer, x, _ground(ctx, x), hi, {"hand": "reach", "sit": "ground"}.get(kind, kind), face)
             continue
         if kind == "aloft":
             gy = _ground(ctx, x)
             _ink(ctx, layer, [("ellipse", (x - hi * .22, gy - hi * .03, x + hi * .22, gy + hi * .03))], LIGHT, 0.35)
-            _person(ctx, layer, x, gy - hi * 4.0, hi, "point", face)     # low gravity: a jump clears the hills
+            _person(ctx, layer, x, gy - hi * 3.0, hi, "point", face)     # low gravity: a jump clears the hills
             continue
         a = _person(ctx, layer, x, _ground(ctx, x), hi, "carry" if carry else "stand", face)
         if carry:
             _child(ctx, layer, a, h, face, asleep=kind == "child_asleep")
         else:
-            _held(ctx, layer, kind, a["rh"][0], a["rh"][1], h)
+            _held(ctx, layer, kind, a["rh"][0], a["rh"][1], h, i)
     ctx.focus = (mid / W, (_ground(ctx, mid) - h * .6) / H)
     ctx.marks["crowd"] = ctx.focus
+    ctx.marks["group"] = (mid / W, _ground(ctx, mid) / H - 0.13)   # framed lower: people above the caption, scenery above them
 
 
 def _daisies(ctx):

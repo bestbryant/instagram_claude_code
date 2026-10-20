@@ -181,6 +181,8 @@ class Spec:
     moon_window: bool = False      # a lit window high on the big moon (somebody is home)
     sea_glow: bool = False         # the sea lit from underneath, blue-green (water planets)
     house_x: float = 0.0           # where the house on the ledge stands (fraction of width; 0: wherever is clear)
+    bright_stars: bool = False     # a few dozen big, sparkling stars on top of the field (stars as the subject)
+    flake_size: float = 1.0        # snow particles: bigger, fewer, brighter flakes (and faster when they rise)
     stage: float = 0.0             # flat foreground ledge at this height for the extras (0: natural ground)
 
 
@@ -587,6 +589,17 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
                 glow_patch[y0:y1, x0:x1] += b_ * f_ * np.exp(-((gx - x_) ** 2 + (gy - y_) ** 2) / 1.2)
             elif 0 <= iy < H and 0 <= ix < sw:
                 groups[g_][iy, ix] += b_ * f_ * 0.8
+        if spec.bright_stars:
+            # hero stars: a soft core and a thin four-point sparkle, big enough to read on a phone
+            for _ in range(46):
+                x_, y_ = rs.uniform(0, sw), rs.uniform(0, min(hy * 0.8, H - 1))
+                b_, g_, rr = rs.uniform(0.55, 1.0), int(rs.integers(0, 3)), int(rs.integers(4, 8))
+                y0, y1, x0, x1 = max(int(y_) - rr * 3, 0), min(int(y_) + rr * 3 + 1, H), max(int(x_) - rr * 3, 0), min(int(x_) + rr * 3 + 1, sw)
+                gy, gx = np.mgrid[y0:y1, x0:x1].astype(np.float32)
+                dx, dy = np.abs(gx - x_), np.abs(gy - y_)
+                core = np.exp(-(dx ** 2 + dy ** 2) / (rr * 0.55) ** 2)
+                spark = np.exp(-dy ** 2 / 0.8) * np.exp(-dx / (rr * 0.9)) + np.exp(-dx ** 2 / 0.8) * np.exp(-dy / (rr * 0.9))
+                groups[g_][y0:y1, x0:x1] += b_ * (core + 0.7 * spark)
         groups = [g * mask for g in groups]
 
     # aurora: two variants cross-faded in motion
@@ -921,10 +934,15 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
             for _ in range(160):
                 glow(E, rp.uniform(0, W), rp.uniform(0, H), rp.uniform(1.0, 2.6), mix(pal.light, hexc("#ff5a2a"), rp.random()), rp.uniform(0.3, 1.0))
             drift = (0.01, -0.05)
-        else:
+        elif spec.flake_size == 1.0:
             for _ in range(450):
                 glow(E, rp.uniform(0, W), rp.uniform(0, H), rp.uniform(0.7, 2.2), hexc("#ffffff"), rp.uniform(0.15, 0.6))
             drift = (0.01, -0.05) if spec.particles == "snow_up" else (0.01, 0.06)
+        else:
+            k = spec.flake_size
+            for _ in range(int(450 / k)):
+                glow(E, rp.uniform(0, W), rp.uniform(0, H), rp.uniform(0.7, 2.2) * k, hexc("#ffffff"), rp.uniform(0.4, 0.85))
+            drift = (0.01, -0.05 * k) if spec.particles == "snow_up" else (0.01, 0.06)
         scene.layers.append(Layer(np.zeros_like(E), np.zeros((H, W), np.float32), 0.0, E, stage=1, drift=drift))
 
     if spec.water:

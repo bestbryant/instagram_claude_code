@@ -103,6 +103,7 @@ def _ease(t):
 
 
 RISE = 0.45   # seconds an onset object takes to rise into place
+SLIDE = 0.8   # seconds an onset object takes to slide in from the side (a forest walking in)
 
 
 class _Prepared:
@@ -146,8 +147,12 @@ class _Prepared:
             img = s.still
         else:
             tt = 1 - u if s.reverse else u
-            if swapped and ts < s.swap[0] + RISE and (s.swap[2] if len(s.swap) > 2 else "auto") != "cut":
-                img, rose = self._rise((ts - s.swap[0]) / RISE, tt, t_global, force=len(s.swap) > 2 and s.swap[2] == "rise")
+            how = s.swap[2] if len(s.swap) > 2 else "auto"
+            if swapped and ts < s.swap[0] + (SLIDE if how == "slide" else RISE) and how != "cut":
+                if how == "slide":
+                    img, rose = self._slide((ts - s.swap[0]) / SLIDE, tt, t_global)
+                else:
+                    img, rose = self._rise((ts - s.swap[0]) / RISE, tt, t_global, force=how == "rise")
             if not rose:
                 scene, thr, inks = self.after if swapped else (self.scene, self.thr, self.inks)
                 img = frame(scene, t=tt, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=thr)
@@ -197,6 +202,25 @@ class _Prepared:
             bs[:off], ms[:off] = b[-off:], m[-off:]
         yy = np.arange(m.shape[0])[:, None]
         ms *= (yy <= base[None, :])                               # hidden below its own baseline, like a pop-up page
+        ms = ms[..., None]
+        return a * (1 - ms) + bs * ms, True
+
+    def _slide(self, p, tt, t_global):
+        """The onset as a sideways arrival: whatever the new scene adds slides in from the right edge and settles
+        with a slight overshoot."""
+        s = self.shot
+        a = frame(self.scene, t=tt, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=self.thr)
+        b = frame(self.after[0], t=tt, pan=s.pan, fps_t=t_global, grain=0, bloom_thr=self.after[1])
+        self._grew = True
+        m = (np.abs(b - a).max(axis=-1) > 0.035).astype(np.float32)
+        c1 = 1.2
+        e = 1 + (c1 + 1) * (p - 1) ** 3 + c1 * (p - 1) ** 2
+        off = int(round((1 - e) * m.shape[1] * 0.45))            # >0: still to the right of its place
+        bs, ms = np.zeros_like(b), np.zeros_like(m)
+        if off >= 0:
+            bs[:, off:], ms[:, off:] = b[:, :b.shape[1] - off], m[:, :m.shape[1] - off]
+        else:
+            bs[:, :off], ms[:, :off] = b[:, -off:], m[:, -off:]
         ms = ms[..., None]
         return a * (1 - ms) + bs * ms, True
 

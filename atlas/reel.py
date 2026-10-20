@@ -77,6 +77,7 @@ FRAMINGS = {
     "close": ((1.9, 2.05), None),
     "gag": ((1.9, 2.05), "gag"),             # the joke itself, even when a sign shares the frame
     "crowd": ((1.7, 1.8), "crowd"),
+    "group": ((1.55, 1.65), "group"),        # the crowd framed lower: people just above the caption, scenery above
     "sky": ((1.3, 1.4), (0.5, 0.3)),
     "left": ((1.5, 1.6), ("x", 0.3)),       # this x, at the height of the scene's gag
     "right": ((1.5, 1.6), ("x", 0.7)),
@@ -199,7 +200,7 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
     swap = (float(onset.get("at", 0.4)), replace(spec, **onset["spec"]), motion) if onset.get("spec") else None
     base = replace(spec, **sh["spec"]) if sh.get("spec") else spec       # the scene before the onset
     zoom, focus = FRAMINGS.get(sh.get("framing", "gag"), FRAMINGS["gag"])
-    zoom = tuple(sh.get("zoom", (zoom[0] * 0.92, zoom[1] * 0.92)))
+    zoom = tuple(sh.get("zoom", (max(1.0, zoom[0] * 0.92), max(1.06, zoom[1] * 0.92))))   # even a wide hook pushes in
     shots = [Shot(t_hook, base, seed, pan=50, zoom=zoom, focus=tuple(sh["focus"]) if "focus" in sh else focus,
                   cards=[(hook_card, 0.0, t_hook, 0.0, 0.0)], tick=False, say=say_hook if speak else "", say_at=0.05,
                   swap=swap)]
