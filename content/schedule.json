@@ -110,8 +110,7 @@
   "entry": "H01",
   "kind": "reel",
   "not_before": "2026-10-30T22:00:00Z",
-  "hold": true,
-  "note": "short cut: held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 14,

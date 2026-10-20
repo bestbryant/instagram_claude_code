@@ -142,14 +142,17 @@
     ],
     "spec": {
       "palette": "rose_fog",
-      "big_moon": false
+      "big_moon": false,
+      "gag": "ghost"
     },
     "onset": {
       "at": 0.4,
       "spec": {
         "palette": "pumpkin",
-        "big_moon": true
-      }
+        "big_moon": true,
+        "gag": "fainted_ghost"
+      },
+      "motion": "cut"
     },
     "beats": [
       {
