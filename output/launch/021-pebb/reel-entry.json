@@ -1,0 +1,231 @@
+{
+  "id": "021",
+  "name": "Pebb",
+  "subtitle": "a very small world",
+  "story": "Pebb is a rock about forty kilometres across, small enough that a good throw goes into orbit and comes home two hours later from the other side. Juno lives there alone, she thinks. Every morning she throws her ball east, has a long breakfast, and catches it coming in from the west. One morning it came home wet. The next, wet and chewed. The next, she threw two.",
+  "facts": {
+    "Day": "40 hours",
+    "Moons": "one (a ball)",
+    "Gravity": "0.0015 g",
+    "Population": "1 (she thinks)"
+  },
+  "hook": "A planet for people who've just moved somewhere quiet.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#tinyplanet"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "hills",
+    "layers": 3,
+    "horizon": 0.66,
+    "relief": 0.45,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.86,
+    "sun_y": 0.1,
+    "sun_size": 0.03,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 1,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 3.0,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.2,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "nothing",
+    "crowd_x": 0.42,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.72
+  },
+  "cover": "Every ball you throw comes home.",
+  "episode": {
+    "opener": "On Pebb, every ball\nyou throw comes home.",
+    "beats": [
+      {
+        "text": "The planet is that small.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.0
+          ]
+        }
+      },
+      {
+        "text": "Juno lives here alone.\nShe thinks.",
+        "shot": "crowd"
+      },
+      {
+        "text": "Her first ball\nwas thrown too hard.\nIt's still up there.",
+        "shot": {
+          "framing": "sky",
+          "focus": [
+            0.62,
+            0.27
+          ],
+          "zoom": [
+            2.0,
+            2.05
+          ]
+        }
+      },
+      {
+        "text": "Each morning she throws it east.\nTwo hours later,\nit comes home from the west.",
+        "shot": "house"
+      },
+      {
+        "text": "One morning,\nit came home wet.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.4,
+            0.6
+          ],
+          "zoom": [
+            1.5,
+            1.55
+          ]
+        }
+      },
+      {
+        "text": "The next,\nwet and chewed.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.4,
+            0.6
+          ],
+          "zoom": [
+            1.55,
+            1.6
+          ]
+        }
+      },
+      {
+        "text": "The next,\nJuno threw two.",
+        "shot": {
+          "framing": "medium",
+          "focus": [
+            0.4,
+            0.6
+          ],
+          "zoom": [
+            1.6,
+            1.65
+          ]
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "sky",
+          "focus": [
+            0.62,
+            0.27
+          ],
+          "zoom": [
+            2.0,
+            2.05
+          ]
+        },
+        "spec": {
+          "moons": 3
+        },
+        "seconds": 3.5
+      }
+    ],
+    "end": "Both came home wet.",
+    "caption": "That's no moon in the first frame.\n\nPebb is a rock about forty kilometres across: one house, one resident, and a horizon you could walk to before lunch. Juno moved here for the quiet. Every morning she throws her ball east, has a long breakfast, and turns round to catch it coming in over the roof. She has never walked round to the far side. It isn't far.\n\nI threw my compass on my first morning, to check. It's still up there, next to her first ball.\n\nOn a rock this size, a throw of about 18 metres a second goes into orbit and comes round again in just under two hours. On Earth, you'd need nearly 8 kilometres a second.\n\nWould you throw two?"
+  },
+  "first_comment": "Next morning: one came home chewed. The other came home with a stick.",
+  "short": {
+    "version": "A",
+    "title": "Throw a ball on Pebb\nand it orbits.",
+    "sub": "Juno lives here alone. She thinks.",
+    "framing": "medium",
+    "zoom": [
+      1.65,
+      1.7
+    ],
+    "focus": [
+      0.52,
+      0.56
+    ],
+    "spec": {
+      "moons": 0,
+      "stage": 0.68
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "moons": 0,
+        "stage": 0.68,
+        "giant": true,
+        "giant_size": 0.05,
+        "giant_x": 0.62,
+        "giant_y": 0.53,
+        "ring": false
+      }
+    },
+    "beats": [
+      {
+        "text": "It comes home two hours later,\nfrom the west.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "One day it came home wet.\nThe next, wet and chewed.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_facing": "left",
+          "palette": "rose_fog"
+        }
+      }
+    ],
+    "end": "Now she throws two.",
+    "name_y": 0.24
+  },
+  "_engine": 4
+}
