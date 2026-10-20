@@ -158,8 +158,8 @@
   },
   "short": {
     "version": "C",
-    "title": "You've just landed\non Bella.",
-    "sub": "Everything here is beautiful.\nBy law.",
+    "title": "Everything here\nis beautiful. By law.",
+    "sub": "You've just landed on Bella.",
     "framing": "sign",
     "spec": {
       "sign": "TAX OFFICE",
@@ -197,7 +197,7 @@
         }
       },
       {
-        "text": "So you rent its sign.",
+        "text": "So you rent its billboard.",
         "shot": "sign",
         "seconds": 3.4,
         "spec": {
