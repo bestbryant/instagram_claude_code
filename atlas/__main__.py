@@ -584,7 +584,7 @@ def reel_format(entry: dict) -> str:
 def cmd_score(a):
     """Stranger-only scoreboard from content/stats_history.jsonl, read at about 48 h (docs/PLAN.md).
 
-    Our own plays come first (the owner, the bot's checks): the first snapshot with reach of 3 or less is
+    Our own plays come first (the owner, the bot's checks): the last snapshot before reach passes 3 is
     taken as that baseline and subtracted. Pass lines: skip 60% or less, strangers watch at least 40% of the
     Reel, at least 1 share or save per 100 strangers reached."""
     import statistics
@@ -599,9 +599,12 @@ def cmd_score(a):
         snaps = sorted((h for h in hist if h.get("entry") == x["entry"] and h.get("kind") == "reel"), key=lambda h: h["age_h"])
         if not snaps:
             continue
-        base = next((h for h in snaps if (h.get("reach") or 0) <= 3), None) or {}
-        if base is snaps[-1]:
-            base = {}                                         # nothing after it to compare: no strangers yet
+        early = []                                            # our own plays: the snapshots before reach passes 3
+        for h in snaps:
+            if (h.get("reach") or 0) > 3:
+                break
+            early.append(h)
+        base = early[-1] if early and early[-1] is not snaps[-1] else {}   # the last of them (nothing after it: no strangers yet)
         at48 = min(snaps, key=lambda h: abs(h["age_h"] - a.hours))
         g = lambda h, k: h.get(k) or 0
         reach = g(at48, "reach") - g(base, "reach")
