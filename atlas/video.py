@@ -147,7 +147,7 @@ class _Prepared:
             img = s.still
         else:
             tt = 1 - u if s.reverse else u
-            how = s.swap[2] if len(s.swap) > 2 else "auto"
+            how = (s.swap[2] if len(s.swap) > 2 else "auto") if s.swap else "cut"
             if swapped and ts < s.swap[0] + (SLIDE if how == "slide" else RISE) and how != "cut":
                 if how == "slide":
                     img, rose = self._slide((ts - s.swap[0]) / SLIDE, tt, t_global)
