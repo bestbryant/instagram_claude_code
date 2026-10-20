@@ -1,0 +1,170 @@
+{
+  "id": "030",
+  "name": "Sedge",
+  "subtitle": "the night of the close moon",
+  "story": "Once in a lifetime, Sedge's moon swings close enough to smell its orchards, and everyone goes up the hill to wave. Almost everyone. Dot drives the night bus. She stops at every stop, and nobody gets on. Up on the moon, nobody was watching the hill. They were watching the only light that moved.",
+  "facts": {
+    "Day": "22 hours",
+    "Moons": "one, usually far away",
+    "Gravity": "0.95 g",
+    "Population": "31,000"
+  },
+  "hook": "A planet for everyone who's working while everyone else is out.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#nightshift"
+  ],
+  "spec": {
+    "palette": "abyss",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.66,
+    "relief": 0.9,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": true,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "BUS STOP|NIGHT ROUTE",
+    "crowd": 5,
+    "crowd_items": "child,nothing,child,nothing,nothing",
+    "crowd_x": 0.3,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.76
+  },
+  "cover": "Everyone went up the hill. Almost.",
+  "text_y": {
+    "name": 0.12
+  },
+  "episode": {
+    "opener": "Everyone on Sedge\nwent up the hill.",
+    "beats": [
+      {
+        "text": "Almost everyone.",
+        "shot": "sign",
+        "spec": {
+          "crowd": 0
+        },
+        "note": "frame-1 find: the empty stop (the hill crowd is out of this shot)"
+      },
+      {
+        "text": "Once in a lifetime,\nthe moon comes close enough\nto smell its orchards.",
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.3,
+            1.38
+          ],
+          "focus": [
+            0.45,
+            0.42
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "sign": ""
+        }
+      },
+      {
+        "text": "Both worlds had practised\ntheir waving for weeks.",
+        "shot": "crowd"
+      },
+      {
+        "text": "Dot was driving the night bus.\nSomeone always is.",
+        "shot": "sign",
+        "spec": {
+          "crowd": 0
+        }
+      },
+      {
+        "text": "She stopped at every stop.\nNobody got on.",
+        "shot": "sign",
+        "spec": {
+          "crowd": 0
+        }
+      },
+      {
+        "text": "Up on the moon,\nnobody was watching the hill.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.0,
+            1.12
+          ]
+        }
+      },
+      {
+        "text": "They watched\nthe only light that moved.",
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.3,
+            1.38
+          ],
+          "focus": [
+            0.45,
+            0.42
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "sign": ""
+        }
+      },
+      {
+        "text": "Her bus.",
+        "shot": "sign",
+        "spec": {
+          "crowd": 0
+        },
+        "note": "turn line, on the stop's camera"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.0,
+            1.12
+          ]
+        },
+        "spec": {
+          "big_moon": false
+        },
+        "seconds": 3.0,
+        "note": "identical camera to frame 1; one thing changed: the moon has gone"
+      }
+    ],
+    "end": "She was the view.",
+    "caption": "Not everyone is up that hill.\n\nSedge and its moon go round each other the long way. Once in a lifetime the moon comes close enough to see its towns: orchards, washing lines, a great many people waving. Sedge practises for weeks. On the night, every light on the planet goes off so the moon can see the hill, and everyone climbs it with a flask and the children.\n\nI waved until my arm went numb. In fairness to the moon, I wasn't moving.\n\n(On Earth, our own moon drifts about 3.8 centimetres further away every year, and nobody waves it off.)\n\nHave you ever worked the night everyone else was out?"
+  },
+  "first_comment": "Dot: Nineteen stops. Nobody. Lovely night for it."
+}

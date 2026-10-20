@@ -35,6 +35,8 @@ class Shot:
     cards: list = field(default_factory=list)  # (rgba card array, t0, t1) in shot seconds
     tick: bool = True                        # click on the cut into this shot
     reverse: bool = False                    # pan backwards (the end card, so its last frame is the hook's first)
+    say: str = ""                            # what the narrator reads over this shot (voiced Reels only)
+    say_at: float = 0.15                     # seconds into the shot she starts
 
 
 def _fade(ts, start, end, ramp):
@@ -132,9 +134,36 @@ def _mix_ticks(wav_path: str, times: list[float]):
         f.writeframes((pcm * 32767).astype("<i2").tobytes())
 
 
+def _mix_voice(wav_path: str, clips: list):
+    """Lay the narrator's lines (t0, mono clip at the wav's rate) over the bed, ducking the bed under them."""
+    with wave.open(wav_path, "rb") as f:
+        sr, n = f.getframerate(), f.getnframes()
+        pcm = np.frombuffer(f.readframes(n), "<i2").reshape(-1, 2).astype(np.float32) / 32767
+    voice = np.zeros(len(pcm), np.float32)
+    duck = np.zeros(len(pcm), np.float32)
+    for t0, clip in clips:
+        i = int(t0 * sr)
+        j = min(i + len(clip), len(pcm))
+        if i < j:
+            voice[i:j] += clip[: j - i]
+            duck[max(0, i - int(0.12 * sr)):min(len(pcm), j + int(0.3 * sr))] = 1.0
+    k = np.hanning(int(0.25 * sr))
+    duck = np.convolve(duck, k / k.sum(), mode="same")
+    pcm = pcm * (1 - 0.6 * duck)[:, None] + voice[:, None] * 0.78
+    peak = np.abs(pcm).max()
+    if peak > 0.97:
+        pcm *= 0.97 / peak
+    with wave.open(wav_path, "wb") as f:
+        f.setnchannels(2)
+        f.setsampwidth(2)
+        f.setframerate(sr)
+        f.writeframes((pcm * 32767).astype("<i2").tobytes())
+
+
 def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, overlays=(), cover_at: float | None = None,
-                 cover_path: Path | None = None) -> Path:
-    """Render shots back to back. overlays: (card, t0, t1) on the whole timeline."""
+                 cover_path: Path | None = None, speak: bool = False) -> Path:
+    """Render shots back to back. overlays: (card, t0, t1) on the whole timeline.
+    speak: the narrator reads each shot's `say` line over the bed."""
     out = Path(out)
     tmp_out = out.with_name(out.stem + ".partial.mp4")   # renamed into place only when complete
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -146,6 +175,9 @@ def render_shots(shots: list[Shot], out: Path, seed: int = 0, fps: int = 30, ove
     with tempfile.TemporaryDirectory() as tmp:
         wav = audio.ambient(max(seconds, 3.0), seed, str(Path(tmp) / "a.wav"), loop=True)
         _mix_ticks(wav, [float(starts[i]) for i, s in enumerate(shots) if s.tick and i > 0])
+        if speak:
+            from . import voice as vo
+            _mix_voice(wav, [(float(starts[i]) + s.say_at, vo.line(s.say)) for i, s in enumerate(shots) if s.say])
         cmd = ["ffmpeg", "-y", "-loglevel", "error",
                "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-", "-i", wav,
                "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-maxrate", "3800k", "-bufsize", "7600k",   # stays under jsDelivr's 20 MB per file at 40 s

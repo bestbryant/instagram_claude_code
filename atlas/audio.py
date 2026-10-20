@@ -36,7 +36,7 @@ def ambient(seconds: float, seed: int, path: str, loop: bool = False) -> str:
     loops never dips in level at the seam."""
     rng = np.random.default_rng(seed & 0xFFFFFFFF)
     over = 1.5 if loop else 0.0
-    n = int((seconds + over) * SR)
+    n = int(round(seconds * SR)) + int(round(over * SR))   # head and tail of the loop crossfade are the same length
     t = np.arange(n) / SR
     root = 98.0 * 2 ** (int(rng.integers(0, 9)) / 12)
     chord = CHORDS[int(rng.integers(0, len(CHORDS)))]
@@ -69,7 +69,7 @@ def ambient(seconds: float, seed: int, path: str, loop: bool = False) -> str:
 
     sig = sig * 0.55 + _reverb(sig, rng) * 0.9
     if loop:
-        m, n0 = int(over * SR), int(seconds * SR)
+        m, n0 = int(round(over * SR)), int(round(seconds * SR))
         a = np.linspace(0, np.pi / 2, m)[:, None]
         head = sig[:m] * np.sin(a) + sig[n0:n0 + m] * np.cos(a)   # equal-power: the end flows into the start
         sig = np.concatenate([head, sig[m:n0]])

@@ -1,0 +1,174 @@
+{
+  "id": "023",
+  "name": "Sooner",
+  "subtitle": "where 'sometime' is a date",
+  "story": "On Sooner, 'sometime' is an actual date. It comes round every forty years, and every 'we should get coffee sometime' anyone has ever said falls due that morning. So does every 'let's do this again' said after a bad first date; those tables finish early. For the first hour, nobody knows what to say. Then nobody else leaves early, and nobody says 'sometime' on the way out, because that gets you another forty years. They say 'Saturday'.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "none",
+    "Gravity": "0.95 g",
+    "Population": "3 million"
+  },
+  "hook": "A planet for people who keep saying 'we should catch up'.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#friendship"
+  ],
+  "spec": {
+    "palette": "pastel",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.62,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.84,
+    "sun_y": 0.11,
+    "sun_size": 0.04,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": true,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "TODAY:|SOMETIME",
+    "crowd": 7,
+    "crowd_items": "cup",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "'Sometime' is an actual date.",
+  "episode": {
+    "opener": "On Sooner, 'sometime'\nis an actual date.",
+    "beats": [
+      {
+        "text": "Every forty years.",
+        "shot": "sign"
+      },
+      {
+        "text": "Every 'coffee sometime?'\nfalls due at once.",
+        "shot": "crowd"
+      },
+      {
+        "text": "Bad first dates count too.\nThose tables finish early.",
+        "shot": {
+          "framing": "close",
+          "focus": [
+            0.1,
+            0.68
+          ],
+          "zoom": [
+            2.0,
+            2.1
+          ]
+        }
+      },
+      {
+        "text": "Old schoolfriends. Cousins.\nEsme, and a man she met\nonce, on a train.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.9,
+            2.0
+          ]
+        }
+      },
+      {
+        "text": "For the first hour,\nnobody knows what to say.",
+        "shot": {
+          "framing": "wide",
+          "focus": [
+            0.45,
+            0.62
+          ],
+          "zoom": [
+            1.2,
+            1.25
+          ]
+        }
+      },
+      {
+        "text": "Nobody else leaves early.",
+        "shot": {
+          "framing": "wide",
+          "focus": [
+            0.45,
+            0.62
+          ],
+          "zoom": [
+            1.2,
+            1.25
+          ]
+        },
+        "spec": {
+          "palette": "pumpkin",
+          "suns": 0
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "focus": [
+            0.45,
+            0.62
+          ],
+          "zoom": [
+            1.2,
+            1.25
+          ]
+        },
+        "spec": {
+          "palette": "pumpkin",
+          "suns": 0
+        },
+        "seconds": 3.5
+      },
+      {
+        "text": "'Sometime' gets you\nanother forty years.",
+        "shot": {
+          "framing": "wide",
+          "focus": [
+            0.45,
+            0.62
+          ],
+          "zoom": [
+            1.2,
+            1.25
+          ]
+        },
+        "spec": {
+          "palette": "pumpkin",
+          "suns": 0
+        }
+      }
+    ],
+    "end": "So they say 'Saturday'.",
+    "caption": "Check the date on the café board.\n\nSooner has 3 million people, a 25-hour day and a café on every hill. Its calendar has one extra date, Sometime, which comes round every forty years. Every 'we should get coffee sometime' ever said falls due that morning, and the cafés bake for a year to be ready. Tables booked on the strength of a bad first date are free again by eleven, and nobody mentions it.\n\nI once ended a letter to an old flatmate with 'see you sometime'. She was at a table when I landed. She'd ordered for me.\n\nJapan's tea ceremony has a saying, ichigo ichie: treat each meeting as if it will never come again. On Sooner, it does, every forty years.\n\nHow many 'sometimes' do you owe?"
+  },
+  "first_comment": "Café owner: 40,112 coffees. 3 proposals. 1 man who came to the wrong sometime.",
+  "_engine": 4
+}

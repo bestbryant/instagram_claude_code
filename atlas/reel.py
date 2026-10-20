@@ -28,10 +28,24 @@ def render_reel(spec: Spec, seed: int, entry: dict, out: Path, cover_path: Path 
     the Reel opens on."""
     from .video import render_shots, still
 
-    render_shots(reel_shots(spec, seed, entry, requested_by), out, seed=seed)
+    speak = voiced(entry)
+    render_shots(reel_shots(spec, seed, entry, requested_by, speak=speak), out, seed=seed, speak=speak)
     if cover_path is not None:
         to_image(still(cover_shot(spec, seed, entry))).save(cover_path, quality=92)
     return Path(out)
+
+
+VOICE_DEFAULT = False   # story Reels read aloud by the cartographer; an entry or episode can set "voice" either way
+
+
+def voiced(entry: dict) -> bool:
+    if not entry.get("episode"):
+        return False
+    want = entry["episode"].get("voice", entry.get("voice", VOICE_DEFAULT))
+    if want:
+        from . import voice
+        return voice.available()
+    return False
 
 
 def cover_shot(spec: Spec, seed: int, entry: dict):
@@ -95,10 +109,16 @@ def next_stop(entry: dict) -> str:
     return ""
 
 
-def story_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = None) -> list:
+def story_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = None, speak: bool = False) -> list:
     """A story episode: the opener on a wide shot, then one shot per beat, then the end card,
-    which pans back to the opening frame so the Reel loops cleanly."""
+    which pans back to the opening frame so the Reel loops cleanly. With speak, the cartographer
+    reads every line, and each shot lasts at least as long as she takes plus a breath."""
     from .video import Shot, overlay
+    if speak:
+        from . import voice
+        spoken = lambda line, at, breath: at + voice.seconds(line) + breath if line.strip() else 0.0
+    else:
+        spoken = lambda line, at, breath: 0.0
     ep = entry["episode"]
     series = f"No. {entry['id']} · {text.BRAND}"
     left = dict(align="left", x=96, width=W_SAFE)
@@ -107,15 +127,20 @@ def story_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = N
     opener = overlay([dict(text=kicker or series, y=0.2, kind="italic", size=42 if kicker else 36, **left),
                       dict(text=first, y=0.235, kind="serif", weight="Medium", size=84, leading=1.12, **left)])
     read = lambda line, extra=0.9: round(max(2.4, 0.3 * len(line.split()) + extra), 1)
-    t_hook = read(f"{kicker or ''} {first}".strip())
+    say_hook = f"{kicker or ''}\n{first}".strip()
+    t_hook = round(max(read(f"{kicker or ''} {first}".strip()), spoken(say_hook, 0.05, 0.45)), 2)
     cam = entry.get("camera", {}).get("hook", {})
     shots = [Shot(t_hook, spec, seed, pan=50, zoom=tuple(cam.get("zoom", (1.0, 1.12))),
-                  focus=tuple(cam["focus"]) if "focus" in cam else None, cards=[(opener, 0.0, t_hook, 0.0, 0.0)])]
+                  focus=tuple(cam["focus"]) if "focus" in cam else None, cards=[(opener, 0.0, t_hook, 0.0, 0.0)],
+                  say=say_hook if speak else "", say_at=0.05)]
     for i, beat in enumerate(ep["beats"]):
         last = i == len(ep["beats"]) - 1
         secs = beat.get("seconds") or read(beat["text"], 1.3 if last else 0.9)
+        secs = round(max(secs, spoken(beat["text"], 0.15, 0.75 if last else 0.4)), 2)
         card = overlay([dict(text=beat["text"], y=beat.get("text_y", 0.2), kind="italic", size=64, leading=1.16, **left)])
-        shots.append(_beat_shot(spec, seed, beat, card, secs))
+        shot = _beat_shot(spec, seed, beat, card, secs)
+        shot.say = beat["text"] if speak else ""
+        shots.append(shot)
     end = ep.get("end") or ("Found for " + requested_by if requested_by else "Your name has a planet too.")
     if "{next}" in end:
         nxt = next_stop(entry)
@@ -125,18 +150,19 @@ def story_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = N
                     dict(text=entry["name"], y=ty + 0.035, kind="serif", weight="Medium", size=170),
                     dict(text=end, y=ty + 0.145, kind="italic", size=46)])
     ncam = entry.get("camera", {}).get("name", {})
-    t_end = max(2.6, read(end, 1.4))     # the end line is the one people screenshot: long enough to read twice
+    say_end = f"{entry['name']}.\n{end}"
+    t_end = round(max(2.6, read(end, 1.4), spoken(say_end, 0.2, 0.9)), 2)   # the end line is the one people screenshot: long enough to read twice
     shots.append(Shot(t_end, spec, seed, pan=50, zoom=tuple(ncam.get("zoom", (1.08, 1.0))),
                       focus=tuple(ncam["focus"]) if "focus" in ncam else (tuple(cam["focus"]) if "focus" in cam else None),
-                      cards=[(name, 0.0, t_end, 0.0, 0.0)], tick=True, reverse=True))
+                      cards=[(name, 0.0, t_end, 0.0, 0.0)], tick=True, reverse=True, say=say_end if speak else "", say_at=0.2))
     return shots
 
 
-def reel_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = None) -> list:
+def reel_shots(spec: Spec, seed: int, entry: dict, requested_by: str | None = None, speak: bool = False) -> list:
     """The Reel's shot list (hook, setup, punchline, name card), also used to check frames before rendering."""
     from .video import Shot, overlay
     if entry.get("episode"):
-        return story_shots(spec, seed, entry, requested_by)
+        return story_shots(spec, seed, entry, requested_by, speak=speak)
 
     series = f"No. {entry['id']} · {text.BRAND}"
     beats = entry.get("beats") or entry["reel_lines"]
