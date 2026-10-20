@@ -1,0 +1,316 @@
+{
+  "id": "041",
+  "name": "Miles",
+  "subtitle": "every Miles's planet",
+  "story": "On Miles, next door is ninety miles away, so nobody pops round. At dusk, every farm shines a lamp at the sky: once means 'All fine', twice means 'Come'. Edie had flashed once every dusk of her life. She'd never asked anyone for anything. In January, she flashed twice. By dawn, two hundred people had driven through the night. She'd made too much soup.",
+  "facts": {
+    "Day": "30 hours",
+    "Moons": "none",
+    "Gravity": "0.7 g",
+    "Population": "52,000, thinly spread"
+  },
+  "hook": "A planet for people who never ask anyone for anything.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#miles"
+  ],
+  "spec": {
+    "palette": "crimson",
+    "terrain": "hills",
+    "layers": 5,
+    "horizon": 0.62,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.2,
+    "sun_y": 0.6,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.55,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 0,
+    "crowd_items": "",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": true,
+    "stage": 0.74
+  },
+  "cover": "Next door is ninety miles away.",
+  "kicker": "Every Miles gets this planet.",
+  "episode": {
+    "opener": "On Miles, next door\nis ninety miles away.",
+    "beats": [
+      {
+        "text": "Nobody pops round.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.08,
+            1.15
+          ]
+        }
+      },
+      {
+        "text": "At dusk, every farm\nshines a lamp at the sky.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.35,
+            1.42
+          ],
+          "focus": [
+            0.5,
+            0.42
+          ]
+        }
+      },
+      {
+        "text": "Once means 'All fine.'\nTwice means 'Come.'",
+        "shot": "sky"
+      },
+      {
+        "text": "Edie had flashed once\nevery dusk of her life.",
+        "shot": "house"
+      },
+      {
+        "text": "She'd never asked anyone\nfor anything.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.25,
+            1.27
+          ],
+          "focus": [
+            0.62,
+            0.55
+          ]
+        }
+      },
+      {
+        "text": "In January, she flashed twice.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.27,
+            1.28
+          ],
+          "focus": [
+            0.62,
+            0.55
+          ]
+        },
+        "spec": {
+          "palette": "abyss",
+          "suns": 0,
+          "snow": true,
+          "particles": "snow"
+        },
+        "note": "turn line: flash one"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.28,
+            1.285
+          ],
+          "focus": [
+            0.62,
+            0.55
+          ]
+        },
+        "spec": {
+          "palette": "abyss",
+          "suns": 0,
+          "snow": true,
+          "particles": "snow",
+          "lamp": false
+        },
+        "seconds": 0.6,
+        "note": "off"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.285,
+            1.29
+          ],
+          "focus": [
+            0.62,
+            0.55
+          ]
+        },
+        "spec": {
+          "palette": "abyss",
+          "suns": 0,
+          "snow": true,
+          "particles": "snow"
+        },
+        "seconds": 1.0,
+        "note": "flash two, on the identical camera"
+      },
+      {
+        "text": "By dawn, two hundred people\nhad driven through the night.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.29,
+            1.32
+          ],
+          "focus": [
+            0.62,
+            0.55
+          ]
+        },
+        "spec": {
+          "palette": "rose_fog",
+          "suns": 1,
+          "sun_x": 0.84,
+          "sun_y": 0.58,
+          "snow": true,
+          "lamp": false,
+          "crowd": 7,
+          "crowd_items": "kettle,nothing,kettle,nothing,kettle,nothing,kettle",
+          "crowd_x": 0.45,
+          "cartographer": false
+        },
+        "note": "identical camera; the dawn yard full of people with kettles"
+      },
+      {
+        "text": "She'd made too much soup.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.6,
+            1.7
+          ]
+        },
+        "spec": {
+          "palette": "rose_fog",
+          "suns": 1,
+          "sun_x": 0.84,
+          "sun_y": 0.58,
+          "snow": true,
+          "lamp": false,
+          "crowd": 7,
+          "crowd_items": "kettle,nothing,kettle,nothing,kettle,nothing,kettle",
+          "crowd_x": 0.45,
+          "cartographer": false
+        }
+      }
+    ],
+    "end": "Always make too much soup.",
+    "caption": "One lamp, ninety miles from the next.\n\nMiles is a huge, flat, windy world with 52,000 people on it, most of them a day's drive from anyone else. So the planet runs on lamps: one flash at dusk for 'All fine', two for 'Come'. On a clear night every farm can see five or six others, and everyone knows whose is whose. Edie had lived alone at the top of the valley for years, and had never once flashed twice.\n\nI flashed twice on my first night, by accident, looking for the switch. Nine trucks and a vet.\n\n(On Earth, the story goes, the outback radio network kept a 'galah session', a daily slot when people on remote stations could just chat, named after a very noisy bird. On Miles, they flash.)\n\nWhen did you last ask anyone for anything?"
+  },
+  "first_comment": "Edie has flashed twice three times since. Leek and potato, mostly.",
+  "short": {
+    "version": "C",
+    "title": "Next door is\nninety miles away.",
+    "sub": "You've just landed on Miles.",
+    "framing": "medium",
+    "zoom": [
+      1.3,
+      1.36
+    ],
+    "focus": [
+      0.62,
+      0.56
+    ],
+    "spec": {
+      "palette": "cobalt_noon",
+      "sun_x": 0.3,
+      "sun_y": 0.45,
+      "lamp": false,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "palette": "crimson",
+        "lamp": true,
+        "cartographer": false
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "Every farm has a lamp.\nOnce: 'All fine.' Twice: 'Come.'",
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.6,
+            1.7
+          ],
+          "focus": [
+            0.5,
+            0.42
+          ]
+        }
+      },
+      {
+        "text": "Looking for the light switch,\nyou flash twice.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.62,
+            0.56
+          ]
+        },
+        "spec": {
+          "palette": "abyss",
+          "suns": 0,
+          "lamp": true,
+          "snow": true,
+          "particles": "snow",
+          "cartographer": false
+        }
+      }
+    ],
+    "end": "Nine trucks and a vet.",
+    "end_spec": {
+      "palette": "gold_hour",
+      "suns": 1,
+      "sun_x": 0.84,
+      "sun_y": 0.58,
+      "lamp": false,
+      "snow": false,
+      "particles": "none",
+      "crowd": 6,
+      "crowd_items": "kettle,nothing,kettle,nothing,kettle,nothing",
+      "crowd_x": 0.55,
+      "cartographer": false
+    }
+  }
+}
