@@ -115,7 +115,9 @@ class _Prepared:
         self.scene, self.thr, self.inks = self._built(shot.spec, cache)
         self.after = self._built(shot.swap[1], cache) if shot.swap else None
         if isinstance(shot.focus, str):
-            shot.focus = tuple(getattr(self.scene, "marks", {}).get(shot.focus) or getattr(self.scene, "focus", (0.5, 0.5)))
+            # an object the onset brings in (no mark before it) is framed where it will appear
+            later = getattr(self.after[0], "marks", {}).get(shot.focus) if self.after else None
+            shot.focus = tuple(getattr(self.scene, "marks", {}).get(shot.focus) or later or getattr(self.scene, "focus", (0.5, 0.5)))
         if shot.focus is None:
             shot.focus = getattr(self.scene, "focus", (0.5, 0.5))
         elif shot.focus[0] == "x":                # ("x", fx): that x, at the height of the scene's gag

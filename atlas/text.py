@@ -361,7 +361,8 @@ def overlay(size, items, scrim=0.42):
     """General text card for Reels.
 
     items: dicts with text, y (fraction of height, or "after": below the previous item plus gap),
-    kind ('serif'|'italic'|'sans'), size, weight, align ('center'|'left'), x (px for left align), width (px wrap).
+    kind ('serif'|'italic'|'sans'), size, weight, align ('center'|'left'), x (px for left align), width (px wrap),
+    fit (shrink to one line instead of wrapping).
     """
     W, H = size
     base = Image.new("RGBA", size, (0, 0, 0, 0))
@@ -370,8 +371,11 @@ def overlay(size, items, scrim=0.42):
     def paint(d):
         y = 0.0
         for it in items:
-            f = font(it.get("kind", "serif"), it.get("size", 64), it.get("weight", "Regular"))
             width = it.get("width", W - 2 * 96)
+            if it.get("fit"):                        # one line, shrunk until it fits (a long requested name)
+                f = _fit(d, typeset(it["text"]), it.get("kind", "serif"), it.get("size", 64), width, it.get("weight", "Regular"))
+            else:
+                f = font(it.get("kind", "serif"), it.get("size", 64), it.get("weight", "Regular"))
             lines = wrap(d, it["text"], f, width)
             lh = int(f.size * it.get("leading", 1.18))
             y = y + H * it.get("gap", 0.012) if it["y"] == "after" else H * it["y"]

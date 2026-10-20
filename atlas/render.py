@@ -178,6 +178,8 @@ class Spec:
     crowd_facing: str = ""         # in | out | left | right (default: alternating)
     daisies: int = 0               # flowers across the foreground
     lamp: bool = False             # a tall lamp aimed at the sky
+    moon_window: bool = False      # a lit window high on the big moon (somebody is home)
+    sea_glow: bool = False         # the sea lit from underneath, blue-green (water planets)
     stage: float = 0.0             # flat foreground ledge at this height for the extras (0: natural ground)
 
 
@@ -541,11 +543,22 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
         gy_ = (spec.giant_y if spec.giant_y is not None else br.uniform(0.12, 0.32)) * H
         base = mix(pal.accent, pal.sky[1], br.uniform(0.0, 0.45))
         body(gx_, gy_, r, base, bands=True, ring=spec.ring, haze_amt=0.12, tag="giant")
+        geo["giant"] = (gx_, gy_)
     if spec.big_moon:
         r = 0.42 * W
         mx_, my_ = br.uniform(0.35, 0.65) * W, hy - r * br.uniform(0.25, 0.55)
         geo["big_moon"] = (mx_, my_, r)
         body(mx_, my_, r, mix(pal.accent, pal.haze, 0.25), craters=True, haze_amt=0.28, tag="bigmoon")
+        if spec.moon_window:
+            wx, wy, ww = mx_ - r * 0.16, my_ - r * 0.5, r * 0.05
+            warm = hexc("#ffc867")
+            x0, x1, y0, y1 = int(wx - ww * 2), int(wx + ww * 2), int(wy - ww * 2), int(wy + ww * 2)
+            gy, gx = np.mgrid[y0:y1, x0:x1].astype(np.float32)
+            pane = ((np.abs(gx - wx) < ww * 0.5) & (gy > wy - ww * 0.35) & (gy < wy + ww * 0.75)) | \
+                   (((gx - wx) / (ww * 0.5)) ** 2 + ((gy - wy + ww * 0.35) / (ww * 0.5)) ** 2 < 1)
+            sky[y0:y1, x0:x1] = mix(sky[y0:y1, x0:x1], warm * 1.1, pane[..., None].astype(np.float32))
+            glow(sky, wx, wy, ww * 1.4, warm, 0.5)
+            geo["moon_window"] = (wx, wy)
     for k in range(spec.moons):
         r = br.uniform(0.012, 0.045) * W
         body(br.uniform(0.08, 0.92) * W, br.uniform(0.08, 0.6) * hy, r, mix(pal.accent, pal.haze, br.uniform(0, 0.5)),
@@ -745,6 +758,7 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
                          ("poly", [(lx - bw * 0.45, top - th * 0.1), (lx + bw * 0.45, top - th * 0.1), (lx + bw * 0.45, top), (lx - bw * 0.45, top)]),
                          ("poly", [(lx - bw * 0.6, top - th * 0.1), (lx, top - th * 0.2), (lx + bw * 0.6, top - th * 0.1)])], lc)
             lamp_y = top - th * 0.05
+            geo["lighthouse_top"] = (lx, top + th * 0.3)
             glow(shore.E, lx, lamp_y, 7, pal.light, 1.4)
             beam = np.zeros_like(A)
             beamP = np.zeros_like(P)
@@ -882,6 +896,9 @@ def build(spec: Spec, seed: int, W=1080, H=1350, pan=0.0) -> Scene:
         if spec.cartographer:
             props.cartographer(ctx, avoid_x=ctx.focus[0] * W)
         scene.focus, scene.marks = ctx.focus, ctx.marks
+    for mark, key in (("moon", "moon_window"), ("giant", "giant"), ("lighthouse", "lighthouse_top")):
+        if geo.get(key):
+            scene.marks[mark] = (geo[key][0] / W, geo[key][1] / H)
 
     # particles
     if spec.particles != "none":
@@ -1025,6 +1042,16 @@ def _water(scene: Scene, img: np.ndarray, ts: float) -> np.ndarray:
             x0, x1 = int(max(x_ - l_ / 2, 0)), int(min(x_ + l_ / 2, W))
             if x0 < x1 and yi < len(rows):
                 refl[yi, x0:x1] += pal.sun * 0.35 * (1 - yi / len(rows)) ** 0.5
+    if scene.spec.sea_glow:
+        # bioluminescence: slow patches of cold blue-green light, and specks that twinkle
+        xs = np.arange(W, dtype=np.float32)[None, :]
+        ys = rows.astype(np.float32)[:, None]
+        patch = 0.55 + 0.45 * np.sin(xs * 0.011 + ys * 0.043 + ts * 0.7) * np.sin(xs * 0.006 - ys * 0.09 - ts * 0.5)
+        amt = (0.5 + 0.5 * (1 - depth[:, None])) * patch
+        rs = np.random.default_rng(11)
+        speck = (rs.random((len(rows), W)) > 0.992) * (0.5 + 0.5 * np.sin(rs.random((len(rows), W)) * 6.3 + ts * 4))
+        cold = np.array([0.3, 1.0, 0.85], np.float32)
+        refl = refl + cold * (0.42 * amt + 0.9 * speck)[..., None]
     img = img.copy()
     img[wy:] = refl
     img[wy:wy + 2] = mix(img[wy:wy + 2], pal.haze, 0.2)

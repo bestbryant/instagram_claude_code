@@ -83,6 +83,9 @@ FRAMINGS = {
     "sign": ((1.8, 1.9), "sign"),
     "cartographer": ((2.0, 2.15), "cartographer"),
     "house": ((1.8, 1.9), "house"),          # a house standing on the stage (else the gag)
+    "moon": ((1.7, 1.8), "moon"),            # the lit window on the big moon
+    "giant": ((1.4, 1.5), "giant"),          # the gas giant
+    "lighthouse": ((1.5, 1.6), "lighthouse"),
 }
 
 
@@ -191,7 +194,7 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
     say_hook = f"{title}\n{sub}".strip()
     t_hook = round(max(read(say_hook, 1.0), spoken(say_hook, 0.05, 0.35)), 2)
     onset = sh.get("onset") or {}
-    flips = {"sign", "palette", "particles", "aurora", "stars", "lamp", "glow_rims", "mist", "snow"}   # changes, not objects: cut
+    flips = {"sign", "palette", "particles", "aurora", "stars", "lamp", "glow_rims", "mist", "snow", "moon_window", "sea_glow"}   # changes, not objects: cut
     motion = onset.get("motion") or ("cut" if set(onset.get("spec") or {}) <= flips else "auto")
     swap = (float(onset.get("at", 0.4)), replace(spec, **onset["spec"]), motion) if onset.get("spec") else None
     base = replace(spec, **sh["spec"]) if sh.get("spec") else spec       # the scene before the onset
@@ -215,7 +218,7 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
     end = sh.get("end") or entry["episode"].get("end", "")
     ty = sh.get("name_y", entry.get("text_y", {}).get("name", 0.3))
     name = overlay([dict(text=series, y=ty, kind="italic", size=36),
-                    dict(text=entry["name"], y=ty + 0.035, kind="serif", weight="Medium", size=170),
+                    dict(text=entry["name"], y=ty + 0.035, kind="serif", weight="Medium", size=170, fit=True),
                     dict(text=end, y=ty + 0.145, kind="italic", size=50)])
     t_end = round(max(2.0, spoken(end, 0.15, 0.5)), 2)
     # the end card is the aftermath: the last beat's scene (the turn), plus any end_spec on top

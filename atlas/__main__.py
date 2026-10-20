@@ -125,10 +125,10 @@ def next_number() -> str:
 
 def cmd_planet(a):
     from .lore import chart
-    entry, spec, seed = chart(a.name, a.number or (next_number() if a.by else None))
+    entry, spec, seed = chart(a.name, a.number or (next_number() if a.by else None), by=a.by)
     if a.by:
         entry["discovered_by"] = a.by
-    folder = make(entry, spec, seed, OUT / "requests" / slug(a.name), reel=not a.no_reel, by=a.by, requested_by=a.by)
+    folder = make(entry, spec, seed, OUT / "requests" / f"{entry['id']}-{slug(entry['name'])}", reel=not a.no_reel, by=a.by, requested_by=a.by)
     print(f"{entry['name']}: {entry['subtitle']} -> {folder.relative_to(ROOT)}")
 
 
@@ -305,6 +305,38 @@ def first_name_only(name: str) -> str:
     return name
 
 
+def queue_request(entry_id: str, by: str, now=None) -> str:
+    """Give a requested planet's Reel the next daily 18:00 UTC slot at least 6 h away (time to render and check it).
+    The short Reels from that slot on move back a day each; fixed nights (Halloween at 22:00) keep their dates.
+    The row is held until the Reel has been checked (scratchpad/room/add_shorts.py --release ID)."""
+    from datetime import datetime, time, timedelta, timezone
+    now = now or datetime.now(timezone.utc)
+    sched = json.loads(SCHEDULE.read_text())
+    posted = {(x["entry"], x["kind"]) for x in (json.loads(LOG.read_text()) if LOG.exists() else [])}
+    when = lambda r: datetime.fromisoformat(r["not_before"].replace("Z", "+00:00"))
+    live = [r for r in sched if r.get("not_before") and r["kind"] == "reel" and not r.get("hold") and (r["entry"], r["kind"]) not in posted]
+    fixed = {when(r).date() for r in live if when(r).hour != 18}
+    day = (now + timedelta(hours=6)).date()
+    if datetime.combine(day, time(18), timezone.utc) < now + timedelta(hours=6):
+        day += timedelta(days=1)
+    while day in fixed:
+        day += timedelta(days=1)
+    slot = datetime.combine(day, time(18), timezone.utc)
+    later = sorted((r for r in live if when(r).hour == 18 and when(r) >= slot), key=when)
+    d = day
+    for r in later:
+        d += timedelta(days=1)
+        while d in fixed:
+            d += timedelta(days=1)
+        r["not_before"] = f"{d.isoformat()}T18:00:00Z"
+    row = {"day": later[0]["day"] if later else 1, "entry": entry_id, "kind": "reel", "hold": True,
+           "note": f"request from {by}: held until rendered and checked", "not_before": f"{day.isoformat()}T18:00:00Z"}
+    at = sched.index(later[0]) if later else len(sched)
+    sched.insert(at, row)
+    SCHEDULE.write_text(json.dumps(sched, indent=1, ensure_ascii=False) + "\n")
+    return row["not_before"]
+
+
 def cmd_inbox(a):
     """Collect name requests from recent comments into content/requests.json."""
     from .publish import Publisher
@@ -340,11 +372,14 @@ def cmd_inbox(a):
         for q in queue:
             if q["status"] != "new":
                 continue
-            entry, spec, seed = chart(q["name"], next_number())
+            entry, spec, seed = chart(q["name"], next_number(), by=q["by"])
             entry["discovered_by"] = q["by"]
-            folder = make(entry, spec, seed, OUT / "requests" / slug(q["name"]), reel=not a.no_reel, by=q["by"], requested_by=q["by"])
-            q["status"], q["folder"] = "charted", str(folder.relative_to(ROOT))
-            print(f"charted {q['name']} -> {q['folder']}")
+            folder = make(entry, spec, seed, OUT / "requests" / f"{entry['id']}-{slug(entry['name'])}", reel=not a.no_reel, by=q["by"], requested_by=q["by"])
+            q["status"], q["folder"], q["entry"] = "charted", str(folder.relative_to(ROOT)), entry["id"]
+            charted = json.loads(CHARTED.read_text()) if CHARTED.exists() else []
+            CHARTED.write_text(json.dumps(charted + [entry], indent=2, ensure_ascii=False) + "\n")
+            slot = queue_request(entry["id"], q["by"])
+            print(f"charted {q['name']} -> {q['folder']}; queued (held until checked) for {slot}")
         if not a.dry_run:
             REQUESTS.write_text(json.dumps(queue, indent=2, ensure_ascii=False) + "\n")
 
@@ -365,7 +400,8 @@ def _find(item):
     return None
 
 
-CONTENT_FILES = ("launch.json", "halloween.json", "sequels.json", "names.json")
+CONTENT_FILES = ("launch.json", "halloween.json", "sequels.json", "names.json", "charted.json")
+CHARTED = ROOT / "content" / "charted.json"     # planets charted for comment requests
 
 
 def content_entries() -> dict:
@@ -426,7 +462,7 @@ def check_item(item, folder, entries) -> str | None:
     skip = ({"framing", "odd_line", "rule", "subtitle", "facts", "_engine"} if item["kind"] == "reel" else {"camera", "text_y", "opener", "kicker", "cta", "episode"}) | {"first_comment"}
     if item["kind"] == "reel" and rendered.exists() and json.loads(rendered.read_text()).get("_engine") != ENGINE:
         return "stale: rendered with an older Reel engine"
-    if item["kind"] == "reel" and src is not None and not src.get("episode"):
+    if item["kind"] == "reel" and src is not None and not src.get("episode") and not src.get("short"):
         return "waiting for its story episode"      # every Reel from here on is a story; older cuts stay unposted
     same = lambda a, b: {k: v for k, v in a.items() if k not in skip} == {k: v for k, v in b.items() if k not in skip}
     if src is not None and (not rendered.exists() or not same(json.loads(rendered.read_text()), src)):
@@ -576,6 +612,8 @@ def cmd_stats(a):
 
 def reel_format(entry: dict) -> str:
     """Which format test version a Reel is (docs/PLAN.md): short-A/B/C, long (34 s story) or postcard."""
+    if entry.get("discovered_by"):
+        return "request"                               # a requester's planet: warm viewers, kept out of the format test
     if entry.get("short"):
         return "short-" + entry["short"].get("version", "A")
     return "long" if entry.get("episode") else "postcard"

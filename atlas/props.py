@@ -601,7 +601,9 @@ def _gag_stirrers(ctx):
 # --------------------------------------------------------------------------
 # extras: generic props a planet can combine with its gag
 
-ITEMS = ["spade", "spoon", "nothing", "book", "fish", "umbrella", "cup"]   # also: flower, kettle, child, child_asleep (by name)
+ITEMS = ["spade", "spoon", "nothing", "book", "fish", "umbrella", "cup"]
+# also by name: flower, kettle, kite, child, child_asleep; and as the whole figure: shadow (only the shadow is left),
+# shadowed (a person and their shadow), aloft (a person in mid-jump), shout and echo (sound going out, coming back)
 
 
 def _gag_moth_roof(ctx):
@@ -650,6 +652,30 @@ def _held(ctx, layer, kind, hx, hy, h):
         _ink(ctx, layer, kettle(hx, hy + h * .14, h * .32), LIGHT)
     elif kind == "cup":
         _ink(ctx, layer, [("poly", [(hx - h * .06, hy - h * .1), (hx + h * .06, hy - h * .1), (hx + h * .05, hy + h * .04), (hx - h * .05, hy + h * .04)])], LIGHT)
+    elif kind == "kite":
+        # every kite leans the same way: it's one wind
+        kx, ky, k = hx + h * .8, hy - h * 2.1, h * .3
+        _ink(ctx, layer, [("line", ([(hx, hy), (hx + h * .45, hy - h * 1.05), (kx, ky + k)], h * .012))], LIGHT)
+        _ink(ctx, layer, [("line", ([(kx, ky + k), (kx - h * .08, ky + k * 1.8), (kx + h * .04, ky + k * 2.5), (kx - h * .05, ky + k * 3.2)], h * .012))], LIGHT)
+        _ink(ctx, layer, [("poly", [(kx, ky - k), (kx + k * .7, ky), (kx, ky + k), (kx - k * .7, ky)])], ctx.spot)
+
+
+def _shadow(ctx, layer, x, y, h, facing, sun_left=True):
+    """A standing figure's shadow, cast long across the ground away from the sun."""
+    body, coat, _ = figure(x, y, h, "stand", facing)
+    away = 1 if sun_left else -1
+    T = lambda q: (q[0] + (y - q[1]) * 1.1 * away, y + (y - q[1]) * 0.3)
+    flat = []
+    for kind, g in body + [coat]:
+        if kind == "poly":
+            flat.append(("poly", [T(q) for q in g]))
+        elif kind == "line":
+            flat.append(("line", ([T(q) for q in g[0]], g[1])))
+        else:
+            cx, cy = T(((g[0] + g[2]) / 2, (g[1] + g[3]) / 2))
+            hw, hh = (g[2] - g[0]) / 2, (g[3] - g[1]) / 2
+            flat.append(("ellipse", (cx - hw * 1.4, cy - hh * 0.5, cx + hw * 1.4, cy + hh * 0.5)))
+    _ink(ctx, layer, flat, mix(ctx.dark, np.zeros(3), 0.5), 0.75)
 
 
 def _child(ctx, layer, a, h, facing, asleep=False):
@@ -679,7 +705,32 @@ def _crowd(ctx):
                 "left": -1, "right": 1}.get(sp.crowd_facing, 1 if i % 2 else -1)
         kind = items[i % len(items)]
         carry = kind.startswith("child")
-        a = _person(ctx, layer, x, _ground(ctx, x), h * (0.92 + 0.08 * ((i * 7) % 3) / 2), "carry" if carry else "stand", face)
+        hi = h * (0.92 + 0.08 * ((i * 7) % 3) / 2)
+        if kind in ("shadow", "shadowed"):
+            _shadow(ctx, layer, x, _ground(ctx, x), hi, face, sun_left=(sp.sun_x if sp.sun_x is not None else 0.3) < 0.5)
+            if kind == "shadow":
+                continue
+            kind = "nothing"
+        if kind in ("shout", "echo"):
+            # a shout goes out across the canyon as arcs; an echo comes back as arcs facing the listener, warmer
+            a = _person(ctx, layer, x, _ground(ctx, x), hi, "cup", face)
+            mx, my = a["rh"]
+            col = ctx.dark if sp.snow else LIGHT
+            for k in range(3):
+                if kind == "shout":
+                    r, cx_ = W * (0.05 + 0.06 * k), mx
+                else:
+                    r, cx_ = W * (0.05 + 0.06 * k), mx + face * W * 0.3
+                a0, a1 = (-0.55, 0.45) if (face > 0) == (kind == "shout") else (math.pi - 0.45, math.pi + 0.55)
+                stamp(layer.P, layer.A, [arc_line(cx_, my, r, a0, a1, H * 0.005)],
+                      col if kind == "shout" else mix(LIGHT, YELLOW, 0.5), 0.85 - 0.2 * k)
+            continue
+        if kind == "aloft":
+            gy = _ground(ctx, x)
+            _ink(ctx, layer, [("ellipse", (x - hi * .22, gy - hi * .03, x + hi * .22, gy + hi * .03))], LIGHT, 0.35)
+            _person(ctx, layer, x, gy - hi * 4.0, hi, "point", face)     # low gravity: a jump clears the hills
+            continue
+        a = _person(ctx, layer, x, _ground(ctx, x), hi, "carry" if carry else "stand", face)
         if carry:
             _child(ctx, layer, a, h, face, asleep=kind == "child_asleep")
         else:
@@ -801,7 +852,45 @@ def extras(ctx):
         _house(ctx)        # last, so it can find a patch of ledge the others left empty
 
 
+def _gag_big_cloud(ctx):
+    """One very large, very slow cloud, low over the hills, and the long shade it throws."""
+    W, H = ctx.W, ctx.H
+    layer = ctx.far_layer
+    rng = ctx.rng("big_cloud")
+    cx, cy, cw = W * rng.uniform(0.42, 0.58), H * 0.36, W * 0.95
+    puffs = cloud(cx, cy, cw) + [("ellipse", (cx - cw * .38, cy - cw * .08, cx - cw * .02, cy + cw * .08)),
+                                 ("ellipse", (cx + cw * .02, cy - cw * .22, cx + cw * .32, cy + cw * .06))]
+    stamp(layer.P, layer.A, puffs, mix(LIGHT, ctx.pal.sky[1], 0.25), 0.97)
+    stamp(layer.P, layer.A, [("ellipse", (cx - cw * .5, cy + cw * .02, cx + cw * .5, cy + cw * .085))], mix(LIGHT, ctx.dark, 0.35), 0.5)
+    ctx.focus = (cx / W, (cy - cw * .05) / H)
+
+
+def _moon_disc(ctx, layer, x, y, r, tag):
+    base = mix(ctx.pal.accent, LIGHT, 0.45)
+    # the shaded side is a darker disc showing round the edge of the lit one, so nothing spills outside the moon
+    stamp(layer.P, layer.A, [("ellipse", (x - r, y - r, x + r, y + r))], mix(base, ctx.dark, 0.5), 1.0)
+    stamp(layer.P, layer.A, [("ellipse", (x - r, y - r * .9, x + r * .8, y + r * .9))], base, 1.0)
+    rng = ctx.rng(tag)
+    for _ in range(5):
+        cx, cy, cr = x + rng.uniform(-.55, .3) * r, y + rng.uniform(-.5, .5) * r, r * rng.uniform(.08, .18)
+        stamp(layer.P, layer.A, [("ellipse", (cx - cr, cy - cr, cx + cr, cy + cr))], mix(base, ctx.dark, 0.18), 0.8)
+
+
+def _two_moons(ctx, aligned):
+    """Two moons that circle each other: apart, or lined up (the small one in front of the big one)."""
+    W, H = ctx.W, ctx.H
+    layer = ctx.far_layer
+    y = H * 0.4
+    big, small = W * 0.13, W * 0.075
+    bx, sx = (W * 0.5, W * 0.52) if aligned else (W * 0.3, W * 0.72)
+    _moon_disc(ctx, layer, bx, y, big, "moon_big")
+    _moon_disc(ctx, layer, sx, y + (H * 0.01 if aligned else -H * 0.05), small, "moon_small")
+    ctx.focus = (0.5, y / H)
+
+
 GAGS = {
+    "big_cloud": _gag_big_cloud,
+    "two_moons": lambda ctx: _two_moons(ctx, False), "two_moons_aligned": lambda ctx: _two_moons(ctx, True),
     "chair_sleepers": _gag_chair_sleepers, "seabed_town": _gag_seabed_town, "slow_shout": _gag_slow_shout,
     "pole_post": _gag_pole_post, "kettles": _gag_kettles, "moon_letters": _gag_moon_letters,
     "glass_surfers": _gag_glass_surfers, "tiny_planet": _gag_tiny_planet, "umbrella_feet": _gag_umbrella_feet,
