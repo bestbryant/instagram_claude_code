@@ -101,7 +101,21 @@ def _beat_shot(spec: Spec, seed: int, beat: dict, card, seconds: float):
     zoom = tuple(shot.get("zoom", zoom))
     focus = tuple(shot["focus"]) if "focus" in shot else focus
     variant = replace(spec, **beat["spec"]) if beat.get("spec") else spec
-    return Shot(seconds, variant, seed, pan=50, zoom=zoom, focus=focus, cards=[(card, 0.0, seconds, 0.0, 0.0)])
+    return Shot(seconds, variant, seed, pan=50, zoom=zoom, focus=focus, cards=[(card, 0.0, seconds, 0.0, 0.0)],
+                swap=_onset_swap(variant, beat.get("onset")))
+
+
+# changes, not objects: an onset made only of these cuts (with a camera punch) instead of rising into place
+FLIPS = {"sign", "palette", "particles", "aurora", "stars", "lamp", "glow_rims", "mist", "snow", "moon_window", "sea_glow"}
+
+
+def _onset_swap(spec: Spec, onset: dict | None):
+    """{"at": s, "spec": {...}, "motion": ...} -> the Shot's swap: the scene changes `at` seconds in, with a hit."""
+    from dataclasses import replace
+    if not onset or not onset.get("spec"):
+        return None
+    motion = onset.get("motion") or ("cut" if set(onset["spec"]) <= FLIPS else "auto")
+    return (float(onset.get("at", 0.4)), replace(spec, **onset["spec"]), motion)
 
 
 def next_stop(entry: dict) -> str:
@@ -194,10 +208,7 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
     hook_card = overlay(items, scrim=sh.get("scrim", 0.42))     # a pale sky can ask for a stronger shade
     say_hook = f"{title}\n{sub}".strip()
     t_hook = round(max(read(say_hook, 1.0), spoken(say_hook, 0.05, 0.35)), 2)
-    onset = sh.get("onset") or {}
-    flips = {"sign", "palette", "particles", "aurora", "stars", "lamp", "glow_rims", "mist", "snow", "moon_window", "sea_glow"}   # changes, not objects: cut
-    motion = onset.get("motion") or ("cut" if set(onset.get("spec") or {}) <= flips else "auto")
-    swap = (float(onset.get("at", 0.4)), replace(spec, **onset["spec"]), motion) if onset.get("spec") else None
+    swap = _onset_swap(spec, sh.get("onset"))
     base = replace(spec, **sh["spec"]) if sh.get("spec") else spec       # the scene before the onset
     zoom, focus = FRAMINGS.get(sh.get("framing", "gag"), FRAMINGS["gag"])
     zoom = tuple(sh.get("zoom", (max(1.0, zoom[0] * 0.92), max(1.06, zoom[1] * 0.92))))   # even a wide hook pushes in
@@ -222,12 +233,15 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
                     dict(text=entry["name"], y=ty + 0.035, kind="serif", weight="Medium", size=170, fit=True),
                     dict(text=end, y=ty + 0.145, kind="italic", size=50)])
     t_end = round(max(2.0, spoken(end, 0.15, 0.5)), 2)
-    # the end card is the aftermath: the last beat's scene (the turn), plus any end_spec on top
-    last = sh["beats"][-1].get("spec") if sh["beats"] else None
-    end_scene = replace(after, **{**(last or {}), **(sh.get("end_spec") or {})})
+    # the end card is the aftermath: the last beat's scene (the turn, after its own onset), plus any end_spec on
+    # top; an end_onset lands the last change on the card itself
+    lb = sh["beats"][-1] if sh["beats"] else {}
+    end_scene = replace(after, **{**(lb.get("spec") or {}), **((lb.get("onset") or {}).get("spec") or {}),
+                                  **(sh.get("end_spec") or {})})
     end_focus = tuple(sh["end_focus"]) if "end_focus" in sh else (focus if isinstance(focus, tuple) else None)
     shots.append(Shot(t_end, end_scene, seed, pan=50, zoom=tuple(sh.get("end_zoom", (1.12, 1.04))), focus=end_focus,
-                      cards=[(name, 0.0, t_end, 0.0, 0.0)], say=end if speak else "", say_at=0.15))
+                      cards=[(name, 0.0, t_end, 0.0, 0.0)], say=end if speak else "", say_at=0.15,
+                      swap=_onset_swap(end_scene, sh.get("end_onset"))))
     return shots
 
 

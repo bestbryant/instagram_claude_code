@@ -2,6 +2,17 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-21 23:30 UTC: the joke is only in the text
+- **Symptom:** strangers stay but never act. Max: 127 reached, 40% skip, 46% watched, and 0 likes, 0 shares, 0 saves. Thessaly has just posted.
+- **Looking at the frames, not the numbers:** in Max, Thessaly and Pebb (next) the picture barely changes after the onset, and the punchline is a sentence over the same picture.
+  - Thessaly: "Then, this afternoon, it rains down." The frame shows the same three people with umbrellas on their feet, with no rain landing on them.
+  - Pebb: the "ball" that orbits reads as a moon. Nothing shows who chewed it. The end says "Now she throws two." over one ball.
+  - Viewers on a silent feed reward what they can see; a joke you have to read earns a nod, not a like or a send.
+- **Change:** beats and the end card can now carry their own onset, so the punchline lands on screen as an event with a sound hit (`onset` per beat, `end_onset`; existing shorts render byte-identical).
+  - Workflow wi4pqkela revises the 28 queued shorts so each frame shows its line and the end card shows the joke. It changes the picture first; voiced B/C versions keep their words so the voice test stays clean.
+  - Each revision gets a sound-off stranger judge and a fix pass. Then any missing props get built, and the shorts are re-rendered, checked and swapped in, Pebb first.
+- **How we'll know:** likes and sends per 100 strangers on the revised shorts against Max and Thessaly (both 0 so far). The A/B/C versions stay interleaved, so the format test is unaffected.
+
 ## 2026-10-21 daily review (12:15 UTC)
 - **Against the targets (strangers only):**
   - Max, the first short (18 h): 125 reached, 41% skip, 46% watched. It meets the skip and watch lines; the old long cut (Maren) is at 61% and 17%. The format change works where it was meant to: people stay.
