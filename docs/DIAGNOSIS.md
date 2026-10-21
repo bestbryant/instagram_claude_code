@@ -2,6 +2,16 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-21 daily review (12:15 UTC)
+- **Against the targets (strangers only):**
+  - Max, the first short (18 h): 125 reached, 41% skip, 46% watched. It meets the skip and watch lines; the old long cut (Maren) is at 61% and 17%. The format change works where it was meant to: people stay.
+  - Luna, the long cut (48 h): 3 reached, a fail.
+  - Veyra and Ovo (48 h): fails, as recorded.
+  - Followers: still 1.
+- **What isn't moving:** nobody acts. Max has 0 likes, 0 shares and 0 saves from 125 strangers. Sends at 0 of 125 is within chance (we'd expect about 1). Likes at 0 is unusual: small accounts usually see 2-5 per 100.
+- **Change today (measurement):** the scoreboard now shows likes per 100 strangers (one of Instagram's three top signals per docs/RESEARCH.md, and the one we weren't tracking) and reach at 6 h (for the 22:00 slot test). Nothing creative changes on the strength of one short: the A/B/C test needs about 6 of each version before it means anything.
+- **Next:** Thessaly (version C, second-person POV with voice) posts at 22:00 tonight. Max's 48 h read is tomorrow at about 18:10. If likes stay near 0 across the first five shorts while watch holds, the end card is the suspect: the 2 s card gives the turn but no moment to react to. The fix to try then is a final beat that lands the joke on screen.
+
 ## 2026-10-21 06:15 UTC: Max at 12 h, and the slot moves to 22:00 UTC
 - **Max at 12 h:** reach 14 (strangers about 11), skip 44%, about 44% of the Reel watched. Retention is the best of any Reel so far (Maren: skip 59%, 18% watched), but its reach is about a quarter of Maren's at the same age.
 - **When the showings came:** Max gained nothing from 18:09 to 23:00 UTC, then all 14 between 23:00 and 06:00 UTC. Maren (posted 21:15) was being shown within 2 h and gained 58% of its reach between 22:00 and 06:00 UTC. Luna (12:24) never started. The only hourly-tracked Reels both find their strangers in the US evening.
