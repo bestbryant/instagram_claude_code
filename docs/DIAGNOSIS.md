@@ -2,6 +2,12 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-21 06:15 UTC: Max at 12 h, and the slot moves to 22:00 UTC
+- **Max at 12 h:** reach 14 (strangers about 11), skip 44%, about 44% of the Reel watched. Retention is the best of any Reel so far (Maren: skip 59%, 18% watched), but its reach is about a quarter of Maren's at the same age.
+- **When the showings came:** Max gained nothing from 18:09 to 23:00 UTC, then all 14 between 23:00 and 06:00 UTC. Maren (posted 21:15) was being shown within 2 h and gained 58% of its reach between 22:00 and 06:00 UTC. Luna (12:24) never started. The only hourly-tracked Reels both find their strangers in the US evening.
+- **Change:** the daily slot moves from 18:00 to 22:00 UTC from today (Thessaly tonight). Halloween already posts at 22:00, so every short is now at one hour; the request queue uses the same slot (SLOT_HOUR) and Halloween rows are flagged fixed_date. Also fixed: Elsewhere (000) was still waiting for Hush part two, which is held, so it would never have posted; it now stands alone.
+- **How we'll know:** compare reach in the first 6 h and at 12 h for Thessaly, Pebb and Cinderwake against Max (0 at 3 h, 14 at 12 h). If 22:00 doesn't beat 18:00 on first-6 h reach across those three, try 01:00 UTC.
+
 ## 2026-10-20 21:10 UTC: watch, Max has no showings after 3 h
 - **What:** Max (013, short-B, posted 18:09 UTC) has reach 0 and views 0 at 1, 2 and 3 h. The media is fine (REELS, shared to feed, thumbnail present). Maren had 3 at 1.9 h and 12 at 3.2 h.
 - **Pattern so far (n=5 Reels):** the two Reels posted in the European/US daytime both stalled: Luna (12:24 UTC) has been stuck at 2-3, and Max (18:09 UTC) is at 0. The three posted 21:00-03:00 UTC (Veyra 00:07, Ovo 03:00, Maren 21:15) all reached 37-100 strangers. By chance alone that split has odds of about 1 in 10, so it's a hypothesis, not a finding. Other candidates: an account-level limit (Account Status is still unchecked; it's the owner's top item) or slow first showings that catch up.

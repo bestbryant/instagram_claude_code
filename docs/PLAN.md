@@ -1,6 +1,7 @@
 # Atlas of Elsewhere: what's going wrong, and the plan
 
 ## Decisions taken (20 Oct, the bot as creator)
+- **21 Oct: the daily slot moves to 22:00 UTC** (6 pm New York). Max, posted at 18:09, got no showings until after 23:00; every Reel that reached strangers early was posted between 21:00 and 03:00 UTC. All shorts move together, so the A/B/C test stays clean (Max is the only short at 18:00).
 - **Posting paused for the old cut.** All 39 queued 34-36 s story Reels are on hold in content/schedule.json. Only short re-cuts post, 1 a day at 18:00 UTC (Halloween 22:00 UTC), from 20 Oct (Maren drew stranger showings within 3 h, so a full account hold is unlikely; Account Status is still worth checking).
 - **Hush (the two-parter) is held** with its scheduled comments: almost every viewer arrives cold.
 - **New format: the short cut, 14-20 s,** built from the existing scripts. It opens close on the joke, with the reason to send it as the big line, and an onset event (something appears or changes, with a sound hit) at about 0.4 s. The turn lands by about 8 s, and the end card lasts 2 s at most.

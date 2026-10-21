@@ -47,207 +47,206 @@
   "entry": "009",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-21T18:00:00Z"
+  "not_before": "2026-10-21T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "021",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-22T18:00:00Z"
+  "not_before": "2026-10-22T22:00:00Z"
  },
  {
   "day": 4,
   "entry": "005",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-23T18:00:00Z"
+  "not_before": "2026-10-23T22:00:00Z"
  },
  {
   "day": 3,
   "entry": "014",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-24T18:00:00Z"
+  "not_before": "2026-10-24T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "040",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-25T18:00:00Z"
+  "not_before": "2026-10-25T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "028",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-26T18:00:00Z"
+  "not_before": "2026-10-26T22:00:00Z"
  },
  {
   "day": 5,
   "entry": "015",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-27T18:00:00Z"
+  "not_before": "2026-10-27T22:00:00Z"
  },
  {
   "day": 12,
   "entry": "H02",
   "kind": "reel",
   "not_before": "2026-10-29T22:00:00Z",
-  "note": "short cut, checked"
+  "note": "short cut, checked",
+  "fixed_date": true
  },
  {
   "day": 13,
   "entry": "H01",
   "kind": "reel",
   "not_before": "2026-10-30T22:00:00Z",
-  "note": "short cut, checked"
+  "note": "short cut, checked",
+  "fixed_date": true
  },
  {
   "day": 14,
   "entry": "H03",
   "kind": "reel",
   "not_before": "2026-10-31T22:00:00Z",
-  "note": "short cut, checked"
+  "note": "short cut, checked",
+  "fixed_date": true
  },
  {
   "day": 8,
   "entry": "025",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-28T18:00:00Z"
+  "not_before": "2026-10-28T22:00:00Z"
  },
  {
   "day": 3,
   "entry": "010",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-01T18:00:00Z"
+  "not_before": "2026-11-01T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "033",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-02T18:00:00Z"
+  "not_before": "2026-11-02T22:00:00Z"
  },
  {
   "day": 3,
   "entry": "016",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-03T18:00:00Z"
+  "not_before": "2026-11-03T22:00:00Z"
  },
  {
   "day": 4,
   "entry": "002",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-04T18:00:00Z"
+  "not_before": "2026-11-04T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "022",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-05T18:00:00Z"
+  "not_before": "2026-11-05T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "019",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-06T18:00:00Z"
+  "not_before": "2026-11-06T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "034",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-07T18:00:00Z"
+  "not_before": "2026-11-07T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "031",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-08T18:00:00Z"
+  "not_before": "2026-11-08T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "038",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-09T18:00:00Z"
+  "not_before": "2026-11-09T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "032",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-10T18:00:00Z"
+  "not_before": "2026-11-10T22:00:00Z"
  },
  {
   "day": 6,
   "entry": "007",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-11T18:00:00Z"
+  "not_before": "2026-11-11T22:00:00Z"
  },
  {
   "day": 6,
   "entry": "011",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-12T18:00:00Z"
+  "not_before": "2026-11-12T22:00:00Z"
  },
  {
   "day": 4,
   "entry": "006",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-13T18:00:00Z"
+  "not_before": "2026-11-13T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "041",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-14T18:00:00Z"
+  "not_before": "2026-11-14T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "037",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-15T18:00:00Z"
+  "not_before": "2026-11-15T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "039",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-16T18:00:00Z"
+  "not_before": "2026-11-16T22:00:00Z"
  },
  {
   "day": 6,
   "entry": "000",
   "kind": "reel",
-  "after": [
-   "003b",
-   "reel"
-  ],
   "note": "short cut, checked",
-  "not_before": "2026-11-17T18:00:00Z"
+  "not_before": "2026-11-17T22:00:00Z"
  },
  {
   "day": 3,
   "entry": "018",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-18T18:00:00Z"
+  "not_before": "2026-11-18T22:00:00Z"
  },
  {
   "day": 2,

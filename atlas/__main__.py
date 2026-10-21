@@ -262,6 +262,7 @@ def cmd_publish(a):
     print("published media id:", _publish(Path(a.folder), a.kind, a.base_url, a.dry_run))
 
 
+SLOT_HOUR = 22   # the daily post, UTC (6 pm New York): first showings arrive in the US evening (docs/DIAGNOSIS.md, 21 Oct)
 REQUESTS = ROOT / "content" / "requests.json"
 URL_RE = re.compile(r"https?://|www\.", re.I)
 LEAD_RE = re.compile(r"^(please|pls|plz|can you|could you|do|chart|map|make|planet|my name is|name|for|try|"
@@ -309,31 +310,31 @@ def first_name_only(name: str) -> str:
 
 
 def queue_request(entry_id: str, by: str, now=None) -> str:
-    """Give a requested planet's Reel the next daily 18:00 UTC slot at least 6 h away (time to render and check it).
-    The short Reels from that slot on move back a day each; fixed nights (Halloween at 22:00) keep their dates.
-    The row is held until the Reel has been checked (scratchpad/room/add_shorts.py --release ID)."""
+    """Give a requested planet's Reel the next daily slot (SLOT_HOUR UTC) at least 6 h away (time to render and check it).
+    The short Reels from that slot on move back a day each; fixed nights (rows marked fixed_date, e.g. Halloween)
+    keep their dates. The row is held until the Reel has been checked (scratchpad/room/add_shorts.py --release ID)."""
     from datetime import datetime, time, timedelta, timezone
     now = now or datetime.now(timezone.utc)
     sched = json.loads(SCHEDULE.read_text())
     posted = {(x["entry"], x["kind"]) for x in (json.loads(LOG.read_text()) if LOG.exists() else [])}
     when = lambda r: datetime.fromisoformat(r["not_before"].replace("Z", "+00:00"))
     live = [r for r in sched if r.get("not_before") and r["kind"] == "reel" and not r.get("hold") and (r["entry"], r["kind"]) not in posted]
-    fixed = {when(r).date() for r in live if when(r).hour != 18}
+    fixed = {when(r).date() for r in live if r.get("fixed_date")}
     day = (now + timedelta(hours=6)).date()
-    if datetime.combine(day, time(18), timezone.utc) < now + timedelta(hours=6):
+    if datetime.combine(day, time(SLOT_HOUR), timezone.utc) < now + timedelta(hours=6):
         day += timedelta(days=1)
     while day in fixed:
         day += timedelta(days=1)
-    slot = datetime.combine(day, time(18), timezone.utc)
-    later = sorted((r for r in live if when(r).hour == 18 and when(r) >= slot), key=when)
+    slot = datetime.combine(day, time(SLOT_HOUR), timezone.utc)
+    later = sorted((r for r in live if not r.get("fixed_date") and when(r) >= slot), key=when)
     d = day
     for r in later:
         d += timedelta(days=1)
         while d in fixed:
             d += timedelta(days=1)
-        r["not_before"] = f"{d.isoformat()}T18:00:00Z"
+        r["not_before"] = f"{d.isoformat()}T{SLOT_HOUR:02d}:00:00Z"
     row = {"day": later[0]["day"] if later else 1, "entry": entry_id, "kind": "reel", "hold": True,
-           "note": f"request from {by}: held until rendered and checked", "not_before": f"{day.isoformat()}T18:00:00Z"}
+           "note": f"request from {by}: held until rendered and checked", "not_before": f"{day.isoformat()}T{SLOT_HOUR:02d}:00:00Z"}
     at = sched.index(later[0]) if later else len(sched)
     sched.insert(at, row)
     SCHEDULE.write_text(json.dumps(sched, indent=1, ensure_ascii=False) + "\n")
