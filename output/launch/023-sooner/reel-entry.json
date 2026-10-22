@@ -170,5 +170,112 @@
     "caption": "Check the date on the café board.\n\nSooner has 3 million people, a 25-hour day and a café on every hill. Its calendar has one extra date, Sometime, which comes round every forty years. Every 'we should get coffee sometime' ever said falls due that morning, and the cafés bake for a year to be ready. Tables booked on the strength of a bad first date are free again by eleven, and nobody mentions it.\n\nI once ended a letter to an old flatmate with 'see you sometime'. She was at a table when I landed. She'd ordered for me.\n\nJapan's tea ceremony has a saying, ichigo ichie: treat each meeting as if it will never come again. On Sooner, it does, every forty years.\n\nHow many 'sometimes' do you owe?"
   },
   "first_comment": "Café owner: 40,112 coffees. 3 proposals. 1 man who came to the wrong sometime.",
-  "_engine": 4
+  "short": {
+    "version": "D",
+    "kicker": "A planet for people who keep saying 'let's catch up'.",
+    "title": "Here, 'sometime'\nis an actual date.",
+    "sub": "",
+    "framing": "medium",
+    "zoom": [
+      1.12,
+      1.2
+    ],
+    "focus": [
+      0.46,
+      0.6
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "water": true,
+      "shore": "left",
+      "horizon": 0.56,
+      "stage": 0.71,
+      "sun_x": 0.42,
+      "sun_y": 0.47,
+      "sun_size": 0.06,
+      "mist": 0.55,
+      "house_x": 0.9,
+      "crowd": 1,
+      "crowd_x": 0.26,
+      "crowd_items": "cup"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "palette": "gold_hour",
+        "water": true,
+        "shore": "left",
+        "horizon": 0.56,
+        "stage": 0.71,
+        "sun_x": 0.42,
+        "sun_y": 0.47,
+        "sun_size": 0.06,
+        "mist": 0.55,
+        "house_x": 0.9,
+        "crowd": 6,
+        "crowd_x": 0.405,
+        "crowd_gap": 0.058,
+        "crowd_items": "cup"
+      }
+    },
+    "beats": [
+      {
+        "text": "Every forty years,\nevery 'coffee sometime?'\nfalls due at once.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.57
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "I once wrote 'see you sometime'\nto an old flatmate.\nShe'd already ordered for me.",
+        "shot": {
+          "framing": "cartographer",
+          "zoom": [
+            2.3,
+            2.4
+          ],
+          "focus": [
+            0.235,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_x": 0.26
+        }
+      }
+    ],
+    "end": "Now I say 'Saturday'.",
+    "end_spec": {
+      "palette": "lilac_dusk",
+      "suns": 0,
+      "crowd": 6,
+      "crowd_x": 0.405,
+      "crowd_gap": 0.058
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "sign": "NEXT:|SATURDAY"
+      }
+    },
+    "end_zoom": [
+      1.16,
+      1.1
+    ],
+    "end_focus": [
+      0.5,
+      0.6
+    ],
+    "name_y": 0.2
+  },
+  "_engine": 5
 }
