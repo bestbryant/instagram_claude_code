@@ -166,5 +166,97 @@
     "end": "Every Willow is worth the wait.",
     "caption": "The man nearest the tree is waiting.\n\nWillow is a lake, 146,000 people and one tree, and every one of them is in the queue for it. When your turn comes you get one afternoon in its shade, as long as you like, and you can't swap it or sell it. Most people pick a wedding, a new baby or a very good book. Gaun's turn came up last spring. His family have stopped asking.\n\nI leaned on it on my first morning. Four hundred years of queue cleared its throat.\n\nIn Japan, offices send their newest recruit out early in cherry-blossom season to hold a spot under the trees for that evening's party. It's called basho-tori. On Willow, the whole planet is holding one spot.\n\nWhat would you save your afternoon for?"
   },
-  "first_comment": "Gaun: Still thinking about it. Don't rush me."
+  "first_comment": "Gaun: Still thinking about it. Don't rush me.",
+  "short": {
+    "version": "D",
+    "kicker": "A planet for people who save the good plates for best.",
+    "title": "One tree. Everyone gets\none afternoon under it.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.04,
+      1.1
+    ],
+    "focus": [
+      0.56,
+      0.52
+    ],
+    "spec": {
+      "cartographer": true,
+      "crowd": 0,
+      "sun_x": 0.64,
+      "sun_y": 0.435,
+      "sun_size": 0.075,
+      "mist": 0.55
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "cartographer": true,
+        "sun_x": 0.64,
+        "sun_y": 0.435,
+        "sun_size": 0.075,
+        "mist": 0.55,
+        "crowd": 8,
+        "crowd_x": 0.283,
+        "crowd_gap": 0.062,
+        "crowd_facing": "right",
+        "crowd_items": "child,book,flower,nothing,book,child,flower,nothing"
+      }
+    },
+    "beats": [
+      {
+        "text": "I stood too close to it.\nFour hundred years of queue\ncleared its throat.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.62,
+            0.52
+          ]
+        },
+        "text_y": 0.165
+      },
+      {
+        "text": "Gaun's turn came in spring.\nHe's still saving it\nfor something special.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.62
+          ],
+          "focus": [
+            0.5,
+            0.53
+          ]
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "snow",
+            "flake_size": 1.5,
+            "suns": 0
+          }
+        },
+        "text_y": 0.165
+      }
+    ],
+    "end": "He's the same with the good plates.",
+    "end_zoom": [
+      1.12,
+      1.04
+    ],
+    "end_focus": [
+      0.55,
+      0.5
+    ],
+    "name_y": 0.22
+  }
 }
