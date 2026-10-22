@@ -153,5 +153,114 @@
     "caption": "Two men outside a barber's, saying nothing.\n\nSefe: 8,000 people, a 30-hour day, no moons, and not one shiny thing. Water is matte, glass is frosted, and eyes don't catch the light, so you never see your own face. You know it the way you know the weather somewhere else: from what people tell you. Parents describe a new baby to itself every night. Portrait painters mainly listen. A good description is the most romantic thing you can give anyone here, and people keep theirs for life.\n\nI asked a stranger what I looked like. She said 'lost'.\n\n(On Earth, still water sends back only about 2% of the light that falls straight onto it. It was enough for Narcissus.)\n\nWhere do you keep the nicest thing anyone's said about you?"
   },
   "first_comment": "Oskar's barber: Every month. Not a word. He tips double.",
-  "_engine": 4
+  "short": {
+    "version": "D",
+    "kicker": "A planet for people who keep every compliment.",
+    "title": "Nobody here knows\nwhat they look like.",
+    "sub": "",
+    "framing": "group",
+    "zoom": [
+      1.52,
+      1.58
+    ],
+    "focus": [
+      0.615,
+      0.565
+    ],
+    "spec": {
+      "cartographer": true,
+      "stage": 0.7,
+      "house": true,
+      "house_x": 0.37,
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.51,
+      "crowd_gap": 0.12,
+      "crowd_facing": "in",
+      "suns": 1,
+      "sun_x": 0.51,
+      "sun_y": 0.515,
+      "sun_size": 0.14,
+      "mist": 0.85,
+      "relief": 0.4
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "cartographer": true,
+        "stage": 0.7,
+        "house": true,
+        "house_x": 0.37,
+        "crowd": 2,
+        "crowd_items": "sing,nothing",
+        "crowd_x": 0.51,
+        "crowd_gap": 0.12,
+        "crowd_facing": "in",
+        "suns": 1,
+        "sun_x": 0.51,
+        "sun_y": 0.515,
+        "sun_size": 0.14,
+        "mist": 0.85,
+        "relief": 0.4
+      }
+    },
+    "beats": [
+      {
+        "text": "Nothing shines, not even eyes.\nSo barbers end every haircut\nwith a long, careful description.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.68,
+            1.78
+          ],
+          "focus": [
+            0.5,
+            0.63
+          ]
+        },
+        "seconds": 4.2,
+        "spec": {
+          "sign": "Barber"
+        }
+      },
+      {
+        "text": "Oskar's wife died last winter.\nHe still comes every month.\nThe barber doesn't say a word.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.56,
+            1.62
+          ],
+          "focus": [
+            0.64,
+            0.6
+          ]
+        },
+        "seconds": 5.2,
+        "spec": {
+          "crowd_items": "cup,cup",
+          "sign": "Barber"
+        },
+        "onset": {
+          "at": 0.6,
+          "spec": {
+            "snow": true,
+            "particles": "snow",
+            "flake_size": 1.0
+          },
+          "motion": "cut"
+        }
+      }
+    ],
+    "end": "He stays the way she said.",
+    "end_zoom": [
+      1.2,
+      1.1
+    ],
+    "end_focus": [
+      0.6,
+      0.63
+    ]
+  },
+  "_engine": 5
 }
