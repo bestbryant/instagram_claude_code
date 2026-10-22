@@ -185,12 +185,20 @@
     "sub": "Nobody here lies.",
     "framing": "sign",
     "zoom": [
-      1.65,
-      1.75
+      1.5,
+      1.56
+    ],
+    "focus": [
+      0.57,
+      0.6
     ],
     "spec": {
       "sign": "DAYS SINCE|ANYONE LIED|11,041",
-      "crowd": 0,
+      "crowd": 4,
+      "crowd_x": 0.44,
+      "crowd_gap": 0.065,
+      "crowd_facing": "right",
+      "crowd_items": "nothing,nothing,nothing,nothing",
       "palette": "teal_night",
       "suns": 0,
       "cartographer": false
@@ -200,8 +208,12 @@
       "spec": {
         "sign": "DAYS SINCE|ANYONE LIED|11,042",
         "crowd": 4,
-        "crowd_x": 0.5,
+        "crowd_x": 0.44,
+        "crowd_gap": 0.065,
         "crowd_facing": "right",
+        "crowd_items": "hand,hand,hand,hand",
+        "palette": "teal_night",
+        "suns": 0,
         "cartographer": false
       },
       "motion": "cut"
@@ -210,15 +222,24 @@
       {
         "text": "Birthday cards just say\n'Older.'",
         "shot": {
-          "framing": "wide",
+          "framing": "sign",
           "zoom": [
-            1.15,
-            1.2
+            1.9,
+            2.0
           ],
           "focus": [
-            0.6,
-            0.6
+            0.64,
+            0.625
           ]
+        },
+        "spec": {
+          "sign": "DEAR DAD,|OLDER.",
+          "crowd": 1,
+          "crowd_x": 0.5,
+          "crowd_facing": "right",
+          "crowd_items": "child",
+          "palette": "gold_hour",
+          "suns": 1
         }
       },
       {
@@ -226,43 +247,76 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            1.9,
-            1.96
+            2.5,
+            2.6
           ],
           "focus": [
             0.42,
-            0.68
+            0.645
           ]
         },
         "spec": {
-          "crowd": 2,
+          "sign": "",
+          "crowd": 3,
           "crowd_x": 0.42,
+          "crowd_gap": 0.045,
           "crowd_facing": "in",
-          "crowd_items": "nothing,spoon",
-          "cartographer": false,
-          "palette": "teal_night",
-          "suns": 0
+          "crowd_items": "spoon,shadow,cup"
         }
       },
       {
         "text": "'Delicious,' he said.",
         "shot": {
-          "framing": "sign",
+          "framing": "wide",
           "zoom": [
-            1.65,
-            1.75
+            1.42,
+            1.48
+          ],
+          "focus": [
+            0.57,
+            0.6
           ]
         },
         "spec": {
-          "sign": "DAYS SINCE|ANYONE LIED|0",
-          "cartographer": false,
-          "palette": "teal_night",
-          "suns": 0
+          "crowd": 3,
+          "crowd_x": 0.45,
+          "crowd_gap": 0.12,
+          "crowd_facing": "in",
+          "crowd_items": "spoon,shadow,sing"
         },
-        "seconds": 2.4
+        "onset": {
+          "at": 0.85,
+          "spec": {
+            "sign": "DAYS SINCE|ANYONE LIED|0",
+            "palette": "crimson"
+          },
+          "motion": "cut"
+        },
+        "seconds": 2.6
       }
     ],
-    "end": "It was not delicious."
+    "end": "It was not delicious.",
+    "end_zoom": [
+      1.8,
+      1.9
+    ],
+    "end_focus": [
+      0.56,
+      0.62
+    ],
+    "name_y": 0.14,
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "crowd_items": "spoon,shadow,nap"
+      },
+      "motion": "cut"
+    },
+    "end_spec": {
+      "crowd_x": 0.53,
+      "crowd_gap": 0.055,
+      "crowd_items": "spoon,shadow,cup"
+    }
   },
   "_engine": 5
 }

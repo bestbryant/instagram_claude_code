@@ -166,5 +166,128 @@
     "end": "She was the view.",
     "caption": "Not everyone is up that hill.\n\nSedge and its moon go round each other the long way. Once in a lifetime the moon comes close enough to see its towns: orchards, washing lines, a great many people waving. Sedge practises for weeks. On the night, every light on the planet goes off so the moon can see the hill, and everyone climbs it with a flask and the children.\n\nI waved until my arm went numb. In fairness to the moon, I wasn't moving.\n\n(On Earth, our own moon drifts about 3.8 centimetres further away every year, and nobody waves it off.)\n\nHave you ever worked the night everyone else was out?"
   },
-  "first_comment": "Dot: Nineteen stops. Nobody. Lovely night for it."
+  "first_comment": "Dot: Nineteen stops. Nobody. Lovely night for it.",
+  "short": {
+    "version": "D",
+    "kicker": "A planet for people who work while everyone's out.",
+    "title": "The moon came close\nenough to wave at.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.02,
+      1.08
+    ],
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "title_y": 0.12,
+    "scrim": 0.28,
+    "spec": {
+      "palette": "lilac_dusk",
+      "layers": 2,
+      "terrain": "dunes",
+      "stage": 0.72,
+      "horizon": 0.56,
+      "water": true,
+      "shore": "left",
+      "mist": 0.75,
+      "bright_stars": true,
+      "spot": "#ffd27a",
+      "cartographer": true,
+      "sign": "",
+      "crowd": 5,
+      "crowd_x": 0.46,
+      "crowd_gap": 0.05,
+      "crowd_facing": "right",
+      "crowd_items": "shadow"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "palette": "lilac_dusk",
+        "layers": 2,
+        "terrain": "dunes",
+        "stage": 0.72,
+        "horizon": 0.56,
+        "water": true,
+        "shore": "left",
+        "mist": 0.75,
+        "bright_stars": true,
+        "spot": "#ffd27a",
+        "cartographer": true,
+        "sign": "",
+        "crowd": 5,
+        "crowd_x": 0.46,
+        "crowd_gap": 0.05,
+        "crowd_facing": "right",
+        "crowd_items": "hand,child,hand,child,hand"
+      }
+    },
+    "beats": [
+      {
+        "text": "Almost everyone waved.\nDot drove the night bus.\nNobody got on.",
+        "text_y": 0.08,
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.1,
+            1.15
+          ],
+          "focus": [
+            0.48,
+            0.52
+          ]
+        },
+        "spec": {
+          "sign": "BUS STOP|NIGHT ROUTE",
+          "crowd": 0,
+          "cartographer": false
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "slide",
+          "spec": {
+            "lanterns": 2
+          }
+        }
+      },
+      {
+        "text": "The moon wasn't watching us.\nIt was watching\nthe only light that moved.",
+        "text_y": 0.08,
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.2,
+            1.25
+          ],
+          "focus": [
+            0.35,
+            0.53
+          ]
+        },
+        "spec": {
+          "moon_window": true
+        },
+        "onset": {
+          "at": 1.4,
+          "motion": "slide",
+          "spec": {
+            "lanterns": 2
+          }
+        }
+      }
+    ],
+    "end": "She was the view.",
+    "end_zoom": [
+      1.08,
+      1.02
+    ],
+    "end_focus": [
+      0.3,
+      0.5
+    ],
+    "name_y": 0.08
+  }
 }
