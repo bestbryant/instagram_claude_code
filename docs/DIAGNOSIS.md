@@ -2,6 +2,25 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-22 daily review (12:12 UTC)
+- **Against the targets (strangers only):**
+  - Max (short-B, 42 h): 127 reached, 40% skip, 46% watched, 0 likes, 0 shares or saves. It meets the skip and watch lines but fails the send line.
+  - Thessaly (short-C, 14 h): 116 reached, 53% skip, 39% watched, 2 likes (1.7 per 100). Those are the first likes on any short.
+  - Followers: still 1.
+- **Slot test:** Thessaly (22:00 UTC) had 113 strangers at 6 h; Max (18:09 UTC) had 0 at 6 h and 14 at 12 h.
+  - This is one pair, so it's not proof, but it is the biggest gap we've measured.
+  - The 22:00 slot stays. The new 14:00 slot alternates between the two formats, so it can't bias the format test.
+- **Changes since yesterday (each logged above):**
+  - All 28 queued shorts are revised so their joke is visible on screen. Twenty-seven are re-rendered and checked; four are left in the queue.
+  - A fourth version, D (the atlas cut), is added. All 8 are released for 23-30 Oct.
+  - Posting goes to 2 a day from 23 Oct.
+  - New props: a dog, armchairs, sleep Zs.
+  - The render queue now survives the idle container, and requests fit a two-slot day.
+- **Next reads:**
+  - Pebb at 22:00 tonight: the first short with a visible punchline. Compare its likes and sends per 100 with Max (0) and Thessaly (1.7).
+  - Sooner at 14:00 tomorrow: the first D. Its 48 h read is 25 Oct; it decides how many new D planets to write for 31 Oct onward.
+  - A second props pass for Will and Luma (the dogs their lines mention) before they post on 9 and 13 Nov.
+
 ## 2026-10-21 23:30 UTC: the joke is only in the text
 - **Symptom:** strangers stay but never act. Max: 127 reached, 40% skip, 46% watched, and 0 likes, 0 shares, 0 saves. Thessaly has just posted.
 - **Looking at the frames, not the numbers:** in Max, Thessaly and Pebb (next) the picture barely changes after the onset, and the punchline is a sentence over the same picture.
