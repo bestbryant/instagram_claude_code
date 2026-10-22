@@ -149,16 +149,21 @@
     "sub": "Gravity is double.\nBy four, they're too heavy.",
     "framing": "medium",
     "zoom": [
-      1.7,
-      1.76
+      1.8,
+      1.86
     ],
     "focus": [
-      0.48,
-      0.6
+      0.5,
+      0.65
     ],
     "spec": {
-      "crowd": 0,
+      "crowd": 5,
+      "crowd_x": 0.5,
+      "crowd_gap": 0.09,
+      "crowd_items": "nothing,nothing,nothing,nothing,nothing",
+      "crowd_facing": "in",
       "sign": "",
+      "house": false,
       "sun_x": 0.6,
       "sun_y": 0.56,
       "cartographer": false
@@ -167,12 +172,17 @@
       "at": 0.4,
       "spec": {
         "crowd": 5,
-        "crowd_x": 0.4,
+        "crowd_x": 0.5,
+        "crowd_gap": 0.09,
+        "crowd_items": "nothing,nothing,child,nothing,nothing",
+        "crowd_facing": "in",
         "sign": "",
+        "house": false,
         "sun_x": 0.6,
         "sun_y": 0.56,
         "cartographer": false
-      }
+      },
+      "motion": "cut"
     },
     "beats": [
       {
@@ -180,53 +190,84 @@
         "shot": {
           "framing": "medium",
           "zoom": [
-            1.85,
-            1.9
+            1.38,
+            1.42
           ],
           "focus": [
-            0.59,
+            0.6,
             0.64
           ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_x": 0.4,
+          "crowd_gap": 0.1,
+          "crowd_items": "child,child,child",
+          "crowd_facing": "right",
+          "sign": "BAKERY",
+          "house": true,
+          "house_x": 0.88
         },
         "seconds": 3.0
       },
       {
         "text": "Tomas picked the sea.\nEight miles. His dad made it.",
         "shot": {
-          "framing": "crowd",
+          "framing": "medium",
           "zoom": [
-            1.8,
-            1.86
+            2.2,
+            2.26
           ],
           "focus": [
-            0.55,
-            0.61
+            0.59,
+            0.65
           ]
         },
         "spec": {
           "palette": "gold_hour",
           "suns": 1,
-          "sun_x": 0.55,
+          "sun_x": 0.62,
           "sun_y": 0.6,
           "sun_size": 0.06,
           "water": false,
           "shore": "none",
           "crowd": 1,
-          "crowd_x": 0.55,
+          "crowd_x": 0.47,
           "crowd_items": "child",
-          "crowd_facing": "left",
+          "crowd_facing": "right",
           "house": false,
-          "sign": "",
+          "sign": "SEA|8 MI",
           "cartographer": false
-        }
+        },
+        "onset": {
+          "at": 0.8,
+          "spec": {
+            "sign": "SEA|2 MI",
+            "crowd_items": "child_asleep",
+            "crowd_x": 0.53,
+            "palette": "crimson",
+            "sun_y": 0.68
+          },
+          "motion": "cut"
+        },
+        "seconds": 3.2
       }
     ],
     "end": "Tomas was asleep by mile six.",
     "end_spec": {
+      "sign": "",
       "water": true,
-      "shore": "left",
-      "crowd_items": "child_asleep"
+      "shore": "left"
     },
+    "end_focus": [
+      0.57,
+      0.67
+    ],
+    "end_zoom": [
+      2.8,
+      2.7
+    ],
+    "name_y": 0.17,
     "scrim": 0.6
   }
 }

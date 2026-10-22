@@ -131,12 +131,12 @@
     "sub": "Probably in a meeting.",
     "framing": "crowd",
     "zoom": [
-      1.35,
-      1.4
+      1.4,
+      1.45
     ],
     "focus": [
-      0.46,
-      0.64
+      0.44,
+      0.62
     ],
     "spec": {
       "crowd": 0,
@@ -145,9 +145,14 @@
     "onset": {
       "at": 0.4,
       "spec": {
-        "crowd": 6,
-        "figure": false
-      }
+        "crowd": 4,
+        "figure": false,
+        "crowd_x": 0.455,
+        "crowd_gap": 0.09,
+        "crowd_facing": "out",
+        "crowd_items": "book,kettle,cup,book,fish"
+      },
+      "motion": "rise"
     },
     "beats": [
       {
@@ -155,13 +160,21 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            2.0,
-            2.1
+            1.8,
+            1.85
           ],
           "focus": [
-            0.5,
-            0.66
+            0.607,
+            0.63
           ]
+        },
+        "onset": {
+          "at": 1.3,
+          "spec": {
+            "crowd": 5,
+            "crowd_x": 0.5
+          },
+          "motion": "rise"
         }
       },
       {
@@ -169,21 +182,51 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            1.35,
-            1.4
+            1.5,
+            1.55
           ],
           "focus": [
-            0.46,
-            0.64
+            0.65,
+            0.62
           ]
         },
         "spec": {
-          "crowd": 0,
-          "figure": false
+          "crowd": 5,
+          "crowd_x": 0.5,
+          "crowd_items": "book,kettle,cup,book,echo"
+        },
+        "onset": {
+          "at": 0.9,
+          "spec": {
+            "crowd": 4,
+            "crowd_x": 0.455,
+            "crowd_items": "book,kettle,cup,book"
+          },
+          "motion": "cut"
         }
       }
     ],
-    "end": "Except me. Nobody says mine."
+    "end": "Except me. Nobody says mine.",
+    "end_spec": {
+      "crowd": 4,
+      "crowd_x": 0.455,
+      "crowd_items": "book,kettle,cup,book"
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "crowd": 0
+      },
+      "motion": "cut"
+    },
+    "end_focus": [
+      0.26,
+      0.6
+    ],
+    "end_zoom": [
+      1.75,
+      1.8
+    ]
   },
   "_engine": 5
 }

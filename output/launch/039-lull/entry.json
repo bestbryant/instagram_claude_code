@@ -213,26 +213,36 @@
     "sub": "New baby? It moves house.",
     "framing": "medium",
     "zoom": [
-      1.8,
-      1.86
+      2.05,
+      2.1
     ],
     "focus": [
-      0.27,
-      0.608
+      0.6,
+      0.625
     ],
     "spec": {
-      "sun_x": 0.46,
-      "sun_y": 0.56,
-      "sun_size": 0.06,
-      "crowd": 0
+      "relief": 0.2,
+      "house_x": 0.72,
+      "sun_x": 0.72,
+      "sun_y": 0.59,
+      "sun_size": 0.05,
+      "crowd": 1,
+      "crowd_items": "child",
+      "crowd_x": 0.48,
+      "crowd_facing": "left"
     },
     "onset": {
       "at": 0.4,
       "spec": {
-        "sun_x": 0.18,
-        "sun_y": 0.575,
-        "sun_size": 0.06,
-        "crowd": 0
+        "relief": 0.2,
+        "house_x": 0.72,
+        "sun_x": 0.48,
+        "sun_y": 0.59,
+        "sun_size": 0.05,
+        "crowd": 1,
+        "crowd_items": "child",
+        "crowd_x": 0.48,
+        "crowd_facing": "left"
       },
       "motion": "cut"
     },
@@ -242,22 +252,24 @@
         "shot": {
           "framing": "medium",
           "zoom": [
-            1.8,
-            1.86
+            2.15,
+            2.2
           ],
           "focus": [
-            0.27,
-            0.608
+            0.39,
+            0.63
           ]
         },
-        "spec": {
-          "sun_x": 0.18,
-          "sun_y": 0.575,
-          "sun_size": 0.06,
-          "crowd": 1,
-          "crowd_items": "child",
-          "crowd_x": 0.315,
-          "crowd_facing": "left"
+        "onset": {
+          "at": 1.3,
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child_asleep,child",
+            "crowd_x": 0.39,
+            "crowd_gap": 0.18,
+            "sun_x": 0.3
+          },
+          "motion": "auto"
         }
       },
       {
@@ -265,25 +277,40 @@
         "shot": {
           "framing": "medium",
           "zoom": [
-            1.8,
-            1.86
+            2.4,
+            2.45
           ],
           "focus": [
-            0.27,
-            0.608
+            0.39,
+            0.641
           ]
         },
         "spec": {
-          "sun_x": 0.18,
-          "sun_y": 0.575,
-          "sun_size": 0.06,
           "crowd": 2,
-          "crowd_items": "child,child_asleep",
-          "crowd_x": 0.36,
-          "crowd_facing": "left"
+          "crowd_items": "child,child",
+          "crowd_x": 0.39,
+          "crowd_gap": 0.12,
+          "crowd_facing": "in",
+          "sun_x": 0.37
         }
       }
     ],
-    "end": "She's usually asleep."
+    "end": "She's usually asleep.",
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "crowd_items": "child_asleep,child"
+      },
+      "motion": "cut"
+    },
+    "end_focus": [
+      0.36,
+      0.653
+    ],
+    "end_zoom": [
+      2.6,
+      2.7
+    ],
+    "name_y": 0.07
   }
 }
