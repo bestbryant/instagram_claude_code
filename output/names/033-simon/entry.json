@@ -196,18 +196,28 @@
     "sub": "You've just landed on Simon.",
     "framing": "crowd",
     "zoom": [
-      1.9,
-      2.0
+      2.0,
+      2.1
     ],
     "spec": {
-      "crowd_items": "nothing,nothing,child,nothing,nothing",
-      "cartographer": false
+      "crowd": 5,
+      "crowd_x": 0.5,
+      "crowd_gap": 0.075,
+      "house_x": 0.24,
+      "cartographer": false,
+      "relief": 0.3,
+      "crowd_items": "nothing,nothing,child,nothing,nothing"
     },
     "onset": {
       "at": 0.4,
       "spec": {
-        "crowd_items": "fish,fish,child,fish,fish",
-        "cartographer": false
+        "crowd": 5,
+        "crowd_x": 0.5,
+        "crowd_gap": 0.075,
+        "house_x": 0.24,
+        "cartographer": false,
+        "relief": 0.3,
+        "crowd_items": "hand,hand,child,hand,hand"
       }
     },
     "beats": [
@@ -220,8 +230,8 @@
             3.0
           ],
           "focus": [
-            0.4,
-            0.66
+            0.5,
+            0.68
           ]
         }
       },
@@ -230,13 +240,18 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            1.6,
-            1.65
+            2.55,
+            2.65
+          ],
+          "focus": [
+            0.38,
+            0.66
           ]
         },
         "spec": {
           "palette": "lilac_dusk",
-          "sun_y": 0.6
+          "suns": 0,
+          "crowd_facing": "left"
         }
       },
       {
@@ -244,18 +259,57 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            1.6,
-            1.65
+            1.85,
+            1.9
+          ],
+          "focus": [
+            0.45,
+            0.635
           ]
         },
         "spec": {
-          "palette": "teal_night",
+          "palette": "lilac_dusk",
           "suns": 0,
-          "crowd_items": "fish,fish,child_asleep,fish,fish"
+          "crowd_facing": "left"
+        },
+        "onset": {
+          "at": 0.8,
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "big_moon": true,
+            "bright_stars": true,
+            "crowd_items": "hand,hand,child_asleep,hand,hand"
+          },
+          "motion": "cut"
         }
       }
     ],
     "end": "He'll say it in the morning.",
+    "end_focus": [
+      0.45,
+      0.635
+    ],
+    "end_zoom": [
+      1.9,
+      1.95
+    ],
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "palette": "crimson",
+        "suns": 1,
+        "sun_x": 0.52,
+        "sun_y": 0.595,
+        "sun_size": 0.06,
+        "big_moon": false,
+        "moons": 0,
+        "stars": 0,
+        "bright_stars": false,
+        "mist": 0
+      }
+    },
+    "name_y": 0.15,
     "scrim": 0.65
   }
 }
