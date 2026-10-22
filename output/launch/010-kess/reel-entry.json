@@ -155,22 +155,24 @@
     "sub": "For anyone who's stopped\nnoticing their view.",
     "framing": "medium",
     "zoom": [
-      1.45,
-      1.52
+      1.22,
+      1.3
     ],
     "focus": [
-      0.48,
-      0.58
+      0.45,
+      0.6
     ],
     "spec": {
       "aurora": false,
-      "cartographer": false
+      "cartographer": false,
+      "horizon": 0.72
     },
     "onset": {
       "at": 0.4,
       "spec": {
         "aurora": true,
-        "cartographer": false
+        "cartographer": false,
+        "horizon": 0.72
       },
       "motion": "cut"
     },
@@ -180,12 +182,12 @@
         "shot": {
           "framing": "left",
           "zoom": [
-            1.65,
+            1.7,
             1.8
           ],
           "focus": [
-            "x",
-            0.36
+            0.33,
+            0.6
           ]
         }
       },
@@ -194,21 +196,51 @@
         "shot": {
           "framing": "medium",
           "zoom": [
-            1.45,
-            1.52
+            1.12,
+            1.18
           ],
           "focus": [
             0.48,
-            0.58
+            0.54
           ]
         },
         "spec": {
-          "aurora": false,
-          "stars": 7.0
+          "crowd": 6,
+          "crowd_items": "walk",
+          "crowd_x": 0.43,
+          "crowd_gap": 0.075,
+          "crowd_facing": "right"
+        },
+        "onset": {
+          "at": 0.9,
+          "spec": {
+            "aurora": false,
+            "stars": 8.4,
+            "bright_stars": true
+          },
+          "motion": "cut"
         }
       }
     ],
-    "end": "That night, everyone was a tourist."
+    "end": "That night, everyone was a tourist.",
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "crowd_items": "hand"
+      },
+      "motion": "cut"
+    },
+    "end_focus": [
+      0.385,
+      0.6
+    ],
+    "end_zoom": [
+      1.8,
+      1.74
+    ],
+    "name_y": 0.1,
+    "title_y": 0.12,
+    "scrim": 0.36
   },
   "_engine": 5
 }
