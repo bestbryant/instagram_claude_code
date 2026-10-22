@@ -170,7 +170,8 @@
       "at": 0.4,
       "spec": {
         "palette": "rose_fog",
-        "suns": 0
+        "suns": 0,
+        "mist": 0.8
       },
       "motion": "cut"
     },
@@ -180,38 +181,92 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            2.0,
-            2.06
+            1.95,
+            2.0
           ],
           "focus": [
-            0.36,
-            0.66
+            0.4,
+            0.65
           ]
         },
         "spec": {
+          "palette": "cobalt_noon",
+          "mist": 0.4,
           "crowd": 2,
-          "crowd_x": 0.36,
-          "crowd_items": "nothing,cup",
-          "crowd_facing": "in"
+          "crowd_x": 0.4,
+          "crowd_gap": 0.23,
+          "crowd_items": "cup,kettle",
+          "crowd_facing": "in",
+          "house_x": 0.9
+        },
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "palette": "rose_fog",
+            "mist": 0.8,
+            "crowd_items": "sing,kettle",
+            "spot": "#e9b434"
+          },
+          "motion": "cut"
         }
       },
       {
         "text": "Then the newsreader signs off:\n'Love you, bye.'",
         "shot": {
-          "framing": "house",
+          "framing": "crowd",
           "zoom": [
-            1.8,
-            1.86
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.7,
+            0.67
           ]
         },
         "spec": {
-          "palette": "crimson",
-          "suns": 1,
-          "sun_y": 0.6
+          "crowd": 2,
+          "crowd_x": 0.36,
+          "crowd_gap": 0.72,
+          "crowd_items": "nothing,book",
+          "crowd_facing": "right",
+          "sign": "ON AIR"
+        },
+        "onset": {
+          "at": 0.8,
+          "spec": {
+            "palette": "crimson",
+            "crowd_items": "nothing,hand"
+          },
+          "motion": "cut"
         }
       }
     ],
-    "end": "Four million people say it back."
+    "end": "Four million people say it back.",
+    "end_spec": {
+      "crowd": 5,
+      "crowd_x": 0.32,
+      "crowd_gap": 0.2,
+      "crowd_items": "nothing,nothing,nothing,nothing,hand",
+      "crowd_facing": "right",
+      "house": false,
+      "spot": "#e9b434",
+      "mist": 0.3
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "crowd_items": "sing,sing,sing,sing,hand"
+      }
+    },
+    "end_zoom": [
+      1.2,
+      1.16
+    ],
+    "end_focus": [
+      0.43,
+      0.64
+    ],
+    "name_y": 0.25
   },
   "_engine": 5
 }

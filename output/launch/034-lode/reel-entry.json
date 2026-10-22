@@ -151,25 +151,31 @@
     "sub": "To wherever you were born.",
     "framing": "medium",
     "zoom": [
-      1.75,
-      1.8
+      1.55,
+      1.6
     ],
     "focus": [
-      0.5,
-      0.66
+      0.62,
+      0.64
     ],
     "spec": {
       "crowd": 0,
-      "cartographer": false
+      "cartographer": false,
+      "house_x": 0.86,
+      "trees": "none"
     },
     "onset": {
       "at": 0.4,
       "spec": {
-        "crowd": 8,
-        "crowd_x": 0.775,
-        "crowd_items": "flower,nothing,nothing,flower",
-        "crowd_facing": "left",
-        "cartographer": false
+        "crowd": 5,
+        "crowd_x": 0.5,
+        "crowd_gap": 0.048,
+        "crowd_items": "child,child,child,child,child",
+        "crowd_facing": "right",
+        "house_x": 0.86,
+        "cartographer": false,
+        "sign": "HOME",
+        "trees": "none"
       }
     },
     "beats": [
@@ -182,7 +188,7 @@
             1.9
           ],
           "focus": [
-            0.36,
+            0.78,
             0.68
           ]
         },
@@ -191,7 +197,9 @@
           "palette": "sepia",
           "particles": "none",
           "snow": false,
-          "moons": 0
+          "moons": 0,
+          "sign": "HOSPITAL|MATERNITY",
+          "trees": "pines"
         }
       },
       {
@@ -203,11 +211,31 @@
             1.9
           ],
           "focus": [
-            0.36,
+            0.78,
             0.68
           ]
         },
-        "seconds": 1.9
+        "seconds": 1.9,
+        "spec": {
+          "crowd": 0,
+          "palette": "sepia",
+          "particles": "none",
+          "snow": false,
+          "moons": 0,
+          "sign": "HOSPITAL|MATERNITY",
+          "trees": "pines"
+        },
+        "onset": {
+          "at": 0.45,
+          "spec": {
+            "palette": "violet_ice",
+            "particles": "snow",
+            "snow": true,
+            "moons": 1,
+            "sign": "SUPERMARKET"
+          },
+          "motion": "cut"
+        }
       },
       {
         "text": "At Christmas, thirty thousand\ncome home to aisle three.",
@@ -218,13 +246,52 @@
             1.36
           ],
           "focus": [
-            0.6,
+            0.53,
             0.64
           ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_x": 0.4,
+          "crowd_items": "walk",
+          "crowd_facing": "right",
+          "sign": "SUPERMARKET|AISLE 3",
+          "trees": "none"
+        },
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "crowd": 10,
+            "crowd_x": 0.26,
+            "crowd_gap": 0.06,
+            "crowd_items": "child,child,walk,child,child,walk,child,child,walk,child",
+            "crowd_facing": "right"
+          }
         }
       }
     ],
-    "end": "'Welcome home! Need a bag?'"
+    "end": "'Welcome home! Need a bag?'",
+    "end_spec": {
+      "sign": "SUPERMARKET|AISLE 3",
+      "crowd_x": 0.34,
+      "crowd_gap": 0.048
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "sign": "WELCOME HOME!|BAGS 10p"
+      },
+      "motion": "cut"
+    },
+    "end_zoom": [
+      1.55,
+      1.6
+    ],
+    "end_focus": [
+      0.62,
+      0.62
+    ],
+    "name_y": 0.2
   },
   "_engine": 5
 }
