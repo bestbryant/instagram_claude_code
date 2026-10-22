@@ -68,7 +68,7 @@
   "entry": "014",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-24T22:00:00Z"
+  "not_before": "2026-10-24T14:00:00Z"
  },
  {
   "day": 8,
@@ -82,7 +82,7 @@
   "entry": "028",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-26T22:00:00Z"
+  "not_before": "2026-10-26T14:00:00Z"
  },
  {
   "day": 5,
@@ -120,7 +120,7 @@
   "entry": "025",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-10-28T22:00:00Z"
+  "not_before": "2026-10-28T14:00:00Z"
  },
  {
   "day": 3,
@@ -253,14 +253,16 @@
   "entry": "003",
   "kind": "reel",
   "hold": true,
-  "note": "two-parter: held, almost every viewer arrives cold (docs/RESEARCH.md)"
+  "note": "atlas cut (version D): held until rendered and checked",
+  "not_before": "2026-10-30T14:00:00Z"
  },
  {
   "day": 4,
   "entry": "017",
   "kind": "reel",
   "hold": true,
-  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
+  "note": "atlas cut (version D): held until rendered and checked",
+  "not_before": "2026-10-27T14:00:00Z"
  },
  {
   "day": 5,
@@ -279,42 +281,48 @@
   "entry": "026",
   "kind": "reel",
   "hold": true,
-  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
+  "note": "atlas cut (version D): held until rendered and checked",
+  "not_before": "2026-10-26T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "029",
   "kind": "reel",
   "hold": true,
-  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
+  "note": "atlas cut (version D): held until rendered and checked",
+  "not_before": "2026-10-25T14:00:00Z"
  },
  {
   "day": 8,
   "entry": "030",
   "kind": "reel",
   "hold": true,
-  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
+  "note": "atlas cut (version D): held until rendered and checked",
+  "not_before": "2026-10-28T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "024",
   "kind": "reel",
   "hold": true,
-  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
+  "note": "atlas cut (version D): held until rendered and checked",
+  "not_before": "2026-10-24T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "023",
   "kind": "reel",
   "hold": true,
-  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
+  "note": "atlas cut (version D): held until rendered and checked",
+  "not_before": "2026-10-23T14:00:00Z"
  },
  {
   "day": 8,
   "entry": "042",
   "kind": "reel",
   "hold": true,
-  "note": "34 s story cut held: waiting for its short, hook-first re-cut (docs/RESEARCH.md)"
+  "note": "atlas cut (version D): held until rendered and checked",
+  "not_before": "2026-10-29T14:00:00Z"
  },
  {
   "day": 7,
