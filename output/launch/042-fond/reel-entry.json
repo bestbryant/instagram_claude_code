@@ -1,0 +1,312 @@
+{
+  "id": "042",
+  "name": "Fond",
+  "subtitle": "where 'I love you' works once",
+  "story": "On Fond, 'I love you' only works once, so nobody wastes it. Instead they say 'Take a coat', or 'Text me when you're home'. Kath spent hers on Sam before he could talk. He doesn't remember it. She's said 'Take a coat' every day since. Last winter, at the station, Sam left for the city, and spent his on her. She said, 'Take a coat.'",
+  "facts": {
+    "Day": "23 hours",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "880,000"
+  },
+  "hook": "A planet for people who hear 'Take a coat' and know what it means.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#mum"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.62,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 0.8,
+    "islands": 0,
+    "trees": "pines",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "snow",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "MIND HOW|YOU GO",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.38,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "stage": 0.74
+  },
+  "cover": "'I love you' only works once here.",
+  "episode": {
+    "opener": "On Fond, 'I love you'\nonly works once.",
+    "beats": [
+      {
+        "text": "Nobody wastes it.",
+        "shot": "sky"
+      },
+      {
+        "text": "Instead, they say\n'Take a coat.'",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ]
+        },
+        "spec": {
+          "crowd": 5,
+          "crowd_items": "nothing",
+          "crowd_x": 0.42,
+          "crowd_facing": ""
+        }
+      },
+      {
+        "text": "'Text me when you're home.'\n'I saved you the crispy bit.'",
+        "shot": {
+          "framing": "left",
+          "zoom": [
+            1.8,
+            1.9
+          ],
+          "focus": [
+            "x",
+            0.25
+          ]
+        }
+      },
+      {
+        "text": "Kath spent hers on Sam\nbefore he could talk.",
+        "shot": "house",
+        "spec": {
+          "palette": "sepia",
+          "snow": false,
+          "particles": "none"
+        },
+        "note": "the past, in sepia: the same lit window"
+      },
+      {
+        "text": "He doesn't remember.\nShe's said 'Take a coat'\never since.",
+        "shot": "house",
+        "note": "identical camera to the sepia beat; the present"
+      },
+      {
+        "text": "Last winter, at the station,\nSam left for the city.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.48
+          ],
+          "focus": [
+            0.55,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_facing": "right"
+        },
+        "note": "side by side, facing the way the train goes"
+      },
+      {
+        "text": "He spent his on her.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.48
+          ],
+          "focus": [
+            0.55,
+            0.6
+          ]
+        },
+        "spec": {
+          "particles": "none"
+        },
+        "note": "turn: identical camera; the snow stops as he says it (they also turn to face each other)"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.48,
+            1.54
+          ],
+          "focus": [
+            0.55,
+            0.6
+          ]
+        },
+        "spec": {
+          "particles": "none"
+        },
+        "seconds": 3.0,
+        "note": "hold on the platform"
+      }
+    ],
+    "end": "She said, 'Take a coat.'",
+    "caption": "Even the station sign is saying it.\n\nFond is 880,000 people, long winters and a great deal of knitwear. Here, 'I love you' works once: say it a second time and it comes out as a cough. So everyone keeps theirs, and the language has filled up with stand-ins: 'Mind the step', 'Ring your nan', 'There's lasagne in the freezer'. Teenagers find all of it unbearable, then grow up and say every word.\n\nEleven strangers told me to take a coat on my first day. I've never felt so loved.\n\n(The story goes that plenty of Earth families never say it out loud either. In Chinese, asking whether you've eaten has been doing the job for generations. On Fond, it's mostly coats.)\n\nWhat's your family's 'Take a coat'?"
+  },
+  "first_comment": "Sam texted from the city: 'Got here. Wearing it.'",
+  "short": {
+    "version": "D",
+    "kicker": "A planet for people who hear 'Take a coat' and know.",
+    "title": "'I love you' only\nworks once here.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.36,
+      1.42
+    ],
+    "focus": [
+      0.5,
+      0.56
+    ],
+    "spec": {
+      "stage": 0.7,
+      "suns": 1,
+      "sun_x": 0.62,
+      "sun_y": 0.47,
+      "sun_size": 0.07,
+      "mist": 0.6,
+      "house_x": 0.2,
+      "crowd": 2,
+      "crowd_x": 0.42,
+      "crowd_gap": 0.23,
+      "crowd_facing": "in",
+      "crowd_items": "nothing,nothing",
+      "cartographer": true,
+      "sign": "",
+      "palette": "lilac_dusk"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "stage": 0.7,
+        "suns": 1,
+        "sun_x": 0.62,
+        "sun_y": 0.47,
+        "sun_size": 0.07,
+        "mist": 0.6,
+        "house_x": 0.2,
+        "crowd": 2,
+        "crowd_x": 0.42,
+        "crowd_gap": 0.23,
+        "crowd_facing": "in",
+        "crowd_items": "sing,nothing",
+        "cartographer": true,
+        "sign": "",
+        "palette": "lilac_dusk"
+      }
+    },
+    "beats": [
+      {
+        "text": "Kath spent hers on Sam\nbefore he could talk.\nHe gets 'Take a coat' instead.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.38,
+            0.59
+          ]
+        },
+        "spec": {
+          "palette": "sepia",
+          "sign": "",
+          "particles": "none",
+          "cartographer": false,
+          "crowd_x": 0.42,
+          "crowd_gap": 0.26,
+          "crowd_items": "nothing,child",
+          "sun_x": 0.5,
+          "sun_y": 0.5,
+          "spot": "#e9b434"
+        },
+        "onset": {
+          "at": 0.8,
+          "motion": "rise",
+          "spec": {
+            "crowd_items": "sing,child"
+          }
+        }
+      },
+      {
+        "text": "When Sam left for the city,\nhe spent his on her.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.36,
+            1.42
+          ],
+          "focus": [
+            0.55,
+            0.57
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "particles": "none",
+          "crowd_items": "nothing,nothing",
+          "sign": "MIND HOW|YOU GO"
+        },
+        "onset": {
+          "at": 1.1,
+          "motion": "rise",
+          "spec": {
+            "crowd_items": "nothing,sing"
+          }
+        }
+      }
+    ],
+    "end": "She said, 'Take a coat.'",
+    "end_onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "sing,nothing",
+        "particles": "snow",
+        "palette": "lilac_dusk"
+      }
+    },
+    "end_zoom": [
+      1.2,
+      1.14
+    ],
+    "end_focus": [
+      0.55,
+      0.53
+    ],
+    "name_y": 0.2,
+    "end_spec": {}
+  },
+  "_engine": 5
+}
