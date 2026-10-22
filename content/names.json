@@ -3210,7 +3210,11 @@
               "suns": 1,
               "sun_x": 0.5,
               "sun_y": 0.5,
-              "sign": "SUNRISE|WANTED BY|1 SPANIEL"
+              "sign": "SUNRISE|WANTED BY|1 SPANIEL",
+              "crowd": 1,
+              "crowd_x": 0.5,
+              "crowd_items": "dog",
+              "crowd_facing": "left"
             },
             "motion": "cut"
           }
@@ -3231,7 +3235,13 @@
           "sign": "SUNRISE|WANTED BY|1 SPANIEL|NAMED WILL"
         }
       },
-      "name_y": 0.12
+      "name_y": 0.12,
+      "end_spec": {
+        "crowd": 1,
+        "crowd_x": 0.5,
+        "crowd_items": "dog",
+        "crowd_facing": "left"
+      }
     }
   },
   {

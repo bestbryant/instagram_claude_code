@@ -1384,10 +1384,11 @@
           },
           "spec": {
             "gag": "",
-            "crowd": 1,
-            "crowd_items": "book",
+            "crowd": 2,
+            "crowd_items": "book,dog",
             "crowd_x": 0.55,
-            "crowd_facing": "left"
+            "crowd_facing": "left",
+            "crowd_gap": 0.1
           }
         },
         {
@@ -1405,10 +1406,11 @@
           },
           "spec": {
             "gag": "",
-            "crowd": 1,
-            "crowd_items": "nothing",
+            "crowd": 2,
+            "crowd_items": "nothing,dog",
             "crowd_x": 0.55,
-            "crowd_facing": "left"
+            "crowd_facing": "left",
+            "crowd_gap": 0.1
           },
           "onset": {
             "at": 0.9,
@@ -1423,7 +1425,9 @@
       "end": "Biscuit hasn't written back.",
       "end_spec": {
         "palette": "polar_night",
-        "crowd_items": "sit"
+        "crowd_items": "sit,dog",
+        "crowd": 2,
+        "crowd_gap": 0.1
       },
       "end_onset": {
         "at": 0.5,
