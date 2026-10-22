@@ -603,6 +603,123 @@
       ],
       "end": "I'll be there on Thursday.",
       "caption": "Those rings in the air are a shout.\n\nHush is a long, snowed-in valley: 9,300 people, a 26-hour day, no moons, and sound that crawls along slower than you can walk. A shout takes five days to cross it and arrives quieter, usually after everyone has moved on. On a still day you can stand at the bottom and hear last week: dogs, a wedding, someone practising the trumpet badly. Shouts must be signed, because five days later it's hard to tell who started it.\n\nHe's taken a flask and a blanket out into the snow. Nobody can talk him out of it in under five days. Half the town is taking Thursday afternoon off to listen. So am I. Part two goes up on Thursday, when it lands.\n\nWhat do you think she said?"
+    },
+    "short": {
+      "version": "D",
+      "kicker": "A planet for people who reply to texts five days late.",
+      "title": "Shouts take five days\nto cross the valley.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.2,
+        1.26
+      ],
+      "focus": [
+        0.5,
+        0.58
+      ],
+      "spec": {
+        "stage": 0.7,
+        "horizon": 0.5,
+        "aurora": true,
+        "house_x": 0.5,
+        "cartographer": true,
+        "gag": "",
+        "crowd": 3,
+        "crowd_x": 0.2,
+        "crowd_gap": 0.6,
+        "crowd_items": "nothing",
+        "bright_stars": true
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "stage": 0.7,
+          "horizon": 0.5,
+          "aurora": true,
+          "house_x": 0.5,
+          "cartographer": true,
+          "gag": "slow_shout",
+          "bright_stars": true
+        }
+      },
+      "beats": [
+        {
+          "text": "In March he shouted,\n‘Will you marry me?’\nShe took seven months.",
+          "shot": {
+            "framing": "right",
+            "zoom": [
+              1.5,
+              1.58
+            ],
+            "focus": [
+              0.62,
+              0.62
+            ]
+          },
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "palette": "gold_hour",
+              "snow": false,
+              "particles": "none",
+              "aurora": false,
+              "daisies": 40,
+              "gag": "",
+              "crowd": 1,
+              "crowd_x": 0.8,
+              "crowd_facing": "left",
+              "crowd_items": "sit",
+              "cartographer": false
+            }
+          }
+        },
+        {
+          "text": "She walked over, and got there\nbefore her answer did:\n‘Yes.’ Then, faintly, ‘obviously.’",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.38,
+              1.44
+            ],
+            "focus": [
+              0.56,
+              0.62
+            ]
+          },
+          "spec": {
+            "gag": "",
+            "house": false,
+            "crowd": 2,
+            "crowd_x": 0.58,
+            "crowd_gap": 0.075,
+            "crowd_facing": "right",
+            "crowd_items": "nothing,echo"
+          },
+          "onset": {
+            "at": 2.9,
+            "motion": "rise",
+            "spec": {
+              "crowd_items": "echo,echo"
+            }
+          }
+        }
+      ],
+      "end": "The vows go out five days early.",
+      "end_spec": {
+        "crowd_items": "nothing,sing"
+      },
+      "end_zoom": [
+        1.18,
+        1.12
+      ],
+      "end_focus": [
+        0.5,
+        0.56
+      ],
+      "name_y": 0.2
     }
   },
   {
@@ -2599,7 +2716,116 @@
       "end": "He stays the way she said.",
       "caption": "Two men outside a barber's, saying nothing.\n\nSefe: 8,000 people, a 30-hour day, no moons, and not one shiny thing. Water is matte, glass is frosted, and eyes don't catch the light, so you never see your own face. You know it the way you know the weather somewhere else: from what people tell you. Parents describe a new baby to itself every night. Portrait painters mainly listen. A good description is the most romantic thing you can give anyone here, and people keep theirs for life.\n\nI asked a stranger what I looked like. She said 'lost'.\n\n(On Earth, still water sends back only about 2% of the light that falls straight onto it. It was enough for Narcissus.)\n\nWhere do you keep the nicest thing anyone's said about you?"
     },
-    "first_comment": "Oskar's barber: Every month. Not a word. He tips double."
+    "first_comment": "Oskar's barber: Every month. Not a word. He tips double.",
+    "short": {
+      "version": "D",
+      "kicker": "A planet for people who keep every compliment.",
+      "title": "Nobody here knows\nwhat they look like.",
+      "sub": "",
+      "framing": "group",
+      "zoom": [
+        1.52,
+        1.58
+      ],
+      "focus": [
+        0.615,
+        0.565
+      ],
+      "spec": {
+        "cartographer": true,
+        "stage": 0.7,
+        "house": true,
+        "house_x": 0.37,
+        "crowd": 2,
+        "crowd_items": "nothing,nothing",
+        "crowd_x": 0.51,
+        "crowd_gap": 0.12,
+        "crowd_facing": "in",
+        "suns": 1,
+        "sun_x": 0.51,
+        "sun_y": 0.515,
+        "sun_size": 0.14,
+        "mist": 0.85,
+        "relief": 0.4
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "cartographer": true,
+          "stage": 0.7,
+          "house": true,
+          "house_x": 0.37,
+          "crowd": 2,
+          "crowd_items": "sing,nothing",
+          "crowd_x": 0.51,
+          "crowd_gap": 0.12,
+          "crowd_facing": "in",
+          "suns": 1,
+          "sun_x": 0.51,
+          "sun_y": 0.515,
+          "sun_size": 0.14,
+          "mist": 0.85,
+          "relief": 0.4
+        }
+      },
+      "beats": [
+        {
+          "text": "Nothing shines, not even eyes.\nSo barbers end every haircut\nwith a long, careful description.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.68,
+              1.78
+            ],
+            "focus": [
+              0.5,
+              0.63
+            ]
+          },
+          "seconds": 4.2,
+          "spec": {
+            "sign": "Barber"
+          }
+        },
+        {
+          "text": "Oskar's wife died last winter.\nHe still comes every month.\nThe barber doesn't say a word.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.56,
+              1.62
+            ],
+            "focus": [
+              0.64,
+              0.6
+            ]
+          },
+          "seconds": 5.2,
+          "spec": {
+            "crowd_items": "cup,cup",
+            "sign": "Barber"
+          },
+          "onset": {
+            "at": 0.6,
+            "spec": {
+              "snow": true,
+              "particles": "snow",
+              "flake_size": 1.0
+            },
+            "motion": "cut"
+          }
+        }
+      ],
+      "end": "He stays the way she said.",
+      "end_zoom": [
+        1.2,
+        1.1
+      ],
+      "end_focus": [
+        0.6,
+        0.63
+      ]
+    }
   },
   {
     "id": "028",
@@ -3363,7 +3589,130 @@
       "end": "She was the view.",
       "caption": "Not everyone is up that hill.\n\nSedge and its moon go round each other the long way. Once in a lifetime the moon comes close enough to see its towns: orchards, washing lines, a great many people waving. Sedge practises for weeks. On the night, every light on the planet goes off so the moon can see the hill, and everyone climbs it with a flask and the children.\n\nI waved until my arm went numb. In fairness to the moon, I wasn't moving.\n\n(On Earth, our own moon drifts about 3.8 centimetres further away every year, and nobody waves it off.)\n\nHave you ever worked the night everyone else was out?"
     },
-    "first_comment": "Dot: Nineteen stops. Nobody. Lovely night for it."
+    "first_comment": "Dot: Nineteen stops. Nobody. Lovely night for it.",
+    "short": {
+      "version": "D",
+      "kicker": "A planet for people who work while everyone's out.",
+      "title": "The moon came close\nenough to wave at.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.02,
+        1.08
+      ],
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "title_y": 0.12,
+      "scrim": 0.28,
+      "spec": {
+        "palette": "lilac_dusk",
+        "layers": 2,
+        "terrain": "dunes",
+        "stage": 0.72,
+        "horizon": 0.56,
+        "water": true,
+        "shore": "left",
+        "mist": 0.75,
+        "bright_stars": true,
+        "spot": "#ffd27a",
+        "cartographer": true,
+        "sign": "",
+        "crowd": 5,
+        "crowd_x": 0.46,
+        "crowd_gap": 0.05,
+        "crowd_facing": "right",
+        "crowd_items": "shadow"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "palette": "lilac_dusk",
+          "layers": 2,
+          "terrain": "dunes",
+          "stage": 0.72,
+          "horizon": 0.56,
+          "water": true,
+          "shore": "left",
+          "mist": 0.75,
+          "bright_stars": true,
+          "spot": "#ffd27a",
+          "cartographer": true,
+          "sign": "",
+          "crowd": 5,
+          "crowd_x": 0.46,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "crowd_items": "hand,child,hand,child,hand"
+        }
+      },
+      "beats": [
+        {
+          "text": "Almost everyone waved.\nDot drove the night bus.\nNobody got on.",
+          "text_y": 0.08,
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.1,
+              1.15
+            ],
+            "focus": [
+              0.48,
+              0.52
+            ]
+          },
+          "spec": {
+            "sign": "BUS STOP|NIGHT ROUTE",
+            "crowd": 0,
+            "cartographer": false
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "slide",
+            "spec": {
+              "lanterns": 2
+            }
+          }
+        },
+        {
+          "text": "The moon wasn't watching us.\nIt was watching\nthe only light that moved.",
+          "text_y": 0.08,
+          "shot": {
+            "framing": "sky",
+            "zoom": [
+              1.2,
+              1.25
+            ],
+            "focus": [
+              0.35,
+              0.53
+            ]
+          },
+          "spec": {
+            "moon_window": true
+          },
+          "onset": {
+            "at": 1.4,
+            "motion": "slide",
+            "spec": {
+              "lanterns": 2
+            }
+          }
+        }
+      ],
+      "end": "She was the view.",
+      "end_zoom": [
+        1.08,
+        1.02
+      ],
+      "end_focus": [
+        0.3,
+        0.5
+      ],
+      "name_y": 0.08
+    }
   },
   {
     "id": "023",
@@ -4650,6 +4999,141 @@
       "end": "She said, 'Take a coat.'",
       "caption": "Even the station sign is saying it.\n\nFond is 880,000 people, long winters and a great deal of knitwear. Here, 'I love you' works once: say it a second time and it comes out as a cough. So everyone keeps theirs, and the language has filled up with stand-ins: 'Mind the step', 'Ring your nan', 'There's lasagne in the freezer'. Teenagers find all of it unbearable, then grow up and say every word.\n\nEleven strangers told me to take a coat on my first day. I've never felt so loved.\n\n(The story goes that plenty of Earth families never say it out loud either. In Chinese, asking whether you've eaten has been doing the job for generations. On Fond, it's mostly coats.)\n\nWhat's your family's 'Take a coat'?"
     },
-    "first_comment": "Sam texted from the city: 'Got here. Wearing it.'"
+    "first_comment": "Sam texted from the city: 'Got here. Wearing it.'",
+    "short": {
+      "version": "D",
+      "kicker": "A planet for people who hear 'Take a coat' and know.",
+      "title": "'I love you' only\nworks once here.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.36,
+        1.42
+      ],
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "spec": {
+        "stage": 0.7,
+        "suns": 1,
+        "sun_x": 0.62,
+        "sun_y": 0.47,
+        "sun_size": 0.07,
+        "mist": 0.6,
+        "house_x": 0.2,
+        "crowd": 2,
+        "crowd_x": 0.42,
+        "crowd_gap": 0.23,
+        "crowd_facing": "in",
+        "crowd_items": "nothing,nothing",
+        "cartographer": true,
+        "sign": "",
+        "palette": "lilac_dusk"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "stage": 0.7,
+          "suns": 1,
+          "sun_x": 0.62,
+          "sun_y": 0.47,
+          "sun_size": 0.07,
+          "mist": 0.6,
+          "house_x": 0.2,
+          "crowd": 2,
+          "crowd_x": 0.42,
+          "crowd_gap": 0.23,
+          "crowd_facing": "in",
+          "crowd_items": "sing,nothing",
+          "cartographer": true,
+          "sign": "",
+          "palette": "lilac_dusk"
+        }
+      },
+      "beats": [
+        {
+          "text": "Kath spent hers on Sam\nbefore he could talk.\nHe gets 'Take a coat' instead.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.38,
+              0.59
+            ]
+          },
+          "spec": {
+            "palette": "sepia",
+            "sign": "",
+            "particles": "none",
+            "cartographer": false,
+            "crowd_x": 0.42,
+            "crowd_gap": 0.26,
+            "crowd_items": "nothing,child",
+            "sun_x": 0.5,
+            "sun_y": 0.5,
+            "spot": "#e9b434"
+          },
+          "onset": {
+            "at": 0.8,
+            "motion": "rise",
+            "spec": {
+              "crowd_items": "sing,child"
+            }
+          }
+        },
+        {
+          "text": "When Sam left for the city,\nhe spent his on her.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.36,
+              1.42
+            ],
+            "focus": [
+              0.55,
+              0.57
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "particles": "none",
+            "crowd_items": "nothing,nothing",
+            "sign": "MIND HOW|YOU GO"
+          },
+          "onset": {
+            "at": 1.1,
+            "motion": "rise",
+            "spec": {
+              "crowd_items": "nothing,sing"
+            }
+          }
+        }
+      ],
+      "end": "She said, 'Take a coat.'",
+      "end_onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "sing,nothing",
+          "particles": "snow",
+          "palette": "lilac_dusk"
+        }
+      },
+      "end_zoom": [
+        1.2,
+        1.14
+      ],
+      "end_focus": [
+        0.55,
+        0.53
+      ],
+      "name_y": 0.2,
+      "end_spec": {}
+    }
   }
 ]

@@ -1128,6 +1128,151 @@
       ],
       "end": "Every Daisy gets a round of applause.",
       "caption": "Second time through, look at where Bert and May are standing.\n\nDaisy is mostly meadow, and the daisies are never wrong. They answer out loud: light applause, or some booing. They may not be asked about third parties, which is why florists here need a licence and a good lawyer. The car park was built after one very loud first date. Like ours, they shut at dusk (the name comes from 'day's eye'), and it takes a lot to open them again. There's one path across the middle of the meadow now. It's theirs.\n\nI tried asking about someone back home. Third parties, apparently.\n\nWould you ask the flowers?"
+    },
+    "short": {
+      "version": "D",
+      "kicker": "A planet for anyone with a first date coming up.",
+      "title": "The flowers know\nif he loves you.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.18,
+        1.25
+      ],
+      "focus": [
+        0.52,
+        0.57
+      ],
+      "spec": {
+        "palette": "gold_hour",
+        "water": true,
+        "shore": "left",
+        "horizon": 0.55,
+        "stage": 0.665,
+        "suns": 1,
+        "sun_x": 0.62,
+        "sun_y": 0.43,
+        "sun_size": 0.07,
+        "mist": 0.6,
+        "daisies": 30,
+        "crowd": 1,
+        "crowd_x": 0.42,
+        "crowd_facing": "left",
+        "crowd_items": "nothing",
+        "cartographer": true
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "palette": "gold_hour",
+          "water": true,
+          "shore": "left",
+          "horizon": 0.55,
+          "stage": 0.665,
+          "suns": 1,
+          "sun_x": 0.62,
+          "sun_y": 0.43,
+          "sun_size": 0.07,
+          "mist": 0.6,
+          "daisies": 170,
+          "crowd": 1,
+          "crowd_x": 0.42,
+          "crowd_facing": "left",
+          "crowd_items": "nothing",
+          "cartographer": true
+        }
+      },
+      "beats": [
+        {
+          "text": "Nobody pulls petals.\nYou just ask out loud.\nThe meadow claps, or boos.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.5,
+              1.58
+            ],
+            "focus": [
+              0.4,
+              0.6
+            ]
+          },
+          "seconds": 3.8,
+          "spec": {
+            "crowd_items": "sing"
+          },
+          "onset": {
+            "at": 0.9,
+            "spec": {
+              "crowd_items": "echo"
+            },
+            "motion": "cut"
+          }
+        },
+        {
+          "text": "So first dates are held\nin the car park,\nwell away from any flowers.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.36,
+              1.42
+            ],
+            "focus": [
+              0.52,
+              0.59
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "daisies": 0,
+            "crowd": 1,
+            "crowd_x": 0.45,
+            "crowd_facing": "right",
+            "crowd_items": "cup,cup",
+            "sign": "CAR PARK|NO FLOWERS",
+            "cartographer": false,
+            "sun_x": 0.8,
+            "sun_y": 0.5
+          },
+          "onset": {
+            "at": 0.7,
+            "motion": "slide",
+            "spec": {
+              "crowd": 2,
+              "crowd_x": 0.505,
+              "crowd_gap": 0.11,
+              "crowd_facing": "in"
+            }
+          }
+        }
+      ],
+      "end": "The meadow claps for them now.\nMost days.",
+      "end_spec": {
+        "sign": "",
+        "palette": "rose_fog",
+        "crowd_facing": "out",
+        "crowd_items": "nothing,nothing",
+        "cartographer": true,
+        "crowd_x": 0.58,
+        "crowd_gap": 0.05
+      },
+      "end_onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "daisies": 170,
+          "crowd_items": "echo,echo"
+        }
+      },
+      "end_zoom": [
+        1.16,
+        1.1
+      ],
+      "end_focus": [
+        0.46,
+        0.57
+      ],
+      "name_y": 0.2
     }
   },
   {
