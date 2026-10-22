@@ -289,6 +289,24 @@ def zzz(x, y, s):
     return shapes
 
 
+def dog(x, y, s, facing=1):
+    """A dog side-on, standing at (x, y), facing the way it looks (s = a person's height): a deep chest, a neck, a
+    floppy ear (a pointed one reads as a cat), legs in pairs and a tail up."""
+    f = facing
+    X = lambda u: x + u * s * f
+    Y = lambda v: y - v * s
+    box = lambda u0, v0, u1, v1: (min(X(u0), X(u1)), min(Y(v0), Y(v1)), max(X(u0), X(u1)), max(Y(v0), Y(v1)))
+    w = s * .05
+    return [("ellipse", box(-.25, .17, .13, .37)),                                   # body
+            ("poly", [(X(.0), Y(.34)), (X(.1), Y(.47)), (X(.2), Y(.45)), (X(.13), Y(.25))]),       # neck and chest
+            ("ellipse", box(.09, .39, .25, .53)),                                    # head
+            ("poly", [(X(.21), Y(.5)), (X(.35), Y(.47)), (X(.35), Y(.42)), (X(.2), Y(.41))]),      # muzzle
+            ("poly", [(X(.12), Y(.52)), (X(.09), Y(.4)), (X(.15), Y(.42)), (X(.17), Y(.51))]),     # floppy ear
+            ("line", ([(X(-.2), Y(.22)), (X(-.22), Y(0))], w)), ("line", ([(X(-.13), Y(.2)), (X(-.12), Y(0))], w)),
+            ("line", ([(X(.03), Y(.2)), (X(.04), Y(0))], w)), ("line", ([(X(.09), Y(.22)), (X(.11), Y(0))], w)),
+            ("line", ([(X(-.23), Y(.32)), (X(-.31), Y(.4)), (X(-.3), Y(.48))], w * .8))]   # tail, up
+
+
 def _gag_chair_sleepers(ctx):
     """Veyra: nobody owns a bed, so people sleep in armchairs on the cliff."""
     layer, W, H = ctx.near_layer, ctx.W, ctx.H
@@ -617,7 +635,8 @@ def _gag_stirrers(ctx):
 ITEMS = ["spade", "spoon", "nothing", "book", "fish", "umbrella", "cup"]
 # also by name: flower, kettle, kite, child, child_asleep; and as the whole figure: shadow (only the shadow is left),
 # shadowed (a person and their shadow), aloft (a person in mid-jump), shout and echo (sound going out, coming back),
-# sing (warm arcs going out), sit (on the ground), nap, doze, walk and hand (a raised hand: a vote)
+# sing (warm arcs going out), sit (on the ground), nap, doze, walk and hand (a raised hand: a vote), dog and dog_ball (a
+# dog bringing a wet, chewed ball home), armchair (asleep in one) and chair (an empty one)
 
 
 def _gag_moth_roof(ctx):
@@ -698,7 +717,10 @@ def _child(ctx, layer, a, h, facing, asleep=False):
     nx, ny = a["neck"]
     hc = h * 0.55
     hip_y = ny - h * 0.13                    # sitting on the shoulders, the carrier's head showing in front
-    _person(ctx, layer, nx - h * 0.07 * facing, hip_y + hc * 0.45, hc, "asleep" if asleep else "point", facing)
+    b = _person(ctx, layer, nx - h * 0.07 * facing, hip_y + hc * 0.45, hc, "asleep" if asleep else "point", facing)
+    if asleep:                               # the sign for sleep, so it reads as asleep rather than slumped
+        hx, hy = b["head"]
+        _ink(ctx, layer, zzz(hx + h * 0.08 * facing, hy - h * 0.2, h * 0.7), LIGHT)
 
 
 def _crowd(ctx):
@@ -757,6 +779,23 @@ def _crowd(ctx):
             continue
         if kind in ("sit", "doze", "walk", "hand", "nap"):
             _person(ctx, layer, x, _ground(ctx, x), hi, {"hand": "reach", "sit": "ground"}.get(kind, kind), face)
+            continue
+        if kind in ("dog", "dog_ball"):
+            gy, hd = _ground(ctx, x), hi * 1.4      # a big dog: it has to read at phone size
+            _ink(ctx, layer, dog(x, gy, hd, face), ctx.dark)
+            if kind == "dog_ball":           # the ball comes home: wet (drips) and chewed (a bite out of it)
+                bx, by, r = x + hd * .37 * face, gy - hd * .43, hd * .085
+                _ink(ctx, layer, [("ellipse", (bx - r, by - r, bx + r, by + r))], LIGHT)
+                _ink(ctx, layer, [("ellipse", (bx + r * .35 * face - r * .45, by - r * 1.25, bx + r * .35 * face + r * .45, by - r * .35))], ctx.dark)
+                _ink(ctx, layer, [("line", ([(bx + d * r, by + r * 1.1), (bx + d * r, by + r * 1.7)], max(1.5, hd * .012))) for d in (-.5, 0, .5)], LIGHT, 0.8)
+            continue
+        if kind in ("armchair", "chair"):
+            gy = _ground(ctx, x)
+            _ink(ctx, layer, armchair(x, gy, hi, face), ctx.dark)
+            if kind == "armchair":           # asleep in it, as on Veyra
+                a = _person(ctx, layer, x + hi * .1 * face, gy - hi * .06, hi, "doze", face)
+                hx, hy = a["head"]
+                _ink(ctx, layer, zzz(hx + hi * .1, hy - hi * .22, hi * .9), LIGHT)
             continue
         if kind == "aloft":
             gy = _ground(ctx, x)

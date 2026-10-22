@@ -3787,30 +3787,30 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              1.6,
-              1.66
+              2.7,
+              2.8
             ],
             "focus": [
-              0.4,
+              0.5,
               0.6
             ]
           },
           "spec": {
             "palette": "polar_night",
+            "house": false,
+            "giant": false,
+            "crowd": 1,
+            "crowd_x": 0.5,
+            "crowd_items": "dog",
             "crowd_facing": "left",
-            "crowd_items": "hand",
             "horizon": 0.76,
-            "relief": 0.15,
-            "giant_x": 0.401,
-            "giant_y": 0.586
+            "relief": 0.15
           },
           "onset": {
             "at": 0.7,
             "motion": "cut",
             "spec": {
-              "crowd_items": "echo",
-              "giant_x": 0.442,
-              "giant_y": 0.645
+              "crowd_items": "dog_ball"
             }
           }
         }
@@ -3826,7 +3826,10 @@
         "giant_size": 0.025,
         "giant_x": 0.418,
         "giant_y": 0.572,
-        "moons": 1
+        "moons": 1,
+        "house": true,
+        "crowd": 1,
+        "crowd_x": 0.0
       },
       "end_onset": {
         "at": 0.5,
