@@ -161,15 +161,32 @@
     "title": "Everything here\nis beautiful. By law.",
     "sub": "You've just landed on Bella.",
     "framing": "sign",
+    "zoom": [
+      1.45,
+      1.52
+    ],
+    "focus": [
+      0.68,
+      0.66
+    ],
     "spec": {
+      "palette": "sepia",
+      "suns": 0,
+      "mist": 0.9,
       "sign": "TAX OFFICE",
+      "house_x": 0.72,
       "cartographer": false
     },
     "onset": {
       "at": 0.4,
       "spec": {
+        "palette": "cobalt_noon",
+        "daisies": 70,
         "sign": "THE BEAUTIFUL|TAX OFFICE",
-        "cartographer": false
+        "house_x": 0.72,
+        "cartographer": false,
+        "mist": 0.0,
+        "suns": 0
       },
       "motion": "cut"
     },
@@ -179,35 +196,87 @@
         "shot": {
           "framing": "wide",
           "zoom": [
-            1.36,
-            1.3
+            1.7,
+            1.75
           ],
           "focus": [
-            0.59,
-            0.62
+            0.635,
+            0.64
           ]
         },
         "spec": {
           "palette": "gold_hour",
+          "daisies": 35,
           "crowd": 2,
-          "crowd_items": "nothing,nothing",
-          "crowd_x": 0.33,
+          "crowd_items": "flower,nothing",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.1,
           "crowd_facing": "in",
           "suns": 0
         }
       },
       {
         "text": "So you rent its billboard.",
-        "shot": "sign",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.8,
+            1.88
+          ],
+          "focus": [
+            0.665,
+            0.615
+          ]
+        },
         "seconds": 3.4,
         "spec": {
           "palette": "mint_dawn",
-          "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE",
-          "cartographer": false
+          "daisies": 35,
+          "crowd": 2,
+          "crowd_items": "flower,nothing",
+          "crowd_x": 0.465,
+          "crowd_gap": 0.065,
+          "crowd_facing": "right"
+        },
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE"
+          },
+          "motion": "cut"
         }
       }
     ],
-    "end": "Legally, an insult to a building."
+    "end": "Legally, an insult to a building.",
+    "end_spec": {
+      "crowd_x": 0.275,
+      "crowd_gap": 0.12,
+      "crowd_facing": "right",
+      "house_x": 0.79,
+      "daisies": 24
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "palette": "crimson",
+        "crowd": 5,
+        "crowd_items": "flower,nothing,shadow,shadow,shout",
+        "crowd_x": 0.455,
+        "crowd_gap": 0.12,
+        "crowd_facing": "in",
+        "spot": "#fff3e8"
+      },
+      "motion": "cut"
+    },
+    "end_focus": [
+      0.55,
+      0.62
+    ],
+    "end_zoom": [
+      1.27,
+      1.22
+    ],
+    "name_y": 0.15
   },
   "_engine": 5
 }
