@@ -132,12 +132,12 @@
       "sub": "Probably in a meeting.",
       "framing": "crowd",
       "zoom": [
-        1.35,
-        1.4
+        1.4,
+        1.45
       ],
       "focus": [
-        0.46,
-        0.64
+        0.44,
+        0.62
       ],
       "spec": {
         "crowd": 0,
@@ -146,9 +146,14 @@
       "onset": {
         "at": 0.4,
         "spec": {
-          "crowd": 6,
-          "figure": false
-        }
+          "crowd": 4,
+          "figure": false,
+          "crowd_x": 0.455,
+          "crowd_gap": 0.09,
+          "crowd_facing": "out",
+          "crowd_items": "book,kettle,cup,book,fish"
+        },
+        "motion": "rise"
       },
       "beats": [
         {
@@ -156,13 +161,21 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              2.0,
-              2.1
+              1.8,
+              1.85
             ],
             "focus": [
-              0.5,
-              0.66
+              0.607,
+              0.63
             ]
+          },
+          "onset": {
+            "at": 1.3,
+            "spec": {
+              "crowd": 5,
+              "crowd_x": 0.5
+            },
+            "motion": "rise"
           }
         },
         {
@@ -170,21 +183,51 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              1.35,
-              1.4
+              1.5,
+              1.55
             ],
             "focus": [
-              0.46,
-              0.64
+              0.65,
+              0.62
             ]
           },
           "spec": {
-            "crowd": 0,
-            "figure": false
+            "crowd": 5,
+            "crowd_x": 0.5,
+            "crowd_items": "book,kettle,cup,book,echo"
+          },
+          "onset": {
+            "at": 0.9,
+            "spec": {
+              "crowd": 4,
+              "crowd_x": 0.455,
+              "crowd_items": "book,kettle,cup,book"
+            },
+            "motion": "cut"
           }
         }
       ],
-      "end": "Except me. Nobody says mine."
+      "end": "Except me. Nobody says mine.",
+      "end_spec": {
+        "crowd": 4,
+        "crowd_x": 0.455,
+        "crowd_items": "book,kettle,cup,book"
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "crowd": 0
+        },
+        "motion": "cut"
+      },
+      "end_focus": [
+        0.26,
+        0.6
+      ],
+      "end_zoom": [
+        1.75,
+        1.8
+      ]
     }
   },
   {
@@ -402,31 +445,38 @@
       "title_y": 0.12,
       "framing": "medium",
       "zoom": [
-        1.45,
-        1.5
+        1.8,
+        1.85
       ],
       "focus": [
-        0.5,
+        0.45,
         0.6
       ],
       "spec": {
-        "giant": false,
         "palette": "lilac_dusk",
         "suns": 0,
-        "cartographer": false
+        "giant_y": 0.14,
+        "cartographer": false,
+        "figure": false,
+        "sign": "",
+        "water": true,
+        "horizon": 0.675,
+        "relief": 1.0
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "giant": true,
-          "giant_x": 0.72,
-          "giant_y": 0.37,
-          "giant_size": 0.2,
           "palette": "lilac_dusk",
           "suns": 0,
-          "cartographer": false
+          "giant_y": 0.14,
+          "cartographer": false,
+          "figure": false,
+          "sign": "",
+          "water": false,
+          "horizon": 0.675,
+          "relief": 1.0
         },
-        "motion": "rise"
+        "motion": "cut"
       },
       "beats": [
         {
@@ -434,17 +484,22 @@
           "shot": {
             "framing": "medium",
             "zoom": [
-              1.75,
-              1.85
+              1.15,
+              1.2
             ],
             "focus": [
-              0.36,
-              0.61
+              0.62,
+              0.6
             ]
           },
           "spec": {
             "palette": "teal_night",
-            "sign": ""
+            "water": true,
+            "shore": "left",
+            "sea_glow": true,
+            "horizon": 0.46,
+            "relief": 0.3,
+            "stage": 0.76
           }
         },
         {
@@ -452,24 +507,58 @@
           "shot": {
             "framing": "medium",
             "zoom": [
-              1.45,
-              1.5
+              1.4,
+              1.46
             ],
             "focus": [
-              0.5,
-              0.6
+              0.56,
+              0.8
             ]
           },
           "spec": {
-            "palette": "mint_dawn",
+            "palette": "gold_hour",
+            "suns": 1,
+            "sun_x": 0.3,
+            "sun_y": 0.56,
+            "sun_size": 0.07,
             "water": true,
-            "gag": "",
-            "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!|WE DIDN'T.| "
+            "shore": "left",
+            "horizon": 0.67,
+            "relief": 0.3,
+            "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!"
+          },
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "shore": "none"
+            },
+            "motion": "cut"
           }
         }
       ],
       "end": "Next time, they'll pack early.",
-      "name_y": 0.2
+      "end_spec": {
+        "horizon": 0.6,
+        "stage": 0.66,
+        "sun_y": 0.5,
+        "giant_y": 0.02,
+        "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!| "
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!|WE DIDN'T."
+        }
+      },
+      "end_zoom": [
+        1.1,
+        1.07
+      ],
+      "end_focus": [
+        0.58,
+        0.9
+      ],
+      "name_y": 0.14
     }
   },
   {
@@ -1283,37 +1372,75 @@
         {
           "text": "Frank writes to it every year,\nmostly about his dog, Biscuit.",
           "shot": {
-            "framing": "gag",
+            "framing": "crowd",
             "zoom": [
-              1.7,
-              1.78
+              1.45,
+              1.52
             ],
             "focus": [
-              0.45,
+              0.5,
               0.56
             ]
+          },
+          "spec": {
+            "gag": "",
+            "crowd": 1,
+            "crowd_items": "book",
+            "crowd_x": 0.55,
+            "crowd_facing": "left"
           }
         },
         {
           "text": "No reply. Then the moon wrote:\n'Dear Biscuit, how is Frank?'",
           "shot": {
-            "framing": "gag",
+            "framing": "moon",
             "zoom": [
-              1.7,
-              1.78
+              1.55,
+              1.62
             ],
             "focus": [
-              0.45,
-              0.56
+              0.46,
+              0.57
             ]
           },
           "spec": {
-            "palette": "mint_dawn",
-            "cartographer": false
+            "gag": "",
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.55,
+            "crowd_facing": "left"
+          },
+          "onset": {
+            "at": 0.9,
+            "spec": {
+              "moon_window": true,
+              "palette": "gold_hour"
+            },
+            "motion": "cut"
           }
         }
       ],
-      "end": "Biscuit hasn't written back."
+      "end": "Biscuit hasn't written back.",
+      "end_spec": {
+        "palette": "polar_night",
+        "crowd_items": "sit"
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "palette": "rose_fog"
+        },
+        "motion": "cut"
+      },
+      "end_focus": [
+        0.47,
+        0.525
+      ],
+      "end_zoom": [
+        1.18,
+        1.12
+      ],
+      "name_y": 0.24
     }
   },
   {
@@ -1436,60 +1563,114 @@
       "title": "The sea left.\nThe waves stayed.",
       "sub": "You've just landed on Selk.",
       "framing": "medium",
+      "zoom": [
+        1.35,
+        1.4
+      ],
+      "focus": [
+        0.5,
+        0.62
+      ],
       "spec": {
-        "glass_waves": false,
+        "water": true,
+        "horizon": 0.69,
+        "relief": 0.06,
+        "mist": 0.15,
+        "glass_waves": true,
         "gag": "",
-        "crowd": 1,
-        "crowd_x": 1.8,
+        "crowd": 0,
         "cartographer": false
       },
       "onset": {
         "at": 0.4,
         "spec": {
+          "water": false,
+          "relief": 0.06,
+          "mist": 0.15,
           "glass_waves": true,
           "gag": "glass_surfers",
           "crowd": 0,
           "cartographer": false
         },
-        "motion": "rise"
+        "motion": "cut"
       },
       "beats": [
         {
           "text": "They're still breaking.\nAs fast as your toenails grow.",
-          "shot": "gag"
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.68,
+              1.76
+            ],
+            "focus": [
+              0.66,
+              0.61
+            ]
+          },
+          "spec": {
+            "gag": "",
+            "sun_y": 0.24,
+            "crowd": 2,
+            "crowd_items": "sit,kettle",
+            "crowd_x": 0.66,
+            "crowd_gap": 0.06,
+            "crowd_facing": "in"
+          }
         },
         {
           "text": "Surfers wait hours for a wave.\nHere, families take shifts.",
           "shot": {
             "framing": "medium",
             "zoom": [
-              1.3,
-              1.35
+              1.4,
+              1.45
             ],
             "focus": [
-              0.55,
-              0.62
+              0.68,
+              0.6
             ]
           },
-          "spec": {
-            "palette": "teal_night",
-            "suns": 0,
-            "crowd": 3,
-            "crowd_items": "child_asleep,child,nothing",
-            "crowd_x": 0.8,
-            "crowd_facing": "left"
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "palette": "teal_night",
+              "suns": 0,
+              "gag": "chair_sleepers",
+              "shore": "right",
+              "crowd": 2,
+              "crowd_items": "child,kettle",
+              "crowd_x": 0.6,
+              "crowd_gap": 0.07,
+              "crowd_facing": "right"
+            },
+            "motion": "cut"
           }
         }
       ],
       "end": "Best surfers. Not one can swim.",
-      "focus": [
-        0.5,
-        0.62
+      "end_spec": {
+        "palette": "teal_night",
+        "suns": 0,
+        "gag": "glass_surfers",
+        "shore": "none",
+        "crowd": 0
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "sign": "NO SWIM"
+        }
+      },
+      "end_focus": [
+        0.7,
+        0.575
       ],
-      "zoom": [
-        1.35,
-        1.4
-      ]
+      "end_zoom": [
+        1.5,
+        1.44
+      ],
+      "name_y": 0.17
     }
   },
   {
@@ -1879,22 +2060,24 @@
       "sub": "For anyone who's stopped\nnoticing their view.",
       "framing": "medium",
       "zoom": [
-        1.45,
-        1.52
+        1.22,
+        1.3
       ],
       "focus": [
-        0.48,
-        0.58
+        0.45,
+        0.6
       ],
       "spec": {
         "aurora": false,
-        "cartographer": false
+        "cartographer": false,
+        "horizon": 0.72
       },
       "onset": {
         "at": 0.4,
         "spec": {
           "aurora": true,
-          "cartographer": false
+          "cartographer": false,
+          "horizon": 0.72
         },
         "motion": "cut"
       },
@@ -1904,12 +2087,12 @@
           "shot": {
             "framing": "left",
             "zoom": [
-              1.65,
+              1.7,
               1.8
             ],
             "focus": [
-              "x",
-              0.36
+              0.33,
+              0.6
             ]
           }
         },
@@ -1918,21 +2101,51 @@
           "shot": {
             "framing": "medium",
             "zoom": [
-              1.45,
-              1.52
+              1.12,
+              1.18
             ],
             "focus": [
               0.48,
-              0.58
+              0.54
             ]
           },
           "spec": {
-            "aurora": false,
-            "stars": 7.0
+            "crowd": 6,
+            "crowd_items": "walk",
+            "crowd_x": 0.43,
+            "crowd_gap": 0.075,
+            "crowd_facing": "right"
+          },
+          "onset": {
+            "at": 0.9,
+            "spec": {
+              "aurora": false,
+              "stars": 8.4,
+              "bright_stars": true
+            },
+            "motion": "cut"
           }
         }
       ],
-      "end": "That night, everyone was a tourist."
+      "end": "That night, everyone was a tourist.",
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "crowd_items": "hand"
+        },
+        "motion": "cut"
+      },
+      "end_focus": [
+        0.385,
+        0.6
+      ],
+      "end_zoom": [
+        1.8,
+        1.74
+      ],
+      "name_y": 0.1,
+      "title_y": 0.12,
+      "scrim": 0.36
     }
   },
   {
@@ -2099,40 +2312,92 @@
       "beats": [
         {
           "text": "Their family below\nstill calls them for dinner.",
-          "shot": "house",
-          "spec": {
-            "palette": "lilac_dusk",
-            "sign": "DINNER'S READY."
-          }
-        },
-        {
-          "text": "Each evening, a pinecone drops:\n'Coming!'",
           "shot": {
-            "framing": "sky",
+            "framing": "wide",
             "zoom": [
-              1.85,
-              1.9
+              1.02,
+              1.06
             ],
             "focus": [
-              0.567,
-              0.2
+              0.47,
+              0.51
             ]
           },
           "spec": {
-            "palette": "lilac_dusk"
+            "palette": "lilac_dusk",
+            "sign": "DINNER'S READY.",
+            "crowd": 3,
+            "crowd_items": "spoon,kettle,nothing",
+            "crowd_x": 0.16,
+            "crowd_gap": 0.065,
+            "crowd_facing": "right",
+            "house": false,
+            "spot": "#c99a2e"
+          },
+          "onset": {
+            "at": 0.6,
+            "spec": {
+              "crowd_items": "spoon,kettle,sing"
+            },
+            "motion": "cut"
+          },
+          "text_y": 0.055
+        },
+        {
+          "text": "Each evening, the tree answers:\n'Coming!'",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.4,
+              1.5
+            ],
+            "focus": [
+              0.37,
+              0.64
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "sign": "",
+            "crowd": 3,
+            "crowd_items": "spoon,kettle,nothing",
+            "crowd_x": 0.16,
+            "crowd_gap": 0.065,
+            "crowd_facing": "right",
+            "house": false,
+            "spot": "#c99a2e"
+          },
+          "onset": {
+            "at": 0.8,
+            "spec": {
+              "crowd_items": "spoon,kettle,echo"
+            },
+            "motion": "cut"
           }
         }
       ],
       "end": "Dinner's still ready.",
+      "end_spec": {
+        "sign": "DINNER'S READY.",
+        "crowd_items": "spoon,nap,nothing"
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "sign": "DINNER'S READY.|DAY 219,146",
+          "crowd_items": "spoon,nap,sing"
+        },
+        "motion": "cut"
+      },
       "title_y": 0.1,
-      "name_y": 0.55,
+      "name_y": 0.229,
       "end_zoom": [
         1.06,
-        1.0
+        1.06
       ],
       "end_focus": [
-        0.5,
-        0.45
+        0.47,
+        0.54
       ]
     }
   },
@@ -2287,16 +2552,21 @@
       "sub": "Gravity is double.\nBy four, they're too heavy.",
       "framing": "medium",
       "zoom": [
-        1.7,
-        1.76
+        1.8,
+        1.86
       ],
       "focus": [
-        0.48,
-        0.6
+        0.5,
+        0.65
       ],
       "spec": {
-        "crowd": 0,
+        "crowd": 5,
+        "crowd_x": 0.5,
+        "crowd_gap": 0.09,
+        "crowd_items": "nothing,nothing,nothing,nothing,nothing",
+        "crowd_facing": "in",
         "sign": "",
+        "house": false,
         "sun_x": 0.6,
         "sun_y": 0.56,
         "cartographer": false
@@ -2305,12 +2575,17 @@
         "at": 0.4,
         "spec": {
           "crowd": 5,
-          "crowd_x": 0.4,
+          "crowd_x": 0.5,
+          "crowd_gap": 0.09,
+          "crowd_items": "nothing,nothing,child,nothing,nothing",
+          "crowd_facing": "in",
           "sign": "",
+          "house": false,
           "sun_x": 0.6,
           "sun_y": 0.56,
           "cartographer": false
-        }
+        },
+        "motion": "cut"
       },
       "beats": [
         {
@@ -2318,53 +2593,84 @@
           "shot": {
             "framing": "medium",
             "zoom": [
-              1.85,
-              1.9
+              1.38,
+              1.42
             ],
             "focus": [
-              0.59,
+              0.6,
               0.64
             ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_x": 0.4,
+            "crowd_gap": 0.1,
+            "crowd_items": "child,child,child",
+            "crowd_facing": "right",
+            "sign": "BAKERY",
+            "house": true,
+            "house_x": 0.88
           },
           "seconds": 3.0
         },
         {
           "text": "Tomas picked the sea.\nEight miles. His dad made it.",
           "shot": {
-            "framing": "crowd",
+            "framing": "medium",
             "zoom": [
-              1.8,
-              1.86
+              2.2,
+              2.26
             ],
             "focus": [
-              0.55,
-              0.61
+              0.59,
+              0.65
             ]
           },
           "spec": {
             "palette": "gold_hour",
             "suns": 1,
-            "sun_x": 0.55,
+            "sun_x": 0.62,
             "sun_y": 0.6,
             "sun_size": 0.06,
             "water": false,
             "shore": "none",
             "crowd": 1,
-            "crowd_x": 0.55,
+            "crowd_x": 0.47,
             "crowd_items": "child",
-            "crowd_facing": "left",
+            "crowd_facing": "right",
             "house": false,
-            "sign": "",
+            "sign": "SEA|8 MI",
             "cartographer": false
-          }
+          },
+          "onset": {
+            "at": 0.8,
+            "spec": {
+              "sign": "SEA|2 MI",
+              "crowd_items": "child_asleep",
+              "crowd_x": 0.53,
+              "palette": "crimson",
+              "sun_y": 0.68
+            },
+            "motion": "cut"
+          },
+          "seconds": 3.2
         }
       ],
       "end": "Tomas was asleep by mile six.",
       "end_spec": {
+        "sign": "",
         "water": true,
-        "shore": "left",
-        "crowd_items": "child_asleep"
+        "shore": "left"
       },
+      "end_focus": [
+        0.57,
+        0.67
+      ],
+      "end_zoom": [
+        2.8,
+        2.7
+      ],
+      "name_y": 0.17,
       "scrim": 0.6
     }
   },
@@ -2508,58 +2814,124 @@
       "sub": "For whoever remembers\nevery birthday.",
       "framing": "crowd",
       "zoom": [
-        1.9,
-        2.0
+        1.75,
+        1.8
       ],
       "focus": [
-        0.42,
-        0.68
+        0.64,
+        0.64
       ],
       "spec": {
         "palette": "rose_fog",
         "suns": 0,
         "particles": "none",
         "snow": false,
-        "sign": ""
+        "sign": "WINTER|DAY 1 OF 365",
+        "crowd_x": 0.46,
+        "house_x": 0.14
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "sign": ""
+          "sign": "WINTER|DAY 212 OF 365",
+          "crowd_x": 0.46,
+          "house_x": 0.14
         },
         "motion": "cut"
       },
       "beats": [
         {
           "text": "Jess keeps count.\nEven the goats' birthdays.",
-          "shot": "sign",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.75,
+              1.82
+            ],
+            "focus": [
+              0.62,
+              0.61
+            ]
+          },
           "spec": {
-            "sign": "WINTER|DAY 212"
+            "sign": "DAY 212|HAPPY|BIRTHDAY,|BETTY|THE GOAT",
+            "crowd_x": 0.53
           }
         },
         {
           "text": "One winter, Jess lost count.",
           "shot": {
-            "framing": "crowd",
+            "framing": "sign",
             "zoom": [
-              2.2,
-              2.3
+              1.95,
+              2.05
             ],
             "focus": [
-              0.5,
-              0.68
+              0.62,
+              0.66
             ]
+          },
+          "spec": {
+            "sign": "DAY ???",
+            "crowd_x": 0.545,
+            "crowd_items": "sit"
           }
         },
         {
           "text": "The village hadn't.",
-          "shot": "sign",
+          "seconds": 2.6,
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.42,
+              1.47
+            ],
+            "focus": [
+              0.56,
+              0.6
+            ]
+          },
           "spec": {
-            "sign": "DAY 213|HAPPY BIRTHDAY, JESS"
+            "sign": "DAY ???",
+            "crowd_x": 0.43,
+            "crowd_items": "sit"
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "auto",
+            "spec": {
+              "sign": "DAY 213|HAPPY|BIRTHDAY,|JESS!",
+              "crowd": 5,
+              "crowd_x": 0.43,
+              "crowd_gap": 0.075,
+              "crowd_facing": "in",
+              "crowd_items": "sing,hand,book,hand,sing",
+              "spot": "#e9b434"
+            }
           }
         }
       ],
-      "end": "Even the goats signed it."
+      "end": "Even the goats signed it.",
+      "end_spec": {
+        "crowd_x": 0.46,
+        "crowd_gap": 0.05
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "sign": "HAPPY|BIRTHDAY,|JESS!|- the village|- BAAA, MEHH",
+          "crowd_items": "hand,hand,book,hand,hand"
+        }
+      },
+      "end_zoom": [
+        1.6,
+        1.56
+      ],
+      "end_focus": [
+        0.61,
+        0.594
+      ],
+      "name_y": 0.14
     }
   },
   {
@@ -3060,24 +3432,32 @@
       "sub": "Wren would like to finish\na cup of tea in one day.",
       "framing": "crowd",
       "zoom": [
-        2.0,
-        2.06
+        1.88,
+        1.94
       ],
       "focus": [
-        0.55,
-        0.63
+        0.53,
+        0.56
       ],
       "spec": {
+        "palette": "cobalt_noon",
+        "stage": 0.68,
+        "mist": 0.0,
+        "suns": 1,
         "sun_x": 0.72,
-        "sun_y": 0.42
+        "sun_y": 0.345,
+        "sun_size": 0.065
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "palette": "gold_hour",
-          "sun_x": 0.62,
-          "sun_y": 0.62
-        }
+          "palette": "polar_night",
+          "stage": 0.68,
+          "mist": 0.2,
+          "suns": 0,
+          "bright_stars": true
+        },
+        "motion": "cut"
       },
       "beats": [
         {
@@ -3085,21 +3465,30 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              1.8,
-              1.86
+              2.4,
+              2.46
             ],
             "focus": [
-              0.42,
-              0.64
+              0.48,
+              0.6
             ]
           },
           "spec": {
-            "palette": "polar_night",
-            "suns": 0,
-            "crowd_items": "child,child",
-            "crowd": 2,
-            "crowd_x": 0.42,
-            "crowd_facing": "in"
+            "palette": "mint_dawn",
+            "suns": 1,
+            "sun_x": 0.645,
+            "sun_y": 0.43,
+            "bright_stars": false
+          },
+          "onset": {
+            "at": 0.55,
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "child,child_asleep",
+              "crowd_gap": 0.004,
+              "crowd_facing": "right"
+            },
+            "motion": "rise"
           }
         },
         {
@@ -3107,22 +3496,59 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              2.0,
-              2.06
+              2.1,
+              2.16
             ],
             "focus": [
-              0.55,
-              0.63
+              0.38,
+              0.58
             ]
           },
           "spec": {
-            "palette": "crimson",
-            "sun_x": 0.34,
-            "sun_y": 0.62
+            "palette": "polar_night",
+            "suns": 0,
+            "bright_stars": true
+          },
+          "onset": {
+            "at": 0.9,
+            "spec": {
+              "palette": "crimson",
+              "suns": 1,
+              "sun_x": 0.34,
+              "sun_y": 0.53,
+              "sun_size": 0.06,
+              "bright_stars": false
+            },
+            "motion": "cut"
           }
         }
       ],
-      "end": "Close enough."
+      "end": "Close enough.",
+      "end_spec": {
+        "palette": "pumpkin",
+        "sun_x": 0.62,
+        "sun_y": 0.515,
+        "sun_size": 0.045
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "hand,hand,cup",
+          "crowd_gap": 0.0,
+          "crowd_facing": ""
+        },
+        "motion": "cut"
+      },
+      "end_zoom": [
+        2.1,
+        2.2
+      ],
+      "end_focus": [
+        0.45,
+        0.575
+      ],
+      "name_y": 0.12
     }
   },
   {
@@ -4147,25 +4573,31 @@
       "sub": "To wherever you were born.",
       "framing": "medium",
       "zoom": [
-        1.75,
-        1.8
+        1.55,
+        1.6
       ],
       "focus": [
-        0.5,
-        0.66
+        0.62,
+        0.64
       ],
       "spec": {
         "crowd": 0,
-        "cartographer": false
+        "cartographer": false,
+        "house_x": 0.86,
+        "trees": "none"
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "crowd": 8,
-          "crowd_x": 0.775,
-          "crowd_items": "flower,nothing,nothing,flower",
-          "crowd_facing": "left",
-          "cartographer": false
+          "crowd": 5,
+          "crowd_x": 0.5,
+          "crowd_gap": 0.048,
+          "crowd_items": "child,child,child,child,child",
+          "crowd_facing": "right",
+          "house_x": 0.86,
+          "cartographer": false,
+          "sign": "HOME",
+          "trees": "none"
         }
       },
       "beats": [
@@ -4178,7 +4610,7 @@
               1.9
             ],
             "focus": [
-              0.36,
+              0.78,
               0.68
             ]
           },
@@ -4187,7 +4619,9 @@
             "palette": "sepia",
             "particles": "none",
             "snow": false,
-            "moons": 0
+            "moons": 0,
+            "sign": "HOSPITAL|MATERNITY",
+            "trees": "pines"
           }
         },
         {
@@ -4199,11 +4633,31 @@
               1.9
             ],
             "focus": [
-              0.36,
+              0.78,
               0.68
             ]
           },
-          "seconds": 1.9
+          "seconds": 1.9,
+          "spec": {
+            "crowd": 0,
+            "palette": "sepia",
+            "particles": "none",
+            "snow": false,
+            "moons": 0,
+            "sign": "HOSPITAL|MATERNITY",
+            "trees": "pines"
+          },
+          "onset": {
+            "at": 0.45,
+            "spec": {
+              "palette": "violet_ice",
+              "particles": "snow",
+              "snow": true,
+              "moons": 1,
+              "sign": "SUPERMARKET"
+            },
+            "motion": "cut"
+          }
         },
         {
           "text": "At Christmas, thirty thousand\ncome home to aisle three.",
@@ -4214,13 +4668,52 @@
               1.36
             ],
             "focus": [
-              0.6,
+              0.53,
               0.64
             ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.4,
+            "crowd_items": "walk",
+            "crowd_facing": "right",
+            "sign": "SUPERMARKET|AISLE 3",
+            "trees": "none"
+          },
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "crowd": 10,
+              "crowd_x": 0.26,
+              "crowd_gap": 0.06,
+              "crowd_items": "child,child,walk,child,child,walk,child,child,walk,child",
+              "crowd_facing": "right"
+            }
           }
         }
       ],
-      "end": "'Welcome home! Need a bag?'"
+      "end": "'Welcome home! Need a bag?'",
+      "end_spec": {
+        "sign": "SUPERMARKET|AISLE 3",
+        "crowd_x": 0.34,
+        "crowd_gap": 0.048
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "sign": "WELCOME HOME!|BAGS 10p"
+        },
+        "motion": "cut"
+      },
+      "end_zoom": [
+        1.55,
+        1.6
+      ],
+      "end_focus": [
+        0.62,
+        0.62
+      ],
+      "name_y": 0.2
     }
   },
   {
@@ -4478,12 +4971,16 @@
       "framing": "medium",
       "zoom": [
         1.25,
-        1.3
+        1.26
       ],
       "focus": [
-        0.42,
-        0.58
+        0.5,
+        0.6
       ],
+      "spec": {
+        "sign": "Sea view|Lighthouse|Two moons",
+        "crowd_x": 0.5
+      },
       "onset": {
         "at": 0.4,
         "spec": {
@@ -4492,7 +4989,9 @@
           "lighthouse": true,
           "moons": 2,
           "palette": "lilac_dusk",
-          "suns": 0
+          "suns": 0,
+          "sign": "Sea view|Lighthouse|Two moons",
+          "crowd_x": 0.5
         },
         "motion": "cut"
       },
@@ -4502,9 +5001,20 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              1.8,
-              1.85
+              1.64,
+              1.68
+            ],
+            "focus": [
+              0.66,
+              0.605
             ]
+          },
+          "onset": {
+            "at": 0.75,
+            "spec": {
+              "sign": "It's a field."
+            },
+            "motion": "cut"
           }
         },
         {
@@ -4512,28 +5022,57 @@
           "shot": {
             "framing": "medium",
             "zoom": [
-              1.25,
-              1.3
+              1.14,
+              1.18
             ],
             "focus": [
-              0.42,
-              0.58
+              0.56,
+              0.62
             ]
           },
           "spec": {
-            "water": false,
-            "shore": "none",
-            "lighthouse": false,
-            "moons": 0,
-            "palette": "mint_dawn",
-            "suns": 1
+            "sign": "It's a field."
+          },
+          "onset": {
+            "at": 0.9,
+            "spec": {
+              "water": false,
+              "shore": "none",
+              "lighthouse": false,
+              "moons": 0,
+              "palette": "gold_hour",
+              "suns": 1,
+              "sun_x": 0.33,
+              "sun_y": 0.53,
+              "sun_size": 0.075
+            },
+            "motion": "cut"
           }
         }
       ],
       "end": "She does miss the moons.",
       "end_spec": {
-        "suns": 0
-      }
+        "suns": 0,
+        "palette": "teal_night",
+        "crowd_x": 0.32,
+        "crowd_facing": "right"
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "lamp": true
+        }
+      },
+      "end_focus": [
+        0.5,
+        0.54
+      ],
+      "name_y": 0.11,
+      "title_y": 0.21,
+      "end_zoom": [
+        1.19,
+        1.17
+      ]
     }
   },
   {
@@ -4751,26 +5290,36 @@
       "sub": "New baby? It moves house.",
       "framing": "medium",
       "zoom": [
-        1.8,
-        1.86
+        2.05,
+        2.1
       ],
       "focus": [
-        0.27,
-        0.608
+        0.6,
+        0.625
       ],
       "spec": {
-        "sun_x": 0.46,
-        "sun_y": 0.56,
-        "sun_size": 0.06,
-        "crowd": 0
+        "relief": 0.2,
+        "house_x": 0.72,
+        "sun_x": 0.72,
+        "sun_y": 0.59,
+        "sun_size": 0.05,
+        "crowd": 1,
+        "crowd_items": "child",
+        "crowd_x": 0.48,
+        "crowd_facing": "left"
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "sun_x": 0.18,
-          "sun_y": 0.575,
-          "sun_size": 0.06,
-          "crowd": 0
+          "relief": 0.2,
+          "house_x": 0.72,
+          "sun_x": 0.48,
+          "sun_y": 0.59,
+          "sun_size": 0.05,
+          "crowd": 1,
+          "crowd_items": "child",
+          "crowd_x": 0.48,
+          "crowd_facing": "left"
         },
         "motion": "cut"
       },
@@ -4780,22 +5329,24 @@
           "shot": {
             "framing": "medium",
             "zoom": [
-              1.8,
-              1.86
+              2.15,
+              2.2
             ],
             "focus": [
-              0.27,
-              0.608
+              0.39,
+              0.63
             ]
           },
-          "spec": {
-            "sun_x": 0.18,
-            "sun_y": 0.575,
-            "sun_size": 0.06,
-            "crowd": 1,
-            "crowd_items": "child",
-            "crowd_x": 0.315,
-            "crowd_facing": "left"
+          "onset": {
+            "at": 1.3,
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "child_asleep,child",
+              "crowd_x": 0.39,
+              "crowd_gap": 0.18,
+              "sun_x": 0.3
+            },
+            "motion": "auto"
           }
         },
         {
@@ -4803,26 +5354,41 @@
           "shot": {
             "framing": "medium",
             "zoom": [
-              1.8,
-              1.86
+              2.4,
+              2.45
             ],
             "focus": [
-              0.27,
-              0.608
+              0.39,
+              0.641
             ]
           },
           "spec": {
-            "sun_x": 0.18,
-            "sun_y": 0.575,
-            "sun_size": 0.06,
             "crowd": 2,
-            "crowd_items": "child,child_asleep",
-            "crowd_x": 0.36,
-            "crowd_facing": "left"
+            "crowd_items": "child,child",
+            "crowd_x": 0.39,
+            "crowd_gap": 0.12,
+            "crowd_facing": "in",
+            "sun_x": 0.37
           }
         }
       ],
-      "end": "She's usually asleep."
+      "end": "She's usually asleep.",
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "crowd_items": "child_asleep,child"
+        },
+        "motion": "cut"
+      },
+      "end_focus": [
+        0.36,
+        0.653
+      ],
+      "end_zoom": [
+        2.6,
+        2.7
+      ],
+      "name_y": 0.07
     }
   },
   {

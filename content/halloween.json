@@ -134,24 +134,34 @@
       "sub": "On Hollow, they faint.",
       "framing": "gag",
       "zoom": [
-        1.4,
-        1.46
+        1.7,
+        1.76
       ],
       "focus": [
-        0.55,
-        0.6
+        0.42,
+        0.62
       ],
       "spec": {
-        "palette": "rose_fog",
+        "palette": "teal_night",
         "big_moon": false,
-        "gag": "ghost"
+        "gag": "ghost",
+        "spot": "#ff1a1a",
+        "crowd": 1,
+        "crowd_x": 0.57,
+        "crowd_items": "shout",
+        "crowd_facing": "left"
       },
       "onset": {
         "at": 0.4,
         "spec": {
           "palette": "pumpkin",
           "big_moon": true,
-          "gag": "fainted_ghost"
+          "gag": "fainted_ghost",
+          "spot": "#ff1a1a",
+          "crowd": 1,
+          "crowd_x": 0.57,
+          "crowd_items": "shout",
+          "crowd_facing": "left"
         },
         "motion": "cut"
       },
@@ -161,17 +171,78 @@
           "shot": {
             "framing": "gag",
             "zoom": [
-              2.2,
-              2.3
+              2.0,
+              2.08
+            ],
+            "focus": [
+              0.42,
+              0.63
             ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "big_moon": false,
+            "bright_stars": true,
+            "crowd_items": "sing",
+            "spot": "#e9b434"
           }
         },
         {
           "text": "Nudge a wardrobe? Say sorry.\nIt might be occupied.",
-          "shot": "house"
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.95,
+              2.03
+            ],
+            "focus": [
+              0.5,
+              0.63
+            ]
+          },
+          "spec": {
+            "gag": "",
+            "house_x": 0.49,
+            "crowd": 3,
+            "crowd_x": -0.03,
+            "crowd_gap": 0.6,
+            "crowd_items": "sing",
+            "spot": "#e9b434"
+          },
+          "onset": {
+            "at": 0.8,
+            "spec": {
+              "gag": "ghost",
+              "crowd": 0
+            },
+            "motion": "rise"
+          }
         }
       ],
-      "end": "Now you apologise to furniture."
+      "end": "Now you apologise to furniture.",
+      "end_spec": {
+        "gag": "",
+        "crowd": 1,
+        "crowd_x": 0.57,
+        "crowd_gap": 0.09,
+        "crowd_items": "sing",
+        "house_x": 0.425
+      },
+      "end_onset": {
+        "at": 0.6,
+        "spec": {
+          "sign": "It's fine,|really."
+        }
+      },
+      "end_focus": [
+        0.4,
+        0.6
+      ],
+      "end_zoom": [
+        1.6,
+        1.55
+      ],
+      "name_y": 0.22
     }
   },
   {
@@ -342,26 +413,38 @@
       "sub": "For anyone who leaves\nthe porch light on.",
       "framing": "wide",
       "zoom": [
-        1.35,
-        1.4
+        1.06,
+        1.18
       ],
       "focus": [
-        0.42,
-        0.6
+        0.5,
+        0.56
       ],
       "spec": {
-        "palette": "lilac_dusk",
-        "lanterns": 3,
-        "horizon": 0.5,
-        "cartographer": false
+        "palette": "teal_night",
+        "lanterns": 0,
+        "horizon": 0.6,
+        "relief": 0.12,
+        "cartographer": false,
+        "lighthouse": false,
+        "stage": 0.75,
+        "house": true,
+        "house_x": 0.28,
+        "moons": 0
       },
       "onset": {
         "at": 0.4,
         "spec": {
           "palette": "teal_night",
-          "lanterns": 14,
-          "horizon": 0.5,
-          "cartographer": false
+          "lanterns": 5,
+          "horizon": 0.6,
+          "relief": 0.12,
+          "cartographer": false,
+          "lighthouse": false,
+          "stage": 0.75,
+          "house": true,
+          "house_x": 0.28,
+          "moons": 0
         },
         "motion": "cut"
       },
@@ -371,13 +454,17 @@
           "shot": {
             "framing": "close",
             "zoom": [
-              2.1,
-              2.2
+              1.8,
+              1.9
             ],
             "focus": [
-              0.47,
-              0.5
+              0.605,
+              0.632
             ]
+          },
+          "spec": {
+            "sign": "SMILE|PLEASE|the boats|are watching",
+            "house": false
           }
         },
         {
@@ -385,20 +472,48 @@
           "shot": {
             "framing": "wide",
             "zoom": [
-              1.35,
-              1.4
+              1.2,
+              1.24
             ],
             "focus": [
-              0.42,
-              0.6
+              0.5,
+              0.57
             ]
           },
-          "spec": {
-            "lanterns": 0
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "lanterns": 2,
+              "crowd": 2,
+              "crowd_items": "fish,fish",
+              "crowd_x": 0.42,
+              "crowd_gap": 0.08,
+              "crowd_facing": "left"
+            },
+            "motion": "cut"
           }
         }
       ],
-      "end": "Dark means everyone's home."
+      "end": "Dark means everyone's home.",
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "lanterns": 0,
+          "crowd": 3,
+          "crowd_items": "fish,fish,fish",
+          "crowd_x": 0.46
+        },
+        "motion": "cut"
+      },
+      "end_zoom": [
+        1.62,
+        1.58
+      ],
+      "end_focus": [
+        0.5,
+        0.62
+      ],
+      "name_y": 0.16
     }
   },
   {
@@ -525,6 +640,9 @@
       ],
       "spec": {
         "big_moon": true,
+        "moons": 0,
+        "moths": 0,
+        "mist": 0.1,
         "stage": 0.68,
         "cartographer": false
       },
@@ -532,6 +650,9 @@
         "at": 0.4,
         "spec": {
           "big_moon": false,
+          "moons": 0,
+          "moths": 6,
+          "mist": 0.1,
           "stage": 0.68,
           "cartographer": false
         },
@@ -543,9 +664,20 @@
           "shot": {
             "framing": "gag",
             "zoom": [
-              2.0,
-              2.1
+              1.9,
+              2.0
             ]
+          },
+          "spec": {
+            "moths": 0,
+            "bright_stars": true
+          },
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "moths": 6
+            },
+            "motion": "auto"
           }
         },
         {
@@ -553,14 +685,56 @@
           "shot": {
             "framing": "gag",
             "zoom": [
-              2.4,
-              2.5
+              2.25,
+              2.35
+            ],
+            "focus": [
+              0.48,
+              0.6
             ]
+          },
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "palette": "rose_fog",
+              "crowd": 1,
+              "crowd_x": 0.57,
+              "crowd_items": "cup",
+              "crowd_facing": "left",
+              "mist": 0.35
+            },
+            "motion": "auto"
           }
         }
       ],
-      "end": "Now Gordon leaves out thirteen.",
-      "title_y": 0.135
+      "end": "Now Gordon leaves out a spare moon.",
+      "end_spec": {
+        "palette": "lilac_dusk",
+        "crowd": 0,
+        "moths": 0,
+        "gag": "",
+        "house": true,
+        "house_x": 0.36
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "lamp": true,
+          "moths": 8
+        },
+        "motion": "cut"
+      },
+      "end_zoom": [
+        1.3,
+        1.25
+      ],
+      "end_focus": [
+        0.5,
+        0.5
+      ],
+      "name_y": 0.13,
+      "title_y": 0.135,
+      "scrim": 0.6
     }
   }
 ]

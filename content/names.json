@@ -529,15 +529,32 @@
       "title": "Everything here\nis beautiful. By law.",
       "sub": "You've just landed on Bella.",
       "framing": "sign",
+      "zoom": [
+        1.45,
+        1.52
+      ],
+      "focus": [
+        0.68,
+        0.66
+      ],
       "spec": {
+        "palette": "sepia",
+        "suns": 0,
+        "mist": 0.9,
         "sign": "TAX OFFICE",
+        "house_x": 0.72,
         "cartographer": false
       },
       "onset": {
         "at": 0.4,
         "spec": {
+          "palette": "cobalt_noon",
+          "daisies": 70,
           "sign": "THE BEAUTIFUL|TAX OFFICE",
-          "cartographer": false
+          "house_x": 0.72,
+          "cartographer": false,
+          "mist": 0.0,
+          "suns": 0
         },
         "motion": "cut"
       },
@@ -547,35 +564,87 @@
           "shot": {
             "framing": "wide",
             "zoom": [
-              1.36,
-              1.3
+              1.7,
+              1.75
             ],
             "focus": [
-              0.59,
-              0.62
+              0.635,
+              0.64
             ]
           },
           "spec": {
             "palette": "gold_hour",
+            "daisies": 35,
             "crowd": 2,
-            "crowd_items": "nothing,nothing",
-            "crowd_x": 0.33,
+            "crowd_items": "flower,nothing",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.1,
             "crowd_facing": "in",
             "suns": 0
           }
         },
         {
           "text": "So you rent its billboard.",
-          "shot": "sign",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.8,
+              1.88
+            ],
+            "focus": [
+              0.665,
+              0.615
+            ]
+          },
           "seconds": 3.4,
           "spec": {
             "palette": "mint_dawn",
-            "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE",
-            "cartographer": false
+            "daisies": 35,
+            "crowd": 2,
+            "crowd_items": "flower,nothing",
+            "crowd_x": 0.465,
+            "crowd_gap": 0.065,
+            "crowd_facing": "right"
+          },
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "sign": "YOU ARE MORE|BEAUTIFUL THAN|THE TAX OFFICE"
+            },
+            "motion": "cut"
           }
         }
       ],
-      "end": "Legally, an insult to a building."
+      "end": "Legally, an insult to a building.",
+      "end_spec": {
+        "crowd_x": 0.275,
+        "crowd_gap": 0.12,
+        "crowd_facing": "right",
+        "house_x": 0.79,
+        "daisies": 24
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "palette": "crimson",
+          "crowd": 5,
+          "crowd_items": "flower,nothing,shadow,shadow,shout",
+          "crowd_x": 0.455,
+          "crowd_gap": 0.12,
+          "crowd_facing": "in",
+          "spot": "#fff3e8"
+        },
+        "motion": "cut"
+      },
+      "end_focus": [
+        0.55,
+        0.62
+      ],
+      "end_zoom": [
+        1.27,
+        1.22
+      ],
+      "name_y": 0.15
     }
   },
   {
@@ -722,11 +791,11 @@
       "sub": "You've just landed.\nYou're Charlie too.",
       "framing": "crowd",
       "zoom": [
-        1.65,
-        1.7
+        1.5,
+        1.54
       ],
       "focus": [
-        0.62,
+        0.6,
         0.6
       ],
       "spec": {
@@ -737,8 +806,10 @@
         "at": 0.4,
         "spec": {
           "crowd": 4,
-          "crowd_x": 0.53,
-          "crowd_items": "spade,nothing,cup,kettle",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.085,
+          "crowd_items": "spade,cup,kettle,nothing",
+          "crowd_facing": "right",
           "cartographer": false
         }
       },
@@ -749,12 +820,24 @@
             "framing": "close",
             "zoom": [
               2.2,
-              2.3
+              2.26
             ],
             "focus": [
-              "x",
-              0.485
+              0.51,
+              0.655
             ]
+          },
+          "spec": {
+            "sign": "",
+            "crowd_x": 0.495,
+            "crowd_gap": 0.1
+          },
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "crowd_items": "spade,cup,kettle,sit"
+            },
+            "motion": "cut"
           }
         },
         {
@@ -762,16 +845,53 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              1.9,
-              1.98
+              1.32,
+              1.36
+            ],
+            "focus": [
+              0.535,
+              0.62
             ]
           },
           "spec": {
+            "crowd_x": 0.35625,
+            "crowd_gap": 0.0875,
+            "crowd_items": "spade,cup,kettle,sit",
             "crowd_facing": "in"
+          },
+          "onset": {
+            "at": 0.6,
+            "spec": {
+              "crowd": 5,
+              "crowd_x": 0.4,
+              "crowd_items": "spade,cup,kettle,sit,book"
+            },
+            "motion": "slide"
           }
         }
       ],
-      "end": "Put it down. You're on holiday."
+      "end": "Put it down. You're on holiday.",
+      "name_y": 0.22,
+      "end_focus": [
+        0.535,
+        0.6
+      ],
+      "end_zoom": [
+        1.36,
+        1.32
+      ],
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "crowd_items": "spade,cup,kettle,sit,sit",
+          "sign": "POP. 39|ALL CHARLIE",
+          "palette": "gold_hour",
+          "sun_x": 0.8,
+          "sun_y": 0.34,
+          "sun_size": 0.05
+        },
+        "motion": "cut"
+      }
     }
   },
   {
@@ -882,37 +1002,49 @@
         1.55
       ],
       "focus": [
-        0.5,
+        0.55,
         0.64
       ],
       "spec": {
+        "terrain": "peaks",
+        "relief": 1.3,
+        "gag": "",
         "sign": "",
         "cartographer": false
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "particles": "rain",
-          "palette": "crimson",
-          "suns": 0,
+          "terrain": "peaks",
+          "relief": 1.3,
+          "gag": "stirrers",
           "sign": "",
           "cartographer": false
         },
-        "motion": "cut"
+        "motion": "rise"
       },
       "beats": [
         {
           "text": "When it rains,\nfarming is mostly stirring.",
           "shot": {
-            "framing": "gag",
+            "framing": "close",
             "zoom": [
-              2.1,
-              2.2
+              1.9,
+              1.95
             ],
             "focus": [
-              0.5,
-              0.68
+              0.37,
+              0.66
             ]
+          },
+          "spec": {
+            "particles": "rain",
+            "suns": 0,
+            "stars": 0,
+            "crowd": 3,
+            "crowd_items": "umbrella",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.24
           }
         },
         {
@@ -925,8 +1057,12 @@
             ],
             "focus": [
               0.6,
-              0.56
+              0.6
             ]
+          },
+          "spec": {
+            "sun_x": 0.7,
+            "sun_y": 0.26
           },
           "seconds": 1.9
         },
@@ -940,16 +1076,53 @@
             ],
             "focus": [
               0.6,
-              0.56
+              0.6
             ]
           },
           "spec": {
-            "sign": "DO NOT EAT|THE MOUNTAINS"
+            "sun_x": 0.7,
+            "sun_y": 0.26
+          },
+          "onset": {
+            "at": 0.6,
+            "spec": {
+              "terrain": "hills",
+              "relief": 1.5,
+              "layers": 4,
+              "mist": 0
+            },
+            "motion": "cut"
           },
           "seconds": 2.4
         }
       ],
-      "end": "One spoonful of mountain per Milo."
+      "end": "One spoonful of mountain per Milo.",
+      "end_spec": {
+        "gag": "",
+        "sign": "DO NOT|EAT THE|MOUNTAINS",
+        "suns": 0,
+        "relief": 0.9
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "crowd": 4,
+          "crowd_items": "spoon",
+          "crowd_facing": "right",
+          "crowd_x": 0.44,
+          "crowd_gap": 0.058
+        },
+        "motion": "rise"
+      },
+      "end_focus": [
+        0.6,
+        0.6
+      ],
+      "end_zoom": [
+        1.47,
+        1.43
+      ],
+      "name_y": 0.12
     }
   },
   {
@@ -1477,21 +1650,35 @@
       "framing": "medium",
       "focus": [
         0.5,
-        0.6
+        0.62
       ],
       "zoom": [
-        1.6,
-        1.65
+        1.7,
+        1.75
       ],
       "spec": {
-        "sun_y": 0.64,
-        "cartographer": false
+        "relief": 0.35,
+        "sun_y": 0.62,
+        "sun_size": 0.075,
+        "cartographer": false,
+        "crowd_facing": "in",
+        "crowd_gap": 0.23,
+        "crowd_items": "nothing,nothing",
+        "house": false,
+        "spot": "#ffffff"
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "sun_y": 0.54,
-          "cartographer": false
+          "relief": 0.35,
+          "sun_y": 0.56,
+          "sun_size": 0.075,
+          "cartographer": false,
+          "crowd_facing": "in",
+          "crowd_gap": 0.23,
+          "crowd_items": "shout,shout",
+          "house": false,
+          "spot": "#ffffff"
         },
         "motion": "cut"
       },
@@ -1499,39 +1686,74 @@
         {
           "text": "Don't mention the dishwasher.\nThose two are on day three.",
           "shot": {
-            "framing": "medium",
+            "framing": "wide",
             "focus": [
-              0.5,
-              0.62
+              0.55,
+              0.6
             ],
             "zoom": [
-              1.8,
-              1.85
+              1.4,
+              1.45
             ]
+          },
+          "spec": {
+            "sign": "DAY 3"
           }
         },
         {
           "text": "She makes him a tea.\nThe sun sets before his first sip.",
+          "text_y": 0.11,
           "shot": {
-            "framing": "medium",
+            "framing": "close",
             "focus": [
               0.5,
-              0.62
+              0.67
             ],
             "zoom": [
-              1.8,
-              1.85
+              2.5,
+              2.6
             ]
           },
           "spec": {
-            "crowd_facing": "in",
-            "crowd_items": "nothing,cup",
-            "palette": "polar_night",
-            "suns": 0
+            "crowd_items": "cup,shout",
+            "crowd_gap": 0.09,
+            "sun_y": 0.585
+          },
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "crowd_items": "nothing,cup",
+              "palette": "pumpkin",
+              "sun_y": 0.62
+            },
+            "motion": "cut"
           }
         }
       ],
-      "end": "Every cup is an olive branch."
+      "end": "Every cup is an olive branch.",
+      "end_spec": {
+        "crowd_items": "cup,cup",
+        "crowd_gap": 0.08,
+        "crowd_x": 0.3,
+        "palette": "polar_night",
+        "suns": 0,
+        "house": true,
+        "house_x": 0.43
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "bright_stars": true
+        }
+      },
+      "end_focus": [
+        0.33,
+        0.655
+      ],
+      "end_zoom": [
+        2.3,
+        2.05
+      ]
     }
   },
   {
@@ -1996,12 +2218,20 @@
       "sub": "Nobody here lies.",
       "framing": "sign",
       "zoom": [
-        1.65,
-        1.75
+        1.5,
+        1.56
+      ],
+      "focus": [
+        0.57,
+        0.6
       ],
       "spec": {
         "sign": "DAYS SINCE|ANYONE LIED|11,041",
-        "crowd": 0,
+        "crowd": 4,
+        "crowd_x": 0.44,
+        "crowd_gap": 0.065,
+        "crowd_facing": "right",
+        "crowd_items": "nothing,nothing,nothing,nothing",
         "palette": "teal_night",
         "suns": 0,
         "cartographer": false
@@ -2011,8 +2241,12 @@
         "spec": {
           "sign": "DAYS SINCE|ANYONE LIED|11,042",
           "crowd": 4,
-          "crowd_x": 0.5,
+          "crowd_x": 0.44,
+          "crowd_gap": 0.065,
           "crowd_facing": "right",
+          "crowd_items": "hand,hand,hand,hand",
+          "palette": "teal_night",
+          "suns": 0,
           "cartographer": false
         },
         "motion": "cut"
@@ -2021,15 +2255,24 @@
         {
           "text": "Birthday cards just say\n'Older.'",
           "shot": {
-            "framing": "wide",
+            "framing": "sign",
             "zoom": [
-              1.15,
-              1.2
+              1.9,
+              2.0
             ],
             "focus": [
-              0.6,
-              0.6
+              0.64,
+              0.625
             ]
+          },
+          "spec": {
+            "sign": "DEAR DAD,|OLDER.",
+            "crowd": 1,
+            "crowd_x": 0.5,
+            "crowd_facing": "right",
+            "crowd_items": "child",
+            "palette": "gold_hour",
+            "suns": 1
           }
         },
         {
@@ -2037,43 +2280,76 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              1.9,
-              1.96
+              2.5,
+              2.6
             ],
             "focus": [
               0.42,
-              0.68
+              0.645
             ]
           },
           "spec": {
-            "crowd": 2,
+            "sign": "",
+            "crowd": 3,
             "crowd_x": 0.42,
+            "crowd_gap": 0.045,
             "crowd_facing": "in",
-            "crowd_items": "nothing,spoon",
-            "cartographer": false,
-            "palette": "teal_night",
-            "suns": 0
+            "crowd_items": "spoon,shadow,cup"
           }
         },
         {
           "text": "'Delicious,' he said.",
           "shot": {
-            "framing": "sign",
+            "framing": "wide",
             "zoom": [
-              1.65,
-              1.75
+              1.42,
+              1.48
+            ],
+            "focus": [
+              0.57,
+              0.6
             ]
           },
           "spec": {
-            "sign": "DAYS SINCE|ANYONE LIED|0",
-            "cartographer": false,
-            "palette": "teal_night",
-            "suns": 0
+            "crowd": 3,
+            "crowd_x": 0.45,
+            "crowd_gap": 0.12,
+            "crowd_facing": "in",
+            "crowd_items": "spoon,shadow,sing"
           },
-          "seconds": 2.4
+          "onset": {
+            "at": 0.85,
+            "spec": {
+              "sign": "DAYS SINCE|ANYONE LIED|0",
+              "palette": "crimson"
+            },
+            "motion": "cut"
+          },
+          "seconds": 2.6
         }
       ],
-      "end": "It was not delicious."
+      "end": "It was not delicious.",
+      "end_zoom": [
+        1.8,
+        1.9
+      ],
+      "end_focus": [
+        0.56,
+        0.62
+      ],
+      "name_y": 0.14,
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "crowd_items": "spoon,shadow,nap"
+        },
+        "motion": "cut"
+      },
+      "end_spec": {
+        "crowd_x": 0.53,
+        "crowd_gap": 0.055,
+        "crowd_items": "spoon,shadow,cup"
+      }
     }
   },
   {
@@ -2510,7 +2786,8 @@
         "at": 0.4,
         "spec": {
           "palette": "rose_fog",
-          "suns": 0
+          "suns": 0,
+          "mist": 0.8
         },
         "motion": "cut"
       },
@@ -2520,38 +2797,92 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              2.0,
-              2.06
+              1.95,
+              2.0
             ],
             "focus": [
-              0.36,
-              0.66
+              0.4,
+              0.65
             ]
           },
           "spec": {
+            "palette": "cobalt_noon",
+            "mist": 0.4,
             "crowd": 2,
-            "crowd_x": 0.36,
-            "crowd_items": "nothing,cup",
-            "crowd_facing": "in"
+            "crowd_x": 0.4,
+            "crowd_gap": 0.23,
+            "crowd_items": "cup,kettle",
+            "crowd_facing": "in",
+            "house_x": 0.9
+          },
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "palette": "rose_fog",
+              "mist": 0.8,
+              "crowd_items": "sing,kettle",
+              "spot": "#e9b434"
+            },
+            "motion": "cut"
           }
         },
         {
           "text": "Then the newsreader signs off:\n'Love you, bye.'",
           "shot": {
-            "framing": "house",
+            "framing": "crowd",
             "zoom": [
-              1.8,
-              1.86
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.7,
+              0.67
             ]
           },
           "spec": {
-            "palette": "crimson",
-            "suns": 1,
-            "sun_y": 0.6
+            "crowd": 2,
+            "crowd_x": 0.36,
+            "crowd_gap": 0.72,
+            "crowd_items": "nothing,book",
+            "crowd_facing": "right",
+            "sign": "ON AIR"
+          },
+          "onset": {
+            "at": 0.8,
+            "spec": {
+              "palette": "crimson",
+              "crowd_items": "nothing,hand"
+            },
+            "motion": "cut"
           }
         }
       ],
-      "end": "Four million people say it back."
+      "end": "Four million people say it back.",
+      "end_spec": {
+        "crowd": 5,
+        "crowd_x": 0.32,
+        "crowd_gap": 0.2,
+        "crowd_items": "nothing,nothing,nothing,nothing,hand",
+        "crowd_facing": "right",
+        "house": false,
+        "spot": "#e9b434",
+        "mist": 0.3
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "crowd_items": "sing,sing,sing,sing,hand"
+        }
+      },
+      "end_zoom": [
+        1.2,
+        1.16
+      ],
+      "end_focus": [
+        0.43,
+        0.64
+      ],
+      "name_y": 0.25
     }
   },
   {
@@ -2787,18 +3118,24 @@
       "sub": "Every Will gets this planet.",
       "framing": "medium",
       "zoom": [
-        1.4,
-        1.45
+        1.3,
+        1.35
       ],
       "focus": [
-        0.55,
+        0.54,
         0.6
       ],
       "spec": {
         "palette": "polar_night",
         "suns": 0,
+        "crowd": 5,
+        "crowd_x": 0.4,
+        "crowd_gap": 0.075,
+        "crowd_items": "nothing",
+        "crowd_facing": "right",
         "sign": "SUNRISE|WANTED BY|6,204,310",
         "cartographer": false,
+        "house": false,
         "sun_y": 0.54
       },
       "onset": {
@@ -2806,9 +3143,15 @@
         "spec": {
           "palette": "gold_hour",
           "suns": 1,
+          "sun_y": 0.54,
+          "crowd": 5,
+          "crowd_x": 0.4,
+          "crowd_gap": 0.075,
+          "crowd_items": "hand",
+          "crowd_facing": "right",
           "sign": "SUNRISE|WANTED BY|6,204,311",
           "cartographer": false,
-          "sun_y": 0.54
+          "house": false
         },
         "motion": "cut"
       },
@@ -2816,47 +3159,79 @@
         {
           "text": "After New Year's Eve,\neveryone slept in.",
           "shot": {
-            "framing": "wide",
+            "framing": "close",
             "zoom": [
-              1.15,
-              1.18
+              1.75,
+              1.8
             ],
             "focus": [
-              0.5,
-              0.58
+              0.77,
+              0.62
             ]
           },
           "spec": {
             "palette": "polar_night",
             "suns": 0,
-            "crowd": 0,
-            "sign": "SUNRISE|WANTED BY|0",
-            "cartographer": false,
-            "house": false
+            "gag": "chair_sleepers",
+            "shore": "right",
+            "crowd": 1,
+            "crowd_x": -0.4,
+            "crowd_items": "nothing",
+            "sign": "SUNRISE|WANTED BY|0"
           }
         },
         {
           "text": "At five, it rose. One spaniel\nwanted it very much.",
           "shot": {
-            "framing": "wide",
+            "framing": "medium",
             "zoom": [
-              1.15,
-              1.18
+              1.35,
+              1.4
             ],
             "focus": [
-              0.5,
-              0.58
+              0.66,
+              0.6
             ]
           },
           "spec": {
-            "crowd": 0,
-            "sign": "SUNRISE|WANTED BY|1",
-            "cartographer": false,
-            "house": false
+            "palette": "polar_night",
+            "suns": 0,
+            "gag": "chair_sleepers",
+            "shore": "right",
+            "crowd": 1,
+            "crowd_x": -0.4,
+            "crowd_items": "nothing",
+            "sign": "SUNRISE|WANTED BY|0"
+          },
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "palette": "gold_hour",
+              "suns": 1,
+              "sun_x": 0.5,
+              "sun_y": 0.5,
+              "sign": "SUNRISE|WANTED BY|1 SPANIEL"
+            },
+            "motion": "cut"
           }
         }
       ],
-      "end": "There's always a Will."
+      "end": "There's always a Will.",
+      "end_focus": [
+        0.77,
+        0.61
+      ],
+      "end_zoom": [
+        1.65,
+        1.7
+      ],
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "sign": "SUNRISE|WANTED BY|1 SPANIEL|NAMED WILL"
+        }
+      },
+      "name_y": 0.12
     }
   },
   {
@@ -3102,24 +3477,24 @@
         1.36
       ],
       "focus": [
-        0.62,
-        0.56
+        0.5,
+        0.6
       ],
       "spec": {
-        "palette": "cobalt_noon",
-        "sun_x": 0.3,
-        "sun_y": 0.45,
         "lamp": false,
-        "cartographer": false
+        "cartographer": true,
+        "house_x": 0.3,
+        "sign": ""
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "palette": "crimson",
-          "lamp": true,
-          "cartographer": false
+          "lamp": false,
+          "cartographer": true,
+          "house_x": 0.3,
+          "sign": "NEXT DOOR|90 MILES"
         },
-        "motion": "cut"
+        "motion": "rise"
       },
       "beats": [
         {
@@ -3127,13 +3502,17 @@
           "shot": {
             "framing": "sky",
             "zoom": [
-              1.6,
-              1.7
+              1.35,
+              1.42
             ],
             "focus": [
-              0.5,
-              0.42
+              0.45,
+              0.6
             ]
+          },
+          "spec": {
+            "lamp": true,
+            "sign": ""
           }
         },
         {
@@ -3141,38 +3520,59 @@
           "shot": {
             "framing": "medium",
             "zoom": [
-              1.3,
-              1.36
+              1.48,
+              1.54
             ],
             "focus": [
-              0.62,
-              0.56
+              0.37,
+              0.6
             ]
           },
           "spec": {
             "palette": "abyss",
             "suns": 0,
-            "lamp": true,
-            "snow": true,
-            "particles": "snow",
-            "cartographer": false
+            "lamp": false,
+            "sign": ""
+          },
+          "onset": {
+            "at": 0.5,
+            "spec": {
+              "lamp": true
+            },
+            "motion": "cut"
           }
         }
       ],
       "end": "Nine trucks and a vet.",
       "end_spec": {
-        "palette": "gold_hour",
+        "palette": "mint_dawn",
         "suns": 1,
-        "sun_x": 0.84,
-        "sun_y": 0.58,
+        "sun_x": 0.86,
+        "sun_y": 0.5,
         "lamp": false,
-        "snow": false,
-        "particles": "none",
-        "crowd": 6,
-        "crowd_items": "kettle,nothing,kettle,nothing,kettle,nothing",
-        "crowd_x": 0.55,
-        "cartographer": false
-      }
+        "sign": "NEXT DOOR|90 MILES"
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "lamp": true,
+          "crowd": 10,
+          "crowd_x": 0.59,
+          "crowd_gap": 0.033,
+          "crowd_facing": "left",
+          "crowd_items": "nothing,nothing,nothing,nothing,nothing,nothing,walk,nothing,walk,walk"
+        },
+        "motion": "cut"
+      },
+      "end_focus": [
+        0.5,
+        0.62
+      ],
+      "end_zoom": [
+        1.26,
+        1.22
+      ],
+      "name_y": 0.12
     }
   },
   {
@@ -3379,21 +3779,24 @@
         1.56
       ],
       "focus": [
-        0.43,
-        0.585
+        0.45,
+        0.6
       ],
       "spec": {
         "crowd": 0,
-        "palette": "lilac_dusk"
+        "palette": "lilac_dusk",
+        "house_x": 0.9
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "crowd": 6,
-          "crowd_items": "nothing",
-          "crowd_x": 0.36,
-          "crowd_facing": "",
-          "palette": "lilac_dusk"
+          "crowd": 8,
+          "crowd_items": "hand,walk,hand,flower,hand,shadow,sit,sing",
+          "crowd_x": 0.45,
+          "crowd_gap": 0.08,
+          "crowd_facing": "in",
+          "palette": "lilac_dusk",
+          "house_x": 0.9
         }
       },
       "beats": [
@@ -3406,16 +3809,17 @@
               1.56
             ],
             "focus": [
-              0.43,
-              0.585
+              0.45,
+              0.6
             ]
           },
           "spec": {
-            "crowd": 2,
-            "crowd_items": "nothing,flower",
-            "crowd_x": 0.36,
-            "crowd_facing": "in",
-            "palette": "rust_desert"
+            "crowd_items": "sit,nap,sit,flower,hand,shadow,nap,sing",
+            "palette": "gold_hour",
+            "suns": 1,
+            "sun_x": 0.2,
+            "sun_y": 0.5,
+            "sun_size": 0.07
           }
         },
         {
@@ -3423,24 +3827,53 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              2.0,
-              2.06
+              2.4,
+              2.46
             ],
             "focus": [
-              0.38,
-              0.62
+              0.46,
+              0.655
             ]
           },
           "spec": {
-            "crowd": 2,
-            "crowd_items": "nothing,flower",
-            "crowd_x": 0.36,
-            "crowd_facing": "in",
-            "palette": "rust_desert"
+            "crowd_items": "sit,nap,sit,flower,hand,shadow,nap,sing",
+            "palette": "cobalt_noon",
+            "suns": 1,
+            "sun_x": 0.4,
+            "sun_y": 0.36,
+            "sun_size": 0.03
+          },
+          "onset": {
+            "at": 0.7,
+            "spec": {
+              "palette": "teal_night",
+              "suns": 0
+            },
+            "motion": "cut"
           }
         }
       ],
-      "end": "The groom's been asleep since ten."
+      "end": "The groom's been asleep since ten.",
+      "end_spec": {
+        "crowd": 8,
+        "crowd_items": "shadow,shadow,shadow,flower,hand,shadow,shadow,sing",
+        "crowd_x": 0.36
+      },
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "gag": "chair_sleepers"
+        }
+      },
+      "end_zoom": [
+        1.5,
+        1.46
+      ],
+      "end_focus": [
+        0.333,
+        0.6
+      ],
+      "scrim": 0.55
     }
   },
   {
@@ -3642,36 +4075,60 @@
         1.42,
         1.46
       ],
+      "focus": [
+        0.37,
+        0.63
+      ],
       "spec": {
-        "crowd_x": 1.5,
-        "sign": "",
-        "cartographer": false
+        "sign": "NORTH →",
+        "cartographer": false,
+        "crowd": 2,
+        "crowd_x": 0.96,
+        "crowd_gap": 1.08,
+        "crowd_items": "walk",
+        "crowd_facing": "left",
+        "house_x": 0.58
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "crowd_x": 0.56,
-          "sign": "NORTH|PLEASE KNOCK",
-          "cartographer": false
-        }
+          "sign": "← NORTH",
+          "cartographer": false,
+          "crowd": 2,
+          "crowd_x": 0.825,
+          "crowd_gap": 1.35,
+          "crowd_items": "walk",
+          "crowd_facing": "left",
+          "house_x": 0.58
+        },
+        "motion": "cut"
       },
       "beats": [
         {
           "text": "For thirty years, he's written\nto Pat, in the far south.",
           "shot": {
-            "framing": "crowd",
+            "framing": "gag",
             "zoom": [
-              2.0,
-              2.06
+              1.28,
+              1.33
             ],
             "focus": [
-              0.62,
-              0.66
+              0.46,
+              0.6
             ]
           },
           "seconds": 3.0,
           "spec": {
-            "sign": ""
+            "sign": "",
+            "water": true,
+            "shore": "left",
+            "gag": "coast_letters",
+            "crowd": 1,
+            "crowd_x": 0.25,
+            "crowd_items": "book",
+            "crowd_facing": "right",
+            "house_x": 0.37,
+            "spot": "#c8452f"
           }
         },
         {
@@ -3679,29 +4136,68 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              2.0,
-              2.06
+              1.34,
+              1.38
             ],
             "focus": [
-              0.62,
-              0.66
+              0.54,
+              0.64
             ]
           },
+          "seconds": 2.6,
           "spec": {
-            "crowd_x": 1.5,
-            "sign": ""
+            "palette": "gold_hour",
+            "water": true,
+            "shore": "left",
+            "house_x": 0.3,
+            "crowd": 1,
+            "crowd_x": 0.43,
+            "crowd_items": "cup",
+            "crowd_facing": "right",
+            "sign": "FAR SOUTH"
           },
-          "seconds": 2.6
+          "onset": {
+            "at": 0.9,
+            "spec": {
+              "crowd": 2,
+              "crowd_x": 0.475,
+              "crowd_gap": 0.09,
+              "crowd_items": "cup,book",
+              "crowd_facing": "in",
+              "sign": "← NORTH"
+            },
+            "motion": "cut"
+          }
         }
       ],
       "end": "The navy's been very understanding.",
       "end_spec": {
-        "sign": "NORTH|GONE SOUTH"
+        "palette": "cobalt_noon",
+        "water": false,
+        "shore": "none",
+        "house_x": 0.58,
+        "crowd": 1,
+        "crowd_x": 1.5,
+        "crowd_gap": 0.09,
+        "crowd_items": "walk",
+        "crowd_facing": "left",
+        "sign": "NORTH →"
       },
-      "focus": [
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "sign": "NORTH|GONE SOUTH"
+        }
+      },
+      "end_focus": [
         0.44,
-        0.63
-      ]
+        0.59
+      ],
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "name_y": 0.27
     }
   },
   {
@@ -3902,18 +4398,28 @@
       "sub": "You've just landed on Simon.",
       "framing": "crowd",
       "zoom": [
-        1.9,
-        2.0
+        2.0,
+        2.1
       ],
       "spec": {
-        "crowd_items": "nothing,nothing,child,nothing,nothing",
-        "cartographer": false
+        "crowd": 5,
+        "crowd_x": 0.5,
+        "crowd_gap": 0.075,
+        "house_x": 0.24,
+        "cartographer": false,
+        "relief": 0.3,
+        "crowd_items": "nothing,nothing,child,nothing,nothing"
       },
       "onset": {
         "at": 0.4,
         "spec": {
-          "crowd_items": "fish,fish,child,fish,fish",
-          "cartographer": false
+          "crowd": 5,
+          "crowd_x": 0.5,
+          "crowd_gap": 0.075,
+          "house_x": 0.24,
+          "cartographer": false,
+          "relief": 0.3,
+          "crowd_items": "hand,hand,child,hand,hand"
         }
       },
       "beats": [
@@ -3926,8 +4432,8 @@
               3.0
             ],
             "focus": [
-              0.4,
-              0.66
+              0.5,
+              0.68
             ]
           }
         },
@@ -3936,13 +4442,18 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              1.6,
-              1.65
+              2.55,
+              2.65
+            ],
+            "focus": [
+              0.38,
+              0.66
             ]
           },
           "spec": {
             "palette": "lilac_dusk",
-            "sun_y": 0.6
+            "suns": 0,
+            "crowd_facing": "left"
           }
         },
         {
@@ -3950,18 +4461,57 @@
           "shot": {
             "framing": "crowd",
             "zoom": [
-              1.6,
-              1.65
+              1.85,
+              1.9
+            ],
+            "focus": [
+              0.45,
+              0.635
             ]
           },
           "spec": {
-            "palette": "teal_night",
+            "palette": "lilac_dusk",
             "suns": 0,
-            "crowd_items": "fish,fish,child_asleep,fish,fish"
+            "crowd_facing": "left"
+          },
+          "onset": {
+            "at": 0.8,
+            "spec": {
+              "palette": "polar_night",
+              "suns": 0,
+              "big_moon": true,
+              "bright_stars": true,
+              "crowd_items": "hand,hand,child_asleep,hand,hand"
+            },
+            "motion": "cut"
           }
         }
       ],
       "end": "He'll say it in the morning.",
+      "end_focus": [
+        0.45,
+        0.635
+      ],
+      "end_zoom": [
+        1.9,
+        1.95
+      ],
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_x": 0.52,
+          "sun_y": 0.595,
+          "sun_size": 0.06,
+          "big_moon": false,
+          "moons": 0,
+          "stars": 0,
+          "bright_stars": false,
+          "mist": 0
+        }
+      },
+      "name_y": 0.15,
       "scrim": 0.65
     }
   }
