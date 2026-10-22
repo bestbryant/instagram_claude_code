@@ -133,24 +133,34 @@
     "sub": "On Hollow, they faint.",
     "framing": "gag",
     "zoom": [
-      1.4,
-      1.46
+      1.7,
+      1.76
     ],
     "focus": [
-      0.55,
-      0.6
+      0.42,
+      0.62
     ],
     "spec": {
-      "palette": "rose_fog",
+      "palette": "teal_night",
       "big_moon": false,
-      "gag": "ghost"
+      "gag": "ghost",
+      "spot": "#ff1a1a",
+      "crowd": 1,
+      "crowd_x": 0.57,
+      "crowd_items": "shout",
+      "crowd_facing": "left"
     },
     "onset": {
       "at": 0.4,
       "spec": {
         "palette": "pumpkin",
         "big_moon": true,
-        "gag": "fainted_ghost"
+        "gag": "fainted_ghost",
+        "spot": "#ff1a1a",
+        "crowd": 1,
+        "crowd_x": 0.57,
+        "crowd_items": "shout",
+        "crowd_facing": "left"
       },
       "motion": "cut"
     },
@@ -160,17 +170,78 @@
         "shot": {
           "framing": "gag",
           "zoom": [
-            2.2,
-            2.3
+            2.0,
+            2.08
+          ],
+          "focus": [
+            0.42,
+            0.63
           ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "big_moon": false,
+          "bright_stars": true,
+          "crowd_items": "sing",
+          "spot": "#e9b434"
         }
       },
       {
         "text": "Nudge a wardrobe? Say sorry.\nIt might be occupied.",
-        "shot": "house"
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.95,
+            2.03
+          ],
+          "focus": [
+            0.5,
+            0.63
+          ]
+        },
+        "spec": {
+          "gag": "",
+          "house_x": 0.49,
+          "crowd": 3,
+          "crowd_x": -0.03,
+          "crowd_gap": 0.6,
+          "crowd_items": "sing",
+          "spot": "#e9b434"
+        },
+        "onset": {
+          "at": 0.8,
+          "spec": {
+            "gag": "ghost",
+            "crowd": 0
+          },
+          "motion": "rise"
+        }
       }
     ],
-    "end": "Now you apologise to furniture."
+    "end": "Now you apologise to furniture.",
+    "end_spec": {
+      "gag": "",
+      "crowd": 1,
+      "crowd_x": 0.57,
+      "crowd_gap": 0.09,
+      "crowd_items": "sing",
+      "house_x": 0.425
+    },
+    "end_onset": {
+      "at": 0.6,
+      "spec": {
+        "sign": "It's fine,|really."
+      }
+    },
+    "end_focus": [
+      0.4,
+      0.6
+    ],
+    "end_zoom": [
+      1.6,
+      1.55
+    ],
+    "name_y": 0.22
   },
   "_engine": 5
 }

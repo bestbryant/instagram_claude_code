@@ -166,26 +166,38 @@
     "sub": "For anyone who leaves\nthe porch light on.",
     "framing": "wide",
     "zoom": [
-      1.35,
-      1.4
+      1.06,
+      1.18
     ],
     "focus": [
-      0.42,
-      0.6
+      0.5,
+      0.56
     ],
     "spec": {
-      "palette": "lilac_dusk",
-      "lanterns": 3,
-      "horizon": 0.5,
-      "cartographer": false
+      "palette": "teal_night",
+      "lanterns": 0,
+      "horizon": 0.6,
+      "relief": 0.12,
+      "cartographer": false,
+      "lighthouse": false,
+      "stage": 0.75,
+      "house": true,
+      "house_x": 0.28,
+      "moons": 0
     },
     "onset": {
       "at": 0.4,
       "spec": {
         "palette": "teal_night",
-        "lanterns": 14,
-        "horizon": 0.5,
-        "cartographer": false
+        "lanterns": 5,
+        "horizon": 0.6,
+        "relief": 0.12,
+        "cartographer": false,
+        "lighthouse": false,
+        "stage": 0.75,
+        "house": true,
+        "house_x": 0.28,
+        "moons": 0
       },
       "motion": "cut"
     },
@@ -195,13 +207,17 @@
         "shot": {
           "framing": "close",
           "zoom": [
-            2.1,
-            2.2
+            1.8,
+            1.9
           ],
           "focus": [
-            0.47,
-            0.5
+            0.605,
+            0.632
           ]
+        },
+        "spec": {
+          "sign": "SMILE|PLEASE|the boats|are watching",
+          "house": false
         }
       },
       {
@@ -209,20 +225,48 @@
         "shot": {
           "framing": "wide",
           "zoom": [
-            1.35,
-            1.4
+            1.2,
+            1.24
           ],
           "focus": [
-            0.42,
-            0.6
+            0.5,
+            0.57
           ]
         },
-        "spec": {
-          "lanterns": 0
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "lanterns": 2,
+            "crowd": 2,
+            "crowd_items": "fish,fish",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.08,
+            "crowd_facing": "left"
+          },
+          "motion": "cut"
         }
       }
     ],
-    "end": "Dark means everyone's home."
+    "end": "Dark means everyone's home.",
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "lanterns": 0,
+        "crowd": 3,
+        "crowd_items": "fish,fish,fish",
+        "crowd_x": 0.46
+      },
+      "motion": "cut"
+    },
+    "end_zoom": [
+      1.62,
+      1.58
+    ],
+    "end_focus": [
+      0.5,
+      0.62
+    ],
+    "name_y": 0.16
   },
   "_engine": 5
 }

@@ -122,6 +122,9 @@
     ],
     "spec": {
       "big_moon": true,
+      "moons": 0,
+      "moths": 0,
+      "mist": 0.1,
       "stage": 0.68,
       "cartographer": false
     },
@@ -129,6 +132,9 @@
       "at": 0.4,
       "spec": {
         "big_moon": false,
+        "moons": 0,
+        "moths": 6,
+        "mist": 0.1,
         "stage": 0.68,
         "cartographer": false
       },
@@ -140,9 +146,20 @@
         "shot": {
           "framing": "gag",
           "zoom": [
-            2.0,
-            2.1
+            1.9,
+            2.0
           ]
+        },
+        "spec": {
+          "moths": 0,
+          "bright_stars": true
+        },
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "moths": 6
+          },
+          "motion": "auto"
         }
       },
       {
@@ -150,13 +167,55 @@
         "shot": {
           "framing": "gag",
           "zoom": [
-            2.4,
-            2.5
+            2.25,
+            2.35
+          ],
+          "focus": [
+            0.48,
+            0.6
           ]
+        },
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "palette": "rose_fog",
+            "crowd": 1,
+            "crowd_x": 0.57,
+            "crowd_items": "cup",
+            "crowd_facing": "left",
+            "mist": 0.35
+          },
+          "motion": "auto"
         }
       }
     ],
-    "end": "Now Gordon leaves out thirteen.",
-    "title_y": 0.135
+    "end": "Now Gordon leaves out a spare moon.",
+    "end_spec": {
+      "palette": "lilac_dusk",
+      "crowd": 0,
+      "moths": 0,
+      "gag": "",
+      "house": true,
+      "house_x": 0.36
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "lamp": true,
+        "moths": 8
+      },
+      "motion": "cut"
+    },
+    "end_zoom": [
+      1.3,
+      1.25
+    ],
+    "end_focus": [
+      0.5,
+      0.5
+    ],
+    "name_y": 0.13,
+    "title_y": 0.135,
+    "scrim": 0.6
   }
 }

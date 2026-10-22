@@ -130,5 +130,122 @@
     "end": "I'll be there on Thursday.",
     "caption": "Those rings in the air are a shout.\n\nHush is a long, snowed-in valley: 9,300 people, a 26-hour day, no moons, and sound that crawls along slower than you can walk. A shout takes five days to cross it and arrives quieter, usually after everyone has moved on. On a still day you can stand at the bottom and hear last week: dogs, a wedding, someone practising the trumpet badly. Shouts must be signed, because five days later it's hard to tell who started it.\n\nHe's taken a flask and a blanket out into the snow. Nobody can talk him out of it in under five days. Half the town is taking Thursday afternoon off to listen. So am I. Part two goes up on Thursday, when it lands.\n\nWhat do you think she said?"
   },
-  "_engine": 4
+  "short": {
+    "version": "D",
+    "kicker": "A planet for people who reply to texts five days late.",
+    "title": "Shouts take five days\nto cross the valley.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.2,
+      1.26
+    ],
+    "focus": [
+      0.5,
+      0.58
+    ],
+    "spec": {
+      "stage": 0.7,
+      "horizon": 0.5,
+      "aurora": true,
+      "house_x": 0.5,
+      "cartographer": true,
+      "gag": "",
+      "crowd": 3,
+      "crowd_x": 0.2,
+      "crowd_gap": 0.6,
+      "crowd_items": "nothing",
+      "bright_stars": true
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "stage": 0.7,
+        "horizon": 0.5,
+        "aurora": true,
+        "house_x": 0.5,
+        "cartographer": true,
+        "gag": "slow_shout",
+        "bright_stars": true
+      }
+    },
+    "beats": [
+      {
+        "text": "In March he shouted,\n‘Will you marry me?’\nShe took seven months.",
+        "shot": {
+          "framing": "right",
+          "zoom": [
+            1.5,
+            1.58
+          ],
+          "focus": [
+            0.62,
+            0.62
+          ]
+        },
+        "onset": {
+          "at": 1.6,
+          "motion": "cut",
+          "spec": {
+            "palette": "gold_hour",
+            "snow": false,
+            "particles": "none",
+            "aurora": false,
+            "daisies": 40,
+            "gag": "",
+            "crowd": 1,
+            "crowd_x": 0.8,
+            "crowd_facing": "left",
+            "crowd_items": "sit",
+            "cartographer": false
+          }
+        }
+      },
+      {
+        "text": "She walked over, and got there\nbefore her answer did:\n‘Yes.’ Then, faintly, ‘obviously.’",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.38,
+            1.44
+          ],
+          "focus": [
+            0.56,
+            0.62
+          ]
+        },
+        "spec": {
+          "gag": "",
+          "house": false,
+          "crowd": 2,
+          "crowd_x": 0.58,
+          "crowd_gap": 0.075,
+          "crowd_facing": "right",
+          "crowd_items": "nothing,echo"
+        },
+        "onset": {
+          "at": 2.9,
+          "motion": "rise",
+          "spec": {
+            "crowd_items": "echo,echo"
+          }
+        }
+      }
+    ],
+    "end": "The vows go out five days early.",
+    "end_spec": {
+      "crowd_items": "nothing,sing"
+    },
+    "end_zoom": [
+      1.18,
+      1.12
+    ],
+    "end_focus": [
+      0.5,
+      0.56
+    ],
+    "name_y": 0.2
+  },
+  "_engine": 5
 }
