@@ -154,36 +154,74 @@
       {
         "text": "Frank writes to it every year,\nmostly about his dog, Biscuit.",
         "shot": {
-          "framing": "gag",
+          "framing": "crowd",
           "zoom": [
-            1.7,
-            1.78
+            1.45,
+            1.52
           ],
           "focus": [
-            0.45,
+            0.5,
             0.56
           ]
+        },
+        "spec": {
+          "gag": "",
+          "crowd": 1,
+          "crowd_items": "book",
+          "crowd_x": 0.55,
+          "crowd_facing": "left"
         }
       },
       {
         "text": "No reply. Then the moon wrote:\n'Dear Biscuit, how is Frank?'",
         "shot": {
-          "framing": "gag",
+          "framing": "moon",
           "zoom": [
-            1.7,
-            1.78
+            1.55,
+            1.62
           ],
           "focus": [
-            0.45,
-            0.56
+            0.46,
+            0.57
           ]
         },
         "spec": {
-          "palette": "mint_dawn",
-          "cartographer": false
+          "gag": "",
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.55,
+          "crowd_facing": "left"
+        },
+        "onset": {
+          "at": 0.9,
+          "spec": {
+            "moon_window": true,
+            "palette": "gold_hour"
+          },
+          "motion": "cut"
         }
       }
     ],
-    "end": "Biscuit hasn't written back."
+    "end": "Biscuit hasn't written back.",
+    "end_spec": {
+      "palette": "polar_night",
+      "crowd_items": "sit"
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "palette": "rose_fog"
+      },
+      "motion": "cut"
+    },
+    "end_focus": [
+      0.47,
+      0.525
+    ],
+    "end_zoom": [
+      1.18,
+      1.12
+    ],
+    "name_y": 0.24
   }
 }

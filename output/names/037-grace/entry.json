@@ -202,21 +202,24 @@
       1.56
     ],
     "focus": [
-      0.43,
-      0.585
+      0.45,
+      0.6
     ],
     "spec": {
       "crowd": 0,
-      "palette": "lilac_dusk"
+      "palette": "lilac_dusk",
+      "house_x": 0.9
     },
     "onset": {
       "at": 0.4,
       "spec": {
-        "crowd": 6,
-        "crowd_items": "nothing",
-        "crowd_x": 0.36,
-        "crowd_facing": "",
-        "palette": "lilac_dusk"
+        "crowd": 8,
+        "crowd_items": "hand,walk,hand,flower,hand,shadow,sit,sing",
+        "crowd_x": 0.45,
+        "crowd_gap": 0.08,
+        "crowd_facing": "in",
+        "palette": "lilac_dusk",
+        "house_x": 0.9
       }
     },
     "beats": [
@@ -229,16 +232,17 @@
             1.56
           ],
           "focus": [
-            0.43,
-            0.585
+            0.45,
+            0.6
           ]
         },
         "spec": {
-          "crowd": 2,
-          "crowd_items": "nothing,flower",
-          "crowd_x": 0.36,
-          "crowd_facing": "in",
-          "palette": "rust_desert"
+          "crowd_items": "sit,nap,sit,flower,hand,shadow,nap,sing",
+          "palette": "gold_hour",
+          "suns": 1,
+          "sun_x": 0.2,
+          "sun_y": 0.5,
+          "sun_size": 0.07
         }
       },
       {
@@ -246,23 +250,52 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            2.0,
-            2.06
+            2.4,
+            2.46
           ],
           "focus": [
-            0.38,
-            0.62
+            0.46,
+            0.655
           ]
         },
         "spec": {
-          "crowd": 2,
-          "crowd_items": "nothing,flower",
-          "crowd_x": 0.36,
-          "crowd_facing": "in",
-          "palette": "rust_desert"
+          "crowd_items": "sit,nap,sit,flower,hand,shadow,nap,sing",
+          "palette": "cobalt_noon",
+          "suns": 1,
+          "sun_x": 0.4,
+          "sun_y": 0.36,
+          "sun_size": 0.03
+        },
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0
+          },
+          "motion": "cut"
         }
       }
     ],
-    "end": "The groom's been asleep since ten."
+    "end": "The groom's been asleep since ten.",
+    "end_spec": {
+      "crowd": 8,
+      "crowd_items": "shadow,shadow,shadow,flower,hand,shadow,shadow,sing",
+      "crowd_x": 0.36
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "gag": "chair_sleepers"
+      }
+    },
+    "end_zoom": [
+      1.5,
+      1.46
+    ],
+    "end_focus": [
+      0.333,
+      0.6
+    ],
+    "scrim": 0.55
   }
 }
