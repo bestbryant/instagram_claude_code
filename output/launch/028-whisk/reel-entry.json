@@ -231,24 +231,32 @@
     "sub": "Wren would like to finish\na cup of tea in one day.",
     "framing": "crowd",
     "zoom": [
-      2.0,
-      2.06
+      1.88,
+      1.94
     ],
     "focus": [
-      0.55,
-      0.63
+      0.53,
+      0.56
     ],
     "spec": {
+      "palette": "cobalt_noon",
+      "stage": 0.68,
+      "mist": 0.0,
+      "suns": 1,
       "sun_x": 0.72,
-      "sun_y": 0.42
+      "sun_y": 0.345,
+      "sun_size": 0.065
     },
     "onset": {
       "at": 0.4,
       "spec": {
-        "palette": "gold_hour",
-        "sun_x": 0.62,
-        "sun_y": 0.62
-      }
+        "palette": "polar_night",
+        "stage": 0.68,
+        "mist": 0.2,
+        "suns": 0,
+        "bright_stars": true
+      },
+      "motion": "cut"
     },
     "beats": [
       {
@@ -256,21 +264,30 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            1.8,
-            1.86
+            2.4,
+            2.46
           ],
           "focus": [
-            0.42,
-            0.64
+            0.48,
+            0.6
           ]
         },
         "spec": {
-          "palette": "polar_night",
-          "suns": 0,
-          "crowd_items": "child,child",
-          "crowd": 2,
-          "crowd_x": 0.42,
-          "crowd_facing": "in"
+          "palette": "mint_dawn",
+          "suns": 1,
+          "sun_x": 0.645,
+          "sun_y": 0.43,
+          "bright_stars": false
+        },
+        "onset": {
+          "at": 0.55,
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,child_asleep",
+            "crowd_gap": 0.004,
+            "crowd_facing": "right"
+          },
+          "motion": "rise"
         }
       },
       {
@@ -278,22 +295,59 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            2.0,
-            2.06
+            2.1,
+            2.16
           ],
           "focus": [
-            0.55,
-            0.63
+            0.38,
+            0.58
           ]
         },
         "spec": {
-          "palette": "crimson",
-          "sun_x": 0.34,
-          "sun_y": 0.62
+          "palette": "polar_night",
+          "suns": 0,
+          "bright_stars": true
+        },
+        "onset": {
+          "at": 0.9,
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "sun_x": 0.34,
+            "sun_y": 0.53,
+            "sun_size": 0.06,
+            "bright_stars": false
+          },
+          "motion": "cut"
         }
       }
     ],
-    "end": "Close enough."
+    "end": "Close enough.",
+    "end_spec": {
+      "palette": "pumpkin",
+      "sun_x": 0.62,
+      "sun_y": 0.515,
+      "sun_size": 0.045
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "crowd": 3,
+        "crowd_items": "hand,hand,cup",
+        "crowd_gap": 0.0,
+        "crowd_facing": ""
+      },
+      "motion": "cut"
+    },
+    "end_zoom": [
+      2.1,
+      2.2
+    ],
+    "end_focus": [
+      0.45,
+      0.575
+    ],
+    "name_y": 0.12
   },
   "_engine": 5
 }

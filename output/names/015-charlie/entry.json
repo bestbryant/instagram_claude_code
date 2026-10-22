@@ -142,11 +142,11 @@
     "sub": "You've just landed.\nYou're Charlie too.",
     "framing": "crowd",
     "zoom": [
-      1.65,
-      1.7
+      1.5,
+      1.54
     ],
     "focus": [
-      0.62,
+      0.6,
       0.6
     ],
     "spec": {
@@ -157,8 +157,10 @@
       "at": 0.4,
       "spec": {
         "crowd": 4,
-        "crowd_x": 0.53,
-        "crowd_items": "spade,nothing,cup,kettle",
+        "crowd_x": 0.46,
+        "crowd_gap": 0.085,
+        "crowd_items": "spade,cup,kettle,nothing",
+        "crowd_facing": "right",
         "cartographer": false
       }
     },
@@ -169,12 +171,24 @@
           "framing": "close",
           "zoom": [
             2.2,
-            2.3
+            2.26
           ],
           "focus": [
-            "x",
-            0.485
+            0.51,
+            0.655
           ]
+        },
+        "spec": {
+          "sign": "",
+          "crowd_x": 0.495,
+          "crowd_gap": 0.1
+        },
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "crowd_items": "spade,cup,kettle,sit"
+          },
+          "motion": "cut"
         }
       },
       {
@@ -182,15 +196,52 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            1.9,
-            1.98
+            1.32,
+            1.36
+          ],
+          "focus": [
+            0.535,
+            0.62
           ]
         },
         "spec": {
+          "crowd_x": 0.35625,
+          "crowd_gap": 0.0875,
+          "crowd_items": "spade,cup,kettle,sit",
           "crowd_facing": "in"
+        },
+        "onset": {
+          "at": 0.6,
+          "spec": {
+            "crowd": 5,
+            "crowd_x": 0.4,
+            "crowd_items": "spade,cup,kettle,sit,book"
+          },
+          "motion": "slide"
         }
       }
     ],
-    "end": "Put it down. You're on holiday."
+    "end": "Put it down. You're on holiday.",
+    "name_y": 0.22,
+    "end_focus": [
+      0.535,
+      0.6
+    ],
+    "end_zoom": [
+      1.36,
+      1.32
+    ],
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "crowd_items": "spade,cup,kettle,sit,sit",
+        "sign": "POP. 39|ALL CHARLIE",
+        "palette": "gold_hour",
+        "sun_x": 0.8,
+        "sun_y": 0.34,
+        "sun_size": 0.05
+      },
+      "motion": "cut"
+    }
   }
 }
