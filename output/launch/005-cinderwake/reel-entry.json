@@ -157,12 +157,25 @@
     "title": "The ground here\nboils your kettle.",
     "sub": "Nobody is ever cold.\nExcept Wilf.",
     "framing": "gag",
+    "zoom": [
+      1.5,
+      1.55
+    ],
+    "focus": [
+      0.56,
+      0.64
+    ],
     "spec": {
       "palette": "violet_ice",
       "particles": "none",
       "glow_rims": false,
       "suns": 0,
-      "cartographer": false
+      "cartographer": false,
+      "gag": "",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.8,
+      "crowd_facing": "left"
     },
     "onset": {
       "at": 0.4,
@@ -176,14 +189,36 @@
     "beats": [
       {
         "text": "By law, the cold get the kettles.\nSo every kettle is his.",
-        "shot": "crowd",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.62,
+            1.68
+          ],
+          "focus": [
+            0.48,
+            0.62
+          ]
+        },
         "spec": {
+          "gag": "",
           "suns": 0,
           "palette": "pumpkin",
-          "crowd": 6,
-          "crowd_items": "kettle",
-          "crowd_x": 0.42,
-          "crowd_facing": "right"
+          "crowd": 1,
+          "crowd_items": "hand",
+          "crowd_x": 0.5,
+          "crowd_facing": "left"
+        },
+        "onset": {
+          "at": 0.9,
+          "spec": {
+            "crowd": 7,
+            "crowd_items": "kettle,kettle,kettle,hand,kettle,kettle,kettle",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.08,
+            "crowd_facing": "in"
+          },
+          "motion": "rise"
         }
       },
       {
@@ -191,34 +226,52 @@
         "shot": {
           "framing": "close",
           "zoom": [
-            2.1,
-            2.25
+            2.3,
+            2.26
           ],
           "focus": [
-            0.8,
-            0.67
+            0.778,
+            0.64
           ]
         },
         "spec": {
           "suns": 0,
-          "palette": "pumpkin",
-          "crowd": 6,
-          "crowd_items": "kettle",
-          "crowd_x": 0.42,
-          "crowd_facing": "right",
-          "cartographer": false
+          "palette": "crimson",
+          "house": true,
+          "house_x": 0.9
+        },
+        "onset": {
+          "at": 0.8,
+          "spec": {
+            "particles": "snow",
+            "flake_size": 3.0
+          },
+          "motion": "cut"
         }
       }
     ],
     "end": "Wilf says bring a cardigan.",
-    "zoom": [
-      1.5,
-      1.55
+    "end_spec": {
+      "palette": "crimson",
+      "particles": "embers",
+      "flake_size": 1.0,
+      "glow_rims": true,
+      "house": false,
+      "crowd": 2,
+      "crowd_items": "doze,nap",
+      "crowd_x": 0.905,
+      "crowd_gap": 0.07,
+      "crowd_facing": "right"
+    },
+    "end_zoom": [
+      1.72,
+      1.66
     ],
-    "focus": [
-      0.54,
-      0.66
-    ]
+    "end_focus": [
+      0.698,
+      0.6
+    ],
+    "name_y": 0.27
   },
   "_engine": 5
 }
