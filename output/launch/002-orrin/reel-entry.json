@@ -162,31 +162,38 @@
     "title_y": 0.12,
     "framing": "medium",
     "zoom": [
-      1.45,
-      1.5
+      1.8,
+      1.85
     ],
     "focus": [
-      0.5,
+      0.45,
       0.6
     ],
     "spec": {
-      "giant": false,
       "palette": "lilac_dusk",
       "suns": 0,
-      "cartographer": false
+      "giant_y": 0.14,
+      "cartographer": false,
+      "figure": false,
+      "sign": "",
+      "water": true,
+      "horizon": 0.675,
+      "relief": 1.0
     },
     "onset": {
       "at": 0.4,
       "spec": {
-        "giant": true,
-        "giant_x": 0.72,
-        "giant_y": 0.37,
-        "giant_size": 0.2,
         "palette": "lilac_dusk",
         "suns": 0,
-        "cartographer": false
+        "giant_y": 0.14,
+        "cartographer": false,
+        "figure": false,
+        "sign": "",
+        "water": false,
+        "horizon": 0.675,
+        "relief": 1.0
       },
-      "motion": "rise"
+      "motion": "cut"
     },
     "beats": [
       {
@@ -194,17 +201,22 @@
         "shot": {
           "framing": "medium",
           "zoom": [
-            1.75,
-            1.85
+            1.15,
+            1.2
           ],
           "focus": [
-            0.36,
-            0.61
+            0.62,
+            0.6
           ]
         },
         "spec": {
           "palette": "teal_night",
-          "sign": ""
+          "water": true,
+          "shore": "left",
+          "sea_glow": true,
+          "horizon": 0.46,
+          "relief": 0.3,
+          "stage": 0.76
         }
       },
       {
@@ -212,24 +224,58 @@
         "shot": {
           "framing": "medium",
           "zoom": [
-            1.45,
-            1.5
+            1.4,
+            1.46
           ],
           "focus": [
-            0.5,
-            0.6
+            0.56,
+            0.8
           ]
         },
         "spec": {
-          "palette": "mint_dawn",
+          "palette": "gold_hour",
+          "suns": 1,
+          "sun_x": 0.3,
+          "sun_y": 0.56,
+          "sun_size": 0.07,
           "water": true,
-          "gag": "",
-          "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!|WE DIDN'T.| "
+          "shore": "left",
+          "horizon": 0.67,
+          "relief": 0.3,
+          "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!"
+        },
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "shore": "none"
+          },
+          "motion": "cut"
         }
       }
     ],
     "end": "Next time, they'll pack early.",
-    "name_y": 0.2
+    "end_spec": {
+      "horizon": 0.6,
+      "stage": 0.66,
+      "sun_y": 0.5,
+      "giant_y": 0.02,
+      "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!| "
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "sign": "PACK EARLY.|PACK EARLY!|PACK EARLY!!|WE DIDN'T."
+      }
+    },
+    "end_zoom": [
+      1.1,
+      1.07
+    ],
+    "end_focus": [
+      0.58,
+      0.9
+    ],
+    "name_y": 0.14
   },
   "_engine": 5
 }

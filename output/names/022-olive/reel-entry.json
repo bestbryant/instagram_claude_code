@@ -200,21 +200,35 @@
     "framing": "medium",
     "focus": [
       0.5,
-      0.6
+      0.62
     ],
     "zoom": [
-      1.6,
-      1.65
+      1.7,
+      1.75
     ],
     "spec": {
-      "sun_y": 0.64,
-      "cartographer": false
+      "relief": 0.35,
+      "sun_y": 0.62,
+      "sun_size": 0.075,
+      "cartographer": false,
+      "crowd_facing": "in",
+      "crowd_gap": 0.23,
+      "crowd_items": "nothing,nothing",
+      "house": false,
+      "spot": "#ffffff"
     },
     "onset": {
       "at": 0.4,
       "spec": {
-        "sun_y": 0.54,
-        "cartographer": false
+        "relief": 0.35,
+        "sun_y": 0.56,
+        "sun_size": 0.075,
+        "cartographer": false,
+        "crowd_facing": "in",
+        "crowd_gap": 0.23,
+        "crowd_items": "shout,shout",
+        "house": false,
+        "spot": "#ffffff"
       },
       "motion": "cut"
     },
@@ -222,39 +236,74 @@
       {
         "text": "Don't mention the dishwasher.\nThose two are on day three.",
         "shot": {
-          "framing": "medium",
+          "framing": "wide",
           "focus": [
-            0.5,
-            0.62
+            0.55,
+            0.6
           ],
           "zoom": [
-            1.8,
-            1.85
+            1.4,
+            1.45
           ]
+        },
+        "spec": {
+          "sign": "DAY 3"
         }
       },
       {
         "text": "She makes him a tea.\nThe sun sets before his first sip.",
+        "text_y": 0.11,
         "shot": {
-          "framing": "medium",
+          "framing": "close",
           "focus": [
             0.5,
-            0.62
+            0.67
           ],
           "zoom": [
-            1.8,
-            1.85
+            2.5,
+            2.6
           ]
         },
         "spec": {
-          "crowd_facing": "in",
-          "crowd_items": "nothing,cup",
-          "palette": "polar_night",
-          "suns": 0
+          "crowd_items": "cup,shout",
+          "crowd_gap": 0.09,
+          "sun_y": 0.585
+        },
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "crowd_items": "nothing,cup",
+            "palette": "pumpkin",
+            "sun_y": 0.62
+          },
+          "motion": "cut"
         }
       }
     ],
-    "end": "Every cup is an olive branch."
+    "end": "Every cup is an olive branch.",
+    "end_spec": {
+      "crowd_items": "cup,cup",
+      "crowd_gap": 0.08,
+      "crowd_x": 0.3,
+      "palette": "polar_night",
+      "suns": 0,
+      "house": true,
+      "house_x": 0.43
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "bright_stars": true
+      }
+    },
+    "end_focus": [
+      0.33,
+      0.655
+    ],
+    "end_zoom": [
+      2.3,
+      2.05
+    ]
   },
   "_engine": 5
 }

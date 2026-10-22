@@ -138,57 +138,123 @@
     "sub": "For whoever remembers\nevery birthday.",
     "framing": "crowd",
     "zoom": [
-      1.9,
-      2.0
+      1.75,
+      1.8
     ],
     "focus": [
-      0.42,
-      0.68
+      0.64,
+      0.64
     ],
     "spec": {
       "palette": "rose_fog",
       "suns": 0,
       "particles": "none",
       "snow": false,
-      "sign": ""
+      "sign": "WINTER|DAY 1 OF 365",
+      "crowd_x": 0.46,
+      "house_x": 0.14
     },
     "onset": {
       "at": 0.4,
       "spec": {
-        "sign": ""
+        "sign": "WINTER|DAY 212 OF 365",
+        "crowd_x": 0.46,
+        "house_x": 0.14
       },
       "motion": "cut"
     },
     "beats": [
       {
         "text": "Jess keeps count.\nEven the goats' birthdays.",
-        "shot": "sign",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.75,
+            1.82
+          ],
+          "focus": [
+            0.62,
+            0.61
+          ]
+        },
         "spec": {
-          "sign": "WINTER|DAY 212"
+          "sign": "DAY 212|HAPPY|BIRTHDAY,|BETTY|THE GOAT",
+          "crowd_x": 0.53
         }
       },
       {
         "text": "One winter, Jess lost count.",
         "shot": {
-          "framing": "crowd",
+          "framing": "sign",
           "zoom": [
-            2.2,
-            2.3
+            1.95,
+            2.05
           ],
           "focus": [
-            0.5,
-            0.68
+            0.62,
+            0.66
           ]
+        },
+        "spec": {
+          "sign": "DAY ???",
+          "crowd_x": 0.545,
+          "crowd_items": "sit"
         }
       },
       {
         "text": "The village hadn't.",
-        "shot": "sign",
+        "seconds": 2.6,
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.42,
+            1.47
+          ],
+          "focus": [
+            0.56,
+            0.6
+          ]
+        },
         "spec": {
-          "sign": "DAY 213|HAPPY BIRTHDAY, JESS"
+          "sign": "DAY ???",
+          "crowd_x": 0.43,
+          "crowd_items": "sit"
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "auto",
+          "spec": {
+            "sign": "DAY 213|HAPPY|BIRTHDAY,|JESS!",
+            "crowd": 5,
+            "crowd_x": 0.43,
+            "crowd_gap": 0.075,
+            "crowd_facing": "in",
+            "crowd_items": "sing,hand,book,hand,sing",
+            "spot": "#e9b434"
+          }
         }
       }
     ],
-    "end": "Even the goats signed it."
+    "end": "Even the goats signed it.",
+    "end_spec": {
+      "crowd_x": 0.46,
+      "crowd_gap": 0.05
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "sign": "HAPPY|BIRTHDAY,|JESS!|- the village|- BAAA, MEHH",
+        "crowd_items": "hand,hand,book,hand,hand"
+      }
+    },
+    "end_zoom": [
+      1.6,
+      1.56
+    ],
+    "end_focus": [
+      0.61,
+      0.594
+    ],
+    "name_y": 0.14
   }
 }
