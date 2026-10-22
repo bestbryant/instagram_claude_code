@@ -176,18 +176,36 @@
     ],
     "spec": {
       "moons": 0,
-      "stage": 0.68
+      "suns": 0,
+      "stage": 0.68,
+      "horizon": 0.7,
+      "relief": 0.3,
+      "house_x": 0.68,
+      "crowd_items": "hand",
+      "crowd_facing": "right",
+      "giant": true,
+      "ring": false,
+      "giant_size": 0.02,
+      "giant_x": 0.435,
+      "giant_y": 0.5887
     },
     "onset": {
       "at": 0.4,
+      "motion": "cut",
       "spec": {
         "moons": 0,
+        "suns": 0,
         "stage": 0.68,
+        "horizon": 0.7,
+        "relief": 0.3,
+        "house_x": 0.68,
+        "crowd_items": "hand",
+        "crowd_facing": "right",
         "giant": true,
-        "giant_size": 0.05,
-        "giant_x": 0.62,
-        "giant_y": 0.53,
-        "ring": false
+        "ring": false,
+        "giant_size": 0.02,
+        "giant_x": 0.63,
+        "giant_y": 0.52
       }
     },
     "beats": [
@@ -200,9 +218,15 @@
             1.66
           ],
           "focus": [
-            0.48,
+            0.44,
             0.6
           ]
+        },
+        "spec": {
+          "palette": "mint_dawn",
+          "crowd_facing": "left",
+          "giant_x": 0.368,
+          "giant_y": 0.565
         }
       },
       {
@@ -214,18 +238,60 @@
             1.66
           ],
           "focus": [
-            0.48,
+            0.4,
             0.6
           ]
         },
         "spec": {
+          "palette": "polar_night",
           "crowd_facing": "left",
-          "palette": "rose_fog"
+          "crowd_items": "hand",
+          "horizon": 0.76,
+          "relief": 0.15,
+          "giant_x": 0.401,
+          "giant_y": 0.586
+        },
+        "onset": {
+          "at": 0.7,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "echo",
+            "giant_x": 0.442,
+            "giant_y": 0.645
+          }
         }
       }
     ],
     "end": "Now she throws two.",
-    "name_y": 0.24
+    "end_spec": {
+      "palette": "violet_ice",
+      "horizon": 0.7,
+      "relief": 0.3,
+      "crowd_items": "hand",
+      "crowd_facing": "right",
+      "giant": true,
+      "giant_size": 0.025,
+      "giant_x": 0.418,
+      "giant_y": 0.572,
+      "moons": 1
+    },
+    "end_onset": {
+      "at": 0.5,
+      "motion": "cut",
+      "spec": {
+        "giant_x": 0.52,
+        "giant_y": 0.525
+      }
+    },
+    "end_zoom": [
+      1.0,
+      1.04
+    ],
+    "end_focus": [
+      0.5,
+      0.5
+    ],
+    "name_y": 0.28
   },
   "_engine": 5
 }
