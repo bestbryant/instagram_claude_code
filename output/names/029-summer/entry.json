@@ -175,5 +175,101 @@
     "end": "She's accepting apologies.",
     "caption": "Somewhere in that heatwave is Nan.\n\nSummer: 210,000 people, a 24-hour day, no moons, and one snowfall every eighty years, give or take. The rest of the time it's summer. Coats are museum pieces and 'cold' is something you say about soup. Nan was six the last time. She has described it at every family occasion since, in detail, while everyone else fanned themselves and exchanged looks.\n\n(On Earth, snow only squeaks underfoot when it's colder than about minus ten. So it was a cold one. She'd like that noted.)\n\nWhat did your nan swear was true?"
   },
-  "first_comment": "Nan: Next one's due in eighty years. I'll be telling everyone."
+  "first_comment": "Nan: Next one's due in eighty years. I'll be telling everyone.",
+  "short": {
+    "version": "D",
+    "kicker": "A planet for every nan who was right all along.",
+    "title": "Nan says\nshe's seen snow.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.22,
+      1.28
+    ],
+    "focus": [
+      0.5,
+      0.6
+    ],
+    "spec": {
+      "mist": 0.55,
+      "sun_size": 0.08,
+      "sun_y": 0.55,
+      "crowd_x": 0.58,
+      "crowd_gap": 0.09,
+      "crowd_facing": "in",
+      "crowd_items": "nothing,nothing,nothing,nothing,nothing,nothing",
+      "cartographer": true
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "mist": 0.55,
+        "sun_size": 0.08,
+        "sun_y": 0.55,
+        "crowd_x": 0.58,
+        "crowd_gap": 0.09,
+        "crowd_facing": "in",
+        "crowd_items": "nothing,umbrella,umbrella,umbrella,umbrella,umbrella",
+        "cartographer": true
+      }
+    },
+    "beats": [
+      {
+        "text": "It snows once every eighty years.\nNan was six. 'It's cold,' she says.\n'And it squeaks.'",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.8,
+            1.88
+          ],
+          "focus": [
+            0.36,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "sing,umbrella,umbrella,umbrella,umbrella,umbrella",
+          "crowd_facing": "out"
+        }
+      },
+      {
+        "text": "One morning, it snowed.\nI was there. It squeaked.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.22,
+            1.28
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 0.5,
+          "spec": {
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "snow",
+            "flake_size": 1.5,
+            "mist": 0.6,
+            "sun_y": 0.58,
+            "sun_size": 0.07,
+            "crowd_items": "hand,umbrella,umbrella,umbrella,umbrella,umbrella"
+          }
+        }
+      }
+    ],
+    "end": "She's accepting apologies.",
+    "end_zoom": [
+      1.62,
+      1.55
+    ],
+    "end_focus": [
+      0.42,
+      0.62
+    ],
+    "name_y": 0.22
+  }
 }
