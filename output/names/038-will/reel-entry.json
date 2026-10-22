@@ -231,18 +231,24 @@
     "sub": "Every Will gets this planet.",
     "framing": "medium",
     "zoom": [
-      1.4,
-      1.45
+      1.3,
+      1.35
     ],
     "focus": [
-      0.55,
+      0.54,
       0.6
     ],
     "spec": {
       "palette": "polar_night",
       "suns": 0,
+      "crowd": 5,
+      "crowd_x": 0.4,
+      "crowd_gap": 0.075,
+      "crowd_items": "nothing",
+      "crowd_facing": "right",
       "sign": "SUNRISE|WANTED BY|6,204,310",
       "cartographer": false,
+      "house": false,
       "sun_y": 0.54
     },
     "onset": {
@@ -250,9 +256,15 @@
       "spec": {
         "palette": "gold_hour",
         "suns": 1,
+        "sun_y": 0.54,
+        "crowd": 5,
+        "crowd_x": 0.4,
+        "crowd_gap": 0.075,
+        "crowd_items": "hand",
+        "crowd_facing": "right",
         "sign": "SUNRISE|WANTED BY|6,204,311",
         "cartographer": false,
-        "sun_y": 0.54
+        "house": false
       },
       "motion": "cut"
     },
@@ -260,47 +272,79 @@
       {
         "text": "After New Year's Eve,\neveryone slept in.",
         "shot": {
-          "framing": "wide",
+          "framing": "close",
           "zoom": [
-            1.15,
-            1.18
+            1.75,
+            1.8
           ],
           "focus": [
-            0.5,
-            0.58
+            0.77,
+            0.62
           ]
         },
         "spec": {
           "palette": "polar_night",
           "suns": 0,
-          "crowd": 0,
-          "sign": "SUNRISE|WANTED BY|0",
-          "cartographer": false,
-          "house": false
+          "gag": "chair_sleepers",
+          "shore": "right",
+          "crowd": 1,
+          "crowd_x": -0.4,
+          "crowd_items": "nothing",
+          "sign": "SUNRISE|WANTED BY|0"
         }
       },
       {
         "text": "At five, it rose. One spaniel\nwanted it very much.",
         "shot": {
-          "framing": "wide",
+          "framing": "medium",
           "zoom": [
-            1.15,
-            1.18
+            1.35,
+            1.4
           ],
           "focus": [
-            0.5,
-            0.58
+            0.66,
+            0.6
           ]
         },
         "spec": {
-          "crowd": 0,
-          "sign": "SUNRISE|WANTED BY|1",
-          "cartographer": false,
-          "house": false
+          "palette": "polar_night",
+          "suns": 0,
+          "gag": "chair_sleepers",
+          "shore": "right",
+          "crowd": 1,
+          "crowd_x": -0.4,
+          "crowd_items": "nothing",
+          "sign": "SUNRISE|WANTED BY|0"
+        },
+        "onset": {
+          "at": 0.7,
+          "spec": {
+            "palette": "gold_hour",
+            "suns": 1,
+            "sun_x": 0.5,
+            "sun_y": 0.5,
+            "sign": "SUNRISE|WANTED BY|1 SPANIEL"
+          },
+          "motion": "cut"
         }
       }
     ],
-    "end": "There's always a Will."
+    "end": "There's always a Will.",
+    "end_focus": [
+      0.77,
+      0.61
+    ],
+    "end_zoom": [
+      1.65,
+      1.7
+    ],
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "sign": "SUNRISE|WANTED BY|1 SPANIEL|NAMED WILL"
+      }
+    },
+    "name_y": 0.12
   },
   "_engine": 5
 }

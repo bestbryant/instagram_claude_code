@@ -162,40 +162,92 @@
     "beats": [
       {
         "text": "Their family below\nstill calls them for dinner.",
-        "shot": "house",
-        "spec": {
-          "palette": "lilac_dusk",
-          "sign": "DINNER'S READY."
-        }
-      },
-      {
-        "text": "Each evening, a pinecone drops:\n'Coming!'",
         "shot": {
-          "framing": "sky",
+          "framing": "wide",
           "zoom": [
-            1.85,
-            1.9
+            1.02,
+            1.06
           ],
           "focus": [
-            0.567,
-            0.2
+            0.47,
+            0.51
           ]
         },
         "spec": {
-          "palette": "lilac_dusk"
+          "palette": "lilac_dusk",
+          "sign": "DINNER'S READY.",
+          "crowd": 3,
+          "crowd_items": "spoon,kettle,nothing",
+          "crowd_x": 0.16,
+          "crowd_gap": 0.065,
+          "crowd_facing": "right",
+          "house": false,
+          "spot": "#c99a2e"
+        },
+        "onset": {
+          "at": 0.6,
+          "spec": {
+            "crowd_items": "spoon,kettle,sing"
+          },
+          "motion": "cut"
+        },
+        "text_y": 0.055
+      },
+      {
+        "text": "Each evening, the tree answers:\n'Coming!'",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.4,
+            1.5
+          ],
+          "focus": [
+            0.37,
+            0.64
+          ]
+        },
+        "spec": {
+          "palette": "lilac_dusk",
+          "sign": "",
+          "crowd": 3,
+          "crowd_items": "spoon,kettle,nothing",
+          "crowd_x": 0.16,
+          "crowd_gap": 0.065,
+          "crowd_facing": "right",
+          "house": false,
+          "spot": "#c99a2e"
+        },
+        "onset": {
+          "at": 0.8,
+          "spec": {
+            "crowd_items": "spoon,kettle,echo"
+          },
+          "motion": "cut"
         }
       }
     ],
     "end": "Dinner's still ready.",
+    "end_spec": {
+      "sign": "DINNER'S READY.",
+      "crowd_items": "spoon,nap,nothing"
+    },
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "sign": "DINNER'S READY.|DAY 219,146",
+        "crowd_items": "spoon,nap,sing"
+      },
+      "motion": "cut"
+    },
     "title_y": 0.1,
-    "name_y": 0.55,
+    "name_y": 0.229,
     "end_zoom": [
       1.06,
-      1.0
+      1.06
     ],
     "end_focus": [
-      0.5,
-      0.45
+      0.47,
+      0.54
     ]
   }
 }

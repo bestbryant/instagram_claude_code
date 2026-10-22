@@ -197,36 +197,60 @@
       1.42,
       1.46
     ],
+    "focus": [
+      0.37,
+      0.63
+    ],
     "spec": {
-      "crowd_x": 1.5,
-      "sign": "",
-      "cartographer": false
+      "sign": "NORTH →",
+      "cartographer": false,
+      "crowd": 2,
+      "crowd_x": 0.96,
+      "crowd_gap": 1.08,
+      "crowd_items": "walk",
+      "crowd_facing": "left",
+      "house_x": 0.58
     },
     "onset": {
       "at": 0.4,
       "spec": {
-        "crowd_x": 0.56,
-        "sign": "NORTH|PLEASE KNOCK",
-        "cartographer": false
-      }
+        "sign": "← NORTH",
+        "cartographer": false,
+        "crowd": 2,
+        "crowd_x": 0.825,
+        "crowd_gap": 1.35,
+        "crowd_items": "walk",
+        "crowd_facing": "left",
+        "house_x": 0.58
+      },
+      "motion": "cut"
     },
     "beats": [
       {
         "text": "For thirty years, he's written\nto Pat, in the far south.",
         "shot": {
-          "framing": "crowd",
+          "framing": "gag",
           "zoom": [
-            2.0,
-            2.06
+            1.28,
+            1.33
           ],
           "focus": [
-            0.62,
-            0.66
+            0.46,
+            0.6
           ]
         },
         "seconds": 3.0,
         "spec": {
-          "sign": ""
+          "sign": "",
+          "water": true,
+          "shore": "left",
+          "gag": "coast_letters",
+          "crowd": 1,
+          "crowd_x": 0.25,
+          "crowd_items": "book",
+          "crowd_facing": "right",
+          "house_x": 0.37,
+          "spot": "#c8452f"
         }
       },
       {
@@ -234,29 +258,68 @@
         "shot": {
           "framing": "crowd",
           "zoom": [
-            2.0,
-            2.06
+            1.34,
+            1.38
           ],
           "focus": [
-            0.62,
-            0.66
+            0.54,
+            0.64
           ]
         },
+        "seconds": 2.6,
         "spec": {
-          "crowd_x": 1.5,
-          "sign": ""
+          "palette": "gold_hour",
+          "water": true,
+          "shore": "left",
+          "house_x": 0.3,
+          "crowd": 1,
+          "crowd_x": 0.43,
+          "crowd_items": "cup",
+          "crowd_facing": "right",
+          "sign": "FAR SOUTH"
         },
-        "seconds": 2.6
+        "onset": {
+          "at": 0.9,
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.475,
+            "crowd_gap": 0.09,
+            "crowd_items": "cup,book",
+            "crowd_facing": "in",
+            "sign": "← NORTH"
+          },
+          "motion": "cut"
+        }
       }
     ],
     "end": "The navy's been very understanding.",
     "end_spec": {
-      "sign": "NORTH|GONE SOUTH"
+      "palette": "cobalt_noon",
+      "water": false,
+      "shore": "none",
+      "house_x": 0.58,
+      "crowd": 1,
+      "crowd_x": 1.5,
+      "crowd_gap": 0.09,
+      "crowd_items": "walk",
+      "crowd_facing": "left",
+      "sign": "NORTH →"
     },
-    "focus": [
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "sign": "NORTH|GONE SOUTH"
+      }
+    },
+    "end_focus": [
       0.44,
-      0.63
-    ]
+      0.59
+    ],
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "name_y": 0.27
   },
   "_engine": 5
 }
