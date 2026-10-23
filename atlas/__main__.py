@@ -672,23 +672,24 @@ def cmd_score(a):
         row = dict(entry=x["entry"], name=entries.get(x["entry"], {}).get("name", "?"), format=fmt, age=at48["age_h"],
                    reach=reach, reach6=(max(reach6, 0) if reach6 is not None else None), views=views, skip=skip, watch=watch, length=length,
                    likes100=(100 * likes / reach if reach > 0 else None),
+                   loops=(views / reach if reach > 0 else None),     # views per stranger: replays (a loop that works)
                    watched=(watch / length if watch is not None and length else None), per100=(100 * sends / reach if reach > 0 else None))
         row["pass"] = (reach >= 20 and skip is not None and skip <= 60 and (row["watched"] or 0) >= 0.4 and (row["per100"] or 0) >= 1)
         rows.append(row)
     f = lambda v, fmt_: "-" if v is None else fmt_.format(v)
     print(f"{'entry':>5} {'name':<11} {'format':<9} {'age':>5} {'reach':>5} {'at6h':>4} {'skip%':>5} {'watch':>6} {'len':>5} {'watched':>7} "
-          f"{'likes/100':>9} {'sends/100':>9}  pass")
+          f"{'loops':>5} {'likes/100':>9} {'sends/100':>9}  pass")
     for r in rows:
         print(f"{r['entry']:>5} {r['name'][:11]:<11} {r['format']:<9} {r['age']:>5.1f} {r['reach']:>5} {f(r['reach6'], '{:.0f}'):>4} "
               f"{f(r['skip'], '{:.0f}'):>5} {f(r['watch'], '{:.1f}s'):>6} {f(r['length'], '{:.0f}s'):>5} {f(r['watched'], '{:.0%}'):>7} "
-              f"{f(r['likes100'], '{:.1f}'):>9} {f(r['per100'], '{:.1f}'):>9}  "
+              f"{f(r['loops'], '{:.2f}'):>5} {f(r['likes100'], '{:.1f}'):>9} {f(r['per100'], '{:.1f}'):>9}  "
               f"{'yes' if r['pass'] else ('too early' if r['age'] < a.hours - 6 else 'no')}")
     print("\nby format (Reels at least 40 h old with reach 20+; medians):")
     for fmt in sorted({r["format"] for r in rows}):
         rs = [r for r in rows if r["format"] == fmt and r["age"] >= 40 and r["reach"] >= 20]
         med = lambda k: statistics.median([r[k] for r in rs if r[k] is not None]) if any(r[k] is not None for r in rs) else None
         print(f"  {fmt:<9} n={len(rs)}  reach {f(med('reach'), '{:.0f}')}  skip {f(med('skip'), '{:.0f}%')}  "
-              f"watched {f(med('watched'), '{:.0%}')}  likes/100 {f(med('likes100'), '{:.1f}')}  sends/100 {f(med('per100'), '{:.1f}')}")
+              f"watched {f(med('watched'), '{:.0%}')}  loops {f(med('loops'), '{:.2f}')}  likes/100 {f(med('likes100'), '{:.1f}')}  sends/100 {f(med('per100'), '{:.1f}')}")
 
 
 def _prepare_job(job):

@@ -2,6 +2,21 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-23 daily review (12:17 UTC)
+- **Pebb (short-A, the first with its punchline drawn on screen), 14 h:**
+  - 145 strangers reached, the most of any Reel at that age.
+  - Its first 56 viewers were the best audience yet: 24% skip, about 2.3 views each (replays), and 1 save.
+  - The wider audience behaved like every other Reel's: 57% skip, 26% watched, 0 likes. Overall it has 0.7 sends per 100.
+- **Pattern 1, the ceiling:** every Reel stops at about 100-145 strangers (Ovo 100, Max 127, Thessaly 116, Pebb 145). That looks like Instagram's first test pool, and nothing has earned a wider showing yet. That needs stronger watch and send signals inside the pool.
+- **Pattern 2, voice and watch time:** the voiced shorts hold viewers longer than the silent one: B (Max) 46%, C (Thessaly) 39%, A (Pebb) 26%.
+  - That is one Reel each, so it's a hypothesis.
+  - If it holds, the silent atlas cut (D) starts at a disadvantage on watch time; its first read is Sooner's at 48 h.
+- **Change (measurement):** the scoreboard now shows loops (views per stranger), because replays count toward watch time and Pebb's first audience replayed it. Pebb is at 1.12 overall; every Reel so far is between 1.03 and 1.33.
+- **Next:**
+  - Sooner (the first D) posts at 14:00 today and Cinderwake (B, revised) at 22:00.
+  - Pebb's 48 h read is tomorrow at 22:09.
+  - Sooner's 48 h read (25 Oct 14:00) decides whether to write more D planets.
+
 ## 2026-10-22 daily review (12:12 UTC)
 - **Against the targets (strangers only):**
   - Max (short-B, 42 h): 127 reached, 40% skip, 46% watched, 0 likes, 0 shares or saves. It meets the skip and watch lines but fails the send line.
