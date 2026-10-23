@@ -2,6 +2,20 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-23 20:10 UTC: the showings arrive at a time of day, not an age
+- **Symptom:** Sooner (023, D, posted 14:15 UTC) has 8 strangers at 6 h. The 22:00 posts had 31-56 by then.
+- **Reach over time, by clock time (`stats_history.jsonl`):**
+  - Max (posted 18:09): 14 by 06:09, 126 by 10:09.
+  - Thessaly (posted 22:10): 31 by 04:10, 117 by 06:10.
+  - Pebb (posted 22:09): 56 by 04:09, 141 by 06:09.
+  - Maren (posted 21:15) is the exception: it rose gradually for 24 h.
+- **Reading:** each short's main jump (about 100 strangers) lands between about 04:00 and 10:00 UTC, whenever it was posted. The posting time changes how long a Reel waits for that jump, not how far it goes (116-145 each time). So the 14:00 slot is probably not the problem.
+  - A guess, not checked: 04:00-10:00 UTC is late morning to afternoon in South and Southeast Asia, so the first test pool may be weighted there. Instagram only shows audience location from 100 followers.
+- **Check:** Sooner should jump tomorrow between 04:00 and 10:00 UTC.
+  - If it is still under 20 at 12:00 UTC on 24 Oct, the 14:00 slot or the D cut is the cause. The two formats swap hours each day, so later Ds at 22:00 will separate the two.
+  - Cinderwake (22:00 tonight) lands in the same morning window, which will also show whether two Reels on the same morning split one pool.
+- **Change:** none. The schedule already balances the hours across formats.
+
 ## 2026-10-23 daily review (12:17 UTC)
 - **Pebb (short-A, the first with its punchline drawn on screen), 14 h:**
   - 145 strangers reached, the most of any Reel at that age.
