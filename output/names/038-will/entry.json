@@ -348,12 +348,13 @@
         "sign": "SUNRISE|WANTED BY|1 SPANIEL|NAMED WILL"
       }
     },
-    "name_y": 0.12,
+    "name_y": 0.08,
     "end_spec": {
       "crowd": 1,
       "crowd_x": 0.5,
       "crowd_items": "dog",
       "crowd_facing": "left"
-    }
+    },
+    "end_kicker": "For everyone the dog wakes at five."
   }
 }
