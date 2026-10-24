@@ -227,7 +227,8 @@
       "end_zoom": [
         1.75,
         1.8
-      ]
+      ],
+      "end_kicker": "Every name has a planet. Yours too."
     }
   },
   {
@@ -558,7 +559,8 @@
         0.58,
         0.9
       ],
-      "name_y": 0.14
+      "name_y": 0.14,
+      "end_kicker": "For people who pack the night before."
     }
   },
   {
@@ -808,7 +810,8 @@
         0.5,
         0.56
       ],
-      "name_y": 0.2
+      "name_y": 0.2,
+      "end_kicker": "For people who reply to texts five days late."
     }
   },
   {
@@ -1444,7 +1447,8 @@
         1.18,
         1.12
       ],
-      "name_y": 0.24
+      "name_y": 0.24,
+      "end_kicker": "For people who still write letters."
     }
   },
   {
@@ -1674,7 +1678,8 @@
         1.5,
         1.44
       ],
-      "name_y": 0.17
+      "name_y": 0.17,
+      "end_kicker": "For people who go to the beach and don't swim."
     }
   },
   {
@@ -2149,7 +2154,8 @@
       ],
       "name_y": 0.1,
       "title_y": 0.12,
-      "scrim": 0.36
+      "scrim": 0.36,
+      "end_kicker": "For people who stopped noticing the view."
     }
   },
   {
@@ -2402,7 +2408,8 @@
       "end_focus": [
         0.47,
         0.54
-      ]
+      ],
+      "end_kicker": "For people who never come downstairs."
     }
   },
   {
@@ -2675,7 +2682,8 @@
         2.7
       ],
       "name_y": 0.17,
-      "scrim": 0.6
+      "scrim": 0.6,
+      "end_kicker": "For everyone who was carried home asleep."
     }
   },
   {
@@ -2935,7 +2943,8 @@
         0.61,
         0.594
       ],
-      "name_y": 0.14
+      "name_y": 0.14,
+      "end_kicker": "For the friend who remembers every birthday."
     }
   },
   {
@@ -3200,7 +3209,8 @@
       "end_focus": [
         0.6,
         0.63
-      ]
+      ],
+      "end_kicker": "For people who keep every compliment."
     }
   },
   {
@@ -3552,7 +3562,8 @@
         0.45,
         0.575
       ],
-      "name_y": 0.12
+      "name_y": 0.12,
+      "end_kicker": "For parents who find their tea in the microwave."
     }
   },
   {
@@ -4144,7 +4155,8 @@
         0.3,
         0.5
       ],
-      "name_y": 0.08
+      "name_y": 0.08,
+      "end_kicker": "For everyone working while everyone else is out."
     }
   },
   {
@@ -4720,7 +4732,8 @@
         0.62,
         0.62
       ],
-      "name_y": 0.2
+      "name_y": 0.2,
+      "end_kicker": "For people who go home for Christmas."
     }
   },
   {
@@ -5079,7 +5092,8 @@
       "end_zoom": [
         1.19,
         1.17
-      ]
+      ],
+      "end_kicker": "For anyone who oversold themselves on a first date."
     }
   },
   {
@@ -5395,7 +5409,8 @@
         2.6,
         2.7
       ],
-      "name_y": 0.07
+      "name_y": 0.07,
+      "end_kicker": "For anyone who stopped being the baby of the family."
     }
   },
   {
@@ -5706,7 +5721,8 @@
         0.53
       ],
       "name_y": 0.2,
-      "end_spec": {}
+      "end_spec": {},
+      "end_kicker": "For people who know what 'Take a coat' means."
     }
   }
 ]

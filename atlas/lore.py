@@ -301,7 +301,8 @@ def short_cut(concept: dict, spec: Spec, display: str, by: str | None = None) ->
         camera["end_spec"] = dict(t["end_spec"])
     return {"version": REQUEST_VERSION, "title": t["title"].format(name=display),
             "sub": f"{by} asked for this one." if by else "Every name has a planet.",
-            "framing": t["framing"], **camera, "spec": dict(t["before"]), "onset": onset, "beats": beats, "end": t["end"]}
+            "framing": t["framing"], **camera, "spec": dict(t["before"]), "onset": onset, "beats": beats, "end": t["end"],
+            "end_kicker": f"Every {display} gets this planet."}
 
 
 def chart(name: str, number: str | None = None, by: str | None = None) -> tuple[dict, Spec, int]:

@@ -644,7 +644,8 @@
         1.27,
         1.22
       ],
-      "name_y": 0.15
+      "name_y": 0.15,
+      "end_kicker": "Every Bella gets this planet."
     }
   },
   {
@@ -891,7 +892,8 @@
           "sun_size": 0.05
         },
         "motion": "cut"
-      }
+      },
+      "end_kicker": "Every Charlie gets this planet."
     }
   },
   {
@@ -1122,7 +1124,8 @@
         1.47,
         1.43
       ],
-      "name_y": 0.12
+      "name_y": 0.12,
+      "end_kicker": "Every Milo gets this planet."
     }
   },
   {
@@ -1445,7 +1448,8 @@
         0.46,
         0.57
       ],
-      "name_y": 0.2
+      "name_y": 0.2,
+      "end_kicker": "Every Daisy gets this planet."
     }
   },
   {
@@ -1753,7 +1757,8 @@
       "end_zoom": [
         2.3,
         2.05
-      ]
+      ],
+      "end_kicker": "For people who can't sleep on an argument."
     }
   },
   {
@@ -2028,7 +2033,8 @@
         0.42,
         0.62
       ],
-      "name_y": 0.22
+      "name_y": 0.22,
+      "end_kicker": "For every nan who was right all along."
     }
   },
   {
@@ -2349,7 +2355,8 @@
         "crowd_x": 0.53,
         "crowd_gap": 0.055,
         "crowd_items": "spoon,shadow,cup"
-      }
+      },
+      "end_kicker": "For people who can't fake a compliment."
     }
   },
   {
@@ -2611,7 +2618,8 @@
         0.55,
         0.5
       ],
-      "name_y": 0.22
+      "name_y": 0.22,
+      "end_kicker": "For people who save the good plates for best."
     }
   },
   {
@@ -2882,7 +2890,8 @@
         0.43,
         0.64
       ],
-      "name_y": 0.25
+      "name_y": 0.25,
+      "end_kicker": "For everyone who's said 'you too' to a waiter."
     }
   },
   {
@@ -3241,7 +3250,8 @@
         "crowd_x": 0.5,
         "crowd_items": "dog",
         "crowd_facing": "left"
-      }
+      },
+      "end_kicker": "For everyone the dog wakes at five."
     }
   },
   {
@@ -3582,7 +3592,8 @@
         1.26,
         1.22
       ],
-      "name_y": 0.12
+      "name_y": 0.12,
+      "end_kicker": "For people who never ask anyone for anything."
     }
   },
   {
@@ -3883,7 +3894,8 @@
         0.333,
         0.6
       ],
-      "scrim": 0.55
+      "scrim": 0.55,
+      "end_kicker": "For people who aren't ready for the last dance."
     }
   },
   {
@@ -4207,7 +4219,8 @@
         1.3,
         1.24
       ],
-      "name_y": 0.27
+      "name_y": 0.27,
+      "end_kicker": "For the one everyone else steers by."
     }
   },
   {
@@ -4522,7 +4535,8 @@
         }
       },
       "name_y": 0.15,
-      "scrim": 0.65
+      "scrim": 0.65,
+      "end_kicker": "For the parents of very small bosses."
     }
   }
 ]

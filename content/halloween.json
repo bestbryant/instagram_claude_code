@@ -242,7 +242,8 @@
         1.6,
         1.55
       ],
-      "name_y": 0.22
+      "name_y": 0.22,
+      "end_kicker": "For people who say sorry to furniture."
     }
   },
   {
@@ -513,7 +514,8 @@
         0.5,
         0.62
       ],
-      "name_y": 0.16
+      "name_y": 0.16,
+      "end_kicker": "For people who leave the porch light on."
     }
   },
   {
@@ -734,7 +736,8 @@
       ],
       "name_y": 0.13,
       "title_y": 0.135,
-      "scrim": 0.6
+      "scrim": 0.6,
+      "end_kicker": "For people who pretend to be out on Halloween."
     }
   }
 ]
