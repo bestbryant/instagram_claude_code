@@ -2,6 +2,21 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-24 daily review (12:30 UTC)
+- **Numbers (strangers only):**
+  - Thessaly (C) at 48 h: 116 reached, 53% skip, 39% watched, 1.7 likes per 100, 0 sends. It fails the watch line by a point and the send line.
+  - Pebb (A), 38 h: 148 reached, 58% skip, 26% watched, 1 save (0.7 per 100).
+  - Cinderwake (B), 14 h: 102 reached, 55% skip, 49% watched, 0 likes, 0 sends. Its main showing came at 2-6 h, overnight, then stopped near 100.
+  - Sooner (the first D), 22 h: 22 reached, 74% skip. It never got the morning showing the shorts get; it looks like it failed its first small test. That is one Reel. Willow (D) posts tonight.
+  - Account, last 6 days: 639 reached, 9 profile visits, 0 follows. Followers: 1.
+- **Against the targets:** skip under 50% missed by every Reel; 40% watched met only by the voiced B shorts (Max 46%, Cinderwake 49%); sends or saves: 2 saves and 0 shares from about 740 stranger reaches over all Reels (0.27 per 100, target 1); follower growth none.
+- **Patterns:** the ceiling holds (every short stops at 100-150 strangers). The voice keeps people watching (B 46-49%, C 39%, A 26%).
+- **Diagnosis, the send line:** no short says who to send it to. RESEARCH.md finding 1 names the identity line ("A planet for people who...", "Every Bella gets this planet") as the send mechanic. It is not on screen in any A/B/C short (their titles are premise jokes), and only small on D's first frame. The caption opens with it, but few people read captions.
+- **Change:** the end card now closes on a short dedication under the planet's name and last line: "For people who save the good plates for best.", "Every Bella gets this planet." Written by hand for all 33 queued shorts (short.end_kicker, at most about 10 words) and added to the request template ("Every <Name> gets this planet."). The first second doesn't change, so the skip rate shouldn't move; the end card gets 0.5-1 s longer so the line can be read. Bella (14:00 today) is re-rendered and checked; the other 32 render in posting order (about 9 min each, 5 h).
+  - Not done, and why: a "send this to..." line in the caption (Meta demotes share-bait on Facebook, and few read captions); the identity line on frame 0 (more to read in the first second, where the skip is decided).
+- **How we'll know:** sends and saves per 100 on the next six shorts against 0.27 per 100 so far. A first share would already be news.
+- **D:** decide on Sooner, Willow and Summer together (27 Oct), not on Sooner alone, since one Reel that never got shown says little about the format.
+
 ## 2026-10-23 20:10 UTC: the showings arrive at a time of day, not an age
 - **Symptom:** Sooner (023, D, posted 14:15 UTC) has 8 strangers at 6 h. The 22:00 posts had 31-56 by then.
 - **Reach over time, by clock time (`stats_history.jsonl`):**
