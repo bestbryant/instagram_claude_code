@@ -316,7 +316,8 @@
       "crowd_x": 0.53,
       "crowd_gap": 0.055,
       "crowd_items": "spoon,shadow,cup"
-    }
+    },
+    "end_kicker": "For people who can't fake a compliment."
   },
   "_engine": 5
 }

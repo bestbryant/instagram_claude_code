@@ -266,7 +266,8 @@
       0.5,
       0.62
     ],
-    "name_y": 0.16
+    "name_y": 0.16,
+    "end_kicker": "For people who leave the porch light on."
   },
   "_engine": 5
 }

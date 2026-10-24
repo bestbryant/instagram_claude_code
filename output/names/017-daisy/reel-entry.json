@@ -318,7 +318,8 @@
       0.46,
       0.57
     ],
-    "name_y": 0.2
+    "name_y": 0.2,
+    "end_kicker": "Every Daisy gets this planet."
   },
   "_engine": 5
 }
