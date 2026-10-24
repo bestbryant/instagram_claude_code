@@ -310,7 +310,8 @@
       }
     },
     "name_y": 0.15,
-    "scrim": 0.65
+    "scrim": 0.65,
+    "end_kicker": "For the parents of very small bosses."
   },
   "_engine": 5
 }
