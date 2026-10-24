@@ -296,7 +296,8 @@
       0.333,
       0.6
     ],
-    "scrim": 0.55
+    "scrim": 0.55,
+    "end_kicker": "For people who aren't ready for the last dance."
   },
   "_engine": 5
 }
