@@ -47,7 +47,7 @@ VOICE_DEFAULT = False   # story Reels read aloud by the cartographer; an entry o
 
 def voiced(entry: dict) -> bool:
     if entry.get("short"):
-        want = entry["short"].get("version", "A") in ("B", "C")
+        want = entry["short"].get("version", "A") in ("B", "C", "E")   # E: the atlas cut read by the narrator
     elif entry.get("episode"):
         want = entry["episode"].get("voice", entry.get("voice", VOICE_DEFAULT))
     else:
