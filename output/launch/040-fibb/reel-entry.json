@@ -355,7 +355,11 @@
       1.19,
       1.17
     ],
-    "end_kicker": "For anyone who oversold themselves on a first date."
+    "end_kicker": "For anyone who oversold themselves on a first date.",
+    "next": {
+      "name": "Whisk",
+      "line": "Days here last six minutes."
+    }
   },
   "_engine": 5
 }
