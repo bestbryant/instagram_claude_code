@@ -243,6 +243,10 @@
       },
       "motion": "cut"
     },
-    "end_kicker": "Every Charlie gets this planet."
+    "end_kicker": "Every Charlie gets this planet.",
+    "next": {
+      "name": "Frank",
+      "line": "Every Frank gets this planet."
+    }
   }
 }
