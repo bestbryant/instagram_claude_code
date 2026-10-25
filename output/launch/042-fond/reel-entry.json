@@ -307,7 +307,11 @@
     ],
     "name_y": 0.2,
     "end_spec": {},
-    "end_kicker": "For people who know what 'Take a coat' means."
+    "end_kicker": "For people who know what 'Take a coat' means.",
+    "next": {
+      "name": "Lantern",
+      "line": "The boats here steer by pumpkin."
+    }
   },
   "_engine": 5
 }
