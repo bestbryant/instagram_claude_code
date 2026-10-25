@@ -267,7 +267,11 @@
       0.62
     ],
     "name_y": 0.16,
-    "end_kicker": "For people who leave the porch light on."
+    "end_kicker": "For people who leave the porch light on.",
+    "next": {
+      "name": "Hush",
+      "line": "Shouts take five days to cross the valley."
+    }
   },
   "_engine": 5
 }

@@ -246,6 +246,10 @@
       0.56
     ],
     "name_y": 0.2,
-    "end_kicker": "For people who reply to texts five days late."
+    "end_kicker": "For people who reply to texts five days late.",
+    "next": {
+      "name": "Hollow",
+      "line": "You've just said boo to a ghost."
+    }
   }
 }
