@@ -227,7 +227,11 @@
       1.43
     ],
     "name_y": 0.12,
-    "end_kicker": "Every Milo gets this planet."
+    "end_kicker": "Every Milo gets this planet.",
+    "next": {
+      "name": "Orrin",
+      "line": "This town is at the bottom of the sea."
+    }
   },
   "_engine": 5
 }
