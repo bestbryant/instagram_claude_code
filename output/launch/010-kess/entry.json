@@ -241,6 +241,10 @@
     "name_y": 0.1,
     "title_y": 0.12,
     "scrim": 0.36,
-    "end_kicker": "For people who stopped noticing the view."
+    "end_kicker": "For people who stopped noticing the view.",
+    "next": {
+      "name": "Simon",
+      "line": "Everyone does what Simon says."
+    }
   }
 }
