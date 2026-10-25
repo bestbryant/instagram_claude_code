@@ -674,6 +674,11 @@ def cmd_score(a):
                    likes100=(100 * likes / reach if reach > 0 else None),
                    loops=(views / reach if reach > 0 else None),     # views per stranger: replays (a loop that works)
                    watched=(watch / length if watch is not None and length else None), per100=(100 * sends / reach if reach > 0 else None))
+        # an average watch longer than the Reel means someone left it looping (one viewer can add an hour): cap it at
+        # 100% and flag it, so one looper can't pass the watch line on everyone else's behalf
+        row["looper"] = row["watched"] is not None and row["watched"] > 1.0
+        if row["looper"]:
+            row["watched"] = 1.0
         row["pass"] = (reach >= 20 and skip is not None and skip <= 60 and (row["watched"] or 0) >= 0.4 and (row["per100"] or 0) >= 1)
         rows.append(row)
     f = lambda v, fmt_: "-" if v is None else fmt_.format(v)
@@ -681,9 +686,11 @@ def cmd_score(a):
           f"{'loops':>5} {'likes/100':>9} {'sends/100':>9}  pass")
     for r in rows:
         print(f"{r['entry']:>5} {r['name'][:11]:<11} {r['format']:<9} {r['age']:>5.1f} {r['reach']:>5} {f(r['reach6'], '{:.0f}'):>4} "
-              f"{f(r['skip'], '{:.0f}'):>5} {f(r['watch'], '{:.1f}s'):>6} {f(r['length'], '{:.0f}s'):>5} {f(r['watched'], '{:.0%}'):>7} "
+              f"{f(r['skip'], '{:.0f}'):>5} {f(r['watch'], '{:.1f}s'):>6} {f(r['length'], '{:.0f}s'):>5} {f(r['watched'], '{:.0%}') + ('*' if r['looper'] else ''):>7} "
               f"{f(r['loops'], '{:.2f}'):>5} {f(r['likes100'], '{:.1f}'):>9} {f(r['per100'], '{:.1f}'):>9}  "
               f"{'yes' if r['pass'] else ('too early' if r['age'] < a.hours - 6 else 'no')}")
+    if any(r["looper"] for r in rows):
+        print("  * average watch longer than the Reel: someone left it looping; capped at 100%")
     print("\nby format (Reels at least 40 h old with reach 20+; medians):")
     for fmt in sorted({r["format"] for r in rows}):
         rs = [r for r in rows if r["format"] == fmt and r["age"] >= 40 and r["reach"] >= 20]

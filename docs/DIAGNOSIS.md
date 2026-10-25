@@ -2,6 +2,29 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-25 daily review (12:15 UTC)
+- **Numbers (strangers only):**
+  - Pebb (A, silent) at 48 h: 148 reached, 58% skip, 26% watched, 0.7 sends per 100. It fails.
+  - Sooner (D, silent) at 48 h: 23 reached, 74% skip. It fails.
+  - Cinderwake (B), 38 h: 105 reached, 55% skip, 49% watched, 0 likes.
+  - Bella (C), 22 h: 108 reached, 34% skip (the best yet), 2 likes (1.9 per 100), 1.5 views each.
+  - Willow (D), 14 h: 112 reached, 75% skip, 16% watched.
+  - Followers: 1.
+- **Against the targets:**
+  - Skip under 50%: only Max (40%) and Bella (34%), both voiced.
+  - 40% watched: only the voiced shorts.
+  - 1 share or save per 100: none.
+  - Followers: none.
+- **The pattern, now over 9 Reels:**
+  - Voiced: skip 34-55%, watched 39-49%.
+  - Silent: skip 58-75%, watched 10-37% (Pebb, Sooner, Willow, Veyra, Ovo).
+  - No silent Reel has beaten any voiced one on skip.
+  - The A/B/C test was meant to run to about 6 Reels a version (8 Nov), but the silent arm has lost every comparison so far, and RESEARCH.md ranks speech in the first 3 s as the strongest lever.
+- **Change:** the silent short arm (A) ends early. The 9 queued A shorts (Fibb tonight, Frank, Mothwing, Milo, Tessel, Will, Bramble, Grace, Brumm) become B, read by the narrator, and re-render in posting order. The test continues between voiced styles: B (narrator), C (second person, "You've just landed..."), E (the atlas cut, narrated, from 08:20 today).
+  - Name requests stay silent (A), so the voice never mispronounces a requester's name; they are scored as "request", outside the test.
+- **Measurement fix:** Bella's average watch reads 43 s on a 14 s Reel, which means one viewer left it looping (about 2 h of total watch time). The scoreboard now caps watched at 100% and flags it with *, so one looper can't pass the watch line for everyone.
+- **Still the open problem:** sends. 2 saves and 0 shares from about 990 stranger reaches. The end-card send line has been live since Bella and Willow; read it on the next six.
+
 ## 2026-10-25 08:20 UTC: the silent atlas cut loses three-quarters of strangers in the first second
 - **Numbers (strangers):**
   - Willow (D), 10 h, past its morning showing: 111 reached, 75% skip, 17% watched, 0 likes.
