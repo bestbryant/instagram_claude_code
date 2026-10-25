@@ -217,6 +217,10 @@
     "name_y": 0.13,
     "title_y": 0.135,
     "scrim": 0.6,
-    "end_kicker": "For people who pretend to be out on Halloween."
+    "end_kicker": "For people who pretend to be out on Halloween.",
+    "next": {
+      "name": "Kess",
+      "line": "On Kess, only tourists look up."
+    }
   }
 }
