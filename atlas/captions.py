@@ -23,19 +23,22 @@ def carousel(entry: dict, by: str | None = None) -> str:
 
 
 SHORT_TAGS = "#worldbuilding #imaginaryworlds #scifiart #conceptart"   # specific and on-topic; Instagram caps tags at 5
+PROMISES = ["Invented planets, two a day. Leave any name and I'll find its planet.",
+            "Two new planets a day. Leave a name in the comments and I'll find its planet.",
+            "A new planet twice a day. Any name you leave below gets one.",
+            "Mapping invented planets, two a day. Leave a name and I'll find yours."]
 
 
 def reel(entry: dict, by: str | None = None) -> str:
     if entry.get("short"):
         # a plain, searchable first line; the episode's setting for anyone who reads on; the comment invite only on
         # name planets, where it's natural (repeating one ask on every post reads as engagement bait)
+        # the first line is what shows under a Reel: the promise (more planets, and one for any name), worded a
+        # little differently each time so it never reads as a template; then the planet and who it's for
         ep = entry.get("episode") or {}
-        parts = [f"Invented planet No. {entry['id']}: {entry['name']}. {entry['hook']}",
+        parts = [PROMISES[sum(map(ord, entry["id"])) % len(PROMISES)] if not by else f"Found for {by}.",
+                 f"Invented planet No. {entry['id']}: {entry['name']}. {entry['hook']}",
                  (ep.get("caption") or entry.get("extra") or entry["story"]).strip()]
-        if by:
-            parts.append(f"Found for {by}.")
-        if entry.get("kicker") and not by:
-            parts.append(invite_line(entry, "reel"))
         parts.append(SHORT_TAGS)
         return "\n\n".join(parts)
     head = f"{entry['hook']} (Imaginary planet No. {entry['id']}: {entry['name']})"

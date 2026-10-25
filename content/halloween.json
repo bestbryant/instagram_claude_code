@@ -243,7 +243,11 @@
         1.55
       ],
       "name_y": 0.15,
-      "end_kicker": "For people who say sorry to furniture."
+      "end_kicker": "For people who say sorry to furniture.",
+      "next": {
+        "name": "Mothwing",
+        "line": "The moths here eat moonlight."
+      }
     }
   },
   {
@@ -515,7 +519,11 @@
         0.62
       ],
       "name_y": 0.16,
-      "end_kicker": "For people who leave the porch light on."
+      "end_kicker": "For people who leave the porch light on.",
+      "next": {
+        "name": "Hush",
+        "line": "Shouts take five days to cross the valley."
+      }
     }
   },
   {
@@ -737,7 +745,11 @@
       "name_y": 0.13,
       "title_y": 0.135,
       "scrim": 0.6,
-      "end_kicker": "For people who pretend to be out on Halloween."
+      "end_kicker": "For people who pretend to be out on Halloween.",
+      "next": {
+        "name": "Kess",
+        "line": "On Kess, only tourists look up."
+      }
     }
   }
 ]

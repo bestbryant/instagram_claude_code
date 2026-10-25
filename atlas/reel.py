@@ -234,11 +234,14 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
     name_items = [dict(text=series, y=ty, kind="italic", size=36),
                   dict(text=entry["name"], y=ty + 0.035, kind="serif", weight="Medium", size=170, fit=True),
                   dict(text=end, y=ty + 0.145, kind="italic", size=50)]
-    kicker = sh.get("end_kicker", "")      # who it's for ("For people who..."): the reason to send it, read last
+    nxt = sh.get("next") or {}             # the next planet in the posting queue: each Reel is one stop on a journey
+    kicker = f"Next stop: {nxt['name']}." if nxt.get("name") else sh.get("end_kicker", "")
     if kicker:
         name_items.append(dict(text=kicker, y="after", gap=0.022, kind="italic", size=42, leading=1.15))
     name = overlay(name_items)
-    t_end = round(max(2.0, spoken(end, 0.15, 0.5), 0.22 * len(f"{end} {kicker}".split()) + 0.4 if kicker else 0), 2)
+    # the narrator reads the end line, then names the next stop and its premise (the reason to come back)
+    say_end = f"{end}\nNext stop: {nxt['name']}. {nxt.get('line', '')}".strip() if nxt.get("name") else end
+    t_end = round(max(2.0, spoken(say_end, 0.15, 0.5), 0.22 * len(f"{end} {kicker}".split()) + 0.4 if kicker else 0), 2)
     # the end card is the aftermath: the last beat's scene (the turn, after its own onset), plus any end_spec on
     # top; an end_onset lands the last change on the card itself
     lb = sh["beats"][-1] if sh["beats"] else {}
@@ -246,7 +249,7 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
                                   **(sh.get("end_spec") or {})})
     end_focus = tuple(sh["end_focus"]) if "end_focus" in sh else (focus if isinstance(focus, tuple) else None)
     shots.append(Shot(t_end, end_scene, seed, pan=50, zoom=tuple(sh.get("end_zoom", (1.12, 1.04))), focus=end_focus,
-                      cards=[(name, 0.0, t_end, 0.0, 0.0)], say=end if speak else "", say_at=0.15,
+                      cards=[(name, 0.0, t_end, 0.0, 0.0)], say=say_end if speak else "", say_at=0.15,
                       swap=_onset_swap(end_scene, sh.get("end_onset"))))
     return shots
 

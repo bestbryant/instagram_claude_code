@@ -893,7 +893,11 @@
         },
         "motion": "cut"
       },
-      "end_kicker": "Every Charlie gets this planet."
+      "end_kicker": "Every Charlie gets this planet.",
+      "next": {
+        "name": "Frank",
+        "line": "Every Frank gets this planet."
+      }
     }
   },
   {
@@ -1125,7 +1129,11 @@
         1.43
       ],
       "name_y": 0.12,
-      "end_kicker": "Every Milo gets this planet."
+      "end_kicker": "Every Milo gets this planet.",
+      "next": {
+        "name": "Orrin",
+        "line": "This town is at the bottom of the sea."
+      }
     }
   },
   {
@@ -1449,7 +1457,11 @@
         0.57
       ],
       "name_y": 0.2,
-      "end_kicker": "Every Daisy gets this planet."
+      "end_kicker": "Every Daisy gets this planet.",
+      "next": {
+        "name": "Charlie",
+        "line": "Everyone here is called Charlie."
+      }
     }
   },
   {
@@ -1758,7 +1770,11 @@
         2.3,
         2.05
       ],
-      "end_kicker": "For people who can't sleep on an argument."
+      "end_kicker": "For people who can't sleep on an argument.",
+      "next": {
+        "name": "Tessel",
+        "line": "Winter here lasts a year."
+      }
     }
   },
   {
@@ -2356,7 +2372,11 @@
         "crowd_gap": 0.055,
         "crowd_items": "spoon,shadow,cup"
       },
-      "end_kicker": "For people who can't fake a compliment."
+      "end_kicker": "For people who can't fake a compliment.",
+      "next": {
+        "name": "Sedge",
+        "line": "The moon came close enough to wave at."
+      }
     }
   },
   {
@@ -2891,7 +2911,11 @@
         0.64
       ],
       "name_y": 0.25,
-      "end_kicker": "For everyone who's said 'you too' to a waiter."
+      "end_kicker": "For everyone who's said 'you too' to a waiter.",
+      "next": {
+        "name": "Will",
+        "line": "The sun rises by popular demand."
+      }
     }
   },
   {
@@ -3251,7 +3275,11 @@
         "crowd_items": "dog",
         "crowd_facing": "left"
       },
-      "end_kicker": "For everyone the dog wakes at five."
+      "end_kicker": "For everyone the dog wakes at five.",
+      "next": {
+        "name": "Norman",
+        "line": "North is a man."
+      }
     }
   },
   {
@@ -3593,7 +3621,11 @@
         1.22
       ],
       "name_y": 0.12,
-      "end_kicker": "For people who never ask anyone for anything."
+      "end_kicker": "For people who never ask anyone for anything.",
+      "next": {
+        "name": "Grace",
+        "line": "Every Grace gets this planet."
+      }
     }
   },
   {
@@ -3895,7 +3927,11 @@
         0.6
       ],
       "scrim": 0.55,
-      "end_kicker": "For people who aren't ready for the last dance."
+      "end_kicker": "For people who aren't ready for the last dance.",
+      "next": {
+        "name": "Lull",
+        "line": "The moon here follows the youngest person."
+      }
     }
   },
   {
@@ -4220,7 +4256,11 @@
         1.24
       ],
       "name_y": 0.21,
-      "end_kicker": "For the one everyone else steers by."
+      "end_kicker": "For the one everyone else steers by.",
+      "next": {
+        "name": "Selk",
+        "line": "The sea left. The waves stayed."
+      }
     }
   },
   {
@@ -4536,7 +4576,11 @@
       },
       "name_y": 0.15,
       "scrim": 0.65,
-      "end_kicker": "For the parents of very small bosses."
+      "end_kicker": "For the parents of very small bosses.",
+      "next": {
+        "name": "Milo",
+        "line": "Every Milo gets this planet."
+      }
     }
   }
 ]

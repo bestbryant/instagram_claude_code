@@ -228,7 +228,11 @@
         1.75,
         1.8
       ],
-      "end_kicker": "Every name has a planet. Yours too."
+      "end_kicker": "Every name has a planet. Yours too.",
+      "next": {
+        "name": "Brumm",
+        "line": "Every child here gets one last carry."
+      }
     }
   },
   {
@@ -560,7 +564,11 @@
         0.9
       ],
       "name_y": 0.14,
-      "end_kicker": "For people who pack the night before."
+      "end_kicker": "For people who pack the night before.",
+      "next": {
+        "name": "Olive",
+        "line": "The sun won't go down on an argument."
+      }
     }
   },
   {
@@ -811,7 +819,11 @@
         0.56
       ],
       "name_y": 0.2,
-      "end_kicker": "For people who reply to texts five days late."
+      "end_kicker": "For people who reply to texts five days late.",
+      "next": {
+        "name": "Hollow",
+        "line": "You've just said boo to a ghost."
+      }
     }
   },
   {
@@ -1448,7 +1460,11 @@
         1.12
       ],
       "name_y": 0.24,
-      "end_kicker": "For people who still write letters."
+      "end_kicker": "For people who still write letters.",
+      "next": {
+        "name": "Miles",
+        "line": "Next door is ninety miles away."
+      }
     }
   },
   {
@@ -1679,7 +1695,11 @@
         1.44
       ],
       "name_y": 0.17,
-      "end_kicker": "For people who go to the beach and don't swim."
+      "end_kicker": "For people who go to the beach and don't swim.",
+      "next": {
+        "name": "Bramble",
+        "line": "This tree has its own weather."
+      }
     }
   },
   {
@@ -2155,7 +2175,11 @@
       "name_y": 0.1,
       "title_y": 0.12,
       "scrim": 0.36,
-      "end_kicker": "For people who stopped noticing the view."
+      "end_kicker": "For people who stopped noticing the view.",
+      "next": {
+        "name": "Simon",
+        "line": "Everyone does what Simon says."
+      }
     }
   },
   {
@@ -2409,7 +2433,11 @@
         0.47,
         0.54
       ],
-      "end_kicker": "For people who never come downstairs."
+      "end_kicker": "For people who never come downstairs.",
+      "next": {
+        "name": "Luma",
+        "line": "The moon here writes back."
+      }
     }
   },
   {
@@ -2944,7 +2972,11 @@
         0.594
       ],
       "name_y": 0.1,
-      "end_kicker": "For the friend who remembers every birthday."
+      "end_kicker": "For the friend who remembers every birthday.",
+      "next": {
+        "name": "Lode",
+        "line": "Your blood points home."
+      }
     }
   },
   {
@@ -3211,7 +3243,11 @@
         0.63
       ],
       "end_kicker": "For people who keep every compliment.",
-      "name_y": 0.24
+      "name_y": 0.24,
+      "next": {
+        "name": "Daisy",
+        "line": "The flowers know if he loves you."
+      }
     }
   },
   {
@@ -3564,7 +3600,11 @@
         0.575
       ],
       "name_y": 0.12,
-      "end_kicker": "For parents who find their tea in the microwave."
+      "end_kicker": "For parents who find their tea in the microwave.",
+      "next": {
+        "name": "Sefe",
+        "line": "Nobody here knows what they look like."
+      }
     }
   },
   {
@@ -4157,7 +4197,11 @@
         0.5
       ],
       "name_y": 0.08,
-      "end_kicker": "For everyone working while everyone else is out."
+      "end_kicker": "For everyone working while everyone else is out.",
+      "next": {
+        "name": "Fond",
+        "line": "'I love you' only works once here."
+      }
     }
   },
   {
@@ -4734,7 +4778,11 @@
         0.62
       ],
       "name_y": 0.15,
-      "end_kicker": "For people who go home for Christmas."
+      "end_kicker": "For people who go home for Christmas.",
+      "next": {
+        "name": "Ruby",
+        "line": "The sky blushes if you're embarrassed."
+      }
     }
   },
   {
@@ -5094,7 +5142,11 @@
         1.19,
         1.17
       ],
-      "end_kicker": "For anyone who oversold themselves on a first date."
+      "end_kicker": "For anyone who oversold themselves on a first date.",
+      "next": {
+        "name": "Whisk",
+        "line": "Days here last six minutes."
+      }
     }
   },
   {
@@ -5411,7 +5463,11 @@
         2.35
       ],
       "name_y": 0.07,
-      "end_kicker": "For anyone who stopped being the baby of the family."
+      "end_kicker": "For anyone who stopped being the baby of the family.",
+      "next": {
+        "name": "Elsewhere",
+        "line": "You've been to this planet today."
+      }
     }
   },
   {
@@ -5723,7 +5779,11 @@
       ],
       "name_y": 0.2,
       "end_spec": {},
-      "end_kicker": "For people who know what 'Take a coat' means."
+      "end_kicker": "For people who know what 'Take a coat' means.",
+      "next": {
+        "name": "Lantern",
+        "line": "The boats here steer by pumpkin."
+      }
     }
   }
 ]
