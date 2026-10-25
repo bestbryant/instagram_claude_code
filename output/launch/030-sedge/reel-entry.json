@@ -289,7 +289,11 @@
       0.5
     ],
     "name_y": 0.08,
-    "end_kicker": "For everyone working while everyone else is out."
+    "end_kicker": "For everyone working while everyone else is out.",
+    "next": {
+      "name": "Fond",
+      "line": "'I love you' only works once here."
+    }
   },
   "_engine": 5
 }
