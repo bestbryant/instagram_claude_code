@@ -2,6 +2,13 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-25 20:15 UTC: the first Reel past the test pool, and nobody follows
+- **Summer (E, the first narrated atlas cut), 6 h:** 974 strangers, 1,440 views, 32% skip, 58% watched, 7 likes, 0 shares, 0 saves.
+  - It is the first Reel past the 100-150 ceiling, and it got there by 4 h, from a 14:00 post.
+  - The silent atlas cut Willow (same style) stopped at 113 with 75% skip. The voice is the difference.
+- **The new bottleneck, the funnel:** last 24 h, 983 accounts reached, 1 profile visit, 8 accounts engaged, 0 follows (followers still 1). Viewers watch but have no reason to come back: no visible series promise, no next-episode hook, no character on screen they'd want more of.
+- **Action:** a research workflow (wp10f470w) on turning Reel reach into follows (official Meta guidance, measured case studies, a skeptical critique of our end card, caption and grid). It reports an evidence-ranked plan for tomorrow's daily review. Measure: follows and profile visits per 1,000 reached.
+
 ## 2026-10-25 daily review (12:15 UTC)
 - **Numbers (strangers only):**
   - Pebb (A, silent) at 48 h: 148 reached, 58% skip, 26% watched, 0.7 sends per 100. It fails.
