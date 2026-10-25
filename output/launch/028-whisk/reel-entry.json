@@ -348,7 +348,11 @@
       0.575
     ],
     "name_y": 0.12,
-    "end_kicker": "For parents who find their tea in the microwave."
+    "end_kicker": "For parents who find their tea in the microwave.",
+    "next": {
+      "name": "Sefe",
+      "line": "Nobody here knows what they look like."
+    }
   },
   "_engine": 5
 }

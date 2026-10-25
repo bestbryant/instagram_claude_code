@@ -262,6 +262,10 @@
       0.63
     ],
     "end_kicker": "For people who keep every compliment.",
-    "name_y": 0.24
+    "name_y": 0.24,
+    "next": {
+      "name": "Daisy",
+      "line": "The flowers know if he loves you."
+    }
   }
 }
