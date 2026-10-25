@@ -311,6 +311,10 @@
     },
     "name_y": 0.15,
     "scrim": 0.65,
-    "end_kicker": "For the parents of very small bosses."
+    "end_kicker": "For the parents of very small bosses.",
+    "next": {
+      "name": "Milo",
+      "line": "Every Milo gets this planet."
+    }
   }
 }
