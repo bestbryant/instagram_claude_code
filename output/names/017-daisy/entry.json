@@ -319,6 +319,10 @@
       0.57
     ],
     "name_y": 0.2,
-    "end_kicker": "Every Daisy gets this planet."
+    "end_kicker": "Every Daisy gets this planet.",
+    "next": {
+      "name": "Charlie",
+      "line": "Everyone here is called Charlie."
+    }
   }
 }
