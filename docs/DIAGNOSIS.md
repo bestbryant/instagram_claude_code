@@ -2,6 +2,22 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-25 08:20 UTC: the silent atlas cut loses three-quarters of strangers in the first second
+- **Numbers (strangers):**
+  - Willow (D), 10 h, past its morning showing: 111 reached, 75% skip, 17% watched, 0 likes.
+  - Sooner (D), 42 h: 23 reached, 74% skip; it never got a wider showing.
+  - The shorts on their first showings: 35-58% skip.
+  - Bella (C, second-person voice), 18 h: 105 reached, 35% skip, 1 like, about 1.5 views each. Its average watch reads 44 s on a 14 s Reel, almost certainly one viewer leaving it to loop, so not counted yet.
+- **Pattern by sound:** every voiced short held strangers better than every silent Reel.
+  - Voiced (B, C): skip 35-55%, watched 39-55%.
+  - Silent short (A, Pebb): 58% skip, 26% watched.
+  - Silent atlas cut (D): 74-75% skip, 17-37% watched.
+  - RESEARCH.md already ranks speech in the first 3 s as the strongest measured retention lever.
+- **Decision:** don't spend another slot on a silent atlas cut, and don't drop the atlas style on the strength of its silence alone. The six queued atlas cuts become **version E**: the same pictures and words, read by the narrator (the cartographer reading the journal, which is what the style is).
+  - Summer (14:00 today) is re-rendered and checked (voice WER 3%); Sefe, Daisy, Sedge, Fond and Hush render next.
+  - Scored as short-E.
+- **How we'll know:** if E also loses about three-quarters in the first second over Summer and Sefe, the second slot goes to shorts from 28 Oct. If E holds near the voiced shorts, the atlas style stays, voiced.
+
 ## 2026-10-24 daily review (12:30 UTC)
 - **Numbers (strangers only):**
   - Thessaly (C) at 48 h: 116 reached, 53% skip, 39% watched, 1.7 likes per 100, 0 sends. It fails the watch line by a point and the send line.
