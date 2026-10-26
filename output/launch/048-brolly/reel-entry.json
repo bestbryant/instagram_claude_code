@@ -1,0 +1,244 @@
+{
+  "id": "048",
+  "name": "Brolly",
+  "subtitle": "where it brightens up when you leave",
+  "story": "On Brolly, it rains on the beach until the last person goes home, and then the sun comes out. Every time. Families arrive at nine with windbreaks, a flask and a mum who says it'll brighten up later, and they sit under their umbrellas until teatime, eating damp sandwiches and watching the rain land on the sea. As the last family leaves, the clouds part, and the beach is gorgeous for nobody. Every family books again for next year.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "3.1 million"
+  },
+  "hook": "A planet for every mum who says it'll brighten up.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#seaside"
+  ],
+  "spec": {
+    "palette": "rose_fog",
+    "terrain": "hills",
+    "layers": 3,
+    "horizon": 0.62,
+    "relief": 0.6,
+    "water": true,
+    "shore": "left",
+    "suns": 1,
+    "sun_x": 0.75,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": false,
+    "spot": "#f2c14e",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "hand,umbrella,umbrella,umbrella,umbrella",
+    "crowd_x": 0.45,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.84,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Mum says it'll brighten up.",
+  "episode": {
+    "opener": "Mum says it'll brighten up later.",
+    "beats": [
+      {
+        "text": "On Brolly, it rains on the beach\nuntil the last person leaves.",
+        "shot": "wide",
+        "spec": {
+          "palette": "sepia",
+          "particles": "rain",
+          "suns": 0,
+          "mist": 0.7
+        }
+      },
+      {
+        "text": "Families come at nine,\nwith flasks and windbreaks.",
+        "shot": "group",
+        "spec": {
+          "palette": "sepia",
+          "particles": "rain",
+          "suns": 0,
+          "mist": 0.7
+        }
+      },
+      {
+        "text": "They eat damp sandwiches\nand watch the rain land on the sea.",
+        "shot": "crowd",
+        "spec": {
+          "palette": "sepia",
+          "particles": "rain",
+          "suns": 0,
+          "mist": 0.7
+        }
+      },
+      {
+        "text": "Scientists have checked,\nfrom a safe distance.",
+        "shot": "sky",
+        "spec": {
+          "palette": "sepia",
+          "particles": "rain",
+          "suns": 0,
+          "mist": 0.7
+        }
+      },
+      {
+        "text": "'It'll brighten up,' says Mum.",
+        "shot": "close",
+        "spec": {
+          "palette": "sepia",
+          "particles": "rain",
+          "suns": 0,
+          "mist": 0.7
+        }
+      },
+      {
+        "text": "At six, everyone gives up.",
+        "shot": "wide",
+        "spec": {
+          "palette": "sepia",
+          "particles": "rain",
+          "suns": 0,
+          "mist": 0.7,
+          "crowd_items": "walk,walk,walk,walk,walk",
+          "crowd_facing": "left"
+        }
+      },
+      {
+        "text": "The sun comes out\nfor nobody.",
+        "shot": "wide",
+        "spec": {
+          "palette": "gold_hour",
+          "particles": "none",
+          "suns": 1,
+          "sun_x": 0.62,
+          "sun_y": 0.55,
+          "sun_size": 0.07,
+          "mist": 0.3,
+          "crowd": 0
+        },
+        "seconds": 3.0
+      }
+    ],
+    "end": "Mum's booked for next year.",
+    "caption": "Mum's the one pointing at the sky.\n\nBrolly: 3.1 million people, a 24-hour day, no moons, and the best beaches in the atlas, if anyone could ever see them. It rains on the sand until the last person leaves, and then the sun comes out. Every time. Families arrive at nine with windbreaks, a flask and a mum who has seen the forecast and chosen not to believe it. They eat their sandwiches under umbrellas and watch the rain land on the sea.\n\nI stayed till dark to prove a point. So did the rain.\n\n(On Earth, a big raindrop lands at about nine metres a second, and drizzle drifts down at under two. Mum calls both 'spitting'.)\n\nWhat does your mum always say on holiday?"
+  },
+  "first_comment": "The suncream has been to Brolly fourteen summers running. It's never been opened.",
+  "short": {
+    "version": "C",
+    "title": "Your mum says\nit'll brighten up.",
+    "sub": "You've just landed on Brolly.",
+    "framing": "group",
+    "zoom": [
+      1.45,
+      1.52
+    ],
+    "focus": [
+      0.5,
+      0.6
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "crowd_items": "hand,nothing,nothing,nothing,nothing"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "sepia",
+        "particles": "rain",
+        "suns": 0,
+        "mist": 0.7,
+        "crowd_items": "hand,umbrella,umbrella,umbrella,umbrella"
+      }
+    },
+    "beats": [
+      {
+        "text": "It only stops raining\nwhen the beach is empty.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.15
+          ],
+          "focus": [
+            0.5,
+            0.55
+          ]
+        }
+      },
+      {
+        "text": "At six, you pack up.\nThe sun comes out.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.52
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 1.3,
+          "spec": {
+            "palette": "gold_hour",
+            "particles": "none",
+            "suns": 1,
+            "sun_x": 0.62,
+            "sun_y": 0.55,
+            "sun_size": 0.07,
+            "mist": 0.3,
+            "crowd": 0
+          },
+          "motion": "cut"
+        }
+      }
+    ],
+    "end": "Mum's booked for next year.",
+    "end_zoom": [
+      1.3,
+      1.26
+    ],
+    "end_focus": [
+      0.5,
+      0.58
+    ],
+    "name_y": 0.12,
+    "end_kicker": "For every mum who says it'll brighten up.",
+    "next": {
+      "name": "Pete",
+      "line": "Every Pete gets this planet."
+    }
+  },
+  "_engine": 5
+}

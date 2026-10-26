@@ -1,0 +1,231 @@
+{
+  "id": "047",
+  "name": "Pete",
+  "subtitle": "the planet that makes a fuss",
+  "story": "Everything on Pete is done for Pete's sake. The moons rise for Pete's sake, the northern lights go on for Pete's sake, and the daisies open and the band plays on the hill, all for Pete's sake. Pete is a quiet man who likes a crossword and hates a fuss. On his birthday he asked, very politely, if everyone could please stop. They stopped, for Pete's sake. The daisies shut and the moons went in. He meant a small fuss.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "three",
+    "Gravity": "1.0 g",
+    "Population": "93,000"
+  },
+  "hook": "A planet for people who say 'don't make a fuss'.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#pete"
+  ],
+  "spec": {
+    "palette": "lilac_dusk",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.8,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 3,
+    "big_moon": false,
+    "aurora": true,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "flower,sing,nothing,hand,flower",
+    "crowd_x": 0.45,
+    "crowd_facing": "in",
+    "daisies": 90,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.76,
+    "bright_stars": true,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Here, it's all for Pete's sake.",
+  "kicker": "Every Pete gets this planet.",
+  "episode": {
+    "opener": "On Pete, it's all for Pete's sake.",
+    "beats": [
+      {
+        "text": "The moons rise for Pete's sake.\nThe lights go on for Pete's sake.",
+        "shot": "sky"
+      },
+      {
+        "text": "The daisies open.\nThe band plays on the hill.",
+        "shot": "wide"
+      },
+      {
+        "text": "Pete is a quiet man.\nHe hates a fuss.",
+        "shot": "crowd"
+      },
+      {
+        "text": "On his birthday, he asked\nif everyone could stop.",
+        "shot": "house"
+      },
+      {
+        "text": "They stopped.\nFor Pete's sake.",
+        "shot": "wide",
+        "spec": {
+          "aurora": false,
+          "bright_stars": false,
+          "moons": 0,
+          "daisies": 0,
+          "palette": "polar_night",
+          "stars": 0.2,
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.45
+        }
+      },
+      {
+        "text": "The daisies shut.\nThe moons went in.",
+        "shot": "crowd",
+        "spec": {
+          "aurora": false,
+          "bright_stars": false,
+          "moons": 0,
+          "daisies": 0,
+          "palette": "polar_night",
+          "stars": 0.2,
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.45
+        },
+        "seconds": 2.8
+      }
+    ],
+    "end": "He meant a small fuss.",
+    "caption": "Only one person here isn't celebrating.\n\nPete: 93,000 people, a 24-hour day, three moons, and a planet that does everything for Pete's sake. The moons rise for Pete's sake. The northern lights go on for Pete's sake. The daisies open and the bakers bake and the brass band practises on the hill, all for Pete's sake, and Pete would really rather they didn't. He's a quiet man. He likes a crossword. On his birthday he asked, very politely, if everyone could please stop.\n\nI told him I'd come all this way for his sake. He went the colour of a moon.\n\n(The story goes that 'for Pete's sake' began as a polite way round 'for God's sake', with Saint Peter standing in. This Pete has never been made a saint, though people keep suggesting it.)\n\nWhen did you last make a fuss of someone?"
+  },
+  "first_comment": "Next year he's asked for a cake. Small. The bakers have started.",
+  "short": {
+    "version": "B",
+    "title": "Every Pete\ngets this planet.",
+    "sub": "Here, it's all done\nfor Pete's sake.",
+    "framing": "group",
+    "zoom": [
+      1.55,
+      1.6
+    ],
+    "focus": [
+      0.55,
+      0.6
+    ],
+    "spec": {
+      "aurora": false,
+      "bright_stars": false,
+      "moons": 0,
+      "daisies": 0,
+      "palette": "polar_night",
+      "stars": 0.2,
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.45
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "aurora": true,
+        "bright_stars": true,
+        "moons": 3,
+        "daisies": 90,
+        "palette": "lilac_dusk",
+        "stars": null,
+        "crowd": 5,
+        "crowd_items": "flower,sing,nothing,hand,flower",
+        "crowd_x": 0.45,
+        "crowd_gap": 0.1,
+        "crowd_facing": "in"
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "On his birthday, Pete said,\n'Don't make a fuss.'",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.85,
+            1.92
+          ],
+          "focus": [
+            0.45,
+            0.63
+          ]
+        },
+        "spec": {
+          "crowd_items": "flower,flower,hand,flower,flower"
+        }
+      },
+      {
+        "text": "So they stopped.\nFor Pete's sake.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.55,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 0.8,
+          "spec": {
+            "aurora": false,
+            "bright_stars": false,
+            "moons": 0,
+            "daisies": 0,
+            "palette": "polar_night",
+            "stars": 0.2,
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.45
+          },
+          "motion": "cut"
+        }
+      }
+    ],
+    "end": "He meant a small fuss.",
+    "end_zoom": [
+      1.62,
+      1.56
+    ],
+    "end_focus": [
+      0.55,
+      0.62
+    ],
+    "name_y": 0.18,
+    "end_kicker": "For people who say 'don't make a fuss'.",
+    "next": {
+      "name": "Ajar",
+      "line": "Doors here say how you're feeling."
+    }
+  }
+}
