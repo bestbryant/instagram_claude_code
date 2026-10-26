@@ -1,0 +1,199 @@
+{
+  "id": "043",
+  "name": "Fetch",
+  "subtitle": "where the dogs do the choosing",
+  "story": "On Fetch, the dogs do the choosing. On Choosing Day the puppies are let loose in the square, and each one trots off and picks a person. Children practise looking chosen for weeks. Three children had asked for a dog on every birthday since they could talk, and every year their dad said no: the hair, the walks, the good chair. That year the smallest puppy walked straight past all three of them and sat on his foot. They nap in the good chair every afternoon. The children still want a dog.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "one",
+    "Gravity": "0.9 g",
+    "Population": "340,000"
+  },
+  "hook": "A planet for every dad who said no to the dog.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#dogdad"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.75,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.8,
+    "sun_y": 0.56,
+    "sun_size": 0.06,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.3,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "hand,hand,hand,nothing,dog",
+    "crowd_x": 0.56,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.22,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Dad said no dogs.",
+  "episode": {
+    "opener": "Dad said no dogs.",
+    "beats": [
+      {
+        "text": "On Fetch, the dogs\ndo the choosing.",
+        "shot": "wide"
+      },
+      {
+        "text": "On Choosing Day, the puppies\nare let loose in the square.",
+        "shot": "crowd",
+        "spec": {
+          "crowd_items": "dog,dog,dog,dog,dog",
+          "house": false
+        }
+      },
+      {
+        "text": "The children asked every birthday.\nDad said no: the hair, the walks.",
+        "shot": "group",
+        "spec": {
+          "crowd": 4,
+          "crowd_items": "hand,hand,hand,nothing",
+          "crowd_x": 0.51
+        }
+      },
+      {
+        "text": "The smallest one walked past all three\nand sat on his foot.",
+        "shot": "crowd",
+        "spec": {
+          "crowd_items": "nothing,nothing,nothing,nothing,dog"
+        }
+      },
+      {
+        "text": "Now they nap together\nevery afternoon.",
+        "shot": "group",
+        "spec": {
+          "crowd_items": "sit,sit,sit,armchair,dog"
+        },
+        "seconds": 3.0
+      }
+    ],
+    "end": "The children still want a dog.",
+    "caption": "Three hands up. Not Dad's.\n\nFetch: 340,000 people, a 26-hour day, one moon, and a dog in almost every house, though never the dog the house picked. On Choosing Day the puppies are let loose in the square and each one chooses a person. Children practise looking chosen for weeks: sitting nicely, a biscuit in every pocket. The dogs go for whoever is pretending not to care. Most years, that's a dad.\n\nI was chosen too, by an elderly terrier who sat on my map and wouldn't move. I've had to redraw the coast.\n\n(On Earth, a border collie called Chaser learned the names of 1,022 toys. Most dads still call theirs 'the dog'.)\n\nWho did your dog choose?"
+  },
+  "first_comment": "The children have asked for a cat. Dad says absolutely not.",
+  "short": {
+    "version": "B",
+    "title": "Dad said\nno dogs.",
+    "sub": "On Fetch, the dogs\ndo the choosing.",
+    "framing": "group",
+    "zoom": [
+      1.62,
+      1.68
+    ],
+    "focus": [
+      0.6,
+      0.63
+    ],
+    "spec": {
+      "crowd": 4,
+      "crowd_items": "hand,hand,hand,nothing",
+      "crowd_x": 0.51,
+      "crowd_gap": 0.1,
+      "cartographer": false
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "crowd": 5,
+        "crowd_items": "hand,hand,hand,nothing,dog",
+        "crowd_x": 0.56,
+        "crowd_gap": 0.1,
+        "cartographer": false
+      }
+    },
+    "beats": [
+      {
+        "text": "This one sat on Dad's foot.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.85,
+            1.93
+          ],
+          "focus": [
+            0.62,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing,nothing,nothing,dog",
+          "crowd_gap": 0.075
+        }
+      },
+      {
+        "text": "Now they nap together\nevery afternoon.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.62,
+            1.68
+          ],
+          "focus": [
+            0.6,
+            0.63
+          ]
+        },
+        "spec": {
+          "crowd_items": "sit,sit,sit,armchair,dog"
+        }
+      }
+    ],
+    "end": "The children still want a dog.",
+    "end_zoom": [
+      1.3,
+      1.26
+    ],
+    "end_focus": [
+      0.52,
+      0.6
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For every dad who said no to the dog.",
+    "next": {
+      "name": "Stella",
+      "line": "After lights-out, whispers become stars."
+    }
+  },
+  "_engine": 5
+}
