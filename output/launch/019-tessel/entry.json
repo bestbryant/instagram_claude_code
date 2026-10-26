@@ -256,6 +256,10 @@
       0.594
     ],
     "name_y": 0.1,
-    "end_kicker": "For the friend who remembers every birthday."
+    "end_kicker": "For the friend who remembers every birthday.",
+    "next": {
+      "name": "Lode",
+      "line": "Your blood points home."
+    }
   }
 }

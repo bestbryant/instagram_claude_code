@@ -304,7 +304,11 @@
       2.3,
       2.05
     ],
-    "end_kicker": "For people who can't sleep on an argument."
+    "end_kicker": "For people who can't sleep on an argument.",
+    "next": {
+      "name": "Tessel",
+      "line": "Winter here lasts a year."
+    }
   },
   "_engine": 5
 }
