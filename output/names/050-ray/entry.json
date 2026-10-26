@@ -1,0 +1,284 @@
+{
+  "id": "050",
+  "name": "Ray",
+  "subtitle": "every Ray's planet",
+  "story": "On Ray, every family has its own small sun, and it shines on Mum's favourite. Mum says this is nonsense. Jen, Tom and Lily have argued about it for years: it moves about, and nobody's ever sure. At Mum's birthday, all three came home and stood very still in the garden. It picked the dog. Nobody's talking to the dog.",
+  "facts": {
+    "Day": "28 hours",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "5.1 million"
+  },
+  "hook": "A planet for people who know they're Mum's favourite.",
+  "tags": [
+    "#worldbuilding",
+    "#siblings",
+    "#ray"
+  ],
+  "spec": {
+    "palette": "crimson",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.68,
+    "relief": 0.35,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.225,
+    "sun_y": 0.53,
+    "sun_size": 0.06,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.2,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 4,
+    "crowd_items": "nothing,nothing,nothing,dog",
+    "crowd_x": 0.42,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.86,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.13,
+    "stage": 0.76
+  },
+  "cover": "The sun here shines on Mum's favourite.",
+  "kicker": "Every Ray gets this planet.",
+  "episode": {
+    "opener": "The sun here shines\non Mum's favourite.",
+    "beats": [
+      {
+        "text": "Every family has its own.",
+        "shot": "sky"
+      },
+      {
+        "text": "Jen, Tom and Lily\nhave argued about it for years.",
+        "shot": "crowd"
+      },
+      {
+        "text": "It moves about.\nNobody's ever sure.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.42,
+            0.62
+          ]
+        },
+        "spec": {
+          "suns": 1,
+          "sun_x": 0.355,
+          "mist": 0.2
+        }
+      },
+      {
+        "text": "Tom rings Mum every day.\nHe says it isn't tactics.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.42,
+            0.62
+          ]
+        },
+        "spec": {
+          "suns": 1,
+          "sun_x": 0.355,
+          "mist": 0.2
+        }
+      },
+      {
+        "text": "At Mum's birthday,\nall three came home.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.42,
+            0.62
+          ]
+        },
+        "spec": {
+          "suns": 1,
+          "sun_x": 0.485,
+          "mist": 0.2
+        }
+      },
+      {
+        "text": "It picked the dog.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.42,
+            0.62
+          ]
+        },
+        "spec": {
+          "suns": 1,
+          "sun_x": 0.62,
+          "mist": 0.2
+        },
+        "note": "identical camera; one thing changed: the sun moves to the dog"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.42,
+            0.62
+          ]
+        },
+        "spec": {
+          "suns": 1,
+          "sun_x": 0.62,
+          "mist": 0.2
+        },
+        "seconds": 2.5
+      }
+    ],
+    "end": "Nobody's talking to the dog.",
+    "caption": "The dog's been in every shot.\n\nRay: 5.1 million people, a 28-hour day, no moons, and a sun with favourites. Every family here has its own small sun, and it shines on whoever Mum loves best, which she has always said is nonsense. Siblings follow it the way other planets follow the football. Family photos are studied like evidence. Jen has kept a log since primary school. Tom rings Mum every day and says it isn't tactics.\n\nI stayed one night with a family of five. Their sun came and sat on me. I haven't been asked back.\n\n(On Earth, sunlight takes about eight minutes and twenty seconds to reach you, so it's always shining on where you were. On Ray, it knows exactly where you are.)\n\nBe honest: was it you?"
+  },
+  "first_comment": "The dog got the last slice of cake.",
+  "short": {
+    "version": "C",
+    "title": "The sun here shines\non Mum's favourite.",
+    "sub": "You've just landed on Ray.",
+    "framing": "group",
+    "zoom": [
+      1.3,
+      1.36
+    ],
+    "focus": [
+      0.44,
+      0.6
+    ],
+    "spec": {
+      "suns": 0,
+      "mist": 0.85
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "suns": 1,
+        "sun_x": 0.225,
+        "mist": 0.2
+      }
+    },
+    "beats": [
+      {
+        "text": "You and your siblings\nkeep score.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.42,
+            0.62
+          ]
+        },
+        "spec": {
+          "suns": 1,
+          "sun_x": 0.225,
+          "mist": 0.2
+        },
+        "onset": {
+          "at": 1.3,
+          "motion": "cut",
+          "spec": {
+            "suns": 1,
+            "sun_x": 0.355,
+            "mist": 0.2
+          }
+        }
+      },
+      {
+        "text": "At Mum's birthday,\nit picks the dog.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.42,
+            0.62
+          ]
+        },
+        "spec": {
+          "suns": 1,
+          "sun_x": 0.485,
+          "mist": 0.2
+        },
+        "onset": {
+          "at": 1.3,
+          "motion": "cut",
+          "spec": {
+            "suns": 1,
+            "sun_x": 0.62,
+            "mist": 0.2
+          }
+        }
+      }
+    ],
+    "end": "Nobody's talking to the dog.",
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.46,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For everyone who knows they're Mum's favourite.",
+    "next": {
+      "name": "Yonder",
+      "line": "Nan waves until you're out of sight."
+    }
+  }
+}
