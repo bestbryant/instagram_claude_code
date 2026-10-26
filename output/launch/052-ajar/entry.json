@@ -1,0 +1,253 @@
+{
+  "id": "052",
+  "name": "Ajar",
+  "subtitle": "where doors say how you feel",
+  "story": "On Ajar, front doors say how the person inside is feeling. It saves a lot of knocking. Since her break-up, Amy's door has said the same thing every day, and her friends have done as it says. Her best friend Lou has never once done what a door told her. She came round with crisps, the good ones. The door changed its mind: GLAD YOU CAME.",
+  "facts": {
+    "Day": "22 hours",
+    "Moons": "one",
+    "Gravity": "1.1 g",
+    "Population": "640,000"
+  },
+  "hook": "A planet for every friend who comes round anyway.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#bestfriend"
+  ],
+  "spec": {
+    "palette": "teal_night",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.63,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 1,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 0.6,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "GO AWAY",
+    "crowd": 0,
+    "crowd_items": "",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.59,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Doors here say how you're feeling.",
+  "episode": {
+    "opener": "Doors here say\nhow you're feeling.",
+    "beats": [
+      {
+        "text": "It saves a lot of knocking.",
+        "shot": "house",
+        "spec": {
+          "sign": "COME IN"
+        }
+      },
+      {
+        "text": "Since Amy's break-up,\nhers has said the same thing.",
+        "shot": "sign"
+      },
+      {
+        "text": "Her friends have done\nas it says.",
+        "shot": "wide",
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "walk,walk",
+          "crowd_x": 0.3,
+          "crowd_gap": 0.09,
+          "crowd_facing": "left"
+        }
+      },
+      {
+        "text": "Her best friend Lou has never\ndone what a door told her.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "book",
+          "crowd_x": 0.4,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "She brought crisps.\nThe good ones.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.95
+          ],
+          "focus": [
+            0.42,
+            0.66
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "book",
+          "crowd_x": 0.4,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "book",
+          "crowd_x": 0.4,
+          "crowd_facing": "right",
+          "sign": "GLAD|YOU CAME"
+        },
+        "seconds": 3.0,
+        "note": "identical camera; the sign rewrite"
+      }
+    ],
+    "end": "The door changed its mind.",
+    "caption": "Read the door before you knock.\n\nAjar: 640,000 people, a 22-hour day, one moon, and front doors that say how the person inside is feeling. Nobody knocks. Postmen read the door and decide. Most say COME IN, or BACK SOON, or, by mid-December, NOT ANOTHER CARD. Amy's has said the same thing since the break-up, and everyone has been very respectful about it, apart from Lou.\n\nMy hotel door said LOST all week. Housekeeping kept leaving me maps.\n\n(The story goes that in the Netherlands, when a teenager passes their final exams, the family hangs a school bag from the flagpole. On Ajar, the door would say PASSED, and then, quietly, FINALLY.)\n\nWhat's your front door saying right now?"
+  },
+  "first_comment": "By the weekend, it said SAME TIME NEXT WEEK.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for the friend who comes round anyway.",
+    "title": "Doors here say\nhow you're feeling.",
+    "sub": "",
+    "framing": "house",
+    "zoom": [
+      1.42,
+      1.48
+    ],
+    "focus": [
+      0.6,
+      0.6
+    ],
+    "spec": {
+      "sign": ""
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "sign": "GO AWAY"
+      }
+    },
+    "beats": [
+      {
+        "text": "Since Amy's break-up, her door\nhas said the same thing.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "walk,walk",
+          "crowd_x": 0.3,
+          "crowd_gap": 0.09,
+          "crowd_facing": "left"
+        }
+      },
+      {
+        "text": "Her best friend Lou\nnever listens to doors.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.56,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "book",
+          "crowd_x": 0.4,
+          "crowd_facing": "right"
+        }
+      }
+    ],
+    "end": "She brought crisps. The good ones.",
+    "end_onset": {
+      "at": 1.8,
+      "motion": "cut",
+      "spec": {
+        "sign": "GLAD|YOU CAME"
+      }
+    },
+    "end_zoom": [
+      1.4,
+      1.34
+    ],
+    "end_focus": [
+      0.56,
+      0.6
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For the friend who comes round anyway.",
+    "next": {
+      "name": "Ray",
+      "line": "The sun here shines on Mum's favourite."
+    }
+  }
+}
