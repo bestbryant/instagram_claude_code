@@ -1,0 +1,215 @@
+{
+  "id": "046",
+  "name": "Yonder",
+  "subtitle": "the planet where nothing goes out of sight",
+  "story": "Yonder is flat from pole to pole, with no hills, no bends and no weather to speak of, and the air is so clear that nothing ever goes out of sight. You can watch a friend walk home for days. Lighthouses are mainly ornamental. After Sunday lunch, Nan stands at the gate and waves you off until you're out of sight, the way nans do. On Yonder, that takes four days. You wave back for the first mile. When you get home, she's still waving. Then she phones to check you got back all right.",
+  "facts": {
+    "Day": "28 hours",
+    "Moons": "none",
+    "Gravity": "1.1 g",
+    "Population": "56,000"
+  },
+  "hook": "A planet for every nan who's still waving.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#nan"
+  ],
+  "spec": {
+    "palette": "cobalt_noon",
+    "terrain": "dunes",
+    "layers": 3,
+    "horizon": 0.66,
+    "relief": 0.08,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.78,
+    "sun_y": 0.42,
+    "sun_size": 0.04,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.05,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "hand,walk",
+    "crowd_x": 0.5,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.18,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.44,
+    "stage": 0.74
+  },
+  "cover": "Nan waves until you're out of sight.",
+  "episode": {
+    "opener": "Nan waves until you're out of sight.",
+    "beats": [
+      {
+        "text": "Yonder is flat from pole to pole:\nno hills, no bends, no weather.",
+        "shot": "wide",
+        "spec": {
+          "crowd": 0
+        }
+      },
+      {
+        "text": "You can watch a friend\nwalk home for days.",
+        "shot": "wide"
+      },
+      {
+        "text": "After Sunday lunch,\nNan waves you off at the gate.",
+        "shot": "house"
+      },
+      {
+        "text": "You wave back for the first mile.",
+        "shot": "right"
+      },
+      {
+        "text": "By dark, she's still waving.",
+        "shot": "wide",
+        "spec": {
+          "palette": "lilac_dusk",
+          "suns": 0,
+          "crowd": 1,
+          "crowd_items": "hand",
+          "crowd_x": 0.28
+        }
+      },
+      {
+        "text": "You get home four days later.\nShe's still waving.",
+        "shot": "house",
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "crowd": 1,
+          "crowd_items": "hand",
+          "crowd_x": 0.28
+        }
+      }
+    ],
+    "end": "Then she phones to check.",
+    "caption": "Bottom left: Nan, mid-wave.\n\nYonder: 56,000 people, a 28-hour day, no moons, and not one hill. The planet is flat from pole to pole and the air is perfectly clear, so nothing ever goes out of sight. You can watch a friend walk home for days. Lighthouses are mainly ornamental, and hide-and-seek never caught on. When the family leaves after Sunday lunch, Nan stands at the gate and waves until they're out of sight, which takes about four days.\n\nI waved back for the first mile. My arm gave out at mile four.\n\n(On Earth, stand on a beach and the horizon is only about five kilometres away. Every nan on Earth has been waving at a curve.)\n\nWho waves you off?"
+  },
+  "first_comment": "Nan has been told she can stop at the corner. There isn't one.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every nan who's still waving.",
+    "title": "Nan waves until\nyou're out of sight.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.36,
+      1.42
+    ],
+    "focus": [
+      0.45,
+      0.62
+    ],
+    "spec": {
+      "mist": 0.95,
+      "palette": "rose_fog",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.31,
+      "crowd_gap": 0.07,
+      "crowd_facing": "in"
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "mist": 0.05,
+        "palette": "cobalt_noon",
+        "crowd": 2,
+        "crowd_items": "hand,walk",
+        "crowd_x": 0.44,
+        "crowd_gap": 0.32,
+        "crowd_facing": "right"
+      },
+      "motion": "cut"
+    },
+    "beats": [
+      {
+        "text": "The air is so clear,\nnothing goes out of sight.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.05,
+            1.1
+          ],
+          "focus": [
+            0.5,
+            0.55
+          ]
+        },
+        "spec": {
+          "crowd_x": 0.55,
+          "crowd_gap": 0.48
+        }
+      },
+      {
+        "text": "You get home four days later.\nShe's still waving.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.36,
+            1.42
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "crowd": 2,
+          "crowd_items": "hand,nothing",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.36,
+          "crowd_facing": "in",
+          "bright_stars": true
+        }
+      }
+    ],
+    "end": "Then she phones to check.",
+    "end_zoom": [
+      1.44,
+      1.38
+    ],
+    "end_focus": [
+      0.45,
+      0.6
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For every nan who's still waving.",
+    "next": {
+      "name": "April",
+      "line": "Happy tears here fall as rain."
+    }
+  }
+}
