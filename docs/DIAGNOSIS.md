@@ -2,6 +2,19 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-26 daily review (12:35 UTC): afternoon posts hold strangers better, or name planets do
+- **Numbers (strangers, `python -m atlas score`):** Bella (C) at 46 h: 114 reached, 34% skip, watched to the end (one looper), 2 likes, 0 shares or saves, so it fails only the send line. Willow (D, silent) 116, 74% skip. Summer (E) 1,103 reached, 32% skip, 58% watched, 8 likes, 1 save. Fibb (B, the first Reel with the next-stop end card) 118 at 14 h, 64% skip. Followers 2. No Reel has a share; 3 saves in total.
+- **Against the targets:** skip 60% or less: Summer, Bella, Max, Thessaly, Cinderwake (Fibb misses). 40% watched: Summer, Bella, Max, Cinderwake. 1 send per 100: nobody. Follows: none from 1,100 reached.
+- **Finding:** among the spoken shorts, every one posted in the afternoon held strangers better than every one posted at night. Summer 32%, Bella 34%, Max 40% (posted 14:10, 14:09, 18:09) against Thessaly 53%, Cinderwake 55%, Fibb 64% (all about 22:05). The pools also arrive at different hours: a 22:00 post meets its strangers at 00-05 UTC (the Americas' evening); a 14:00 post meets them at 05-09 UTC the next morning (Europe's morning, Asia's afternoon). Summer was the exception: its pool came at 16-20 UTC the same day and grew to 1,100.
+- **Checked and ruled out:** the opening. Frames at 0, 0.4, 0.9 and 1.6 s of all nine posted shorts (scratchpad/review26/) share one grammar: a two-line hook, an onset change at 0.4 s, figures on a horizon. Nothing in the first second separates the low-skip group from the high-skip one, apart from the voice (the two silent D cuts skip 74%).
+- **The confound:** the slot split is also a planet split. The three afternoon Reels are name planets (Max, Bella, Summer), and the three night Reels are place planets (Thessaly, Cinderwake, Fibb). Three against three with no overlap happens by chance about 1 time in 20, for either explanation. The API can't separate them by audience: it returns no audience-by-country data for an account this small (tried `reached_audience_demographics`: empty).
+- **What breaks it:** the queue already crosses them. Whisk (place, B, 14:00 today), Sefe (place, E, 22:00 today), Daisy (name, E, 14:00 27 Oct) and Charlie (name, C, 22:00 27 Oct) give a 2x2 by the morning of 29 Oct. The E verdict must use it: Summer (name, afternoon) against Sefe (place, night) differs in three ways at once. Judge Sefe against Fibb and Cinderwake (same slot and kind), and Daisy against Bella and Max.
+- **Changes today:**
+  1. `score` now shows each Reel's posting hour and the spoken shorts' medians by slot.
+  2. The second slot ran out after Hush (30 Oct), so from 31 Oct the queue had dropped to one a day until 18 Nov. The 18 November shorts now post two a day (14:00 and 22:00 UTC) from 1 to 9 Nov. Their order is unchanged, so every "Next stop" end card is still right (nextstop/apply.py: no changes).
+  3. The queue now ends on 9 Nov: new planets go to the writers' room now (BACKLOG).
+- **Then:** if the slot explains it (the place planets skip less in the afternoon and the name planets more at night), move the night slot earlier. If the planet kind explains it, the new planets lean to name planets.
+
 ## 2026-10-25 20:15 UTC: the first Reel past the test pool, and nobody follows
 - **Summer (E, the first narrated atlas cut), 6 h:** 974 strangers, 1,440 views, 32% skip, 58% watched, 7 likes, 0 shares, 0 saves.
   - It is the first Reel past the 100-150 ceiling, and it got there by 4 h, from a 14:00 post.
