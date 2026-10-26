@@ -1,0 +1,230 @@
+{
+  "id": "051",
+  "name": "Nod",
+  "subtitle": "where the wind is Dad, asleep",
+  "story": "On Nod, the wind is Dad, snoring. All week the air is still. Then, after the big lunch, he settles into his armchair on the hill, and within ten minutes the whole town is flying kites. Nobody runs the hoover. Nobody drops anything. Then you drop a spoon. Every kite comes down, and everyone looks at you.",
+  "facts": {
+    "Day": "24 hours, plus a nap",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "12,000"
+  },
+  "hook": "A planet for every dad who's just resting his eyes.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#dad"
+  ],
+  "spec": {
+    "palette": "pastel",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.62,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.78,
+    "sun_y": 0.5,
+    "sun_size": 0.06,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.22,
+    "gag": "",
+    "cartographer": false,
+    "spot": "#c8452f",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "armchair,nothing,nothing,nothing,nothing",
+    "crowd_x": 0.44,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.11,
+    "stage": 0.74
+  },
+  "cover": "The wind here is Dad, snoring.",
+  "episode": {
+    "opener": "The wind here\nis Dad, snoring.",
+    "beats": [
+      {
+        "text": "All week, the air is still.",
+        "shot": "wide"
+      },
+      {
+        "text": "After lunch,\nhe nods off.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.22,
+            0.66
+          ]
+        }
+      },
+      {
+        "text": "Out come the kites.",
+        "shot": "sky",
+        "spec": {
+          "crowd_items": "armchair,kite,kite,kite,kite"
+        }
+      },
+      {
+        "text": "Nobody runs the hoover.",
+        "shot": "crowd",
+        "spec": {
+          "crowd_items": "armchair,kite,kite,kite,kite"
+        }
+      },
+      {
+        "text": "Then you drop a spoon.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.44,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd_items": "armchair,kite,kite,kite,kite"
+        }
+      },
+      {
+        "text": "Every kite comes down.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.44,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd": 6,
+          "crowd_x": 0.445,
+          "crowd_gap": 0.09,
+          "crowd_items": "chair,hand,nothing,nothing,nothing,nothing"
+        },
+        "note": "identical camera; the kites are gone and Dad is up"
+      }
+    ],
+    "end": "Everyone looks at you.",
+    "caption": "Every kite on that hill is tied to one nap.\n\nNod: 12,000 people, a 24-hour day, no moons, and no weather of its own. The wind is Dad, snoring in an armchair on the hill: light breathing for a breeze, a proper snore for a gale. Kite season is the hour after the roast. Babies are rocked to sleep by it. Nobody has told him.\n\nI sneezed during a gust. Three kites and a hat are still in the next valley.\n\n(The story goes that 'the land of Nod' only came to mean sleep in 1738, when Jonathan Swift made a pun of it. Before that, it was east of Eden. Here, it's east of the armchair.)\n\nHow many kites would your house fly after lunch?"
+  },
+  "first_comment": "His birthday: a gale. Two puddings.",
+  "short": {
+    "version": "C",
+    "title": "The wind here\nis Dad, snoring.",
+    "sub": "You've just landed on Nod.",
+    "scrim": 0.55,
+    "framing": "group",
+    "zoom": [
+      1.36,
+      1.42
+    ],
+    "focus": [
+      0.42,
+      0.6
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "crowd_items": "armchair,kite,kite,kite,kite"
+      }
+    },
+    "beats": [
+      {
+        "text": "Lunch is over.\nHe's nodded off.\nGet your kite out.",
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.16,
+            1.22
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "text_y": 0.12,
+        "spec": {
+          "crowd_items": "armchair,kite,kite,kite,kite"
+        }
+      },
+      {
+        "text": "You drop a spoon.\nEvery kite comes down.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.4,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "armchair,kite,kite,kite,kite"
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "crowd": 6,
+            "crowd_x": 0.445,
+            "crowd_gap": 0.09,
+            "crowd_items": "chair,hand,nothing,nothing,nothing,nothing"
+          }
+        }
+      }
+    ],
+    "end": "Everyone looks at you.",
+    "end_zoom": [
+      1.04,
+      1.0
+    ],
+    "end_focus": [
+      0.5,
+      0.52
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For every dad who's just resting his eyes."
+  },
+  "_engine": 5
+}
