@@ -226,7 +226,11 @@
       1.44
     ],
     "name_y": 0.17,
-    "end_kicker": "For people who go to the beach and don't swim."
+    "end_kicker": "For people who go to the beach and don't swim.",
+    "next": {
+      "name": "Bramble",
+      "line": "This tree has its own weather."
+    }
   },
   "_engine": 5
 }

@@ -249,6 +249,10 @@
       0.47,
       0.54
     ],
-    "end_kicker": "For people who never come downstairs."
+    "end_kicker": "For people who never come downstairs.",
+    "next": {
+      "name": "Luma",
+      "line": "The moon here writes back."
+    }
   }
 }
