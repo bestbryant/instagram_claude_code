@@ -1,0 +1,203 @@
+{
+  "id": "045",
+  "name": "Eve",
+  "subtitle": "where Christmas is always tomorrow",
+  "story": "On Eve, Christmas is always tomorrow. It has been tomorrow for nine hundred years. The stockings are up, the snow is down, and the children are far too excited to sleep, which is a problem, because they haven't slept since they were born. Nobody has ever needed to buy a present: why would you, with a whole day to go? Then, one morning, the sign in the square changed.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "one",
+    "Gravity": "0.8 g",
+    "Population": "2.4 million"
+  },
+  "hook": "A planet for every last-minute Christmas shopper.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#eve"
+  ],
+  "spec": {
+    "palette": "polar_night",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 1,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "pines",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "snow",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "1 DAY TO|CHRISTMAS",
+    "crowd": 4,
+    "crowd_items": "child,child,child,child",
+    "crowd_x": 0.42,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.2,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Christmas here is always tomorrow.",
+  "kicker": "Every Eve gets this planet.",
+  "episode": {
+    "opener": "On Eve, Christmas is always tomorrow.",
+    "beats": [
+      {
+        "text": "It has been tomorrow\nfor nine hundred years.",
+        "shot": "sign"
+      },
+      {
+        "text": "The stockings are up.\nThe snow is down.",
+        "shot": "wide"
+      },
+      {
+        "text": "The children are too excited\nto sleep, and always have been.",
+        "shot": "group"
+      },
+      {
+        "text": "Every night, the whole planet\ngoes to bed early, so it'll come quicker.",
+        "shot": "house"
+      },
+      {
+        "text": "Nobody has ever bought a present.\nThere's a whole day to go.",
+        "shot": "house"
+      },
+      {
+        "text": "Then, one morning,\nthe sign changed.",
+        "shot": "sign",
+        "spec": {
+          "sign": "CHRISTMAS|TODAY",
+          "palette": "violet_ice"
+        }
+      },
+      {
+        "text": "The shops opened early.",
+        "shot": "group",
+        "spec": {
+          "sign": "CHRISTMAS|TODAY",
+          "palette": "violet_ice",
+          "crowd_items": "walk,walk,walk,walk"
+        }
+      }
+    ],
+    "end": "Socks all round.",
+    "caption": "Read the sign by the trees.\n\nEve: 2.4 million people, a 25-hour day, one moon, and Christmas, which has been tomorrow for nine hundred years. The stockings are up. The snow is down. The children are far too excited to sleep, and have been since birth. Every evening the whole planet goes to bed early so it'll come quicker. Nobody has ever bought a present, because why would you, with a whole day to go?\n\nI brought one for my host. She cried, and then she panicked.\n\n(The story goes that Christmas Eve is part of Christmas because the old church day began at sunset, so the feast started the evening before. On Eve, it never got past the evening.)\n\nWhat would you buy with one morning's notice?"
+  },
+  "first_comment": "Boxing Day is now expected in about nine hundred years.",
+  "short": {
+    "version": "C",
+    "title": "Christmas here\nis always tomorrow.",
+    "sub": "You've just landed on Eve.",
+    "framing": "sign",
+    "zoom": [
+      1.45,
+      1.52
+    ],
+    "spec": {
+      "sign": "",
+      "crowd": 0,
+      "snow": true,
+      "particles": "snow"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "sign": "1 DAY TO|CHRISTMAS",
+        "crowd": 0
+      }
+    },
+    "beats": [
+      {
+        "text": "No need to shop yet.\nIt's not till tomorrow.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.6,
+            1.66
+          ]
+        },
+        "spec": {
+          "crowd": 4,
+          "crowd_items": "sit,cup,sit,cup",
+          "crowd_x": 0.5,
+          "sign": ""
+        }
+      },
+      {
+        "text": "The morning after you land,\nthe sign changes.",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.45,
+            1.52
+          ]
+        },
+        "onset": {
+          "at": 1.75,
+          "motion": "cut",
+          "spec": {
+            "sign": "CHRISTMAS|TODAY"
+          }
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "crowd": 0
+        },
+        "seconds": 3.6
+      }
+    ],
+    "end": "Socks all round.",
+    "end_spec": {
+      "crowd": 4,
+      "crowd_items": "walk,walk,walk,walk",
+      "crowd_facing": "left",
+      "crowd_x": 0.38,
+      "crowd_gap": 0.08
+    },
+    "end_zoom": [
+      1.3,
+      1.26
+    ],
+    "end_focus": [
+      0.45,
+      0.6
+    ],
+    "name_y": 0.16,
+    "end_kicker": "For everyone who shops on Christmas Eve.",
+    "next": {
+      "name": "Umber",
+      "line": "You promise Mum you'll visit more."
+    }
+  },
+  "_engine": 5
+}
