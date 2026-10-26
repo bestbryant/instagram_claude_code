@@ -292,6 +292,10 @@
       0.62
     ],
     "name_y": 0.15,
-    "end_kicker": "For people who go home for Christmas."
+    "end_kicker": "For people who go home for Christmas.",
+    "next": {
+      "name": "Ruby",
+      "line": "The sky blushes if you're embarrassed."
+    }
   }
 }
