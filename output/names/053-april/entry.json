@@ -1,0 +1,336 @@
+{
+  "id": "053",
+  "name": "April",
+  "subtitle": "every April's planet",
+  "story": "On April, happy tears fall as rain. Weddings are very wet, and graduations need wellies. Grandad has never cried: not at weddings, not even at the football. He has never owned an umbrella. Then his granddaughter said her first word, and the word was 'Grandad'. It's still raining, and there's a lake now. 'Hay fever,' he says.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "one",
+    "Gravity": "1.0 g",
+    "Population": "3.6 million"
+  },
+  "hook": "A planet for every grandad who says it's hay fever.",
+  "tags": [
+    "#worldbuilding",
+    "#grandad",
+    "#april"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.75,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.24,
+    "sun_y": 0.34,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "#e0a526",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "nothing,flower,nothing,flower,nothing",
+    "crowd_x": 0.46,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.84,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Happy tears here fall as rain.",
+  "kicker": "Every April gets this planet.",
+  "episode": {
+    "opener": "Happy tears here\nfall as rain.",
+    "beats": [
+      {
+        "text": "Weddings are very wet.",
+        "shot": "crowd",
+        "spec": {
+          "particles": "rain",
+          "gag": "big_cloud",
+          "suns": 0,
+          "mist": 0.55
+        }
+      },
+      {
+        "text": "Grandad has never cried.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.46,
+            0.66
+          ]
+        },
+        "spec": {
+          "particles": "rain",
+          "gag": "big_cloud",
+          "suns": 0,
+          "mist": 0.55
+        }
+      },
+      {
+        "text": "Not at weddings.\nNot even at the football.",
+        "shot": "wide",
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.42,
+          "crowd_facing": "right",
+          "particles": "none",
+          "palette": "gold_hour",
+          "suns": 1,
+          "gag": "",
+          "cartographer": false,
+          "mist": 0.35
+        }
+      },
+      {
+        "text": "He's never owned\nan umbrella.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.42,
+          "crowd_facing": "right",
+          "particles": "none",
+          "palette": "gold_hour",
+          "suns": 1,
+          "gag": "",
+          "cartographer": false,
+          "mist": 0.35
+        }
+      },
+      {
+        "text": "Then his granddaughter\nsaid her first word.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "child",
+          "crowd_x": 0.42,
+          "crowd_facing": "right",
+          "particles": "none",
+          "palette": "gold_hour",
+          "suns": 1,
+          "gag": "",
+          "cartographer": false,
+          "mist": 0.35
+        }
+      },
+      {
+        "text": "'Grandad.'",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.65
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "child",
+          "crowd_x": 0.42,
+          "crowd_facing": "right",
+          "particles": "rain",
+          "palette": "abyss",
+          "suns": 0,
+          "gag": "big_cloud",
+          "cartographer": false,
+          "mist": 0.6
+        },
+        "note": "identical camera; one thing changed: it pours"
+      },
+      {
+        "text": "It's still raining.\nThere's a lake now.",
+        "shot": "wide",
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "child",
+          "crowd_x": 0.42,
+          "crowd_facing": "right",
+          "particles": "rain",
+          "palette": "abyss",
+          "suns": 0,
+          "gag": "big_cloud",
+          "cartographer": false,
+          "mist": 0.6,
+          "water": true,
+          "shore": "left"
+        }
+      }
+    ],
+    "end": "'Hay fever,' he says.",
+    "caption": "That cloud is mostly the bride's mum.\n\nApril: 3.6 million people, a 24-hour day, one moon, and the wettest weddings in the known universe. Happy tears fall as rain, so the forecast is mostly births, reunions and the last episodes of things. Brides book a marquee. Grandad has never needed one. He has stood bone dry through four weddings, two christenings and a cup final, hands in his pockets.\n\nI cried at a sunset on my second night. The campsite has asked me not to come back.\n\n(The story goes that in Italy they say 'sposa bagnata, sposa fortunata': a wet bride is a lucky bride. On April, it just means her dad came.)\n\nRain or shine, at the last wedding you went to?"
+  },
+  "first_comment": "Her second word was 'umbrella'.",
+  "short": {
+    "version": "B",
+    "title": "Happy tears here\nfall as rain.",
+    "sub": "Grandad has never cried.",
+    "scrim": 0.5,
+    "framing": "group",
+    "zoom": [
+      1.42,
+      1.48
+    ],
+    "focus": [
+      0.48,
+      0.6
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "particles": "rain",
+        "gag": "big_cloud",
+        "suns": 0,
+        "mist": 0.55
+      }
+    },
+    "beats": [
+      {
+        "text": "Not at weddings.\nNot even at the football.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.44,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.42,
+          "crowd_facing": "right",
+          "particles": "none",
+          "palette": "gold_hour",
+          "suns": 1,
+          "gag": "",
+          "cartographer": false,
+          "mist": 0.35
+        }
+      },
+      {
+        "text": "Then his granddaughter said\nher first word: 'Grandad.'",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.44,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "child",
+          "crowd_x": 0.42,
+          "crowd_facing": "right",
+          "particles": "none",
+          "palette": "gold_hour",
+          "suns": 1,
+          "gag": "",
+          "cartographer": false,
+          "mist": 0.35
+        },
+        "onset": {
+          "at": 2.45,
+          "motion": "cut",
+          "spec": {
+            "particles": "rain",
+            "palette": "abyss",
+            "suns": 0,
+            "mist": 0.6,
+            "gag": "big_cloud"
+          }
+        }
+      }
+    ],
+    "end": "'Hay fever,' he says.",
+    "end_onset": {
+      "at": 0.5,
+      "motion": "rise",
+      "spec": {
+        "water": true,
+        "shore": "left"
+      }
+    },
+    "end_zoom": [
+      1.5,
+      1.44
+    ],
+    "end_focus": [
+      0.45,
+      0.6
+    ],
+    "name_y": 0.25,
+    "end_kicker": "For every grandad who says it's hay fever.",
+    "next": {
+      "name": "Nod",
+      "line": "The wind here is Dad, snoring."
+    }
+  }
+}
