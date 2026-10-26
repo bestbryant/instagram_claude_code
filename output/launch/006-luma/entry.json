@@ -227,6 +227,10 @@
       1.12
     ],
     "name_y": 0.24,
-    "end_kicker": "For people who still write letters."
+    "end_kicker": "For people who still write letters.",
+    "next": {
+      "name": "Miles",
+      "line": "Next door is ninety miles away."
+    }
   }
 }
