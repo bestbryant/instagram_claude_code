@@ -320,6 +320,10 @@
       1.24
     ],
     "name_y": 0.21,
-    "end_kicker": "For the one everyone else steers by."
+    "end_kicker": "For the one everyone else steers by.",
+    "next": {
+      "name": "Selk",
+      "line": "The sea left. The waves stayed."
+    }
   }
 }

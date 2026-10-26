@@ -355,7 +355,11 @@
       "crowd_items": "dog",
       "crowd_facing": "left"
     },
-    "end_kicker": "For everyone the dog wakes at five."
+    "end_kicker": "For everyone the dog wakes at five.",
+    "next": {
+      "name": "Norman",
+      "line": "North is a man."
+    }
   },
   "_engine": 5
 }
