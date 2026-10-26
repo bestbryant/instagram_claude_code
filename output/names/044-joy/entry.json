@@ -1,0 +1,203 @@
+{
+  "id": "044",
+  "name": "Joy",
+  "subtitle": "the planet where laughing lifts you",
+  "story": "Gravity on Joy is gentle, and laughing makes you lighter, so a good laugh lifts you clean off the ground. Comedians play to empty rooms and look up for the applause. Funerals are held indoors. Sunday lunch, though, stays firmly on the ground in most families, because Grandad does the jokes, and Grandad's jokes are terrible. Then, one Sunday, between the roast and the crumble, he told a good one. The whole table went up. Grandad stayed down: he'd heard it before. It was the proudest day of his life.",
+  "facts": {
+    "Day": "22 hours",
+    "Moons": "two",
+    "Gravity": "0.3 g",
+    "Population": "1.2 million"
+  },
+  "hook": "A planet for every grandad with one good joke.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#joy"
+  ],
+  "spec": {
+    "palette": "mint_dawn",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.66,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.8,
+    "sun_y": 0.47,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 2,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.3,
+    "gag": "",
+    "cartographer": false,
+    "spot": "#e9b434",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "nothing,nothing,sing,nothing,nothing",
+    "crowd_x": 0.46,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.82,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Laughing here lifts you off the ground.",
+  "kicker": "Every Joy gets this planet.",
+  "episode": {
+    "opener": "Laughing here lifts you off the ground.",
+    "beats": [
+      {
+        "text": "Gravity is gentle on Joy.\nOne good laugh, and you're up.",
+        "shot": "wide",
+        "spec": {
+          "crowd_items": "aloft,nothing,nothing,nothing,nothing"
+        }
+      },
+      {
+        "text": "Comedians play to empty rooms\nand look up for the applause.",
+        "shot": "sky"
+      },
+      {
+        "text": "Sunday lunch stays on the ground,\nbecause Grandad does the jokes.",
+        "shot": "group"
+      },
+      {
+        "text": "Grandad's jokes are terrible.",
+        "shot": "crowd"
+      },
+      {
+        "text": "Then, one Sunday,\nhe told a good one.",
+        "shot": "group",
+        "spec": {
+          "crowd_items": "aloft,aloft,nothing,aloft,aloft"
+        }
+      },
+      {
+        "text": "He'd heard it before.",
+        "shot": "close",
+        "spec": {
+          "crowd_items": "aloft,aloft,nothing,aloft,aloft"
+        },
+        "seconds": 2.6
+      }
+    ],
+    "end": "Proudest day of Grandad's life.",
+    "caption": "Watch the tall one in the middle.\n\nJoy: 1.2 million people, a 22-hour day, two moons, and gravity so gentle that a good laugh lifts you clean off the ground. Comedians play to empty rooms and look up for the applause. Funerals are held indoors, under low ceilings. Sunday lunch is the one safe meal in most families, because somebody's grandad does the jokes, and the jokes are terrible. Then, one Sunday, between the roast and the crumble, he told a good one.\n\nI laughed at a sign in a café window and spent the afternoon on the roof.\n\n(On Earth, the psychologist Robert Provine found we're about thirty times more likely to laugh with other people than alone. Grandad had a full table.)\n\nWhat's the one good joke in your family?"
+  },
+  "first_comment": "He's been working on a second one ever since. Nobody's in a hurry.",
+  "short": {
+    "version": "E",
+    "title": "Laughing here lifts you\noff the ground.",
+    "sub": "",
+    "framing": "group",
+    "zoom": [
+      1.25,
+      1.3
+    ],
+    "focus": [
+      0.48,
+      0.57
+    ],
+    "title_y": 0.25,
+    "spec": {
+      "crowd": 4,
+      "crowd_x": 0.41,
+      "crowd_gap": 0.1,
+      "crowd_items": "nothing,nothing,nothing,nothing"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "crowd": 5,
+        "crowd_x": 0.46,
+        "crowd_gap": 0.1,
+        "crowd_items": "nothing,nothing,nothing,nothing,aloft"
+      }
+    },
+    "beats": [
+      {
+        "text": "So Grandad's jokes keep\nthe family grounded.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.88,
+            1.96
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing,sing,nothing,nothing"
+        }
+      },
+      {
+        "text": "Then, one year,\nhe told a good one.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.36,
+            1.42
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing,sing,nothing,nothing"
+        },
+        "onset": {
+          "at": 1.6,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "aloft,aloft,nothing,aloft,aloft"
+          }
+        }
+      }
+    ],
+    "end": "Proudest day of Grandad's life.",
+    "end_zoom": [
+      1.22,
+      1.18
+    ],
+    "end_focus": [
+      0.48,
+      0.55
+    ],
+    "name_y": 0.12,
+    "end_kicker": "For every grandad with one good joke.",
+    "kicker": "A planet for every grandad with one good joke.",
+    "next": {
+      "name": "Fetch",
+      "line": "Dad said no dogs."
+    }
+  }
+}

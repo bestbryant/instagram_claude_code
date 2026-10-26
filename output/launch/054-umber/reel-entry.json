@@ -1,0 +1,285 @@
+{
+  "id": "054",
+  "name": "Umber",
+  "subtitle": "where shadows keep promises",
+  "story": "On Umber, your shadow keeps your promises. Say you'll be there early, and your shadow is, lying politely on the doormat. Say you'll visit your mum more, and it does, every Sunday, while you're busy. She tells it everything. It never looks at its phone. For once, you tag along. Mum opens the door: 'Hello, stranger.'",
+  "facts": {
+    "Day": "31 hours",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "4.8 million"
+  },
+  "hook": "A planet for people who keep saying they'll visit more.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#family"
+  ],
+  "spec": {
+    "palette": "rust_desert",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.65,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.16,
+    "sun_y": 0.58,
+    "sun_size": 0.06,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.25,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "cup",
+    "crowd_x": 0.38,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.25,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.17,
+    "stage": 0.74
+  },
+  "cover": "Your shadow here keeps your promises.",
+  "episode": {
+    "opener": "Your shadow here\nkeeps your promises.",
+    "beats": [
+      {
+        "text": "Say you'll be early,\nand it is.",
+        "shot": "house",
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "shadow,shadow",
+          "crowd_x": 0.465,
+          "crowd_gap": 0.17,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "Say you'll visit Mum more,\nand it does.",
+        "shot": "wide",
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "cup,shadow",
+          "crowd_x": 0.465,
+          "crowd_gap": 0.17,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "Every Sunday.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.47,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "cup,shadow",
+          "crowd_x": 0.465,
+          "crowd_gap": 0.17,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "She tells it everything.\nIt never looks at its phone.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.95
+          ],
+          "focus": [
+            0.47,
+            0.66
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "cup,shadow",
+          "crowd_x": 0.465,
+          "crowd_gap": 0.17,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "For once, you tag along.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.47,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "cup,shadow,walk",
+          "crowd_x": 0.55,
+          "crowd_gap": 0.17,
+          "crowd_facing": "in"
+        },
+        "note": "identical camera; one thing added: you"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.47,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "cup,shadow,walk",
+          "crowd_x": 0.55,
+          "crowd_gap": 0.17,
+          "crowd_facing": "in"
+        },
+        "seconds": 2.5
+      }
+    ],
+    "end": "'Hello, stranger.'",
+    "caption": "Nobody is casting that shadow.\n\nUmber: 4.8 million people, a 31-hour day, no moons, and long, low, honest light. Shadows here keep their owners' promises. Say you'll pop round and your shadow pops round. Say you'll ring more and it sits by the phone at the other end, looking hopeful. Mothers on Umber see a great deal of shadow. They make it tea and tell it everything, and it never once checks the time.\n\nI promised my editor the map tomorrow. My shadow has been sitting outside her office since yesterday.\n\n(On Earth, when the sun is about six degrees above the horizon, your shadow is about nine and a half times as long as you are tall. It still won't visit anyone for you.)\n\nWhere's your shadow been this week?"
+  },
+  "first_comment": "Next Sunday, you both went. She got the good biscuits out.",
+  "short": {
+    "version": "B",
+    "title": "You promise Mum\nyou'll visit more.",
+    "sub": "On Umber, your shadow does.",
+    "scrim": 0.5,
+    "framing": "group",
+    "zoom": [
+      1.6,
+      1.66
+    ],
+    "focus": [
+      0.46,
+      0.66
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "crowd": 2,
+        "crowd_items": "cup,shadow",
+        "crowd_x": 0.465,
+        "crowd_gap": 0.17,
+        "crowd_facing": "in"
+      }
+    },
+    "beats": [
+      {
+        "text": "Every Sunday, it pops round.\nIt never looks at its phone.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.52,
+            0.68
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "cup,shadow",
+          "crowd_x": 0.465,
+          "crowd_gap": 0.17,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "For once, you tag along.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.5,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "cup,shadow",
+          "crowd_x": 0.465,
+          "crowd_gap": 0.17,
+          "crowd_facing": "in"
+        },
+        "seconds": 3.2,
+        "onset": {
+          "at": 0.7,
+          "motion": "slide",
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "cup,shadow,walk",
+            "crowd_x": 0.55,
+            "crowd_gap": 0.17,
+            "crowd_facing": "in"
+          }
+        }
+      }
+    ],
+    "end": "'Hello, stranger.'",
+    "end_zoom": [
+      1.45,
+      1.4
+    ],
+    "end_focus": [
+      0.5,
+      0.64
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For everyone who keeps saying they'll visit more.",
+    "next": {
+      "name": "Joy",
+      "line": "Laughing here lifts you off the ground."
+    }
+  },
+  "_engine": 5
+}
