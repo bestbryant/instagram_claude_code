@@ -267,6 +267,10 @@
       0.64
     ],
     "name_y": 0.25,
-    "end_kicker": "For everyone who's said 'you too' to a waiter."
+    "end_kicker": "For everyone who's said 'you too' to a waiter.",
+    "next": {
+      "name": "Will",
+      "line": "The sun rises by popular demand."
+    }
   }
 }
