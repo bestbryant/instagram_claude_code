@@ -227,7 +227,11 @@
       1.75,
       1.8
     ],
-    "end_kicker": "Every name has a planet. Yours too."
+    "end_kicker": "Every name has a planet. Yours too.",
+    "next": {
+      "name": "Brumm",
+      "line": "Every child here gets one last carry."
+    }
   },
   "_engine": 5
 }
