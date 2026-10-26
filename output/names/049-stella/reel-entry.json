@@ -1,0 +1,282 @@
+{
+  "id": "049",
+  "name": "Stella",
+  "subtitle": "every Stella's planet",
+  "story": "On Stella, anything whispered after lights-out turns into a star. The sky is mostly children: bunk beds, sleepovers, and a great many parents saying 'Go to sleep.' Joan and her sister Meg shared a room for sixteen years, and the sky over their house was the brightest in town. They're both nans now, and live miles apart. Every night, Joan rings Meg and whispers, 'You awake?' Meg always is.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "1.4 million"
+  },
+  "hook": "A planet for every sister who talked after lights-out.",
+  "tags": [
+    "#worldbuilding",
+    "#sisters",
+    "#stella"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 3.5,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "sit,sit",
+    "crowd_x": 0.47,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.62,
+    "bright_stars": true,
+    "flake_size": 1.0,
+    "crowd_gap": 0.07,
+    "stage": 0.74
+  },
+  "cover": "After lights-out, whispers become stars.",
+  "kicker": "Every Stella gets this planet.",
+  "episode": {
+    "opener": "After lights-out,\nwhispers become stars.",
+    "beats": [
+      {
+        "text": "The sky is mostly children.",
+        "shot": "sky"
+      },
+      {
+        "text": "Joan and her sister Meg\nshared a room for sixteen years.",
+        "shot": "house"
+      },
+      {
+        "text": "About a third of their sky\nis their mum: 'Go to sleep.'",
+        "shot": "sky"
+      },
+      {
+        "text": "They're both nans now,\nmiles apart.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "crowd": 1,
+          "crowd_items": "sit",
+          "crowd_x": 0.48,
+          "crowd_facing": "left",
+          "stars": 0.25,
+          "bright_stars": false,
+          "suns": 0,
+          "mist": 0.45,
+          "cartographer": false,
+          "particles": "none"
+        }
+      },
+      {
+        "text": "Every night,\nJoan rings Meg.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "crowd": 1,
+          "crowd_items": "sit",
+          "crowd_x": 0.48,
+          "crowd_facing": "left",
+          "stars": 0.25,
+          "bright_stars": false,
+          "suns": 0,
+          "mist": 0.45,
+          "cartographer": false,
+          "particles": "none"
+        }
+      },
+      {
+        "text": "'You awake?'",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "crowd": 1,
+          "crowd_items": "sing",
+          "crowd_x": 0.48,
+          "crowd_facing": "left",
+          "stars": 3.5,
+          "bright_stars": true,
+          "suns": 0,
+          "mist": 0.45,
+          "cartographer": false,
+          "particles": "snow_up",
+          "flake_size": 2.2
+        },
+        "note": "identical camera; one thing changed: her whisper goes up as stars"
+      }
+    ],
+    "end": "Meg always is.",
+    "caption": "The two on the hill grew up in that house.\n\nStella: 1.4 million people, a 26-hour day, no moons, and a night sky that is mostly children. Anything whispered after lights-out goes up as a star, so the busiest skies are over bunk beds, sleepovers and sisters, and about a third of any family's sky is a parent saying 'Go to sleep.' Joan and Meg's is the famous one: sixteen years of one bedroom, and a long row about whose turn it was to get the light.\n\nI said goodnight to my map after lights-out. It's up there now, small and faint, near the edge.\n\n(On Earth, the light from Vega set off about twenty-five years ago, so a whisper from your childhood would only now be arriving. On Stella, it's up before you've finished it.)\n\nWhat did you whisper about after lights-out?"
+  },
+  "first_comment": "Last night, Meg rang first.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for sisters who talked after lights-out.",
+    "title": "After lights-out,\nwhispers become stars.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.16,
+      1.22
+    ],
+    "focus": [
+      0.52,
+      0.56
+    ],
+    "spec": {
+      "palette": "lilac_dusk",
+      "stars": 0.0,
+      "bright_stars": false,
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.6,
+      "sun_size": 0.05,
+      "mist": 0.55
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "violet_ice",
+        "stars": 3.5,
+        "bright_stars": true,
+        "suns": 0,
+        "mist": 0.35,
+        "particles": "snow_up",
+        "flake_size": 2.2
+      }
+    },
+    "beats": [
+      {
+        "text": "Joan and her sister Meg\nshared a room for sixteen years.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.8,
+            1.88
+          ],
+          "focus": [
+            0.52,
+            0.65
+          ]
+        }
+      },
+      {
+        "text": "They're both nans now.\nEvery night, Joan rings Meg:\n'You awake?'",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "crowd": 1,
+          "crowd_items": "sit",
+          "crowd_x": 0.48,
+          "crowd_facing": "left",
+          "stars": 0.25,
+          "bright_stars": false,
+          "suns": 0,
+          "mist": 0.45,
+          "cartographer": false,
+          "particles": "none"
+        },
+        "onset": {
+          "at": 3.0,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "sing",
+            "stars": 3.5,
+            "bright_stars": true,
+            "particles": "snow_up",
+            "flake_size": 2.2
+          }
+        }
+      }
+    ],
+    "end": "Meg always is.",
+    "end_zoom": [
+      1.2,
+      1.14
+    ],
+    "end_focus": [
+      0.5,
+      0.6
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For sisters who talked after lights-out.",
+    "next": {
+      "name": "Brolly",
+      "line": "Your mum says it'll brighten up."
+    }
+  },
+  "_engine": 5
+}
