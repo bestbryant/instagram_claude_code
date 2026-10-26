@@ -269,7 +269,11 @@
     ],
     "name_y": 0.17,
     "scrim": 0.6,
-    "end_kicker": "For everyone who was carried home asleep."
+    "end_kicker": "For everyone who was carried home asleep.",
+    "next": {
+      "name": "Eve",
+      "line": "Christmas here is always tomorrow."
+    }
   },
   "_engine": 5
 }
