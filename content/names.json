@@ -4582,5 +4582,1542 @@
         "line": "Every Milo gets this planet."
       }
     }
+  },
+  {
+    "id": "045",
+    "name": "Eve",
+    "subtitle": "where Christmas is always tomorrow",
+    "story": "On Eve, Christmas is always tomorrow. It has been tomorrow for nine hundred years. The stockings are up, the snow is down, and the children are far too excited to sleep, which is a problem, because they haven't slept since they were born. Nobody has ever needed to buy a present: why would you, with a whole day to go? Then, one morning, the sign in the square changed.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "one",
+      "Gravity": "0.8 g",
+      "Population": "2.4 million"
+    },
+    "hook": "A planet for every last-minute Christmas shopper.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#eve"
+    ],
+    "spec": {
+      "palette": "polar_night",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 1,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "pines",
+      "snow": true,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "snow",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "1 DAY TO|CHRISTMAS",
+      "crowd": 4,
+      "crowd_items": "child,child,child,child",
+      "crowd_x": 0.42,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.2,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "Christmas here is always tomorrow.",
+    "kicker": "Every Eve gets this planet.",
+    "episode": {
+      "opener": "On Eve, Christmas is always tomorrow.",
+      "beats": [
+        {
+          "text": "It has been tomorrow\nfor nine hundred years.",
+          "shot": "sign"
+        },
+        {
+          "text": "The stockings are up.\nThe snow is down.",
+          "shot": "wide"
+        },
+        {
+          "text": "The children are too excited\nto sleep, and always have been.",
+          "shot": "group"
+        },
+        {
+          "text": "Every night, the whole planet\ngoes to bed early, so it'll come quicker.",
+          "shot": "house"
+        },
+        {
+          "text": "Nobody has ever bought a present.\nThere's a whole day to go.",
+          "shot": "house"
+        },
+        {
+          "text": "Then, one morning,\nthe sign changed.",
+          "shot": "sign",
+          "spec": {
+            "sign": "CHRISTMAS|TODAY",
+            "palette": "violet_ice"
+          }
+        },
+        {
+          "text": "The shops opened early.",
+          "shot": "group",
+          "spec": {
+            "sign": "CHRISTMAS|TODAY",
+            "palette": "violet_ice",
+            "crowd_items": "walk,walk,walk,walk"
+          }
+        }
+      ],
+      "end": "Socks all round.",
+      "caption": "Read the sign by the trees.\n\nEve: 2.4 million people, a 25-hour day, one moon, and Christmas, which has been tomorrow for nine hundred years. The stockings are up. The snow is down. The children are far too excited to sleep, and have been since birth. Every evening the whole planet goes to bed early so it'll come quicker. Nobody has ever bought a present, because why would you, with a whole day to go?\n\nI brought one for my host. She cried, and then she panicked.\n\n(The story goes that Christmas Eve is part of Christmas because the old church day began at sunset, so the feast started the evening before. On Eve, it never got past the evening.)\n\nWhat would you buy with one morning's notice?"
+    },
+    "first_comment": "Boxing Day is now expected in about nine hundred years.",
+    "short": {
+      "version": "C",
+      "title": "Christmas here\nis always tomorrow.",
+      "sub": "You've just landed on Eve.",
+      "framing": "sign",
+      "zoom": [
+        1.45,
+        1.52
+      ],
+      "spec": {
+        "sign": "",
+        "crowd": 0,
+        "snow": true,
+        "particles": "snow"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "sign": "1 DAY TO|CHRISTMAS",
+          "crowd": 0
+        }
+      },
+      "beats": [
+        {
+          "text": "No need to shop yet.\nIt's not till tomorrow.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.6,
+              1.66
+            ]
+          },
+          "spec": {
+            "crowd": 4,
+            "crowd_items": "sit,cup,sit,cup",
+            "crowd_x": 0.5,
+            "sign": ""
+          }
+        },
+        {
+          "text": "The morning after you land,\nthe sign changes.",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.45,
+              1.52
+            ]
+          },
+          "onset": {
+            "at": 1.75,
+            "motion": "cut",
+            "spec": {
+              "sign": "CHRISTMAS|TODAY"
+            }
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "crowd": 0
+          },
+          "seconds": 3.6
+        }
+      ],
+      "end": "Socks all round.",
+      "end_spec": {
+        "crowd": 4,
+        "crowd_items": "walk,walk,walk,walk",
+        "crowd_facing": "left",
+        "crowd_x": 0.38,
+        "crowd_gap": 0.08
+      },
+      "end_zoom": [
+        1.3,
+        1.26
+      ],
+      "end_focus": [
+        0.45,
+        0.6
+      ],
+      "name_y": 0.16,
+      "end_kicker": "For everyone who shops on Christmas Eve.",
+      "next": {
+        "name": "Umber",
+        "line": "You promise Mum you'll visit more."
+      }
+    }
+  },
+  {
+    "id": "044",
+    "name": "Joy",
+    "subtitle": "the planet where laughing lifts you",
+    "story": "Gravity on Joy is gentle, and laughing makes you lighter, so a good laugh lifts you clean off the ground. Comedians play to empty rooms and look up for the applause. Funerals are held indoors. Sunday lunch, though, stays firmly on the ground in most families, because Grandad does the jokes, and Grandad's jokes are terrible. Then, one Sunday, between the roast and the crumble, he told a good one. The whole table went up. Grandad stayed down: he'd heard it before. It was the proudest day of his life.",
+    "facts": {
+      "Day": "22 hours",
+      "Moons": "two",
+      "Gravity": "0.3 g",
+      "Population": "1.2 million"
+    },
+    "hook": "A planet for every grandad with one good joke.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#joy"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.66,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.8,
+      "sun_y": 0.47,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 2,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.3,
+      "gag": "",
+      "cartographer": false,
+      "spot": "#e9b434",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 5,
+      "crowd_items": "nothing,nothing,sing,nothing,nothing",
+      "crowd_x": 0.46,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.82,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "Laughing here lifts you off the ground.",
+    "kicker": "Every Joy gets this planet.",
+    "episode": {
+      "opener": "Laughing here lifts you off the ground.",
+      "beats": [
+        {
+          "text": "Gravity is gentle on Joy.\nOne good laugh, and you're up.",
+          "shot": "wide",
+          "spec": {
+            "crowd_items": "aloft,nothing,nothing,nothing,nothing"
+          }
+        },
+        {
+          "text": "Comedians play to empty rooms\nand look up for the applause.",
+          "shot": "sky"
+        },
+        {
+          "text": "Sunday lunch stays on the ground,\nbecause Grandad does the jokes.",
+          "shot": "group"
+        },
+        {
+          "text": "Grandad's jokes are terrible.",
+          "shot": "crowd"
+        },
+        {
+          "text": "Then, one Sunday,\nhe told a good one.",
+          "shot": "group",
+          "spec": {
+            "crowd_items": "aloft,aloft,nothing,aloft,aloft"
+          }
+        },
+        {
+          "text": "He'd heard it before.",
+          "shot": "close",
+          "spec": {
+            "crowd_items": "aloft,aloft,nothing,aloft,aloft"
+          },
+          "seconds": 2.6
+        }
+      ],
+      "end": "Proudest day of Grandad's life.",
+      "caption": "Watch the tall one in the middle.\n\nJoy: 1.2 million people, a 22-hour day, two moons, and gravity so gentle that a good laugh lifts you clean off the ground. Comedians play to empty rooms and look up for the applause. Funerals are held indoors, under low ceilings. Sunday lunch is the one safe meal in most families, because somebody's grandad does the jokes, and the jokes are terrible. Then, one Sunday, between the roast and the crumble, he told a good one.\n\nI laughed at a sign in a café window and spent the afternoon on the roof.\n\n(On Earth, the psychologist Robert Provine found we're about thirty times more likely to laugh with other people than alone. Grandad had a full table.)\n\nWhat's the one good joke in your family?"
+    },
+    "first_comment": "He's been working on a second one ever since. Nobody's in a hurry.",
+    "short": {
+      "version": "E",
+      "title": "Laughing here lifts you\noff the ground.",
+      "sub": "",
+      "framing": "group",
+      "zoom": [
+        1.25,
+        1.3
+      ],
+      "focus": [
+        0.48,
+        0.57
+      ],
+      "title_y": 0.25,
+      "spec": {
+        "crowd": 4,
+        "crowd_x": 0.41,
+        "crowd_gap": 0.1,
+        "crowd_items": "nothing,nothing,nothing,nothing"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "crowd": 5,
+          "crowd_x": 0.46,
+          "crowd_gap": 0.1,
+          "crowd_items": "nothing,nothing,nothing,nothing,aloft"
+        }
+      },
+      "beats": [
+        {
+          "text": "So Grandad's jokes keep\nthe family grounded.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.88,
+              1.96
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,nothing,sing,nothing,nothing"
+          }
+        },
+        {
+          "text": "Then, one year,\nhe told a good one.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.36,
+              1.42
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,nothing,sing,nothing,nothing"
+          },
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "aloft,aloft,nothing,aloft,aloft"
+            }
+          }
+        }
+      ],
+      "end": "Proudest day of Grandad's life.",
+      "end_zoom": [
+        1.22,
+        1.18
+      ],
+      "end_focus": [
+        0.48,
+        0.55
+      ],
+      "name_y": 0.12,
+      "end_kicker": "For every grandad with one good joke.",
+      "kicker": "A planet for every grandad with one good joke.",
+      "next": {
+        "name": "Fetch",
+        "line": "Dad said no dogs."
+      }
+    }
+  },
+  {
+    "id": "049",
+    "name": "Stella",
+    "subtitle": "every Stella's planet",
+    "story": "On Stella, anything whispered after lights-out turns into a star. The sky is mostly children: bunk beds, sleepovers, and a great many parents saying 'Go to sleep.' Joan and her sister Meg shared a room for sixteen years, and the sky over their house was the brightest in town. They're both nans now, and live miles apart. Every night, Joan rings Meg and whispers, 'You awake?' Meg always is.",
+    "facts": {
+      "Day": "26 hours",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "1.4 million"
+    },
+    "hook": "A planet for every sister who talked after lights-out.",
+    "tags": [
+      "#worldbuilding",
+      "#sisters",
+      "#stella"
+    ],
+    "spec": {
+      "palette": "violet_ice",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 3.5,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "sit,sit",
+      "crowd_x": 0.47,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.62,
+      "bright_stars": true,
+      "flake_size": 1.0,
+      "crowd_gap": 0.07,
+      "stage": 0.74
+    },
+    "cover": "After lights-out, whispers become stars.",
+    "kicker": "Every Stella gets this planet.",
+    "episode": {
+      "opener": "After lights-out,\nwhispers become stars.",
+      "beats": [
+        {
+          "text": "The sky is mostly children.",
+          "shot": "sky"
+        },
+        {
+          "text": "Joan and her sister Meg\nshared a room for sixteen years.",
+          "shot": "house"
+        },
+        {
+          "text": "About a third of their sky\nis their mum: 'Go to sleep.'",
+          "shot": "sky"
+        },
+        {
+          "text": "They're both nans now,\nmiles apart.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "crowd": 1,
+            "crowd_items": "sit",
+            "crowd_x": 0.48,
+            "crowd_facing": "left",
+            "stars": 0.25,
+            "bright_stars": false,
+            "suns": 0,
+            "mist": 0.45,
+            "cartographer": false,
+            "particles": "none"
+          }
+        },
+        {
+          "text": "Every night,\nJoan rings Meg.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "crowd": 1,
+            "crowd_items": "sit",
+            "crowd_x": 0.48,
+            "crowd_facing": "left",
+            "stars": 0.25,
+            "bright_stars": false,
+            "suns": 0,
+            "mist": 0.45,
+            "cartographer": false,
+            "particles": "none"
+          }
+        },
+        {
+          "text": "'You awake?'",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "crowd": 1,
+            "crowd_items": "sing",
+            "crowd_x": 0.48,
+            "crowd_facing": "left",
+            "stars": 3.5,
+            "bright_stars": true,
+            "suns": 0,
+            "mist": 0.45,
+            "cartographer": false,
+            "particles": "snow_up",
+            "flake_size": 2.2
+          },
+          "note": "identical camera; one thing changed: her whisper goes up as stars"
+        }
+      ],
+      "end": "Meg always is.",
+      "caption": "The two on the hill grew up in that house.\n\nStella: 1.4 million people, a 26-hour day, no moons, and a night sky that is mostly children. Anything whispered after lights-out goes up as a star, so the busiest skies are over bunk beds, sleepovers and sisters, and about a third of any family's sky is a parent saying 'Go to sleep.' Joan and Meg's is the famous one: sixteen years of one bedroom, and a long row about whose turn it was to get the light.\n\nI said goodnight to my map after lights-out. It's up there now, small and faint, near the edge.\n\n(On Earth, the light from Vega set off about twenty-five years ago, so a whisper from your childhood would only now be arriving. On Stella, it's up before you've finished it.)\n\nWhat did you whisper about after lights-out?"
+    },
+    "first_comment": "Last night, Meg rang first.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for sisters who talked after lights-out.",
+      "title": "After lights-out,\nwhispers become stars.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.16,
+        1.22
+      ],
+      "focus": [
+        0.52,
+        0.56
+      ],
+      "spec": {
+        "palette": "lilac_dusk",
+        "stars": 0.0,
+        "bright_stars": false,
+        "suns": 1,
+        "sun_x": 0.3,
+        "sun_y": 0.6,
+        "sun_size": 0.05,
+        "mist": 0.55
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "violet_ice",
+          "stars": 3.5,
+          "bright_stars": true,
+          "suns": 0,
+          "mist": 0.35,
+          "particles": "snow_up",
+          "flake_size": 2.2
+        }
+      },
+      "beats": [
+        {
+          "text": "Joan and her sister Meg\nshared a room for sixteen years.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.8,
+              1.88
+            ],
+            "focus": [
+              0.52,
+              0.65
+            ]
+          }
+        },
+        {
+          "text": "They're both nans now.\nEvery night, Joan rings Meg:\n'You awake?'",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "crowd": 1,
+            "crowd_items": "sit",
+            "crowd_x": 0.48,
+            "crowd_facing": "left",
+            "stars": 0.25,
+            "bright_stars": false,
+            "suns": 0,
+            "mist": 0.45,
+            "cartographer": false,
+            "particles": "none"
+          },
+          "onset": {
+            "at": 3.0,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "sing",
+              "stars": 3.5,
+              "bright_stars": true,
+              "particles": "snow_up",
+              "flake_size": 2.2
+            }
+          }
+        }
+      ],
+      "end": "Meg always is.",
+      "end_zoom": [
+        1.2,
+        1.14
+      ],
+      "end_focus": [
+        0.5,
+        0.6
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For sisters who talked after lights-out.",
+      "next": {
+        "name": "Brolly",
+        "line": "Your mum says it'll brighten up."
+      }
+    }
+  },
+  {
+    "id": "047",
+    "name": "Pete",
+    "subtitle": "the planet that makes a fuss",
+    "story": "Everything on Pete is done for Pete's sake. The moons rise for Pete's sake, the northern lights go on for Pete's sake, and the daisies open and the band plays on the hill, all for Pete's sake. Pete is a quiet man who likes a crossword and hates a fuss. On his birthday he asked, very politely, if everyone could please stop. They stopped, for Pete's sake. The daisies shut and the moons went in. He meant a small fuss.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "three",
+      "Gravity": "1.0 g",
+      "Population": "93,000"
+    },
+    "hook": "A planet for people who say 'don't make a fuss'.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#pete"
+    ],
+    "spec": {
+      "palette": "lilac_dusk",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.8,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 3,
+      "big_moon": false,
+      "aurora": true,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 5,
+      "crowd_items": "flower,sing,nothing,hand,flower",
+      "crowd_x": 0.45,
+      "crowd_facing": "in",
+      "daisies": 90,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.76,
+      "bright_stars": true,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "Here, it's all for Pete's sake.",
+    "kicker": "Every Pete gets this planet.",
+    "episode": {
+      "opener": "On Pete, it's all for Pete's sake.",
+      "beats": [
+        {
+          "text": "The moons rise for Pete's sake.\nThe lights go on for Pete's sake.",
+          "shot": "sky"
+        },
+        {
+          "text": "The daisies open.\nThe band plays on the hill.",
+          "shot": "wide"
+        },
+        {
+          "text": "Pete is a quiet man.\nHe hates a fuss.",
+          "shot": "crowd"
+        },
+        {
+          "text": "On his birthday, he asked\nif everyone could stop.",
+          "shot": "house"
+        },
+        {
+          "text": "They stopped.\nFor Pete's sake.",
+          "shot": "wide",
+          "spec": {
+            "aurora": false,
+            "bright_stars": false,
+            "moons": 0,
+            "daisies": 0,
+            "palette": "polar_night",
+            "stars": 0.2,
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.45
+          }
+        },
+        {
+          "text": "The daisies shut.\nThe moons went in.",
+          "shot": "crowd",
+          "spec": {
+            "aurora": false,
+            "bright_stars": false,
+            "moons": 0,
+            "daisies": 0,
+            "palette": "polar_night",
+            "stars": 0.2,
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.45
+          },
+          "seconds": 2.8
+        }
+      ],
+      "end": "He meant a small fuss.",
+      "caption": "Only one person here isn't celebrating.\n\nPete: 93,000 people, a 24-hour day, three moons, and a planet that does everything for Pete's sake. The moons rise for Pete's sake. The northern lights go on for Pete's sake. The daisies open and the bakers bake and the brass band practises on the hill, all for Pete's sake, and Pete would really rather they didn't. He's a quiet man. He likes a crossword. On his birthday he asked, very politely, if everyone could please stop.\n\nI told him I'd come all this way for his sake. He went the colour of a moon.\n\n(The story goes that 'for Pete's sake' began as a polite way round 'for God's sake', with Saint Peter standing in. This Pete has never been made a saint, though people keep suggesting it.)\n\nWhen did you last make a fuss of someone?"
+    },
+    "first_comment": "Next year he's asked for a cake. Small. The bakers have started.",
+    "short": {
+      "version": "B",
+      "title": "Every Pete\ngets this planet.",
+      "sub": "Here, it's all done\nfor Pete's sake.",
+      "framing": "group",
+      "zoom": [
+        1.55,
+        1.6
+      ],
+      "focus": [
+        0.55,
+        0.6
+      ],
+      "spec": {
+        "aurora": false,
+        "bright_stars": false,
+        "moons": 0,
+        "daisies": 0,
+        "palette": "polar_night",
+        "stars": 0.2,
+        "crowd": 1,
+        "crowd_items": "nothing",
+        "crowd_x": 0.45
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "aurora": true,
+          "bright_stars": true,
+          "moons": 3,
+          "daisies": 90,
+          "palette": "lilac_dusk",
+          "stars": null,
+          "crowd": 5,
+          "crowd_items": "flower,sing,nothing,hand,flower",
+          "crowd_x": 0.45,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in"
+        },
+        "motion": "cut"
+      },
+      "beats": [
+        {
+          "text": "On his birthday, Pete said,\n'Don't make a fuss.'",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.85,
+              1.92
+            ],
+            "focus": [
+              0.45,
+              0.63
+            ]
+          },
+          "spec": {
+            "crowd_items": "flower,flower,hand,flower,flower"
+          }
+        },
+        {
+          "text": "So they stopped.\nFor Pete's sake.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.55,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 0.8,
+            "spec": {
+              "aurora": false,
+              "bright_stars": false,
+              "moons": 0,
+              "daisies": 0,
+              "palette": "polar_night",
+              "stars": 0.2,
+              "crowd": 1,
+              "crowd_items": "nothing",
+              "crowd_x": 0.45
+            },
+            "motion": "cut"
+          }
+        }
+      ],
+      "end": "He meant a small fuss.",
+      "end_zoom": [
+        1.62,
+        1.56
+      ],
+      "end_focus": [
+        0.55,
+        0.62
+      ],
+      "name_y": 0.18,
+      "end_kicker": "For people who say 'don't make a fuss'.",
+      "next": {
+        "name": "Ajar",
+        "line": "Doors here say how you're feeling."
+      }
+    }
+  },
+  {
+    "id": "050",
+    "name": "Ray",
+    "subtitle": "every Ray's planet",
+    "story": "On Ray, every family has its own small sun, and it shines on Mum's favourite. Mum says this is nonsense. Jen, Tom and Lily have argued about it for years: it moves about, and nobody's ever sure. At Mum's birthday, all three came home and stood very still in the garden. It picked the dog. Nobody's talking to the dog.",
+    "facts": {
+      "Day": "28 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "5.1 million"
+    },
+    "hook": "A planet for people who know they're Mum's favourite.",
+    "tags": [
+      "#worldbuilding",
+      "#siblings",
+      "#ray"
+    ],
+    "spec": {
+      "palette": "crimson",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.68,
+      "relief": 0.35,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.225,
+      "sun_y": 0.53,
+      "sun_size": 0.06,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.2,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 4,
+      "crowd_items": "nothing,nothing,nothing,dog",
+      "crowd_x": 0.42,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.86,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.13,
+      "stage": 0.76
+    },
+    "cover": "The sun here shines on Mum's favourite.",
+    "kicker": "Every Ray gets this planet.",
+    "episode": {
+      "opener": "The sun here shines\non Mum's favourite.",
+      "beats": [
+        {
+          "text": "Every family has its own.",
+          "shot": "sky"
+        },
+        {
+          "text": "Jen, Tom and Lily\nhave argued about it for years.",
+          "shot": "crowd"
+        },
+        {
+          "text": "It moves about.\nNobody's ever sure.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.42,
+              0.62
+            ]
+          },
+          "spec": {
+            "suns": 1,
+            "sun_x": 0.355,
+            "mist": 0.2
+          }
+        },
+        {
+          "text": "Tom rings Mum every day.\nHe says it isn't tactics.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.42,
+              0.62
+            ]
+          },
+          "spec": {
+            "suns": 1,
+            "sun_x": 0.355,
+            "mist": 0.2
+          }
+        },
+        {
+          "text": "At Mum's birthday,\nall three came home.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.42,
+              0.62
+            ]
+          },
+          "spec": {
+            "suns": 1,
+            "sun_x": 0.485,
+            "mist": 0.2
+          }
+        },
+        {
+          "text": "It picked the dog.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.42,
+              0.62
+            ]
+          },
+          "spec": {
+            "suns": 1,
+            "sun_x": 0.62,
+            "mist": 0.2
+          },
+          "note": "identical camera; one thing changed: the sun moves to the dog"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.42,
+              0.62
+            ]
+          },
+          "spec": {
+            "suns": 1,
+            "sun_x": 0.62,
+            "mist": 0.2
+          },
+          "seconds": 2.5
+        }
+      ],
+      "end": "Nobody's talking to the dog.",
+      "caption": "The dog's been in every shot.\n\nRay: 5.1 million people, a 28-hour day, no moons, and a sun with favourites. Every family here has its own small sun, and it shines on whoever Mum loves best, which she has always said is nonsense. Siblings follow it the way other planets follow the football. Family photos are studied like evidence. Jen has kept a log since primary school. Tom rings Mum every day and says it isn't tactics.\n\nI stayed one night with a family of five. Their sun came and sat on me. I haven't been asked back.\n\n(On Earth, sunlight takes about eight minutes and twenty seconds to reach you, so it's always shining on where you were. On Ray, it knows exactly where you are.)\n\nBe honest: was it you?"
+    },
+    "first_comment": "The dog got the last slice of cake.",
+    "short": {
+      "version": "C",
+      "title": "The sun here shines\non Mum's favourite.",
+      "sub": "You've just landed on Ray.",
+      "framing": "group",
+      "zoom": [
+        1.3,
+        1.36
+      ],
+      "focus": [
+        0.44,
+        0.6
+      ],
+      "spec": {
+        "suns": 0,
+        "mist": 0.85
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "suns": 1,
+          "sun_x": 0.225,
+          "mist": 0.2
+        }
+      },
+      "beats": [
+        {
+          "text": "You and your siblings\nkeep score.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.42,
+              0.62
+            ]
+          },
+          "spec": {
+            "suns": 1,
+            "sun_x": 0.225,
+            "mist": 0.2
+          },
+          "onset": {
+            "at": 1.3,
+            "motion": "cut",
+            "spec": {
+              "suns": 1,
+              "sun_x": 0.355,
+              "mist": 0.2
+            }
+          }
+        },
+        {
+          "text": "At Mum's birthday,\nit picks the dog.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.42,
+              0.62
+            ]
+          },
+          "spec": {
+            "suns": 1,
+            "sun_x": 0.485,
+            "mist": 0.2
+          },
+          "onset": {
+            "at": 1.3,
+            "motion": "cut",
+            "spec": {
+              "suns": 1,
+              "sun_x": 0.62,
+              "mist": 0.2
+            }
+          }
+        }
+      ],
+      "end": "Nobody's talking to the dog.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.46,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For everyone who knows they're Mum's favourite.",
+      "next": {
+        "name": "Yonder",
+        "line": "Nan waves until you're out of sight."
+      }
+    }
+  },
+  {
+    "id": "053",
+    "name": "April",
+    "subtitle": "every April's planet",
+    "story": "On April, happy tears fall as rain. Weddings are very wet, and graduations need wellies. Grandad has never cried: not at weddings, not even at the football. He has never owned an umbrella. Then his granddaughter said her first word, and the word was 'Grandad'. It's still raining, and there's a lake now. 'Hay fever,' he says.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "one",
+      "Gravity": "1.0 g",
+      "Population": "3.6 million"
+    },
+    "hook": "A planet for every grandad who says it's hay fever.",
+    "tags": [
+      "#worldbuilding",
+      "#grandad",
+      "#april"
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.75,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.24,
+      "sun_y": 0.34,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "#e0a526",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 5,
+      "crowd_items": "nothing,flower,nothing,flower,nothing",
+      "crowd_x": 0.46,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.84,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "Happy tears here fall as rain.",
+    "kicker": "Every April gets this planet.",
+    "episode": {
+      "opener": "Happy tears here\nfall as rain.",
+      "beats": [
+        {
+          "text": "Weddings are very wet.",
+          "shot": "crowd",
+          "spec": {
+            "particles": "rain",
+            "gag": "big_cloud",
+            "suns": 0,
+            "mist": 0.55
+          }
+        },
+        {
+          "text": "Grandad has never cried.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.46,
+              0.66
+            ]
+          },
+          "spec": {
+            "particles": "rain",
+            "gag": "big_cloud",
+            "suns": 0,
+            "mist": 0.55
+          }
+        },
+        {
+          "text": "Not at weddings.\nNot even at the football.",
+          "shot": "wide",
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.42,
+            "crowd_facing": "right",
+            "particles": "none",
+            "palette": "gold_hour",
+            "suns": 1,
+            "gag": "",
+            "cartographer": false,
+            "mist": 0.35
+          }
+        },
+        {
+          "text": "He's never owned\nan umbrella.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.45,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.42,
+            "crowd_facing": "right",
+            "particles": "none",
+            "palette": "gold_hour",
+            "suns": 1,
+            "gag": "",
+            "cartographer": false,
+            "mist": 0.35
+          }
+        },
+        {
+          "text": "Then his granddaughter\nsaid her first word.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.45,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "child",
+            "crowd_x": 0.42,
+            "crowd_facing": "right",
+            "particles": "none",
+            "palette": "gold_hour",
+            "suns": 1,
+            "gag": "",
+            "cartographer": false,
+            "mist": 0.35
+          }
+        },
+        {
+          "text": "'Grandad.'",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.65
+            ],
+            "focus": [
+              0.45,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "child",
+            "crowd_x": 0.42,
+            "crowd_facing": "right",
+            "particles": "rain",
+            "palette": "abyss",
+            "suns": 0,
+            "gag": "big_cloud",
+            "cartographer": false,
+            "mist": 0.6
+          },
+          "note": "identical camera; one thing changed: it pours"
+        },
+        {
+          "text": "It's still raining.\nThere's a lake now.",
+          "shot": "wide",
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "child",
+            "crowd_x": 0.42,
+            "crowd_facing": "right",
+            "particles": "rain",
+            "palette": "abyss",
+            "suns": 0,
+            "gag": "big_cloud",
+            "cartographer": false,
+            "mist": 0.6,
+            "water": true,
+            "shore": "left"
+          }
+        }
+      ],
+      "end": "'Hay fever,' he says.",
+      "caption": "That cloud is mostly the bride's mum.\n\nApril: 3.6 million people, a 24-hour day, one moon, and the wettest weddings in the known universe. Happy tears fall as rain, so the forecast is mostly births, reunions and the last episodes of things. Brides book a marquee. Grandad has never needed one. He has stood bone dry through four weddings, two christenings and a cup final, hands in his pockets.\n\nI cried at a sunset on my second night. The campsite has asked me not to come back.\n\n(The story goes that in Italy they say 'sposa bagnata, sposa fortunata': a wet bride is a lucky bride. On April, it just means her dad came.)\n\nRain or shine, at the last wedding you went to?"
+    },
+    "first_comment": "Her second word was 'umbrella'.",
+    "short": {
+      "version": "B",
+      "title": "Happy tears here\nfall as rain.",
+      "sub": "Grandad has never cried.",
+      "scrim": 0.5,
+      "framing": "group",
+      "zoom": [
+        1.42,
+        1.48
+      ],
+      "focus": [
+        0.48,
+        0.6
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "particles": "rain",
+          "gag": "big_cloud",
+          "suns": 0,
+          "mist": 0.55
+        }
+      },
+      "beats": [
+        {
+          "text": "Not at weddings.\nNot even at the football.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.44,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.42,
+            "crowd_facing": "right",
+            "particles": "none",
+            "palette": "gold_hour",
+            "suns": 1,
+            "gag": "",
+            "cartographer": false,
+            "mist": 0.35
+          }
+        },
+        {
+          "text": "Then his granddaughter said\nher first word: 'Grandad.'",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.44,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "child",
+            "crowd_x": 0.42,
+            "crowd_facing": "right",
+            "particles": "none",
+            "palette": "gold_hour",
+            "suns": 1,
+            "gag": "",
+            "cartographer": false,
+            "mist": 0.35
+          },
+          "onset": {
+            "at": 2.45,
+            "motion": "cut",
+            "spec": {
+              "particles": "rain",
+              "palette": "abyss",
+              "suns": 0,
+              "mist": 0.6,
+              "gag": "big_cloud"
+            }
+          }
+        }
+      ],
+      "end": "'Hay fever,' he says.",
+      "end_onset": {
+        "at": 0.5,
+        "motion": "rise",
+        "spec": {
+          "water": true,
+          "shore": "left"
+        }
+      },
+      "end_zoom": [
+        1.5,
+        1.44
+      ],
+      "end_focus": [
+        0.45,
+        0.6
+      ],
+      "name_y": 0.25,
+      "end_kicker": "For every grandad who says it's hay fever.",
+      "next": {
+        "name": "Nod",
+        "line": "The wind here is Dad, snoring."
+      }
+    }
   }
 ]

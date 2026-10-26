@@ -400,5 +400,101 @@
   "kind": "carousel",
   "hold": true,
   "note": "held: API carousels can't carry audio, so Instagram won't show them to non-followers. Revisit once there are followers, or post from the app with music."
+ },
+ {
+  "day": 8,
+  "entry": "045",
+  "kind": "reel",
+  "not_before": "2026-11-10T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "054",
+  "kind": "reel",
+  "not_before": "2026-11-10T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "044",
+  "kind": "reel",
+  "not_before": "2026-11-11T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "043",
+  "kind": "reel",
+  "not_before": "2026-11-11T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "049",
+  "kind": "reel",
+  "not_before": "2026-11-12T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "048",
+  "kind": "reel",
+  "not_before": "2026-11-12T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "047",
+  "kind": "reel",
+  "not_before": "2026-11-13T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "052",
+  "kind": "reel",
+  "not_before": "2026-11-13T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "050",
+  "kind": "reel",
+  "not_before": "2026-11-14T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "046",
+  "kind": "reel",
+  "not_before": "2026-11-14T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "053",
+  "kind": "reel",
+  "not_before": "2026-11-15T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "051",
+  "kind": "reel",
+  "not_before": "2026-11-15T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 4): held until rendered and checked"
  }
 ]
