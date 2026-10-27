@@ -2,6 +2,19 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-27 daily review (12:30 UTC): it isn't the hour; the atlas cut holds strangers on any planet
+- **Numbers (strangers, `python -m atlas score`):** Sefe (E, place, posted 22:12) at 14 h: 168 reached, 31% skip, 44% of a 20 s Reel watched, 1.22 views each, 1 like, 0 sends. Whisk (B, place, 14:12) at 22 h: 110, 59%. Fibb (B, place, 22:02) at 38 h: 120, 64%. Summer at 46 h: 1,103, 32%, 1 save. Followers 2. Still no share on any Reel.
+- **The slot hypothesis fails:** Whisk is a place planet posted in the afternoon and skipped 59%, like the place planets posted at night (53-64%). The hour isn't what separated yesterday's two groups.
+- **What the table shows (new in `score`: version x kind):**
+  - B: name Max 40 | place Cinderwake 55, Fibb 64, Whisk 59
+  - C: name Bella 34 | place Thessaly 53
+  - E: name Summer 32 | place Sefe 31
+  In B and C, name planets hold strangers far better than place planets (34-40% against 53-64%). The atlas cut (E) holds both kinds at about 31%: Sefe is the first place planet under 50%.
+- **What E changes:** in the engine, E is B with a dedication line above the title ("A planet for people who keep every compliment.", not read aloud), usually no sub, and tender atlas-style writing. So the lever is one of those three: the dedication line names a person in the first second (which is what the name planets do), the shorter hook, or the writing. Two Reels can't separate them.
+- **Change today:** `score` now shows each Reel's planet kind and a version x kind table, so this comparison updates itself every run.
+- **Decision for tomorrow's review (28 Oct), set now so it isn't fitted to the data later:** Daisy (E, name, 14:00 today) and Charlie (C, name, 22:00 today) report their first pools overnight. If Daisy skips 40% or less, the atlas cut has held three for three, and the queued place-planet B/C shorts become E: kicker = the entry's own "A planet for..." hook, title kept, sub cut where the dedication now does its job, starting with Lantern (29 Oct 22:00) and Kess (1 Nov). Name-planet B/C shorts stay as they are, since they already hold strangers and keep the B/C arms alive. If Daisy skips over 50%, E's two results were luck: keep the queue and wait for the 8 Nov verdict.
+- **Untouched problem:** sends. 2,000 strangers, 0 shares, 3 saves. If the atlas cut keeps more people watching, the next lever is the reason to send (the person in the dedication is the person to send it to). Revisit after the E decision.
+
 ## 2026-10-26 daily review (12:35 UTC): afternoon posts hold strangers better, or name planets do
 - **Numbers (strangers, `python -m atlas score`):** Bella (C) at 46 h: 114 reached, 34% skip, watched to the end (one looper), 2 likes, 0 shares or saves, so it fails only the send line. Willow (D, silent) 116, 74% skip. Summer (E) 1,103 reached, 32% skip, 58% watched, 8 likes, 1 save. Fibb (B, the first Reel with the next-stop end card) 118 at 14 h, 64% skip. Followers 2. No Reel has a share; 3 saves in total.
 - **Against the targets:** skip 60% or less: Summer, Bella, Max, Thessaly, Cinderwake (Fibb misses). 40% watched: Summer, Bella, Max, Cinderwake. 1 send per 100: nobody. Follows: none from 1,100 reached.

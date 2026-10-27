@@ -637,6 +637,7 @@ def cmd_score(a):
     log = json.loads(LOG.read_text()) if LOG.exists() else []
     hist = [json.loads(line) for line in (ROOT / "content" / "stats_history.jsonl").read_text().splitlines() if line.strip()]
     entries = content_entries()
+    names = {e["id"] for e in json.loads((ROOT / "content" / "names.json").read_text())}   # name planets; the rest are places
     rows = []
     for x in log:
         if x["kind"] != "reel":
@@ -670,7 +671,7 @@ def cmd_score(a):
         reach6 = (g(max(near6, key=lambda h: h["age_h"]), "reach") - g(base, "reach")) if near6 and max(h["age_h"] for h in near6) >= 5 else None
         fmt = x.get("format") or {"001": "postcard", "008": "postcard"}.get(x["entry"]) or reel_format(entries.get(x["entry"], {}))
         row = dict(entry=x["entry"], name=entries.get(x["entry"], {}).get("name", "?"), format=fmt, age=at48["age_h"],
-                   hour=int(x["at"][11:13]), reach=reach, reach6=(max(reach6, 0) if reach6 is not None else None), views=views, skip=skip, watch=watch, length=length,
+                   hour=int(x["at"][11:13]), kind="name" if x["entry"] in names else "place", reach=reach, reach6=(max(reach6, 0) if reach6 is not None else None), views=views, skip=skip, watch=watch, length=length,
                    likes100=(100 * likes / reach if reach > 0 else None),
                    loops=(views / reach if reach > 0 else None),     # views per stranger: replays (a loop that works)
                    watched=(watch / length if watch is not None and length else None), per100=(100 * sends / reach if reach > 0 else None))
@@ -682,10 +683,10 @@ def cmd_score(a):
         row["pass"] = (reach >= 20 and skip is not None and skip <= 60 and (row["watched"] or 0) >= 0.4 and (row["per100"] or 0) >= 1)
         rows.append(row)
     f = lambda v, fmt_: "-" if v is None else fmt_.format(v)
-    print(f"{'entry':>5} {'name':<11} {'format':<9} {'utc':>3} {'age':>5} {'reach':>5} {'at6h':>4} {'skip%':>5} {'watch':>6} {'len':>5} {'watched':>7} "
+    print(f"{'entry':>5} {'name':<11} {'format':<9} {'kind':<5} {'utc':>3} {'age':>5} {'reach':>5} {'at6h':>4} {'skip%':>5} {'watch':>6} {'len':>5} {'watched':>7} "
           f"{'loops':>5} {'likes/100':>9} {'sends/100':>9}  pass")
     for r in rows:
-        print(f"{r['entry']:>5} {r['name'][:11]:<11} {r['format']:<9} {r['hour']:>3} {r['age']:>5.1f} {r['reach']:>5} {f(r['reach6'], '{:.0f}'):>4} "
+        print(f"{r['entry']:>5} {r['name'][:11]:<11} {r['format']:<9} {r['kind']:<5} {r['hour']:>3} {r['age']:>5.1f} {r['reach']:>5} {f(r['reach6'], '{:.0f}'):>4} "
               f"{f(r['skip'], '{:.0f}'):>5} {f(r['watch'], '{:.1f}s'):>6} {f(r['length'], '{:.0f}s'):>5} {f(r['watched'], '{:.0%}') + ('*' if r['looper'] else ''):>7} "
               f"{f(r['loops'], '{:.2f}'):>5} {f(r['likes100'], '{:.1f}'):>9} {f(r['per100'], '{:.1f}'):>9}  "
               f"{'yes' if r['pass'] else ('too early' if r['age'] < a.hours - 6 else 'no')}")
@@ -705,6 +706,14 @@ def cmd_score(a):
         med = lambda k: statistics.median([r[k] for r in rs if r[k] is not None]) if any(r[k] is not None for r in rs) else None
         print(f"  {name:<21} n={len(rs)}  skip {f(med('skip'), '{:.0f}%')}  watched {f(med('watched'), '{:.0%}')}  "
               f"likes/100 {f(med('likes100'), '{:.1f}')}  ({', '.join(r['name'] for r in rs)})")
+    # and by version x planet kind (name planets vs places), with the first pool's skip for Reels under 40 h
+    print("\nspoken shorts by version and kind (skip %, every Reel with reach 20+; * = under 40 h):")
+    for v in ("short-B", "short-C", "short-E"):
+        cells = []
+        for k in ("name", "place"):
+            rs = [r for r in rows if r["format"] == v and r["kind"] == k and r["reach"] >= 20 and r["skip"] is not None]
+            cells.append(f"{k} " + (", ".join(f"{r['name']} {r['skip']:.0f}{'*' if r['age'] < 40 else ''}" for r in rs) or "-"))
+        print(f"  {v:<8} " + "   |   ".join(cells))
 
 
 def _prepare_job(job):
