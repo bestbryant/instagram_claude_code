@@ -251,10 +251,22 @@ def _video_url(path: Path, dry_run: bool = False) -> str:
     u = f"https://cdn.jsdelivr.net/gh/{GITHUB_REPO}@{sha}/{rel}"
     if dry_run:
         return u
+    try:
+        with urllib.request.urlopen(urllib.request.Request(u, method="HEAD"), timeout=60) as r:
+            size = int(r.headers.get("Content-Length", 0))
+            if size != path.stat().st_size or "video" not in r.headers.get("Content-Type", ""):
+                raise RuntimeError(f"{u} serves {size} bytes of {r.headers.get('Content-Type')}; push the commit first")
+        return u
+    except urllib.error.HTTPError as e:
+        # since 27 Oct jsDelivr refuses the repo ("Package size exceeded the configured limit of 50 MB"): fall back to
+        # raw.githubusercontent at the same commit, which sends application/octet-stream (Instagram reads the file)
+        if e.code != 403:
+            raise
+    u = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{sha}/{rel}"
     with urllib.request.urlopen(urllib.request.Request(u, method="HEAD"), timeout=60) as r:
         size = int(r.headers.get("Content-Length", 0))
-        if size != path.stat().st_size or "video" not in r.headers.get("Content-Type", ""):
-            raise RuntimeError(f"{u} serves {size} bytes of {r.headers.get('Content-Type')}; push the commit first")
+        if size != path.stat().st_size:
+            raise RuntimeError(f"{u} serves {size} bytes; push the commit first")
     return u
 
 

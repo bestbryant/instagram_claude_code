@@ -84,5 +84,5 @@ Until the secrets exist, the workflow skips itself and does nothing.
 ### Limits worth knowing
 - Meta caps how many posts an account can publish through the API in 24 hours. The current number is in Meta's *Content Publishing* docs, and it's far more than this plan needs.
 - Reels must be 3 s to 15 min, 9:16, H.264 + AAC. The generated files meet this.
-- With Instagram Login the API only takes Reels by `video_url`. The publisher serves each video from this public repo through jsDelivr at the exact commit, which sends `video/mp4`. raw.githubusercontent sends `application/octet-stream`. Push before posting, or the URL check fails.
+- With Instagram Login the API only takes Reels by `video_url`. The publisher serves each video from this public repo through jsDelivr at the exact commit, which sends `video/mp4`. raw.githubusercontent sends `application/octet-stream`. Push before posting, or the URL check fails. Since 27 Oct jsDelivr sometimes answers 403 "Package size exceeded the configured limit of 50 MB" (the repo is large); the publisher then falls back to raw.githubusercontent at the same commit. If Instagram rejects that (container status ERROR), the next options are a GitHub release asset or Pages.
 - The API can't add trending audio. That's one reason to keep posting some Reels by hand.
