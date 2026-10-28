@@ -203,9 +203,8 @@
   "day": 6,
   "entry": "011",
   "kind": "reel",
-  "note": "converted to E (28 Oct): held until re-rendered and checked",
-  "not_before": "2026-11-06T22:00:00Z",
-  "hold": true
+  "note": "short cut, checked",
+  "not_before": "2026-11-06T22:00:00Z"
  },
  {
   "day": 4,
