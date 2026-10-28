@@ -133,9 +133,9 @@
   },
   "first_comment": "Day 214. Jess has her chalk back. She's checking everyone's sums.",
   "short": {
-    "version": "B",
+    "version": "E",
     "title": "Winter here\nlasts a year.",
-    "sub": "For whoever remembers\nevery birthday.",
+    "sub": "",
     "framing": "crowd",
     "zoom": [
       1.75,
@@ -260,6 +260,7 @@
     "next": {
       "name": "Lode",
       "line": "Your blood points home."
-    }
+    },
+    "kicker": "A planet for the friend who remembers every birthday."
   }
 }

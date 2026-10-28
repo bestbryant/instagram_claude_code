@@ -156,9 +156,9 @@
     "caption": "Most of Orrin's 2.1 million people take their houses down plank by plank all season, then leave on the same night. The sign is bolted to the seabed, and its oldest line has been under four tides. This town's line goes on in the small hours. Nobody has decided what it says. Anything left behind goes to the sea, and eleven years later to whoever digs it up, so everyone here drinks out of a stranger's mug. My guide has moved twice. This time she's packing a towel and a snorkel.\n\nOrrin keeps almost the same face to its giant and slips round underneath it once every 22 years. A tide has two bulges, so the sea comes round every 11. The giant climbs about a finger's width a month, and when it's overhead, so is the sea.\n\nThe sea is due back at 6:12 on 14 March. I'll pack the night before.\n\nPack-early person or night-before person?"
   },
   "short": {
-    "version": "B",
+    "version": "E",
     "title": "This town is at\nthe bottom of the sea.",
-    "sub": "For night-before packers.",
+    "sub": "",
     "title_y": 0.12,
     "framing": "medium",
     "zoom": [
@@ -280,7 +280,8 @@
     "next": {
       "name": "Olive",
       "line": "The sun won't go down on an argument."
-    }
+    },
+    "kicker": "A planet for people who pack the night before."
   },
   "_engine": 5
 }
