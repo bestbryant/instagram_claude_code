@@ -161,9 +161,9 @@
   },
   "first_comment": "Mrs Penhale's pumpkin was lit again this evening. Jory's gone to the pub.",
   "short": {
-    "version": "B",
+    "version": "E",
     "title": "The boats here\nsteer by pumpkin.",
-    "sub": "For anyone who leaves\nthe porch light on.",
+    "sub": "",
     "framing": "wide",
     "zoom": [
       1.06,
@@ -271,6 +271,7 @@
     "next": {
       "name": "Hush",
       "line": "Shouts take five days to cross the valley."
-    }
+    },
+    "kicker": "A planet for people who leave the porch light on."
   }
 }
