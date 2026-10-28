@@ -204,7 +204,11 @@ def short_shots(spec: Spec, seed: int, entry: dict, speak: bool = False) -> list
     title, sub = sh["title"], sh.get("sub", "")
     items = [dict(text=title, y=sh.get("title_y", 0.17), kind="serif", weight="Medium", size=88, leading=1.1, **left)]
     if sh.get("kicker"):        # the atlas cut (version D): "A planet for people who..." as a small line above
-        items.insert(0, dict(text=sh["kicker"], y=sh.get("title_y", 0.17) - 0.035, kind="italic", size=42, **left))
+        from PIL import Image, ImageDraw
+        n = len(text.wrap(ImageDraw.Draw(Image.new("L", (1, 1))), sh["kicker"], text.font("italic", 42), left["width"]))
+        # a dedication that wraps grows upwards, so its last line still sits just above the title
+        items.insert(0, dict(text=sh["kicker"], y=sh.get("title_y", 0.17) - 0.035 - (n - 1) * 42 * 1.18 / 1920,
+                             kind="italic", size=42, **left))
     if sub:
         items.append(dict(text=sub, y="after", gap=0.02, kind="italic", size=58, leading=1.14, **left))
     hook_card = overlay(items, scrim=sh.get("scrim", 0.42))     # a pale sky can ask for a stronger shade

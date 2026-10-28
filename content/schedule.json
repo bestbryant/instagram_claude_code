@@ -96,24 +96,27 @@
   "entry": "H02",
   "kind": "reel",
   "not_before": "2026-10-29T22:00:00Z",
-  "note": "short cut, checked",
-  "fixed_date": true
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "fixed_date": true,
+  "hold": true
  },
  {
   "day": 13,
   "entry": "H01",
   "kind": "reel",
   "not_before": "2026-10-30T22:00:00Z",
-  "note": "short cut, checked",
-  "fixed_date": true
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "fixed_date": true,
+  "hold": true
  },
  {
   "day": 14,
   "entry": "H03",
   "kind": "reel",
   "not_before": "2026-10-31T22:00:00Z",
-  "note": "short cut, checked",
-  "fixed_date": true
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "fixed_date": true,
+  "hold": true
  },
  {
   "day": 8,
@@ -126,8 +129,9 @@
   "day": 3,
   "entry": "010",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-01T14:00:00Z"
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "not_before": "2026-11-01T14:00:00Z",
+  "hold": true
  },
  {
   "day": 8,
@@ -147,8 +151,9 @@
   "day": 4,
   "entry": "002",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-02T22:00:00Z"
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "not_before": "2026-11-02T22:00:00Z",
+  "hold": true
  },
  {
   "day": 8,
@@ -161,15 +166,17 @@
   "day": 8,
   "entry": "019",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-03T22:00:00Z"
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "not_before": "2026-11-03T22:00:00Z",
+  "hold": true
  },
  {
   "day": 8,
   "entry": "034",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-04T14:00:00Z"
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "not_before": "2026-11-04T14:00:00Z",
+  "hold": true
  },
  {
   "day": 8,
@@ -196,22 +203,25 @@
   "day": 6,
   "entry": "007",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-06T14:00:00Z"
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "not_before": "2026-11-06T14:00:00Z",
+  "hold": true
  },
  {
   "day": 6,
   "entry": "011",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-06T22:00:00Z"
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "not_before": "2026-11-06T22:00:00Z",
+  "hold": true
  },
  {
   "day": 4,
   "entry": "006",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-07T14:00:00Z"
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "not_before": "2026-11-07T14:00:00Z",
+  "hold": true
  },
  {
   "day": 8,
@@ -231,8 +241,9 @@
   "day": 8,
   "entry": "039",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-08T22:00:00Z"
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "not_before": "2026-11-08T22:00:00Z",
+  "hold": true
  },
  {
   "day": 6,
@@ -245,8 +256,9 @@
   "day": 3,
   "entry": "018",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-09T22:00:00Z"
+  "note": "converted to E (28 Oct): held until re-rendered and checked",
+  "not_before": "2026-11-09T22:00:00Z",
+  "hold": true
  },
  {
   "day": 2,

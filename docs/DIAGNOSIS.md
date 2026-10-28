@@ -2,6 +2,18 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-28 daily review (12:20 UTC): rule met, the place planets become atlas cuts
+- **Numbers (strangers):** Daisy (E, name, 14:19) at 22 h: 108 reached, 38% skip, 55% of 19 s watched, 1.39 views each. Charlie (C, name, 22:09) at 14 h: 110 reached, 40% skip, 55% watched, 1.40 views each, and the account's first share. Sefe (E, place) at 38 h: 182, 33%. Whisk (B, place) at 46 h: 111, 59%. Followers 2.
+- **The table now:**
+  - B: name Max 40 | place Cinderwake 55, Fibb 64, Whisk 59
+  - C: name Bella 34, Charlie 40 | place Thessaly 53
+  - E: name Summer 32, Daisy 38 | place Sefe 33
+  Every name planet, in any version and at either hour, held strangers at 32-40%. Every place planet in B or C lost 53-64%. The one place planet cut as E held at 33%. Charlie, the name planet posted at night, held at 40%, so the hour isn't it (Whisk already showed that).
+- **Decision (rule set 27 Oct):** Daisy came in at 38%, under 40%, so the 12 queued place-planet B/C shorts became E: Lantern, Hollow, Mothwing, Kess, Orrin, Tessel, Lode, Selk, Bramble, Luma, Lull, Brumm. Each gets its entry's own dedication ("A planet for people who leave the porch light on.") above the title, with the sub kept where it carries the premise. The name-planet B/C shorts keep their versions, since they already hold strangers, and so does batch 4's crossed design.
+- **Engine fix found on the way:** five of the dedications wrap to two lines and ran into the title. A wrapping dedication now grows upwards (atlas/reel.py). The previews are clean, and no Reel already rendered has a wrapping dedication.
+- **Rendering:** the 12 are held and rendering in posting order (Lantern first, 29 Oct 22:00). Each is released after its frame and voice check.
+- **Still open:** sends. Charlie's single share is the first in about 2,400 strangers.
+
 ## 2026-10-27 daily review (12:30 UTC): it isn't the hour; the atlas cut holds strangers on any planet
 - **Numbers (strangers, `python -m atlas score`):** Sefe (E, place, posted 22:12) at 14 h: 168 reached, 31% skip, 44% of a 20 s Reel watched, 1.22 views each, 1 like, 0 sends. Whisk (B, place, 14:12) at 22 h: 110, 59%. Fibb (B, place, 22:02) at 38 h: 120, 64%. Summer at 46 h: 1,103, 32%, 1 save. Followers 2. Still no share on any Reel.
 - **The slot hypothesis fails:** Whisk is a place planet posted in the afternoon and skipped 59%, like the place planets posted at night (53-64%). The hour isn't what separated yesterday's two groups.

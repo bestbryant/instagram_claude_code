@@ -444,9 +444,9 @@
       "caption": "Most of Orrin's 2.1 million people take their houses down plank by plank all season, then leave on the same night. The sign is bolted to the seabed, and its oldest line has been under four tides. This town's line goes on in the small hours. Nobody has decided what it says. Anything left behind goes to the sea, and eleven years later to whoever digs it up, so everyone here drinks out of a stranger's mug. My guide has moved twice. This time she's packing a towel and a snorkel.\n\nOrrin keeps almost the same face to its giant and slips round underneath it once every 22 years. A tide has two bulges, so the sea comes round every 11. The giant climbs about a finger's width a month, and when it's overhead, so is the sea.\n\nThe sea is due back at 6:12 on 14 March. I'll pack the night before.\n\nPack-early person or night-before person?"
     },
     "short": {
-      "version": "B",
+      "version": "E",
       "title": "This town is at\nthe bottom of the sea.",
-      "sub": "For night-before packers.",
+      "sub": "",
       "title_y": 0.12,
       "framing": "medium",
       "zoom": [
@@ -568,7 +568,8 @@
       "next": {
         "name": "Olive",
         "line": "The sun won't go down on an argument."
-      }
+      },
+      "kicker": "A planet for people who pack the night before."
     }
   },
   {
@@ -1357,7 +1358,7 @@
       "caption": "Luma's moon comes round every October, low enough to clip the hilltops. You hear it a day before you see it: a hum in your back teeth. Every dog on the planet lies down.\n\nA letter pressed to the moon sticks for the whole orbit. Be polite: it has answered rude ones. The eleven-page reply ended with a drawing of a dog, done from description. It was mostly ears. So is Biscuit, Frank's eighth dog and the first to get post.\n\nIt has been late once, in 1987. It won't say where it went.\n\nOur own moon drifts 3.8 cm further away every year. Luma's keeps coming back.\n\nI went up this year and wrote about a cat called Everything. Nothing yet.\n\nWhat would you tell the moon about your dog?"
     },
     "short": {
-      "version": "B",
+      "version": "E",
       "title": "The moon here\nwrites back.",
       "sub": "Each autumn,\nit's close enough to touch.",
       "framing": "gag",
@@ -1464,7 +1465,8 @@
       "next": {
         "name": "Miles",
         "line": "Next door is ninety miles away."
-      }
+      },
+      "kicker": "A planet for people who still write letters."
     }
   },
   {
@@ -1583,9 +1585,9 @@
       "caption": "That big wave is moving. Very slowly.\n\nThe sea on Selk left one summer, nine thousand years ago, and the waves stayed where they were. The biggest is two hundred metres from sand to lip, and the sand still smells of salt. Houses under the curl rent cheap because they never get the afternoon sun, and a day here lasts 33 hours, so that's a lot of afternoon. Bo's shop still sells wax. Nobody needs it; everybody buys a bar to smell on the flight home. The surf report has said 'same as yesterday' for nine thousand years, and it's very nearly right. Every surfer here will tell you it's the best wave of their life. They all mean the same one.\n\nOn Earth, glass flowing is a myth: old church windows were uneven from the start, and room-temperature glass would take far longer than the age of the universe to sag. Nobody told Selk. Toenails really do grow about 1.6 mm a month.\n\nHow long would you wait for a wave?"
     },
     "short": {
-      "version": "C",
+      "version": "E",
       "title": "The sea left.\nThe waves stayed.",
-      "sub": "You've just landed on Selk.",
+      "sub": "",
       "framing": "medium",
       "zoom": [
         1.35,
@@ -1699,7 +1701,8 @@
       "next": {
         "name": "Bramble",
         "line": "This tree has its own weather."
-      }
+      },
+      "kicker": "A planet for people who go to the beach and don't swim."
     }
   },
   {
@@ -2084,9 +2087,9 @@
     },
     "first_comment": "Earth's aurora runs on the solar wind. On 10-11 May 1999, that wind almost stopped.",
     "short": {
-      "version": "B",
+      "version": "E",
       "title": "On Kess, only\ntourists look up.",
-      "sub": "For anyone who's stopped\nnoticing their view.",
+      "sub": "",
       "framing": "medium",
       "zoom": [
         1.22,
@@ -2179,7 +2182,8 @@
       "next": {
         "name": "Simon",
         "line": "Everyone does what Simon says."
-      }
+      },
+      "kicker": "A planet for people who stopped noticing the view from their window."
     }
   },
   {
@@ -2318,7 +2322,7 @@
       "caption": "Look at the foot of the tree.\n\nField note, day three. The cloud rains on the tallest tree and nowhere else, so the village has its own water as well as its own weather. Notes come down by pinecone in about two minutes. Anything going up goes by kite and takes a week, so dinner stays on the ground. Agnes has cooked for the top of the tree for fifty-one years, and she repaints the sign every spring. They have food of their own up there. She cooks anyway.\n\nAt a Polish Christmas Eve supper, one extra place is laid for whoever might turn up. On Bramble, it's most of the table.\n\nWho's the 'Coming!' in your house?"
     },
     "short": {
-      "version": "B",
+      "version": "E",
       "title": "This tree has\nits own weather.",
       "sub": "And a village that hasn't come down\nin 600 years.",
       "framing": "sky",
@@ -2437,7 +2441,8 @@
       "next": {
         "name": "Luma",
         "line": "The moon here writes back."
-      }
+      },
+      "kicker": "A planet for people who never come downstairs."
     }
   },
   {
@@ -2586,7 +2591,7 @@
       "caption": "Keep an eye on the child's arm.\n\nGravity on Brumm is twice ours, so the hills are low, the houses are one storey and nobody owns a ladder. A four-year-old here weighs what a ten-year-old does on Earth. The Last Carry is a holiday for the child's whole street, held in the week they get too heavy to carry far. The road out of every town has a bench every half mile. The parents don't use them.\n\nI offered to take a turn for a mile. The whole road went quiet. You don't help with a Last Carry. You bring tea.\n\nTomas is at school now. He says he remembers the sea. His dad says he was asleep by mile six.\n\nOn Earth, nobody knows which carry is the last one. On Brumm, everybody does, so they close the road.\n\nWhere would you have picked?"
     },
     "short": {
-      "version": "B",
+      "version": "E",
       "title": "Every child here\ngets one last carry.",
       "sub": "Gravity is double.\nBy four, they're too heavy.",
       "framing": "medium",
@@ -2715,7 +2720,8 @@
       "next": {
         "name": "Eve",
         "line": "Christmas here is always tomorrow."
-      }
+      },
+      "kicker": "A planet for everyone who was carried home asleep."
     }
   },
   {
@@ -2853,9 +2859,9 @@
     },
     "first_comment": "Day 214. Jess has her chalk back. She's checking everyone's sums.",
     "short": {
-      "version": "B",
+      "version": "E",
       "title": "Winter here\nlasts a year.",
-      "sub": "For whoever remembers\nevery birthday.",
+      "sub": "",
       "framing": "crowd",
       "zoom": [
         1.75,
@@ -2980,7 +2986,8 @@
       "next": {
         "name": "Lode",
         "line": "Your blood points home."
-      }
+      },
+      "kicker": "A planet for the friend who remembers every birthday."
     }
   },
   {
@@ -4636,7 +4643,7 @@
     },
     "first_comment": "Bridget: Thirty thousand home this year. I've told every one of them to stand up straight.",
     "short": {
-      "version": "B",
+      "version": "E",
       "title": "Your blood\npoints home.",
       "sub": "To wherever you were born.",
       "framing": "medium",
@@ -4786,7 +4793,8 @@
       "next": {
         "name": "Ruby",
         "line": "The sky blushes if you're embarrassed."
-      }
+      },
+      "kicker": "A planet for people who go home for Christmas."
     }
   },
   {
@@ -5363,7 +5371,7 @@
     },
     "first_comment": "Lull update: there's a new baby at the mill. Alfie's sister is taking it badly.",
     "short": {
-      "version": "B",
+      "version": "E",
       "title": "The moon here follows\nthe youngest person.",
       "sub": "New baby? It moves house.",
       "framing": "medium",
@@ -5471,7 +5479,8 @@
       "next": {
         "name": "Elsewhere",
         "line": "You've been to this planet today."
-      }
+      },
+      "kicker": "A planet for people who stopped being the baby of the family."
     }
   },
   {
