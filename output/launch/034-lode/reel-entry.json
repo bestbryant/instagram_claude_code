@@ -146,7 +146,7 @@
   },
   "first_comment": "Bridget: Thirty thousand home this year. I've told every one of them to stand up straight.",
   "short": {
-    "version": "B",
+    "version": "E",
     "title": "Your blood\npoints home.",
     "sub": "To wherever you were born.",
     "framing": "medium",
@@ -296,7 +296,8 @@
     "next": {
       "name": "Ruby",
       "line": "The sky blushes if you're embarrassed."
-    }
+    },
+    "kicker": "A planet for people who go home for Christmas."
   },
   "_engine": 5
 }

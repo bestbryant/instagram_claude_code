@@ -114,9 +114,9 @@
     "caption": "That big wave is moving. Very slowly.\n\nThe sea on Selk left one summer, nine thousand years ago, and the waves stayed where they were. The biggest is two hundred metres from sand to lip, and the sand still smells of salt. Houses under the curl rent cheap because they never get the afternoon sun, and a day here lasts 33 hours, so that's a lot of afternoon. Bo's shop still sells wax. Nobody needs it; everybody buys a bar to smell on the flight home. The surf report has said 'same as yesterday' for nine thousand years, and it's very nearly right. Every surfer here will tell you it's the best wave of their life. They all mean the same one.\n\nOn Earth, glass flowing is a myth: old church windows were uneven from the start, and room-temperature glass would take far longer than the age of the universe to sag. Nobody told Selk. Toenails really do grow about 1.6 mm a month.\n\nHow long would you wait for a wave?"
   },
   "short": {
-    "version": "C",
+    "version": "E",
     "title": "The sea left.\nThe waves stayed.",
-    "sub": "You've just landed on Selk.",
+    "sub": "",
     "framing": "medium",
     "zoom": [
       1.35,
@@ -230,6 +230,7 @@
     "next": {
       "name": "Bramble",
       "line": "This tree has its own weather."
-    }
+    },
+    "kicker": "A planet for people who go to the beach and don't swim."
   }
 }
