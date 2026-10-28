@@ -96,9 +96,8 @@
   "entry": "H02",
   "kind": "reel",
   "not_before": "2026-10-29T22:00:00Z",
-  "note": "converted to E (28 Oct): held until re-rendered and checked",
-  "fixed_date": true,
-  "hold": true
+  "note": "short cut, checked",
+  "fixed_date": true
  },
  {
   "day": 13,
