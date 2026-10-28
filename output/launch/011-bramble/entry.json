@@ -134,7 +134,7 @@
     "caption": "Look at the foot of the tree.\n\nField note, day three. The cloud rains on the tallest tree and nowhere else, so the village has its own water as well as its own weather. Notes come down by pinecone in about two minutes. Anything going up goes by kite and takes a week, so dinner stays on the ground. Agnes has cooked for the top of the tree for fifty-one years, and she repaints the sign every spring. They have food of their own up there. She cooks anyway.\n\nAt a Polish Christmas Eve supper, one extra place is laid for whoever might turn up. On Bramble, it's most of the table.\n\nWho's the 'Coming!' in your house?"
   },
   "short": {
-    "version": "B",
+    "version": "E",
     "title": "This tree has\nits own weather.",
     "sub": "And a village that hasn't come down\nin 600 years.",
     "framing": "sky",
@@ -253,6 +253,7 @@
     "next": {
       "name": "Luma",
       "line": "The moon here writes back."
-    }
+    },
+    "kicker": "A planet for people who never come downstairs."
   }
 }
