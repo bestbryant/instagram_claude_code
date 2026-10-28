@@ -128,7 +128,7 @@
     "caption": "Who's that standing by the ghost?\n\nHollow has 4,000 living residents. The other kind won't come out to be counted. They keep to wardrobes, airing cupboards and the space under the stairs, and a sneeze can floor one. Saying boo needs written consent. One lives in the school piano, so lessons are recorder only.\n\nSorry Night is the last night of October: knock on each wardrobe once, softly, say what you did, and go. Mo got the most sweets on the street. Nobody's sure what that says about the recorder.\n\nOn Earth, one root of Halloween door-knocking is souling: in medieval Britain the poor went house to house at Hallowtide and were given soul cakes for praying for the household's dead. On Hollow the living knock, and the dead hand out the treats.\n\nWhat's the last thing you apologised to?"
   },
   "short": {
-    "version": "C",
+    "version": "E",
     "title": "You've just said boo\nto a ghost.",
     "sub": "On Hollow, they faint.",
     "framing": "gag",
@@ -246,7 +246,8 @@
     "next": {
       "name": "Mothwing",
       "line": "The moths here eat moonlight."
-    }
+    },
+    "kicker": "A planet for people who say sorry to furniture."
   },
   "_engine": 5
 }
