@@ -108,7 +108,7 @@
   },
   "first_comment": "Gordon would like it known that he is still not made of candles. He has ordered more.",
   "short": {
-    "version": "B",
+    "version": "E",
     "title": "The moths here\neat moonlight.",
     "sub": "Everyone leaves them a candle.\nExcept Gordon.",
     "framing": "gag",
@@ -221,7 +221,8 @@
     "next": {
       "name": "Kess",
       "line": "On Kess, only tourists look up."
-    }
+    },
+    "kicker": "A planet for people who pretend to be out on Halloween."
   },
   "_engine": 5
 }

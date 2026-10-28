@@ -150,9 +150,9 @@
   },
   "first_comment": "Earth's aurora runs on the solar wind. On 10-11 May 1999, that wind almost stopped.",
   "short": {
-    "version": "B",
+    "version": "E",
     "title": "On Kess, only\ntourists look up.",
-    "sub": "For anyone who's stopped\nnoticing their view.",
+    "sub": "",
     "framing": "medium",
     "zoom": [
       1.22,
@@ -245,6 +245,7 @@
     "next": {
       "name": "Simon",
       "line": "Everyone does what Simon says."
-    }
+    },
+    "kicker": "A planet for people who stopped noticing the view from their window."
   }
 }
