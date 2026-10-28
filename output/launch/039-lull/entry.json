@@ -208,7 +208,7 @@
   },
   "first_comment": "Lull update: there's a new baby at the mill. Alfie's sister is taking it badly.",
   "short": {
-    "version": "B",
+    "version": "E",
     "title": "The moon here follows\nthe youngest person.",
     "sub": "New baby? It moves house.",
     "framing": "medium",
@@ -316,6 +316,7 @@
     "next": {
       "name": "Elsewhere",
       "line": "You've been to this planet today."
-    }
+    },
+    "kicker": "A planet for people who stopped being the baby of the family."
   }
 }
