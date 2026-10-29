@@ -1,0 +1,263 @@
+{
+  "id": "061",
+  "name": "Violet",
+  "subtitle": "every Violet's planet",
+  "story": "On Violet, nobody can see a newcomer until someone sits down next to them. Then they're simply there, as if they always had been. Every school keeps a bench by the gate for it. Zara started in the spring term and spent her whole first week invisible: lunch on her own, the register unanswered. On Friday, Josh sat down beside her to tie his shoe. She appeared mid-sandwich. Twenty years later, she was his best man.",
+  "facts": {
+    "Day": "23 hours",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "2.6 million"
+  },
+  "hook": "A planet for whoever sat with the new kid.",
+  "tags": [
+    "#worldbuilding",
+    "#schooldays",
+    "#violet"
+  ],
+  "spec": {
+    "palette": "lilac_dusk",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.22,
+    "sun_y": 0.6,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "nothing,nothing,nothing,nothing,nothing",
+    "crowd_x": 0.42,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.8,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "New kids here are invisible.",
+  "kicker": "Every Violet gets this planet.",
+  "episode": {
+    "opener": "New kids here\nare invisible.",
+    "beats": [
+      {
+        "text": "Nobody can see you\nuntil someone sits with you.",
+        "shot": "wide"
+      },
+      {
+        "text": "Every school keeps a bench\nby the gate for it.",
+        "shot": "house"
+      },
+      {
+        "text": "Teachers call\nthe register twice.",
+        "shot": "crowd",
+        "spec": {
+          "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+        }
+      },
+      {
+        "text": "Zara started in the spring.\nFor a week, nobody saw her.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+        },
+        "note": "a gap in the middle of the row"
+      },
+      {
+        "text": "Nobody sat with her.\nNobody knew to.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.45,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+        }
+      },
+      {
+        "text": "On Friday, Josh sat down\nto tie his shoe.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+        }
+      },
+      {
+        "text": "Right next to her.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "nothing,sit,sit,nothing,nothing"
+          }
+        },
+        "note": "identical camera to beat 4; one thing changed: two of them sitting in the gap. Turn line"
+      },
+      {
+        "text": "She appeared\nmid-sandwich.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,sit,sit,nothing,nothing"
+        }
+      }
+    ],
+    "end": "She was his best man.",
+    "caption": "Mind the gap in the middle of that row.\n\nViolet: 2.6 million people, a 23-hour day, no moons, and nobody can see a newcomer until someone sits down beside them. Then they're simply there, as if they always had been. Every school keeps a bench by the gate for it, and most first days have a quiet hour. Zara's lasted a week. Josh only sat down to tie his shoe.\n\nI was invisible for my first two days here. A dog found me. We're still in touch.\n\n(The story goes that the 'buddy bench', where a lonely child sits so that someone will come and ask them to play, reached American playgrounds in 2013 through a second-grader in Pennsylvania who'd seen one in a brochure from Germany. On Violet, the bench does the rest.)\n\nWhen were you last the new one?"
+  },
+  "first_comment": "Zara's daughter started school on Monday. She was seen by ten.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for whoever sat with the new kid.",
+    "title": "New kids here\nare invisible.",
+    "sub": "",
+    "framing": "close",
+    "zoom": [
+      2.0,
+      2.06
+    ],
+    "focus": [
+      0.47,
+      0.64
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+      }
+    },
+    "beats": [
+      {
+        "text": "Until someone sits with them.\nZara waited all week.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "On Friday, Josh sat down\nnext to her. By accident.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "nothing,sit,sit,nothing,nothing"
+          }
+        }
+      }
+    ],
+    "end": "She was his best man.",
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.5,
+      0.6
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For whoever sat with the new kid.",
+    "next": {
+      "name": "Thicket",
+      "line": "Saying 'later' plants a tree here."
+    }
+  }
+}
