@@ -1,0 +1,336 @@
+{
+  "id": "060",
+  "name": "Clasp",
+  "subtitle": "where a hug lasts as long as you've been apart",
+  "story": "On Clasp, a hug lasts exactly as long as you've been apart. Back from the shops: a squeeze. Back from a fortnight in the sun: a fortnight. Zoe went travelling for a year, and her mum got to the airport an hour early, holding flowers. The plane landed. They've been there since June. Zoe's dad brings them sandwiches, and a coat each now the snow's started.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "5.6 million"
+  },
+  "hook": "A planet for every mum waiting at arrivals.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#mums"
+  ],
+  "spec": {
+    "palette": "cobalt_noon",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.76,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "ARRIVALS",
+    "crowd": 2,
+    "crowd_items": "flower,nothing",
+    "crowd_x": 0.5,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.02,
+    "stage": 0.74
+  },
+  "cover": "Hugs here last as long as you've been apart.",
+  "episode": {
+    "opener": "Hugs here last as long\nas you've been apart.",
+    "beats": [
+      {
+        "text": "Back from the shops: a squeeze.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.6,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing"
+        }
+      },
+      {
+        "text": "Back from a fortnight away:\na fortnight.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.6,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing"
+        }
+      },
+      {
+        "text": "Airports have benches for people\nwaiting to be let go of.",
+        "shot": "sign",
+        "spec": {
+          "crowd": 0
+        }
+      },
+      {
+        "text": "Zoe went travelling for a year.",
+        "shot": "sign",
+        "spec": {
+          "crowd": 0
+        }
+      },
+      {
+        "text": "Her mum got to arrivals early.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.6,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "flower",
+          "crowd_x": 0.49,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Zoe's plane landed.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.6,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "flower,nothing",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.02,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "Summer went.\nThen autumn. Then snow.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.6,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "flower,nothing",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.02,
+          "crowd_facing": "in",
+          "palette": "violet_ice",
+          "snow": true,
+          "particles": "snow",
+          "suns": 0,
+          "stars": 0.8,
+          "mist": 0.45
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.6,
+            0.62
+          ]
+        },
+        "seconds": 3.0,
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "flower,nothing",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.02,
+          "crowd_facing": "in",
+          "palette": "violet_ice",
+          "snow": true,
+          "particles": "snow",
+          "suns": 0,
+          "stars": 0.8,
+          "mist": 0.45
+        },
+        "note": "identical camera; one thing changed: the season"
+      }
+    ],
+    "end": "They've been there since June.",
+    "caption": "Those two by the sign won't be long.\n\nClasp: 5.6 million people, a 24-hour day, no moons, and hugs that last exactly as long as you've been apart. Back from the shops: a squeeze. Back from a fortnight away: a fortnight. Gap years are planned very carefully, and airports have benches for the people waiting to be let go of. Zoe went travelling for a year. Her mum got to the airport an hour early, with flowers.\n\n(On Earth, a study of athletes at the 2008 Olympics timed the average hug at about three seconds. On Clasp, that means you nipped out for milk.)\n\nShort trip or long hug?"
+  },
+  "first_comment": "Zoe's dad brings soup at lunchtime. Two straws.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every mum waiting at arrivals.",
+    "title": "Hugs here last as long\nas you've been apart.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.5,
+      1.56
+    ],
+    "focus": [
+      0.58,
+      0.62
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "teal_night",
+        "suns": 0,
+        "stars": 1.4
+      }
+    },
+    "beats": [
+      {
+        "text": "Zoe went travelling for a year.\nHer mum got to arrivals early.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.6,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "cobalt_noon",
+          "suns": 1,
+          "stars": null,
+          "crowd": 1,
+          "crowd_items": "flower",
+          "crowd_x": 0.49,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Zoe's plane landed.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.6,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "cobalt_noon",
+          "suns": 1,
+          "stars": null,
+          "crowd": 1,
+          "crowd_items": "flower",
+          "crowd_x": 0.49,
+          "crowd_facing": "right"
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "flower,nothing",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.02,
+            "crowd_facing": "in"
+          }
+        },
+        "seconds": 3.0
+      }
+    ],
+    "end": "They've been there since June.",
+    "end_onset": {
+      "at": 1.1,
+      "motion": "cut",
+      "spec": {
+        "palette": "violet_ice",
+        "snow": true,
+        "particles": "snow",
+        "suns": 0,
+        "stars": 0.8,
+        "mist": 0.45
+      }
+    },
+    "end_zoom": [
+      1.62,
+      1.56
+    ],
+    "end_focus": [
+      0.6,
+      0.62
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For every mum waiting at arrivals.",
+    "next": {
+      "name": "Faith",
+      "line": "Believing in someone moves mountains here."
+    }
+  },
+  "_engine": 5
+}

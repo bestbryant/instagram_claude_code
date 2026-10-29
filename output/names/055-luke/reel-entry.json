@@ -1,0 +1,400 @@
+{
+  "id": "055",
+  "name": "Luke",
+  "subtitle": "every Luke's planet",
+  "story": "On Luke, the sky's thermostat is in Priya's hallway. Priya likes it tropical. Her flatmate Ellie likes it snowing, and says so by walking past the dial very slowly. Most days this winter the neighbours have had four seasons before breakfast, and they keep a parasol and a shovel by the door. After a long talk and a short row, the flat agreed a compromise: lukewarm drizzle. Nobody is happy. Everybody is used to it.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "390,000"
+  },
+  "hook": "A planet for flatmates who fight over the heating.",
+  "tags": [
+    "#worldbuilding",
+    "#flatmates",
+    "#luke"
+  ],
+  "spec": {
+    "palette": "mint_dawn",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.72,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "#c8452f",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.45,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.8,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.075,
+    "stage": 0.74
+  },
+  "cover": "The sky's thermostat is in Priya's hallway.",
+  "kicker": "Every Luke gets this planet.",
+  "episode": {
+    "opener": "The sky's thermostat\nis in Priya's hallway.",
+    "beats": [
+      {
+        "text": "Priya likes it tropical.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.62,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "rust_desert",
+          "suns": 1,
+          "sun_x": 0.72,
+          "sun_y": 0.58,
+          "sun_size": 0.09,
+          "mist": 0.25,
+          "snow": false,
+          "particles": "none",
+          "crowd_items": "umbrella,nothing"
+        }
+      },
+      {
+        "text": "Her flatmate Ellie\nlikes it snowing.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.62,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "suns": 0,
+          "snow": true,
+          "particles": "snow",
+          "mist": 0.5,
+          "stars": 0.4,
+          "crowd_items": "umbrella,nothing"
+        },
+        "note": "identical camera to the beat before; one thing changed: the weather"
+      },
+      {
+        "text": "She says so by walking\npast the dial very slowly.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.62,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "suns": 0,
+          "snow": true,
+          "particles": "snow",
+          "mist": 0.5,
+          "stars": 0.4,
+          "crowd_items": "umbrella,nothing"
+        }
+      },
+      {
+        "text": "The neighbours have had\nfour seasons since breakfast.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "rust_desert",
+          "suns": 1,
+          "sun_x": 0.72,
+          "sun_y": 0.47,
+          "sun_size": 0.09,
+          "mist": 0.25,
+          "snow": false,
+          "particles": "none",
+          "crowd": 6,
+          "crowd_x": 0.4,
+          "crowd_gap": 0.085,
+          "crowd_facing": "right",
+          "crowd_items": "nothing,umbrella,nothing,nothing,nothing,nothing"
+        }
+      },
+      {
+        "text": "They've stopped putting\ntheir coats away.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "suns": 0,
+          "snow": true,
+          "particles": "snow",
+          "mist": 0.5,
+          "stars": 0.4,
+          "crowd": 6,
+          "crowd_x": 0.4,
+          "crowd_gap": 0.085,
+          "crowd_facing": "right",
+          "crowd_items": "nothing,umbrella,nothing,nothing,nothing,nothing"
+        }
+      },
+      {
+        "text": "After a long talk and a short row,\nthey agreed a compromise.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "mint_dawn",
+          "suns": 0,
+          "snow": false,
+          "particles": "rain",
+          "mist": 0.65,
+          "stars": null,
+          "crowd": 6,
+          "crowd_x": 0.4,
+          "crowd_gap": 0.085,
+          "crowd_facing": "right",
+          "crowd_items": "umbrella,umbrella,umbrella,umbrella,umbrella,umbrella"
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "seconds": 2.6,
+        "spec": {
+          "palette": "mint_dawn",
+          "suns": 0,
+          "snow": false,
+          "particles": "rain",
+          "mist": 0.65,
+          "stars": null,
+          "crowd": 6,
+          "crowd_x": 0.4,
+          "crowd_gap": 0.085,
+          "crowd_facing": "right",
+          "crowd_items": "umbrella,umbrella,umbrella,umbrella,umbrella,umbrella"
+        },
+        "note": "identical camera to the beat before; one thing changed: the compromise"
+      }
+    ],
+    "end": "The compromise: lukewarm drizzle.",
+    "caption": "The dial is just inside that front door.\n\nLuke: 390,000 people, a 24-hour day, no moons, and one thermostat, in the hallway of a rented flat. Priya likes it tropical. Ellie likes it snowing. Neither has read the tenancy agreement, which is very clear that the weather is shared. The neighbours keep a parasol and a shovel by the door and no longer ask.\n\nI was there for one morning. I got sunburnt and snowed on before lunch.\n\n(On Earth, a 2015 study in Nature Climate Change found that the standard formula for office temperatures was worked out for the metabolism of a forty-year-old man. On Luke, it's worked out by whoever touched the dial last.)\n\nWho in your house is in charge of the dial?"
+  },
+  "first_comment": "Week two of drizzle. Priya has bought a very small heater.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for flatmates who fight over the heating.",
+    "title": "The sky's thermostat\nis in Priya's hallway.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.24,
+      1.3
+    ],
+    "focus": [
+      0.55,
+      0.6
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "rust_desert",
+        "suns": 1,
+        "sun_x": 0.72,
+        "sun_y": 0.47,
+        "sun_size": 0.09,
+        "mist": 0.25,
+        "snow": false,
+        "particles": "none",
+        "crowd_items": "umbrella,nothing"
+      }
+    },
+    "beats": [
+      {
+        "text": "Priya likes it tropical.\nHer flatmate Ellie likes snow.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.62,
+            0.6
+          ]
+        },
+        "spec": {
+          "sun_y": 0.58
+        },
+        "onset": {
+          "at": 1.6,
+          "motion": "cut",
+          "spec": {
+            "palette": "violet_ice",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "mist": 0.5,
+            "stars": 0.4,
+            "crowd_items": "umbrella,nothing"
+          }
+        }
+      },
+      {
+        "text": "The neighbours have had\nfour seasons since breakfast.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "suns": 0,
+          "snow": true,
+          "particles": "snow",
+          "mist": 0.5,
+          "stars": 0.4,
+          "crowd": 6,
+          "crowd_x": 0.4,
+          "crowd_gap": 0.085,
+          "crowd_facing": "right",
+          "crowd_items": "nothing,umbrella,nothing,nothing,nothing,nothing"
+        },
+        "onset": {
+          "at": 1.7,
+          "motion": "cut",
+          "spec": {
+            "palette": "rust_desert",
+            "suns": 1,
+            "sun_x": 0.72,
+            "sun_y": 0.47,
+            "sun_size": 0.09,
+            "mist": 0.25,
+            "snow": false,
+            "particles": "none"
+          }
+        },
+        "seconds": 3.7
+      }
+    ],
+    "end": "The compromise: lukewarm drizzle.",
+    "end_spec": {
+      "sun_y": 0.58
+    },
+    "end_onset": {
+      "at": 1.3,
+      "motion": "cut",
+      "spec": {
+        "palette": "mint_dawn",
+        "suns": 0,
+        "snow": false,
+        "particles": "rain",
+        "mist": 0.65,
+        "stars": null,
+        "crowd_items": "umbrella,umbrella,umbrella,umbrella,umbrella,umbrella"
+      }
+    },
+    "end_zoom": [
+      1.14,
+      1.08
+    ],
+    "end_focus": [
+      0.5,
+      0.6
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For flatmates who fight over the heating.",
+    "next": {
+      "name": "Kith",
+      "line": "Houses here follow your best friend."
+    }
+  },
+  "_engine": 5
+}

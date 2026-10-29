@@ -1,0 +1,317 @@
+{
+  "id": "057",
+  "name": "Faith",
+  "subtitle": "every Faith's planet",
+  "story": "On Faith, believing in someone moves mountains. Most of the time it's small stuff: a hill shuffles over for a nervous driver, a ridge lies down for a cyclist. Kieran's village sits behind the biggest mountain on the planet, and nobody thought he'd get to university, least of all the mountain. Then his teacher, Miss Hart, believed in him. The mountain moved out of the way overnight. The bus takes ten minutes now. Miss Hart is already on the next one.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "one",
+    "Gravity": "1.0 g",
+    "Population": "870,000"
+  },
+  "hook": "A planet for the teacher who believed in you.",
+  "tags": [
+    "#worldbuilding",
+    "#teachers",
+    "#faith"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "peaks",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 1.3,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.5,
+    "sun_y": 0.55,
+    "sun_size": 0.075,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.3,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "nothing",
+    "crowd_x": 0.46,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.8,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Believing in someone moves mountains here.",
+  "kicker": "Every Faith gets this planet.",
+  "episode": {
+    "opener": "Believing in someone\nmoves mountains here.",
+    "beats": [
+      {
+        "text": "Mostly small ones.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.08,
+            1.14
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "relief": 0.8
+        }
+      },
+      {
+        "text": "A hill shuffles over\nfor a nervous driver.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.08,
+            1.14
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "relief": 0.8
+        }
+      },
+      {
+        "text": "Kieran's village is behind\nthe biggest one on the planet.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.08,
+            1.14
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        }
+      },
+      {
+        "text": "Nobody thought Kieran\nwould get to university.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.6,
+            1.68
+          ],
+          "focus": [
+            0.56,
+            0.63
+          ]
+        }
+      },
+      {
+        "text": "Not even the mountain.",
+        "shot": {
+          "framing": "sky",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.5,
+            0.4
+          ]
+        }
+      },
+      {
+        "text": "Then his teacher, Miss Hart,\nbelieved in him.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.08,
+            1.14
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "book,nothing",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.07,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.08,
+            1.14
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "seconds": 2.6,
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "book,nothing",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.07,
+          "crowd_facing": "in",
+          "relief": 0.3
+        },
+        "note": "identical camera; one thing changed: the mountain has gone"
+      },
+      {
+        "text": "The bus takes ten minutes now.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.08,
+            1.14
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.495,
+          "crowd_facing": "right",
+          "relief": 0.3
+        },
+        "note": "identical camera; one thing changed: Miss Hart has gone"
+      }
+    ],
+    "end": "She's already on the next one.",
+    "caption": "Kieran's village had never seen that sunset.\n\nFaith: 870,000 people, a 26-hour day, one moon, and a geography that depends on who believes in whom. Most days it's small stuff: a hill shuffles over for a nervous driver. The big one stood between Kieran's village and everywhere else, and nobody, including the mountain, thought he'd get past it. Miss Hart did. The maps were redrawn by the weekend.\n\n(On Earth, mountains move too: India is still pushing into Asia at four or five centimetres a year, so the Himalayas are, strictly speaking, on their way somewhere.)\n\nWhich subject was your mountain?"
+  },
+  "first_comment": "Kieran teaches maths now. There's a hill outside his school that's looking nervous.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for the teacher who believed in you.",
+    "title": "Believing in someone\nmoves mountains here.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.08,
+      1.14
+    ],
+    "focus": [
+      0.5,
+      0.56
+    ],
+    "spec": {
+      "relief": 0.3
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "relief": 1.3
+      }
+    },
+    "beats": [
+      {
+        "text": "Nobody thought Kieran\nwould get to university.\nNot even the mountain.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.6,
+            1.68
+          ],
+          "focus": [
+            0.56,
+            0.63
+          ]
+        }
+      },
+      {
+        "text": "Then his teacher, Miss Hart,\nbelieved in him.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.08,
+            1.14
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "book,nothing",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.07,
+          "crowd_facing": "in"
+        },
+        "onset": {
+          "at": 1.7,
+          "motion": "cut",
+          "spec": {
+            "relief": 0.3
+          }
+        }
+      }
+    ],
+    "end": "She's already on the next one.",
+    "end_onset": {
+      "at": 1.1,
+      "motion": "cut",
+      "spec": {
+        "crowd": 1,
+        "crowd_items": "nothing",
+        "crowd_x": 0.495,
+        "crowd_facing": "right"
+      }
+    },
+    "end_zoom": [
+      1.14,
+      1.08
+    ],
+    "end_focus": [
+      0.5,
+      0.56
+    ],
+    "name_y": 0.16,
+    "end_kicker": "For the teacher who believed in you.",
+    "next": {
+      "name": "Twain",
+      "line": "Here, you can jump to the planet next door."
+    }
+  },
+  "_engine": 5
+}

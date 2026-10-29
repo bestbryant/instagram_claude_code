@@ -1,0 +1,315 @@
+{
+  "id": "062",
+  "name": "Ash",
+  "subtitle": "every Ash's planet",
+  "story": "The air on Ash is full of static, and kind words set it off. A small one crackles. A proper one, the kind people only say a handful of times in a life, sets the whole hillside alight. So people here keep it light: the weather, the football, a dig about your haircut. Mick and Tony are brothers and have got by on insults since the playground. Then Tony became a dad, and Mick, in the hospital car park, said, 'You'll be brilliant.' The fire brigade said it was the best one they'd seen all year. Mick lost an eyebrow. Worth it.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "none",
+    "Gravity": "1.1 g",
+    "Population": "1.9 million"
+  },
+  "hook": "A planet for brothers who only trade insults.",
+  "tags": [
+    "#illustration",
+    "#brothers",
+    "#ash"
+  ],
+  "spec": {
+    "palette": "abyss",
+    "terrain": "mesas",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.8,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 0.6,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.45,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.82,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.12,
+    "stage": 0.74
+  },
+  "cover": "Kind words here start fires.",
+  "kicker": "Every Ash gets this planet.",
+  "episode": {
+    "opener": "Kind words here\nstart fires.",
+    "beats": [
+      {
+        "text": "A small one crackles.\nA proper one lights the hill.",
+        "shot": "wide",
+        "spec": {
+          "crowd_items": "sing,nothing",
+          "particles": "embers",
+          "glow_rims": true
+        }
+      },
+      {
+        "text": "So people keep it light.\nThey talk about the weather.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_gap": 0.24,
+          "particles": "none",
+          "glow_rims": false,
+          "crowd_items": "nothing,nothing"
+        }
+      },
+      {
+        "text": "The fire brigade\nattends every wedding.",
+        "shot": "house",
+        "spec": {
+          "crowd_gap": 0.24,
+          "particles": "none",
+          "glow_rims": false,
+          "crowd_items": "nothing,nothing"
+        }
+      },
+      {
+        "text": "Mick and Tony are brothers.",
+        "shot": "group",
+        "spec": {
+          "crowd_gap": 0.24,
+          "particles": "none",
+          "glow_rims": false,
+          "crowd_items": "nothing,nothing"
+        }
+      },
+      {
+        "text": "Strictly insults.\nIt's not that kind of family.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_gap": 0.24,
+          "particles": "none",
+          "glow_rims": false,
+          "crowd_items": "shout,shout",
+          "spot": "#c8452f"
+        },
+        "note": "the insults are jagged arcs and light nothing"
+      },
+      {
+        "text": "Then Tony became a dad.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.56,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd_gap": 0.24,
+          "particles": "none",
+          "glow_rims": false,
+          "crowd_items": "nothing,nothing"
+        }
+      },
+      {
+        "text": "Mick said, 'You'll be brilliant.'",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_gap": 0.24,
+          "particles": "none",
+          "glow_rims": false,
+          "crowd_items": "nothing,nothing"
+        },
+        "onset": {
+          "at": 1.4,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "sing,nothing",
+            "particles": "embers",
+            "glow_rims": true
+          }
+        },
+        "note": "identical camera to beat 5; one thing changed: the kind word lights the hill. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_gap": 0.24,
+          "crowd_items": "sing,nothing",
+          "particles": "embers",
+          "glow_rims": true
+        },
+        "seconds": 2.6
+      }
+    ],
+    "end": "Mick lost an eyebrow. Worth it.",
+    "caption": "Mick, on the left, has just been nice.\n\nAsh: 1.9 million people, a 26-hour day, no moons, and so much static in the air that a kind word throws sparks. A small one crackles. A proper one, the kind you say a handful of times in a life, sets the hillside alight and brings out the fire brigade. So people here talk about the weather. Mick and Tony are brothers, and have managed a whole life on football and insults. Then Tony became a dad.\n\nI told the hotel receptionist I loved the view. They evacuated the lobby.\n\n(On Earth, a static shock you can feel takes about three thousand volts, and one you can see takes several thousand more. The meters on Ash melt before anyone can measure a proper 'I'm proud of you'.)\n\nWhat's the kindest thing you've never said?"
+  },
+  "first_comment": "The baby has her dad's eyes and, so far, both eyebrows.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for brothers who only trade insults.",
+    "title": "Kind words here\nstart fires.",
+    "sub": "",
+    "framing": "group",
+    "zoom": [
+      1.6,
+      1.66
+    ],
+    "focus": [
+      0.42,
+      0.62
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "sing,nothing",
+        "particles": "embers",
+        "glow_rims": true
+      }
+    },
+    "beats": [
+      {
+        "text": "Mick and Tony are brothers.\nNot one nice word, ever.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_gap": 0.24,
+          "particles": "none",
+          "glow_rims": false,
+          "crowd_items": "shout,shout",
+          "spot": "#c8452f"
+        }
+      },
+      {
+        "text": "When Tony became a dad,\nMick said, 'You'll be brilliant.'",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_gap": 0.24,
+          "particles": "none",
+          "glow_rims": false,
+          "crowd_items": "nothing,nothing"
+        },
+        "seconds": 4.4,
+        "onset": {
+          "at": 2.4,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "sing,nothing",
+            "particles": "embers",
+            "glow_rims": true
+          }
+        }
+      }
+    ],
+    "end": "Mick lost an eyebrow. Worth it.",
+    "end_zoom": [
+      1.4,
+      1.34
+    ],
+    "end_focus": [
+      0.5,
+      0.62
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For brothers who only trade insults.",
+    "next": {
+      "name": "Clasp",
+      "line": "Hugs here last as long as you've been apart."
+    }
+  },
+  "_engine": 5
+}

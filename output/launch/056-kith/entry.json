@@ -1,0 +1,394 @@
+{
+  "id": "056",
+  "name": "Kith",
+  "subtitle": "where houses follow your best friend",
+  "story": "On Kith, houses follow your best friend. Sophie and Hannah grew up next door to each other and stayed there for decades. Then Sophie moved to the sea. Hannah's house went after her the same afternoon, across two counties and a motorway, and Hannah was in the bath at the time. It settled on the cliff next to Sophie's, a little crooked, with the kettle still warm. Nobody told Hannah's husband.",
+  "facts": {
+    "Day": "23 hours",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "1.6 million"
+  },
+  "hook": "A planet for every best friend who moved away.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#bestfriends"
+  ],
+  "spec": {
+    "palette": "lilac_dusk",
+    "terrain": "hills",
+    "layers": 3,
+    "horizon": 0.62,
+    "relief": 0.6,
+    "water": true,
+    "shore": "left",
+    "suns": 1,
+    "sun_x": 0.8,
+    "sun_y": 0.55,
+    "sun_size": 0.045,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "moth_roof",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 0,
+    "crowd_items": "",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.2,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Houses here follow your best friend.",
+  "episode": {
+    "opener": "Houses here follow\nyour best friend.",
+    "beats": [
+      {
+        "text": "Sophie and Hannah grew up\nnext door to each other.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "water": false,
+          "shore": "none",
+          "palette": "pumpkin",
+          "terrain": "hills",
+          "layers": 4,
+          "horizon": 0.64,
+          "relief": 0.7,
+          "suns": 1,
+          "sun_x": 0.25,
+          "sun_y": 0.5,
+          "sun_size": 0.05,
+          "mist": 0.45,
+          "house": true,
+          "gag": "moth_roof",
+          "crowd": 2,
+          "crowd_items": "nothing,nothing",
+          "crowd_x": 0.55,
+          "crowd_facing": "in",
+          "house_x": 0.66,
+          "crowd_gap": 0.05
+        }
+      },
+      {
+        "text": "Estate agents ask about your friends\nbefore your budget.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "water": false,
+          "shore": "none",
+          "palette": "pumpkin",
+          "terrain": "hills",
+          "layers": 4,
+          "horizon": 0.64,
+          "relief": 0.7,
+          "suns": 1,
+          "sun_x": 0.25,
+          "sun_y": 0.5,
+          "sun_size": 0.05,
+          "mist": 0.45,
+          "house": true,
+          "gag": "moth_roof",
+          "crowd": 2,
+          "crowd_items": "nothing,nothing",
+          "crowd_x": 0.55,
+          "crowd_facing": "in",
+          "house_x": 0.66,
+          "crowd_gap": 0.05
+        }
+      },
+      {
+        "text": "In spring, Sophie moved to the sea.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.38,
+            0.62
+          ]
+        },
+        "spec": {
+          "gag": "",
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.3,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Hannah's house went after her.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.38,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.3,
+          "crowd_facing": "right"
+        },
+        "note": "identical camera; one thing changed: the house has arrived"
+      },
+      {
+        "text": "Across two counties\nand a motorway.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.38,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.3,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "It settled next to Sophie's,\na little crooked.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.38,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.3,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Hannah was in the bath\nat the time.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.55,
+            1.62
+          ],
+          "focus": [
+            0.44,
+            0.63
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.64,
+          "crowd_facing": "left"
+        },
+        "note": "Sophie alone outside; the lit window is Hannah, in the bath"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        },
+        "seconds": 2.4,
+        "spec": {
+          "water": false,
+          "shore": "none",
+          "palette": "pumpkin",
+          "terrain": "hills",
+          "layers": 4,
+          "horizon": 0.64,
+          "relief": 0.7,
+          "suns": 1,
+          "sun_x": 0.25,
+          "sun_y": 0.5,
+          "sun_size": 0.05,
+          "mist": 0.45,
+          "house": false,
+          "gag": "",
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.64,
+          "crowd_facing": "left"
+        },
+        "note": "back on the old street: a man with a cup where the house was"
+      }
+    ],
+    "end": "Nobody told her husband.",
+    "caption": "Only one of those houses was there yesterday.\n\nKith: 1.6 million people, a 23-hour day, no moons, and houses that follow your best friend. Estate agents ask about your friendships before your budget, and removal vans are mostly for pianos. Sophie and Hannah grew up next door to each other. When Sophie moved to the coast, Hannah's house went the same afternoon and settled beside hers, a little crooked, with the bath still running.\n\n(On Earth, hermit crabs swap shells in a queue: when a bigger one washes up, they line up in order of size and everybody moves house at once. On Kith, nobody checks who's in the bath.)\n\nIs your best friend in the same postcode?"
+  },
+  "first_comment": "He found them on Sunday. Sophie's put the kettle on.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every best friend who moved away.",
+    "title": "Houses here follow\nyour best friend.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.2,
+      1.26
+    ],
+    "focus": [
+      0.38,
+      0.62
+    ],
+    "spec": {
+      "gag": ""
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "slide",
+      "spec": {
+        "gag": "moth_roof"
+      }
+    },
+    "beats": [
+      {
+        "text": "Hannah's best friend\nmoved to the sea.\nHannah's house followed.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.55,
+            1.62
+          ],
+          "focus": [
+            0.44,
+            0.63
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.64,
+          "crowd_facing": "left"
+        },
+        "seconds": 4.1
+      },
+      {
+        "text": "Hannah was in the bath\nat the time.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        },
+        "spec": {
+          "water": false,
+          "shore": "none",
+          "palette": "pumpkin",
+          "terrain": "hills",
+          "layers": 4,
+          "horizon": 0.64,
+          "relief": 0.7,
+          "suns": 1,
+          "sun_x": 0.25,
+          "sun_y": 0.5,
+          "sun_size": 0.05,
+          "mist": 0.45,
+          "house": false,
+          "gag": "moth_roof",
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.64,
+          "crowd_facing": "left"
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "gag": ""
+          }
+        },
+        "seconds": 3.5
+      }
+    ],
+    "end": "Nobody told her husband.",
+    "end_zoom": [
+      1.42,
+      1.36
+    ],
+    "end_focus": [
+      0.52,
+      0.62
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For every best friend who moved away.",
+    "next": {
+      "name": "Ash",
+      "line": "Kind words here start fires."
+    }
+  }
+}

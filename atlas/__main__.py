@@ -612,6 +612,15 @@ def cmd_stats(a):
                         vals[m] = value(d[0])
                 except GraphError:
                     pass
+        if vals.get("reach") and not vals.get("views"):
+            # Instagram sometimes answers views 0 and skip rate 0 for a Reel that already has reach (seen 29 Oct): a
+            # glitch, not a reading, so keep the last good views and skip rate rather than log a perfect 0% skip
+            prev = old.get(x["media_id"], {})
+            for m in ("views", "reels_skip_rate"):
+                if prev.get(m):
+                    vals[m] = prev[m]
+                else:
+                    vals.pop(m, None)
         out[x["media_id"]] = {"entry": x["entry"], "kind": x["kind"], "at": x["at"], **vals}
         history.append({"t": now.isoformat(timespec="seconds"), "entry": x["entry"], "kind": x["kind"], "age_h": round(age, 1), **vals})
         r = vals.get("reach") or 0
