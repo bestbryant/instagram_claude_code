@@ -1,0 +1,327 @@
+{
+  "id": "070",
+  "name": "Dibs",
+  "subtitle": "where calling dibs is for life",
+  "story": "On Dibs, calling dibs is binding for life, so children here learn to talk early and fast. Most claims are small: a window seat, the last roast potato, the good spoon. Kim, when she was tiny, called dibs on sunsets. She meant the one she was looking at. The planet took her at her word, and since then every evening on Dibs has gone straight from afternoon to dark, except wherever Kim happens to be standing. She has never lent one out. Then her little sister got married, on a hill, in the evening, and Kim lent her the sunset. It was the best sunset anyone there had ever seen, mostly because it was the only one. Kim wants it back washed.",
+  "facts": {
+    "Day": "23 hours",
+    "Moons": "one (claimed)",
+    "Gravity": "1.0 g",
+    "Population": "5.3 million"
+  },
+  "hook": "A planet for every big sister who called dibs.",
+  "tags": [
+    "#worldbuilding",
+    "#sisters",
+    "#dibs"
+  ],
+  "spec": {
+    "palette": "crimson",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.72,
+    "sun_y": 0.48,
+    "sun_size": 0.08,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "nothing",
+    "crowd_x": 0.4,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.8,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Kim called dibs on the sunset.",
+  "episode": {
+    "opener": "Kim called dibs\non sunsets.",
+    "beats": [
+      {
+        "text": "Calling dibs here\nis binding for life.",
+        "shot": "medium"
+      },
+      {
+        "text": "Most claims are small.\nA window seat. The good spoon.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "house": true,
+          "crowd": 4,
+          "crowd_items": "nothing,cup,nothing,cup",
+          "crowd_x": 0.44,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Kim was tiny.\nShe meant that one sunset.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.42,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "The planet took her\nat her word.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        }
+      },
+      {
+        "text": "Now evenings go straight\nfrom afternoon to dark.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "house": true,
+          "crowd": 4,
+          "crowd_items": "nothing,cup,nothing,cup",
+          "crowd_x": 0.44,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Except wherever\nKim is standing.",
+        "shot": "wide"
+      },
+      {
+        "text": "Then her little sister got married.\nKim lent her the sunset.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "house": true,
+          "crowd": 5,
+          "crowd_items": "flower,nothing,flower,nothing,flower",
+          "crowd_x": 0.44,
+          "crowd_facing": "in"
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "sun_x": 0.72,
+            "sun_y": 0.48,
+            "sun_size": 0.08
+          }
+        },
+        "note": "the town camera from beat 2; one thing changed: Kim's sunset, lent for the evening. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "house": true,
+          "crowd": 5,
+          "crowd_items": "flower,nothing,flower,nothing,flower",
+          "crowd_x": 0.44,
+          "crowd_facing": "in",
+          "sun_x": 0.72,
+          "sun_y": 0.48,
+          "sun_size": 0.08
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "She wants it back washed.",
+    "caption": "Kim has the only sunset for miles.\n\nDibs: 5.3 million people, a 23-hour day, one moon (claimed), and a rule every child knows by heart: call dibs and it's yours for life. Most claims are small. A window seat. The last roast potato. The good spoon. Kim, when she was tiny, called dibs on sunsets, and the planet took her at her word. Since then every evening on Dibs has gone straight from afternoon to dark, except wherever Kim happens to be standing. Then her little sister got married, on a hill, in the evening.\n\nI called dibs on a window seat on the ferry. I'm writing this from the ferry.\n\n(The story goes that 'dibs' comes from dibstones, an old children's game played with pebbles or knucklebones. On Dibs, most of the pebbles are spoken for.)\n\nWhat did you call dibs on first?"
+  },
+  "first_comment": "Her sister gave it back the next evening. Washed, ironed, slightly pinker.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every big sister who called dibs.",
+    "title": "Kim called dibs\non sunsets.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.3,
+      1.36
+    ],
+    "focus": [
+      0.5,
+      0.58
+    ],
+    "spec": {
+      "palette": "polar_night",
+      "suns": 0
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "crimson",
+        "suns": 1,
+        "sun_x": 0.72,
+        "sun_y": 0.48,
+        "sun_size": 0.08
+      }
+    },
+    "beats": [
+      {
+        "text": "Nobody else gets one.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "house": true,
+          "crowd": 4,
+          "crowd_items": "nothing,cup,nothing,cup",
+          "crowd_x": 0.44,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "She lent it\nfor her sister's wedding.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "house": true,
+          "crowd": 5,
+          "crowd_items": "flower,nothing,flower,nothing,flower",
+          "crowd_x": 0.44,
+          "crowd_facing": "in"
+        },
+        "onset": {
+          "at": 1.6,
+          "motion": "cut",
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "sun_x": 0.72,
+            "sun_y": 0.48,
+            "sun_size": 0.08
+          }
+        }
+      }
+    ],
+    "end": "She wants it back washed.",
+    "end_zoom": [
+      1.46,
+      1.4
+    ],
+    "end_focus": [
+      0.44,
+      0.6
+    ],
+    "name_y": 0.14,
+    "end_kicker": "For every big sister who called dibs.",
+    "next": {
+      "name": "Victoria",
+      "line": "No cake, no Tuesday."
+    }
+  },
+  "_engine": 5
+}
