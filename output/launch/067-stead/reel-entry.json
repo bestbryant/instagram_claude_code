@@ -1,0 +1,275 @@
+{
+  "id": "067",
+  "name": "Stead",
+  "subtitle": "where every parent gets a moon",
+  "story": "On Stead, every parent gets a moon. It comes up over the house on the day they become one and stays for good, so you can read a family off the sky: two moons, mostly, sometimes one, now and then four. Mia had two. Then her mum married Neil, who arrived with a toolbox, a very old car and no moon at all. He never mentioned it. He did the school run, learned her friends' names and lost at every board game. Then, one teatime, with her mouth full, Mia said, 'Pass the gravy, Dad.' A third moon came up behind the house, closer than the other two. He's still holding the gravy.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "one per parent",
+    "Gravity": "0.8 g",
+    "Population": "1.1 million"
+  },
+  "hook": "A planet for every dad who didn't have to be.",
+  "tags": [
+    "#worldbuilding",
+    "#stepdad",
+    "#stead"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "two_moons",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "child,cup",
+    "crowd_x": 0.44,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.7,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.7
+  },
+  "cover": "Children here get a moon per parent.",
+  "episode": {
+    "opener": "Parents here\nget a moon.",
+    "beats": [
+      {
+        "text": "It comes up over the house\nthe day they become one.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.15,
+            1.2
+          ],
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "text": "Mia had two moons.\nThen her mum married Neil.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.46,
+            0.64
+          ]
+        },
+        "text_y": 0.3
+      },
+      {
+        "text": "Neil came with a toolbox,\na very old car\nand no moon.",
+        "shot": "house"
+      },
+      {
+        "text": "He did the school run.\nHe lost at every board game.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.46,
+            0.64
+          ]
+        },
+        "text_y": 0.3
+      },
+      {
+        "text": "He never mentioned the moon.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.15
+          ],
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "text": "Then Mia, mouth full:\n'Pass the gravy, Dad.'",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        "onset": {
+          "at": 1.6,
+          "motion": "rise",
+          "spec": {
+            "big_moon": true
+          }
+        },
+        "note": "identical camera to frame 1; one thing changed: Neil's moon rises behind the house. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        "spec": {
+          "big_moon": true
+        },
+        "seconds": 2.5
+      }
+    ],
+    "end": "He's still holding the gravy.",
+    "caption": "Mia's up on her mum's shoulders.\n\nStead: 1.1 million people, a 26-hour day, and one moon for every parent. It comes up over the house on the day you become one and never leaves, so you can read a family off the sky: two moons, mostly, sometimes one, now and then four. Mia had two. Then her mum married Neil, who arrived with a toolbox, a very old car and no moon at all. He never mentioned it. He just did the school run.\n\nI admired the moon over the house next door. It was her ex-husband's. They're civil about it.\n\n(On Earth, the Moon looks the same size as the Sun because it's about four hundred times smaller and about four hundred times closer. On Stead, the closest moon always looks the biggest.)\n\nHow many moons would be over your house?"
+  },
+  "first_comment": "Neil kept the gravy boat. It's on the mantelpiece, next to the school photos.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every dad who didn't have to be.",
+    "title": "Parents here\nget a moon.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.1,
+      1.16
+    ],
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "spec": {
+      "gag": "",
+      "crowd": 1,
+      "crowd_items": "child",
+      "crowd_x": 0.4
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "gag": "two_moons",
+        "crowd": 1,
+        "crowd_items": "child",
+        "crowd_x": 0.4
+      }
+    },
+    "beats": [
+      {
+        "text": "Then Mia's mum\nmarried Neil.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.46,
+            0.64
+          ]
+        },
+        "text_y": 0.3,
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,cup",
+          "crowd_x": 0.44
+        }
+      },
+      {
+        "text": "'Pass the gravy, Dad.'",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,cup",
+          "crowd_x": 0.44
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "big_moon": true
+          }
+        }
+      }
+    ],
+    "end": "He's still holding the gravy.",
+    "end_zoom": [
+      1.16,
+      1.1
+    ],
+    "end_focus": [
+      0.5,
+      0.5
+    ],
+    "name_y": 0.05,
+    "end_kicker": "For every dad who didn't have to be.",
+    "next": {
+      "name": "Amber",
+      "line": "Here, the sky's a traffic light."
+    }
+  },
+  "_engine": 5
+}
