@@ -1,0 +1,266 @@
+{
+  "id": "064",
+  "name": "Figment",
+  "subtitle": "where imaginary friends retire",
+  "story": "When a child stops needing them, imaginary friends come to Figment. It's quiet. There are armchairs. Some take up hobbies, but mostly they wait, because every so often one of them gets called back. Barnaby was Freya's, from the age of three until about seven: tall, very polite, never without his red umbrella. He has waited on the same hill ever since. Last week, Freya's daughter turned three. Barnaby was gone by teatime, and back by bedtime.",
+  "facts": {
+    "Day": "28 hours",
+    "Moons": "none",
+    "Gravity": "0.8 g",
+    "Population": "uncounted"
+  },
+  "hook": "A planet for every parent of a three-year-old.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#imaginaryfriends"
+  ],
+  "spec": {
+    "palette": "rose_fog",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.3,
+    "sun_y": 0.55,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "#c8452f",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 6,
+    "crowd_items": "kettle,fish,flower,armchair,book,umbrella",
+    "crowd_x": 0.45,
+    "crowd_facing": "",
+    "daisies": 1,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Imaginary friends retire here.",
+  "episode": {
+    "opener": "Imaginary friends\nretire here.",
+    "beats": [
+      {
+        "text": "When you stop needing them,\nthey come here.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "A lion who was mostly a dog.\nA horse called Steve.\nA girl from behind the sofa.",
+        "shot": "group"
+      },
+      {
+        "text": "There are armchairs.\nIt's very quiet.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.52,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "Barnaby was Freya's\nfrom age three to seven.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.68,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "He's waited ever since.\nMostly politely.",
+        "shot": "crowd"
+      },
+      {
+        "text": "Last week, Freya's daughter\nturned three.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "By teatime, he'd gone.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "cut",
+          "spec": {
+            "crowd": 5,
+            "crowd_items": "kettle,fish,flower,armchair,book",
+            "crowd_x": 0.4
+          }
+        },
+        "note": "identical camera to beats 1 and 6; one thing gone: the red umbrella. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 5,
+          "crowd_items": "kettle,fish,flower,armchair,book",
+          "crowd_x": 0.4
+        },
+        "seconds": 2.6
+      }
+    ],
+    "end": "He was back by bedtime.",
+    "caption": "Look for the red umbrella.\n\nFigment: a 28-hour day, no moons, gentle gravity and a lot of armchairs. When a child stops needing an imaginary friend, the friend comes here: a lion who was mostly a dog, a girl who lived behind the sofa, a horse called Steve. They take up hobbies. Mostly they wait, because now and then one gets called back. Barnaby was Freya's, from the age of three till about seven. Tall, polite, never without his umbrella.\n\nOne of them recognised me. I'd rather not say from where.\n\n(On Earth, a study at the University of Oregon found that about two children in three have had an imaginary friend by the age of seven. On Figment, a few are still waiting to be asked.)\n\nWhere did yours live?"
+  },
+  "first_comment": "He's asked for the top bunk. They're negotiating.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every parent of a three-year-old.",
+    "title": "Imaginary friends\nretire here.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.4,
+      1.46
+    ],
+    "focus": [
+      0.46,
+      0.62
+    ],
+    "spec": {
+      "crowd": 0
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "crowd": 6
+      }
+    },
+    "beats": [
+      {
+        "text": "Barnaby was Freya's\nfrom age three to seven.\nHe's waited ever since.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.66,
+            0.67
+          ]
+        }
+      },
+      {
+        "text": "Last week, Freya's daughter\nturned three.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "seconds": 3.6,
+        "onset": {
+          "at": 1.6,
+          "motion": "cut",
+          "spec": {
+            "crowd": 5,
+            "crowd_items": "kettle,fish,flower,armchair,book",
+            "crowd_x": 0.4
+          }
+        }
+      }
+    ],
+    "end": "He was back by bedtime.",
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.46,
+      0.6
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For every parent of a three-year-old.",
+    "next": {
+      "name": "Luke",
+      "line": "The sky's thermostat is in Priya's hallway."
+    }
+  }
+}
