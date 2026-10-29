@@ -623,39 +623,34 @@
   "entry": "070",
   "kind": "reel",
   "not_before": "2026-11-10T22:00:00Z",
-  "hold": true,
-  "note": "tight cut (batch 6 test): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 9,
   "entry": "068",
   "kind": "reel",
   "not_before": "2026-11-11T14:00:00Z",
-  "hold": true,
-  "note": "tight cut (batch 6 test): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 9,
   "entry": "069",
   "kind": "reel",
   "not_before": "2026-11-12T22:00:00Z",
-  "hold": true,
-  "note": "tight cut (batch 6 test): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 9,
   "entry": "072",
   "kind": "reel",
   "not_before": "2026-11-13T14:00:00Z",
-  "hold": true,
-  "note": "tight cut (batch 6 test): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 9,
   "entry": "076",
   "kind": "reel",
   "not_before": "2026-11-14T22:00:00Z",
-  "hold": true,
-  "note": "tight cut (batch 6 test): held until rendered and checked"
+  "note": "short cut, checked"
  }
 ]

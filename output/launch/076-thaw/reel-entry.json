@@ -1,0 +1,213 @@
+{
+  "id": "076",
+  "name": "Thaw",
+  "subtitle": "the planet where parties start frozen",
+  "story": "On Thaw, every party starts frozen. Guests arrive, take a drink, stand round the edges, and the snow comes in. Nobody can move until somebody breaks the ice. At Kev's thirtieth it was nearly midnight before Meera arrived and told a stranger she loved his shoes. It was spring by the sausage rolls.",
+  "facts": {
+    "Day": "29 hours",
+    "Moons": "two",
+    "Gravity": "1.1 g",
+    "Population": "720,000"
+  },
+  "hook": "A planet for anyone who'd talk to a lamppost.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#parties"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.25,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "snow",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.55,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 6,
+    "crowd_items": "cup,cup,cup,cup,cup,cup",
+    "crowd_x": 0.5,
+    "crowd_facing": "out",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.86,
+    "bright_stars": false,
+    "flake_size": 1.2,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Parties here start frozen.",
+  "episode": {
+    "opener": "Parties here\nstart frozen.",
+    "beats": [
+      {
+        "text": "Guests take a drink\nand stand round the edges.",
+        "shot": "group",
+        "spec": {
+          "palette": "gold_hour",
+          "snow": false,
+          "particles": "none"
+        }
+      },
+      {
+        "text": "Then the snow comes in.",
+        "shot": "wide"
+      },
+      {
+        "text": "Nobody moves until\nsomebody breaks the ice.",
+        "shot": "crowd"
+      },
+      {
+        "text": "At Kev's thirtieth,\nnobody did till midnight.",
+        "shot": "wide",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0
+        }
+      },
+      {
+        "text": "Then Meera arrived.",
+        "shot": "group",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0
+        }
+      },
+      {
+        "text": "'Love your shoes,'\nshe told a stranger.",
+        "shot": "group",
+        "spec": {
+          "palette": "mint_dawn",
+          "snow": false,
+          "particles": "none",
+          "daisies": 90,
+          "crowd_facing": "in",
+          "crowd_items": "sing,cup,sing,cup,hand,cup"
+        },
+        "note": "identical camera to the beat before; the thaw. Turn line"
+      }
+    ],
+    "end": "Spring by the sausage rolls.",
+    "caption": "Blink and you'll miss the warm bit.\n\nThaw: 720,000 people, a 29-hour day, two moons, and a climate that runs entirely on small talk. Every gathering here starts in deep winter: weddings, barbecues, the office do. Hosts lay on blankets and hot drinks, and wait. Everyone has a friend like Meera, who can thaw a room with one question about the dog. She is invited to absolutely everything.\n\nI tried 'Lovely weather.' Six inches, overnight.\n\n(The story goes that 'breaking the ice' first meant clearing a frozen river so the boats could get through. By the 1600s, it meant getting strangers talking.)\n\nWhat's your line for breaking the ice?"
+  },
+  "first_comment": "Kev's next party is in June. Meera has been asked to come early.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for anyone who'd talk to a lamppost.",
+    "title": "Parties here\nstart frozen.",
+    "sub": "",
+    "framing": "group",
+    "zoom": [
+      1.4,
+      1.46
+    ],
+    "focus": [
+      0.5,
+      0.58
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "snow": false,
+      "particles": "none",
+      "crowd_facing": "out",
+      "crowd_items": "cup,cup,cup,cup,cup,cup"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "violet_ice",
+        "snow": true,
+        "particles": "snow"
+      }
+    },
+    "beats": [
+      {
+        "text": "Until somebody\nbreaks the ice.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.85,
+            1.92
+          ],
+          "focus": [
+            0.5,
+            0.63
+          ]
+        }
+      },
+      {
+        "text": "Meera said,\n'Love your shoes.'",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "cut",
+          "spec": {
+            "palette": "mint_dawn",
+            "snow": false,
+            "particles": "none",
+            "daisies": 90,
+            "crowd_facing": "in",
+            "crowd_items": "sing,cup,sing,cup,hand,cup"
+          }
+        }
+      }
+    ],
+    "end": "Spring by the sausage rolls.",
+    "end_zoom": [
+      1.16,
+      1.1
+    ],
+    "end_focus": [
+      0.5,
+      0.58
+    ],
+    "name_y": 0.14,
+    "end_kicker": "For anyone who'd talk to a lamppost.",
+    "next": {
+      "name": "Elsewhere",
+      "line": "You've been to this planet today."
+    }
+  },
+  "_engine": 5
+}

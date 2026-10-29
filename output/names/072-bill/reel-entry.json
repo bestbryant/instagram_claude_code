@@ -1,0 +1,328 @@
+{
+  "id": "072",
+  "name": "Bill",
+  "subtitle": "every Bill's planet",
+  "story": "On Bill, you pay with daylight. A coffee costs a few minutes of afternoon; a round of drinks costs the evening. Careful people have long, golden summers, and the generous live mostly by lamplight. Dan has paid for everyone since school: every round, every taxi, every birthday meal. It's been night at his house for years. He reads by the fridge light and doesn't mind. So his friends paid him back, all of it, at once. The sun came up over his house so hard the neighbours went out for sunglasses. He got the drinks in.",
+  "facts": {
+    "Day": "depends who's buying",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "6.4 million"
+  },
+  "hook": "A planet for the friend who always pays.",
+  "tags": [
+    "#worldbuilding",
+    "#friendship",
+    "#bill"
+  ],
+  "spec": {
+    "palette": "cobalt_noon",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.8,
+    "sun_y": 0.38,
+    "sun_size": 0.07,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 4,
+    "crowd_items": "cup,cup,cup,cup",
+    "crowd_x": 0.42,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.72,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.085,
+    "stage": 0.74
+  },
+  "cover": "Here, you pay with daylight.",
+  "kicker": "Every Bill gets this planet.",
+  "episode": {
+    "opener": "Here, you pay\nwith daylight.",
+    "beats": [
+      {
+        "text": "A coffee costs a few minutes.\nA round costs the evening.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "onset": {
+          "at": 1.8,
+          "motion": "cut",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0
+          }
+        }
+      },
+      {
+        "text": "Dan always pays.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.5,
+            0.63
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.5
+        }
+      },
+      {
+        "text": "Every round, every taxi,\nsince school.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.5,
+            0.63
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.5
+        }
+      },
+      {
+        "text": "It's been night at his\nfor years.",
+        "shot": "house",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.42
+        }
+      },
+      {
+        "text": "He reads by the fridge light.\nHe doesn't mind.",
+        "shot": "house",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.42
+        }
+      },
+      {
+        "text": "So his friends\npaid him back.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.42
+        },
+        "onset": {
+          "at": 1.3,
+          "motion": "cut",
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 1,
+            "sun_x": 0.8,
+            "sun_y": 0.38,
+            "sun_size": 0.07,
+            "crowd": 4,
+            "crowd_items": "cup,cup,cup,cup",
+            "crowd_x": 0.42
+          }
+        },
+        "note": "identical camera to frame 1; the daylight comes back and so do his friends. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "palette": "cobalt_noon",
+          "suns": 1,
+          "sun_x": 0.8,
+          "sun_y": 0.38,
+          "sun_size": 0.07,
+          "crowd": 4,
+          "crowd_items": "cup,cup,cup,cup",
+          "crowd_x": 0.42
+        },
+        "seconds": 2.2
+      }
+    ],
+    "end": "He got the drinks in.",
+    "caption": "The sun's out. Someone's about to pay.\n\nBill: 6.4 million people, a day that depends on who's buying, no moons, and everything paid for with daylight. A coffee costs a few minutes of afternoon. A round of drinks costs the evening. Careful people have long, golden summers; the generous live mostly by lamplight. Dan has paid for everyone since school: every round, every taxi, every birthday meal. It's been night at his house for years. He reads by the fridge light and doesn't mind.\n\nI tipped well at dinner. I had breakfast by torchlight.\n\n(On Earth, England taxed windows from 1696 to 1851, and people bricked theirs up to pay less. The story goes that's where 'daylight robbery' comes from. On Bill, it's just called paying.)\n\nWho in your lot would be living in the dark?"
+  },
+  "first_comment": "It was dark again before the crisps arrived.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for the friend who always pays.",
+    "title": "Here, you pay\nwith daylight.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.3,
+      1.36
+    ],
+    "focus": [
+      0.5,
+      0.58
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "polar_night",
+        "suns": 0
+      }
+    },
+    "beats": [
+      {
+        "text": "Dan always pays.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.5,
+            0.63
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.5
+        }
+      },
+      {
+        "text": "So his friends\npaid him back.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.42
+        },
+        "onset": {
+          "at": 1.6,
+          "motion": "cut",
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 1,
+            "sun_x": 0.8,
+            "sun_y": 0.38,
+            "sun_size": 0.07,
+            "crowd": 4,
+            "crowd_items": "cup,cup,cup,cup",
+            "crowd_x": 0.42
+          }
+        }
+      }
+    ],
+    "end": "He got the drinks in.",
+    "end_onset": {
+      "at": 1.3,
+      "motion": "cut",
+      "spec": {
+        "palette": "polar_night",
+        "suns": 0
+      }
+    },
+    "end_zoom": [
+      1.36,
+      1.3
+    ],
+    "end_focus": [
+      0.5,
+      0.58
+    ],
+    "name_y": 0.14,
+    "end_kicker": "For the friend who always pays.",
+    "next": {
+      "name": "Grace",
+      "line": "Every Grace gets this planet."
+    }
+  },
+  "_engine": 5
+}
