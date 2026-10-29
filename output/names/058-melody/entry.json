@@ -1,0 +1,286 @@
+{
+  "id": "058",
+  "name": "Melody",
+  "subtitle": "every Melody's planet",
+  "story": "On Melody, catchy songs are actually catching. Hum something on the bus and the whole bus goes home humming it. Callum sang one line of a song in the shower one morning. His sister caught it through the bathroom door, the postman caught it from her, and by teatime the whole planet was singing it, in every kitchen and every queue. Callum doesn't know the second line. Neither does anyone else.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "two",
+    "Gravity": "0.9 g",
+    "Population": "3.4 million"
+  },
+  "hook": "A planet for every brother singing in the shower.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#melody"
+  ],
+  "spec": {
+    "palette": "crimson",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": 0.28,
+    "sun_y": 0.45,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "#e9b434",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 6,
+    "crowd_items": "sing,sing,sing,sing,sing,sing",
+    "crowd_x": 0.43,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.82,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Here, catchy songs are actually catching.",
+  "kicker": "Every Melody gets this planet.",
+  "episode": {
+    "opener": "Here, catchy songs\nare actually catching.",
+    "beats": [
+      {
+        "text": "Hum on the bus, and the whole bus\ngoes home humming.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.34,
+            1.4
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "Shops aren't allowed\nto play music.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.34,
+            1.4
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "Callum sang one line of a song\nin the shower one morning.",
+        "shot": "house",
+        "spec": {
+          "crowd": 0
+        }
+      },
+      {
+        "text": "His sister caught it\nthrough the door.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.76,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "echo",
+          "crowd_x": 0.62,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Then the postman,\nand his whole round.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "sing,sing",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "By teatime, everyone.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 10,
+          "crowd_x": 0.0,
+          "crowd_items": "sing",
+          "house": false
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "seconds": 2.4,
+        "spec": {
+          "crowd": 10,
+          "crowd_x": 0.0,
+          "crowd_items": "nothing",
+          "house": false
+        },
+        "note": "identical camera; everyone stops at once"
+      }
+    ],
+    "end": "Callum doesn't know the second line.",
+    "caption": "One person on that hill started it.\n\nMelody: 3.4 million people, a 25-hour day, two moons, and songs that spread like colds. Hum on the bus and the bus goes home humming. Shops aren't allowed to play music. Callum sang one line in the shower one morning, and by teatime the whole planet had it.\n\nI caught it at passport control. I'm still humming it.\n\n(On Earth, a Finnish study found that about nine in ten of the people it surveyed got a song stuck in their head at least once a week, usually just a fragment. On Melody, it's everyone's fragment.)\n\nHave you ever caught a song off a stranger?"
+  },
+  "first_comment": "Callum sings with the tap running now.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every brother singing in the shower.",
+    "title": "Here, catchy songs\nare actually catching.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.34,
+      1.4
+    ],
+    "focus": [
+      0.5,
+      0.62
+    ],
+    "spec": {
+      "crowd_items": "nothing,nothing,nothing,nothing,nothing,sing"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "crowd_items": "sing,sing,sing,sing,sing,sing"
+      }
+    },
+    "beats": [
+      {
+        "text": "Callum sang one line\nin the shower this morning.\nHis sister caught it first.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.76,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "echo",
+          "crowd_x": 0.62,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Now the whole planet\nis singing it.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 10,
+          "crowd_x": 0.0,
+          "crowd_items": "sing",
+          "house": false
+        }
+      }
+    ],
+    "end": "Callum doesn't know the second line.",
+    "end_onset": {
+      "at": 1.3,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "nothing"
+      }
+    },
+    "end_zoom": [
+      1.06,
+      1.02
+    ],
+    "end_focus": [
+      0.5,
+      0.58
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For every brother singing in the shower.",
+    "next": {
+      "name": "Figment",
+      "line": "Imaginary friends retire here."
+    }
+  }
+}

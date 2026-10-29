@@ -1,0 +1,279 @@
+{
+  "id": "059",
+  "name": "Thicket",
+  "subtitle": "where saying 'later' plants a tree",
+  "story": "On Thicket, saying 'later' plants a tree. Most gardens have a couple. Phil has been going to fix the gate since the kids were little, and the house now stands in a small wood. Then his wife asked about the gate again. 'Later,' he said. The house hasn't been seen since, though the kitchen light is still on in there somewhere. He'll clear the wood. Later.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "one",
+    "Gravity": "1.0 g",
+    "Population": "2.7 million"
+  },
+  "hook": "A planet for every husband who'll get round to it.",
+  "tags": [
+    "#worldbuilding",
+    "#husbands",
+    "#diy"
+  ],
+  "spec": {
+    "palette": "rust_desert",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.28,
+    "sun_y": 0.5,
+    "sun_size": 0.06,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "pines",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "TO DO:|FIX GATE",
+    "crowd": 1,
+    "crowd_items": "nothing",
+    "crowd_x": 0.44,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.62,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Saying 'later' plants a tree here.",
+  "episode": {
+    "opener": "Saying 'later'\nplants a tree here.",
+    "beats": [
+      {
+        "text": "Most gardens here have a couple.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "Students live in hedges.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "Phil's been going to fix the gate\nsince the kids were little.",
+        "shot": "sign"
+      },
+      {
+        "text": "The house stands\nin a small wood.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "His wife asked about the gate again.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "'Later,' he said.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "trees": "giant"
+        },
+        "note": "identical camera; one thing changed: the wood"
+      },
+      {
+        "text": "You can still see the kitchen light,\nsomewhere in there.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "trees": "giant"
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "seconds": 2.6,
+        "spec": {
+          "trees": "giant",
+          "sign": "TO DO:|FIX GATE|FIND HOUSE"
+        },
+        "note": "the button: the list grows"
+      }
+    ],
+    "end": "He'll clear the wood. Later.",
+    "caption": "Phil's to-do list is one job long.\n\nThicket: 2.7 million people, a 24-hour day, one moon, and a tree for every 'I'll do it later'. Most gardens have a couple. Students live in hedges. Phil has been going to fix the gate since the kids were little, and last week, when his wife asked again, he said the word.\n\n(On Earth, some bamboo grows almost a metre in a day. That's still slower than Phil's list.)\n\nWhich job has your house been putting off longest?"
+  },
+  "first_comment": "The postman leaves parcels at the edge of the wood now.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every husband who'll get round to it.",
+    "title": "Saying 'later'\nplants a tree here.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.2,
+      1.26
+    ],
+    "focus": [
+      0.5,
+      0.6
+    ],
+    "spec": {
+      "trees": "none"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "trees": "pines"
+      }
+    },
+    "beats": [
+      {
+        "text": "Phil's been going to fix the gate\nsince the kids were little.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.52,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "His wife asked again.\n'Later,' he said.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 1.5,
+          "motion": "cut",
+          "spec": {
+            "trees": "giant"
+          }
+        },
+        "seconds": 3.2
+      }
+    ],
+    "end": "He'll clear the wood. Later.",
+    "end_onset": {
+      "at": 1.4,
+      "motion": "cut",
+      "spec": {
+        "sign": "TO DO:|FIX GATE|FIND HOUSE"
+      }
+    },
+    "end_zoom": [
+      1.26,
+      1.2
+    ],
+    "end_focus": [
+      0.5,
+      0.6
+    ],
+    "name_y": 0.17,
+    "end_kicker": "For every husband who'll get round to it.",
+    "next": {
+      "name": "Melody",
+      "line": "Here, catchy songs are actually catching."
+    }
+  },
+  "_engine": 5
+}

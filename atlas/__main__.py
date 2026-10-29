@@ -619,18 +619,19 @@ def cmd_stats(a):
               f"likes {vals.get('likes', '-'):>3}  shares {vals.get('shares', '-'):>3}  saves {vals.get('saved', '-'):>3}  "
               f"watch {vals.get('ig_reels_avg_watch_time', '-')}  skip {vals.get('reels_skip_rate', '-')}")
     acct = p._call("GET", p.user_id, fields="followers_count,media_count")
-    # the account funnel over the last 24 h: strangers reached -> profile visits -> follows (follower count)
+    # the account funnel over the last 7 days: strangers reached -> profile visits -> follows (follower count). Instagram
+    # counts account insights by its own (Pacific) day, so a 24 h window just after its midnight reads 0
     funnel = {}
     for m in ("reach", "profile_views", "accounts_engaged"):
         try:
             d = p._call("GET", f"{p.user_id}/insights", metric=m, period="day", metric_type="total_value",
-                        since=int(now.timestamp()) - 86400, until=int(now.timestamp())).get("data") or []
+                        since=int(now.timestamp()) - 7 * 86400, until=int(now.timestamp())).get("data") or []
             if d:
-                funnel[f"{m}_24h"] = (d[0].get("total_value") or {}).get("value")
+                funnel[f"{m}_7d"] = (d[0].get("total_value") or {}).get("value")
         except GraphError:
             pass
     print(f"followers {acct.get('followers_count')}  posts {acct.get('media_count')}  "
-          f"last 24 h: reach {funnel.get('reach_24h', '-')}  profile visits {funnel.get('profile_views_24h', '-')}")
+          f"last 7 days: reach {funnel.get('reach_7d', '-')}  profile visits {funnel.get('profile_views_7d', '-')}")
     with (ROOT / "content" / "stats_history.jsonl").open("a") as f:      # reach over time, for the posting-rate experiment
         for h in history:
             f.write(json.dumps(h) + "\n")

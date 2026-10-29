@@ -497,16 +497,14 @@
   "entry": "059",
   "kind": "reel",
   "not_before": "2026-11-16T22:00:00Z",
-  "hold": true,
-  "note": "short cut (batch 5): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "058",
   "kind": "reel",
   "not_before": "2026-11-17T14:00:00Z",
-  "hold": true,
-  "note": "short cut (batch 5): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 8,
