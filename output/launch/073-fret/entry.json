@@ -1,0 +1,194 @@
+{
+  "id": "073",
+  "name": "Fret",
+  "subtitle": "the worried sky",
+  "story": "On Fret, a worry doesn't stay in your head. It rises off the roof and hangs over the house, as big as you've made it, where the neighbours can see. Most people have a moon or two. Anna has a gas giant, and hardly any of it is hers: her sister's job interview, the neighbour's hip, a friend's first date. Then that friend told her not to worry. Now it's got rings.",
+  "facts": {
+    "Day": "27 hours",
+    "Moons": "depends on the week",
+    "Gravity": "0.9 g",
+    "Population": "1.7 million"
+  },
+  "hook": "A planet for the family worrier.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#overthinking"
+  ],
+  "spec": {
+    "palette": "teal_night",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": true,
+    "ring": false,
+    "giant_size": 0.2,
+    "giant_x": 0.6,
+    "giant_y": 0.47,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 0.6,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "nothing",
+    "crowd_x": 0.42,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.8,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Worries here hang in the sky.",
+  "episode": {
+    "opener": "Worries here\nhang in the sky.",
+    "beats": [
+      {
+        "text": "They rise off the roof,\nas big as you've made them.",
+        "shot": "wide",
+        "spec": {
+          "giant": false,
+          "moons": 2
+        }
+      },
+      {
+        "text": "Most people have\na moon or two.",
+        "shot": "sky",
+        "spec": {
+          "giant": false,
+          "moons": 2
+        }
+      },
+      {
+        "text": "Anna has a planet.",
+        "shot": "wide"
+      },
+      {
+        "text": "Hardly any of it is hers.",
+        "shot": "group"
+      },
+      {
+        "text": "Her sister's job interview.\nThe neighbour's hip.\nA friend's first date.",
+        "shot": "sky"
+      },
+      {
+        "text": "Then a friend said,\n'Don't worry.'",
+        "shot": "group",
+        "spec": {
+          "giant_size": 0.27,
+          "ring": true
+        },
+        "note": "identical camera to the beat before; the giant grows and gets rings. Turn line"
+      }
+    ],
+    "end": "Now it's got rings.",
+    "caption": "That clear sky is about to fill up.\n\nFret: 1.7 million people, a 27-hour day, and moons that depend on the week. A worry here leaves your head and hangs over your house at whatever size you've made it. A lost key makes a pebble. A hospital letter makes something you could land on. Anna's sky has been full for years, and very little of it is hers, and her friends keep telling her not to.\n\nI worried I'd packed the wrong maps. It followed me round for a week, about the size of a satsuma.\n\n(On Earth, Jupiter is about eleven Earths wide, and as far as anyone knows, it isn't worried about anything.)\n\nHow big is yours this week?"
+  },
+  "first_comment": "Anna's sky is clear for the first time in years. She finds it a bit worrying.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for the family worrier.",
+    "title": "Worries here\nhang in the sky.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.1,
+      1.16
+    ],
+    "focus": [
+      0.5,
+      0.55
+    ],
+    "spec": {
+      "giant": false
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "giant": true
+      }
+    },
+    "beats": [
+      {
+        "text": "Anna does everyone's\nworrying.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.52,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "Then a friend said,\n'Don't worry.'",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.52,
+            0.6
+          ]
+        },
+        "seconds": 2.4,
+        "onset": {
+          "at": 0.5,
+          "motion": "cut",
+          "spec": {
+            "giant_size": 0.27,
+            "ring": true
+          }
+        }
+      }
+    ],
+    "end": "Now it's got rings.",
+    "end_zoom": [
+      1.2,
+      1.12
+    ],
+    "end_focus": [
+      0.5,
+      0.55
+    ],
+    "name_y": 0.12,
+    "end_kicker": "For the family worrier.",
+    "next": {
+      "name": "Isla",
+      "line": "Falling out makes islands."
+    }
+  }
+}

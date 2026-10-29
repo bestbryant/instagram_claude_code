@@ -1,0 +1,218 @@
+{
+  "id": "075",
+  "name": "Bob",
+  "subtitle": "every Bob's planet",
+  "story": "On Bob, every street has a neighbour who can fix anything: the tap, the boiler, the bike, the wobbly table in the café. So the day the sun broke, everyone rang Bob next door. He put his coat on, said 'Right,' and went to have a look. It was working again before his tea went cold, slightly to the left. There's one left over. He says it was like that when he got there.",
+  "facts": {
+    "Day": "24 hours, roughly",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "910,000"
+  },
+  "hook": "A planet for the neighbour who'll have a look.",
+  "tags": [
+    "#illustration",
+    "#neighbours",
+    "#bob"
+  ],
+  "spec": {
+    "palette": "polar_night",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": 0.62,
+    "sun_y": 0.52,
+    "sun_size": 0.07,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 0.4,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "nothing",
+    "crowd_x": 0.45,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.72,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Bob next door can fix anything.",
+  "kicker": "Every Bob gets this planet.",
+  "episode": {
+    "opener": "Bob next door\ncan fix anything.",
+    "beats": [
+      {
+        "text": "Taps. Bikes.\nThe boiler, twice.",
+        "shot": "house",
+        "spec": {
+          "palette": "rust_desert",
+          "suns": 1,
+          "stars": 0.0
+        }
+      },
+      {
+        "text": "Then the sun broke.",
+        "shot": "sky"
+      },
+      {
+        "text": "Everyone rang Bob.",
+        "shot": "group"
+      },
+      {
+        "text": "He put his coat on\nand had a look.",
+        "shot": "medium",
+        "spec": {
+          "crowd_items": "hand"
+        }
+      },
+      {
+        "text": "It was working\nbefore his tea went cold.",
+        "shot": "wide",
+        "spec": {
+          "palette": "rust_desert",
+          "suns": 1,
+          "stars": 0.0,
+          "crowd_items": "hand"
+        },
+        "note": "identical camera to frame 1; the sun is working again. Turn line"
+      },
+      {
+        "text": "",
+        "shot": "wide",
+        "spec": {
+          "palette": "rust_desert",
+          "suns": 2,
+          "stars": 0.0,
+          "crowd_items": "nothing"
+        },
+        "seconds": 2.5,
+        "note": "the same wide: two suns"
+      }
+    ],
+    "end": "There's one left over.",
+    "caption": "Bob hasn't had a look at the sun yet.\n\nBob: 910,000 people, a 24-hour day, and suns, plural, since Bob had a look. Every street here has one neighbour who can fix things, and everyone rings him. When the sun broke, Bob put his coat on, said 'Right,' and went up with a torch. Nobody saw what he did. It was working again before his tea went cold. It hums a bit now.\n\nI asked whether he'd read the instructions. He laughed for quite a long time.\n\n(On Earth, the Sun is about 109 Earths across, which is a lot of sun for one man and a torch.)\n\nWhat did your neighbour fix that was never quite the same again?"
+  },
+  "first_comment": "The spare sun is in his shed now, with the other bits.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for the neighbour who'll have a look.",
+    "title": "Bob next door\ncan fix anything.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.2,
+      1.26
+    ],
+    "focus": [
+      0.52,
+      0.55
+    ],
+    "spec": {
+      "palette": "rust_desert",
+      "suns": 1,
+      "stars": 0.0
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "polar_night",
+        "suns": 0,
+        "stars": 0.4
+      }
+    },
+    "beats": [
+      {
+        "text": "When the sun broke,\neveryone rang him.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.55,
+            0.64
+          ]
+        }
+      },
+      {
+        "text": "He had a look.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.52,
+            0.55
+          ]
+        },
+        "seconds": 1.9,
+        "onset": {
+          "at": 0.55,
+          "motion": "cut",
+          "spec": {
+            "palette": "rust_desert",
+            "suns": 1,
+            "stars": 0.0,
+            "crowd_items": "hand"
+          }
+        }
+      }
+    ],
+    "end": "There's one left over.",
+    "end_onset": {
+      "at": 0.9,
+      "motion": "cut",
+      "spec": {
+        "suns": 2
+      }
+    },
+    "end_zoom": [
+      1.22,
+      1.16
+    ],
+    "end_focus": [
+      0.52,
+      0.55
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For the neighbour who'll have a look.",
+    "next": {
+      "name": "Lode",
+      "line": "Your blood points home."
+    }
+  }
+}

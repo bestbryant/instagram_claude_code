@@ -1,0 +1,238 @@
+{
+  "id": "078",
+  "name": "Kip",
+  "subtitle": "the planet of the lullabies",
+  "story": "On Kip, a lullaby works on everyone in earshot. Midwives wear earplugs, and nobody hums at the wheel. New parents pick a song, keep it low and shut the windows. Ben only knows one, and sings it to his daughter every night; his street hasn't slept so well in years. At her christening, he hummed it without thinking. The congregation went down like skittles. The baby's wide awake.",
+  "facts": {
+    "Day": "31 hours",
+    "Moons": "one",
+    "Gravity": "0.9 g",
+    "Population": "1.5 million"
+  },
+  "hook": "A planet for every new dad who knows one song.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#newdad"
+  ],
+  "spec": {
+    "palette": "rose_fog",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.7,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.55,
+    "gag": "",
+    "cartographer": false,
+    "spot": "#e9b434",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "sing,nap,nap,nap,nap",
+    "crowd_x": 0.46,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.86,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Lullabies here work on everyone.",
+  "episode": {
+    "opener": "Lullabies here\nwork on everyone.",
+    "beats": [
+      {
+        "text": "Midwives wear earplugs.",
+        "shot": "group"
+      },
+      {
+        "text": "New parents sing quietly,\nwith the windows shut.",
+        "shot": "house",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "stars": 1.0,
+          "crowd": 0
+        }
+      },
+      {
+        "text": "Ben only knows one.",
+        "shot": "medium",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "stars": 1.0,
+          "crowd": 1,
+          "crowd_items": "sing",
+          "crowd_x": 0.5,
+          "crowd_facing": "right",
+          "house_x": 0.66
+        }
+      },
+      {
+        "text": "He sings it to his daughter\nevery night.",
+        "shot": "house",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "stars": 1.0,
+          "crowd": 1,
+          "crowd_items": "sing",
+          "crowd_x": 0.5,
+          "crowd_facing": "right",
+          "house_x": 0.66
+        }
+      },
+      {
+        "text": "His street has never\nslept so well.",
+        "shot": "wide",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "stars": 1.0,
+          "crowd": 0
+        }
+      },
+      {
+        "text": "At her christening,\nhe hummed it.",
+        "shot": "group",
+        "spec": {
+          "crowd": 6,
+          "crowd_items": "nap,nap,child,nap,nap,nap",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.085,
+          "daisies": 30
+        },
+        "note": "the christening crowd goes down at once; only Ben and the baby are up. Turn line"
+      }
+    ],
+    "end": "The baby's wide awake.",
+    "caption": "Nobody's asleep yet. Give it a second.\n\nKip: 1.5 million people, a 31-hour day, one moon, and lullabies that work on anyone who can hear them. Midwives wear earplugs. Nobody hums at the wheel. New parents pick one song and keep it low, because the neighbours have work in the morning. Ben knows exactly one. He sings it to his daughter every night, and his whole street has never looked better.\n\nI hummed something in a hotel lift. We all woke up in the basement.\n\n(On Earth, Harvard researchers found that babies relax to lullabies even in languages they've never heard. Nobody tested the parents.)\n\nWhich song got you to sleep?"
+  },
+  "first_comment": "The vicar woke up at the harvest festival. He's asked for earplugs.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every new dad who knows one song.",
+    "title": "Lullabies here\nwork on everyone.",
+    "sub": "",
+    "framing": "group",
+    "zoom": [
+      1.5,
+      1.56
+    ],
+    "focus": [
+      0.48,
+      0.6
+    ],
+    "spec": {
+      "crowd_items": "nothing,nothing,nothing,nothing,nothing"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "sing,nap,nap,nap,nap"
+      }
+    },
+    "beats": [
+      {
+        "text": "Ben sings one\nto his daughter.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.55,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "stars": 1.0,
+          "crowd": 1,
+          "crowd_items": "sing",
+          "crowd_x": 0.5,
+          "crowd_facing": "right",
+          "house_x": 0.66
+        }
+      },
+      {
+        "text": "At her christening,\nhe hummed it.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.35,
+            1.4
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "seconds": 2.4,
+        "spec": {
+          "crowd": 6,
+          "crowd_items": "flower,nothing,child,nothing,flower,nothing",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.085,
+          "crowd_facing": "in",
+          "daisies": 30
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "nap,nap,child,nap,nap,nap"
+          }
+        }
+      }
+    ],
+    "end": "The baby's wide awake.",
+    "end_zoom": [
+      1.2,
+      1.14
+    ],
+    "end_focus": [
+      0.5,
+      0.6
+    ],
+    "name_y": 0.14,
+    "end_kicker": "For every new dad who knows one song.",
+    "next": {
+      "name": "Bob",
+      "line": "Bob next door can fix anything."
+    }
+  }
+}

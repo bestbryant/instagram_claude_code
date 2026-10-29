@@ -574,24 +574,21 @@
   "entry": "074",
   "kind": "reel",
   "not_before": "2026-11-03T14:00:00Z",
-  "hold": true,
-  "note": "tight cut (batch 6 test): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 9,
   "entry": "078",
   "kind": "reel",
   "not_before": "2026-11-04T22:00:00Z",
-  "hold": true,
-  "note": "tight cut (batch 6 test): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 9,
   "entry": "075",
   "kind": "reel",
   "not_before": "2026-11-05T14:00:00Z",
-  "hold": true,
-  "note": "tight cut (batch 6 test): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 9,

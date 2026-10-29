@@ -1,0 +1,231 @@
+{
+  "id": "074",
+  "name": "Mary",
+  "subtitle": "every Mary's planet",
+  "story": "Every group of friends on Mary has someone whose bag has everything in it: plasters, mints, a sewing kit, a standard lamp. Mary is that someone. When her friend Beth planned a moonlit picnic, the moon didn't show. Everyone looked at Mary. Mary had a spare. Beth cried. Mary had tissues.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "one, and a spare",
+    "Gravity": "1.0 g",
+    "Population": "3.7 million"
+  },
+  "hook": "A planet for the one who always has plasters.",
+  "tags": [
+    "#illustration",
+    "#bestfriends",
+    "#mary"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 0.9,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "nothing",
+    "crowd_x": 0.4,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": true,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.82,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Mary's bag even has a lamp.",
+  "kicker": "Every Mary gets this planet.",
+  "episode": {
+    "opener": "Mary's bag\neven has a lamp.",
+    "beats": [
+      {
+        "text": "Plasters. Mints.\nA sewing kit.",
+        "shot": "close",
+        "spec": {
+          "lamp": false
+        }
+      },
+      {
+        "text": "A standard lamp,\nfor emergencies.",
+        "shot": "medium"
+      },
+      {
+        "text": "Beth planned\na moonlit picnic.",
+        "shot": "wide",
+        "spec": {
+          "lamp": false,
+          "crowd": 5,
+          "crowd_items": "sit,sit,nothing,sit,sit",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.085,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "The moon didn't show.",
+        "shot": "sky",
+        "spec": {
+          "lamp": false
+        }
+      },
+      {
+        "text": "Everyone looked at Mary.",
+        "shot": "group",
+        "spec": {
+          "lamp": false,
+          "crowd": 5,
+          "crowd_items": "sit,sit,nothing,sit,sit",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.085,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "Mary had a spare.",
+        "shot": "wide",
+        "spec": {
+          "lamp": false,
+          "big_moon": true,
+          "crowd": 5,
+          "crowd_items": "sit,sit,hand,sit,sit",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.085,
+          "crowd_facing": "in"
+        },
+        "note": "identical camera to the picnic wide; the moon rises. Turn line"
+      }
+    ],
+    "end": "Beth cried. Mary had tissues.",
+    "caption": "Mary packed light today.\n\nMary: 3.7 million people, a 25-hour day, one moon and a spare. Every group of friends here has a Mary. Her bag has plasters, tissues, a sewing kit, a charger for every phone ever made and, on the night of Beth's picnic, a moon. Nobody asks how. The bag has never been weighed, and she'd rather you didn't.\n\nI asked her for a pen. She asked what colour.\n\n(On Earth, the Moon is about 3,474 kilometres across. Mary says it folds.)\n\nWhat's the strangest thing anyone's ever found in their bag for you?"
+  },
+  "first_comment": "Mary got her moon back. It had a plaster on it.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for the one who always has plasters.",
+    "title": "Mary's bag\neven has a lamp.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.12,
+      1.18
+    ],
+    "focus": [
+      0.46,
+      0.56
+    ],
+    "spec": {
+      "lamp": false
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "lamp": true
+      }
+    },
+    "beats": [
+      {
+        "text": "Beth's moonlit picnic.\nNo moon.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.15
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "lamp": false,
+          "crowd": 5,
+          "crowd_items": "sit,sit,nothing,sit,sit",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.085,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "Mary had a spare.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.15
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "seconds": 2.0,
+        "spec": {
+          "lamp": false,
+          "crowd": 5,
+          "crowd_items": "sit,sit,nothing,sit,sit",
+          "crowd_x": 0.46,
+          "crowd_gap": 0.085,
+          "crowd_facing": "in"
+        },
+        "onset": {
+          "at": 0.35,
+          "motion": "rise",
+          "spec": {
+            "big_moon": true,
+            "crowd_items": "sit,sit,hand,sit,sit"
+          }
+        }
+      }
+    ],
+    "end": "Beth cried. Mary had tissues.",
+    "end_zoom": [
+      1.16,
+      1.1
+    ],
+    "end_focus": [
+      0.5,
+      0.56
+    ],
+    "name_y": 0.14,
+    "end_kicker": "For the one who always has plasters.",
+    "next": {
+      "name": "Olive",
+      "line": "The sun won't go down on an argument."
+    }
+  },
+  "_engine": 5
+}
