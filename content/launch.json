@@ -566,8 +566,8 @@
       "name_y": 0.14,
       "end_kicker": "For people who pack the night before.",
       "next": {
-        "name": "Olive",
-        "line": "The sun won't go down on an argument."
+        "name": "Mary",
+        "line": "Mary's bag even has a lamp."
       },
       "kicker": "A planet for people who pack the night before."
     }
@@ -2439,8 +2439,8 @@
       ],
       "end_kicker": "For people who never come downstairs.",
       "next": {
-        "name": "Luma",
-        "line": "The moon here writes back."
+        "name": "Dibs",
+        "line": "Kim called dibs on sunsets."
       },
       "kicker": "A planet for people who never come downstairs."
     }
@@ -2984,8 +2984,8 @@
       "name_y": 0.1,
       "end_kicker": "For the friend who remembers every birthday.",
       "next": {
-        "name": "Lode",
-        "line": "Your blood points home."
+        "name": "Kip",
+        "line": "Lullabies here work on everyone."
       },
       "kicker": "A planet for the friend who remembers every birthday."
     }
@@ -5477,8 +5477,8 @@
       "name_y": 0.07,
       "end_kicker": "For anyone who stopped being the baby of the family.",
       "next": {
-        "name": "Elsewhere",
-        "line": "You've been to this planet today."
+        "name": "Thaw",
+        "line": "Parties here start frozen."
       },
       "kicker": "A planet for people who stopped being the baby of the family."
     }
@@ -9054,6 +9054,1538 @@
       ],
       "name_y": 0.1,
       "end_kicker": "For whoever did all the voices."
+    }
+  },
+  {
+    "id": "078",
+    "name": "Kip",
+    "subtitle": "the planet of the lullabies",
+    "story": "On Kip, a lullaby works on everyone in earshot. Midwives wear earplugs, and nobody hums at the wheel. New parents pick a song, keep it low and shut the windows. Ben only knows one, and sings it to his daughter every night; his street hasn't slept so well in years. At her christening, he hummed it without thinking. The congregation went down like skittles. The baby's wide awake.",
+    "facts": {
+      "Day": "31 hours",
+      "Moons": "one",
+      "Gravity": "0.9 g",
+      "Population": "1.5 million"
+    },
+    "hook": "A planet for every new dad who knows one song.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#newdad"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.7,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.55,
+      "gag": "",
+      "cartographer": false,
+      "spot": "#e9b434",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 5,
+      "crowd_items": "sing,nap,nap,nap,nap",
+      "crowd_x": 0.46,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.86,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "Lullabies here work on everyone.",
+    "episode": {
+      "opener": "Lullabies here\nwork on everyone.",
+      "beats": [
+        {
+          "text": "Midwives wear earplugs.",
+          "shot": "group"
+        },
+        {
+          "text": "New parents sing quietly,\nwith the windows shut.",
+          "shot": "house",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "stars": 1.0,
+            "crowd": 0
+          }
+        },
+        {
+          "text": "Ben only knows one.",
+          "shot": "medium",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "stars": 1.0,
+            "crowd": 1,
+            "crowd_items": "sing",
+            "crowd_x": 0.5,
+            "crowd_facing": "right",
+            "house_x": 0.66
+          }
+        },
+        {
+          "text": "He sings it to his daughter\nevery night.",
+          "shot": "house",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "stars": 1.0,
+            "crowd": 1,
+            "crowd_items": "sing",
+            "crowd_x": 0.5,
+            "crowd_facing": "right",
+            "house_x": 0.66
+          }
+        },
+        {
+          "text": "His street has never\nslept so well.",
+          "shot": "wide",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "stars": 1.0,
+            "crowd": 0
+          }
+        },
+        {
+          "text": "At her christening,\nhe hummed it.",
+          "shot": "group",
+          "spec": {
+            "crowd": 6,
+            "crowd_items": "nap,nap,child,nap,nap,nap",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.085,
+            "daisies": 30
+          },
+          "note": "the christening crowd goes down at once; only Ben and the baby are up. Turn line"
+        }
+      ],
+      "end": "The baby's wide awake.",
+      "caption": "Nobody's asleep yet. Give it a second.\n\nKip: 1.5 million people, a 31-hour day, one moon, and lullabies that work on anyone who can hear them. Midwives wear earplugs. Nobody hums at the wheel. New parents pick one song and keep it low, because the neighbours have work in the morning. Ben knows exactly one. He sings it to his daughter every night, and his whole street has never looked better.\n\nI hummed something in a hotel lift. We all woke up in the basement.\n\n(On Earth, Harvard researchers found that babies relax to lullabies even in languages they've never heard. Nobody tested the parents.)\n\nWhich song got you to sleep?"
+    },
+    "first_comment": "The vicar woke up at the harvest festival. He's asked for earplugs.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every new dad who knows one song.",
+      "title": "Lullabies here\nwork on everyone.",
+      "sub": "",
+      "framing": "group",
+      "zoom": [
+        1.5,
+        1.56
+      ],
+      "focus": [
+        0.48,
+        0.6
+      ],
+      "spec": {
+        "crowd_items": "nothing,nothing,nothing,nothing,nothing"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "sing,nap,nap,nap,nap"
+        }
+      },
+      "beats": [
+        {
+          "text": "Ben sings one\nto his daughter.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.55,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "stars": 1.0,
+            "crowd": 1,
+            "crowd_items": "sing",
+            "crowd_x": 0.5,
+            "crowd_facing": "right",
+            "house_x": 0.66
+          }
+        },
+        {
+          "text": "At her christening,\nhe hummed it.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.35,
+              1.4
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "seconds": 2.4,
+          "spec": {
+            "crowd": 6,
+            "crowd_items": "flower,nothing,child,nothing,flower,nothing",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.085,
+            "crowd_facing": "in",
+            "daisies": 30
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "nap,nap,child,nap,nap,nap"
+            }
+          }
+        }
+      ],
+      "end": "The baby's wide awake.",
+      "end_zoom": [
+        1.2,
+        1.14
+      ],
+      "end_focus": [
+        0.5,
+        0.6
+      ],
+      "name_y": 0.14,
+      "end_kicker": "For every new dad who knows one song.",
+      "next": {
+        "name": "Bob",
+        "line": "Bob next door can fix anything."
+      }
+    }
+  },
+  {
+    "id": "073",
+    "name": "Fret",
+    "subtitle": "the worried sky",
+    "story": "On Fret, a worry doesn't stay in your head. It rises off the roof and hangs over the house, as big as you've made it, where the neighbours can see. Most people have a moon or two. Anna has a gas giant, and hardly any of it is hers: her sister's job interview, the neighbour's hip, a friend's first date. Then that friend told her not to worry. Now it's got rings.",
+    "facts": {
+      "Day": "27 hours",
+      "Moons": "depends on the week",
+      "Gravity": "0.9 g",
+      "Population": "1.7 million"
+    },
+    "hook": "A planet for the family worrier.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#overthinking"
+    ],
+    "spec": {
+      "palette": "teal_night",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": true,
+      "ring": false,
+      "giant_size": 0.2,
+      "giant_x": 0.6,
+      "giant_y": 0.47,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 0.6,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.42,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.8,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Worries here hang in the sky.",
+    "episode": {
+      "opener": "Worries here\nhang in the sky.",
+      "beats": [
+        {
+          "text": "They rise off the roof,\nas big as you've made them.",
+          "shot": "wide",
+          "spec": {
+            "giant": false,
+            "moons": 2
+          }
+        },
+        {
+          "text": "Most people have\na moon or two.",
+          "shot": "sky",
+          "spec": {
+            "giant": false,
+            "moons": 2
+          }
+        },
+        {
+          "text": "Anna has a planet.",
+          "shot": "wide"
+        },
+        {
+          "text": "Hardly any of it is hers.",
+          "shot": "group"
+        },
+        {
+          "text": "Her sister's job interview.\nThe neighbour's hip.\nA friend's first date.",
+          "shot": "sky"
+        },
+        {
+          "text": "Then a friend said,\n'Don't worry.'",
+          "shot": "group",
+          "spec": {
+            "giant_size": 0.27,
+            "ring": true
+          },
+          "note": "identical camera to the beat before; the giant grows and gets rings. Turn line"
+        }
+      ],
+      "end": "Now it's got rings.",
+      "caption": "That clear sky is about to fill up.\n\nFret: 1.7 million people, a 27-hour day, and moons that depend on the week. A worry here leaves your head and hangs over your house at whatever size you've made it. A lost key makes a pebble. A hospital letter makes something you could land on. Anna's sky has been full for years, and very little of it is hers, and her friends keep telling her not to.\n\nI worried I'd packed the wrong maps. It followed me round for a week, about the size of a satsuma.\n\n(On Earth, Jupiter is about eleven Earths wide, and as far as anyone knows, it isn't worried about anything.)\n\nHow big is yours this week?"
+    },
+    "first_comment": "Anna's sky is clear for the first time in years. She finds it a bit worrying.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for the family worrier.",
+      "title": "Worries here\nhang in the sky.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.1,
+        1.16
+      ],
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "spec": {
+        "giant": false
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "giant": true
+        }
+      },
+      "beats": [
+        {
+          "text": "Anna does everyone's\nworrying.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.52,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "Then a friend said,\n'Don't worry.'",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.52,
+              0.6
+            ]
+          },
+          "seconds": 2.4,
+          "onset": {
+            "at": 0.5,
+            "motion": "cut",
+            "spec": {
+              "giant_size": 0.27,
+              "ring": true
+            }
+          }
+        }
+      ],
+      "end": "Now it's got rings.",
+      "end_zoom": [
+        1.2,
+        1.12
+      ],
+      "end_focus": [
+        0.5,
+        0.55
+      ],
+      "name_y": 0.12,
+      "end_kicker": "For the family worrier.",
+      "next": {
+        "name": "Isla",
+        "line": "Falling out makes islands."
+      }
+    }
+  },
+  {
+    "id": "067",
+    "name": "Stead",
+    "subtitle": "where every parent gets a moon",
+    "story": "On Stead, every parent gets a moon. It comes up over the house on the day they become one and stays for good, so you can read a family off the sky: two moons, mostly, sometimes one, now and then four. Mia had two. Then her mum married Neil, who arrived with a toolbox, a very old car and no moon at all. He never mentioned it. He did the school run, learned her friends' names and lost at every board game. Then, one teatime, with her mouth full, Mia said, 'Pass the gravy, Dad.' A third moon came up behind the house, closer than the other two. He's still holding the gravy.",
+    "facts": {
+      "Day": "26 hours",
+      "Moons": "one per parent",
+      "Gravity": "0.8 g",
+      "Population": "1.1 million"
+    },
+    "hook": "A planet for every dad who didn't have to be.",
+    "tags": [
+      "#worldbuilding",
+      "#stepdad",
+      "#stead"
+    ],
+    "spec": {
+      "palette": "violet_ice",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "two_moons",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "child,cup",
+      "crowd_x": 0.44,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.7,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.7
+    },
+    "cover": "Children here get a moon per parent.",
+    "episode": {
+      "opener": "Parents here\nget a moon.",
+      "beats": [
+        {
+          "text": "It comes up over the house\nthe day they become one.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.15,
+              1.2
+            ],
+            "focus": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        {
+          "text": "Mia had two moons.\nThen her mum married Neil.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.46,
+              0.64
+            ]
+          },
+          "text_y": 0.3
+        },
+        {
+          "text": "Neil came with a toolbox,\na very old car\nand no moon.",
+          "shot": "house"
+        },
+        {
+          "text": "He did the school run.\nHe lost at every board game.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.46,
+              0.64
+            ]
+          },
+          "text_y": 0.3
+        },
+        {
+          "text": "He never mentioned the moon.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.15
+            ],
+            "focus": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        {
+          "text": "Then Mia, mouth full:\n'Pass the gravy, Dad.'",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.5
+            ]
+          },
+          "onset": {
+            "at": 1.6,
+            "motion": "rise",
+            "spec": {
+              "big_moon": true
+            }
+          },
+          "note": "identical camera to frame 1; one thing changed: Neil's moon rises behind the house. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.5
+            ]
+          },
+          "spec": {
+            "big_moon": true
+          },
+          "seconds": 2.5
+        }
+      ],
+      "end": "He's still holding the gravy.",
+      "caption": "Mia's up on her mum's shoulders.\n\nStead: 1.1 million people, a 26-hour day, and one moon for every parent. It comes up over the house on the day you become one and never leaves, so you can read a family off the sky: two moons, mostly, sometimes one, now and then four. Mia had two. Then her mum married Neil, who arrived with a toolbox, a very old car and no moon at all. He never mentioned it. He just did the school run.\n\nI admired the moon over the house next door. It was her ex-husband's. They're civil about it.\n\n(On Earth, the Moon looks the same size as the Sun because it's about four hundred times smaller and about four hundred times closer. On Stead, the closest moon always looks the biggest.)\n\nHow many moons would be over your house?"
+    },
+    "first_comment": "Neil kept the gravy boat. It's on the mantelpiece, next to the school photos.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every dad who didn't have to be.",
+      "title": "Parents here\nget a moon.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.1,
+        1.16
+      ],
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "spec": {
+        "gag": "",
+        "crowd": 1,
+        "crowd_items": "child",
+        "crowd_x": 0.4
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "gag": "two_moons",
+          "crowd": 1,
+          "crowd_items": "child",
+          "crowd_x": 0.4
+        }
+      },
+      "beats": [
+        {
+          "text": "Then Mia's mum\nmarried Neil.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.46,
+              0.64
+            ]
+          },
+          "text_y": 0.3,
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,cup",
+            "crowd_x": 0.44
+          }
+        },
+        {
+          "text": "'Pass the gravy, Dad.'",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.5
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,cup",
+            "crowd_x": 0.44
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "big_moon": true
+            }
+          }
+        }
+      ],
+      "end": "He's still holding the gravy.",
+      "end_zoom": [
+        1.16,
+        1.1
+      ],
+      "end_focus": [
+        0.5,
+        0.5
+      ],
+      "name_y": 0.05,
+      "end_kicker": "For every dad who didn't have to be.",
+      "next": {
+        "name": "Amber",
+        "line": "Here, the sky's a traffic light."
+      }
+    }
+  },
+  {
+    "id": "070",
+    "name": "Dibs",
+    "subtitle": "where calling dibs is for life",
+    "story": "On Dibs, calling dibs is binding for life, so children here learn to talk early and fast. Most claims are small: a window seat, the last roast potato, the good spoon. Kim, when she was tiny, called dibs on sunsets. She meant the one she was looking at. The planet took her at her word, and since then every evening on Dibs has gone straight from afternoon to dark, except wherever Kim happens to be standing. She has never lent one out. Then her little sister got married, on a hill, in the evening, and Kim lent her the sunset. It was the best sunset anyone there had ever seen, mostly because it was the only one. Kim wants it back washed.",
+    "facts": {
+      "Day": "23 hours",
+      "Moons": "one (claimed)",
+      "Gravity": "1.0 g",
+      "Population": "5.3 million"
+    },
+    "hook": "A planet for every big sister who called dibs.",
+    "tags": [
+      "#worldbuilding",
+      "#sisters",
+      "#dibs"
+    ],
+    "spec": {
+      "palette": "crimson",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.72,
+      "sun_y": 0.48,
+      "sun_size": 0.08,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.4,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.8,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Kim called dibs on the sunset.",
+    "episode": {
+      "opener": "Kim called dibs\non sunsets.",
+      "beats": [
+        {
+          "text": "Calling dibs here\nis binding for life.",
+          "shot": "medium"
+        },
+        {
+          "text": "Most claims are small.\nA window seat. The good spoon.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "house": true,
+            "crowd": 4,
+            "crowd_items": "nothing,cup,nothing,cup",
+            "crowd_x": 0.44,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Kim was tiny.\nShe meant that one sunset.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.42,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "The planet took her\nat her word.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          }
+        },
+        {
+          "text": "Now evenings go straight\nfrom afternoon to dark.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "house": true,
+            "crowd": 4,
+            "crowd_items": "nothing,cup,nothing,cup",
+            "crowd_x": 0.44,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Except wherever\nKim is standing.",
+          "shot": "wide"
+        },
+        {
+          "text": "Then her little sister got married.\nKim lent her the sunset.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "house": true,
+            "crowd": 5,
+            "crowd_items": "flower,nothing,flower,nothing,flower",
+            "crowd_x": 0.44,
+            "crowd_facing": "in"
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "palette": "crimson",
+              "suns": 1,
+              "sun_x": 0.72,
+              "sun_y": 0.48,
+              "sun_size": 0.08
+            }
+          },
+          "note": "the town camera from beat 2; one thing changed: Kim's sunset, lent for the evening. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "house": true,
+            "crowd": 5,
+            "crowd_items": "flower,nothing,flower,nothing,flower",
+            "crowd_x": 0.44,
+            "crowd_facing": "in",
+            "sun_x": 0.72,
+            "sun_y": 0.48,
+            "sun_size": 0.08
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "She wants it back washed.",
+      "caption": "Kim has the only sunset for miles.\n\nDibs: 5.3 million people, a 23-hour day, one moon (claimed), and a rule every child knows by heart: call dibs and it's yours for life. Most claims are small. A window seat. The last roast potato. The good spoon. Kim, when she was tiny, called dibs on sunsets, and the planet took her at her word. Since then every evening on Dibs has gone straight from afternoon to dark, except wherever Kim happens to be standing. Then her little sister got married, on a hill, in the evening.\n\nI called dibs on a window seat on the ferry. I'm writing this from the ferry.\n\n(The story goes that 'dibs' comes from dibstones, an old children's game played with pebbles or knucklebones. On Dibs, most of the pebbles are spoken for.)\n\nWhat did you call dibs on first?"
+    },
+    "first_comment": "Her sister gave it back the next evening. Washed, ironed, slightly pinker.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every big sister who called dibs.",
+      "title": "Kim called dibs\non sunsets.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.3,
+        1.36
+      ],
+      "focus": [
+        0.5,
+        0.58
+      ],
+      "spec": {
+        "palette": "polar_night",
+        "suns": 0
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_x": 0.72,
+          "sun_y": 0.48,
+          "sun_size": 0.08
+        }
+      },
+      "beats": [
+        {
+          "text": "Nobody else gets one.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "house": true,
+            "crowd": 4,
+            "crowd_items": "nothing,cup,nothing,cup",
+            "crowd_x": 0.44,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "She lent it\nfor her sister's wedding.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "house": true,
+            "crowd": 5,
+            "crowd_items": "flower,nothing,flower,nothing,flower",
+            "crowd_x": 0.44,
+            "crowd_facing": "in"
+          },
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "palette": "crimson",
+              "suns": 1,
+              "sun_x": 0.72,
+              "sun_y": 0.48,
+              "sun_size": 0.08
+            }
+          }
+        }
+      ],
+      "end": "She wants it back washed.",
+      "end_zoom": [
+        1.46,
+        1.4
+      ],
+      "end_focus": [
+        0.44,
+        0.6
+      ],
+      "name_y": 0.14,
+      "end_kicker": "For every big sister who called dibs.",
+      "next": {
+        "name": "Victoria",
+        "line": "No cake, no Tuesday."
+      }
+    }
+  },
+  {
+    "id": "069",
+    "name": "Likeness",
+    "subtitle": "where photos show whoever took them",
+    "story": "On Likeness, a photo shows whoever took it. Point a camera at a waterfall and you get a nice one of yourself, squinting. Selfies are just photos. So most family albums are just whoever did the organising: Mum at the beach, Mum at the zoo, Mum at every school play, mid-sentence. This year the family decided she should have one of her own, so Dad took it. It's a lovely one of Dad. He's holding a fish.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "3.8 million"
+    },
+    "hook": "A planet for every mum who's never in the photos.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#familyphotos"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "hills",
+      "layers": 3,
+      "horizon": 0.56,
+      "relief": 0.6,
+      "water": true,
+      "shore": "left",
+      "suns": 1,
+      "sun_x": 0.74,
+      "sun_y": 0.49,
+      "sun_size": 0.07,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 4,
+      "crowd_items": "nothing,nothing,nothing,nothing",
+      "crowd_x": 0.44,
+      "crowd_facing": "out",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.08,
+      "stage": 0.68
+    },
+    "cover": "Photos here show whoever took them.",
+    "episode": {
+      "opener": "Photos here show\nwhoever took them.",
+      "beats": [
+        {
+          "text": "Point a camera at the sea,\nget a nice one of yourself.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.46,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "hand"
+          }
+        },
+        {
+          "text": "Selfies here\nare just photos.",
+          "shot": "medium",
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "hand"
+          }
+        },
+        {
+          "text": "So the family album\nis just Mum.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.44,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "hand"
+          }
+        },
+        {
+          "text": "Mum at the beach.\nMum at the zoo.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.44,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "hand",
+            "palette": "cobalt_noon",
+            "sun_y": 0.4
+          }
+        },
+        {
+          "text": "Mum at every school play,\nmid-sentence.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.44,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "hand",
+            "palette": "lilac_dusk"
+          }
+        },
+        {
+          "text": "For once,\nDad took one of her.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.46,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "hand"
+          },
+          "onset": {
+            "at": 1.3,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "fish",
+              "crowd_facing": "right"
+            }
+          },
+          "note": "the wide from beat 1; one thing changed: Dad, holding a fish, where Mum was. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.46,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "fish",
+            "crowd_facing": "right"
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "Lovely one of Dad.",
+      "caption": "Four of them posed for this one.\n\nLikeness: 3.8 million people, a 25-hour day, no moons, and cameras that only ever capture whoever's holding them. Point one at a waterfall and you get a nice one of yourself, squinting. Selfies are just photos. So most family albums are just whoever did the organising: Mum at the beach, Mum at the zoo, Mum at every school play, mid-sentence. This year, for once, Dad took one of her.\n\nI photographed the harbour for my notes. I look tired.\n\n(On Earth, one of the oldest surviving photographs of a person is a self-portrait: Robert Cornelius, Philadelphia, 1839, who had to keep still for several minutes while the plate exposed. On Likeness, every photo is one.)\n\nWho's behind the camera in your family?"
+    },
+    "first_comment": "Mum's bought a tripod. Early results are mostly tripod.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every mum who's never in the photos.",
+      "title": "Photos here show\nwhoever took them.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.55,
+        1.6
+      ],
+      "focus": [
+        0.46,
+        0.6
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "hand",
+          "crowd_x": 0.44
+        }
+      },
+      "beats": [
+        {
+          "text": "The family album\nis just Mum.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.44,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "Dad took one of her.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.46,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 1.3,
+            "motion": "cut",
+            "spec": {
+              "crowd": 1,
+              "crowd_items": "fish",
+              "crowd_x": 0.44,
+              "crowd_facing": "right"
+            }
+          }
+        }
+      ],
+      "end": "Lovely one of Dad.",
+      "end_zoom": [
+        1.6,
+        1.55
+      ],
+      "end_focus": [
+        0.46,
+        0.6
+      ],
+      "name_y": 0.14,
+      "end_kicker": "For every mum who's never in the photos.",
+      "next": {
+        "name": "Bill",
+        "line": "Here, you pay with daylight."
+      }
+    }
+  },
+  {
+    "id": "076",
+    "name": "Thaw",
+    "subtitle": "the planet where parties start frozen",
+    "story": "On Thaw, every party starts frozen. Guests arrive, take a drink, stand round the edges, and the snow comes in. Nobody can move until somebody breaks the ice. At Kev's thirtieth it was nearly midnight before Meera arrived and told a stranger she loved his shoes. It was spring by the sausage rolls.",
+    "facts": {
+      "Day": "29 hours",
+      "Moons": "two",
+      "Gravity": "1.1 g",
+      "Population": "720,000"
+    },
+    "hook": "A planet for anyone who'd talk to a lamppost.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#parties"
+    ],
+    "spec": {
+      "palette": "violet_ice",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.25,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": true,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "snow",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.55,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 6,
+      "crowd_items": "cup,cup,cup,cup,cup,cup",
+      "crowd_x": 0.5,
+      "crowd_facing": "out",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.86,
+      "bright_stars": false,
+      "flake_size": 1.2,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "Parties here start frozen.",
+    "episode": {
+      "opener": "Parties here\nstart frozen.",
+      "beats": [
+        {
+          "text": "Guests take a drink\nand stand round the edges.",
+          "shot": "group",
+          "spec": {
+            "palette": "gold_hour",
+            "snow": false,
+            "particles": "none"
+          }
+        },
+        {
+          "text": "Then the snow comes in.",
+          "shot": "wide"
+        },
+        {
+          "text": "Nobody moves until\nsomebody breaks the ice.",
+          "shot": "crowd"
+        },
+        {
+          "text": "At Kev's thirtieth,\nnobody did till midnight.",
+          "shot": "wide",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0
+          }
+        },
+        {
+          "text": "Then Meera arrived.",
+          "shot": "group",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0
+          }
+        },
+        {
+          "text": "'Love your shoes,'\nshe told a stranger.",
+          "shot": "group",
+          "spec": {
+            "palette": "mint_dawn",
+            "snow": false,
+            "particles": "none",
+            "daisies": 90,
+            "crowd_facing": "in",
+            "crowd_items": "sing,cup,sing,cup,hand,cup"
+          },
+          "note": "identical camera to the beat before; the thaw. Turn line"
+        }
+      ],
+      "end": "Spring by the sausage rolls.",
+      "caption": "Blink and you'll miss the warm bit.\n\nThaw: 720,000 people, a 29-hour day, two moons, and a climate that runs entirely on small talk. Every gathering here starts in deep winter: weddings, barbecues, the office do. Hosts lay on blankets and hot drinks, and wait. Everyone has a friend like Meera, who can thaw a room with one question about the dog. She is invited to absolutely everything.\n\nI tried 'Lovely weather.' Six inches, overnight.\n\n(The story goes that 'breaking the ice' first meant clearing a frozen river so the boats could get through. By the 1600s, it meant getting strangers talking.)\n\nWhat's your line for breaking the ice?"
+    },
+    "first_comment": "Kev's next party is in June. Meera has been asked to come early.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for anyone who'd talk to a lamppost.",
+      "title": "Parties here\nstart frozen.",
+      "sub": "",
+      "framing": "group",
+      "zoom": [
+        1.4,
+        1.46
+      ],
+      "focus": [
+        0.5,
+        0.58
+      ],
+      "spec": {
+        "palette": "gold_hour",
+        "snow": false,
+        "particles": "none",
+        "crowd_facing": "out",
+        "crowd_items": "cup,cup,cup,cup,cup,cup"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "violet_ice",
+          "snow": true,
+          "particles": "snow"
+        }
+      },
+      "beats": [
+        {
+          "text": "Until somebody\nbreaks the ice.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.85,
+              1.92
+            ],
+            "focus": [
+              0.5,
+              0.63
+            ]
+          }
+        },
+        {
+          "text": "Meera said,\n'Love your shoes.'",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "cut",
+            "spec": {
+              "palette": "mint_dawn",
+              "snow": false,
+              "particles": "none",
+              "daisies": 90,
+              "crowd_facing": "in",
+              "crowd_items": "sing,cup,sing,cup,hand,cup"
+            }
+          }
+        }
+      ],
+      "end": "Spring by the sausage rolls.",
+      "end_zoom": [
+        1.16,
+        1.1
+      ],
+      "end_focus": [
+        0.5,
+        0.58
+      ],
+      "name_y": 0.14,
+      "end_kicker": "For anyone who'd talk to a lamppost.",
+      "next": {
+        "name": "Elsewhere",
+        "line": "You've been to this planet today."
+      }
     }
   }
 ]

@@ -155,98 +155,98 @@
   "entry": "022",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-03T14:00:00Z"
+  "not_before": "2026-11-03T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "019",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-03T22:00:00Z"
+  "not_before": "2026-11-04T14:00:00Z"
  },
  {
   "day": 8,
   "entry": "034",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-04T14:00:00Z"
+  "not_before": "2026-11-05T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "031",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-04T22:00:00Z"
+  "not_before": "2026-11-06T14:00:00Z"
  },
  {
   "day": 8,
   "entry": "038",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-05T14:00:00Z"
+  "not_before": "2026-11-07T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "032",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-05T22:00:00Z"
+  "not_before": "2026-11-08T14:00:00Z"
  },
  {
   "day": 6,
   "entry": "007",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-06T14:00:00Z"
+  "not_before": "2026-11-09T22:00:00Z"
  },
  {
   "day": 6,
   "entry": "011",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-06T22:00:00Z"
+  "not_before": "2026-11-10T14:00:00Z"
  },
  {
   "day": 4,
   "entry": "006",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-07T14:00:00Z"
+  "not_before": "2026-11-11T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "041",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-07T22:00:00Z"
+  "not_before": "2026-11-12T14:00:00Z"
  },
  {
   "day": 8,
   "entry": "037",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-08T14:00:00Z"
+  "not_before": "2026-11-13T22:00:00Z"
  },
  {
   "day": 8,
   "entry": "039",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-08T22:00:00Z"
+  "not_before": "2026-11-14T14:00:00Z"
  },
  {
   "day": 6,
   "entry": "000",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-09T14:00:00Z"
+  "not_before": "2026-11-15T14:00:00Z"
  },
  {
   "day": 3,
   "entry": "018",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-09T22:00:00Z"
+  "not_before": "2026-11-15T22:00:00Z"
  },
  {
   "day": 2,
@@ -405,168 +405,264 @@
   "day": 8,
   "entry": "045",
   "kind": "reel",
-  "not_before": "2026-11-10T14:00:00Z",
+  "not_before": "2026-11-16T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "054",
   "kind": "reel",
-  "not_before": "2026-11-10T22:00:00Z",
+  "not_before": "2026-11-16T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "044",
   "kind": "reel",
-  "not_before": "2026-11-11T14:00:00Z",
+  "not_before": "2026-11-17T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "043",
   "kind": "reel",
-  "not_before": "2026-11-11T22:00:00Z",
+  "not_before": "2026-11-17T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "049",
   "kind": "reel",
-  "not_before": "2026-11-12T14:00:00Z",
+  "not_before": "2026-11-18T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "048",
   "kind": "reel",
-  "not_before": "2026-11-12T22:00:00Z",
+  "not_before": "2026-11-18T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "047",
   "kind": "reel",
-  "not_before": "2026-11-13T14:00:00Z",
+  "not_before": "2026-11-19T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "052",
   "kind": "reel",
-  "not_before": "2026-11-13T22:00:00Z",
+  "not_before": "2026-11-19T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "050",
   "kind": "reel",
-  "not_before": "2026-11-14T14:00:00Z",
+  "not_before": "2026-11-20T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "046",
   "kind": "reel",
-  "not_before": "2026-11-14T22:00:00Z",
+  "not_before": "2026-11-20T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "053",
   "kind": "reel",
-  "not_before": "2026-11-15T14:00:00Z",
+  "not_before": "2026-11-21T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "051",
   "kind": "reel",
-  "not_before": "2026-11-15T22:00:00Z",
+  "not_before": "2026-11-21T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "061",
   "kind": "reel",
-  "not_before": "2026-11-16T14:00:00Z",
+  "not_before": "2026-11-22T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "059",
   "kind": "reel",
-  "not_before": "2026-11-16T22:00:00Z",
+  "not_before": "2026-11-22T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "058",
   "kind": "reel",
-  "not_before": "2026-11-17T14:00:00Z",
+  "not_before": "2026-11-23T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "064",
   "kind": "reel",
-  "not_before": "2026-11-17T22:00:00Z",
+  "not_before": "2026-11-23T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "055",
   "kind": "reel",
-  "not_before": "2026-11-18T14:00:00Z",
+  "not_before": "2026-11-24T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "056",
   "kind": "reel",
-  "not_before": "2026-11-18T22:00:00Z",
+  "not_before": "2026-11-24T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "062",
   "kind": "reel",
-  "not_before": "2026-11-19T14:00:00Z",
+  "not_before": "2026-11-25T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "060",
   "kind": "reel",
-  "not_before": "2026-11-19T22:00:00Z",
+  "not_before": "2026-11-25T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "057",
   "kind": "reel",
-  "not_before": "2026-11-20T14:00:00Z",
+  "not_before": "2026-11-26T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "065",
   "kind": "reel",
-  "not_before": "2026-11-20T22:00:00Z",
+  "not_before": "2026-11-26T22:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "063",
   "kind": "reel",
-  "not_before": "2026-11-21T14:00:00Z",
+  "not_before": "2026-11-27T14:00:00Z",
   "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "066",
   "kind": "reel",
-  "not_before": "2026-11-21T22:00:00Z",
+  "not_before": "2026-11-27T22:00:00Z",
   "note": "short cut, checked"
+ },
+ {
+  "day": 9,
+  "entry": "074",
+  "kind": "reel",
+  "not_before": "2026-11-03T14:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "078",
+  "kind": "reel",
+  "not_before": "2026-11-04T22:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "075",
+  "kind": "reel",
+  "not_before": "2026-11-05T14:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "073",
+  "kind": "reel",
+  "not_before": "2026-11-06T22:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "077",
+  "kind": "reel",
+  "not_before": "2026-11-07T14:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "067",
+  "kind": "reel",
+  "not_before": "2026-11-08T22:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "071",
+  "kind": "reel",
+  "not_before": "2026-11-09T14:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "070",
+  "kind": "reel",
+  "not_before": "2026-11-10T22:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "068",
+  "kind": "reel",
+  "not_before": "2026-11-11T14:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "069",
+  "kind": "reel",
+  "not_before": "2026-11-12T22:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "072",
+  "kind": "reel",
+  "not_before": "2026-11-13T14:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
+ },
+ {
+  "day": 9,
+  "entry": "076",
+  "kind": "reel",
+  "not_before": "2026-11-14T22:00:00Z",
+  "hold": true,
+  "note": "tight cut (batch 6 test): held until rendered and checked"
  }
 ]

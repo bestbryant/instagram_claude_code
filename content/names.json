@@ -2913,8 +2913,8 @@
       "name_y": 0.25,
       "end_kicker": "For everyone who's said 'you too' to a waiter.",
       "next": {
-        "name": "Will",
-        "line": "The sun rises by popular demand."
+        "name": "Fret",
+        "line": "Worries here hang in the sky."
       }
     }
   },
@@ -3623,8 +3623,8 @@
       "name_y": 0.12,
       "end_kicker": "For people who never ask anyone for anything.",
       "next": {
-        "name": "Grace",
-        "line": "Every Grace gets this planet."
+        "name": "Likeness",
+        "line": "Photos here show whoever took them."
       }
     }
   },
@@ -4258,8 +4258,8 @@
       "name_y": 0.21,
       "end_kicker": "For the one everyone else steers by.",
       "next": {
-        "name": "Selk",
-        "line": "The sea left. The waves stayed."
+        "name": "Stead",
+        "line": "Parents here get a moon."
       }
     }
   },
@@ -7904,6 +7904,1535 @@
       "next": {
         "name": "Yarn",
         "line": "Stories told here happen overhead."
+      }
+    }
+  },
+  {
+    "id": "074",
+    "name": "Mary",
+    "subtitle": "every Mary's planet",
+    "story": "Every group of friends on Mary has someone whose bag has everything in it: plasters, mints, a sewing kit, a standard lamp. Mary is that someone. When her friend Beth planned a moonlit picnic, the moon didn't show. Everyone looked at Mary. Mary had a spare. Beth cried. Mary had tissues.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "one, and a spare",
+      "Gravity": "1.0 g",
+      "Population": "3.7 million"
+    },
+    "hook": "A planet for the one who always has plasters.",
+    "tags": [
+      "#illustration",
+      "#bestfriends",
+      "#mary"
+    ],
+    "spec": {
+      "palette": "violet_ice",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 0.9,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.4,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": true,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.82,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Mary's bag even has a lamp.",
+    "kicker": "Every Mary gets this planet.",
+    "episode": {
+      "opener": "Mary's bag\neven has a lamp.",
+      "beats": [
+        {
+          "text": "Plasters. Mints.\nA sewing kit.",
+          "shot": "close",
+          "spec": {
+            "lamp": false
+          }
+        },
+        {
+          "text": "A standard lamp,\nfor emergencies.",
+          "shot": "medium"
+        },
+        {
+          "text": "Beth planned\na moonlit picnic.",
+          "shot": "wide",
+          "spec": {
+            "lamp": false,
+            "crowd": 5,
+            "crowd_items": "sit,sit,nothing,sit,sit",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.085,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "The moon didn't show.",
+          "shot": "sky",
+          "spec": {
+            "lamp": false
+          }
+        },
+        {
+          "text": "Everyone looked at Mary.",
+          "shot": "group",
+          "spec": {
+            "lamp": false,
+            "crowd": 5,
+            "crowd_items": "sit,sit,nothing,sit,sit",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.085,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "Mary had a spare.",
+          "shot": "wide",
+          "spec": {
+            "lamp": false,
+            "big_moon": true,
+            "crowd": 5,
+            "crowd_items": "sit,sit,hand,sit,sit",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.085,
+            "crowd_facing": "in"
+          },
+          "note": "identical camera to the picnic wide; the moon rises. Turn line"
+        }
+      ],
+      "end": "Beth cried. Mary had tissues.",
+      "caption": "Mary packed light today.\n\nMary: 3.7 million people, a 25-hour day, one moon and a spare. Every group of friends here has a Mary. Her bag has plasters, tissues, a sewing kit, a charger for every phone ever made and, on the night of Beth's picnic, a moon. Nobody asks how. The bag has never been weighed, and she'd rather you didn't.\n\nI asked her for a pen. She asked what colour.\n\n(On Earth, the Moon is about 3,474 kilometres across. Mary says it folds.)\n\nWhat's the strangest thing anyone's ever found in their bag for you?"
+    },
+    "first_comment": "Mary got her moon back. It had a plaster on it.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for the one who always has plasters.",
+      "title": "Mary's bag\neven has a lamp.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.12,
+        1.18
+      ],
+      "focus": [
+        0.46,
+        0.56
+      ],
+      "spec": {
+        "lamp": false
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "lamp": true
+        }
+      },
+      "beats": [
+        {
+          "text": "Beth's moonlit picnic.\nNo moon.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.15
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "lamp": false,
+            "crowd": 5,
+            "crowd_items": "sit,sit,nothing,sit,sit",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.085,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "Mary had a spare.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.15
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "seconds": 2.0,
+          "spec": {
+            "lamp": false,
+            "crowd": 5,
+            "crowd_items": "sit,sit,nothing,sit,sit",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.085,
+            "crowd_facing": "in"
+          },
+          "onset": {
+            "at": 0.35,
+            "motion": "rise",
+            "spec": {
+              "big_moon": true,
+              "crowd_items": "sit,sit,hand,sit,sit"
+            }
+          }
+        }
+      ],
+      "end": "Beth cried. Mary had tissues.",
+      "end_zoom": [
+        1.16,
+        1.1
+      ],
+      "end_focus": [
+        0.5,
+        0.56
+      ],
+      "name_y": 0.14,
+      "end_kicker": "For the one who always has plasters.",
+      "next": {
+        "name": "Olive",
+        "line": "The sun won't go down on an argument."
+      }
+    }
+  },
+  {
+    "id": "075",
+    "name": "Bob",
+    "subtitle": "every Bob's planet",
+    "story": "On Bob, every street has a neighbour who can fix anything: the tap, the boiler, the bike, the wobbly table in the café. So the day the sun broke, everyone rang Bob next door. He put his coat on, said 'Right,' and went to have a look. It was working again before his tea went cold, slightly to the left. There's one left over. He says it was like that when he got there.",
+    "facts": {
+      "Day": "24 hours, roughly",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "910,000"
+    },
+    "hook": "A planet for the neighbour who'll have a look.",
+    "tags": [
+      "#illustration",
+      "#neighbours",
+      "#bob"
+    ],
+    "spec": {
+      "palette": "polar_night",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": 0.62,
+      "sun_y": 0.52,
+      "sun_size": 0.07,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 0.4,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.45,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.72,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Bob next door can fix anything.",
+    "kicker": "Every Bob gets this planet.",
+    "episode": {
+      "opener": "Bob next door\ncan fix anything.",
+      "beats": [
+        {
+          "text": "Taps. Bikes.\nThe boiler, twice.",
+          "shot": "house",
+          "spec": {
+            "palette": "rust_desert",
+            "suns": 1,
+            "stars": 0.0
+          }
+        },
+        {
+          "text": "Then the sun broke.",
+          "shot": "sky"
+        },
+        {
+          "text": "Everyone rang Bob.",
+          "shot": "group"
+        },
+        {
+          "text": "He put his coat on\nand had a look.",
+          "shot": "medium",
+          "spec": {
+            "crowd_items": "hand"
+          }
+        },
+        {
+          "text": "It was working\nbefore his tea went cold.",
+          "shot": "wide",
+          "spec": {
+            "palette": "rust_desert",
+            "suns": 1,
+            "stars": 0.0,
+            "crowd_items": "hand"
+          },
+          "note": "identical camera to frame 1; the sun is working again. Turn line"
+        },
+        {
+          "text": "",
+          "shot": "wide",
+          "spec": {
+            "palette": "rust_desert",
+            "suns": 2,
+            "stars": 0.0,
+            "crowd_items": "nothing"
+          },
+          "seconds": 2.5,
+          "note": "the same wide: two suns"
+        }
+      ],
+      "end": "There's one left over.",
+      "caption": "Bob hasn't had a look at the sun yet.\n\nBob: 910,000 people, a 24-hour day, and suns, plural, since Bob had a look. Every street here has one neighbour who can fix things, and everyone rings him. When the sun broke, Bob put his coat on, said 'Right,' and went up with a torch. Nobody saw what he did. It was working again before his tea went cold. It hums a bit now.\n\nI asked whether he'd read the instructions. He laughed for quite a long time.\n\n(On Earth, the Sun is about 109 Earths across, which is a lot of sun for one man and a torch.)\n\nWhat did your neighbour fix that was never quite the same again?"
+    },
+    "first_comment": "The spare sun is in his shed now, with the other bits.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for the neighbour who'll have a look.",
+      "title": "Bob next door\ncan fix anything.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.2,
+        1.26
+      ],
+      "focus": [
+        0.52,
+        0.55
+      ],
+      "spec": {
+        "palette": "rust_desert",
+        "suns": 1,
+        "stars": 0.0
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "stars": 0.4
+        }
+      },
+      "beats": [
+        {
+          "text": "When the sun broke,\neveryone rang him.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.55,
+              0.64
+            ]
+          }
+        },
+        {
+          "text": "He had a look.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.52,
+              0.55
+            ]
+          },
+          "seconds": 1.9,
+          "onset": {
+            "at": 0.55,
+            "motion": "cut",
+            "spec": {
+              "palette": "rust_desert",
+              "suns": 1,
+              "stars": 0.0,
+              "crowd_items": "hand"
+            }
+          }
+        }
+      ],
+      "end": "There's one left over.",
+      "end_onset": {
+        "at": 0.9,
+        "motion": "cut",
+        "spec": {
+          "suns": 2
+        }
+      },
+      "end_zoom": [
+        1.22,
+        1.16
+      ],
+      "end_focus": [
+        0.52,
+        0.55
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For the neighbour who'll have a look.",
+      "next": {
+        "name": "Lode",
+        "line": "Your blood points home."
+      }
+    }
+  },
+  {
+    "id": "077",
+    "name": "Isla",
+    "subtitle": "every Isla's planet",
+    "story": "On Isla, falling out makes islands. Stop speaking to someone and the sea comes in between you, and stays until somebody rings. Liz and her in-laws fell out at Easter, over something nobody can remember. By autumn you could sail between them. Then Liz rang about Christmas, and the water was gone before she'd hung up. They argued about the sprouts.",
+    "facts": {
+      "Day": "23 hours",
+      "Moons": "one",
+      "Gravity": "0.95 g",
+      "Population": "4.6 million"
+    },
+    "hook": "A planet for anyone not speaking to the in-laws.",
+    "tags": [
+      "#illustration",
+      "#family",
+      "#isla"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 3,
+      "horizon": 0.5,
+      "relief": 0.5,
+      "water": true,
+      "shore": "left",
+      "suns": 1,
+      "sun_x": 0.62,
+      "sun_y": 0.42,
+      "sun_size": 0.06,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.22,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.0
+    },
+    "cover": "Falling out makes islands.",
+    "kicker": "Every Isla gets this planet.",
+    "episode": {
+      "opener": "Falling out\nmakes islands.",
+      "beats": [
+        {
+          "text": "Stop speaking to someone,\nand the sea comes in.",
+          "shot": "wide"
+        },
+        {
+          "text": "Ferries run between\nmost families.",
+          "shot": "wide"
+        },
+        {
+          "text": "Liz and her in-laws\nfell out at Easter.",
+          "shot": "group"
+        },
+        {
+          "text": "Nobody remembers why.",
+          "shot": "close"
+        },
+        {
+          "text": "By autumn, you could\nsail between them.",
+          "shot": "wide",
+          "spec": {
+            "shore": "right",
+            "crowd": 2,
+            "crowd_x": 0.8,
+            "crowd_gap": 0.06,
+            "crowd_facing": "left"
+          },
+          "note": "the in-laws on the other shore"
+        },
+        {
+          "text": "Then Liz rang\nabout Christmas.",
+          "shot": "group",
+          "spec": {
+            "water": false,
+            "stage": 0.74,
+            "crowd": 3,
+            "crowd_x": 0.3,
+            "crowd_gap": 0.1,
+            "crowd_facing": "in"
+          },
+          "note": "identical camera to Liz alone; the sea goes out and her in-laws are beside her. Turn line"
+        }
+      ],
+      "end": "They argued about the sprouts.",
+      "caption": "Liz has her back to the in-laws, for now.\n\nIsla: 4.6 million people, a 23-hour day, one moon, and a coastline that changes with everyone's moods. A cross word puts a puddle between you. A proper falling-out puts in a sea. Maps are printed in pencil. Liz and her in-laws hadn't spoken since Easter, over a borrowed lawnmower, or possibly a seating plan. Then December came round, and somebody had to sort out Christmas.\n\nI muted a group chat. There's a ferry now.\n\n(On Earth, the sea covers about seven-tenths of the planet, which explains a lot about Christmas.)\n\nHow wide is your sea at the moment?"
+    },
+    "first_comment": "They've booked a ferry for Easter. To be safe.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for anyone not speaking to the in-laws.",
+      "title": "Falling out\nmakes islands.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.3,
+        1.36
+      ],
+      "focus": [
+        0.42,
+        0.75
+      ],
+      "spec": {
+        "water": false,
+        "stage": 0.74,
+        "crowd": 3,
+        "crowd_x": 0.42,
+        "crowd_gap": 0.17,
+        "crowd_facing": "out"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "water": true,
+          "stage": 0.0,
+          "crowd": 1,
+          "crowd_x": 0.22,
+          "crowd_gap": 0.09,
+          "crowd_facing": "right"
+        }
+      },
+      "beats": [
+        {
+          "text": "Liz and her in-laws\nfell out.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.54
+            ],
+            "focus": [
+              0.5,
+              0.75
+            ]
+          },
+          "spec": {
+            "crowd_x": 0.24
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "shore": "right",
+              "crowd": 2,
+              "crowd_x": 0.8,
+              "crowd_gap": 0.06,
+              "crowd_facing": "left"
+            }
+          }
+        },
+        {
+          "text": "Then Liz rang\nabout Christmas.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.36,
+              0.75
+            ]
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "cut",
+            "spec": {
+              "water": false,
+              "stage": 0.74,
+              "crowd": 3,
+              "crowd_x": 0.3,
+              "crowd_gap": 0.1,
+              "crowd_facing": "in"
+            }
+          }
+        }
+      ],
+      "end": "They argued about the sprouts.",
+      "end_zoom": [
+        1.2,
+        1.14
+      ],
+      "end_focus": [
+        0.4,
+        0.62
+      ],
+      "name_y": 0.14,
+      "end_kicker": "For anyone not speaking to the in-laws.",
+      "next": {
+        "name": "Will",
+        "line": "The sun rises by popular demand."
+      }
+    }
+  },
+  {
+    "id": "071",
+    "name": "Amber",
+    "subtitle": "every Amber's planet",
+    "story": "On Amber, the sky works like a traffic light. Red means stay in: storms, mostly, or a new box set. Green means go, and the whole planet goes at once. Amber is rarer, and everybody knows what it means: somebody nearby is learning to drive. Chloe has her test next week. Her mum takes her out after tea, one hand on the dashboard and one foot pressed hard on a brake that isn't there. The sky has been amber since half-term, and her mum has braked all the way home, every time.",
+    "facts": {
+      "Day": "22 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "2.9 million"
+    },
+    "hook": "A planet for every mum in the passenger seat.",
+    "tags": [
+      "#worldbuilding",
+      "#learnerdriver",
+      "#amber"
+    ],
+    "spec": {
+      "palette": "pastel",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 4,
+      "crowd_items": "walk",
+      "crowd_x": 0.42,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.8,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "The sky here is a traffic light.",
+    "kicker": "Every Amber gets this planet.",
+    "episode": {
+      "opener": "Here, the sky's\na traffic light.",
+      "beats": [
+        {
+          "text": "Red: stay home.\nStorms, mostly. Or a box set.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "crowd": 0
+          }
+        },
+        {
+          "text": "Green: go.\nThe whole planet goes at once.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "toxic",
+            "crowd": 4
+          }
+        },
+        {
+          "text": "Amber is rarer,\nand everyone knows why.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "toxic",
+            "crowd": 4
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "cut",
+            "spec": {
+              "palette": "pumpkin",
+              "crowd": 0,
+              "mist": 0.25
+            }
+          },
+          "note": "identical camera; the sky goes amber and the street empties. Turn line"
+        },
+        {
+          "text": "Chloe's learning to drive.",
+          "shot": "house",
+          "spec": {
+            "palette": "pumpkin",
+            "crowd": 0,
+            "mist": 0.25
+          }
+        },
+        {
+          "text": "Mum's in the passenger seat,\npressing a brake\nthat isn't there.",
+          "shot": "house",
+          "spec": {
+            "palette": "pumpkin",
+            "crowd": 0,
+            "mist": 0.25
+          }
+        },
+        {
+          "text": "It's been amber\nsince half-term.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "pumpkin",
+            "crowd": 1,
+            "mist": 0.25,
+            "crowd_items": "nap",
+            "crowd_x": 0.68,
+            "crowd_facing": "left"
+          }
+        }
+      ],
+      "end": "Mum needs a lie-down.",
+      "caption": "A nice day for a walk. Not for long.\n\nAmber: 2.9 million people, a 22-hour day, no moons, and a sky that works like a traffic light. Red means stay in: storms, mostly, or a new box set. Green means go, and the whole planet goes at once. Amber is rarer, and everybody knows what it means: somebody nearby is learning to drive. Chloe has her test next week. Her mum takes her out after tea, one hand on the dashboard and one foot pressed hard on a brake that isn't there.\n\nI hired a car to get about. The sky went amber before I'd found the indicator.\n\n(On Earth, the first traffic light went up outside the Houses of Parliament in December 1868. It ran on gas, was worked by a policeman, and exploded within a month. Chloe's mum knows how it felt.)\n\nWho sat in your passenger seat?"
+    },
+    "first_comment": "Chloe passed on her third go. Her little brother has asked Mum for a lesson.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every mum in the passenger seat.",
+      "title": "Here, the sky's\na traffic light.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.3,
+        1.36
+      ],
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "crimson",
+          "crowd": 0
+        }
+      },
+      "beats": [
+        {
+          "text": "Red, stop.\nGreen, go.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "palette": "toxic",
+              "crowd": 4
+            }
+          }
+        },
+        {
+          "text": "Amber: Chloe's\nlearning to drive.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "toxic",
+            "crowd": 4
+          },
+          "onset": {
+            "at": 0.35,
+            "motion": "cut",
+            "spec": {
+              "palette": "pumpkin",
+              "crowd": 0,
+              "mist": 0.25
+            }
+          }
+        }
+      ],
+      "end": "Her mum braked all the way.",
+      "end_spec": {
+        "crowd": 1,
+        "crowd_items": "armchair",
+        "crowd_x": 0.66,
+        "crowd_facing": "left"
+      },
+      "end_zoom": [
+        1.6,
+        1.52
+      ],
+      "end_focus": [
+        0.6,
+        0.6
+      ],
+      "name_y": 0.14,
+      "end_kicker": "For every mum in the passenger seat.",
+      "next": {
+        "name": "Selk",
+        "line": "The sea left. The waves stayed."
+      }
+    }
+  },
+  {
+    "id": "068",
+    "name": "Victoria",
+    "subtitle": "every Victoria's planet",
+    "story": "On Victoria, Monday doesn't end until somebody brings in a cake. Nobody knows whether it's a law or the weather, and nobody has wanted to find out. Most offices manage it by the first tea break. At Sue's, it's always Sue: a Victoria sponge, jam and cream, in a tin with a robin on the lid, and Tuesday by lunchtime. Then Sue went to Spain. Brian tried biscuits. Biscuits don't count. It's day nine of Monday, the bins haven't gone out, and nobody has been paid.",
+    "facts": {
+      "Day": "Monday, until further notice",
+      "Moons": "none",
+      "Gravity": "1.1 g",
+      "Population": "4.2 million"
+    },
+    "hook": "A planet for whoever brings cake to work.",
+    "tags": [
+      "#worldbuilding",
+      "#officelife",
+      "#victoria"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.6,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "MONDAY",
+      "crowd": 5,
+      "crowd_items": "cup,cup,book,cup,cup",
+      "crowd_x": 0.42,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.16,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.085,
+      "stage": 0.74
+    },
+    "cover": "Mondays here last until someone brings cake.",
+    "kicker": "Every Victoria gets this planet.",
+    "episode": {
+      "opener": "No cake,\nno Tuesday.",
+      "beats": [
+        {
+          "text": "Most offices manage it\nby the tea break.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "Shop-bought is allowed.\nPeople talk.",
+          "shot": "crowd"
+        },
+        {
+          "text": "At Sue's, it's Sue.\nA Victoria sponge, every week.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.16
+            ],
+            "focus": [
+              0.42,
+              0.64
+            ]
+          }
+        },
+        {
+          "text": "Jam and cream.\nTuesday by lunchtime.",
+          "shot": "group"
+        },
+        {
+          "text": "Sue went to Spain.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "cup,cup,chair,cup,cup"
+            }
+          },
+          "note": "identical camera to frame 1; one thing changed: Sue's place is an empty chair. Turn line"
+        },
+        {
+          "text": "Brian tried biscuits.\nBiscuits don't count.",
+          "shot": "group",
+          "spec": {
+            "crowd_items": "cup,cup,chair,cup,cup"
+          }
+        },
+        {
+          "text": "The bins haven't gone out.\nNobody's been paid.",
+          "shot": "sign",
+          "spec": {
+            "crowd_items": "cup,cup,chair,cup,cup"
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "nap,nap,chair,nap,nap"
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "Day nine of Monday.",
+      "caption": "Sue's the one holding the tin.\n\nVictoria: 4.2 million people, a 25-hour day (Mondays excepted), and a working week that can't get past Monday until somebody brings in a cake. Shop-bought is allowed, but people talk. Most offices manage it by the first tea break. At Sue's, it's always Sue: a Victoria sponge, jam and cream, in a tin with a robin on the lid, and Tuesday by lunchtime. Then Sue went to Spain. Brian tried biscuits. Biscuits don't count.\n\nI brought a cake in, just to be polite. Three offices tried to hire me.\n\n(The story goes that the Victoria sponge is named after Queen Victoria, who liked a slice with her afternoon tea. On Victoria, it's a public service.)\n\nWhose cake would get your office to Tuesday?"
+    },
+    "first_comment": "Sue's plane has landed. Accounts have made a banner.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for whoever brings cake to work.",
+      "title": "No cake,\nno Tuesday.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.3,
+        1.36
+      ],
+      "focus": [
+        0.45,
+        0.6
+      ],
+      "spec": {
+        "sign": ""
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "sign": "MONDAY"
+        }
+      },
+      "beats": [
+        {
+          "text": "Sue from accounts\nbrings a Victoria sponge.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.16
+            ],
+            "focus": [
+              0.42,
+              0.64
+            ]
+          }
+        },
+        {
+          "text": "Sue went to Spain.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "cup,cup,chair,cup,cup"
+            }
+          }
+        }
+      ],
+      "end": "Day nine of Monday.",
+      "end_spec": {
+        "crowd_items": "nap,nap,chair,nap,nap"
+      },
+      "end_zoom": [
+        1.36,
+        1.3
+      ],
+      "end_focus": [
+        0.45,
+        0.6
+      ],
+      "name_y": 0.14,
+      "end_kicker": "For whoever brings cake to work.",
+      "next": {
+        "name": "Luma",
+        "line": "The moon here writes back."
+      }
+    }
+  },
+  {
+    "id": "072",
+    "name": "Bill",
+    "subtitle": "every Bill's planet",
+    "story": "On Bill, you pay with daylight. A coffee costs a few minutes of afternoon; a round of drinks costs the evening. Careful people have long, golden summers, and the generous live mostly by lamplight. Dan has paid for everyone since school: every round, every taxi, every birthday meal. It's been night at his house for years. He reads by the fridge light and doesn't mind. So his friends paid him back, all of it, at once. The sun came up over his house so hard the neighbours went out for sunglasses. He got the drinks in.",
+    "facts": {
+      "Day": "depends who's buying",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "6.4 million"
+    },
+    "hook": "A planet for the friend who always pays.",
+    "tags": [
+      "#worldbuilding",
+      "#friendship",
+      "#bill"
+    ],
+    "spec": {
+      "palette": "cobalt_noon",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.8,
+      "sun_y": 0.38,
+      "sun_size": 0.07,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 4,
+      "crowd_items": "cup,cup,cup,cup",
+      "crowd_x": 0.42,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.72,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.085,
+      "stage": 0.74
+    },
+    "cover": "Here, you pay with daylight.",
+    "kicker": "Every Bill gets this planet.",
+    "episode": {
+      "opener": "Here, you pay\nwith daylight.",
+      "beats": [
+        {
+          "text": "A coffee costs a few minutes.\nA round costs the evening.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "onset": {
+            "at": 1.8,
+            "motion": "cut",
+            "spec": {
+              "palette": "polar_night",
+              "suns": 0
+            }
+          }
+        },
+        {
+          "text": "Dan always pays.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.5,
+              0.63
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.5
+          }
+        },
+        {
+          "text": "Every round, every taxi,\nsince school.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.5,
+              0.63
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.5
+          }
+        },
+        {
+          "text": "It's been night at his\nfor years.",
+          "shot": "house",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.42
+          }
+        },
+        {
+          "text": "He reads by the fridge light.\nHe doesn't mind.",
+          "shot": "house",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.42
+          }
+        },
+        {
+          "text": "So his friends\npaid him back.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.42
+          },
+          "onset": {
+            "at": 1.3,
+            "motion": "cut",
+            "spec": {
+              "palette": "cobalt_noon",
+              "suns": 1,
+              "sun_x": 0.8,
+              "sun_y": 0.38,
+              "sun_size": 0.07,
+              "crowd": 4,
+              "crowd_items": "cup,cup,cup,cup",
+              "crowd_x": 0.42
+            }
+          },
+          "note": "identical camera to frame 1; the daylight comes back and so do his friends. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 1,
+            "sun_x": 0.8,
+            "sun_y": 0.38,
+            "sun_size": 0.07,
+            "crowd": 4,
+            "crowd_items": "cup,cup,cup,cup",
+            "crowd_x": 0.42
+          },
+          "seconds": 2.2
+        }
+      ],
+      "end": "He got the drinks in.",
+      "caption": "The sun's out. Someone's about to pay.\n\nBill: 6.4 million people, a day that depends on who's buying, no moons, and everything paid for with daylight. A coffee costs a few minutes of afternoon. A round of drinks costs the evening. Careful people have long, golden summers; the generous live mostly by lamplight. Dan has paid for everyone since school: every round, every taxi, every birthday meal. It's been night at his house for years. He reads by the fridge light and doesn't mind.\n\nI tipped well at dinner. I had breakfast by torchlight.\n\n(On Earth, England taxed windows from 1696 to 1851, and people bricked theirs up to pay less. The story goes that's where 'daylight robbery' comes from. On Bill, it's just called paying.)\n\nWho in your lot would be living in the dark?"
+    },
+    "first_comment": "It was dark again before the crisps arrived.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for the friend who always pays.",
+      "title": "Here, you pay\nwith daylight.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.3,
+        1.36
+      ],
+      "focus": [
+        0.5,
+        0.58
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0
+        }
+      },
+      "beats": [
+        {
+          "text": "Dan always pays.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.5,
+              0.63
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.5
+          }
+        },
+        {
+          "text": "So his friends\npaid him back.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.42
+          },
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "palette": "cobalt_noon",
+              "suns": 1,
+              "sun_x": 0.8,
+              "sun_y": 0.38,
+              "sun_size": 0.07,
+              "crowd": 4,
+              "crowd_items": "cup,cup,cup,cup",
+              "crowd_x": 0.42
+            }
+          }
+        }
+      ],
+      "end": "He got the drinks in.",
+      "end_onset": {
+        "at": 1.3,
+        "motion": "cut",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0
+        }
+      },
+      "end_zoom": [
+        1.36,
+        1.3
+      ],
+      "end_focus": [
+        0.5,
+        0.58
+      ],
+      "name_y": 0.14,
+      "end_kicker": "For the friend who always pays.",
+      "next": {
+        "name": "Grace",
+        "line": "Every Grace gets this planet."
       }
     }
   }
