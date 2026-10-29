@@ -6119,5 +6119,1792 @@
         "line": "The wind here is Dad, snoring."
       }
     }
+  },
+  {
+    "id": "061",
+    "name": "Violet",
+    "subtitle": "every Violet's planet",
+    "story": "On Violet, nobody can see a newcomer until someone sits down next to them. Then they're simply there, as if they always had been. Every school keeps a bench by the gate for it. Zara started in the spring term and spent her whole first week invisible: lunch on her own, the register unanswered. On Friday, Josh sat down beside her to tie his shoe. She appeared mid-sandwich. Twenty years later, she was his best man.",
+    "facts": {
+      "Day": "23 hours",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "2.6 million"
+    },
+    "hook": "A planet for whoever sat with the new kid.",
+    "tags": [
+      "#worldbuilding",
+      "#schooldays",
+      "#violet"
+    ],
+    "spec": {
+      "palette": "lilac_dusk",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.22,
+      "sun_y": 0.6,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 5,
+      "crowd_items": "nothing,nothing,nothing,nothing,nothing",
+      "crowd_x": 0.42,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.8,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "New kids here are invisible.",
+    "kicker": "Every Violet gets this planet.",
+    "episode": {
+      "opener": "New kids here\nare invisible.",
+      "beats": [
+        {
+          "text": "Nobody can see you\nuntil someone sits with you.",
+          "shot": "wide"
+        },
+        {
+          "text": "Every school keeps a bench\nby the gate for it.",
+          "shot": "house"
+        },
+        {
+          "text": "Teachers call\nthe register twice.",
+          "shot": "crowd",
+          "spec": {
+            "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+          }
+        },
+        {
+          "text": "Zara started in the spring.\nFor a week, nobody saw her.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+          },
+          "note": "a gap in the middle of the row"
+        },
+        {
+          "text": "Nobody sat with her.\nNobody knew to.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.45,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+          }
+        },
+        {
+          "text": "On Friday, Josh sat down\nto tie his shoe.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+          }
+        },
+        {
+          "text": "Right next to her.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "nothing,sit,sit,nothing,nothing"
+            }
+          },
+          "note": "identical camera to beat 4; one thing changed: two of them sitting in the gap. Turn line"
+        },
+        {
+          "text": "She appeared\nmid-sandwich.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,sit,sit,nothing,nothing"
+          }
+        }
+      ],
+      "end": "She was his best man.",
+      "caption": "Mind the gap in the middle of that row.\n\nViolet: 2.6 million people, a 23-hour day, no moons, and nobody can see a newcomer until someone sits down beside them. Then they're simply there, as if they always had been. Every school keeps a bench by the gate for it, and most first days have a quiet hour. Zara's lasted a week. Josh only sat down to tie his shoe.\n\nI was invisible for my first two days here. A dog found me. We're still in touch.\n\n(The story goes that the 'buddy bench', where a lonely child sits so that someone will come and ask them to play, reached American playgrounds in 2013 through a second-grader in Pennsylvania who'd seen one in a brochure from Germany. On Violet, the bench does the rest.)\n\nWhen were you last the new one?"
+    },
+    "first_comment": "Zara's daughter started school on Monday. She was seen by ten.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for whoever sat with the new kid.",
+      "title": "New kids here\nare invisible.",
+      "sub": "",
+      "framing": "close",
+      "zoom": [
+        2.0,
+        2.06
+      ],
+      "focus": [
+        0.47,
+        0.64
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "nothing,nothing,shadow,nothing,nothing"
+        }
+      },
+      "beats": [
+        {
+          "text": "Until someone sits with them.\nZara waited all week.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "On Friday, Josh sat down\nnext to her. By accident.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "nothing,sit,sit,nothing,nothing"
+            }
+          }
+        }
+      ],
+      "end": "She was his best man.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.5,
+        0.6
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For whoever sat with the new kid.",
+      "next": {
+        "name": "Thicket",
+        "line": "Saying 'later' plants a tree here."
+      }
+    }
+  },
+  {
+    "id": "058",
+    "name": "Melody",
+    "subtitle": "every Melody's planet",
+    "story": "On Melody, catchy songs are actually catching. Hum something on the bus and the whole bus goes home humming it. Callum sang one line of a song in the shower one morning. His sister caught it through the bathroom door, the postman caught it from her, and by teatime the whole planet was singing it, in every kitchen and every queue. Callum doesn't know the second line. Neither does anyone else.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "two",
+      "Gravity": "0.9 g",
+      "Population": "3.4 million"
+    },
+    "hook": "A planet for every brother singing in the shower.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#melody"
+    ],
+    "spec": {
+      "palette": "crimson",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": 0.28,
+      "sun_y": 0.45,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "#e9b434",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 6,
+      "crowd_items": "sing,sing,sing,sing,sing,sing",
+      "crowd_x": 0.43,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.82,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "Here, catchy songs are actually catching.",
+    "kicker": "Every Melody gets this planet.",
+    "episode": {
+      "opener": "Here, catchy songs\nare actually catching.",
+      "beats": [
+        {
+          "text": "Hum on the bus, and the whole bus\ngoes home humming.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.34,
+              1.4
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "Shops aren't allowed\nto play music.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.34,
+              1.4
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "Callum sang one line of a song\nin the shower one morning.",
+          "shot": "house",
+          "spec": {
+            "crowd": 0
+          }
+        },
+        {
+          "text": "His sister caught it\nthrough the door.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.76,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "echo",
+            "crowd_x": 0.62,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Then the postman,\nand his whole round.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "sing,sing",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.1,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "By teatime, everyone.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd": 10,
+            "crowd_x": 0.0,
+            "crowd_items": "sing",
+            "house": false
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "seconds": 2.4,
+          "spec": {
+            "crowd": 10,
+            "crowd_x": 0.0,
+            "crowd_items": "nothing",
+            "house": false
+          },
+          "note": "identical camera; everyone stops at once"
+        }
+      ],
+      "end": "Callum doesn't know the second line.",
+      "caption": "One person on that hill started it.\n\nMelody: 3.4 million people, a 25-hour day, two moons, and songs that spread like colds. Hum on the bus and the bus goes home humming. Shops aren't allowed to play music. Callum sang one line in the shower one morning, and by teatime the whole planet had it.\n\nI caught it at passport control. I'm still humming it.\n\n(On Earth, a Finnish study found that about nine in ten of the people it surveyed got a song stuck in their head at least once a week, usually just a fragment. On Melody, it's everyone's fragment.)\n\nHave you ever caught a song off a stranger?"
+    },
+    "first_comment": "Callum sings with the tap running now.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every brother singing in the shower.",
+      "title": "Here, catchy songs\nare actually catching.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.34,
+        1.4
+      ],
+      "focus": [
+        0.5,
+        0.62
+      ],
+      "spec": {
+        "crowd_items": "nothing,nothing,nothing,nothing,nothing,sing"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "crowd_items": "sing,sing,sing,sing,sing,sing"
+        }
+      },
+      "beats": [
+        {
+          "text": "Callum sang one line\nin the shower this morning.\nHis sister caught it first.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.76,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "echo",
+            "crowd_x": 0.62,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Now the whole planet\nis singing it.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd": 10,
+            "crowd_x": 0.0,
+            "crowd_items": "sing",
+            "house": false
+          }
+        }
+      ],
+      "end": "Callum doesn't know the second line.",
+      "end_onset": {
+        "at": 1.3,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "nothing"
+        }
+      },
+      "end_zoom": [
+        1.06,
+        1.02
+      ],
+      "end_focus": [
+        0.5,
+        0.58
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For every brother singing in the shower.",
+      "next": {
+        "name": "Figment",
+        "line": "Imaginary friends retire here."
+      }
+    }
+  },
+  {
+    "id": "055",
+    "name": "Luke",
+    "subtitle": "every Luke's planet",
+    "story": "On Luke, the sky's thermostat is in Priya's hallway. Priya likes it tropical. Her flatmate Ellie likes it snowing, and says so by walking past the dial very slowly. Most days this winter the neighbours have had four seasons before breakfast, and they keep a parasol and a shovel by the door. After a long talk and a short row, the flat agreed a compromise: lukewarm drizzle. Nobody is happy. Everybody is used to it.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "390,000"
+    },
+    "hook": "A planet for flatmates who fight over the heating.",
+    "tags": [
+      "#worldbuilding",
+      "#flatmates",
+      "#luke"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.72,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "#c8452f",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.45,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.8,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.075,
+      "stage": 0.74
+    },
+    "cover": "The sky's thermostat is in Priya's hallway.",
+    "kicker": "Every Luke gets this planet.",
+    "episode": {
+      "opener": "The sky's thermostat\nis in Priya's hallway.",
+      "beats": [
+        {
+          "text": "Priya likes it tropical.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.62,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "rust_desert",
+            "suns": 1,
+            "sun_x": 0.72,
+            "sun_y": 0.58,
+            "sun_size": 0.09,
+            "mist": 0.25,
+            "snow": false,
+            "particles": "none",
+            "crowd_items": "umbrella,nothing"
+          }
+        },
+        {
+          "text": "Her flatmate Ellie\nlikes it snowing.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.62,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "mist": 0.5,
+            "stars": 0.4,
+            "crowd_items": "umbrella,nothing"
+          },
+          "note": "identical camera to the beat before; one thing changed: the weather"
+        },
+        {
+          "text": "She says so by walking\npast the dial very slowly.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.62,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "mist": 0.5,
+            "stars": 0.4,
+            "crowd_items": "umbrella,nothing"
+          }
+        },
+        {
+          "text": "The neighbours have had\nfour seasons since breakfast.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "rust_desert",
+            "suns": 1,
+            "sun_x": 0.72,
+            "sun_y": 0.47,
+            "sun_size": 0.09,
+            "mist": 0.25,
+            "snow": false,
+            "particles": "none",
+            "crowd": 6,
+            "crowd_x": 0.4,
+            "crowd_gap": 0.085,
+            "crowd_facing": "right",
+            "crowd_items": "nothing,umbrella,nothing,nothing,nothing,nothing"
+          }
+        },
+        {
+          "text": "They've stopped putting\ntheir coats away.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "mist": 0.5,
+            "stars": 0.4,
+            "crowd": 6,
+            "crowd_x": 0.4,
+            "crowd_gap": 0.085,
+            "crowd_facing": "right",
+            "crowd_items": "nothing,umbrella,nothing,nothing,nothing,nothing"
+          }
+        },
+        {
+          "text": "After a long talk and a short row,\nthey agreed a compromise.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "mint_dawn",
+            "suns": 0,
+            "snow": false,
+            "particles": "rain",
+            "mist": 0.65,
+            "stars": null,
+            "crowd": 6,
+            "crowd_x": 0.4,
+            "crowd_gap": 0.085,
+            "crowd_facing": "right",
+            "crowd_items": "umbrella,umbrella,umbrella,umbrella,umbrella,umbrella"
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "seconds": 2.6,
+          "spec": {
+            "palette": "mint_dawn",
+            "suns": 0,
+            "snow": false,
+            "particles": "rain",
+            "mist": 0.65,
+            "stars": null,
+            "crowd": 6,
+            "crowd_x": 0.4,
+            "crowd_gap": 0.085,
+            "crowd_facing": "right",
+            "crowd_items": "umbrella,umbrella,umbrella,umbrella,umbrella,umbrella"
+          },
+          "note": "identical camera to the beat before; one thing changed: the compromise"
+        }
+      ],
+      "end": "The compromise: lukewarm drizzle.",
+      "caption": "The dial is just inside that front door.\n\nLuke: 390,000 people, a 24-hour day, no moons, and one thermostat, in the hallway of a rented flat. Priya likes it tropical. Ellie likes it snowing. Neither has read the tenancy agreement, which is very clear that the weather is shared. The neighbours keep a parasol and a shovel by the door and no longer ask.\n\nI was there for one morning. I got sunburnt and snowed on before lunch.\n\n(On Earth, a 2015 study in Nature Climate Change found that the standard formula for office temperatures was worked out for the metabolism of a forty-year-old man. On Luke, it's worked out by whoever touched the dial last.)\n\nWho in your house is in charge of the dial?"
+    },
+    "first_comment": "Week two of drizzle. Priya has bought a very small heater.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for flatmates who fight over the heating.",
+      "title": "The sky's thermostat\nis in Priya's hallway.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.24,
+        1.3
+      ],
+      "focus": [
+        0.55,
+        0.6
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "rust_desert",
+          "suns": 1,
+          "sun_x": 0.72,
+          "sun_y": 0.47,
+          "sun_size": 0.09,
+          "mist": 0.25,
+          "snow": false,
+          "particles": "none",
+          "crowd_items": "umbrella,nothing"
+        }
+      },
+      "beats": [
+        {
+          "text": "Priya likes it tropical.\nHer flatmate Ellie likes snow.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.62,
+              0.6
+            ]
+          },
+          "spec": {
+            "sun_y": 0.58
+          },
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "palette": "violet_ice",
+              "suns": 0,
+              "snow": true,
+              "particles": "snow",
+              "mist": 0.5,
+              "stars": 0.4,
+              "crowd_items": "umbrella,nothing"
+            }
+          }
+        },
+        {
+          "text": "The neighbours have had\nfour seasons since breakfast.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "mist": 0.5,
+            "stars": 0.4,
+            "crowd": 6,
+            "crowd_x": 0.4,
+            "crowd_gap": 0.085,
+            "crowd_facing": "right",
+            "crowd_items": "nothing,umbrella,nothing,nothing,nothing,nothing"
+          },
+          "onset": {
+            "at": 1.7,
+            "motion": "cut",
+            "spec": {
+              "palette": "rust_desert",
+              "suns": 1,
+              "sun_x": 0.72,
+              "sun_y": 0.47,
+              "sun_size": 0.09,
+              "mist": 0.25,
+              "snow": false,
+              "particles": "none"
+            }
+          },
+          "seconds": 3.7
+        }
+      ],
+      "end": "The compromise: lukewarm drizzle.",
+      "end_spec": {
+        "sun_y": 0.58
+      },
+      "end_onset": {
+        "at": 1.3,
+        "motion": "cut",
+        "spec": {
+          "palette": "mint_dawn",
+          "suns": 0,
+          "snow": false,
+          "particles": "rain",
+          "mist": 0.65,
+          "stars": null,
+          "crowd_items": "umbrella,umbrella,umbrella,umbrella,umbrella,umbrella"
+        }
+      },
+      "end_zoom": [
+        1.14,
+        1.08
+      ],
+      "end_focus": [
+        0.5,
+        0.6
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For flatmates who fight over the heating.",
+      "next": {
+        "name": "Kith",
+        "line": "Houses here follow your best friend."
+      }
+    }
+  },
+  {
+    "id": "062",
+    "name": "Ash",
+    "subtitle": "every Ash's planet",
+    "story": "The air on Ash is full of static, and kind words set it off. A small one crackles. A proper one, the kind people only say a handful of times in a life, sets the whole hillside alight. So people here keep it light: the weather, the football, a dig about your haircut. Mick and Tony are brothers and have got by on insults since the playground. Then Tony became a dad, and Mick, in the hospital car park, said, 'You'll be brilliant.' The fire brigade said it was the best one they'd seen all year. Mick lost an eyebrow. Worth it.",
+    "facts": {
+      "Day": "26 hours",
+      "Moons": "none",
+      "Gravity": "1.1 g",
+      "Population": "1.9 million"
+    },
+    "hook": "A planet for brothers who only trade insults.",
+    "tags": [
+      "#illustration",
+      "#brothers",
+      "#ash"
+    ],
+    "spec": {
+      "palette": "abyss",
+      "terrain": "mesas",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.8,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 0.6,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.45,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.82,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.12,
+      "stage": 0.74
+    },
+    "cover": "Kind words here start fires.",
+    "kicker": "Every Ash gets this planet.",
+    "episode": {
+      "opener": "Kind words here\nstart fires.",
+      "beats": [
+        {
+          "text": "A small one crackles.\nA proper one lights the hill.",
+          "shot": "wide",
+          "spec": {
+            "crowd_items": "sing,nothing",
+            "particles": "embers",
+            "glow_rims": true
+          }
+        },
+        {
+          "text": "So people keep it light.\nThey talk about the weather.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_gap": 0.24,
+            "particles": "none",
+            "glow_rims": false,
+            "crowd_items": "nothing,nothing"
+          }
+        },
+        {
+          "text": "The fire brigade\nattends every wedding.",
+          "shot": "house",
+          "spec": {
+            "crowd_gap": 0.24,
+            "particles": "none",
+            "glow_rims": false,
+            "crowd_items": "nothing,nothing"
+          }
+        },
+        {
+          "text": "Mick and Tony are brothers.",
+          "shot": "group",
+          "spec": {
+            "crowd_gap": 0.24,
+            "particles": "none",
+            "glow_rims": false,
+            "crowd_items": "nothing,nothing"
+          }
+        },
+        {
+          "text": "Strictly insults.\nIt's not that kind of family.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_gap": 0.24,
+            "particles": "none",
+            "glow_rims": false,
+            "crowd_items": "shout,shout",
+            "spot": "#c8452f"
+          },
+          "note": "the insults are jagged arcs and light nothing"
+        },
+        {
+          "text": "Then Tony became a dad.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.56,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd_gap": 0.24,
+            "particles": "none",
+            "glow_rims": false,
+            "crowd_items": "nothing,nothing"
+          }
+        },
+        {
+          "text": "Mick said, 'You'll be brilliant.'",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_gap": 0.24,
+            "particles": "none",
+            "glow_rims": false,
+            "crowd_items": "nothing,nothing"
+          },
+          "onset": {
+            "at": 1.4,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "sing,nothing",
+              "particles": "embers",
+              "glow_rims": true
+            }
+          },
+          "note": "identical camera to beat 5; one thing changed: the kind word lights the hill. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_gap": 0.24,
+            "crowd_items": "sing,nothing",
+            "particles": "embers",
+            "glow_rims": true
+          },
+          "seconds": 2.6
+        }
+      ],
+      "end": "Mick lost an eyebrow. Worth it.",
+      "caption": "Mick, on the left, has just been nice.\n\nAsh: 1.9 million people, a 26-hour day, no moons, and so much static in the air that a kind word throws sparks. A small one crackles. A proper one, the kind you say a handful of times in a life, sets the hillside alight and brings out the fire brigade. So people here talk about the weather. Mick and Tony are brothers, and have managed a whole life on football and insults. Then Tony became a dad.\n\nI told the hotel receptionist I loved the view. They evacuated the lobby.\n\n(On Earth, a static shock you can feel takes about three thousand volts, and one you can see takes several thousand more. The meters on Ash melt before anyone can measure a proper 'I'm proud of you'.)\n\nWhat's the kindest thing you've never said?"
+    },
+    "first_comment": "The baby has her dad's eyes and, so far, both eyebrows.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for brothers who only trade insults.",
+      "title": "Kind words here\nstart fires.",
+      "sub": "",
+      "framing": "group",
+      "zoom": [
+        1.6,
+        1.66
+      ],
+      "focus": [
+        0.42,
+        0.62
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "sing,nothing",
+          "particles": "embers",
+          "glow_rims": true
+        }
+      },
+      "beats": [
+        {
+          "text": "Mick and Tony are brothers.\nNot one nice word, ever.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_gap": 0.24,
+            "particles": "none",
+            "glow_rims": false,
+            "crowd_items": "shout,shout",
+            "spot": "#c8452f"
+          }
+        },
+        {
+          "text": "When Tony became a dad,\nMick said, 'You'll be brilliant.'",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_gap": 0.24,
+            "particles": "none",
+            "glow_rims": false,
+            "crowd_items": "nothing,nothing"
+          },
+          "seconds": 4.4,
+          "onset": {
+            "at": 2.4,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "sing,nothing",
+              "particles": "embers",
+              "glow_rims": true
+            }
+          }
+        }
+      ],
+      "end": "Mick lost an eyebrow. Worth it.",
+      "end_zoom": [
+        1.4,
+        1.34
+      ],
+      "end_focus": [
+        0.5,
+        0.62
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For brothers who only trade insults.",
+      "next": {
+        "name": "Clasp",
+        "line": "Hugs here last as long as you've been apart."
+      }
+    }
+  },
+  {
+    "id": "057",
+    "name": "Faith",
+    "subtitle": "every Faith's planet",
+    "story": "On Faith, believing in someone moves mountains. Most of the time it's small stuff: a hill shuffles over for a nervous driver, a ridge lies down for a cyclist. Kieran's village sits behind the biggest mountain on the planet, and nobody thought he'd get to university, least of all the mountain. Then his teacher, Miss Hart, believed in him. The mountain moved out of the way overnight. The bus takes ten minutes now. Miss Hart is already on the next one.",
+    "facts": {
+      "Day": "26 hours",
+      "Moons": "one",
+      "Gravity": "1.0 g",
+      "Population": "870,000"
+    },
+    "hook": "A planet for the teacher who believed in you.",
+    "tags": [
+      "#worldbuilding",
+      "#teachers",
+      "#faith"
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "terrain": "peaks",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 1.3,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.5,
+      "sun_y": 0.55,
+      "sun_size": 0.075,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.3,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.46,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.8,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Believing in someone moves mountains here.",
+    "kicker": "Every Faith gets this planet.",
+    "episode": {
+      "opener": "Believing in someone\nmoves mountains here.",
+      "beats": [
+        {
+          "text": "Mostly small ones.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "relief": 0.8
+          }
+        },
+        {
+          "text": "A hill shuffles over\nfor a nervous driver.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "relief": 0.8
+          }
+        },
+        {
+          "text": "Kieran's village is behind\nthe biggest one on the planet.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          }
+        },
+        {
+          "text": "Nobody thought Kieran\nwould get to university.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.6,
+              1.68
+            ],
+            "focus": [
+              0.56,
+              0.63
+            ]
+          }
+        },
+        {
+          "text": "Not even the mountain.",
+          "shot": {
+            "framing": "sky",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.5,
+              0.4
+            ]
+          }
+        },
+        {
+          "text": "Then his teacher, Miss Hart,\nbelieved in him.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "book,nothing",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.07,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "seconds": 2.6,
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "book,nothing",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.07,
+            "crowd_facing": "in",
+            "relief": 0.3
+          },
+          "note": "identical camera; one thing changed: the mountain has gone"
+        },
+        {
+          "text": "The bus takes ten minutes now.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.495,
+            "crowd_facing": "right",
+            "relief": 0.3
+          },
+          "note": "identical camera; one thing changed: Miss Hart has gone"
+        }
+      ],
+      "end": "She's already on the next one.",
+      "caption": "Kieran's village had never seen that sunset.\n\nFaith: 870,000 people, a 26-hour day, one moon, and a geography that depends on who believes in whom. Most days it's small stuff: a hill shuffles over for a nervous driver. The big one stood between Kieran's village and everywhere else, and nobody, including the mountain, thought he'd get past it. Miss Hart did. The maps were redrawn by the weekend.\n\n(On Earth, mountains move too: India is still pushing into Asia at four or five centimetres a year, so the Himalayas are, strictly speaking, on their way somewhere.)\n\nWhich subject was your mountain?"
+    },
+    "first_comment": "Kieran teaches maths now. There's a hill outside his school that's looking nervous.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for the teacher who believed in you.",
+      "title": "Believing in someone\nmoves mountains here.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.08,
+        1.14
+      ],
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "spec": {
+        "relief": 0.3
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "relief": 1.3
+        }
+      },
+      "beats": [
+        {
+          "text": "Nobody thought Kieran\nwould get to university.\nNot even the mountain.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.6,
+              1.68
+            ],
+            "focus": [
+              0.56,
+              0.63
+            ]
+          }
+        },
+        {
+          "text": "Then his teacher, Miss Hart,\nbelieved in him.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "book,nothing",
+            "crowd_x": 0.46,
+            "crowd_gap": 0.07,
+            "crowd_facing": "in"
+          },
+          "onset": {
+            "at": 1.7,
+            "motion": "cut",
+            "spec": {
+              "relief": 0.3
+            }
+          }
+        }
+      ],
+      "end": "She's already on the next one.",
+      "end_onset": {
+        "at": 1.1,
+        "motion": "cut",
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.495,
+          "crowd_facing": "right"
+        }
+      },
+      "end_zoom": [
+        1.14,
+        1.08
+      ],
+      "end_focus": [
+        0.5,
+        0.56
+      ],
+      "name_y": 0.16,
+      "end_kicker": "For the teacher who believed in you.",
+      "next": {
+        "name": "Twain",
+        "line": "Here, you can jump to the planet next door."
+      }
+    }
+  },
+  {
+    "id": "063",
+    "name": "Kate",
+    "subtitle": "every Kate's planet",
+    "story": "There's a town on Kate called Five Minutes Away. It's about an hour from everywhere. Everyone who's running late is from there: the friend who's just parking, the one who's literally just leaving now, the one who's nearly there. The buses leave in five minutes, always. Its twin town is On My Way. Kate moved there at school and never quite left. Naturally, the town elected her mayor. Her swearing-in started an hour ago.",
+    "facts": {
+      "Day": "24 hours, give or take",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "3.3 million"
+    },
+    "hook": "A planet for every friend who's 'nearly there'.",
+    "tags": [
+      "#worldbuilding",
+      "#alwayslate",
+      "#kate"
+    ],
+    "spec": {
+      "palette": "pastel",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.2,
+      "sun_y": 0.4,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.3,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "FIVE MINUTES|AWAY",
+      "crowd": 5,
+      "crowd_items": "walk,walk,cup,walk,walk",
+      "crowd_x": 0.36,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Kate is always five minutes away.",
+    "kicker": "Every Kate gets this planet.",
+    "text_y": {
+      "name": 0.12
+    },
+    "episode": {
+      "opener": "Kate is always\nfive minutes away.",
+      "beats": [
+        {
+          "text": "Five Minutes Away is a town,\nan hour from everywhere else.",
+          "shot": "wide"
+        },
+        {
+          "text": "Everyone who's running late\nis from there.",
+          "shot": "crowd"
+        },
+        {
+          "text": "The buses leave\nin five minutes. Always.",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.7,
+              1.76
+            ]
+          }
+        },
+        {
+          "text": "Its twin town\nis On My Way.",
+          "shot": "group"
+        },
+        {
+          "text": "Kate moved there at school\nand has never quite left.",
+          "shot": "wide"
+        },
+        {
+          "text": "Naturally, the town\nelected Kate.",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.7,
+              1.76
+            ]
+          },
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "sign": "FIVE MINUTES|AWAY|MAYOR: KATE"
+            }
+          },
+          "note": "the sign camera again; the board is rewritten. Turn line"
+        },
+        {
+          "text": "",
+          "shot": "wide",
+          "spec": {
+            "sign": "FIVE MINUTES|AWAY|MAYOR: KATE"
+          },
+          "seconds": 3.4
+        }
+      ],
+      "end": "Her swearing-in started an hour ago.",
+      "caption": "Everyone in that crowd is running late.\n\nKate: 3.3 million people, a 24-hour day (give or take), no moons, and a town called Five Minutes Away, which is about an hour from everywhere. Everyone who's running late is from there: the friend who's just parking, the one who's literally leaving now, the one who's nearly there. The buses leave in five minutes, always. Kate moved there at school and never quite left.\n\nI told them I was five minutes away. They gave me a house.\n\n(The story goes that Swiss railways count a train as late once it's three minutes behind. On Kate, three minutes behind is considered early.)\n\nHow far away is your five minutes?"
+    },
+    "first_comment": "She's sent a voice note: 'Literally just parking.'",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every friend who's 'nearly there'.",
+      "title": "Kate is always\nfive minutes away.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.2,
+        1.26
+      ],
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "spec": {
+        "sign": ""
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "sign": "FIVE MINUTES|AWAY"
+        }
+      },
+      "beats": [
+        {
+          "text": "Five Minutes Away is a town.\nEveryone running late\nis from there.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.38,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "Naturally, the town\nelected Kate.",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.7,
+              1.76
+            ]
+          },
+          "seconds": 4.0,
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "sign": "FIVE MINUTES|AWAY|MAYOR: KATE"
+            }
+          }
+        }
+      ],
+      "end": "Her swearing-in started an hour ago.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.5,
+        0.6
+      ],
+      "name_y": 0.14,
+      "end_kicker": "For every friend who's 'nearly there'.",
+      "scrim": 0.55,
+      "next": {
+        "name": "Yarn",
+        "line": "Stories told here happen overhead."
+      }
+    }
   }
 ]

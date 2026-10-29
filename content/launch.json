@@ -7218,7 +7218,1842 @@
         0.52
       ],
       "name_y": 0.1,
-      "end_kicker": "For every dad who's just resting his eyes."
+      "end_kicker": "For every dad who's just resting his eyes.",
+      "next": {
+        "name": "Violet",
+        "line": "New kids here are invisible."
+      }
+    }
+  },
+  {
+    "id": "059",
+    "name": "Thicket",
+    "subtitle": "where saying 'later' plants a tree",
+    "story": "On Thicket, saying 'later' plants a tree. Most gardens have a couple. Phil has been going to fix the gate since the kids were little, and the house now stands in a small wood. Then his wife asked about the gate again. 'Later,' he said. The house hasn't been seen since, though the kitchen light is still on in there somewhere. He'll clear the wood. Later.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "one",
+      "Gravity": "1.0 g",
+      "Population": "2.7 million"
+    },
+    "hook": "A planet for every husband who'll get round to it.",
+    "tags": [
+      "#worldbuilding",
+      "#husbands",
+      "#diy"
+    ],
+    "spec": {
+      "palette": "rust_desert",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.28,
+      "sun_y": 0.5,
+      "sun_size": 0.06,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "pines",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "TO DO:|FIX GATE",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.44,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.62,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Saying 'later' plants a tree here.",
+    "episode": {
+      "opener": "Saying 'later'\nplants a tree here.",
+      "beats": [
+        {
+          "text": "Most gardens here have a couple.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "Students live in hedges.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "Phil's been going to fix the gate\nsince the kids were little.",
+          "shot": "sign"
+        },
+        {
+          "text": "The house stands\nin a small wood.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "His wife asked about the gate again.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "'Later,' he said.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "trees": "giant"
+          },
+          "note": "identical camera; one thing changed: the wood"
+        },
+        {
+          "text": "You can still see the kitchen light,\nsomewhere in there.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "trees": "giant"
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "seconds": 2.6,
+          "spec": {
+            "trees": "giant",
+            "sign": "TO DO:|FIX GATE|FIND HOUSE"
+          },
+          "note": "the button: the list grows"
+        }
+      ],
+      "end": "He'll clear the wood. Later.",
+      "caption": "Phil's to-do list is one job long.\n\nThicket: 2.7 million people, a 24-hour day, one moon, and a tree for every 'I'll do it later'. Most gardens have a couple. Students live in hedges. Phil has been going to fix the gate since the kids were little, and last week, when his wife asked again, he said the word.\n\n(On Earth, some bamboo grows almost a metre in a day. That's still slower than Phil's list.)\n\nWhich job has your house been putting off longest?"
+    },
+    "first_comment": "The postman leaves parcels at the edge of the wood now.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every husband who'll get round to it.",
+      "title": "Saying 'later'\nplants a tree here.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.2,
+        1.26
+      ],
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "spec": {
+        "trees": "none"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "trees": "pines"
+        }
+      },
+      "beats": [
+        {
+          "text": "Phil's been going to fix the gate\nsince the kids were little.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.52,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "His wife asked again.\n'Later,' he said.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 1.5,
+            "motion": "cut",
+            "spec": {
+              "trees": "giant"
+            }
+          },
+          "seconds": 3.2
+        }
+      ],
+      "end": "He'll clear the wood. Later.",
+      "end_onset": {
+        "at": 1.4,
+        "motion": "cut",
+        "spec": {
+          "sign": "TO DO:|FIX GATE|FIND HOUSE"
+        }
+      },
+      "end_zoom": [
+        1.26,
+        1.2
+      ],
+      "end_focus": [
+        0.5,
+        0.6
+      ],
+      "name_y": 0.17,
+      "end_kicker": "For every husband who'll get round to it.",
+      "next": {
+        "name": "Melody",
+        "line": "Here, catchy songs are actually catching."
+      }
+    }
+  },
+  {
+    "id": "064",
+    "name": "Figment",
+    "subtitle": "where imaginary friends retire",
+    "story": "When a child stops needing them, imaginary friends come to Figment. It's quiet. There are armchairs. Some take up hobbies, but mostly they wait, because every so often one of them gets called back. Barnaby was Freya's, from the age of three until about seven: tall, very polite, never without his red umbrella. He has waited on the same hill ever since. Last week, Freya's daughter turned three. Barnaby was gone by teatime, and back by bedtime.",
+    "facts": {
+      "Day": "28 hours",
+      "Moons": "none",
+      "Gravity": "0.8 g",
+      "Population": "uncounted"
+    },
+    "hook": "A planet for every parent of a three-year-old.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#imaginaryfriends"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.55,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "#c8452f",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 6,
+      "crowd_items": "kettle,fish,flower,armchair,book,umbrella",
+      "crowd_x": 0.45,
+      "crowd_facing": "",
+      "daisies": 1,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "Imaginary friends retire here.",
+    "episode": {
+      "opener": "Imaginary friends\nretire here.",
+      "beats": [
+        {
+          "text": "When you stop needing them,\nthey come here.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "A lion who was mostly a dog.\nA horse called Steve.\nA girl from behind the sofa.",
+          "shot": "group"
+        },
+        {
+          "text": "There are armchairs.\nIt's very quiet.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.52,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "Barnaby was Freya's\nfrom age three to seven.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.68,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "He's waited ever since.\nMostly politely.",
+          "shot": "crowd"
+        },
+        {
+          "text": "Last week, Freya's daughter\nturned three.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "By teatime, he'd gone.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "cut",
+            "spec": {
+              "crowd": 5,
+              "crowd_items": "kettle,fish,flower,armchair,book",
+              "crowd_x": 0.4
+            }
+          },
+          "note": "identical camera to beats 1 and 6; one thing gone: the red umbrella. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 5,
+            "crowd_items": "kettle,fish,flower,armchair,book",
+            "crowd_x": 0.4
+          },
+          "seconds": 2.6
+        }
+      ],
+      "end": "He was back by bedtime.",
+      "caption": "Look for the red umbrella.\n\nFigment: a 28-hour day, no moons, gentle gravity and a lot of armchairs. When a child stops needing an imaginary friend, the friend comes here: a lion who was mostly a dog, a girl who lived behind the sofa, a horse called Steve. They take up hobbies. Mostly they wait, because now and then one gets called back. Barnaby was Freya's, from the age of three till about seven. Tall, polite, never without his umbrella.\n\nOne of them recognised me. I'd rather not say from where.\n\n(On Earth, a study at the University of Oregon found that about two children in three have had an imaginary friend by the age of seven. On Figment, a few are still waiting to be asked.)\n\nWhere did yours live?"
+    },
+    "first_comment": "He's asked for the top bunk. They're negotiating.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every parent of a three-year-old.",
+      "title": "Imaginary friends\nretire here.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.4,
+        1.46
+      ],
+      "focus": [
+        0.46,
+        0.62
+      ],
+      "spec": {
+        "crowd": 0
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "crowd": 6
+        }
+      },
+      "beats": [
+        {
+          "text": "Barnaby was Freya's\nfrom age three to seven.\nHe's waited ever since.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.66,
+              0.67
+            ]
+          }
+        },
+        {
+          "text": "Last week, Freya's daughter\nturned three.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "seconds": 3.6,
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "crowd": 5,
+              "crowd_items": "kettle,fish,flower,armchair,book",
+              "crowd_x": 0.4
+            }
+          }
+        }
+      ],
+      "end": "He was back by bedtime.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.46,
+        0.6
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For every parent of a three-year-old.",
+      "next": {
+        "name": "Luke",
+        "line": "The sky's thermostat is in Priya's hallway."
+      }
+    }
+  },
+  {
+    "id": "056",
+    "name": "Kith",
+    "subtitle": "where houses follow your best friend",
+    "story": "On Kith, houses follow your best friend. Sophie and Hannah grew up next door to each other and stayed there for decades. Then Sophie moved to the sea. Hannah's house went after her the same afternoon, across two counties and a motorway, and Hannah was in the bath at the time. It settled on the cliff next to Sophie's, a little crooked, with the kettle still warm. Nobody told Hannah's husband.",
+    "facts": {
+      "Day": "23 hours",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "1.6 million"
+    },
+    "hook": "A planet for every best friend who moved away.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#bestfriends"
+    ],
+    "spec": {
+      "palette": "lilac_dusk",
+      "terrain": "hills",
+      "layers": 3,
+      "horizon": 0.62,
+      "relief": 0.6,
+      "water": true,
+      "shore": "left",
+      "suns": 1,
+      "sun_x": 0.8,
+      "sun_y": 0.55,
+      "sun_size": 0.045,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "moth_roof",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 0,
+      "crowd_items": "",
+      "crowd_x": 0.0,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.2,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Houses here follow your best friend.",
+    "episode": {
+      "opener": "Houses here follow\nyour best friend.",
+      "beats": [
+        {
+          "text": "Sophie and Hannah grew up\nnext door to each other.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.45,
+              0.62
+            ]
+          },
+          "spec": {
+            "water": false,
+            "shore": "none",
+            "palette": "pumpkin",
+            "terrain": "hills",
+            "layers": 4,
+            "horizon": 0.64,
+            "relief": 0.7,
+            "suns": 1,
+            "sun_x": 0.25,
+            "sun_y": 0.5,
+            "sun_size": 0.05,
+            "mist": 0.45,
+            "house": true,
+            "gag": "moth_roof",
+            "crowd": 2,
+            "crowd_items": "nothing,nothing",
+            "crowd_x": 0.55,
+            "crowd_facing": "in",
+            "house_x": 0.66,
+            "crowd_gap": 0.05
+          }
+        },
+        {
+          "text": "Estate agents ask about your friends\nbefore your budget.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.45,
+              0.62
+            ]
+          },
+          "spec": {
+            "water": false,
+            "shore": "none",
+            "palette": "pumpkin",
+            "terrain": "hills",
+            "layers": 4,
+            "horizon": 0.64,
+            "relief": 0.7,
+            "suns": 1,
+            "sun_x": 0.25,
+            "sun_y": 0.5,
+            "sun_size": 0.05,
+            "mist": 0.45,
+            "house": true,
+            "gag": "moth_roof",
+            "crowd": 2,
+            "crowd_items": "nothing,nothing",
+            "crowd_x": 0.55,
+            "crowd_facing": "in",
+            "house_x": 0.66,
+            "crowd_gap": 0.05
+          }
+        },
+        {
+          "text": "In spring, Sophie moved to the sea.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.38,
+              0.62
+            ]
+          },
+          "spec": {
+            "gag": "",
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.3,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Hannah's house went after her.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.38,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.3,
+            "crowd_facing": "right"
+          },
+          "note": "identical camera; one thing changed: the house has arrived"
+        },
+        {
+          "text": "Across two counties\nand a motorway.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.38,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.3,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "It settled next to Sophie's,\na little crooked.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.38,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.3,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Hannah was in the bath\nat the time.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.55,
+              1.62
+            ],
+            "focus": [
+              0.44,
+              0.63
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.64,
+            "crowd_facing": "left"
+          },
+          "note": "Sophie alone outside; the lit window is Hannah, in the bath"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          },
+          "seconds": 2.4,
+          "spec": {
+            "water": false,
+            "shore": "none",
+            "palette": "pumpkin",
+            "terrain": "hills",
+            "layers": 4,
+            "horizon": 0.64,
+            "relief": 0.7,
+            "suns": 1,
+            "sun_x": 0.25,
+            "sun_y": 0.5,
+            "sun_size": 0.05,
+            "mist": 0.45,
+            "house": false,
+            "gag": "",
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.64,
+            "crowd_facing": "left"
+          },
+          "note": "back on the old street: a man with a cup where the house was"
+        }
+      ],
+      "end": "Nobody told her husband.",
+      "caption": "Only one of those houses was there yesterday.\n\nKith: 1.6 million people, a 23-hour day, no moons, and houses that follow your best friend. Estate agents ask about your friendships before your budget, and removal vans are mostly for pianos. Sophie and Hannah grew up next door to each other. When Sophie moved to the coast, Hannah's house went the same afternoon and settled beside hers, a little crooked, with the bath still running.\n\n(On Earth, hermit crabs swap shells in a queue: when a bigger one washes up, they line up in order of size and everybody moves house at once. On Kith, nobody checks who's in the bath.)\n\nIs your best friend in the same postcode?"
+    },
+    "first_comment": "He found them on Sunday. Sophie's put the kettle on.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every best friend who moved away.",
+      "title": "Houses here follow\nyour best friend.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.2,
+        1.26
+      ],
+      "focus": [
+        0.38,
+        0.62
+      ],
+      "spec": {
+        "gag": ""
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "slide",
+        "spec": {
+          "gag": "moth_roof"
+        }
+      },
+      "beats": [
+        {
+          "text": "Hannah's best friend\nmoved to the sea.\nHannah's house followed.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.55,
+              1.62
+            ],
+            "focus": [
+              0.44,
+              0.63
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.64,
+            "crowd_facing": "left"
+          },
+          "seconds": 4.1
+        },
+        {
+          "text": "Hannah was in the bath\nat the time.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          },
+          "spec": {
+            "water": false,
+            "shore": "none",
+            "palette": "pumpkin",
+            "terrain": "hills",
+            "layers": 4,
+            "horizon": 0.64,
+            "relief": 0.7,
+            "suns": 1,
+            "sun_x": 0.25,
+            "sun_y": 0.5,
+            "sun_size": 0.05,
+            "mist": 0.45,
+            "house": false,
+            "gag": "moth_roof",
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.64,
+            "crowd_facing": "left"
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "gag": ""
+            }
+          },
+          "seconds": 3.5
+        }
+      ],
+      "end": "Nobody told her husband.",
+      "end_zoom": [
+        1.42,
+        1.36
+      ],
+      "end_focus": [
+        0.52,
+        0.62
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For every best friend who moved away.",
+      "next": {
+        "name": "Ash",
+        "line": "Kind words here start fires."
+      }
+    }
+  },
+  {
+    "id": "060",
+    "name": "Clasp",
+    "subtitle": "where a hug lasts as long as you've been apart",
+    "story": "On Clasp, a hug lasts exactly as long as you've been apart. Back from the shops: a squeeze. Back from a fortnight in the sun: a fortnight. Zoe went travelling for a year, and her mum got to the airport an hour early, holding flowers. The plane landed. They've been there since June. Zoe's dad brings them sandwiches, and a coat each now the snow's started.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "5.6 million"
+    },
+    "hook": "A planet for every mum waiting at arrivals.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#mums"
+    ],
+    "spec": {
+      "palette": "cobalt_noon",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.76,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "ARRIVALS",
+      "crowd": 2,
+      "crowd_items": "flower,nothing",
+      "crowd_x": 0.5,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.02,
+      "stage": 0.74
+    },
+    "cover": "Hugs here last as long as you've been apart.",
+    "episode": {
+      "opener": "Hugs here last as long\nas you've been apart.",
+      "beats": [
+        {
+          "text": "Back from the shops: a squeeze.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.6,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,nothing"
+          }
+        },
+        {
+          "text": "Back from a fortnight away:\na fortnight.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.6,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,nothing"
+          }
+        },
+        {
+          "text": "Airports have benches for people\nwaiting to be let go of.",
+          "shot": "sign",
+          "spec": {
+            "crowd": 0
+          }
+        },
+        {
+          "text": "Zoe went travelling for a year.",
+          "shot": "sign",
+          "spec": {
+            "crowd": 0
+          }
+        },
+        {
+          "text": "Her mum got to arrivals early.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.6,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "flower",
+            "crowd_x": 0.49,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Zoe's plane landed.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.6,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "flower,nothing",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.02,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "Summer went.\nThen autumn. Then snow.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.6,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "flower,nothing",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.02,
+            "crowd_facing": "in",
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "snow",
+            "suns": 0,
+            "stars": 0.8,
+            "mist": 0.45
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.6,
+              0.62
+            ]
+          },
+          "seconds": 3.0,
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "flower,nothing",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.02,
+            "crowd_facing": "in",
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "snow",
+            "suns": 0,
+            "stars": 0.8,
+            "mist": 0.45
+          },
+          "note": "identical camera; one thing changed: the season"
+        }
+      ],
+      "end": "They've been there since June.",
+      "caption": "Those two by the sign won't be long.\n\nClasp: 5.6 million people, a 24-hour day, no moons, and hugs that last exactly as long as you've been apart. Back from the shops: a squeeze. Back from a fortnight away: a fortnight. Gap years are planned very carefully, and airports have benches for the people waiting to be let go of. Zoe went travelling for a year. Her mum got to the airport an hour early, with flowers.\n\n(On Earth, a study of athletes at the 2008 Olympics timed the average hug at about three seconds. On Clasp, that means you nipped out for milk.)\n\nShort trip or long hug?"
+    },
+    "first_comment": "Zoe's dad brings soup at lunchtime. Two straws.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every mum waiting at arrivals.",
+      "title": "Hugs here last as long\nas you've been apart.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.5,
+        1.56
+      ],
+      "focus": [
+        0.58,
+        0.62
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "stars": 1.4
+        }
+      },
+      "beats": [
+        {
+          "text": "Zoe went travelling for a year.\nHer mum got to arrivals early.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.6,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 1,
+            "stars": null,
+            "crowd": 1,
+            "crowd_items": "flower",
+            "crowd_x": 0.49,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Zoe's plane landed.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.78
+            ],
+            "focus": [
+              0.6,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 1,
+            "stars": null,
+            "crowd": 1,
+            "crowd_items": "flower",
+            "crowd_x": 0.49,
+            "crowd_facing": "right"
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "flower,nothing",
+              "crowd_x": 0.5,
+              "crowd_gap": 0.02,
+              "crowd_facing": "in"
+            }
+          },
+          "seconds": 3.0
+        }
+      ],
+      "end": "They've been there since June.",
+      "end_onset": {
+        "at": 1.1,
+        "motion": "cut",
+        "spec": {
+          "palette": "violet_ice",
+          "snow": true,
+          "particles": "snow",
+          "suns": 0,
+          "stars": 0.8,
+          "mist": 0.45
+        }
+      },
+      "end_zoom": [
+        1.62,
+        1.56
+      ],
+      "end_focus": [
+        0.6,
+        0.62
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For every mum waiting at arrivals.",
+      "next": {
+        "name": "Faith",
+        "line": "Believing in someone moves mountains here."
+      }
+    }
+  },
+  {
+    "id": "065",
+    "name": "Twain",
+    "subtitle": "where you can jump to the planet next door",
+    "story": "Twain's gravity is weak and the neighbouring planet hangs just above the hills, so with a good run-up you can jump across. Families save it for the summer holidays and pack for months. The jump takes about a minute, and everybody screams the whole way. Ola is from down here; her cousin Remi is from up there. Every summer since they were small, they have both jumped, met halfway and picked up exactly where they left off. This time they both had children on their shoulders. Same jump. Smaller cousins.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "one, and a neighbour",
+      "Gravity": "0.3 g",
+      "Population": "4.3 million"
+    },
+    "hook": "A planet for the cousin you see every summer.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#cousins"
+    ],
+    "spec": {
+      "palette": "polar_night",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.45,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.18,
+      "sun_y": 0.56,
+      "sun_size": 0.04,
+      "giant": true,
+      "ring": true,
+      "giant_size": 0.24,
+      "giant_x": 0.72,
+      "giant_y": 0.44,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 3,
+      "crowd_items": "sit,sit,sit",
+      "crowd_x": 0.36,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.86,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Here, you can jump to the planet next door.",
+    "text_y": {
+      "name": 0.12
+    },
+    "episode": {
+      "opener": "Here, you can jump\nto the planet next door.",
+      "beats": [
+        {
+          "text": "It takes a good run-up,\nand about a minute.",
+          "shot": "sky"
+        },
+        {
+          "text": "Families pack for months.\nEveryone screams the whole way.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "aloft,aloft",
+            "crowd_x": 0.4,
+            "crowd_gap": 0.1,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "Ola is from down here.\nHer cousin Remi is from up there.",
+          "shot": "giant"
+        },
+        {
+          "text": "Every summer, they've jumped\nand met halfway.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.45,
+              0.5
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "aloft,aloft",
+            "crowd_x": 0.4,
+            "crowd_gap": 0.1,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "And picked up exactly\nwhere they left off.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "aloft,aloft",
+            "crowd_x": 0.4,
+            "crowd_gap": 0.1,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "This time, they brought kids.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "aloft,aloft",
+            "crowd_x": 0.4,
+            "crowd_gap": 0.1,
+            "crowd_facing": "in"
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "child,child",
+              "crowd_x": 0.4,
+              "crowd_gap": 0.14,
+              "crowd_facing": "in"
+            }
+          },
+          "note": "identical camera to beat 5; one thing changed: a child on each pair of shoulders. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,child",
+            "crowd_x": 0.4,
+            "crowd_gap": 0.14,
+            "crowd_facing": "in"
+          },
+          "seconds": 3.0
+        }
+      ],
+      "end": "Same jump. Smaller cousins.",
+      "caption": "Watch the sky behind the hill.\n\nTwain: 4.3 million people, a 25-hour day, one moon and a neighbour you can jump to, with a run-up. Most families go in the summer holidays. They pack for months, the jump takes about a minute, and everyone screams the whole way. Ola is from down here; her cousin Remi is from up there. Every summer since they were small, they've jumped, met halfway and picked up exactly where they left off.\n\nI jumped too. I landed in a stranger's garden party. They gave me a plate.\n\n(On the Moon, gravity is about a sixth of Earth's, so the same jump goes about six times as high. On Twain, it goes all the way to your cousin's.)\n\nCould you make that jump?"
+    },
+    "first_comment": "The kids have already planned next summer. Remi's lot are bringing a trampoline.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for the cousin you see every summer.",
+      "title": "Here, you can jump\nto the planet next door.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.15,
+        1.2
+      ],
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "spec": {
+        "giant": false
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "giant": true
+        }
+      },
+      "beats": [
+        {
+          "text": "Ola's cousin is up there.\nEvery summer, they jump\nand meet halfway.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "aloft,aloft",
+            "crowd_x": 0.4,
+            "crowd_gap": 0.1,
+            "crowd_facing": "in"
+          },
+          "text_y": 0.15
+        },
+        {
+          "text": "This time, they both\nhad kids on their shoulders.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "aloft,aloft",
+            "crowd_x": 0.4,
+            "crowd_gap": 0.1,
+            "crowd_facing": "in"
+          },
+          "seconds": 3.8,
+          "onset": {
+            "at": 1.1,
+            "motion": "cut",
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "child,child",
+              "crowd_x": 0.4,
+              "crowd_gap": 0.14,
+              "crowd_facing": "in"
+            }
+          }
+        }
+      ],
+      "end": "Same jump. Smaller cousins.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.5,
+        0.58
+      ],
+      "name_y": 0.12,
+      "end_kicker": "For the cousin you see every summer.",
+      "next": {
+        "name": "Kate",
+        "line": "Kate is always five minutes away."
+      }
+    }
+  },
+  {
+    "id": "066",
+    "name": "Yarn",
+    "subtitle": "where bedtime stories happen overhead",
+    "story": "On Yarn, a story read aloud happens overhead, above whoever is reading it: the dragon, the pirate ship, the very polite whale. Parents choose carefully, and nobody reads anything with a volcano in it. Lucy's dad read her the whale one every night when she was small and did all the voices, including the whale's, which was Scottish for reasons he has never explained. His eyes aren't so good now, so on Sunday afternoons she reads it to him. The whale still comes. He still does the voices.",
+    "facts": {
+      "Day": "30 hours",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "2.2 million"
+    },
+    "hook": "A planet for whoever did all the voices.",
+    "tags": [
+      "#illustration",
+      "#worldbuilding",
+      "#storytime"
+    ],
+    "spec": {
+      "palette": "rust_desert",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "dream_whale",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 0,
+      "crowd_items": "",
+      "crowd_x": 0.0,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.72,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Stories told here happen overhead.",
+    "text_y": {
+      "name": 0.1
+    },
+    "episode": {
+      "opener": "Stories told here\nhappen overhead.",
+      "beats": [
+        {
+          "text": "Read about a whale,\nand one turns up.",
+          "shot": "wide"
+        },
+        {
+          "text": "Dragons are discouraged.\nPirates, weekends only.",
+          "shot": "sky"
+        },
+        {
+          "text": "Nobody reads anything\nwith a volcano in it.",
+          "shot": "house",
+          "spec": {
+            "gag": ""
+          }
+        },
+        {
+          "text": "Lucy's dad used to read it\nevery night.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "sepia"
+          }
+        },
+        {
+          "text": "He did all the voices.\nThe whale's was Scottish.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              1.85,
+              1.9
+            ]
+          },
+          "spec": {
+            "palette": "sepia"
+          }
+        },
+        {
+          "text": "His eyes aren't so good now.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.72,
+              0.66
+            ]
+          },
+          "spec": {
+            "gag": ""
+          }
+        },
+        {
+          "text": "So she reads to him.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "sepia"
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "palette": "rust_desert"
+            }
+          },
+          "note": "identical camera to beat 3; then becomes now. Turn line"
+        },
+        {
+          "text": "",
+          "shot": "wide",
+          "seconds": 2.6
+        }
+      ],
+      "end": "He still does the voices.",
+      "caption": "That whale is raising its hat.\n\nYarn: 2.2 million people, a 30-hour day, no moons, and stories that happen in the sky above whoever is reading them aloud. Dragons are discouraged. Pirates are allowed at weekends. Nobody reads anything with a volcano in it. Lucy's dad read her the whale one every night when she was small and did all the voices. The whale's was Scottish, for reasons he has never explained.\n\nI read my map aloud one afternoon. A small, confused coastline hung over the hotel till teatime.\n\n(On Earth, a humpback whale's song can last twenty minutes, and the whale will sing it over and over for hours. Most dads manage one chapter.)\n\nDid yours do all the voices?"
+    },
+    "first_comment": "The whale stayed until he dozed off. It always did.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for whoever did all the voices.",
+      "title": "Stories told here\nhappen overhead.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.12,
+        1.18
+      ],
+      "focus": [
+        0.5,
+        0.58
+      ],
+      "spec": {
+        "gag": ""
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "gag": "dream_whale"
+        }
+      },
+      "beats": [
+        {
+          "text": "Lucy's dad used to read this.\nHe did all the voices.\nEven the whale's.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "sepia"
+          },
+          "text_y": 0.13
+        },
+        {
+          "text": "Now she reads it to him.",
+          "shot": {
+            "framing": "gag",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "sepia"
+          },
+          "seconds": 3.2,
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "palette": "rust_desert"
+            }
+          }
+        }
+      ],
+      "end": "He still does the voices.",
+      "end_zoom": [
+        1.14,
+        1.08
+      ],
+      "end_focus": [
+        0.5,
+        0.52
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For whoever did all the voices."
     }
   }
 ]

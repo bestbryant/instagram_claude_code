@@ -484,5 +484,101 @@
   "kind": "reel",
   "not_before": "2026-11-15T22:00:00Z",
   "note": "short cut, checked"
+ },
+ {
+  "day": 8,
+  "entry": "061",
+  "kind": "reel",
+  "not_before": "2026-11-16T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "059",
+  "kind": "reel",
+  "not_before": "2026-11-16T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "058",
+  "kind": "reel",
+  "not_before": "2026-11-17T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "064",
+  "kind": "reel",
+  "not_before": "2026-11-17T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "055",
+  "kind": "reel",
+  "not_before": "2026-11-18T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "056",
+  "kind": "reel",
+  "not_before": "2026-11-18T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "062",
+  "kind": "reel",
+  "not_before": "2026-11-19T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "060",
+  "kind": "reel",
+  "not_before": "2026-11-19T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "057",
+  "kind": "reel",
+  "not_before": "2026-11-20T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "065",
+  "kind": "reel",
+  "not_before": "2026-11-20T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "063",
+  "kind": "reel",
+  "not_before": "2026-11-21T14:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "066",
+  "kind": "reel",
+  "not_before": "2026-11-21T22:00:00Z",
+  "hold": true,
+  "note": "short cut (batch 5): held until rendered and checked"
  }
 ]
