@@ -2,6 +2,12 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-10-29 (02:10 UTC): the account funnel, first look
+- **Numbers (account insights, last 28 days):** 2,815 accounts reached, 25 engaged, 21 profile visits, 0 link taps, 0 follows (followers still 2). In the last 24 h: 276 reached, 1 profile visit.
+- **Reading:** about 0.75% of the people a Reel reaches open the profile. That is low but within the normal range for a small account. None of the 21 followed. With 21 visits, a 10% follow rate would give about 2, so 0 is weak evidence on its own. The grid (montage of the last 12) is a consistent run of illustrated cards with a headline each, so the grid isn't the obvious leak. The bio still says "One a day", the name field has no search words, and nothing is pinned. Those are owner tasks (docs/OWNER_TODO.md); the API can't edit the profile.
+- **Changed:** `stats` now logs the last 24 h of reach, profile visits and accounts engaged with the follower count, so every review sees the funnel and not just the follower total.
+- **How we'll know:** if visits rise with reach and follows stay at 0 for another 20 or more visits after the bio and pins change, the profile is the leak. If visits stay under 1% of reach, the Reels don't make people curious about the account, and the fix belongs in the Reels (the end card's "next stop" promise is the lever there).
+
 ## 2026-10-28 daily review (12:20 UTC): rule met, the place planets become atlas cuts
 - **Numbers (strangers):** Daisy (E, name, 14:19) at 22 h: 108 reached, 38% skip, 55% of 19 s watched, 1.39 views each. Charlie (C, name, 22:09) at 14 h: 110 reached, 40% skip, 55% watched, 1.40 views each, and the account's first share. Sefe (E, place) at 38 h: 182, 33%. Whisk (B, place) at 46 h: 111, 59%. Followers 2.
 - **The table now:**

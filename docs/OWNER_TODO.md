@@ -3,7 +3,7 @@
 Only things the bot can't do, kept as short as possible. Growth comes from the Reels themselves: nothing here is required for it.
 
 ## Please, when you can (5 minutes, in the app)
-Summer just reached about 1,000 strangers, but 1 of them visited the profile and none followed. These three make the profile convert the visitors we now get.
+In the last 28 days the Reels reached 2,815 people; 21 opened the profile and none followed (29 Oct). The grid itself looks good (a run of illustrated cards), so the bio and pins are what a visitor has left to judge by. These three make the profile convert the visitors we now get.
 - [ ] **Bio** (Edit profile > Bio): replace it with
   `Invented planets, two a day. Leave a name in the comments and I'll find its planet. Illustrated in code.`
   (The current one says "One a day", which is no longer true.)
