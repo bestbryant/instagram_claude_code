@@ -1,0 +1,255 @@
+{
+  "id": "066",
+  "name": "Yarn",
+  "subtitle": "where bedtime stories happen overhead",
+  "story": "On Yarn, a story read aloud happens overhead, above whoever is reading it: the dragon, the pirate ship, the very polite whale. Parents choose carefully, and nobody reads anything with a volcano in it. Lucy's dad read her the whale one every night when she was small and did all the voices, including the whale's, which was Scottish for reasons he has never explained. His eyes aren't so good now, so on Sunday afternoons she reads it to him. The whale still comes. He still does the voices.",
+  "facts": {
+    "Day": "30 hours",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "2.2 million"
+  },
+  "hook": "A planet for whoever did all the voices.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#storytime"
+  ],
+  "spec": {
+    "palette": "rust_desert",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "dream_whale",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 0,
+    "crowd_items": "",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.72,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Stories told here happen overhead.",
+  "text_y": {
+    "name": 0.1
+  },
+  "episode": {
+    "opener": "Stories told here\nhappen overhead.",
+    "beats": [
+      {
+        "text": "Read about a whale,\nand one turns up.",
+        "shot": "wide"
+      },
+      {
+        "text": "Dragons are discouraged.\nPirates, weekends only.",
+        "shot": "sky"
+      },
+      {
+        "text": "Nobody reads anything\nwith a volcano in it.",
+        "shot": "house",
+        "spec": {
+          "gag": ""
+        }
+      },
+      {
+        "text": "Lucy's dad used to read it\nevery night.",
+        "shot": {
+          "framing": "gag",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        },
+        "spec": {
+          "palette": "sepia"
+        }
+      },
+      {
+        "text": "He did all the voices.\nThe whale's was Scottish.",
+        "shot": {
+          "framing": "gag",
+          "zoom": [
+            1.85,
+            1.9
+          ]
+        },
+        "spec": {
+          "palette": "sepia"
+        }
+      },
+      {
+        "text": "His eyes aren't so good now.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.72,
+            0.66
+          ]
+        },
+        "spec": {
+          "gag": ""
+        }
+      },
+      {
+        "text": "So she reads to him.",
+        "shot": {
+          "framing": "gag",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        },
+        "spec": {
+          "palette": "sepia"
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "cut",
+          "spec": {
+            "palette": "rust_desert"
+          }
+        },
+        "note": "identical camera to beat 3; then becomes now. Turn line"
+      },
+      {
+        "text": "",
+        "shot": "wide",
+        "seconds": 2.6
+      }
+    ],
+    "end": "He still does the voices.",
+    "caption": "That whale is raising its hat.\n\nYarn: 2.2 million people, a 30-hour day, no moons, and stories that happen in the sky above whoever is reading them aloud. Dragons are discouraged. Pirates are allowed at weekends. Nobody reads anything with a volcano in it. Lucy's dad read her the whale one every night when she was small and did all the voices. The whale's was Scottish, for reasons he has never explained.\n\nI read my map aloud one afternoon. A small, confused coastline hung over the hotel till teatime.\n\n(On Earth, a humpback whale's song can last twenty minutes, and the whale will sing it over and over for hours. Most dads manage one chapter.)\n\nDid yours do all the voices?"
+  },
+  "first_comment": "The whale stayed until he dozed off. It always did.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for whoever did all the voices.",
+    "title": "Stories told here\nhappen overhead.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.12,
+      1.18
+    ],
+    "focus": [
+      0.5,
+      0.58
+    ],
+    "spec": {
+      "gag": ""
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "gag": "dream_whale"
+      }
+    },
+    "beats": [
+      {
+        "text": "Lucy's dad used to read this.\nHe did all the voices.\nEven the whale's.",
+        "shot": {
+          "framing": "gag",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        },
+        "spec": {
+          "palette": "sepia"
+        },
+        "text_y": 0.13
+      },
+      {
+        "text": "Now she reads it to him.",
+        "shot": {
+          "framing": "gag",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        },
+        "spec": {
+          "palette": "sepia"
+        },
+        "seconds": 3.2,
+        "onset": {
+          "at": 0.9,
+          "motion": "cut",
+          "spec": {
+            "palette": "rust_desert"
+          }
+        }
+      }
+    ],
+    "end": "He still does the voices.",
+    "end_zoom": [
+      1.14,
+      1.08
+    ],
+    "end_focus": [
+      0.5,
+      0.52
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For whoever did all the voices."
+  },
+  "_engine": 5
+}

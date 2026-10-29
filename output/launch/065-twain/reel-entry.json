@@ -1,0 +1,305 @@
+{
+  "id": "065",
+  "name": "Twain",
+  "subtitle": "where you can jump to the planet next door",
+  "story": "Twain's gravity is weak and the neighbouring planet hangs just above the hills, so with a good run-up you can jump across. Families save it for the summer holidays and pack for months. The jump takes about a minute, and everybody screams the whole way. Ola is from down here; her cousin Remi is from up there. Every summer since they were small, they have both jumped, met halfway and picked up exactly where they left off. This time they both had children on their shoulders. Same jump. Smaller cousins.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "one, and a neighbour",
+    "Gravity": "0.3 g",
+    "Population": "4.3 million"
+  },
+  "hook": "A planet for the cousin you see every summer.",
+  "tags": [
+    "#illustration",
+    "#worldbuilding",
+    "#cousins"
+  ],
+  "spec": {
+    "palette": "polar_night",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.45,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.18,
+    "sun_y": 0.56,
+    "sun_size": 0.04,
+    "giant": true,
+    "ring": true,
+    "giant_size": 0.24,
+    "giant_x": 0.72,
+    "giant_y": 0.44,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 3,
+    "crowd_items": "sit,sit,sit",
+    "crowd_x": 0.36,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.86,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Here, you can jump to the planet next door.",
+  "text_y": {
+    "name": 0.12
+  },
+  "episode": {
+    "opener": "Here, you can jump\nto the planet next door.",
+    "beats": [
+      {
+        "text": "It takes a good run-up,\nand about a minute.",
+        "shot": "sky"
+      },
+      {
+        "text": "Families pack for months.\nEveryone screams the whole way.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "aloft,aloft",
+          "crowd_x": 0.4,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "Ola is from down here.\nHer cousin Remi is from up there.",
+        "shot": "giant"
+      },
+      {
+        "text": "Every summer, they've jumped\nand met halfway.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.45,
+            0.5
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "aloft,aloft",
+          "crowd_x": 0.4,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "And picked up exactly\nwhere they left off.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "aloft,aloft",
+          "crowd_x": 0.4,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "This time, they brought kids.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "aloft,aloft",
+          "crowd_x": 0.4,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in"
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,child",
+            "crowd_x": 0.4,
+            "crowd_gap": 0.14,
+            "crowd_facing": "in"
+          }
+        },
+        "note": "identical camera to beat 5; one thing changed: a child on each pair of shoulders. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,child",
+          "crowd_x": 0.4,
+          "crowd_gap": 0.14,
+          "crowd_facing": "in"
+        },
+        "seconds": 3.0
+      }
+    ],
+    "end": "Same jump. Smaller cousins.",
+    "caption": "Watch the sky behind the hill.\n\nTwain: 4.3 million people, a 25-hour day, one moon and a neighbour you can jump to, with a run-up. Most families go in the summer holidays. They pack for months, the jump takes about a minute, and everyone screams the whole way. Ola is from down here; her cousin Remi is from up there. Every summer since they were small, they've jumped, met halfway and picked up exactly where they left off.\n\nI jumped too. I landed in a stranger's garden party. They gave me a plate.\n\n(On the Moon, gravity is about a sixth of Earth's, so the same jump goes about six times as high. On Twain, it goes all the way to your cousin's.)\n\nCould you make that jump?"
+  },
+  "first_comment": "The kids have already planned next summer. Remi's lot are bringing a trampoline.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for the cousin you see every summer.",
+    "title": "Here, you can jump\nto the planet next door.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.15,
+      1.2
+    ],
+    "focus": [
+      0.5,
+      0.56
+    ],
+    "spec": {
+      "giant": false
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "giant": true
+      }
+    },
+    "beats": [
+      {
+        "text": "Ola's cousin is up there.\nEvery summer, they jump\nand meet halfway.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "aloft,aloft",
+          "crowd_x": 0.4,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in"
+        },
+        "text_y": 0.15
+      },
+      {
+        "text": "This time, they both\nhad kids on their shoulders.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "aloft,aloft",
+          "crowd_x": 0.4,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in"
+        },
+        "seconds": 3.8,
+        "onset": {
+          "at": 1.1,
+          "motion": "cut",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,child",
+            "crowd_x": 0.4,
+            "crowd_gap": 0.14,
+            "crowd_facing": "in"
+          }
+        }
+      }
+    ],
+    "end": "Same jump. Smaller cousins.",
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.5,
+      0.58
+    ],
+    "name_y": 0.12,
+    "end_kicker": "For the cousin you see every summer.",
+    "next": {
+      "name": "Kate",
+      "line": "Kate is always five minutes away."
+    }
+  },
+  "_engine": 5
+}

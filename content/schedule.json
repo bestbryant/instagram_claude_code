@@ -553,23 +553,20 @@
   "entry": "065",
   "kind": "reel",
   "not_before": "2026-11-20T22:00:00Z",
-  "hold": true,
-  "note": "short cut (batch 5): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "063",
   "kind": "reel",
   "not_before": "2026-11-21T14:00:00Z",
-  "hold": true,
-  "note": "short cut (batch 5): held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "066",
   "kind": "reel",
   "not_before": "2026-11-21T22:00:00Z",
-  "hold": true,
-  "note": "short cut (batch 5): held until rendered and checked"
+  "note": "short cut, checked"
  }
 ]
