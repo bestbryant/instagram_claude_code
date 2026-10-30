@@ -1,134 +1,303 @@
 {
   "id": "003b",
   "name": "Hush",
-  "subtitle": "part two: Thursday",
-  "story": "On Thursday afternoon, as promised, her answer came across the valley. Half the town stood in the snow to hear it. It was yes. Then, a few seconds later and very faintly, a second word: 'obviously'. They are getting married in spring. The vows have to be shouted five days early to arrive on time.",
+  "subtitle": "part two: the first dance",
+  "story": "Sound is slow on Hush: a shout takes five days to cross the valley, so wedding vows are shouted five days ahead and land on the day. The band forgot. The man who proposed across the valley in March and the woman who walked over with her answer married in the first snow, in the chapel on the far side, and the band played far too loudly. Five days later, at home, they had their first row, about the band. Halfway through, the wedding arrived across the valley, faint and slow: the cheering, the speeches, and then the song from their first dance. They danced. They were still furious.",
   "facts": {
     "Day": "26 hours",
     "Moons": "none",
     "Gravity": "1.1 g",
     "Population": "9,300"
   },
-  "hook": "On Hush, walking is quicker than shouting.",
+  "hook": "A planet for couples who bicker.",
   "tags": [
     "#worldbuilding",
     "#illustration",
-    "#winter"
+    "#wedding"
   ],
   "spec": {
     "palette": "violet_ice",
     "terrain": "hills",
+    "layers": 5,
     "horizon": 0.6,
-    "snow": true,
+    "relief": 1.0,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
     "trees": "pines",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
     "house": true,
     "particles": "snow",
-    "moons": 0,
-    "suns": 0,
-    "layers": 5,
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
     "mist": 0.45,
     "gag": "slow_shout",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 0,
+    "crowd_items": "",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
     "stage": 0.76
   },
-  "cover": "She got there before her answer did.",
-  "beats": [
-    "Half the town came out to hear it.",
-    "It was yes. Then, a few seconds later, very faintly: 'obviously'."
-  ],
-  "odd_line": "The wedding is in spring. The vows go out five days early.",
-  "rule": "Wedding vows must be shouted at least five days in advance.",
-  "question": "What would you shout across the valley?",
-  "extra": "If you missed part one: on Hush, a shout takes five days to cross the valley.",
-  "reel_lines": [
-    "Sound is slow on Hush. A shout takes five days to cross the valley.",
-    "So arguments are done by letter. By the time the reply lands, nobody remembers why."
-  ],
-  "text_y": {
-    "setup": 0.12
-  },
-  "opener": "Her answer arrived.",
-  "kicker": "Thursday, on Hush",
+  "cover": "Their first dance arrived mid-fight.",
   "episode": {
-    "opener": "She got there\nbefore her answer did.",
+    "opener": "They married\nin the first snow.",
     "beats": [
       {
-        "text": "A shout takes five days\nto cross Hush.\nWalking is quicker.",
+        "text": "On Hush, songs get home\nfive days late.",
         "shot": "gag"
       },
       {
-        "text": "In March, he shouted\nacross the valley.\nWould she marry him?",
-        "shot": "right",
-        "spec": {
-          "cartographer": false
-        }
-      },
-      {
-        "text": "Seven months to decide.\nThen five days was too long.",
-        "shot": "left",
-        "spec": {
-          "cartographer": false
-        }
-      },
-      {
-        "text": "She got there Wednesday,\nand said nothing.\nYou never spoil a shout.",
-        "shot": "house",
+        "text": "The band was very loud.\nEveryone sang along.",
+        "shot": "crowd",
         "spec": {
           "gag": "",
-          "cartographer": false,
-          "palette": "polar_night"
+          "house_x": 0.84,
+          "crowd": 4,
+          "crowd_x": 0.4,
+          "crowd_gap": 0.08,
+          "crowd_facing": "right",
+          "crowd_items": "sing,sing,sing,sing",
+          "cartographer": false
         }
       },
       {
-        "text": "I said I'd be there on Thursday.\nHalf the town came too.",
+        "text": "Five days later, at home,\ntheir first fight.",
         "shot": {
-          "framing": "cartographer",
+          "framing": "house",
           "zoom": [
-            1.5,
-            1.6
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.56,
+            0.6
           ]
         },
         "spec": {
           "gag": "",
-          "crowd": 6,
-          "crowd_items": "nothing",
-          "crowd_facing": "left"
+          "house_x": 0.66,
+          "crowd": 2,
+          "crowd_x": 0.44,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in",
+          "crowd_items": "shout,shout",
+          "spot": "#e0412c",
+          "cartographer": false
         }
       },
       {
-        "text": "Ten past four.\n'Yes.'",
+        "text": "It was about the band.\nShe'd thought it too loud.",
         "shot": {
-          "framing": "right",
+          "framing": "close",
           "zoom": [
-            1.35,
-            1.5
+            2.1,
+            2.2
+          ],
+          "focus": [
+            0.44,
+            0.6
           ]
         },
         "spec": {
-          "crowd": 1,
-          "crowd_x": 0.71,
-          "crowd_facing": "right",
-          "crowd_items": "nothing",
-          "particles": "none",
+          "gag": "",
+          "house_x": 0.66,
+          "crowd": 2,
+          "crowd_x": 0.44,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in",
+          "crowd_items": "shout,shout",
+          "spot": "#e0412c",
           "cartographer": false
-        },
-        "seconds": 3.4,
-        "note": "CHECK at full res: the couple at right, arcs arriving from the left edge, no shouter and no yellow coat in frame (render tested this camera at half res only). Pushes on into beat 7's 'right'."
+        }
       },
       {
-        "text": "Then, a few seconds later,\nvery faintly: 'obviously.'",
-        "shot": "right",
+        "text": "Meanwhile, the wedding\nwas still crossing the valley.",
+        "shot": "wide",
         "spec": {
-          "crowd": 1,
-          "crowd_x": 0.71,
-          "crowd_facing": "right",
-          "crowd_items": "nothing",
-          "particles": "none",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "Halfway through,\ntheir first dance arrived.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.56,
+            0.6
+          ]
+        },
+        "spec": {
+          "gag": "",
+          "house_x": 0.66,
+          "crowd": 2,
+          "crowd_x": 0.44,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in",
+          "crowd_items": "sing,sing",
           "cartographer": false
         }
       }
     ],
-    "end": "His reply arrives Tuesday. She won't be in.",
-    "caption": "Part one is No. 003, a few posts down: in March he shouted a proposal across the valley, and her answer was due on Thursday.\n\nShe shouted her answer and set off straight after it. On Wednesday night she found him on the valley floor, where he'd been all week, and walked him home through snow up to her knees. They sat up by the stove and said nothing. You never spoil a shout.\n\nOn Thursday the bakery shut at three. Half the town stood on the valley floor with flasks, not talking, so as not to drown it out. At ten past four the snow stopped, as if it wanted to listen too.\n\nCustom says you answer a shout with a shout, so he did, with her standing next to him. It reaches her empty house on Tuesday. I'm walking round to hear it, and I'll put what he said in the comments.\n\nThe wedding is in spring. The vows go out five days early.\n\nWhat would you shout across the valley?"
+    "end": "They danced. Furiously.",
+    "caption": "The song in the first second is theirs.\n\nThis is part two of Hush. In March he shouted a proposal across the valley, and in October she walked over with her answer.\n\nHush is a long, snowed-in valley where sound crawls along slower than you can walk, and a shout takes five days to cross it. People plan around it. Wedding vows are shouted five days ahead, so they land on the day. The band forgot.\n\nThey married in the first snow, in the chapel on the far side, and the band played far too loudly. Five days later, at home, they had their first row. It was about the band. Halfway through, the wedding came drifting in across the valley: the cheering, the speeches, and then the song from their first dance.\n\nI was a guest. I clapped at the end of their first dance, so five days later I also clapped at the end of their row.\n\n(On Earth, sound crosses a kilometre of air in about three seconds, a little longer in the cold. On Hush, allow five days.)\n\nWho said sorry first? Nobody knows yet. It's on its way."
   },
-  "_engine": 4
+  "first_comment": "The neighbours across the valley get the row next week. They've been told how it ends.",
+  "short": {
+    "version": "E",
+    "kicker": "Hush, part two. A planet for couples who bicker.",
+    "title": "Songs here get home\nfive days late.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.24,
+      1.3
+    ],
+    "focus": [
+      0.52,
+      0.58
+    ],
+    "spec": {
+      "stage": 0.7,
+      "horizon": 0.5,
+      "aurora": true,
+      "bright_stars": true,
+      "house_x": 0.82,
+      "cartographer": false,
+      "gag": "",
+      "crowd": 4,
+      "crowd_x": 0.3,
+      "crowd_gap": 0.08,
+      "crowd_facing": "in",
+      "crowd_items": "nothing,flower,flower,nothing"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "stage": 0.7,
+        "horizon": 0.5,
+        "aurora": true,
+        "bright_stars": true,
+        "house_x": 0.82,
+        "cartographer": false,
+        "gag": "",
+        "crowd": 4,
+        "crowd_x": 0.3,
+        "crowd_gap": 0.08,
+        "crowd_facing": "right",
+        "crowd_items": "sing,sing,sing,sing"
+      }
+    },
+    "beats": [
+      {
+        "text": "Five days after the wedding,\ntheir first fight.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.56,
+            0.6
+          ]
+        },
+        "spec": {
+          "gag": "",
+          "house_x": 0.66,
+          "crowd": 2,
+          "crowd_x": 0.44,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in",
+          "crowd_items": "shout,shout",
+          "spot": "#e0412c",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "Halfway through,\ntheir first dance arrived.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.7,
+            1.78
+          ],
+          "focus": [
+            0.56,
+            0.6
+          ]
+        },
+        "spec": {
+          "gag": "",
+          "house_x": 0.66,
+          "crowd": 2,
+          "crowd_x": 0.44,
+          "crowd_gap": 0.1,
+          "crowd_facing": "in",
+          "crowd_items": "shout,shout",
+          "spot": "#e0412c",
+          "cartographer": false
+        },
+        "onset": {
+          "at": 1.3,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "sing,sing"
+          }
+        }
+      }
+    ],
+    "end": "They danced. Furiously.",
+    "end_spec": {
+      "crowd_items": "hand,hand",
+      "crowd_gap": 0.045
+    },
+    "end_zoom": [
+      1.8,
+      1.72
+    ],
+    "end_focus": [
+      0.53,
+      0.6
+    ],
+    "name_y": 0.2,
+    "end_kicker": "For couples who bicker.",
+    "next": {
+      "name": "Simon",
+      "line": "Everyone does what Simon says."
+    }
+  },
+  "_engine": 5
 }

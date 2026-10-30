@@ -249,6 +249,10 @@
       0.52
     ],
     "name_y": 0.1,
-    "end_kicker": "For whoever did all the voices."
+    "end_kicker": "For whoever did all the voices.",
+    "next": {
+      "name": "Kess",
+      "line": "On Kess, only tourists look up."
+    }
   }
 }
