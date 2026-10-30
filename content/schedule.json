@@ -126,8 +126,8 @@
   "day": 3,
   "entry": "010",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-01T14:00:00Z"
+  "note": "short cut, checked; moved to the end on 30 Oct for Hush part two",
+  "not_before": "2026-11-28T14:00:00Z"
  },
  {
   "day": 8,
@@ -266,13 +266,13 @@
   "day": 5,
   "entry": "003b",
   "kind": "reel",
-  "not_before": "2026-10-22T22:00:00Z",
+  "not_before": "2026-11-01T14:00:00Z",
   "after": [
    "003",
    "reel"
   ],
   "hold": true,
-  "note": "two-parter: held, almost every viewer arrives cold (docs/RESEARCH.md)"
+  "note": "Hush part two (sequel to the 30 Oct breakout): held until rendered and checked"
  },
  {
   "day": 8,

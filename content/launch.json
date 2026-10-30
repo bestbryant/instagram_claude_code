@@ -2179,10 +2179,6 @@
       "title_y": 0.12,
       "scrim": 0.36,
       "end_kicker": "For people who stopped noticing the view.",
-      "next": {
-        "name": "Simon",
-        "line": "Everyone does what Simon says."
-      },
       "kicker": "A planet for people who stopped noticing the view from their window."
     }
   },
@@ -9053,7 +9049,11 @@
         0.52
       ],
       "name_y": 0.1,
-      "end_kicker": "For whoever did all the voices."
+      "end_kicker": "For whoever did all the voices.",
+      "next": {
+        "name": "Kess",
+        "line": "On Kess, only tourists look up."
+      }
     }
   },
   {
