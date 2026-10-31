@@ -111,8 +111,8 @@
   "day": 14,
   "entry": "H03",
   "kind": "reel",
-  "not_before": "2026-10-31T22:00:00Z",
-  "note": "short cut, checked",
+  "not_before": "2026-10-31T14:00:00Z",
+  "note": "short cut, checked; moved 22:00 -> 14:00 on 31 Oct (every breakout was a 14:00 post)",
   "fixed_date": true
  },
  {
