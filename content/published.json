@@ -264,5 +264,17 @@
     "at": "2026-10-30T22:09:58+00:00",
     "sha1": "6cb4b9b258c11f82dc96591a7d5d00b6881cfff2",
     "format": "short-E"
+  },
+  {
+    "day": 14,
+    "entry": "H03",
+    "kind": "reel",
+    "not_before": "2026-10-31T14:00:00Z",
+    "note": "short cut, checked; moved 22:00 -> 14:00 on 31 Oct (every breakout was a 14:00 post)",
+    "fixed_date": true,
+    "media_id": "18013848200972048",
+    "at": "2026-10-31T14:10:44+00:00",
+    "sha1": "5c564d329abbc9c89c5df5d0621ec43e72c491c7",
+    "format": "short-E"
   }
 ]
