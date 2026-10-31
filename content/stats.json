@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-31T15:08:48+00:00",
+ "fetched_at": "2026-10-31T16:09:50+00:00",
  "followers": 4,
  "posts": {
   "17874537072639047": {
@@ -325,27 +325,27 @@
    "entry": "H01",
    "kind": "reel",
    "at": "2026-10-30T22:09:58+00:00",
-   "reach": 195,
-   "views": 256,
+   "reach": 237,
+   "views": 302,
    "likes": 2,
    "comments": 0,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 8751,
-   "reels_skip_rate": 24.6
+   "ig_reels_avg_watch_time": 8788,
+   "reels_skip_rate": 26.3
   },
   "18013848200972048": {
    "entry": "H03",
    "kind": "reel",
    "at": "2026-10-31T14:10:44+00:00",
-   "reach": 5,
-   "views": 14,
+   "reach": 30,
+   "views": 38,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 3148,
-   "reels_skip_rate": 21.4
+   "ig_reels_avg_watch_time": 5579,
+   "reels_skip_rate": 48.6
   }
  }
 }
