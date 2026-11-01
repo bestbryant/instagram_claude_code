@@ -88,3 +88,5 @@ Until the secrets exist, the workflow skips itself and does nothing.
 - The API can't add trending audio. That's one reason to keep posting some Reels by hand.
 
 **One-off container ERROR (29 Oct 14:37 UTC):** Fond's first container came back `status_code ERROR` with no detail, although the raw.githubusercontent URL served the right 8.55 MB file and the encode matched Reels that had posted (h264 High 1080x1920 30 fps, AAC 48 kHz stereo). A retry a minute later posted it (18145384876716242). Read as a transient fetch failure on Instagram's side. If it happens twice in a row on the same Reel, check the hosting (raw.githubusercontent throttling) before retrying again.
+
+**Stale scheduled comments (1 Nov):** content/comments.json still held two comments written for the old Hush part two (posted 'It's Thursday. Her answer has landed.' on part one, and the old epilogue on part two). When the new part two posted, both went out. Both were deleted through the API (DELETE /{comment-id} works on our own posts) and replaced with one accurate pointer on part one. When a queued entry is rewritten, check content/comments.json for comments tied to it.

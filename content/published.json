@@ -276,5 +276,20 @@
     "at": "2026-10-31T14:10:44+00:00",
     "sha1": "5c564d329abbc9c89c5df5d0621ec43e72c491c7",
     "format": "short-E"
+  },
+  {
+    "day": 5,
+    "entry": "003b",
+    "kind": "reel",
+    "not_before": "2026-11-01T14:00:00Z",
+    "after": [
+      "003",
+      "reel"
+    ],
+    "note": "short cut, checked",
+    "media_id": "18149638708536275",
+    "at": "2026-11-01T14:10:56+00:00",
+    "sha1": "d4535216e3e51fc4b10e0e20bef4d6beb8a7bb00",
+    "format": "short-E"
   }
 ]
