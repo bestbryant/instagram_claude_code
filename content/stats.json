@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-01T16:09:15+00:00",
+ "fetched_at": "2026-11-01T17:09:24+00:00",
  "followers": 4,
  "posts": {
   "17874537072639047": {
@@ -351,14 +351,14 @@
    "entry": "003b",
    "kind": "reel",
    "at": "2026-11-01T14:10:56+00:00",
-   "reach": 10,
-   "views": 24,
+   "reach": 53,
+   "views": 95,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 5522,
-   "reels_skip_rate": 47.4
+   "ig_reels_avg_watch_time": 6685,
+   "reels_skip_rate": 35.1
   }
  }
 }
