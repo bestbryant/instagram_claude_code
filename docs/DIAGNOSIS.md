@@ -2,6 +2,12 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-01 daily review (12:15 UTC): breakouts are love and family stories; the profile still doesn't convert
+- **Numbers (strangers):** Hush final at 46 h: 1,138, 28% skip, 67% watched, 20 likes (1.8 per 100), 2 saves. Lantern final: 148, 41%. Hollow (22:09) at 38 h: 255, 26%, the best 22:00 post yet but short of 300. Mothwing (moved to 14:10) at 22 h: 162, 42% skip, the weakest E opening since Lantern. Followers 4 (no change in 24 h). 7 days: 3,407 reached, 13 profile visits.
+- **Slot tally:** 14:00 posts 4 of 9 past 300 (Mothwing is not, so far); 22:00 posts 0 of 9 (Hollow 255 the closest). 20:00 starts tonight with Simon.
+- **What the breakouts share:** each is about a relationship a viewer has: Summer (a nan who was right), Frank (a father who can't lie to his daughter), Fond (a couple's last 'I love you'), Hush (a proposal across a valley). The two with the most likes per 100 are the two love stories (Hush 1.8, Fond 0.5). The planets about a thing or a place rule with no relationship (Lantern, Mothwing, Sedge) hold strangers but don't spread. Batches 5 and 6 already lead with relationships; the next batch should lead with couples as well as families.
+- **Change:** the owner's to-do now asks to pin the three biggest Reels (Hush, Summer, Fond) instead of the old picks, since 3,300 strangers have seen them and only 2 followed; a profile that opens on those three is the cheapest conversion fix left. Hush part two posts at 14:00 today; if it lifts follows (measure set 30 Oct), part twos for Fond and Summer follow.
+
 ## 2026-10-31 daily review (12:15 UTC): the slot effect holds; Halloween moves to 14:00
 - **Numbers (strangers):** Hush (E, place, 14:16 on 30 Oct) at 22 h: 1,136 reached, 28% skip, 67% watched, 1.55 views each, 20 likes (1.8 per 100, our best), 2 saves. Fond final at 45 h: 1,039, 25% skip, 5 likes, 1 save. Lantern (E, place, 22:09) at 38 h: 148, 41%. Hollow (E, place, 22:09 on 30 Oct) at 14 h: 164, 27%. Followers 4 (+2 since 29 Oct, both during the Fond and Hush runs). 7 days: 4,391 reached, 16 profile visits.
 - **Against the targets:** skip under 50% and watched over 40%: met by every E. Reach rising week on week: met for the first time (median reach of this week's posts about 250 against 114 last week, carried by Fond and Hush). Sends or saves 1 per 100: still missed (Hush 0.2). Follower growth: 2 in 2 days.
