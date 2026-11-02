@@ -1,0 +1,219 @@
+{
+  "id": "084",
+  "name": "Kennel",
+  "subtitle": "where the doghouse is the moon",
+  "story": "On Kennel, the doghouse is the moon. Forget a birthday or an anniversary and you spend the night up there, with a camp bed, a kettle and the best view in the system. On a bad night, half the street is up there. Dean forgot his and Emma's anniversary, and up he went. At midnight, Emma went up too. She took the cake. Best anniversary they've had.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "one, very large",
+    "Gravity": "0.9 g",
+    "Population": "1.2 million"
+  },
+  "hook": "A planet for whoever forgot the anniversary.",
+  "tags": [
+    "#worldbuilding",
+    "#anniversary",
+    "#inthedoghouse"
+  ],
+  "spec": {
+    "palette": "teal_night",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": 0.7,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": true,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "nothing",
+    "crowd_x": 0.44,
+    "crowd_facing": "left",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": true,
+    "sea_glow": false,
+    "house_x": 0.76,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.08,
+    "stage": 0.68
+  },
+  "cover": "At midnight, Emma went up too.",
+  "episode": {
+    "opener": "Here, the doghouse\nis the moon.",
+    "beats": [
+      {
+        "text": "Forget a birthday,\nand up you go.",
+        "shot": "moon"
+      },
+      {
+        "text": "There's a camp bed,\na kettle and a view.",
+        "shot": "moon"
+      },
+      {
+        "text": "Dean forgot\ntheir anniversary.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.14,
+            1.18
+          ],
+          "focus": [
+            0.46,
+            0.5
+          ]
+        }
+      },
+      {
+        "text": "Emma stayed down here,\nwith the cake.",
+        "shot": "close"
+      },
+      {
+        "text": "At midnight,\nEmma went up too.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.14,
+            1.18
+          ],
+          "focus": [
+            0.46,
+            0.5
+          ]
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "rise",
+          "spec": {
+            "crowd_items": "aloft"
+          }
+        },
+        "note": "identical camera to Dean's beat; Emma rises off the ledge towards the moon, the window stays lit. Turn line"
+      },
+      {
+        "text": "",
+        "shot": "moon",
+        "spec": {
+          "crowd_items": "aloft"
+        },
+        "seconds": 2.2
+      }
+    ],
+    "end": "Best anniversary they've had.",
+    "caption": "There's a spare room in that moon.\n\nKennel: 1.2 million people, a 25-hour day, one very large moon, and nowhere on the ground to sulk. Forget a birthday or an anniversary here and you spend the night on the moon. It's not unpleasant: there's a camp bed, a kettle and the best view in the system, and the lift runs late. On a bad night, half the street is up there. Dean forgot his and Emma's anniversary.\n\nI missed my editor's birthday. The moon is lovely this time of year.\n\n(The story goes that 'in the doghouse' owes a lot to Peter Pan, where Mr Darling moves into the dog's kennel to make amends. On Kennel, the kennel has a view.)\n\nWhat would get you sent to the moon?"
+  },
+  "first_comment": "They came down on Sunday. Dean's put the date in his phone, his diary and the fridge.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for whoever forgot the anniversary.",
+    "title": "Here, the doghouse\nis the moon.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.02,
+      1.06
+    ],
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "spec": {
+      "moon_window": false,
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.4,
+      "crowd_facing": "in"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "moon_window": true,
+        "crowd": 1,
+        "crowd_x": 0.44,
+        "crowd_facing": "left"
+      }
+    },
+    "beats": [
+      {
+        "text": "Dean forgot\ntheir anniversary.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.14,
+            1.18
+          ],
+          "focus": [
+            0.46,
+            0.5
+          ]
+        }
+      },
+      {
+        "text": "Emma went up too.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.14,
+            1.18
+          ],
+          "focus": [
+            0.46,
+            0.5
+          ]
+        },
+        "onset": {
+          "at": 0.55,
+          "motion": "rise",
+          "spec": {
+            "crowd_items": "aloft"
+          }
+        }
+      }
+    ],
+    "end": "Best one they've had.",
+    "end_zoom": [
+      1.12,
+      1.08
+    ],
+    "end_focus": [
+      0.5,
+      0.42
+    ],
+    "name_y": 0.08,
+    "end_kicker": "For whoever forgot the anniversary.",
+    "next": {
+      "name": "Clasp",
+      "line": "Hugs here last as long as you've been apart."
+    }
+  },
+  "_engine": 5
+}

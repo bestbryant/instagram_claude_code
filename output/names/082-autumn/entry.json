@@ -1,0 +1,240 @@
+{
+  "id": "082",
+  "name": "Autumn",
+  "subtitle": "every Autumn's planet",
+  "story": "On Autumn, the leaves aren't the only thing that falls. People here physically fall in love: catch the right eye and down you go, in public, usually with shopping. Cafés have soft floors, and weddings have a nurse on standby. Jake had been getting the same train as Liam for three months before either of them looked up. When he did, he went down in the aisle. Liam went to help, and went down too. It was mutual.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "one",
+    "Gravity": "0.8 g",
+    "Population": "3.9 million"
+  },
+  "hook": "A planet for everyone who knew straight away.",
+  "tags": [
+    "#worldbuilding",
+    "#lovestory",
+    "#autumn"
+  ],
+  "spec": {
+    "palette": "pumpkin",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.62,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": 0.76,
+    "sun_y": 0.44,
+    "sun_size": 0.06,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.44,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.86,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "It was mutual.",
+  "kicker": "Every Autumn gets this planet.",
+  "episode": {
+    "opener": "Here, people physically\nfall in love.",
+    "beats": [
+      {
+        "text": "You see the one,\nand down you go.",
+        "shot": "wide",
+        "onset": {
+          "at": 1.4,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "sit,nothing"
+          }
+        }
+      },
+      {
+        "text": "Cafés have soft floors.\nWeddings have a nurse.",
+        "shot": "house",
+        "spec": {
+          "crowd": 0
+        }
+      },
+      {
+        "text": "Jake fell hard for Liam\non the train.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.85,
+            1.9
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "sit,nothing"
+        }
+      },
+      {
+        "text": "In front of everyone.\nWith his shopping.",
+        "shot": "close",
+        "spec": {
+          "crowd_items": "sit,nothing"
+        }
+      },
+      {
+        "text": "Liam went to help.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.85,
+            1.9
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "sit,nothing"
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "sit,sit"
+          }
+        },
+        "note": "identical camera to Jake's fall; Liam goes down too. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.85,
+            1.9
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "sit,sit"
+        },
+        "seconds": 2.2
+      }
+    ],
+    "end": "It was mutual.",
+    "caption": "Jake and Liam haven't met yet.\n\nAutumn: 3.9 million people, a 26-hour day, one moon, and the leaves aren't the only thing that falls. People here physically fall in love. Catch the right eye and down you go, in public, usually holding shopping. Cafés have soft floors. Weddings have a nurse on standby. Jake had been getting the same train as Liam for three months before either of them looked up.\n\nI was introduced to a very handsome fisherman. I'd like to say I stayed on my feet.\n\n(The story goes that 'fall' for autumn comes from 'the fall of the leaf', back in the 1500s. On Autumn, the leaves are the least of it.)\n\nWhere were you when you fell for yours?"
+  },
+  "first_comment": "They still get the same train. They make sure they've got a seat.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for everyone who knew straight away.",
+    "title": "Here, people physically\nfall in love.",
+    "sub": "",
+    "framing": "group",
+    "zoom": [
+      2.3,
+      2.36
+    ],
+    "focus": [
+      0.46,
+      0.68
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "sit,nothing"
+      }
+    },
+    "beats": [
+      {
+        "text": "Jake fell hard for Liam.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.6,
+            2.66
+          ],
+          "focus": [
+            0.46,
+            0.69
+          ]
+        }
+      },
+      {
+        "text": "Liam went to help.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.6,
+            2.66
+          ],
+          "focus": [
+            0.46,
+            0.69
+          ]
+        },
+        "onset": {
+          "at": 0.55,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "sit,sit"
+          }
+        }
+      }
+    ],
+    "end": "It was mutual.",
+    "end_zoom": [
+      1.6,
+      1.54
+    ],
+    "end_focus": [
+      0.47,
+      0.62
+    ],
+    "name_y": 0.12,
+    "end_kicker": "For everyone who knew straight away.",
+    "scrim": 0.5,
+    "next": {
+      "name": "Twain",
+      "line": "Here, you can jump to the planet next door."
+    }
+  }
+}
