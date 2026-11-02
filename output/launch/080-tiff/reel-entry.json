@@ -1,0 +1,225 @@
+{
+  "id": "080",
+  "name": "Tiff",
+  "subtitle": "where every argument gets an official winner",
+  "story": "On Tiff, every couple has a board that settles their arguments: the bins, the satnav, whether that was a fox. The board names the winner, officially. Most couples swap back and forth, which keeps things civil. At Jan and Derek's, it has said the same thing since the wedding. For his sixtieth, Jan lost one on purpose. He's had mugs made.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "two",
+    "Gravity": "1.0 g",
+    "Population": "2.5 million"
+  },
+  "hook": "A planet for the one who's always right.",
+  "tags": [
+    "#worldbuilding",
+    "#couples",
+    "#whosright"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.78,
+    "sun_y": 0.44,
+    "sun_size": 0.06,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "RIGHT:|JAN",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.32,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.84,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.08,
+    "stage": 0.74
+  },
+  "cover": "Jan's been right since the wedding.",
+  "episode": {
+    "opener": "Arguments here\nget an official winner.",
+    "beats": [
+      {
+        "text": "Have an argument,\nand the board settles it.",
+        "shot": "sign"
+      },
+      {
+        "text": "Most couples swap back and forth.\nIt keeps things civil.",
+        "shot": "wide",
+        "spec": {
+          "sign": "RIGHT:|BOTH"
+        }
+      },
+      {
+        "text": "Jan's been right\nsince the wedding.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.52,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "The bins. The satnav.\nWhether that was a fox.",
+        "shot": "close"
+      },
+      {
+        "text": "For his sixtieth,\nshe lost on purpose.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.52,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 1.4,
+          "motion": "cut",
+          "spec": {
+            "sign": "RIGHT:|DEREK"
+          }
+        },
+        "note": "identical camera to Jan's beat; the board changes. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.52,
+            0.6
+          ]
+        },
+        "spec": {
+          "sign": "RIGHT:|DEREK"
+        },
+        "seconds": 2.2
+      }
+    ],
+    "end": "He's had mugs made.",
+    "caption": "Check the board beside Jan and Derek.\n\nTiff: 2.5 million people, a 25-hour day, two moons, and a board beside every couple that names the official winner of each argument as it happens. The washing-up. The bins. Whether that was a fox. Most couples swap back and forth, which keeps things civil. At Jan and Derek's, it hasn't changed since the wedding.\n\nI argued with a waiter about how long to brew tea. A board went up before the kettle boiled.\n\n(On Earth, the psychologist John Gottman found that about two-thirds of couples' arguments are about problems that never get solved. On Tiff, at least somebody wins.)\n\nWhat's the argument you two never settle?"
+  },
+  "first_comment": "The board went back the next morning. He'd put the mugs in the dishwasher.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for the one who's always right.",
+    "title": "Arguments here\nget an official winner.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.2,
+      1.26
+    ],
+    "focus": [
+      0.52,
+      0.56
+    ],
+    "spec": {
+      "sign": ""
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "sign": "RIGHT:|JAN"
+      }
+    },
+    "beats": [
+      {
+        "text": "Jan's been right\nsince the wedding.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.545,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "For his sixtieth,\nshe lost on purpose.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.4,
+            1.45
+          ],
+          "focus": [
+            0.545,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 0.7,
+          "motion": "cut",
+          "spec": {
+            "sign": "RIGHT:|DEREK"
+          }
+        }
+      }
+    ],
+    "end": "He's had mugs made.",
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.52,
+      0.58
+    ],
+    "name_y": 0.12,
+    "end_kicker": "For the one who's always right.",
+    "next": {
+      "name": "Kith",
+      "line": "Houses here follow your best friend."
+    }
+  },
+  "_engine": 5
+}
