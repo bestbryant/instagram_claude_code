@@ -1,0 +1,283 @@
+{
+  "id": "087",
+  "name": "Hilary",
+  "subtitle": "every Hilary's planet",
+  "story": "On Hilary, dancing raises the roof, and the house, and the ground underneath it. One good night out leaves a bump outside the chip shop. Ballrooms are built in valleys and steadily stop being valleys. Ravi and Mark have danced in the kitchen after tea every night for decades, badly, to whatever's on the radio, including the shipping forecast. Their house used to sit at the bottom of a gentle slope. It's now on top of a hill, and the view is incredible. The postman's never been fitter.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "two",
+    "Gravity": "1.1 g",
+    "Population": "3.2 million"
+  },
+  "hook": "A planet for couples who dance in the kitchen.",
+  "tags": [
+    "#illustration",
+    "#kitchendancing",
+    "#hilary"
+  ],
+  "spec": {
+    "palette": "crimson",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.3,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.62,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.42,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.68,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.075,
+    "stage": 0.72
+  },
+  "cover": "Dancing here raises the roof.",
+  "kicker": "Every Hilary gets this planet.",
+  "episode": {
+    "opener": "Dancing here\nraises the roof.",
+    "beats": [
+      {
+        "text": "One night out leaves a bump\noutside the chip shop.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "stage": 0.68,
+          "crowd_items": "walk,hand"
+        }
+      },
+      {
+        "text": "Ballrooms are built in valleys,\nand stop being valleys.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.55
+          ]
+        },
+        "spec": {
+          "stage": 0.64,
+          "crowd": 6,
+          "crowd_items": "hand,nothing,hand,nothing,hand,nothing",
+          "crowd_x": 0.45,
+          "crowd_gap": 0.08,
+          "house": false
+        }
+      },
+      {
+        "text": "Ravi and Mark dance\nin the kitchen after tea.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.48,
+            0.55
+          ]
+        },
+        "spec": {
+          "stage": 0.62,
+          "crowd_items": "walk,hand"
+        }
+      },
+      {
+        "text": "Badly. To anything.\nEven the shipping forecast.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.48,
+            0.55
+          ]
+        },
+        "spec": {
+          "stage": 0.62,
+          "crowd_items": "nothing,hand"
+        }
+      },
+      {
+        "text": "Every night,\nfor decades.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "stage": 0.62,
+          "crowd_items": "walk,hand"
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "stage": 0.5
+          }
+        },
+        "note": "identical camera to frame 1; the ground under the couple and their house comes right up. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "stage": 0.5,
+          "crowd_items": "walk,hand"
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "The postman's never been fitter.",
+    "caption": "That house used to be at the bottom.\n\nHilary: 3.2 million people, a 25-hour day, two moons, and dancing that raises the roof, along with the house and the ground underneath it. One good night out leaves a bump outside the chip shop. Ballrooms are built at the bottom of valleys and, steadily, stop being valleys. Ravi and Mark dance in the kitchen every night after tea, badly, to whatever's on, including the shipping forecast. They have done for decades.\n\nI did a little shuffle at a wedding. There's a speed bump outside the church now.\n\n(On Earth, fans dancing at a stadium concert in Seattle in 2023 shook the ground as hard as a magnitude 2.3 earthquake, according to the local seismologists. The ground stayed exactly where it was.)\n\nHas your kitchen gone up in the world?"
+  },
+  "first_comment": "Next week, they're going dancing in town. The council is nervous.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for couples who dance in the kitchen.",
+    "title": "Dancing here\nraises the roof.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.25,
+      1.3
+    ],
+    "focus": [
+      0.5,
+      0.56
+    ],
+    "spec": {
+      "stage": 0.72,
+      "crowd_items": "nothing,nothing"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "stage": 0.62,
+        "crowd_items": "walk,hand"
+      }
+    },
+    "beats": [
+      {
+        "text": "Ravi and Mark\ndance badly.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.48,
+            0.55
+          ]
+        },
+        "spec": {
+          "crowd_items": "walk,hand"
+        }
+      },
+      {
+        "text": "Every night,\nfor decades.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "onset": {
+          "at": 0.8,
+          "motion": "cut",
+          "spec": {
+            "stage": 0.5
+          }
+        }
+      }
+    ],
+    "end": "The postman's never been fitter.",
+    "end_zoom": [
+      1.2,
+      1.14
+    ],
+    "end_focus": [
+      0.5,
+      0.48
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For couples who dance in the kitchen.",
+    "next": {
+      "name": "Thicket",
+      "line": "Saying 'later' plants a tree here."
+    }
+  },
+  "_engine": 5
+}

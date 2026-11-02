@@ -1,0 +1,229 @@
+{
+  "id": "081",
+  "name": "Ditto",
+  "subtitle": "where everyone looks the same",
+  "story": "On Ditto, everyone looks exactly the same: the same height, the same coat, the same walk. Couples hold hands in public, less for romance than for admin. Gwen let go of her husband for a moment at the garden centre, somewhere between the bird baths and the bedding plants, and when she looked up he was one of forty. She waved. Everyone waved back, except one man, who had his hands full. He'd gone to get her flowers.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "5.8 million"
+  },
+  "hook": "A planet for husbands who wander off in shops.",
+  "tags": [
+    "#illustration",
+    "#marriedlife",
+    "#gardencentre"
+  ],
+  "spec": {
+    "palette": "mint_dawn",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.62,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.76,
+    "sun_y": 0.42,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 7,
+    "crowd_items": "nothing",
+    "crowd_x": 0.5,
+    "crowd_facing": "left",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.8,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.72
+  },
+  "cover": "She waved. Everyone waved back.",
+  "episode": {
+    "opener": "Everyone here\nlooks the same.",
+    "beats": [
+      {
+        "text": "Same height. Same coat.\nSame walk.",
+        "shot": "crowd"
+      },
+      {
+        "text": "Couples hold hands everywhere.\nIt's not romance. It's admin.",
+        "shot": "close",
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nothing,nothing",
+          "crowd_gap": 0.06,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "Gwen let go\nat the garden centre.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "Just for a moment,\nby the bedding plants.",
+        "shot": "wide"
+      },
+      {
+        "text": "She waved.\nEveryone waved back.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "hand,hand,hand,hand,flower,hand,hand"
+          }
+        },
+        "note": "identical camera to Gwen's beat; every man waves back but one. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "hand,hand,hand,hand,flower,hand,hand"
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "He'd gone to get her flowers.",
+    "caption": "Spot Gwen's husband. Take your time.\n\nDitto: 5.8 million people, a 24-hour day, no moons, and not one face you could pick out of a crowd. Everyone is the same height, wears the same coat and walks the same walk. Couples hold hands in public, less for romance than for admin, and wedding photographers charge extra. Gwen let go of her husband for a moment at the garden centre, between the bird baths and the bedding plants.\n\nI waved at my guide across the market. I now have eleven guides.\n\n(On Earth, about one person in fifty has face blindness, and knows their family by a walk, a voice or a coat. On Ditto it's everyone, and the coats don't help.)\n\nHow would you find yours in a crowd?"
+  },
+  "first_comment": "He'd got her the yellow ones. She held on to him all the way to the car.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for husbands who wander off in shops.",
+    "title": "Everyone here\nlooks the same.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.2,
+      1.26
+    ],
+    "focus": [
+      0.5,
+      0.56
+    ],
+    "spec": {
+      "crowd": 1,
+      "crowd_items": "nothing"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "crowd": 7,
+        "crowd_items": "nothing"
+      }
+    },
+    "beats": [
+      {
+        "text": "Gwen's husband\nwandered off.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.74,
+            1.8
+          ],
+          "focus": [
+            0.62,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "She waved.\nEveryone waved back.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.74,
+            1.8
+          ],
+          "focus": [
+            0.62,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 0.45,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "hand,hand,hand,hand,flower,hand,hand"
+          }
+        }
+      }
+    ],
+    "end": "He'd gone to get her flowers.",
+    "end_zoom": [
+      1.6,
+      1.54
+    ],
+    "end_focus": [
+      0.52,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For husbands who wander off in shops.",
+    "next": {
+      "name": "Figment",
+      "line": "Imaginary friends retire here."
+    }
+  }
+}
