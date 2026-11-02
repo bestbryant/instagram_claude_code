@@ -1,0 +1,291 @@
+{
+  "id": "086",
+  "name": "Flicker",
+  "subtitle": "where first kisses light the sea",
+  "story": "On Flicker, the sea lights up whenever anybody, anywhere along the coast, has their first kiss. Most nights it flickers a bit. School discos are visible from space. Fishermen have learned to read it like a newspaper. Matt walked Holly home along the front every Friday for a year, and every Friday the sea stayed dark, and the whole town noticed. Then one Friday, at the end of the pier, he finally went for it. The bay lit up from end to end. Her dad was out fishing.",
+  "facts": {
+    "Day": "22 hours",
+    "Moons": "one, rarely needed",
+    "Gravity": "1.0 g",
+    "Population": "410,000"
+  },
+  "hook": "A planet for anyone who took ages to make a move.",
+  "tags": [
+    "#worldbuilding",
+    "#firstkiss",
+    "#bioluminescence"
+  ],
+  "spec": {
+    "palette": "teal_night",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.7,
+    "water": true,
+    "shore": "left",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 1.0,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.3,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "walk,walk",
+    "crowd_x": 0.5,
+    "crowd_facing": "left",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.16,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.07,
+    "stage": 0.7
+  },
+  "cover": "First kisses here light up the sea.",
+  "episode": {
+    "opener": "First kisses here\nlight up the sea.",
+    "beats": [
+      {
+        "text": "Most nights,\nit flickers a bit.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.55
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "sea_glow": true
+        }
+      },
+      {
+        "text": "School discos are\nvisible from space.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.16
+          ],
+          "focus": [
+            0.5,
+            0.55
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "sea_glow": true,
+          "palette": "polar_night"
+        }
+      },
+      {
+        "text": "Matt walked Holly home\nevery Friday for a year.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "Every Friday,\nthe sea stayed dark.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing",
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "Then, at the end of the pier,\nhe finally went for it.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nothing,nothing",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.035,
+          "crowd_facing": "in"
+        },
+        "onset": {
+          "at": 1.8,
+          "motion": "cut",
+          "spec": {
+            "sea_glow": true
+          }
+        },
+        "note": "identical camera; the sea lights up as they kiss. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nothing,nothing",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.035,
+          "crowd_facing": "in",
+          "sea_glow": true
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "Her dad was out fishing.",
+    "caption": "Holly lives in that little house.\n\nFlicker: 410,000 people, a 22-hour day, one moon that's rarely needed, and a sea that lights up for every first kiss on the coast. Most nights it flickers a bit. Fishermen read it like a newspaper, and the harbour master keeps a chart. Matt walked Holly home along the front every Friday for a year. Every Friday, the sea stayed dark, and the whole town noticed.\n\nI stood on the pier for an hour to see it. The sea gave me one dim flicker, out of pity.\n\n(On Earth, some bays glow blue at night: a plankton called sea sparkle lights up whenever the water's disturbed. Nobody has to kiss anyone.)\n\nHow long did yours take to make a move?"
+  },
+  "first_comment": "Her dad caught nothing that night. He blames the light.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for anyone who took ages to make a move.",
+    "title": "First kisses\nlight up the sea.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.15,
+      1.2
+    ],
+    "focus": [
+      0.5,
+      0.56
+    ],
+    "spec": {
+      "crowd": 0
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd": 0,
+        "sea_glow": true
+      }
+    },
+    "beats": [
+      {
+        "text": "For a year, Matt\nwalked Holly home.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "sea_glow": false,
+          "crowd": 2,
+          "crowd_items": "walk,walk",
+          "crowd_facing": "left"
+        }
+      },
+      {
+        "text": "Finally,\nhe went for it.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nothing,nothing",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.035,
+          "crowd_facing": "in",
+          "sea_glow": false
+        },
+        "onset": {
+          "at": 0.8,
+          "motion": "cut",
+          "spec": {
+            "sea_glow": true
+          }
+        }
+      }
+    ],
+    "end": "Her dad was out fishing.",
+    "end_zoom": [
+      1.2,
+      1.14
+    ],
+    "end_focus": [
+      0.5,
+      0.58
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For anyone who took ages to make a move.",
+    "next": {
+      "name": "Fetch",
+      "line": "Dad said no dogs."
+    }
+  }
+}

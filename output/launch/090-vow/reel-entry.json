@@ -1,0 +1,326 @@
+{
+  "id": "090",
+  "name": "Vow",
+  "subtitle": "where weddings lose everything else",
+  "story": "On Vow, everything else disappears at a wedding. The moment the couple turn to face each other, the guests go, then the chapel, then the hills, and there's nothing left on the planet but the two of them. Everyone comes back afterwards, usually somewhere near the cake. The vicar has stopped taking it personally. Carol and Ron got married on Vow fifty years ago, and this spring they renewed their vows, mostly for the photos and partly to see. It still worked. She'd had her hair done.",
+  "facts": {
+    "Day": "23 hours",
+    "Moons": "one",
+    "Gravity": "0.9 g",
+    "Population": "760,000"
+  },
+  "hook": "A planet for people who'd marry them again.",
+  "tags": [
+    "#worldbuilding",
+    "#vowrenewal",
+    "#wedding"
+  ],
+  "spec": {
+    "palette": "rose_fog",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.62,
+    "sun_y": 0.47,
+    "sun_size": 0.06,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "pines",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 6,
+    "crowd_items": "nothing,flower,flower,nothing,nothing,flower",
+    "crowd_x": 0.42,
+    "crowd_facing": "in",
+    "daisies": 30,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.8,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.085,
+    "stage": 0.72
+  },
+  "cover": "Weddings here make everything else vanish.",
+  "episode": {
+    "opener": "Weddings here make\neverything else vanish.",
+    "beats": [
+      {
+        "text": "The guests go,\nthen the chapel, then the hills.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "flower,nothing",
+          "house": false,
+          "trees": "none",
+          "daisies": 0,
+          "suns": 0,
+          "mist": 1.0,
+          "relief": 0.2,
+          "layers": 2
+        }
+      },
+      {
+        "text": "Everyone comes back afterwards,\nusually near the cake.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        }
+      },
+      {
+        "text": "Carol and Ron got married\nhere fifty years ago.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "sepia"
+        }
+      },
+      {
+        "text": "This spring,\nthey renewed their vows.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "house_x": 0.7
+        }
+      },
+      {
+        "text": "It still worked.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "house_x": 0.7
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "cut",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "flower,nothing",
+            "house": false,
+            "trees": "none",
+            "daisies": 0,
+            "suns": 0,
+            "mist": 1.0,
+            "relief": 0.2,
+            "layers": 2
+          }
+        },
+        "note": "identical camera; everything but the two of them goes. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "flower,nothing",
+          "house": false,
+          "trees": "none",
+          "daisies": 0,
+          "suns": 0,
+          "mist": 1.0,
+          "relief": 0.2,
+          "layers": 2
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "She'd had her hair done.",
+    "caption": "Enjoy the guests while they last.\n\nVow: 760,000 people, a 23-hour day, one moon, and weddings where everything else disappears. The moment the couple turn to face each other, the guests go, then the chapel, then the hills, and for a minute there's nothing on the planet but the two of them. Everyone comes back afterwards, usually somewhere near the cake. The vicar has stopped taking it personally.\n\nI went to a wedding there. I disappeared at twenty past two and turned up in somebody else's wedding photos.\n\n(The story goes that the bridal veil began as a way to keep the groom from seeing the bride's face until the vows were said. On Vow, it's the groom who can't see anything else.)\n\nWould everything still disappear at yours?"
+  },
+  "first_comment": "Ron's asked if they can renew them again next spring. Carol's already booked the hairdresser.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for people who'd marry them again.",
+    "title": "Weddings here make\neverything else vanish.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.2,
+      1.26
+    ],
+    "focus": [
+      0.5,
+      0.56
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd": 2,
+        "crowd_items": "flower,nothing",
+        "house": false,
+        "trees": "none",
+        "daisies": 0,
+        "suns": 0,
+        "mist": 1.0,
+        "relief": 0.2,
+        "layers": 2
+      }
+    },
+    "beats": [
+      {
+        "text": "Carol and Ron\nrenewed their vows.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 6,
+          "crowd_items": "nothing,flower,flower,nothing,nothing,flower",
+          "house": true,
+          "trees": "pines",
+          "daisies": 30,
+          "suns": 1,
+          "mist": 0.45,
+          "relief": 0.7,
+          "layers": 4,
+          "house_x": 0.7
+        }
+      },
+      {
+        "text": "Fifty years on,\nit still worked.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.45,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 6,
+          "crowd_items": "nothing,flower,flower,nothing,nothing,flower",
+          "house": true,
+          "trees": "pines",
+          "daisies": 30,
+          "suns": 1,
+          "mist": 0.45,
+          "relief": 0.7,
+          "layers": 4,
+          "house_x": 0.7
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "cut",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "flower,nothing",
+            "house": false,
+            "trees": "none",
+            "daisies": 0,
+            "suns": 0,
+            "mist": 1.0,
+            "relief": 0.2,
+            "layers": 2
+          }
+        }
+      }
+    ],
+    "end": "She'd had her hair done.",
+    "end_zoom": [
+      1.2,
+      1.14
+    ],
+    "end_focus": [
+      0.45,
+      0.58
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For people who'd marry them again.",
+    "next": {
+      "name": "Umber",
+      "line": "You promise Mum you'll visit more."
+    }
+  },
+  "_engine": 5
+}
