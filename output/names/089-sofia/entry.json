@@ -1,0 +1,273 @@
+{
+  "id": "089",
+  "name": "Sofia",
+  "subtitle": "every Sofia's planet",
+  "story": "On Sofia, armchairs inch towards whoever their owner loves, about a foot a year. Newlyweds' chairs start at opposite ends of the lounge, and you can tell how long a couple's been married with a tape measure. Brenda and Ken's chairs started either side of the fireplace. Every year they shuffled a little closer, mostly while they were asleep in them. By their silver wedding, they touched, right in front of the screen. Nobody can get to the telly.",
+  "facts": {
+    "Day": "26 hours",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "1.7 million"
+  },
+  "hook": "A planet for couples who sit closer every year.",
+  "tags": [
+    "#illustration",
+    "#oldcouple",
+    "#sofia"
+  ],
+  "spec": {
+    "palette": "lilac_dusk",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.6,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "armchair,armchair",
+    "crowd_x": 0.47,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.5,
+    "stage": 0.72
+  },
+  "cover": "Armchairs here inch together.",
+  "kicker": "Every Sofia gets this planet.",
+  "episode": {
+    "opener": "Armchairs here\ninch together.",
+    "beats": [
+      {
+        "text": "About a foot a year.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.47,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd_items": "chair,chair",
+          "crowd_gap": 0.3
+        }
+      },
+      {
+        "text": "Newlyweds' chairs start\nat opposite ends of the room.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd_items": "chair,chair"
+        }
+      },
+      {
+        "text": "You can tell a marriage\nwith a tape measure.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.47,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd_items": "chair,chair",
+          "crowd_gap": 0.2
+        }
+      },
+      {
+        "text": "Brenda and Ken's\nwere far apart.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        }
+      },
+      {
+        "text": "By their silver wedding,\nthey touched.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "crowd_gap": 0.12
+          }
+        },
+        "note": "identical camera; the two chairs, both asleep, close up. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd_gap": 0.12
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "Nobody can get to the telly.",
+    "caption": "Neither armchair is where it started.\n\nSofia: 1.7 million people, a 26-hour day, no moons, and armchairs that inch towards whoever their owner loves, about a foot a year. Newlyweds' chairs start at opposite ends of the lounge, and you can tell how long a couple's been married with a tape measure. Brenda and Ken's started either side of the fireplace, a very long time ago.\n\nI stayed a week in a hotel there. By the last night, my armchair was up against the minibar.\n\n(The story goes that the Victorians made an S-shaped 'courting chair', so a couple could sit face to face without quite touching. On Sofia, give it a silver wedding.)\n\nWhich of you would do most of the inching?"
+  },
+  "first_comment": "Their ruby wedding is next year. The chairs have started to overlap.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for couples who sit closer every year.",
+    "title": "Armchairs here\ninch together.",
+    "sub": "",
+    "framing": "medium",
+    "zoom": [
+      1.8,
+      1.86
+    ],
+    "focus": [
+      0.47,
+      0.64
+    ],
+    "spec": {
+      "crowd_items": "chair,chair",
+      "crowd_gap": 0.4
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "chair,chair",
+        "crowd_gap": 0.12
+      }
+    },
+    "beats": [
+      {
+        "text": "Brenda and Ken's\nwere far apart.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd_items": "armchair,armchair",
+          "crowd_gap": 0.5
+        }
+      },
+      {
+        "text": "By their silver wedding,\nthey touched.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.47,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd_items": "armchair,armchair",
+          "crowd_gap": 0.5
+        },
+        "onset": {
+          "at": 0.8,
+          "motion": "cut",
+          "spec": {
+            "crowd_gap": 0.12
+          }
+        }
+      }
+    ],
+    "end": "Nobody can get to the telly.",
+    "end_zoom": [
+      1.2,
+      1.14
+    ],
+    "end_focus": [
+      0.47,
+      0.58
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For couples who sit closer every year.",
+    "next": {
+      "name": "Ajar",
+      "line": "Doors here say how you're feeling."
+    }
+  }
+}
