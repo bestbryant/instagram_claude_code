@@ -356,9 +356,6 @@
       "crowd_facing": "left"
     },
     "end_kicker": "For everyone the dog wakes at five.",
-    "next": {
-      "name": "Norman",
-      "line": "North is a man."
-    }
+    "sign": "Every name has a planet."
   }
 }

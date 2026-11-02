@@ -186,10 +186,7 @@
     ],
     "name_y": 0.12,
     "end_kicker": "For the family worrier.",
-    "next": {
-      "name": "Isla",
-      "line": "Falling out makes islands."
-    }
+    "sign": "There's a planet for every name."
   },
   "_engine": 5
 }
