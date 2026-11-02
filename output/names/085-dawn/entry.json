@@ -1,0 +1,311 @@
+{
+  "id": "085",
+  "name": "Dawn",
+  "subtitle": "every Dawn's planet",
+  "story": "On Dawn, falling asleep on someone counts as a proposal, and staying still counts as a yes. Night buses are very tense. Commuters drink a great deal of coffee, and everybody sits bolt upright, like they're at the dentist. Laura had done a double shift. At the bus stop she sat down next to a stranger, and was asleep on his shoulder before the timetable had finished lying. He could have coughed, or shrugged, or stood up. He didn't wake her. He let the last bus go. They've been married for years, and she still does it.",
+  "facts": {
+    "Day": "27 hours",
+    "Moons": "none",
+    "Gravity": "0.9 g",
+    "Population": "2.3 million"
+  },
+  "hook": "A planet for people who fall asleep on you.",
+  "tags": [
+    "#illustration",
+    "#howwemet",
+    "#dawn"
+  ],
+  "spec": {
+    "palette": "polar_night",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 1.0,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "LAST BUS",
+    "crowd": 6,
+    "crowd_items": "nothing,cup,sit,sit,book,nothing",
+    "crowd_x": 0.4,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.085,
+    "stage": 0.72
+  },
+  "cover": "Fall asleep on someone here, and it's a proposal.",
+  "kicker": "Every Dawn gets this planet.",
+  "episode": {
+    "opener": "Fall asleep on someone\nand it's a proposal.",
+    "beats": [
+      {
+        "text": "Stay still,\nand that's a yes.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "So night buses\nare very tense.",
+        "shot": "wide",
+        "spec": {
+          "crowd_items": "cup,cup,sit,sit,cup,cup"
+        }
+      },
+      {
+        "text": "Laura had done\na double shift.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.58,
+            1.64
+          ],
+          "focus": [
+            0.6,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "sit,sit",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "daisies": 0
+        }
+      },
+      {
+        "text": "She fell asleep\non a stranger.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.58,
+            1.64
+          ],
+          "focus": [
+            0.6,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nap,sit",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "daisies": 0
+        }
+      },
+      {
+        "text": "He could have coughed.\nHe didn't wake her.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.58,
+            1.64
+          ],
+          "focus": [
+            0.6,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nap,sit",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "daisies": 0
+        },
+        "onset": {
+          "at": 1.6,
+          "motion": "cut",
+          "spec": {
+            "palette": "pastel",
+            "suns": 1,
+            "sun_x": 0.2,
+            "sun_y": 0.56,
+            "sun_size": 0.05,
+            "stars": null,
+            "daisies": 60
+          }
+        },
+        "note": "identical camera; the night goes by in one cut: dawn, flowers for the yes, and still the LAST BUS sign. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.58,
+            1.64
+          ],
+          "focus": [
+            0.6,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nap,sit",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "daisies": 60,
+          "palette": "pastel",
+          "suns": 1,
+          "sun_x": 0.2,
+          "sun_y": 0.56,
+          "sun_size": 0.05,
+          "stars": null
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "He let the last bus go.",
+    "caption": "Someone at that stop did a double shift.\n\nDawn: 2.3 million people, a 27-hour day, no moons, and a rule about sleeping on people. Fall asleep on someone's shoulder and it counts as a proposal; if they let you stay there, that's a yes. Night buses are tense. Commuters sit bolt upright and drink coffee like it's their job. Laura had done a double shift, sat down next to a stranger at the bus stop, and was asleep on him before the timetable had finished lying.\n\nI dozed off on a ferry. I'm engaged to a rucksack.\n\n(The story goes that in Japan, sleeping in public is ordinary enough to have its own word: inemuri. Nobody gets engaged.)\n\nCould you have sat that still?"
+  },
+  "first_comment": "The stranger was called Owen. His arm went to sleep that night, and most nights since.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for people who fall asleep on you.",
+    "title": "Fall asleep on someone:\nit's a proposal.",
+    "sub": "",
+    "framing": "group",
+    "zoom": [
+      1.5,
+      1.55
+    ],
+    "focus": [
+      0.4,
+      0.6
+    ],
+    "spec": {
+      "crowd_items": "cup,cup,sit,sit,cup,cup",
+      "crowd_gap": 0.075
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "hand,hand,nap,sit,hand,hand",
+        "crowd_gap": 0.075,
+        "daisies": 60
+      }
+    },
+    "beats": [
+      {
+        "text": "Laura fell asleep\non a stranger.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.58,
+            1.64
+          ],
+          "focus": [
+            0.6,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nap,sit",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "daisies": 0
+        }
+      },
+      {
+        "text": "He didn't wake her.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.58,
+            1.64
+          ],
+          "focus": [
+            0.6,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nap,sit",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "daisies": 0
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "cut",
+          "spec": {
+            "palette": "pastel",
+            "suns": 1,
+            "sun_x": 0.2,
+            "sun_y": 0.56,
+            "sun_size": 0.05,
+            "stars": null,
+            "daisies": 60
+          }
+        }
+      }
+    ],
+    "end": "He let the last bus go.",
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.5,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For people who fall asleep on you.",
+    "next": {
+      "name": "Brolly",
+      "line": "Your mum says it'll brighten up."
+    }
+  }
+}
