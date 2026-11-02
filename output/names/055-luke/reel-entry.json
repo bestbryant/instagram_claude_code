@@ -392,8 +392,8 @@
     "name_y": 0.2,
     "end_kicker": "For flatmates who fight over the heating.",
     "next": {
-      "name": "Kith",
-      "line": "Houses here follow your best friend."
+      "name": "Ash",
+      "line": "Kind words here start fires."
     }
   },
   "_engine": 5
