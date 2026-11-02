@@ -2173,7 +2173,11 @@
       "title_y": 0.12,
       "scrim": 0.36,
       "end_kicker": "For people who stopped noticing the view.",
-      "kicker": "A planet for people who stopped noticing the view from their window."
+      "kicker": "A planet for people who stopped noticing the view from their window.",
+      "next": {
+        "name": "Lode",
+        "line": "Your blood points home."
+      }
     }
   },
   {
@@ -2418,7 +2422,7 @@
         "motion": "cut"
       },
       "title_y": 0.1,
-      "name_y": 0.229,
+      "name_y": 0.2,
       "end_zoom": [
         1.06,
         1.06
@@ -2429,7 +2433,7 @@
       ],
       "end_kicker": "For people who never come downstairs.",
       "kicker": "A planet for people who never come downstairs.",
-      "sign": "Every name has its own planet."
+      "sign": "Part two, Wednesday: someone comes down to dinner."
     }
   },
   {
@@ -2971,7 +2975,7 @@
       "name_y": 0.1,
       "end_kicker": "For the friend who remembers every birthday.",
       "kicker": "A planet for the friend who remembers every birthday.",
-      "sign": "Every name has its own planet."
+      "sign": "Part two, Thursday: Jess finds a mistake on her board."
     }
   },
   {

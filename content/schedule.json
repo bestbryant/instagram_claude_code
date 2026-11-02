@@ -168,8 +168,8 @@
   "day": 8,
   "entry": "034",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-05T20:00:00Z"
+  "note": "short cut, checked; moved to the end on 2 Nov for 019b",
+  "not_before": "2026-12-04T20:00:00Z"
  },
  {
   "day": 8,
@@ -182,8 +182,8 @@
   "day": 8,
   "entry": "038",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-07T20:00:00Z"
+  "note": "short cut, checked; moved to the end on 2 Nov for 031b",
+  "not_before": "2026-12-05T14:00:00Z"
  },
  {
   "day": 8,
@@ -210,8 +210,8 @@
   "day": 4,
   "entry": "006",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-11-11T20:00:00Z"
+  "note": "short cut, checked; moved to the end on 2 Nov for 011b",
+  "not_before": "2026-12-05T20:00:00Z"
  },
  {
   "day": 8,
@@ -735,5 +735,41 @@
   "kind": "reel",
   "not_before": "2026-11-26T14:00:00Z",
   "note": "short cut, checked"
+ },
+ {
+  "day": 10,
+  "entry": "019b",
+  "kind": "reel",
+  "not_before": "2026-11-05T20:00:00Z",
+  "after": [
+   "019",
+   "reel"
+  ],
+  "hold": true,
+  "note": "dated part two (the part one end card promises the weekday): held until rendered and checked"
+ },
+ {
+  "day": 10,
+  "entry": "031b",
+  "kind": "reel",
+  "not_before": "2026-11-07T20:00:00Z",
+  "after": [
+   "031",
+   "reel"
+  ],
+  "hold": true,
+  "note": "dated part two (the part one end card promises the weekday): held until rendered and checked"
+ },
+ {
+  "day": 10,
+  "entry": "011b",
+  "kind": "reel",
+  "not_before": "2026-11-11T20:00:00Z",
+  "after": [
+   "011",
+   "reel"
+  ],
+  "hold": true,
+  "note": "dated part two (the part one end card promises the weekday): held until rendered and checked"
  }
 ]

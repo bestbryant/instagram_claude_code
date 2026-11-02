@@ -271,10 +271,7 @@
     ],
     "name_y": 0.14,
     "end_kicker": "For every mum in the passenger seat.",
-    "next": {
-      "name": "Selk",
-      "line": "The sea left. The waves stayed."
-    }
+    "sign": "Every name has a planet."
   },
   "_engine": 5
 }

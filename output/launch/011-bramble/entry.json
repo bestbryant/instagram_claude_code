@@ -250,10 +250,7 @@
       0.54
     ],
     "end_kicker": "For people who never come downstairs.",
-    "next": {
-      "name": "Dibs",
-      "line": "Kim called dibs on sunsets."
-    },
-    "kicker": "A planet for people who never come downstairs."
+    "kicker": "A planet for people who never come downstairs.",
+    "sign": "Every name has its own planet."
   }
 }

@@ -300,5 +300,1001 @@
         "line": "Everyone does what Simon says."
       }
     }
+  },
+  {
+    "id": "019b",
+    "name": "Tessel",
+    "subtitle": "part two: the second cake",
+    "story": "Winter on Tessel lasts a year, with no sun and no calendar, so every village has someone who keeps the date. Jess keeps it on a board by her door, and her wages are the first slice of every birthday cake. The winter she lost count, the village kept the board for her. When she got her chalk back, she checked their sums and found Day 213 on there twice. It was her birthday: the village had wanted more cake. Jess has never let a sum go in her life. She found no mistakes.",
+    "facts": {
+      "Day": "22 hours",
+      "Moons": "none",
+      "Gravity": "1.1 g",
+      "Population": "90,000"
+    },
+    "hook": "A planet for the double-checker.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#birthday"
+    ],
+    "spec": {
+      "palette": "abyss",
+      "terrain": "hills",
+      "layers": 5,
+      "horizon": 0.6,
+      "relief": 0.8,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "pines",
+      "snow": true,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "snow",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "WINTER|DAY 212",
+      "crowd": 1,
+      "crowd_items": "book",
+      "crowd_x": 0.5,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Her birthday was on the board twice.",
+    "episode": {
+      "opener": "A year-long winter.\nJess counts it. Exactly.",
+      "beats": [
+        {
+          "text": "The board by her door\nis the village's calendar.",
+          "shot": "sign",
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.47,
+            "crowd_gap": 0.042,
+            "house_x": 0.9,
+            "crowd_items": "book",
+            "crowd_facing": "right",
+            "particles": "snow",
+            "sign": "DAY 212|DAY 213|DAY 213"
+          }
+        },
+        {
+          "text": "The winter she lost track,\nthe village kept it for her.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.34,
+              1.38
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.47,
+            "crowd_gap": 0.042,
+            "house_x": 0.9,
+            "crowd_items": "sit",
+            "crowd_facing": "right",
+            "particles": "snow",
+            "sign": "DAY ???",
+            "palette": "sepia"
+          }
+        },
+        {
+          "text": "With her chalk back,\nshe checked their sums.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.34,
+              1.38
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.47,
+            "crowd_gap": 0.042,
+            "house_x": 0.9,
+            "crowd_items": "book",
+            "crowd_facing": "right",
+            "particles": "snow",
+            "sign": "DAY 212|DAY 213|DAY 213"
+          }
+        },
+        {
+          "text": "Her birthday was on there\ntwice.",
+          "shot": {
+            "framing": "sign",
+            "zoom": [
+              1.95,
+              2.05
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.47,
+            "crowd_gap": 0.042,
+            "house_x": 0.9,
+            "crowd_items": "book",
+            "crowd_facing": "right",
+            "particles": "snow",
+            "sign": "DAY 212|DAY 213|DAY 213"
+          }
+        },
+        {
+          "text": "The village wanted\nmore cake.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.34,
+              1.38
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 10,
+            "crowd_x": 0.281,
+            "crowd_gap": 0.042,
+            "house_x": 0.9,
+            "crowd_items": "spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,book",
+            "crowd_facing": "right",
+            "particles": "snow",
+            "sign": "DAY 212|DAY 213|DAY 213"
+          }
+        },
+        {
+          "text": "Jess has never let\na sum go in her life.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.1
+            ],
+            "focus": [
+              0.47,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 10,
+            "crowd_x": 0.281,
+            "crowd_gap": 0.042,
+            "house_x": 0.9,
+            "crowd_items": "spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,book",
+            "crowd_facing": "right",
+            "particles": "snow",
+            "sign": "DAY 212|DAY 213|DAY 213"
+          }
+        }
+      ],
+      "end": "Jess found no mistakes.",
+      "caption": "Count the days on Jess's board.\n\nThis is part two of Tessel. In part one, Jess lost count for the first time in her life, and the village kept the board going without her.\n\nTessel is 90,000 people on a slow, tilted world: winter lasts a year, and summer about a fortnight. With no sun to count by, every village has someone who keeps the date. Jess has kept hers since she was a girl, and her wages are the first slice of every birthday cake in the village.\n\nWhen she got her chalk back, she checked the village's sums, the way you'd mark homework. Day 213 was on the board twice. It was her birthday. The village had wanted more cake. Jess has never let a sum go in her life. She found no mistakes.\n\nI went to both. I'd only brought one card.\n\n(King Charles has two birthdays: his real one in November, and an official one in June, with a parade. The story goes that George II started it in 1748, because his own birthday was too cold for marching. On Tessel there's no warmer month to move it to, so the village just had it twice.)\n\nIs there a day you'd count twice?"
+    },
+    "first_comment": "Next winter's board already has her birthday down twice. In her own chalk.",
+    "short": {
+      "version": "E",
+      "kicker": "Tessel, part two. A planet for the double-checker.",
+      "title": "A year-long winter.\nJess counts it. Exactly.",
+      "sub": "",
+      "framing": "crowd",
+      "zoom": [
+        1.72,
+        1.78
+      ],
+      "focus": [
+        0.64,
+        0.63
+      ],
+      "spec": {
+        "crowd": 1,
+        "crowd_x": 0.47,
+        "crowd_gap": 0.042,
+        "house_x": 0.9,
+        "crowd_items": "book",
+        "crowd_facing": "right",
+        "particles": "snow",
+        "sign": ""
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "auto",
+        "spec": {
+          "crowd": 1,
+          "crowd_x": 0.47,
+          "crowd_gap": 0.042,
+          "house_x": 0.9,
+          "crowd_items": "book",
+          "crowd_facing": "right",
+          "particles": "snow",
+          "sign": "DAY 212|DAY 213|DAY 213"
+        }
+      },
+      "beats": [
+        {
+          "text": "Her birthday was on there\ntwice.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.34,
+              1.38
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.47,
+            "crowd_gap": 0.042,
+            "house_x": 0.9,
+            "crowd_items": "book",
+            "crowd_facing": "right",
+            "particles": "snow",
+            "sign": "DAY 212|DAY 213|DAY 213"
+          }
+        },
+        {
+          "text": "The village wanted\nmore cake.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.34,
+              1.38
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.47,
+            "crowd_gap": 0.042,
+            "house_x": 0.9,
+            "crowd_items": "book",
+            "crowd_facing": "right",
+            "particles": "snow",
+            "sign": "DAY 212|DAY 213|DAY 213"
+          },
+          "onset": {
+            "at": 0.35,
+            "motion": "auto",
+            "spec": {
+              "crowd": 10,
+              "crowd_gap": 0.042,
+              "crowd_x": 0.281,
+              "crowd_items": "spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,book"
+            }
+          }
+        }
+      ],
+      "end": "Jess found no mistakes.",
+      "end_onset": {
+        "at": 0.5,
+        "spec": {
+          "crowd_items": "spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon"
+        }
+      },
+      "end_zoom": [
+        1.7,
+        1.66
+      ],
+      "end_focus": [
+        0.56,
+        0.63
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For the double-checker.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "031b",
+    "name": "Ruby",
+    "subtitle": "part two: the handshake",
+    "story": "On Ruby, the sky blushes for you: whenever anyone on the planet is embarrassed it goes a little pink, and red when it's bad. Last week the evening newsreader signed off with 'Love you, bye,' and the sky stayed red for a week. On day eight it came back blue, and so did he. He ended the news with a firm handshake, to camera. He didn't blush; he's done twenty years of news. The sky went pink anyway. His teenagers were watching.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "12 million"
+    },
+    "hook": "A planet for embarrassing dads.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#dads"
+    ],
+    "spec": {
+      "palette": "crimson",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.72,
+      "sun_y": 0.56,
+      "sun_size": 0.045,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 4,
+      "crowd_items": "nothing",
+      "crowd_x": 0.36,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "stage": 0.74
+    },
+    "cover": "His teenagers turned the sky pink.",
+    "episode": {
+      "opener": "Here, the sky\nblushes for you.",
+      "beats": [
+        {
+          "text": "Last week, the newsreader signed off\nwith 'Love you, bye.'",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.7,
+              0.67
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.36,
+            "crowd_gap": 0.72,
+            "crowd_facing": "right",
+            "sign": "ON AIR",
+            "house": false,
+            "mist": 0.4,
+            "suns": 0,
+            "palette": "crimson",
+            "crowd_items": "nothing,hand"
+          }
+        },
+        {
+          "text": "On day eight, the sky came back blue.\nSo did he.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.7,
+              0.67
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.36,
+            "crowd_gap": 0.72,
+            "crowd_facing": "right",
+            "sign": "ON AIR",
+            "house": false,
+            "mist": 0.4,
+            "suns": 0,
+            "palette": "cobalt_noon",
+            "crowd_items": "nothing,book"
+          }
+        },
+        {
+          "text": "So now, a firm handshake.\nTo camera.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.7,
+              0.67
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.36,
+            "crowd_gap": 0.72,
+            "crowd_facing": "right",
+            "sign": "ON AIR",
+            "house": false,
+            "mist": 0.4,
+            "suns": 0,
+            "palette": "cobalt_noon",
+            "crowd_items": "nothing,book"
+          },
+          "note": "turn: the next beat changes one thing on the identical camera (the sky goes pink)"
+        },
+        {
+          "text": "He didn't blush.\nTwenty years of news.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.7,
+              0.67
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.36,
+            "crowd_gap": 0.72,
+            "crowd_facing": "right",
+            "sign": "ON AIR",
+            "house": false,
+            "mist": 0.8,
+            "suns": 0,
+            "palette": "rose_fog",
+            "crowd_items": "nothing,book"
+          }
+        },
+        {
+          "text": "The sky went pink anyway.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.95,
+              2.01
+            ],
+            "focus": [
+              0.55,
+              0.68
+            ]
+          },
+          "spec": {
+            "house": true,
+            "house_x": 0.68,
+            "sign": "",
+            "crowd": 2,
+            "crowd_x": 0.44,
+            "crowd_gap": 0.1,
+            "crowd_facing": "right",
+            "crowd_items": "sit,sit",
+            "suns": 0,
+            "mist": 0.8,
+            "palette": "rose_fog"
+          },
+          "note": "the house camera from frame 1; the end card follows on it"
+        }
+      ],
+      "end": "His teenagers were watching.",
+      "caption": "Those two outside the house are his.\n\nThis is part two of Ruby. Last week the evening newsreader ended the news with 'Love you, bye,' live, to eleven million people. Four million said it back, and the sky stayed red for a week.\n\nRuby is a small blue planet of twelve million people where the sky does your blushing for you: a little pink whenever anyone is embarrassed, red when it's bad. Everyone can see it, so nobody gets away with anything.\n\nOn day eight the sky came back blue, and so did he. He'd had a week to think. At the end of the news he looked down the lens, held out his hand and offered the nation a firm handshake. He didn't blush. He's done twenty years of news. The sky went pink anyway, from a house on the edge of town where his two teenagers had been watching.\n\nI watched it in a café, and shook back. Some of that pink was mine.\n\n(German has one word for being embarrassed on somebody else's behalf: Fremdscham. On Ruby, it's called having a dad.)\n\nWhen did your dad last turn your sky pink?"
+    },
+    "first_comment": "He's moved on to a salute. His teenagers now watch the news through their fingers.",
+    "short": {
+      "version": "E",
+      "kicker": "Ruby, part two. A planet for embarrassing dads.",
+      "title": "Here, the sky\nblushes for you.",
+      "sub": "",
+      "framing": "house",
+      "zoom": [
+        1.95,
+        2.01
+      ],
+      "focus": [
+        0.55,
+        0.68
+      ],
+      "spec": {
+        "house": true,
+        "house_x": 0.68,
+        "sign": "",
+        "crowd": 2,
+        "crowd_x": 0.44,
+        "crowd_gap": 0.1,
+        "crowd_facing": "right",
+        "crowd_items": "sit,sit",
+        "suns": 0,
+        "mist": 0.4,
+        "palette": "cobalt_noon"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "house": true,
+          "house_x": 0.68,
+          "sign": "",
+          "crowd": 2,
+          "crowd_x": 0.44,
+          "crowd_gap": 0.1,
+          "crowd_facing": "right",
+          "crowd_items": "sit,sit",
+          "suns": 0,
+          "mist": 0.8,
+          "palette": "rose_fog"
+        }
+      },
+      "beats": [
+        {
+          "text": "The newsreader signed off\n'Love you, bye.'",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.7,
+              0.67
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.36,
+            "crowd_gap": 0.72,
+            "crowd_facing": "right",
+            "sign": "ON AIR",
+            "house": false,
+            "mist": 0.4,
+            "suns": 0,
+            "palette": "crimson",
+            "crowd_items": "nothing,hand"
+          }
+        },
+        {
+          "text": "So now, a firm handshake.\nTo camera.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.7,
+              0.67
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.36,
+            "crowd_gap": 0.72,
+            "crowd_facing": "right",
+            "sign": "ON AIR",
+            "house": false,
+            "mist": 0.4,
+            "suns": 0,
+            "palette": "cobalt_noon",
+            "crowd_items": "nothing,book"
+          },
+          "onset": {
+            "at": 2.3,
+            "motion": "cut",
+            "spec": {
+              "palette": "rose_fog",
+              "mist": 0.8
+            }
+          }
+        }
+      ],
+      "end": "His teenagers were watching.",
+      "end_spec": {
+        "house": true,
+        "house_x": 0.68,
+        "sign": "",
+        "crowd": 2,
+        "crowd_x": 0.44,
+        "crowd_gap": 0.1,
+        "crowd_facing": "right",
+        "crowd_items": "nap,nap",
+        "suns": 0,
+        "mist": 0.8,
+        "palette": "rose_fog"
+      },
+      "end_zoom": [
+        2.01,
+        1.95
+      ],
+      "end_focus": [
+        0.55,
+        0.68
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For embarrassing dads.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "011b",
+    "name": "Bramble",
+    "subtitle": "part two: the first one down",
+    "story": "Trees on Bramble never stop growing. The tallest has a small rain cloud of its own, and near the top is a village that hasn't come down in six hundred years. It has its own kitchens. Their family on the ground cooks for them anyway, and every evening a pinecone drops with the same answer: 'Coming!' On Wednesday, someone came down. It took him a day. Agnes had the table laid before he touched the ground. He'd already eaten. She poured him a cup anyway.",
+    "facts": {
+      "Day": "30 hours",
+      "Moons": "none",
+      "Gravity": "0.85 g",
+      "Population": "unknown"
+    },
+    "hook": "A planet for the family cook.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#dinner"
+    ],
+    "spec": {
+      "palette": "toxic",
+      "terrain": "hills",
+      "layers": 5,
+      "horizon": 0.66,
+      "relief": 1.0,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.55,
+      "sun_y": 0.45,
+      "sun_size": 0.045,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "giant",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.7,
+      "gag": "tree_cloud",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "DINNER'S READY.",
+      "crowd": 0,
+      "crowd_items": "",
+      "crowd_x": 0.0,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "The first one down in 600 years.",
+    "episode": {
+      "opener": "Nobody's come down\nin 600 years.",
+      "beats": [
+        {
+          "text": "They don't need to.",
+          "shot": "gag",
+          "spec": {
+            "sign": "",
+            "house": false
+          }
+        },
+        {
+          "text": "The village has its own cloud\nand its own kitchens.",
+          "shot": {
+            "framing": "sky",
+            "focus": [
+              0.567,
+              0.29
+            ],
+            "zoom": [
+              1.7,
+              1.8
+            ]
+          },
+          "spec": {
+            "sign": "",
+            "house": false
+          },
+          "text_y": 0.13
+        },
+        {
+          "text": "Their family below\ncooks for them anyway.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.9,
+              1.95
+            ],
+            "focus": [
+              0.2,
+              0.614
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "spoon,kettle,nothing",
+            "crowd_x": 0.105,
+            "crowd_gap": 0.05,
+            "crowd_facing": "right",
+            "sign": "",
+            "house": false
+          },
+          "text_y": 0.05
+        },
+        {
+          "text": "Agnes has cooked for them\nfor fifty-one years.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.3,
+              2.4
+            ],
+            "focus": [
+              0.07,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "spoon,kettle,nothing",
+            "crowd_x": 0.105,
+            "crowd_gap": 0.05,
+            "crowd_facing": "right",
+            "sign": "",
+            "house": false
+          },
+          "text_y": 0.05
+        },
+        {
+          "text": "Every evening, a pinecone\ncomes down with the answer:\n'Coming!'",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.2
+            ],
+            "focus": [
+              0.16,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "spoon,kettle,echo",
+            "crowd_x": 0.105,
+            "crowd_gap": 0.05,
+            "crowd_facing": "right",
+            "sign": "",
+            "house": false
+          },
+          "text_y": 0.05
+        },
+        {
+          "text": "On Wednesday,\nsomeone came down.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.9,
+              1.95
+            ],
+            "focus": [
+              0.2,
+              0.614
+            ]
+          },
+          "spec": {
+            "crowd": 5,
+            "crowd_items": "spoon,kettle,nothing,shadow,aloft",
+            "crowd_x": 0.155,
+            "crowd_gap": 0.05,
+            "crowd_facing": "right",
+            "sign": "",
+            "house": false
+          },
+          "text_y": 0.05
+        },
+        {
+          "text": "It took him a day.\nAgnes had the table laid\nbefore he touched the ground.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.9,
+              2.05
+            ],
+            "focus": [
+              0.19,
+              0.655
+            ]
+          },
+          "spec": {
+            "crowd": 4,
+            "crowd_items": "spoon,kettle,nothing,nothing",
+            "crowd_x": 0.13,
+            "crowd_gap": 0.05,
+            "crowd_facing": "in",
+            "sign": "",
+            "house": false
+          },
+          "text_y": 0.05
+        }
+      ],
+      "end": "He'd already eaten.",
+      "caption": "Every light up that tree is a kitchen.\n\nThis is part two of Bramble. In part one, a village near the top of the tallest tree hadn't come down in six hundred years, and every evening the family on the ground called them for dinner and got the same pinecone back: 'Coming!'\n\nTrees on Bramble never stop growing. It's a day's climb down and a week back up, so nobody bothers, and the village has its own rain cloud and its own kitchens. Agnes has cooked for the top of the tree for fifty-one years anyway.\n\nOn Wednesday, someone came down. It took him a day. Agnes had the table laid before he touched the ground. He'd already eaten. She poured him a cup anyway.\n\nI was standing right there. I hadn't eaten. Nobody asked.\n\n(On Earth, a redwood can't pull water much higher than 122 to 130 metres, so that's about as tall as a tree can get; the tallest known, Hyperion in California, is about 116. Bramble's tallest tree is watered from the top.)\n\nWould you have fed him anyway?"
+    },
+    "first_comment": "He had seconds. Then a pinecone landed by his plate: 'Dinner's ready.'",
+    "short": {
+      "version": "E",
+      "kicker": "Bramble, part two. A planet for the family cook.",
+      "title": "Nobody's come down\nin 600 years.",
+      "sub": "",
+      "title_y": 0.12,
+      "framing": "sky",
+      "zoom": [
+        1.5,
+        1.56
+      ],
+      "focus": [
+        0.55,
+        0.3
+      ],
+      "spec": {
+        "gag": "",
+        "sign": "",
+        "cartographer": false,
+        "house": false,
+        "crowd": 3,
+        "crowd_items": "spoon,kettle,nothing",
+        "crowd_x": 0.105,
+        "crowd_gap": 0.05,
+        "crowd_facing": "right"
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "gag": "tree_cloud",
+          "sign": "",
+          "cartographer": false,
+          "house": false,
+          "crowd": 3,
+          "crowd_items": "spoon,kettle,nothing",
+          "crowd_x": 0.105,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right"
+        }
+      },
+      "beats": [
+        {
+          "text": "Their family\nstill cooks for them.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.9,
+              1.95
+            ],
+            "focus": [
+              0.2,
+              0.614
+            ]
+          },
+          "text_y": 0.05
+        },
+        {
+          "text": "Then someone\ncame down.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.9,
+              1.95
+            ],
+            "focus": [
+              0.2,
+              0.614
+            ]
+          },
+          "text_y": 0.05,
+          "onset": {
+            "at": 0.3,
+            "motion": "cut",
+            "spec": {
+              "crowd": 5,
+              "crowd_x": 0.155,
+              "crowd_items": "spoon,kettle,nothing,shadow,aloft"
+            }
+          }
+        }
+      ],
+      "end": "He'd already eaten.",
+      "end_spec": {
+        "crowd": 4,
+        "crowd_items": "spoon,kettle,nothing,nothing",
+        "crowd_x": 0.13,
+        "crowd_gap": 0.05,
+        "crowd_facing": "in"
+      },
+      "end_onset": {
+        "at": 1.25,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "spoon,kettle,nothing,cup"
+        }
+      },
+      "end_zoom": [
+        1.9,
+        2.15
+      ],
+      "end_focus": [
+        0.19,
+        0.655
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For the family cook.",
+      "sign": "Every name has a planet."
+    }
   }
 ]
