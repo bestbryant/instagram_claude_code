@@ -321,10 +321,7 @@
     ],
     "name_y": 0.21,
     "end_kicker": "For the one everyone else steers by.",
-    "next": {
-      "name": "Stead",
-      "line": "Parents here get a moon."
-    }
+    "sign": "There's a planet for every name."
   },
   "_engine": 5
 }

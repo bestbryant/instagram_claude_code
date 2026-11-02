@@ -266,10 +266,7 @@
     ],
     "name_y": 0.05,
     "end_kicker": "For every dad who didn't have to be.",
-    "next": {
-      "name": "Amber",
-      "line": "Here, the sky's a traffic light."
-    }
+    "sign": "Every name has its own planet."
   },
   "_engine": 5
 }
