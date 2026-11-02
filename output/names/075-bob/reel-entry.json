@@ -210,10 +210,7 @@
     ],
     "name_y": 0.1,
     "end_kicker": "For the neighbour who'll have a look.",
-    "next": {
-      "name": "Lode",
-      "line": "Your blood points home."
-    }
+    "sign": "There's a planet for every name."
   },
   "_engine": 5
 }

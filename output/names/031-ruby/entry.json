@@ -268,9 +268,6 @@
     ],
     "name_y": 0.25,
     "end_kicker": "For everyone who's said 'you too' to a waiter.",
-    "next": {
-      "name": "Fret",
-      "line": "Worries here hang in the sky."
-    }
+    "sign": "Every name has a planet."
   }
 }

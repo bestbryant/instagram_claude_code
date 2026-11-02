@@ -293,10 +293,7 @@
     ],
     "name_y": 0.15,
     "end_kicker": "For people who go home for Christmas.",
-    "next": {
-      "name": "Ruby",
-      "line": "The sky blushes if you're embarrassed."
-    },
-    "kicker": "A planet for people who go home for Christmas."
+    "kicker": "A planet for people who go home for Christmas.",
+    "sign": "Every name has its own planet."
   }
 }
