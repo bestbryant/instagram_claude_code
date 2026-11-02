@@ -297,8 +297,8 @@
     "name_y": 0.12,
     "end_kicker": "For the cousin you see every summer.",
     "next": {
-      "name": "Kate",
-      "line": "Kate is always five minutes away."
+      "name": "Elsewhere",
+      "line": "You've been to this planet today."
     }
   },
   "_engine": 5
