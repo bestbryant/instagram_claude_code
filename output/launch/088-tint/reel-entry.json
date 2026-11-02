@@ -1,0 +1,275 @@
+{
+  "id": "088",
+  "name": "Tint",
+  "subtitle": "where colour goes with your person",
+  "story": "On Tint, colour follows whoever you love. When they leave the house, it leaves with them: the garden goes grey, the telly goes grey, the tea goes the colour of dishwater. Most people get it back by teatime. Craig's wife works away, Monday to Friday, so Craig lives in black and white from Monday morning on. On Friday night, the street can tell when her car turns in, because the hedges go green one house at a time. Craig has been in odd socks since Monday.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "one",
+    "Gravity": "0.95 g",
+    "Population": "4.4 million"
+  },
+  "hook": "A planet for couples who only have weekends.",
+  "tags": [
+    "#worldbuilding",
+    "#missingyou",
+    "#colour"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.7,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "lone",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "cup,nothing",
+    "crowd_x": 0.42,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.72,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.72
+  },
+  "cover": "Colour here leaves with your person.",
+  "episode": {
+    "opener": "Colour here leaves\nwith your person.",
+    "beats": [
+      {
+        "text": "Most people get it back\nby teatime.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "Craig's wife works away,\nMonday to Friday.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "sepia",
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.375
+        }
+      },
+      {
+        "text": "All week, the tea\nis the colour of dishwater.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.95,
+            2.0
+          ],
+          "focus": [
+            0.4,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "sepia",
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.375
+        }
+      },
+      {
+        "text": "On Friday night,\nthe hedges go green.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "sepia",
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.375
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "palette": "gold_hour",
+            "crowd": 2,
+            "crowd_items": "cup,nothing",
+            "crowd_x": 0.42
+          }
+        },
+        "note": "identical camera; she's home and the colour comes back with her. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "cup,nothing"
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "Odd socks, since Monday.",
+    "caption": "One of these two is only home at weekends.\n\nTint: 4.4 million people, a 24-hour day, one moon, and colour that goes wherever the person you love goes. When they leave the house, it leaves with them: the garden, the telly, the tea. Most people get it back by teatime. Craig's wife works away from Monday to Friday, so Craig spends the week in black and white, and the neighbours know it's Friday when the hedges go green, one house at a time.\n\nI nipped out for stamps. My landlady went beige.\n\n(On Earth, your eyes stop seeing colour in dim light and hand over to cells that only see grey. It all comes back in the morning.)\n\nDoes your tea go grey when yours is away?"
+  },
+  "first_comment": "She's away again on Monday. He's laid out two socks that are definitely the same colour.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for couples who only have weekends.",
+    "title": "Colour here leaves\nwith your person.",
+    "sub": "",
+    "framing": "medium",
+    "zoom": [
+      1.4,
+      1.46
+    ],
+    "focus": [
+      0.5,
+      0.6
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "sepia",
+        "crowd": 1,
+        "crowd_items": "cup",
+        "crowd_x": 0.375
+      }
+    },
+    "beats": [
+      {
+        "text": "Craig's wife works away\nall week.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.38,
+            0.63
+          ]
+        },
+        "spec": {
+          "palette": "sepia",
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.375
+        }
+      },
+      {
+        "text": "Friday,\nshe came home.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "sepia",
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.375
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "cut",
+          "spec": {
+            "palette": "gold_hour",
+            "crowd": 2,
+            "crowd_items": "cup,nothing",
+            "crowd_x": 0.42
+          }
+        }
+      }
+    ],
+    "end": "Odd socks, since Monday.",
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.5,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For couples who only have weekends.",
+    "next": {
+      "name": "Nod",
+      "line": "The wind here is Dad, snoring."
+    }
+  },
+  "_engine": 5
+}

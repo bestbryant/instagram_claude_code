@@ -1,0 +1,236 @@
+{
+  "id": "079",
+  "name": "Petal",
+  "subtitle": "where pet names are taken literally",
+  "story": "On Petal, pet names are taken literally. Call someone 'sunshine' and out comes the sun; call him 'my rock' and you'll want to stand well back. Most couples play it safe with 'love'. Jim has called Linda 'sunshine' every morning for twenty years, and their street has the best tomatoes in the county. Linda calls Jim 'pumpkin'. Every time she says it, the hills fill up with pumpkins. He's never asked her to stop.",
+  "facts": {
+    "Day": "23 hours",
+    "Moons": "one",
+    "Gravity": "0.9 g",
+    "Population": "740,000"
+  },
+  "hook": "A planet for couples with embarrassing pet names.",
+  "tags": [
+    "#worldbuilding",
+    "#couples",
+    "#petnames"
+  ],
+  "spec": {
+    "palette": "cobalt_noon",
+    "terrain": "hills",
+    "layers": 5,
+    "horizon": 0.5,
+    "relief": 1.2,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.76,
+    "sun_y": 0.36,
+    "sun_size": 0.07,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.3,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.6,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.8,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.08,
+    "stage": 0.72
+  },
+  "cover": "She calls him 'pumpkin'.",
+  "episode": {
+    "opener": "Pet names here\nare taken literally.",
+    "beats": [
+      {
+        "text": "Call someone 'sunshine',\nand out it comes.",
+        "shot": "wide",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 1
+          }
+        }
+      },
+      {
+        "text": "Most couples play it safe\nwith 'love'.",
+        "shot": "group"
+      },
+      {
+        "text": "Nobody says 'my rock'.\nNot twice.",
+        "shot": "close"
+      },
+      {
+        "text": "Jim calls Linda 'sunshine'.\nTheir tomatoes are famous.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "Linda calls him 'pumpkin'.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "rise",
+          "spec": {
+            "lanterns": 36
+          }
+        },
+        "note": "identical camera to the beat before; the hills fill with pumpkins. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "lanterns": 36
+        },
+        "seconds": 2.2
+      }
+    ],
+    "end": "He's never asked her to stop.",
+    "caption": "The hills behind Jim are empty. For now.\n\nPetal: 740,000 people, a 23-hour day, one moon, and pet names that are taken literally. Call someone 'sunshine' and out it comes. 'Angel' is a lot of feathers. Most couples play it safe with 'love', and nobody says 'my rock' twice. Jim has called Linda 'sunshine' every morning for twenty years, and their street grows the best tomatoes in the county. Linda calls Jim something else.\n\nI called a bus driver 'duck'. We waited forty minutes for them to cross.\n\n(The story goes that 'honey' has been a pet name since the 1300s. On Petal, the bees have been a problem for about as long.)\n\nSunshine, pumpkin, or something worse?"
+  },
+  "first_comment": "For their anniversary, he tried 'my little dumpling'. The neighbours have asked him to stick to 'sunshine'.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for couples with embarrassing pet names.",
+    "title": "Pet names here\nare taken literally.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.15,
+      1.2
+    ],
+    "focus": [
+      0.5,
+      0.56
+    ],
+    "spec": {
+      "palette": "polar_night",
+      "suns": 0
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "cobalt_noon",
+        "suns": 1
+      }
+    },
+    "beats": [
+      {
+        "text": "Jim calls Linda\n'sunshine'.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "She calls him\n'pumpkin'.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 0.55,
+          "motion": "rise",
+          "spec": {
+            "lanterns": 36
+          }
+        }
+      }
+    ],
+    "end": "He's never asked her to stop.",
+    "end_zoom": [
+      1.22,
+      1.16
+    ],
+    "end_focus": [
+      0.5,
+      0.58
+    ],
+    "name_y": 0.12,
+    "end_kicker": "For couples with embarrassing pet names.",
+    "next": {
+      "name": "Yonder",
+      "line": "Nan waves until you're out of sight."
+    }
+  },
+  "_engine": 5
+}
