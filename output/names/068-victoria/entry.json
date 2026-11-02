@@ -241,9 +241,6 @@
     ],
     "name_y": 0.14,
     "end_kicker": "For whoever brings cake to work.",
-    "next": {
-      "name": "Luma",
-      "line": "The moon here writes back."
-    }
+    "sign": "There's a planet for every name."
   }
 }

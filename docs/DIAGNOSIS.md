@@ -2,6 +2,14 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-02 daily review (12:15 UTC): two more breakouts, still no follows
+- **Numbers (strangers):** Simon (C, name, the first 20:00 post) at 16 h: 1,056 reached, 26% skip, 69% watched, 1.61 views each, 7 likes, 0 sends. Hush part two (E, 14:10) at 22 h: 593 and still climbing (its wave came 05-12 UTC), 30% skip, 3 likes. Mothwing final 179, 43% (the weakest E opening); Hollow final 255, 26%. Followers 6, unchanged in 24 h although these two added about 1,650 reached. 7 days: 4,764 reached, 15 profile visits.
+- **Slot tally:** 14:00: 5 of 11 past 300 (Summer, Frank, Fond, Hush, Hush part two). 20:00: 1 of 1 (Simon). 22:00: 0 of 9. The late-evening slot was the problem, not the second slot; 20:00 stays.
+- **Against the targets:** skip under 50% and watched over 40%: met by every spoken Reel this week. Reach week on week: met (this week four Reels past 500). Sends or saves 1 per 100: missed (0 on both breakouts). Follower growth: missed: 0 follows from about 1,650 breakout reach in 24 h.
+- **What the breakouts share, revised:** Simon is not a love story; it is a game everyone played ('Everyone does what Simon says'). With Summer (a nan who was right), Fond ('Take a coat') and Hush (a proposal shouted across a valley), the common thread is a premise built on something every viewer already knows, then made literal. Couples remain the strongest on likes (Hush 1.8 per 100). A sequel can break out: Hush part two, which opens on its own premise, is past 590.
+- **Change today:** the follow-conversion experiment set up this morning (entry below): the name offer is caption line 1 on every queued Reel (from Milo, 14:00 today), 'Every name has a planet.' replaces 'Next stop' on 3-14 Nov end cards, and three dated two-parters (Tessel 4-5 Nov, Ruby 6-7 Nov, Bramble 10-11 Nov) end their part one on 'Part two, <day>: ...'. Measures and thresholds are in the entry below. The tight-cut test (3-14 Nov) is unchanged and balanced.
+- **Next:** first tight-cut pair reads 5 Nov 14:00 (Mary). Requests read 9 Nov. If followers stay at 6 through Simon's and Hush part two's runs, the Reel itself is confirmed as the leak, which is what the experiment targets.
+
 ## 2026-11-02 (09:45 UTC): reach works, follows don't; the name offer was never visible
 - **Numbers:** last 7 days 4,434 accounts reached, 15 profile visits (0.34%), followers 6. Four Reels past 1,000 strangers (Summer, Fond, Hush, Simon: 1,051 in 12 h at the new 20:00 slot). Summed over every Reel: 0.73 likes per 100 reached, 1 share and 5 saves ever, **0 comments from strangers ever** (all 16 counted comments are our own epilogues), 0 name requests.
 - **Research (workflow follow-conversion: data analyst, web researcher, funnel audit, strategist, three critics):**

@@ -318,10 +318,7 @@
     ],
     "name_y": 0.14,
     "end_kicker": "For every big sister who called dibs.",
-    "next": {
-      "name": "Victoria",
-      "line": "No cake, no Tuesday."
-    }
+    "sign": "Every name has a planet."
   },
   "_engine": 5
 }
