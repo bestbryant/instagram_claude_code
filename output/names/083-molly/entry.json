@@ -1,0 +1,253 @@
+{
+  "id": "083",
+  "name": "Molly",
+  "subtitle": "every Molly's planet",
+  "story": "On Molly, colds come out as weather. A sniffle is a flurry, a cough is a hard frost, and anything with a temperature closes the airport. Molly had a cold last week and carried on as normal, in a light flurry. Then her husband Keith caught it. The roads closed. The schools closed. Molly made soup and carried it out to him through the drifts. He says he nearly died.",
+  "facts": {
+    "Day": "23 hours",
+    "Moons": "two",
+    "Gravity": "1.0 g",
+    "Population": "2.8 million"
+  },
+  "hook": "A planet for every husband with man flu.",
+  "tags": [
+    "#worldbuilding",
+    "#manflu",
+    "#molly"
+  ],
+  "spec": {
+    "palette": "mint_dawn",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.62,
+    "relief": 0.7,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.76,
+    "sun_y": 0.44,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.44,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.82,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.12,
+    "stage": 0.74
+  },
+  "cover": "Then Keith caught it.",
+  "kicker": "Every Molly gets this planet.",
+  "episode": {
+    "opener": "Colds here\ncome out as snow.",
+    "beats": [
+      {
+        "text": "Colds here come out\nas weather.",
+        "shot": "wide",
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "particles": "snow",
+            "flake_size": 1.5
+          }
+        }
+      },
+      {
+        "text": "A sniffle is a flurry.\nA cough, a hard frost.",
+        "shot": "sky",
+        "spec": {
+          "particles": "snow",
+          "flake_size": 1.5
+        }
+      },
+      {
+        "text": "Molly's cold\nwas a light flurry.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "particles": "snow",
+          "flake_size": 1.5
+        }
+      },
+      {
+        "text": "Then Keith caught it.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "spec": {
+          "particles": "snow",
+          "flake_size": 1.5
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "flake_size": 3.0,
+            "crowd_items": "nap,cup"
+          }
+        },
+        "note": "identical camera to Molly's flurry; the blizzard. Turn line"
+      },
+      {
+        "text": "The roads closed.\nThe schools closed.",
+        "shot": "wide",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "snow": true,
+          "particles": "snow",
+          "flake_size": 3.0,
+          "crowd_items": "nap,cup"
+        }
+      },
+      {
+        "text": "Molly made soup.",
+        "shot": "close",
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "snow": true,
+          "particles": "snow",
+          "flake_size": 3.0,
+          "crowd_items": "nap,cup"
+        }
+      }
+    ],
+    "end": "He says he nearly died.",
+    "caption": "The man on the left is the forecast.\n\nMolly: 2.8 million people, a 23-hour day, two moons, and colds that come out as weather. A sniffle is a flurry. A cough is a hard frost. Anything with a temperature closes the airport, and the forecast is mostly a list of who's poorly. Molly had a cold last week and carried on as normal, in a light flurry. Then her husband caught it.\n\nI had a sniffle on my first morning. The weather service named it after me.\n\n(On Earth, a Canadian doctor reviewed the evidence for 'man flu' in the BMJ in 2017 and concluded men may really suffer a bit more. Keith has printed it out.)\n\nIs yours a flurry or a blizzard?"
+  },
+  "first_comment": "Keith's back on his feet. He's complained to the local paper.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every husband with man flu.",
+    "title": "Colds here\ncome out as snow.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.2,
+      1.26
+    ],
+    "focus": [
+      0.5,
+      0.56
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "particles": "snow",
+        "flake_size": 2.6
+      }
+    },
+    "beats": [
+      {
+        "text": "Molly's cold\nwas a light flurry.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        }
+      },
+      {
+        "text": "Then Keith caught it.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.5,
+            1.56
+          ],
+          "focus": [
+            0.48,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 0.5,
+          "motion": "cut",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "flake_size": 3.0,
+            "crowd_items": "nap,cup"
+          }
+        }
+      }
+    ],
+    "end": "He says he nearly died.",
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.5,
+      0.58
+    ],
+    "name_y": 0.12,
+    "end_kicker": "For every husband with man flu.",
+    "next": {
+      "name": "Brumm",
+      "line": "Every child here gets one last carry."
+    }
+  }
+}
