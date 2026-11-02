@@ -4780,8 +4780,8 @@
       "name_y": 0.16,
       "end_kicker": "For everyone who shops on Christmas Eve.",
       "next": {
-        "name": "Umber",
-        "line": "You promise Mum you'll visit more."
+        "name": "Joy",
+        "line": "Laughing here lifts you off the ground."
       }
     }
   },
@@ -4983,8 +4983,8 @@
       "end_kicker": "For every grandad with one good joke.",
       "kicker": "A planet for every grandad with one good joke.",
       "next": {
-        "name": "Fetch",
-        "line": "Dad said no dogs."
+        "name": "Stella",
+        "line": "After lights-out, whispers become stars."
       }
     }
   },
@@ -5264,8 +5264,8 @@
       "name_y": 0.2,
       "end_kicker": "For sisters who talked after lights-out.",
       "next": {
-        "name": "Brolly",
-        "line": "Your mum says it'll brighten up."
+        "name": "Pete",
+        "line": "Every Pete gets this planet."
       }
     }
   },
@@ -5495,8 +5495,8 @@
       "name_y": 0.18,
       "end_kicker": "For people who say 'don't make a fuss'.",
       "next": {
-        "name": "Ajar",
-        "line": "Doors here say how you're feeling."
+        "name": "Ray",
+        "line": "The sun here shines on Mum's favourite."
       }
     }
   },
@@ -5779,8 +5779,8 @@
       "name_y": 0.1,
       "end_kicker": "For everyone who knows they're Mum's favourite.",
       "next": {
-        "name": "Yonder",
-        "line": "Nan waves until you're out of sight."
+        "name": "April",
+        "line": "Happy tears here fall as rain."
       }
     }
   },
@@ -6115,8 +6115,8 @@
       "name_y": 0.25,
       "end_kicker": "For every grandad who says it's hay fever.",
       "next": {
-        "name": "Nod",
-        "line": "The wind here is Dad, snoring."
+        "name": "Violet",
+        "line": "New kids here are invisible."
       }
     }
   },
@@ -6378,8 +6378,8 @@
       "name_y": 0.2,
       "end_kicker": "For whoever sat with the new kid.",
       "next": {
-        "name": "Thicket",
-        "line": "Saying 'later' plants a tree here."
+        "name": "Melody",
+        "line": "Here, catchy songs are actually catching."
       }
     }
   },
@@ -6664,8 +6664,8 @@
       "name_y": 0.2,
       "end_kicker": "For every brother singing in the shower.",
       "next": {
-        "name": "Figment",
-        "line": "Imaginary friends retire here."
+        "name": "Luke",
+        "line": "The sky's thermostat is in Priya's hallway."
       }
     }
   },
@@ -7063,8 +7063,8 @@
       "name_y": 0.2,
       "end_kicker": "For flatmates who fight over the heating.",
       "next": {
-        "name": "Kith",
-        "line": "Houses here follow your best friend."
+        "name": "Ash",
+        "line": "Kind words here start fires."
       }
     }
   },
@@ -7377,8 +7377,8 @@
       "name_y": 0.2,
       "end_kicker": "For brothers who only trade insults.",
       "next": {
-        "name": "Clasp",
-        "line": "Hugs here last as long as you've been apart."
+        "name": "Faith",
+        "line": "Believing in someone moves mountains here."
       }
     }
   },
@@ -7693,8 +7693,8 @@
       "name_y": 0.16,
       "end_kicker": "For the teacher who believed in you.",
       "next": {
-        "name": "Twain",
-        "line": "Here, you can jump to the planet next door."
+        "name": "Kate",
+        "line": "Kate is always five minutes away."
       }
     }
   },
@@ -9433,6 +9433,1365 @@
       "next": {
         "name": "Grace",
         "line": "Every Grace gets this planet."
+      }
+    }
+  },
+  {
+    "id": "083",
+    "name": "Molly",
+    "subtitle": "every Molly's planet",
+    "story": "On Molly, colds come out as weather. A sniffle is a flurry, a cough is a hard frost, and anything with a temperature closes the airport. Molly had a cold last week and carried on as normal, in a light flurry. Then her husband Keith caught it. The roads closed. The schools closed. Molly made soup and carried it out to him through the drifts. He says he nearly died.",
+    "facts": {
+      "Day": "23 hours",
+      "Moons": "two",
+      "Gravity": "1.0 g",
+      "Population": "2.8 million"
+    },
+    "hook": "A planet for every husband with man flu.",
+    "tags": [
+      "#worldbuilding",
+      "#manflu",
+      "#molly"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.62,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.76,
+      "sun_y": 0.44,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.44,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.82,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.12,
+      "stage": 0.74
+    },
+    "cover": "Then Keith caught it.",
+    "kicker": "Every Molly gets this planet.",
+    "episode": {
+      "opener": "Colds here\ncome out as snow.",
+      "beats": [
+        {
+          "text": "Colds here come out\nas weather.",
+          "shot": "wide",
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "particles": "snow",
+              "flake_size": 1.5
+            }
+          }
+        },
+        {
+          "text": "A sniffle is a flurry.\nA cough, a hard frost.",
+          "shot": "sky",
+          "spec": {
+            "particles": "snow",
+            "flake_size": 1.5
+          }
+        },
+        {
+          "text": "Molly's cold\nwas a light flurry.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "particles": "snow",
+            "flake_size": 1.5
+          }
+        },
+        {
+          "text": "Then Keith caught it.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "spec": {
+            "particles": "snow",
+            "flake_size": 1.5
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "palette": "polar_night",
+              "suns": 0,
+              "snow": true,
+              "particles": "snow",
+              "flake_size": 3.0,
+              "crowd_items": "nap,cup"
+            }
+          },
+          "note": "identical camera to Molly's flurry; the blizzard. Turn line"
+        },
+        {
+          "text": "The roads closed.\nThe schools closed.",
+          "shot": "wide",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "flake_size": 3.0,
+            "crowd_items": "nap,cup"
+          }
+        },
+        {
+          "text": "Molly made soup.",
+          "shot": "close",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "flake_size": 3.0,
+            "crowd_items": "nap,cup"
+          }
+        }
+      ],
+      "end": "He says he nearly died.",
+      "caption": "The man on the left is the forecast.\n\nMolly: 2.8 million people, a 23-hour day, two moons, and colds that come out as weather. A sniffle is a flurry. A cough is a hard frost. Anything with a temperature closes the airport, and the forecast is mostly a list of who's poorly. Molly had a cold last week and carried on as normal, in a light flurry. Then her husband caught it.\n\nI had a sniffle on my first morning. The weather service named it after me.\n\n(On Earth, a Canadian doctor reviewed the evidence for 'man flu' in the BMJ in 2017 and concluded men may really suffer a bit more. Keith has printed it out.)\n\nIs yours a flurry or a blizzard?"
+    },
+    "first_comment": "Keith's back on his feet. He's complained to the local paper.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every husband with man flu.",
+      "title": "Colds here\ncome out as snow.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.2,
+        1.26
+      ],
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "particles": "snow",
+          "flake_size": 2.6
+        }
+      },
+      "beats": [
+        {
+          "text": "Molly's cold\nwas a light flurry.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "Then Keith caught it.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.48,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 0.5,
+            "motion": "cut",
+            "spec": {
+              "palette": "polar_night",
+              "suns": 0,
+              "snow": true,
+              "particles": "snow",
+              "flake_size": 3.0,
+              "crowd_items": "nap,cup"
+            }
+          }
+        }
+      ],
+      "end": "He says he nearly died.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.5,
+        0.58
+      ],
+      "name_y": 0.12,
+      "end_kicker": "For every husband with man flu.",
+      "next": {
+        "name": "Brumm",
+        "line": "Every child here gets one last carry."
+      }
+    }
+  },
+  {
+    "id": "085",
+    "name": "Dawn",
+    "subtitle": "every Dawn's planet",
+    "story": "On Dawn, falling asleep on someone counts as a proposal, and staying still counts as a yes. Night buses are very tense. Commuters drink a great deal of coffee, and everybody sits bolt upright, like they're at the dentist. Laura had done a double shift. At the bus stop she sat down next to a stranger, and was asleep on his shoulder before the timetable had finished lying. He could have coughed, or shrugged, or stood up. He didn't wake her. He let the last bus go. They've been married for years, and she still does it.",
+    "facts": {
+      "Day": "27 hours",
+      "Moons": "none",
+      "Gravity": "0.9 g",
+      "Population": "2.3 million"
+    },
+    "hook": "A planet for people who fall asleep on you.",
+    "tags": [
+      "#illustration",
+      "#howwemet",
+      "#dawn"
+    ],
+    "spec": {
+      "palette": "polar_night",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 1.0,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "LAST BUS",
+      "crowd": 6,
+      "crowd_items": "nothing,cup,sit,sit,book,nothing",
+      "crowd_x": 0.4,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.085,
+      "stage": 0.72
+    },
+    "cover": "Fall asleep on someone here, and it's a proposal.",
+    "kicker": "Every Dawn gets this planet.",
+    "episode": {
+      "opener": "Fall asleep on someone\nand it's a proposal.",
+      "beats": [
+        {
+          "text": "Stay still,\nand that's a yes.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "So night buses\nare very tense.",
+          "shot": "wide",
+          "spec": {
+            "crowd_items": "cup,cup,sit,sit,cup,cup"
+          }
+        },
+        {
+          "text": "Laura had done\na double shift.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.58,
+              1.64
+            ],
+            "focus": [
+              0.6,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "sit,sit",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.05,
+            "crowd_facing": "right",
+            "daisies": 0
+          }
+        },
+        {
+          "text": "She fell asleep\non a stranger.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.58,
+              1.64
+            ],
+            "focus": [
+              0.6,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "nap,sit",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.05,
+            "crowd_facing": "right",
+            "daisies": 0
+          }
+        },
+        {
+          "text": "He could have coughed.\nHe didn't wake her.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.58,
+              1.64
+            ],
+            "focus": [
+              0.6,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "nap,sit",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.05,
+            "crowd_facing": "right",
+            "daisies": 0
+          },
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "palette": "pastel",
+              "suns": 1,
+              "sun_x": 0.2,
+              "sun_y": 0.56,
+              "sun_size": 0.05,
+              "stars": null,
+              "daisies": 60
+            }
+          },
+          "note": "identical camera; the night goes by in one cut: dawn, flowers for the yes, and still the LAST BUS sign. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.58,
+              1.64
+            ],
+            "focus": [
+              0.6,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "nap,sit",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.05,
+            "crowd_facing": "right",
+            "daisies": 60,
+            "palette": "pastel",
+            "suns": 1,
+            "sun_x": 0.2,
+            "sun_y": 0.56,
+            "sun_size": 0.05,
+            "stars": null
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "He let the last bus go.",
+      "caption": "Someone at that stop did a double shift.\n\nDawn: 2.3 million people, a 27-hour day, no moons, and a rule about sleeping on people. Fall asleep on someone's shoulder and it counts as a proposal; if they let you stay there, that's a yes. Night buses are tense. Commuters sit bolt upright and drink coffee like it's their job. Laura had done a double shift, sat down next to a stranger at the bus stop, and was asleep on him before the timetable had finished lying.\n\nI dozed off on a ferry. I'm engaged to a rucksack.\n\n(The story goes that in Japan, sleeping in public is ordinary enough to have its own word: inemuri. Nobody gets engaged.)\n\nCould you have sat that still?"
+    },
+    "first_comment": "The stranger was called Owen. His arm went to sleep that night, and most nights since.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for people who fall asleep on you.",
+      "title": "Fall asleep on someone:\nit's a proposal.",
+      "sub": "",
+      "framing": "group",
+      "zoom": [
+        1.5,
+        1.55
+      ],
+      "focus": [
+        0.4,
+        0.6
+      ],
+      "spec": {
+        "crowd_items": "cup,cup,sit,sit,cup,cup",
+        "crowd_gap": 0.075
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "hand,hand,nap,sit,hand,hand",
+          "crowd_gap": 0.075,
+          "daisies": 60
+        }
+      },
+      "beats": [
+        {
+          "text": "Laura fell asleep\non a stranger.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.58,
+              1.64
+            ],
+            "focus": [
+              0.6,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "nap,sit",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.05,
+            "crowd_facing": "right",
+            "daisies": 0
+          }
+        },
+        {
+          "text": "He didn't wake her.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.58,
+              1.64
+            ],
+            "focus": [
+              0.6,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "nap,sit",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.05,
+            "crowd_facing": "right",
+            "daisies": 0
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "palette": "pastel",
+              "suns": 1,
+              "sun_x": 0.2,
+              "sun_y": 0.56,
+              "sun_size": 0.05,
+              "stars": null,
+              "daisies": 60
+            }
+          }
+        }
+      ],
+      "end": "He let the last bus go.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.5,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For people who fall asleep on you.",
+      "next": {
+        "name": "Brolly",
+        "line": "Your mum says it'll brighten up."
+      }
+    }
+  },
+  {
+    "id": "089",
+    "name": "Sofia",
+    "subtitle": "every Sofia's planet",
+    "story": "On Sofia, armchairs inch towards whoever their owner loves, about a foot a year. Newlyweds' chairs start at opposite ends of the lounge, and you can tell how long a couple's been married with a tape measure. Brenda and Ken's chairs started either side of the fireplace. Every year they shuffled a little closer, mostly while they were asleep in them. By their silver wedding, they touched, right in front of the screen. Nobody can get to the telly.",
+    "facts": {
+      "Day": "26 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "1.7 million"
+    },
+    "hook": "A planet for couples who sit closer every year.",
+    "tags": [
+      "#illustration",
+      "#oldcouple",
+      "#sofia"
+    ],
+    "spec": {
+      "palette": "lilac_dusk",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.6,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "armchair,armchair",
+      "crowd_x": 0.47,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.5,
+      "stage": 0.72
+    },
+    "cover": "Armchairs here inch together.",
+    "kicker": "Every Sofia gets this planet.",
+    "episode": {
+      "opener": "Armchairs here\ninch together.",
+      "beats": [
+        {
+          "text": "About a foot a year.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.47,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd_items": "chair,chair",
+            "crowd_gap": 0.3
+          }
+        },
+        {
+          "text": "Newlyweds' chairs start\nat opposite ends of the room.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd_items": "chair,chair"
+          }
+        },
+        {
+          "text": "You can tell a marriage\nwith a tape measure.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.47,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd_items": "chair,chair",
+            "crowd_gap": 0.2
+          }
+        },
+        {
+          "text": "Brenda and Ken's\nwere far apart.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          }
+        },
+        {
+          "text": "By their silver wedding,\nthey touched.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "crowd_gap": 0.12
+            }
+          },
+          "note": "identical camera; the two chairs, both asleep, close up. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd_gap": 0.12
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "Nobody can get to the telly.",
+      "caption": "Neither armchair is where it started.\n\nSofia: 1.7 million people, a 26-hour day, no moons, and armchairs that inch towards whoever their owner loves, about a foot a year. Newlyweds' chairs start at opposite ends of the lounge, and you can tell how long a couple's been married with a tape measure. Brenda and Ken's started either side of the fireplace, a very long time ago.\n\nI stayed a week in a hotel there. By the last night, my armchair was up against the minibar.\n\n(The story goes that the Victorians made an S-shaped 'courting chair', so a couple could sit face to face without quite touching. On Sofia, give it a silver wedding.)\n\nWhich of you would do most of the inching?"
+    },
+    "first_comment": "Their ruby wedding is next year. The chairs have started to overlap.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for couples who sit closer every year.",
+      "title": "Armchairs here\ninch together.",
+      "sub": "",
+      "framing": "medium",
+      "zoom": [
+        1.8,
+        1.86
+      ],
+      "focus": [
+        0.47,
+        0.64
+      ],
+      "spec": {
+        "crowd_items": "chair,chair",
+        "crowd_gap": 0.4
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "chair,chair",
+          "crowd_gap": 0.12
+        }
+      },
+      "beats": [
+        {
+          "text": "Brenda and Ken's\nwere far apart.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd_items": "armchair,armchair",
+            "crowd_gap": 0.5
+          }
+        },
+        {
+          "text": "By their silver wedding,\nthey touched.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.47,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd_items": "armchair,armchair",
+            "crowd_gap": 0.5
+          },
+          "onset": {
+            "at": 0.8,
+            "motion": "cut",
+            "spec": {
+              "crowd_gap": 0.12
+            }
+          }
+        }
+      ],
+      "end": "Nobody can get to the telly.",
+      "end_zoom": [
+        1.2,
+        1.14
+      ],
+      "end_focus": [
+        0.47,
+        0.58
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For couples who sit closer every year.",
+      "next": {
+        "name": "Ajar",
+        "line": "Doors here say how you're feeling."
+      }
+    }
+  },
+  {
+    "id": "087",
+    "name": "Hilary",
+    "subtitle": "every Hilary's planet",
+    "story": "On Hilary, dancing raises the roof, and the house, and the ground underneath it. One good night out leaves a bump outside the chip shop. Ballrooms are built in valleys and steadily stop being valleys. Ravi and Mark have danced in the kitchen after tea every night for decades, badly, to whatever's on the radio, including the shipping forecast. Their house used to sit at the bottom of a gentle slope. It's now on top of a hill, and the view is incredible. The postman's never been fitter.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "two",
+      "Gravity": "1.1 g",
+      "Population": "3.2 million"
+    },
+    "hook": "A planet for couples who dance in the kitchen.",
+    "tags": [
+      "#illustration",
+      "#kitchendancing",
+      "#hilary"
+    ],
+    "spec": {
+      "palette": "crimson",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.3,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.62,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.42,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.68,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.075,
+      "stage": 0.72
+    },
+    "cover": "Dancing here raises the roof.",
+    "kicker": "Every Hilary gets this planet.",
+    "episode": {
+      "opener": "Dancing here\nraises the roof.",
+      "beats": [
+        {
+          "text": "One night out leaves a bump\noutside the chip shop.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "stage": 0.68,
+            "crowd_items": "walk,hand"
+          }
+        },
+        {
+          "text": "Ballrooms are built in valleys,\nand stop being valleys.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.55
+            ]
+          },
+          "spec": {
+            "stage": 0.64,
+            "crowd": 6,
+            "crowd_items": "hand,nothing,hand,nothing,hand,nothing",
+            "crowd_x": 0.45,
+            "crowd_gap": 0.08,
+            "house": false
+          }
+        },
+        {
+          "text": "Ravi and Mark dance\nin the kitchen after tea.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.48,
+              0.55
+            ]
+          },
+          "spec": {
+            "stage": 0.62,
+            "crowd_items": "walk,hand"
+          }
+        },
+        {
+          "text": "Badly. To anything.\nEven the shipping forecast.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.48,
+              0.55
+            ]
+          },
+          "spec": {
+            "stage": 0.62,
+            "crowd_items": "nothing,hand"
+          }
+        },
+        {
+          "text": "Every night,\nfor decades.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "stage": 0.62,
+            "crowd_items": "walk,hand"
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "stage": 0.5
+            }
+          },
+          "note": "identical camera to frame 1; the ground under the couple and their house comes right up. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "stage": 0.5,
+            "crowd_items": "walk,hand"
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "The postman's never been fitter.",
+      "caption": "That house used to be at the bottom.\n\nHilary: 3.2 million people, a 25-hour day, two moons, and dancing that raises the roof, along with the house and the ground underneath it. One good night out leaves a bump outside the chip shop. Ballrooms are built at the bottom of valleys and, steadily, stop being valleys. Ravi and Mark dance in the kitchen every night after tea, badly, to whatever's on, including the shipping forecast. They have done for decades.\n\nI did a little shuffle at a wedding. There's a speed bump outside the church now.\n\n(On Earth, fans dancing at a stadium concert in Seattle in 2023 shook the ground as hard as a magnitude 2.3 earthquake, according to the local seismologists. The ground stayed exactly where it was.)\n\nHas your kitchen gone up in the world?"
+    },
+    "first_comment": "Next week, they're going dancing in town. The council is nervous.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for couples who dance in the kitchen.",
+      "title": "Dancing here\nraises the roof.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.25,
+        1.3
+      ],
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "spec": {
+        "stage": 0.72,
+        "crowd_items": "nothing,nothing"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "stage": 0.62,
+          "crowd_items": "walk,hand"
+        }
+      },
+      "beats": [
+        {
+          "text": "Ravi and Mark\ndance badly.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.48,
+              0.55
+            ]
+          },
+          "spec": {
+            "crowd_items": "walk,hand"
+          }
+        },
+        {
+          "text": "Every night,\nfor decades.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.25,
+              1.3
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "onset": {
+            "at": 0.8,
+            "motion": "cut",
+            "spec": {
+              "stage": 0.5
+            }
+          }
+        }
+      ],
+      "end": "The postman's never been fitter.",
+      "end_zoom": [
+        1.2,
+        1.14
+      ],
+      "end_focus": [
+        0.5,
+        0.48
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For couples who dance in the kitchen.",
+      "next": {
+        "name": "Thicket",
+        "line": "Saying 'later' plants a tree here."
+      }
+    }
+  },
+  {
+    "id": "082",
+    "name": "Autumn",
+    "subtitle": "every Autumn's planet",
+    "story": "On Autumn, the leaves aren't the only thing that falls. People here physically fall in love: catch the right eye and down you go, in public, usually with shopping. Cafés have soft floors, and weddings have a nurse on standby. Jake had been getting the same train as Liam for three months before either of them looked up. When he did, he went down in the aisle. Liam went to help, and went down too. It was mutual.",
+    "facts": {
+      "Day": "26 hours",
+      "Moons": "one",
+      "Gravity": "0.8 g",
+      "Population": "3.9 million"
+    },
+    "hook": "A planet for everyone who knew straight away.",
+    "tags": [
+      "#worldbuilding",
+      "#lovestory",
+      "#autumn"
+    ],
+    "spec": {
+      "palette": "pumpkin",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.62,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": 0.76,
+      "sun_y": 0.44,
+      "sun_size": 0.06,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.44,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.86,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "It was mutual.",
+    "kicker": "Every Autumn gets this planet.",
+    "episode": {
+      "opener": "Here, people physically\nfall in love.",
+      "beats": [
+        {
+          "text": "You see the one,\nand down you go.",
+          "shot": "wide",
+          "onset": {
+            "at": 1.4,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "sit,nothing"
+            }
+          }
+        },
+        {
+          "text": "Cafés have soft floors.\nWeddings have a nurse.",
+          "shot": "house",
+          "spec": {
+            "crowd": 0
+          }
+        },
+        {
+          "text": "Jake fell hard for Liam\non the train.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.85,
+              1.9
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_items": "sit,nothing"
+          }
+        },
+        {
+          "text": "In front of everyone.\nWith his shopping.",
+          "shot": "close",
+          "spec": {
+            "crowd_items": "sit,nothing"
+          }
+        },
+        {
+          "text": "Liam went to help.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.85,
+              1.9
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_items": "sit,nothing"
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "sit,sit"
+            }
+          },
+          "note": "identical camera to Jake's fall; Liam goes down too. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.85,
+              1.9
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_items": "sit,sit"
+          },
+          "seconds": 2.2
+        }
+      ],
+      "end": "It was mutual.",
+      "caption": "Jake and Liam haven't met yet.\n\nAutumn: 3.9 million people, a 26-hour day, one moon, and the leaves aren't the only thing that falls. People here physically fall in love. Catch the right eye and down you go, in public, usually holding shopping. Cafés have soft floors. Weddings have a nurse on standby. Jake had been getting the same train as Liam for three months before either of them looked up.\n\nI was introduced to a very handsome fisherman. I'd like to say I stayed on my feet.\n\n(The story goes that 'fall' for autumn comes from 'the fall of the leaf', back in the 1500s. On Autumn, the leaves are the least of it.)\n\nWhere were you when you fell for yours?"
+    },
+    "first_comment": "They still get the same train. They make sure they've got a seat.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for everyone who knew straight away.",
+      "title": "Here, people physically\nfall in love.",
+      "sub": "",
+      "framing": "group",
+      "zoom": [
+        2.3,
+        2.36
+      ],
+      "focus": [
+        0.46,
+        0.68
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "sit,nothing"
+        }
+      },
+      "beats": [
+        {
+          "text": "Jake fell hard for Liam.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.6,
+              2.66
+            ],
+            "focus": [
+              0.46,
+              0.69
+            ]
+          }
+        },
+        {
+          "text": "Liam went to help.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.6,
+              2.66
+            ],
+            "focus": [
+              0.46,
+              0.69
+            ]
+          },
+          "onset": {
+            "at": 0.55,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "sit,sit"
+            }
+          }
+        }
+      ],
+      "end": "It was mutual.",
+      "end_zoom": [
+        1.6,
+        1.54
+      ],
+      "end_focus": [
+        0.47,
+        0.62
+      ],
+      "name_y": 0.12,
+      "end_kicker": "For everyone who knew straight away.",
+      "scrim": 0.5,
+      "next": {
+        "name": "Twain",
+        "line": "Here, you can jump to the planet next door."
       }
     }
   }

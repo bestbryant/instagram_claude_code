@@ -230,8 +230,8 @@
       ],
       "end_kicker": "Every name has a planet. Yours too.",
       "next": {
-        "name": "Brumm",
-        "line": "Every child here gets one last carry."
+        "name": "Eve",
+        "line": "Christmas here is always tomorrow."
       }
     }
   },
@@ -2714,8 +2714,8 @@
       "scrim": 0.6,
       "end_kicker": "For everyone who was carried home asleep.",
       "next": {
-        "name": "Eve",
-        "line": "Christmas here is always tomorrow."
+        "name": "Vow",
+        "line": "Weddings here make everything else vanish."
       },
       "kicker": "A planet for everyone who was carried home asleep."
     }
@@ -6074,8 +6074,8 @@
       "name_y": 0.2,
       "end_kicker": "For everyone who keeps saying they'll visit more.",
       "next": {
-        "name": "Joy",
-        "line": "Laughing here lifts you off the ground."
+        "name": "Flicker",
+        "line": "First kisses light up the sea."
       }
     }
   },
@@ -6272,8 +6272,8 @@
       "name_y": 0.2,
       "end_kicker": "For every dad who said no to the dog.",
       "next": {
-        "name": "Stella",
-        "line": "After lights-out, whispers become stars."
+        "name": "Dawn",
+        "line": "Fall asleep on someone: it's a proposal."
       }
     }
   },
@@ -6515,8 +6515,8 @@
       "name_y": 0.12,
       "end_kicker": "For every mum who says it'll brighten up.",
       "next": {
-        "name": "Pete",
-        "line": "Every Pete gets this planet."
+        "name": "Sofia",
+        "line": "Armchairs here inch together."
       }
     }
   },
@@ -6768,8 +6768,8 @@
       "name_y": 0.2,
       "end_kicker": "For the friend who comes round anyway.",
       "next": {
-        "name": "Ray",
-        "line": "The sun here shines on Mum's favourite."
+        "name": "Petal",
+        "line": "Pet names here are taken literally."
       }
     }
   },
@@ -6983,8 +6983,8 @@
       "name_y": 0.2,
       "end_kicker": "For every nan who's still waving.",
       "next": {
-        "name": "April",
-        "line": "Happy tears here fall as rain."
+        "name": "Tint",
+        "line": "Colour here leaves with your person."
       }
     }
   },
@@ -7216,8 +7216,8 @@
       "name_y": 0.1,
       "end_kicker": "For every dad who's just resting his eyes.",
       "next": {
-        "name": "Violet",
-        "line": "New kids here are invisible."
+        "name": "Hilary",
+        "line": "Dancing here raises the roof."
       }
     }
   },
@@ -7494,8 +7494,8 @@
       "name_y": 0.17,
       "end_kicker": "For every husband who'll get round to it.",
       "next": {
-        "name": "Melody",
-        "line": "Here, catchy songs are actually catching."
+        "name": "Ditto",
+        "line": "Everyone here looks the same."
       }
     }
   },
@@ -7760,8 +7760,8 @@
       "name_y": 0.2,
       "end_kicker": "For every parent of a three-year-old.",
       "next": {
-        "name": "Luke",
-        "line": "The sky's thermostat is in Priya's hallway."
+        "name": "Tiff",
+        "line": "Arguments here get an official winner."
       }
     }
   },
@@ -8154,8 +8154,8 @@
       "name_y": 0.2,
       "end_kicker": "For every best friend who moved away.",
       "next": {
-        "name": "Ash",
-        "line": "Kind words here start fires."
+        "name": "Kennel",
+        "line": "Here, the doghouse is the moon."
       }
     }
   },
@@ -8489,8 +8489,8 @@
       "name_y": 0.2,
       "end_kicker": "For every mum waiting at arrivals.",
       "next": {
-        "name": "Faith",
-        "line": "Believing in someone moves mountains here."
+        "name": "Autumn",
+        "line": "Here, people physically fall in love."
       }
     }
   },
@@ -8793,8 +8793,8 @@
       "name_y": 0.12,
       "end_kicker": "For the cousin you see every summer.",
       "next": {
-        "name": "Kate",
-        "line": "Kate is always five minutes away."
+        "name": "Elsewhere",
+        "line": "You've been to this planet today."
       }
     }
   },
@@ -10583,8 +10583,1804 @@
       "name_y": 0.14,
       "end_kicker": "For anyone who'd talk to a lamppost.",
       "next": {
-        "name": "Elsewhere",
-        "line": "You've been to this planet today."
+        "name": "Molly",
+        "line": "Colds here come out as snow."
+      }
+    }
+  },
+  {
+    "id": "090",
+    "name": "Vow",
+    "subtitle": "where weddings lose everything else",
+    "story": "On Vow, everything else disappears at a wedding. The moment the couple turn to face each other, the guests go, then the chapel, then the hills, and there's nothing left on the planet but the two of them. Everyone comes back afterwards, usually somewhere near the cake. The vicar has stopped taking it personally. Carol and Ron got married on Vow fifty years ago, and this spring they renewed their vows, mostly for the photos and partly to see. It still worked. She'd had her hair done.",
+    "facts": {
+      "Day": "23 hours",
+      "Moons": "one",
+      "Gravity": "0.9 g",
+      "Population": "760,000"
+    },
+    "hook": "A planet for people who'd marry them again.",
+    "tags": [
+      "#worldbuilding",
+      "#vowrenewal",
+      "#wedding"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.62,
+      "sun_y": 0.47,
+      "sun_size": 0.06,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "pines",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 6,
+      "crowd_items": "nothing,flower,flower,nothing,nothing,flower",
+      "crowd_x": 0.42,
+      "crowd_facing": "in",
+      "daisies": 30,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.8,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.085,
+      "stage": 0.72
+    },
+    "cover": "Weddings here make everything else vanish.",
+    "episode": {
+      "opener": "Weddings here make\neverything else vanish.",
+      "beats": [
+        {
+          "text": "The guests go,\nthen the chapel, then the hills.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "flower,nothing",
+            "house": false,
+            "trees": "none",
+            "daisies": 0,
+            "suns": 0,
+            "mist": 1.0,
+            "relief": 0.2,
+            "layers": 2
+          }
+        },
+        {
+          "text": "Everyone comes back afterwards,\nusually near the cake.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          }
+        },
+        {
+          "text": "Carol and Ron got married\nhere fifty years ago.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "sepia"
+          }
+        },
+        {
+          "text": "This spring,\nthey renewed their vows.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "house_x": 0.7
+          }
+        },
+        {
+          "text": "It still worked.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "house_x": 0.7
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "cut",
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "flower,nothing",
+              "house": false,
+              "trees": "none",
+              "daisies": 0,
+              "suns": 0,
+              "mist": 1.0,
+              "relief": 0.2,
+              "layers": 2
+            }
+          },
+          "note": "identical camera; everything but the two of them goes. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "flower,nothing",
+            "house": false,
+            "trees": "none",
+            "daisies": 0,
+            "suns": 0,
+            "mist": 1.0,
+            "relief": 0.2,
+            "layers": 2
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "She'd had her hair done.",
+      "caption": "Enjoy the guests while they last.\n\nVow: 760,000 people, a 23-hour day, one moon, and weddings where everything else disappears. The moment the couple turn to face each other, the guests go, then the chapel, then the hills, and for a minute there's nothing on the planet but the two of them. Everyone comes back afterwards, usually somewhere near the cake. The vicar has stopped taking it personally.\n\nI went to a wedding there. I disappeared at twenty past two and turned up in somebody else's wedding photos.\n\n(The story goes that the bridal veil began as a way to keep the groom from seeing the bride's face until the vows were said. On Vow, it's the groom who can't see anything else.)\n\nWould everything still disappear at yours?"
+    },
+    "first_comment": "Ron's asked if they can renew them again next spring. Carol's already booked the hairdresser.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for people who'd marry them again.",
+      "title": "Weddings here make\neverything else vanish.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.2,
+        1.26
+      ],
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "flower,nothing",
+          "house": false,
+          "trees": "none",
+          "daisies": 0,
+          "suns": 0,
+          "mist": 1.0,
+          "relief": 0.2,
+          "layers": 2
+        }
+      },
+      "beats": [
+        {
+          "text": "Carol and Ron\nrenewed their vows.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 6,
+            "crowd_items": "nothing,flower,flower,nothing,nothing,flower",
+            "house": true,
+            "trees": "pines",
+            "daisies": 30,
+            "suns": 1,
+            "mist": 0.45,
+            "relief": 0.7,
+            "layers": 4,
+            "house_x": 0.7
+          }
+        },
+        {
+          "text": "Fifty years on,\nit still worked.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 6,
+            "crowd_items": "nothing,flower,flower,nothing,nothing,flower",
+            "house": true,
+            "trees": "pines",
+            "daisies": 30,
+            "suns": 1,
+            "mist": 0.45,
+            "relief": 0.7,
+            "layers": 4,
+            "house_x": 0.7
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "cut",
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "flower,nothing",
+              "house": false,
+              "trees": "none",
+              "daisies": 0,
+              "suns": 0,
+              "mist": 1.0,
+              "relief": 0.2,
+              "layers": 2
+            }
+          }
+        }
+      ],
+      "end": "She'd had her hair done.",
+      "end_zoom": [
+        1.2,
+        1.14
+      ],
+      "end_focus": [
+        0.45,
+        0.58
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For people who'd marry them again.",
+      "next": {
+        "name": "Umber",
+        "line": "You promise Mum you'll visit more."
+      }
+    }
+  },
+  {
+    "id": "086",
+    "name": "Flicker",
+    "subtitle": "where first kisses light the sea",
+    "story": "On Flicker, the sea lights up whenever anybody, anywhere along the coast, has their first kiss. Most nights it flickers a bit. School discos are visible from space. Fishermen have learned to read it like a newspaper. Matt walked Holly home along the front every Friday for a year, and every Friday the sea stayed dark, and the whole town noticed. Then one Friday, at the end of the pier, he finally went for it. The bay lit up from end to end. Her dad was out fishing.",
+    "facts": {
+      "Day": "22 hours",
+      "Moons": "one, rarely needed",
+      "Gravity": "1.0 g",
+      "Population": "410,000"
+    },
+    "hook": "A planet for anyone who took ages to make a move.",
+    "tags": [
+      "#worldbuilding",
+      "#firstkiss",
+      "#bioluminescence"
+    ],
+    "spec": {
+      "palette": "teal_night",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.7,
+      "water": true,
+      "shore": "left",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 1.0,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.3,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "walk,walk",
+      "crowd_x": 0.5,
+      "crowd_facing": "left",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.16,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.07,
+      "stage": 0.7
+    },
+    "cover": "First kisses here light up the sea.",
+    "episode": {
+      "opener": "First kisses here\nlight up the sea.",
+      "beats": [
+        {
+          "text": "Most nights,\nit flickers a bit.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.55
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "sea_glow": true
+          }
+        },
+        {
+          "text": "School discos are\nvisible from space.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ],
+            "focus": [
+              0.5,
+              0.55
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "sea_glow": true,
+            "palette": "polar_night"
+          }
+        },
+        {
+          "text": "Matt walked Holly home\nevery Friday for a year.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "Every Friday,\nthe sea stayed dark.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,nothing",
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "Then, at the end of the pier,\nhe finally went for it.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "nothing,nothing",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.035,
+            "crowd_facing": "in"
+          },
+          "onset": {
+            "at": 1.8,
+            "motion": "cut",
+            "spec": {
+              "sea_glow": true
+            }
+          },
+          "note": "identical camera; the sea lights up as they kiss. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "nothing,nothing",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.035,
+            "crowd_facing": "in",
+            "sea_glow": true
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "Her dad was out fishing.",
+      "caption": "Holly lives in that little house.\n\nFlicker: 410,000 people, a 22-hour day, one moon that's rarely needed, and a sea that lights up for every first kiss on the coast. Most nights it flickers a bit. Fishermen read it like a newspaper, and the harbour master keeps a chart. Matt walked Holly home along the front every Friday for a year. Every Friday, the sea stayed dark, and the whole town noticed.\n\nI stood on the pier for an hour to see it. The sea gave me one dim flicker, out of pity.\n\n(On Earth, some bays glow blue at night: a plankton called sea sparkle lights up whenever the water's disturbed. Nobody has to kiss anyone.)\n\nHow long did yours take to make a move?"
+    },
+    "first_comment": "Her dad caught nothing that night. He blames the light.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for anyone who took ages to make a move.",
+      "title": "First kisses\nlight up the sea.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.15,
+        1.2
+      ],
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "spec": {
+        "crowd": 0
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd": 0,
+          "sea_glow": true
+        }
+      },
+      "beats": [
+        {
+          "text": "For a year, Matt\nwalked Holly home.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "sea_glow": false,
+            "crowd": 2,
+            "crowd_items": "walk,walk",
+            "crowd_facing": "left"
+          }
+        },
+        {
+          "text": "Finally,\nhe went for it.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.45,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "nothing,nothing",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.035,
+            "crowd_facing": "in",
+            "sea_glow": false
+          },
+          "onset": {
+            "at": 0.8,
+            "motion": "cut",
+            "spec": {
+              "sea_glow": true
+            }
+          }
+        }
+      ],
+      "end": "Her dad was out fishing.",
+      "end_zoom": [
+        1.2,
+        1.14
+      ],
+      "end_focus": [
+        0.5,
+        0.58
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For anyone who took ages to make a move.",
+      "next": {
+        "name": "Fetch",
+        "line": "Dad said no dogs."
+      }
+    }
+  },
+  {
+    "id": "079",
+    "name": "Petal",
+    "subtitle": "where pet names are taken literally",
+    "story": "On Petal, pet names are taken literally. Call someone 'sunshine' and out comes the sun; call him 'my rock' and you'll want to stand well back. Most couples play it safe with 'love'. Jim has called Linda 'sunshine' every morning for twenty years, and their street has the best tomatoes in the county. Linda calls Jim 'pumpkin'. Every time she says it, the hills fill up with pumpkins. He's never asked her to stop.",
+    "facts": {
+      "Day": "27 hours",
+      "Moons": "one",
+      "Gravity": "0.9 g",
+      "Population": "2.3 million"
+    },
+    "hook": "A planet for couples with embarrassing pet names.",
+    "tags": [
+      "#worldbuilding",
+      "#couples",
+      "#petnames"
+    ],
+    "spec": {
+      "palette": "cobalt_noon",
+      "terrain": "hills",
+      "layers": 5,
+      "horizon": 0.5,
+      "relief": 1.2,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.76,
+      "sun_y": 0.36,
+      "sun_size": 0.07,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.3,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.6,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.8,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.08,
+      "stage": 0.72
+    },
+    "cover": "She calls him 'pumpkin'.",
+    "episode": {
+      "opener": "Pet names here\nare taken literally.",
+      "beats": [
+        {
+          "text": "Call someone 'sunshine',\nand out it comes.",
+          "shot": "wide",
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "palette": "cobalt_noon",
+              "suns": 1
+            }
+          }
+        },
+        {
+          "text": "Most couples play it safe\nwith 'love'.",
+          "shot": "group"
+        },
+        {
+          "text": "Nobody says 'my rock'.\nNot twice.",
+          "shot": "close"
+        },
+        {
+          "text": "Jim calls Linda 'sunshine'.\nTheir tomatoes are famous.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "Linda calls him 'pumpkin'.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "rise",
+            "spec": {
+              "lanterns": 36
+            }
+          },
+          "note": "identical camera to the beat before; the hills fill with pumpkins. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "lanterns": 36
+          },
+          "seconds": 2.2
+        }
+      ],
+      "end": "He's never asked her to stop.",
+      "caption": "The hills behind Jim are empty. For now.\n\nPetal: 2.3 million people, a 27-hour day, one moon, and pet names that are taken literally. Call someone 'sunshine' and out it comes. 'Angel' is a lot of feathers. Most couples play it safe with 'love', and nobody says 'my rock' twice. Jim has called Linda 'sunshine' every morning for twenty years, and their street grows the best tomatoes in the county. Linda calls Jim something else.\n\nI called a bus driver 'duck'. We waited forty minutes for them to cross.\n\n(The story goes that 'honey' has been a pet name since the 1300s. On Petal, the bees have been a problem for about as long.)\n\nSunshine, pumpkin, or something worse?"
+    },
+    "first_comment": "For their anniversary, he tried 'my little dumpling'. The neighbours have asked him to stick to 'sunshine'.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for couples with embarrassing pet names.",
+      "title": "Pet names here\nare taken literally.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.15,
+        1.2
+      ],
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "spec": {
+        "palette": "polar_night",
+        "suns": 0
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "cobalt_noon",
+          "suns": 1
+        }
+      },
+      "beats": [
+        {
+          "text": "Jim calls Linda\n'sunshine'.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "She calls him\n'pumpkin'.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 0.55,
+            "motion": "rise",
+            "spec": {
+              "lanterns": 36
+            }
+          }
+        }
+      ],
+      "end": "He's never asked her to stop.",
+      "end_zoom": [
+        1.22,
+        1.16
+      ],
+      "end_focus": [
+        0.5,
+        0.58
+      ],
+      "name_y": 0.12,
+      "end_kicker": "For couples with embarrassing pet names.",
+      "next": {
+        "name": "Yonder",
+        "line": "Nan waves until you're out of sight."
+      }
+    }
+  },
+  {
+    "id": "088",
+    "name": "Tint",
+    "subtitle": "where colour goes with your person",
+    "story": "On Tint, colour follows whoever you love. When they leave the house, it leaves with them: the garden goes grey, the telly goes grey, the tea goes the colour of dishwater. Most people get it back by teatime. Craig's wife works away, Monday to Friday, so Craig lives in black and white from Monday morning on. On Friday night, the street can tell when her car turns in, because the hedges go green one house at a time. Craig has been in odd socks since Monday.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "one",
+      "Gravity": "0.95 g",
+      "Population": "4.4 million"
+    },
+    "hook": "A planet for couples who only have weekends.",
+    "tags": [
+      "#worldbuilding",
+      "#missingyou",
+      "#colour"
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.7,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "lone",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "cup,nothing",
+      "crowd_x": 0.42,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.72,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.72
+    },
+    "cover": "Colour here leaves with your person.",
+    "episode": {
+      "opener": "Colour here leaves\nwith your person.",
+      "beats": [
+        {
+          "text": "Most people get it back\nby teatime.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "Craig's wife works away,\nMonday to Friday.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "sepia",
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.375
+          }
+        },
+        {
+          "text": "All week, the tea\nis the colour of dishwater.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.95,
+              2.0
+            ],
+            "focus": [
+              0.4,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "sepia",
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.375
+          }
+        },
+        {
+          "text": "On Friday night,\nthe hedges go green.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "sepia",
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.375
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "palette": "gold_hour",
+              "crowd": 2,
+              "crowd_items": "cup,nothing",
+              "crowd_x": 0.42
+            }
+          },
+          "note": "identical camera; she's home and the colour comes back with her. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_items": "cup,nothing"
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "Odd socks, since Monday.",
+      "caption": "One of these two is only home at weekends.\n\nTint: 4.4 million people, a 24-hour day, one moon, and colour that goes wherever the person you love goes. When they leave the house, it leaves with them: the garden, the telly, the tea. Most people get it back by teatime. Craig's wife works away from Monday to Friday, so Craig spends the week in black and white, and the neighbours know it's Friday when the hedges go green, one house at a time.\n\nI nipped out for stamps. My landlady went beige.\n\n(On Earth, your eyes stop seeing colour in dim light and hand over to cells that only see grey. It all comes back in the morning.)\n\nDoes your tea go grey when yours is away?"
+    },
+    "first_comment": "She's away again on Monday. He's laid out two socks that are definitely the same colour.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for couples who only have weekends.",
+      "title": "Colour here leaves\nwith your person.",
+      "sub": "",
+      "framing": "medium",
+      "zoom": [
+        1.4,
+        1.46
+      ],
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "sepia",
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.375
+        }
+      },
+      "beats": [
+        {
+          "text": "Craig's wife works away\nall week.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.38,
+              0.63
+            ]
+          },
+          "spec": {
+            "palette": "sepia",
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.375
+          }
+        },
+        {
+          "text": "Friday,\nshe came home.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "sepia",
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.375
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "palette": "gold_hour",
+              "crowd": 2,
+              "crowd_items": "cup,nothing",
+              "crowd_x": 0.42
+            }
+          }
+        }
+      ],
+      "end": "Odd socks, since Monday.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.5,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For couples who only have weekends.",
+      "next": {
+        "name": "Nod",
+        "line": "The wind here is Dad, snoring."
+      }
+    }
+  },
+  {
+    "id": "081",
+    "name": "Ditto",
+    "subtitle": "where everyone looks the same",
+    "story": "On Ditto, everyone looks exactly the same: the same height, the same coat, the same walk. Couples hold hands in public, less for romance than for admin. Gwen let go of her husband for a moment at the garden centre, somewhere between the bird baths and the bedding plants, and when she looked up he was one of forty. She waved. Everyone waved back, except one man, who had his hands full. He'd gone to get her flowers.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "4.4 million"
+    },
+    "hook": "A planet for husbands who wander off in shops.",
+    "tags": [
+      "#illustration",
+      "#marriedlife",
+      "#gardencentre"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.62,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.76,
+      "sun_y": 0.42,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 7,
+      "crowd_items": "nothing",
+      "crowd_x": 0.5,
+      "crowd_facing": "left",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.8,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.72
+    },
+    "cover": "She waved. Everyone waved back.",
+    "episode": {
+      "opener": "Everyone here\nlooks the same.",
+      "beats": [
+        {
+          "text": "Same height. Same coat.\nSame walk.",
+          "shot": "crowd"
+        },
+        {
+          "text": "Couples hold hands everywhere.\nIt's not romance. It's admin.",
+          "shot": "close",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "nothing,nothing",
+            "crowd_gap": 0.06,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "Gwen let go\nat the garden centre.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "Just for a moment,\nby the bedding plants.",
+          "shot": "wide"
+        },
+        {
+          "text": "She waved.\nEveryone waved back.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "hand,hand,hand,hand,flower,hand,hand"
+            }
+          },
+          "note": "identical camera to Gwen's beat; every man waves back but one. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "hand,hand,hand,hand,flower,hand,hand"
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "He'd gone to get her flowers.",
+      "caption": "Spot Gwen's husband. Take your time.\n\nDitto: 4.4 million people, a 24-hour day, no moons, and not one face you could pick out of a crowd. Everyone is the same height, wears the same coat and walks the same walk. Couples hold hands in public, less for romance than for admin, and wedding photographers charge extra. Gwen let go of her husband for a moment at the garden centre, between the bird baths and the bedding plants.\n\nI waved at my guide across the market. I now have eleven guides.\n\n(On Earth, about one person in fifty has face blindness, and knows their family by a walk, a voice or a coat. On Ditto it's everyone, and the coats don't help.)\n\nHow would you find yours in a crowd?"
+    },
+    "first_comment": "He'd got her the yellow ones. She held on to him all the way to the car.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for husbands who wander off in shops.",
+      "title": "Everyone here\nlooks the same.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.2,
+        1.26
+      ],
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "spec": {
+        "crowd": 1,
+        "crowd_items": "nothing"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "crowd": 7,
+          "crowd_items": "nothing"
+        }
+      },
+      "beats": [
+        {
+          "text": "Gwen's husband\nwandered off.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.74,
+              1.8
+            ],
+            "focus": [
+              0.62,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "She waved.\nEveryone waved back.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.74,
+              1.8
+            ],
+            "focus": [
+              0.62,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 0.45,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "hand,hand,hand,hand,flower,hand,hand"
+            }
+          }
+        }
+      ],
+      "end": "He'd gone to get her flowers.",
+      "end_zoom": [
+        1.6,
+        1.54
+      ],
+      "end_focus": [
+        0.52,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For husbands who wander off in shops.",
+      "next": {
+        "name": "Figment",
+        "line": "Imaginary friends retire here."
+      }
+    }
+  },
+  {
+    "id": "080",
+    "name": "Tiff",
+    "subtitle": "where every argument gets an official winner",
+    "story": "On Tiff, every couple has a board that settles their arguments: the bins, the satnav, whether that was a fox. The board names the winner, officially. Most couples swap back and forth, which keeps things civil. At Jan and Derek's, it has said the same thing since the wedding. For his sixtieth, Jan lost one on purpose. He's had mugs made.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "two",
+      "Gravity": "1.0 g",
+      "Population": "1.7 million"
+    },
+    "hook": "A planet for the one who's always right.",
+    "tags": [
+      "#worldbuilding",
+      "#couples",
+      "#whosright"
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.78,
+      "sun_y": 0.44,
+      "sun_size": 0.06,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "RIGHT:|JAN",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.32,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.84,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.08,
+      "stage": 0.74
+    },
+    "cover": "Jan's been right since the wedding.",
+    "episode": {
+      "opener": "Arguments here\nget an official winner.",
+      "beats": [
+        {
+          "text": "Have an argument,\nand the board settles it.",
+          "shot": "sign"
+        },
+        {
+          "text": "Most couples swap back and forth.\nIt keeps things civil.",
+          "shot": "wide",
+          "spec": {
+            "sign": "RIGHT:|BOTH"
+          }
+        },
+        {
+          "text": "Jan's been right\nsince the wedding.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.52,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "The bins. The satnav.\nWhether that was a fox.",
+          "shot": "close"
+        },
+        {
+          "text": "For his sixtieth,\nshe lost on purpose.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.52,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 1.4,
+            "motion": "cut",
+            "spec": {
+              "sign": "RIGHT:|DEREK"
+            }
+          },
+          "note": "identical camera to Jan's beat; the board changes. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.52,
+              0.6
+            ]
+          },
+          "spec": {
+            "sign": "RIGHT:|DEREK"
+          },
+          "seconds": 2.2
+        }
+      ],
+      "end": "He's had mugs made.",
+      "caption": "Check the board beside Jan and Derek.\n\nTiff: 1.7 million people, a 25-hour day, two moons, and a board beside every couple that names the official winner of each argument as it happens. The washing-up. The bins. Whether that was a fox. Most couples swap back and forth, which keeps things civil. At Jan and Derek's, it hasn't changed since the wedding.\n\nI argued with a waiter about how long to brew tea. A board went up before the kettle boiled.\n\n(On Earth, the psychologist John Gottman found that about two-thirds of couples' arguments are about problems that never get solved. On Tiff, at least somebody wins.)\n\nWhat's the argument you two never settle?"
+    },
+    "first_comment": "The board went back the next morning. He'd put the mugs in the dishwasher.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for the one who's always right.",
+      "title": "Arguments here\nget an official winner.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.2,
+        1.26
+      ],
+      "focus": [
+        0.52,
+        0.56
+      ],
+      "spec": {
+        "sign": ""
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "sign": "RIGHT:|JAN"
+        }
+      },
+      "beats": [
+        {
+          "text": "Jan's been right\nsince the wedding.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.545,
+              0.6
+            ]
+          }
+        },
+        {
+          "text": "For his sixtieth,\nshe lost on purpose.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.4,
+              1.45
+            ],
+            "focus": [
+              0.545,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 0.7,
+            "motion": "cut",
+            "spec": {
+              "sign": "RIGHT:|DEREK"
+            }
+          }
+        }
+      ],
+      "end": "He's had mugs made.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.52,
+        0.58
+      ],
+      "name_y": 0.12,
+      "end_kicker": "For the one who's always right.",
+      "next": {
+        "name": "Kith",
+        "line": "Houses here follow your best friend."
+      }
+    }
+  },
+  {
+    "id": "084",
+    "name": "Kennel",
+    "subtitle": "where the doghouse is the moon",
+    "story": "On Kennel, the doghouse is the moon. Forget a birthday or an anniversary and you spend the night up there, with a camp bed, a kettle and the best view in the system. On a bad night, half the street is up there. Dean forgot his and Emma's anniversary, and up he went. At midnight, Emma went up too. She took the cake. Best anniversary they've had.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "one, very large",
+      "Gravity": "0.9 g",
+      "Population": "1.2 million"
+    },
+    "hook": "A planet for whoever forgot the anniversary.",
+    "tags": [
+      "#worldbuilding",
+      "#anniversary",
+      "#inthedoghouse"
+    ],
+    "spec": {
+      "palette": "teal_night",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": 0.7,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": true,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.44,
+      "crowd_facing": "left",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": true,
+      "sea_glow": false,
+      "house_x": 0.76,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.08,
+      "stage": 0.68
+    },
+    "cover": "At midnight, Emma went up too.",
+    "episode": {
+      "opener": "Here, the doghouse\nis the moon.",
+      "beats": [
+        {
+          "text": "Forget a birthday,\nand up you go.",
+          "shot": "moon"
+        },
+        {
+          "text": "There's a camp bed,\na kettle and a view.",
+          "shot": "moon"
+        },
+        {
+          "text": "Dean forgot\ntheir anniversary.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.14,
+              1.18
+            ],
+            "focus": [
+              0.46,
+              0.5
+            ]
+          }
+        },
+        {
+          "text": "Emma stayed down here,\nwith the cake.",
+          "shot": "close"
+        },
+        {
+          "text": "At midnight,\nEmma went up too.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.14,
+              1.18
+            ],
+            "focus": [
+              0.46,
+              0.5
+            ]
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "rise",
+            "spec": {
+              "crowd_items": "aloft"
+            }
+          },
+          "note": "identical camera to Dean's beat; Emma rises off the ledge towards the moon, the window stays lit. Turn line"
+        },
+        {
+          "text": "",
+          "shot": "moon",
+          "spec": {
+            "crowd_items": "aloft"
+          },
+          "seconds": 2.2
+        }
+      ],
+      "end": "Best anniversary they've had.",
+      "caption": "There's a spare room in that moon.\n\nKennel: 1.2 million people, a 25-hour day, one very large moon, and nowhere on the ground to sulk. Forget a birthday or an anniversary here and you spend the night on the moon. It's not unpleasant: there's a camp bed, a kettle and the best view in the system, and the lift runs late. On a bad night, half the street is up there. Dean forgot his and Emma's anniversary.\n\nI missed my editor's birthday. The moon is lovely this time of year.\n\n(The story goes that 'in the doghouse' owes a lot to Peter Pan, where Mr Darling moves into the dog's kennel to make amends. On Kennel, the kennel has a view.)\n\nWhat would get you sent to the moon?"
+    },
+    "first_comment": "They came down on Sunday. Dean's put the date in his phone, his diary and the fridge.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for whoever forgot the anniversary.",
+      "title": "Here, the doghouse\nis the moon.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.02,
+        1.06
+      ],
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "spec": {
+        "moon_window": false,
+        "crowd": 2,
+        "crowd_items": "nothing,nothing",
+        "crowd_x": 0.4,
+        "crowd_facing": "in"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "moon_window": true,
+          "crowd": 1,
+          "crowd_x": 0.44,
+          "crowd_facing": "left"
+        }
+      },
+      "beats": [
+        {
+          "text": "Dean forgot\ntheir anniversary.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.14,
+              1.18
+            ],
+            "focus": [
+              0.46,
+              0.5
+            ]
+          }
+        },
+        {
+          "text": "Emma went up too.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.14,
+              1.18
+            ],
+            "focus": [
+              0.46,
+              0.5
+            ]
+          },
+          "onset": {
+            "at": 0.55,
+            "motion": "rise",
+            "spec": {
+              "crowd_items": "aloft"
+            }
+          }
+        }
+      ],
+      "end": "Best one they've had.",
+      "end_zoom": [
+        1.12,
+        1.08
+      ],
+      "end_focus": [
+        0.5,
+        0.42
+      ],
+      "name_y": 0.08,
+      "end_kicker": "For whoever forgot the anniversary.",
+      "next": {
+        "name": "Clasp",
+        "line": "Hugs here last as long as you've been apart."
       }
     }
   }
