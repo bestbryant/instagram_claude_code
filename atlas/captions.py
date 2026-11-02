@@ -23,22 +23,28 @@ def carousel(entry: dict, by: str | None = None) -> str:
 
 
 SHORT_TAGS = "#worldbuilding #imaginaryworlds #scifiart #conceptart"   # specific and on-topic; Instagram caps tags at 5
-PROMISES = ["Invented planets, two a day. Leave any name and I'll find its planet.",
-            "Two new planets a day. Leave a name in the comments and I'll find its planet.",
-            "A new planet twice a day. Any name you leave below gets one.",
-            "Mapping invented planets, two a day. Leave a name and I'll find yours."]
+# the first line is the only one shown under a Reel (cut at about 40 characters), next to the Follow button: the
+# offer, short enough to be read whole (2 Nov: the old lines were cut to a posting-rate claim, and no stranger had
+# ever left a name). Worded a little differently each time so it never reads as a template; open-ended, never a
+# fixed word (Instagram only down-ranks asks for a specific word or emoji)
+PROMISES = ["Leave any name. I'll find its planet.",
+            "Leave a name: it gets its own planet.",
+            "Every name has a planet. Leave yours.",
+            "Any name you leave gets a planet."]
+# behind 'more': what happens to a name, so the offer is believable (describes, doesn't command)
+HOW = ("Any first name left below (a person's, a pet's, a nickname) gets its own planet and its own Reel, "
+       "with thanks to whoever left it.")
 
 
 def reel(entry: dict, by: str | None = None) -> str:
     if entry.get("short"):
-        # a plain, searchable first line; the episode's setting for anyone who reads on; the comment invite only on
-        # name planets, where it's natural (repeating one ask on every post reads as engagement bait)
-        # the first line is what shows under a Reel: the promise (more planets, and one for any name), worded a
-        # little differently each time so it never reads as a template; then the planet and who it's for
+        # the offer; how it works; then the planet and who it's for, and the episode's setting for anyone who reads on
         ep = entry.get("episode") or {}
-        parts = [PROMISES[sum(map(ord, entry["id"])) % len(PROMISES)] if not by else f"Found for {by}.",
-                 f"Invented planet No. {entry['id']}: {entry['name']}. {entry['hook']}",
-                 (ep.get("caption") or entry.get("extra") or entry["story"]).strip()]
+        parts = [PROMISES[sum(map(ord, entry["id"])) % len(PROMISES)] if not by else f"Found for {by}."]
+        if not by:
+            parts.append(HOW)
+        parts += [f"Invented planet No. {entry['id']}: {entry['name']}. {entry['hook']}",
+                  (ep.get("caption") or entry.get("extra") or entry["story"]).strip()]
         parts.append(SHORT_TAGS)
         return "\n\n".join(parts)
     head = f"{entry['hook']} (Imaginary planet No. {entry['id']}: {entry['name']})"

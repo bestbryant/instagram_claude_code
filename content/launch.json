@@ -1462,11 +1462,8 @@
       ],
       "name_y": 0.24,
       "end_kicker": "For people who still write letters.",
-      "next": {
-        "name": "Miles",
-        "line": "Next door is ninety miles away."
-      },
-      "kicker": "A planet for people who still write letters."
+      "kicker": "A planet for people who still write letters.",
+      "sign": "Every name has its own planet."
     }
   },
   {
@@ -1698,11 +1695,8 @@
       ],
       "name_y": 0.17,
       "end_kicker": "For people who go to the beach and don't swim.",
-      "next": {
-        "name": "Bramble",
-        "line": "This tree has its own weather."
-      },
-      "kicker": "A planet for people who go to the beach and don't swim."
+      "kicker": "A planet for people who go to the beach and don't swim.",
+      "sign": "There's a planet for every name."
     }
   },
   {
@@ -2434,11 +2428,8 @@
         0.54
       ],
       "end_kicker": "For people who never come downstairs.",
-      "next": {
-        "name": "Dibs",
-        "line": "Kim called dibs on sunsets."
-      },
-      "kicker": "A planet for people who never come downstairs."
+      "kicker": "A planet for people who never come downstairs.",
+      "sign": "Every name has its own planet."
     }
   },
   {
@@ -2979,11 +2970,8 @@
       ],
       "name_y": 0.1,
       "end_kicker": "For the friend who remembers every birthday.",
-      "next": {
-        "name": "Kip",
-        "line": "Lullabies here work on everyone."
-      },
-      "kicker": "A planet for the friend who remembers every birthday."
+      "kicker": "A planet for the friend who remembers every birthday.",
+      "sign": "Every name has its own planet."
     }
   },
   {
@@ -4786,11 +4774,8 @@
       ],
       "name_y": 0.15,
       "end_kicker": "For people who go home for Christmas.",
-      "next": {
-        "name": "Ruby",
-        "line": "The sky blushes if you're embarrassed."
-      },
-      "kicker": "A planet for people who go home for Christmas."
+      "kicker": "A planet for people who go home for Christmas.",
+      "sign": "Every name has its own planet."
     }
   },
   {
@@ -5472,11 +5457,8 @@
       ],
       "name_y": 0.07,
       "end_kicker": "For anyone who stopped being the baby of the family.",
-      "next": {
-        "name": "Thaw",
-        "line": "Parties here start frozen."
-      },
-      "kicker": "A planet for people who stopped being the baby of the family."
+      "kicker": "A planet for people who stopped being the baby of the family.",
+      "sign": "There's a planet for every name."
     }
   },
   {
@@ -9288,10 +9270,7 @@
       ],
       "name_y": 0.14,
       "end_kicker": "For every new dad who knows one song.",
-      "next": {
-        "name": "Bob",
-        "line": "Bob next door can fix anything."
-      }
+      "sign": "Every name has a planet."
     }
   },
   {
@@ -9482,10 +9461,7 @@
       ],
       "name_y": 0.12,
       "end_kicker": "For the family worrier.",
-      "next": {
-        "name": "Isla",
-        "line": "Falling out makes islands."
-      }
+      "sign": "There's a planet for every name."
     }
   },
   {
@@ -9756,10 +9732,7 @@
       ],
       "name_y": 0.05,
       "end_kicker": "For every dad who didn't have to be.",
-      "next": {
-        "name": "Amber",
-        "line": "Here, the sky's a traffic light."
-      }
+      "sign": "Every name has its own planet."
     }
   },
   {
@@ -10082,10 +10055,7 @@
       ],
       "name_y": 0.14,
       "end_kicker": "For every big sister who called dibs.",
-      "next": {
-        "name": "Victoria",
-        "line": "No cake, no Tuesday."
-      }
+      "sign": "Every name has a planet."
     }
   },
   {
@@ -10370,10 +10340,7 @@
       ],
       "name_y": 0.14,
       "end_kicker": "For every mum who's never in the photos.",
-      "next": {
-        "name": "Bill",
-        "line": "Here, you pay with daylight."
-      }
+      "sign": "There's a planet for every name."
     }
   },
   {
@@ -10582,10 +10549,7 @@
       ],
       "name_y": 0.14,
       "end_kicker": "For anyone who'd talk to a lamppost.",
-      "next": {
-        "name": "Molly",
-        "line": "Colds here come out as snow."
-      }
+      "sign": "Every name has its own planet."
     }
   },
   {
