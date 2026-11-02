@@ -2,6 +2,26 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-02 (09:45 UTC): reach works, follows don't; the name offer was never visible
+- **Numbers:** last 7 days 4,434 accounts reached, 15 profile visits (0.34%), followers 6. Four Reels past 1,000 strangers (Summer, Fond, Hush, Simon: 1,051 in 12 h at the new 20:00 slot). Summed over every Reel: 0.73 likes per 100 reached, 1 share and 5 saves ever, **0 comments from strangers ever** (all 16 counted comments are our own epilogues), 0 name requests.
+- **Research (workflow follow-conversion: data analyst, web researcher, funnel audit, strategist, three critics):**
+  - Every new follower (1 to 6) arrived 1-3 h after a burst of reach, about 1 per 1,100 strangers: normal for one-off short videos (about 0.4-2 per 1,000), far below serial or recurring-character accounts (about 7-10 per 1,000, case studies).
+  - The decision happens inside the Reel: breakout viewers watch about one full play, so they see the end card, then do nothing. Each Reel is a finished postcard; 'Next stop' teases a planet nobody has seen and measured nothing (4.9 vs 4.8 visits per 1,000).
+  - **The name offer has never been shown.** Under a Reel only the caption's first ~40 characters show; ours were cut to a posting-rate claim ('A new planet twice a day. Any name you l...'). The offer has never been on screen in a Reel.
+  - Instagram: watch time, likes and sends rank Reels; 'how likely you are to follow the author' is predicted, with follows earned by the Reel as an input. Bait is asking for a specific word or emoji; open-ended invitations are fine. Linked Reels (Aug 2025) and a Series test (Jun 2026) point to serial Reels.
+  - The profile (bio, pins: owner) is a secondary leak: it only sees about 15 visitors a week.
+- **Changes (today):**
+  1. **Captions (E1):** line 1 is the offer, 37 characters or fewer, 4 variants ('Leave any name. I'll find its planet.'); line 2 says what happens to a name. All 65 queued captions rebuilt; starts with Milo, 14:00 today.
+  2. **End card (E3, single arm):** 'Next stop' is retired on the 24 Reels of 3-14 Nov. The narrator closes on a sign-off, 'Every name has a planet.' (3 variants; a series tagline like the 'No. N' eyebrow, so rule 1 doesn't apply; Elsewhere keeps 'Yours too.'). Both arms of the tight test get it, so that test stays balanced. Reels from 15 Nov keep their next stops until the verdict.
+  3. **Requests are fulfilled by hand:** a request gets an undated in-voice reply at once, then a hand-written, voiced name planet (writer and stranger judge), not the silent template, and a dated reply once it passes its check. Offensive, public-figure and grief names are never auto-charted into a reply.
+  4. **Dated two-parters (E2), from 6 Nov:** three regular 14:00 Reels end on 'Part two, <day>: ...' instead of the offer, with a part two in the next regular slot. Each part two is written and checked first and must stand alone and be at least as funny as part one, or part one posts unchanged.
+- **How we'll know (set now):**
+  - Requests (zero baseline: 0 from about 6,300 reached since the offer became line 1): on Reels from 2 Nov, 3 or more in a week is a signal (p about 0.07); 1-2 runs a second week; 0 after two weeks means captions and end cards aren't something strangers act on at our size, and the end card goes to each Reel's dedication (S2).
+  - Comments on Reels posted before today (Simon, Hush, Hush part two, still gaining reach) are the concurrent control.
+  - Follows: per Reel, each hourly rise credited across Reels in proportion to their reach gain over the previous 6 h (pairs credited as one unit); the 3-hour top-Reel rule as a sensitivity check. Baseline about 0.9 per 1,000. Two-parters succeed at 3 or more follows per 1,000 pair reach with at least 3 follows; fail at 1 or fewer over at least 1,000 reach.
+  - Shares and saves can't be read in a week at our volume; they are context only.
+  - Safety: if 48 h stranger reach per Reel falls by a third, or three posts in a row stay under 10 reach at 12 h, revert the caption line first.
+
 ## 2026-11-01 daily review (12:15 UTC): breakouts are love and family stories; the profile still doesn't convert
 - **Numbers (strangers):** Hush final at 46 h: 1,138, 28% skip, 67% watched, 20 likes (1.8 per 100), 2 saves. Lantern final: 148, 41%. Hollow (22:09) at 38 h: 255, 26%, the best 22:00 post yet but short of 300. Mothwing (moved to 14:10) at 22 h: 162, 42% skip, the weakest E opening since Lantern. Followers 4 (no change in 24 h). 7 days: 3,407 reached, 13 profile visits.
 - **Slot tally:** 14:00 posts 4 of 9 past 300 (Mothwing is not, so far); 22:00 posts 0 of 9 (Hollow 255 the closest). 20:00 starts tonight with Simon.
