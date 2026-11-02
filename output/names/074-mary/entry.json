@@ -222,9 +222,6 @@
     ],
     "name_y": 0.14,
     "end_kicker": "For the one who always has plasters.",
-    "next": {
-      "name": "Olive",
-      "line": "The sun won't go down on an argument."
-    }
+    "sign": "Every name has a planet."
   }
 }
