@@ -298,9 +298,6 @@
     ],
     "scrim": 0.55,
     "end_kicker": "For people who aren't ready for the last dance.",
-    "next": {
-      "name": "Lull",
-      "line": "The moon here follows the youngest person."
-    }
+    "sign": "Every name has a planet."
   }
 }

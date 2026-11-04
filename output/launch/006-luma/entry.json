@@ -228,10 +228,7 @@
     ],
     "name_y": 0.24,
     "end_kicker": "For people who still write letters.",
-    "next": {
-      "name": "Miles",
-      "line": "Next door is ninety miles away."
-    },
-    "kicker": "A planet for people who still write letters."
+    "kicker": "A planet for people who still write letters.",
+    "sign": "Every name has its own planet."
   }
 }
