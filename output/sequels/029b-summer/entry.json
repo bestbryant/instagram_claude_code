@@ -1,0 +1,328 @@
+{
+  "id": "029b",
+  "name": "Summer",
+  "subtitle": "part two: the dragon",
+  "story": "On Summer, it snows once every eighty years. By the end, Nan was the only one left who'd seen the last one, and she had mentioned it at every wedding and every funeral for eighty years. Then it snowed again, and it squeaked, as she'd said. Now everyone has seen snow, and everyone mentions it at every wedding and every funeral. Nan has heard enough. At the next wedding, she stood up and said she's seen a dragon.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "none",
+    "Gravity": "1.0 g",
+    "Population": "210,000"
+  },
+  "hook": "A planet for competitive nans.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#grandma"
+  ],
+  "spec": {
+    "palette": "rust_desert",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.8,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.74,
+    "sun_y": 0.52,
+    "sun_size": 0.075,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.3,
+    "gag": "",
+    "cartographer": true,
+    "spot": "#c8452f",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 6,
+    "crowd_items": "umbrella,umbrella,nothing,umbrella,umbrella,umbrella",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Nan has moved on to dragons.",
+  "episode": {
+    "opener": "It snows here once\nevery eighty years.",
+    "beats": [
+      {
+        "text": "Only Nan was left\nwho'd seen it.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.8,
+            1.88
+          ],
+          "focus": [
+            0.36,
+            0.62
+          ]
+        },
+        "spec": {
+          "mist": 0.55,
+          "sun_size": 0.08,
+          "sun_y": 0.55,
+          "crowd_x": 0.58,
+          "crowd_gap": 0.09,
+          "crowd_facing": "out",
+          "cartographer": false,
+          "crowd_items": "sing,umbrella,umbrella,umbrella,umbrella,umbrella"
+        }
+      },
+      {
+        "text": "She mentioned it at every wedding.\nAt every funeral.",
+        "shot": "crowd",
+        "spec": {
+          "mist": 0.55,
+          "sun_size": 0.08,
+          "sun_y": 0.55,
+          "crowd_x": 0.58,
+          "crowd_gap": 0.09,
+          "crowd_facing": "in",
+          "cartographer": false,
+          "crowd_items": "sing,doze,umbrella,doze,umbrella,doze"
+        }
+      },
+      {
+        "text": "Then it snowed again.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.22,
+            1.28
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "mist": 0.6,
+          "sun_size": 0.07,
+          "sun_y": 0.58,
+          "crowd_x": 0.58,
+          "crowd_gap": 0.09,
+          "crowd_facing": "in",
+          "cartographer": true,
+          "palette": "violet_ice",
+          "snow": true,
+          "particles": "snow",
+          "flake_size": 1.5,
+          "crowd_items": "nothing,umbrella,umbrella,umbrella,umbrella,umbrella"
+        },
+        "note": "identical camera to the opener; one thing changed: snow. Turn line"
+      },
+      {
+        "text": "Now everyone has seen it.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.22,
+            1.28
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "mist": 0.6,
+          "sun_size": 0.07,
+          "sun_y": 0.58,
+          "crowd_x": 0.58,
+          "crowd_gap": 0.09,
+          "crowd_facing": "in",
+          "cartographer": true,
+          "palette": "violet_ice",
+          "snow": true,
+          "particles": "snow",
+          "flake_size": 1.5,
+          "crowd_items": "nothing,hand,hand,hand,hand,hand"
+        }
+      },
+      {
+        "text": "They mention it at every wedding.\nAt every funeral.",
+        "shot": "crowd",
+        "spec": {
+          "mist": 0.6,
+          "sun_size": 0.07,
+          "sun_y": 0.58,
+          "crowd_x": 0.58,
+          "crowd_gap": 0.09,
+          "crowd_facing": "in",
+          "cartographer": false,
+          "palette": "violet_ice",
+          "snow": true,
+          "particles": "none",
+          "flake_size": 1.5,
+          "crowd_items": "nothing,sing,sing,sing,sing,sing"
+        }
+      },
+      {
+        "text": "At the next wedding,\nNan stood up.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.8,
+            1.88
+          ],
+          "focus": [
+            0.36,
+            0.62
+          ]
+        },
+        "spec": {
+          "mist": 0.6,
+          "sun_size": 0.07,
+          "sun_y": 0.58,
+          "crowd_x": 0.58,
+          "crowd_gap": 0.09,
+          "crowd_facing": "in",
+          "cartographer": false,
+          "palette": "violet_ice",
+          "snow": true,
+          "particles": "none",
+          "flake_size": 1.5,
+          "crowd_items": "hand,sing,sing,sing,sing,sing"
+        }
+      }
+    ],
+    "end": "Nan says she's seen a dragon.",
+    "caption": "Nan's the one without a parasol.\n\nThis is part two of Summer. In part one, it snowed for the first time in eighty years, and Nan, who had been describing the last snowfall since she was six, turned out to be right. It squeaked.\n\nSummer is 210,000 people on a world where it's always summer, apart from one snowfall every eighty years, give or take. Coats are museum pieces, and at school, snow is taught next to dragons.\n\nBy the end, Nan was the only one left who'd seen it, and for eighty years she had mentioned it at every wedding and every funeral. Then it snowed again. Now all 210,000 people have seen snow, and they mention it at every wedding and every funeral. Nan has heard enough. At the next wedding, she stood up during the speeches and said she's seen a dragon.\n\nI was at that wedding. I'd just got to the part where it squeaks.\n\n(Earth has dragons. In 1910, rumours of a 'land crocodile' reached a Dutch officer in what is now Indonesia, and he went and got one: the Komodo dragon, up to three metres long. Nobody on Summer has gone to look.)\n\nDo you believe her this time?"
+  },
+  "first_comment": "The school has moved snow to geography. Nobody's touching dragons.",
+  "short": {
+    "version": "E",
+    "kicker": "Summer, part two. A planet for competitive nans.",
+    "title": "It snows here once\nevery eighty years.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.22,
+      1.28
+    ],
+    "focus": [
+      0.5,
+      0.6
+    ],
+    "spec": {
+      "mist": 0.55,
+      "sun_size": 0.08,
+      "sun_y": 0.55,
+      "crowd_x": 0.58,
+      "crowd_gap": 0.09,
+      "crowd_facing": "in",
+      "cartographer": true,
+      "crowd_items": "nothing,nothing,nothing,nothing,nothing,nothing"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "mist": 0.55,
+        "sun_size": 0.08,
+        "sun_y": 0.55,
+        "crowd_x": 0.58,
+        "crowd_gap": 0.09,
+        "crowd_facing": "in",
+        "cartographer": true,
+        "crowd_items": "nothing,umbrella,umbrella,umbrella,umbrella,umbrella"
+      }
+    },
+    "beats": [
+      {
+        "text": "Only Nan had seen it.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.8,
+            1.88
+          ],
+          "focus": [
+            0.36,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "sing,umbrella,umbrella,umbrella,umbrella,umbrella",
+          "crowd_facing": "out",
+          "cartographer": false
+        }
+      },
+      {
+        "text": "Then it snowed again.\nNow everyone has.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.22,
+            1.28
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 0.5,
+          "spec": {
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "snow",
+            "flake_size": 1.5,
+            "mist": 0.6,
+            "sun_y": 0.58,
+            "sun_size": 0.07
+          }
+        }
+      }
+    ],
+    "end": "Nan says she's seen a dragon.",
+    "end_spec": {
+      "crowd_facing": "left",
+      "cartographer": false
+    },
+    "end_onset": {
+      "at": 1.3,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "hand,umbrella,umbrella,umbrella,umbrella,umbrella"
+      }
+    },
+    "end_zoom": [
+      1.62,
+      1.55
+    ],
+    "end_focus": [
+      0.42,
+      0.62
+    ],
+    "name_y": 0.22,
+    "end_kicker": "For competitive nans.",
+    "sign": "Every name has a planet."
+  }
+}
