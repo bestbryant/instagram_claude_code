@@ -1,0 +1,326 @@
+{
+  "id": "019b",
+  "name": "Tessel",
+  "subtitle": "part two: the second cake",
+  "story": "Winter on Tessel lasts a year, with no sun and no calendar, so every village has someone who keeps the date. Jess keeps it on a board by her door, and her wages are the first slice of every birthday cake. The winter she lost count, the village kept the board for her. When she got her chalk back, she checked their sums and found Day 213 on there twice. It was her birthday: the village had wanted more cake. Jess has never let a sum go in her life. She found no mistakes.",
+  "facts": {
+    "Day": "22 hours",
+    "Moons": "none",
+    "Gravity": "1.1 g",
+    "Population": "90,000"
+  },
+  "hook": "A planet for the double-checker.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#birthday"
+  ],
+  "spec": {
+    "palette": "abyss",
+    "terrain": "hills",
+    "layers": 5,
+    "horizon": 0.6,
+    "relief": 0.8,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": null,
+    "sun_y": null,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "pines",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "snow",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "WINTER|DAY 212",
+    "crowd": 1,
+    "crowd_items": "book",
+    "crowd_x": 0.5,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Her birthday was on the board twice.",
+  "episode": {
+    "opener": "A year-long winter.\nJess counts it. Exactly.",
+    "beats": [
+      {
+        "text": "The board by her door\nis the village's calendar.",
+        "shot": "sign",
+        "spec": {
+          "crowd": 1,
+          "crowd_x": 0.47,
+          "crowd_gap": 0.042,
+          "house_x": 0.9,
+          "crowd_items": "book",
+          "crowd_facing": "right",
+          "particles": "snow",
+          "sign": "DAY 212|DAY 213|DAY 213"
+        }
+      },
+      {
+        "text": "The winter she lost track,\nthe village kept it for her.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.34,
+            1.38
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_x": 0.47,
+          "crowd_gap": 0.042,
+          "house_x": 0.9,
+          "crowd_items": "sit",
+          "crowd_facing": "right",
+          "particles": "snow",
+          "sign": "DAY ???",
+          "palette": "sepia"
+        }
+      },
+      {
+        "text": "With her chalk back,\nshe checked their sums.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.34,
+            1.38
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_x": 0.47,
+          "crowd_gap": 0.042,
+          "house_x": 0.9,
+          "crowd_items": "book",
+          "crowd_facing": "right",
+          "particles": "snow",
+          "sign": "DAY 212|DAY 213|DAY 213"
+        }
+      },
+      {
+        "text": "Her birthday was on there\ntwice.",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.95,
+            2.05
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_x": 0.47,
+          "crowd_gap": 0.042,
+          "house_x": 0.9,
+          "crowd_items": "book",
+          "crowd_facing": "right",
+          "particles": "snow",
+          "sign": "DAY 212|DAY 213|DAY 213"
+        }
+      },
+      {
+        "text": "The village wanted\nmore cake.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.34,
+            1.38
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 10,
+          "crowd_x": 0.281,
+          "crowd_gap": 0.042,
+          "house_x": 0.9,
+          "crowd_items": "spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,book",
+          "crowd_facing": "right",
+          "particles": "snow",
+          "sign": "DAY 212|DAY 213|DAY 213"
+        }
+      },
+      {
+        "text": "Jess has never let\na sum go in her life.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            2.1
+          ],
+          "focus": [
+            0.47,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 10,
+          "crowd_x": 0.281,
+          "crowd_gap": 0.042,
+          "house_x": 0.9,
+          "crowd_items": "spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,book",
+          "crowd_facing": "right",
+          "particles": "snow",
+          "sign": "DAY 212|DAY 213|DAY 213"
+        }
+      }
+    ],
+    "end": "Jess found no mistakes.",
+    "caption": "Count the days on Jess's board.\n\nThis is part two of Tessel. In part one, Jess lost count for the first time in her life, and the village kept the board going without her.\n\nTessel is 90,000 people on a slow, tilted world: winter lasts a year, and summer about a fortnight. With no sun to count by, every village has someone who keeps the date. Jess has kept hers since she was a girl, and her wages are the first slice of every birthday cake in the village.\n\nWhen she got her chalk back, she checked the village's sums, the way you'd mark homework. Day 213 was on the board twice. It was her birthday. The village had wanted more cake. Jess has never let a sum go in her life. She found no mistakes.\n\nI went to both. I'd only brought one card.\n\n(King Charles has two birthdays: his real one in November, and an official one in June, with a parade. The story goes that George II started it in 1748, because his own birthday was too cold for marching. On Tessel there's no warmer month to move it to, so the village just had it twice.)\n\nIs there a day you'd count twice?"
+  },
+  "first_comment": "Next winter's board already has her birthday down twice. In her own chalk.",
+  "short": {
+    "version": "E",
+    "kicker": "Tessel, part two. A planet for the double-checker.",
+    "title": "A year-long winter.\nJess counts it. Exactly.",
+    "sub": "",
+    "framing": "crowd",
+    "zoom": [
+      1.72,
+      1.78
+    ],
+    "focus": [
+      0.64,
+      0.63
+    ],
+    "spec": {
+      "crowd": 1,
+      "crowd_x": 0.47,
+      "crowd_gap": 0.042,
+      "house_x": 0.9,
+      "crowd_items": "book",
+      "crowd_facing": "right",
+      "particles": "snow",
+      "sign": ""
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "auto",
+      "spec": {
+        "crowd": 1,
+        "crowd_x": 0.47,
+        "crowd_gap": 0.042,
+        "house_x": 0.9,
+        "crowd_items": "book",
+        "crowd_facing": "right",
+        "particles": "snow",
+        "sign": "DAY 212|DAY 213|DAY 213"
+      }
+    },
+    "beats": [
+      {
+        "text": "Her birthday was on there\ntwice.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.34,
+            1.38
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_x": 0.47,
+          "crowd_gap": 0.042,
+          "house_x": 0.9,
+          "crowd_items": "book",
+          "crowd_facing": "right",
+          "particles": "snow",
+          "sign": "DAY 212|DAY 213|DAY 213"
+        }
+      },
+      {
+        "text": "The village wanted\nmore cake.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.34,
+            1.38
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_x": 0.47,
+          "crowd_gap": 0.042,
+          "house_x": 0.9,
+          "crowd_items": "book",
+          "crowd_facing": "right",
+          "particles": "snow",
+          "sign": "DAY 212|DAY 213|DAY 213"
+        },
+        "onset": {
+          "at": 0.35,
+          "motion": "auto",
+          "spec": {
+            "crowd": 10,
+            "crowd_gap": 0.042,
+            "crowd_x": 0.281,
+            "crowd_items": "spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,book"
+          }
+        }
+      }
+    ],
+    "end": "Jess found no mistakes.",
+    "end_onset": {
+      "at": 0.5,
+      "spec": {
+        "crowd_items": "spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon,spoon"
+      }
+    },
+    "end_zoom": [
+      1.7,
+      1.66
+    ],
+    "end_focus": [
+      0.56,
+      0.63
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For the double-checker.",
+    "sign": "Every name has a planet."
+  }
+}

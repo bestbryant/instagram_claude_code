@@ -1,0 +1,333 @@
+{
+  "id": "011b",
+  "name": "Bramble",
+  "subtitle": "part two: the first one down",
+  "story": "Trees on Bramble never stop growing. The tallest has a small rain cloud of its own, and near the top is a village that hasn't come down in six hundred years. It has its own kitchens. Their family on the ground cooks for them anyway, and every evening a pinecone drops with the same answer: 'Coming!' On Wednesday, someone came down. It took him a day. Agnes had the table laid before he touched the ground. He'd already eaten. She poured him a cup anyway.",
+  "facts": {
+    "Day": "30 hours",
+    "Moons": "none",
+    "Gravity": "0.85 g",
+    "Population": "unknown"
+  },
+  "hook": "A planet for the family cook.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#dinner"
+  ],
+  "spec": {
+    "palette": "toxic",
+    "terrain": "hills",
+    "layers": 5,
+    "horizon": 0.66,
+    "relief": 1.0,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.55,
+    "sun_y": 0.45,
+    "sun_size": 0.045,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "giant",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.7,
+    "gag": "tree_cloud",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "DINNER'S READY.",
+    "crowd": 0,
+    "crowd_items": "",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "The first one down in 600 years.",
+  "episode": {
+    "opener": "Nobody's come down\nin 600 years.",
+    "beats": [
+      {
+        "text": "They don't need to.",
+        "shot": "gag",
+        "spec": {
+          "sign": "",
+          "house": false
+        }
+      },
+      {
+        "text": "The village has its own cloud\nand its own kitchens.",
+        "shot": {
+          "framing": "sky",
+          "focus": [
+            0.567,
+            0.29
+          ],
+          "zoom": [
+            1.7,
+            1.8
+          ]
+        },
+        "spec": {
+          "sign": "",
+          "house": false
+        },
+        "text_y": 0.13
+      },
+      {
+        "text": "Their family below\ncooks for them anyway.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.9,
+            1.95
+          ],
+          "focus": [
+            0.2,
+            0.614
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "spoon,kettle,nothing",
+          "crowd_x": 0.105,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "sign": "",
+          "house": false
+        },
+        "text_y": 0.05
+      },
+      {
+        "text": "Agnes has cooked for them\nfor fifty-one years.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.3,
+            2.4
+          ],
+          "focus": [
+            0.07,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "spoon,kettle,nothing",
+          "crowd_x": 0.105,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "sign": "",
+          "house": false
+        },
+        "text_y": 0.05
+      },
+      {
+        "text": "Every evening, a pinecone\ncomes down with the answer:\n'Coming!'",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.2
+          ],
+          "focus": [
+            0.16,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "spoon,kettle,echo",
+          "crowd_x": 0.105,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "sign": "",
+          "house": false
+        },
+        "text_y": 0.05
+      },
+      {
+        "text": "On Wednesday,\nsomeone came down.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.9,
+            1.95
+          ],
+          "focus": [
+            0.2,
+            0.614
+          ]
+        },
+        "spec": {
+          "crowd": 5,
+          "crowd_items": "spoon,kettle,nothing,shadow,aloft",
+          "crowd_x": 0.155,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "sign": "",
+          "house": false
+        },
+        "text_y": 0.05
+      },
+      {
+        "text": "It took him a day.\nAgnes had the table laid\nbefore he touched the ground.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.9,
+            2.05
+          ],
+          "focus": [
+            0.19,
+            0.655
+          ]
+        },
+        "spec": {
+          "crowd": 4,
+          "crowd_items": "spoon,kettle,nothing,nothing",
+          "crowd_x": 0.13,
+          "crowd_gap": 0.05,
+          "crowd_facing": "in",
+          "sign": "",
+          "house": false
+        },
+        "text_y": 0.05
+      }
+    ],
+    "end": "He'd already eaten.",
+    "caption": "Every light up that tree is a kitchen.\n\nThis is part two of Bramble. In part one, a village near the top of the tallest tree hadn't come down in six hundred years, and every evening the family on the ground called them for dinner and got the same pinecone back: 'Coming!'\n\nTrees on Bramble never stop growing. It's a day's climb down and a week back up, so nobody bothers, and the village has its own rain cloud and its own kitchens. Agnes has cooked for the top of the tree for fifty-one years anyway.\n\nOn Wednesday, someone came down. It took him a day. Agnes had the table laid before he touched the ground. He'd already eaten. She poured him a cup anyway.\n\nI was standing right there. I hadn't eaten. Nobody asked.\n\n(On Earth, a redwood can't pull water much higher than 122 to 130 metres, so that's about as tall as a tree can get; the tallest known, Hyperion in California, is about 116. Bramble's tallest tree is watered from the top.)\n\nWould you have fed him anyway?"
+  },
+  "first_comment": "He had seconds. Then a pinecone landed by his plate: 'Dinner's ready.'",
+  "short": {
+    "version": "E",
+    "kicker": "Bramble, part two. A planet for the family cook.",
+    "title": "Nobody's come down\nin 600 years.",
+    "sub": "",
+    "title_y": 0.12,
+    "framing": "sky",
+    "zoom": [
+      1.5,
+      1.56
+    ],
+    "focus": [
+      0.55,
+      0.3
+    ],
+    "spec": {
+      "gag": "",
+      "sign": "",
+      "cartographer": false,
+      "house": false,
+      "crowd": 3,
+      "crowd_items": "spoon,kettle,nothing",
+      "crowd_x": 0.105,
+      "crowd_gap": 0.05,
+      "crowd_facing": "right"
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "gag": "tree_cloud",
+        "sign": "",
+        "cartographer": false,
+        "house": false,
+        "crowd": 3,
+        "crowd_items": "spoon,kettle,nothing",
+        "crowd_x": 0.105,
+        "crowd_gap": 0.05,
+        "crowd_facing": "right"
+      }
+    },
+    "beats": [
+      {
+        "text": "Their family\nstill cooks for them.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.9,
+            1.95
+          ],
+          "focus": [
+            0.2,
+            0.614
+          ]
+        },
+        "text_y": 0.05
+      },
+      {
+        "text": "Then someone\ncame down.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.9,
+            1.95
+          ],
+          "focus": [
+            0.2,
+            0.614
+          ]
+        },
+        "text_y": 0.05,
+        "onset": {
+          "at": 0.3,
+          "motion": "cut",
+          "spec": {
+            "crowd": 5,
+            "crowd_x": 0.155,
+            "crowd_items": "spoon,kettle,nothing,shadow,aloft"
+          }
+        }
+      }
+    ],
+    "end": "He'd already eaten.",
+    "end_spec": {
+      "crowd": 4,
+      "crowd_items": "spoon,kettle,nothing,nothing",
+      "crowd_x": 0.13,
+      "crowd_gap": 0.05,
+      "crowd_facing": "in"
+    },
+    "end_onset": {
+      "at": 1.25,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "spoon,kettle,nothing,cup"
+      }
+    },
+    "end_zoom": [
+      1.9,
+      2.15
+    ],
+    "end_focus": [
+      0.19,
+      0.655
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For the family cook.",
+    "sign": "Every name has a planet."
+  }
+}

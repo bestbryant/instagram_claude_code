@@ -240,7 +240,7 @@
       "motion": "cut"
     },
     "title_y": 0.1,
-    "name_y": 0.229,
+    "name_y": 0.2,
     "end_zoom": [
       1.06,
       1.06
@@ -251,7 +251,7 @@
     ],
     "end_kicker": "For people who never come downstairs.",
     "kicker": "A planet for people who never come downstairs.",
-    "sign": "Every name has its own planet."
+    "sign": "Part two, Saturday: someone comes down to dinner."
   },
   "_engine": 5
 }
