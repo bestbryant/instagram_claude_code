@@ -453,8 +453,8 @@
   "day": 8,
   "entry": "052",
   "kind": "reel",
-  "not_before": "2026-11-22T20:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-09T14:00:00Z",
+  "note": "short cut, checked; moved to the end on 5 Nov for 029b"
  },
  {
   "day": 8,
@@ -495,8 +495,8 @@
   "day": 8,
   "entry": "059",
   "kind": "reel",
-  "not_before": "2026-11-25T20:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-09T20:00:00Z",
+  "note": "short cut, checked; moved to the end on 5 Nov for 042b"
  },
  {
   "day": 8,
@@ -768,5 +768,29 @@
    "reel"
   ],
   "note": "short cut, checked"
+ },
+ {
+  "day": 10,
+  "entry": "029b",
+  "kind": "reel",
+  "not_before": "2026-11-22T20:00:00Z",
+  "after": [
+   "029",
+   "reel"
+  ],
+  "hold": true,
+  "note": "standalone part two of a breakout (5 Nov review): held until rendered and checked"
+ },
+ {
+  "day": 10,
+  "entry": "042b",
+  "kind": "reel",
+  "not_before": "2026-11-25T20:00:00Z",
+  "after": [
+   "042",
+   "reel"
+  ],
+  "hold": true,
+  "note": "standalone part two of a breakout (5 Nov review): held until rendered and checked"
  }
 ]

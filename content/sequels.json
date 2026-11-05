@@ -1296,5 +1296,753 @@
       "end_kicker": "For the family cook.",
       "sign": "Every name has a planet."
     }
+  },
+  {
+    "id": "029b",
+    "name": "Summer",
+    "subtitle": "part two: the dragon",
+    "story": "On Summer, it snows once every eighty years. By the end, Nan was the only one left who'd seen the last one, and she had mentioned it at every wedding and every funeral for eighty years. Then it snowed again, and it squeaked, as she'd said. Now everyone has seen snow, and everyone mentions it at every wedding and every funeral. Nan has heard enough. At the next wedding, she stood up and said she's seen a dragon.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "210,000"
+    },
+    "hook": "A planet for competitive nans.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#grandma"
+    ],
+    "spec": {
+      "palette": "rust_desert",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.8,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.74,
+      "sun_y": 0.52,
+      "sun_size": 0.075,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.3,
+      "gag": "",
+      "cartographer": true,
+      "spot": "#c8452f",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 6,
+      "crowd_items": "umbrella,umbrella,nothing,umbrella,umbrella,umbrella",
+      "crowd_x": 0.0,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Nan has moved on to dragons.",
+    "episode": {
+      "opener": "It snows here once\nevery eighty years.",
+      "beats": [
+        {
+          "text": "Only Nan was left\nwho'd seen it.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.8,
+              1.88
+            ],
+            "focus": [
+              0.36,
+              0.62
+            ]
+          },
+          "spec": {
+            "mist": 0.55,
+            "sun_size": 0.08,
+            "sun_y": 0.55,
+            "crowd_x": 0.58,
+            "crowd_gap": 0.09,
+            "crowd_facing": "out",
+            "cartographer": false,
+            "crowd_items": "sing,umbrella,umbrella,umbrella,umbrella,umbrella"
+          }
+        },
+        {
+          "text": "She mentioned it at every wedding.\nAt every funeral.",
+          "shot": "crowd",
+          "spec": {
+            "mist": 0.55,
+            "sun_size": 0.08,
+            "sun_y": 0.55,
+            "crowd_x": 0.58,
+            "crowd_gap": 0.09,
+            "crowd_facing": "in",
+            "cartographer": false,
+            "crowd_items": "sing,doze,umbrella,doze,umbrella,doze"
+          }
+        },
+        {
+          "text": "Then it snowed again.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.22,
+              1.28
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "mist": 0.6,
+            "sun_size": 0.07,
+            "sun_y": 0.58,
+            "crowd_x": 0.58,
+            "crowd_gap": 0.09,
+            "crowd_facing": "in",
+            "cartographer": true,
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "snow",
+            "flake_size": 1.5,
+            "crowd_items": "nothing,umbrella,umbrella,umbrella,umbrella,umbrella"
+          },
+          "note": "identical camera to the opener; one thing changed: snow. Turn line"
+        },
+        {
+          "text": "Now everyone has seen it.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.22,
+              1.28
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "mist": 0.6,
+            "sun_size": 0.07,
+            "sun_y": 0.58,
+            "crowd_x": 0.58,
+            "crowd_gap": 0.09,
+            "crowd_facing": "in",
+            "cartographer": true,
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "snow",
+            "flake_size": 1.5,
+            "crowd_items": "nothing,hand,hand,hand,hand,hand"
+          }
+        },
+        {
+          "text": "They mention it at every wedding.\nAt every funeral.",
+          "shot": "crowd",
+          "spec": {
+            "mist": 0.6,
+            "sun_size": 0.07,
+            "sun_y": 0.58,
+            "crowd_x": 0.58,
+            "crowd_gap": 0.09,
+            "crowd_facing": "in",
+            "cartographer": false,
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "none",
+            "flake_size": 1.5,
+            "crowd_items": "nothing,sing,sing,sing,sing,sing"
+          }
+        },
+        {
+          "text": "At the next wedding,\nNan stood up.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.8,
+              1.88
+            ],
+            "focus": [
+              0.36,
+              0.62
+            ]
+          },
+          "spec": {
+            "mist": 0.6,
+            "sun_size": 0.07,
+            "sun_y": 0.58,
+            "crowd_x": 0.58,
+            "crowd_gap": 0.09,
+            "crowd_facing": "in",
+            "cartographer": false,
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "none",
+            "flake_size": 1.5,
+            "crowd_items": "hand,sing,sing,sing,sing,sing"
+          }
+        }
+      ],
+      "end": "Nan says she's seen a dragon.",
+      "caption": "Nan's the one without a parasol.\n\nThis is part two of Summer. In part one, it snowed for the first time in eighty years, and Nan, who had been describing the last snowfall since she was six, turned out to be right. It squeaked.\n\nSummer is 210,000 people on a world where it's always summer, apart from one snowfall every eighty years, give or take. Coats are museum pieces, and at school, snow is taught next to dragons.\n\nBy the end, Nan was the only one left who'd seen it, and for eighty years she had mentioned it at every wedding and every funeral. Then it snowed again. Now all 210,000 people have seen snow, and they mention it at every wedding and every funeral. Nan has heard enough. At the next wedding, she stood up during the speeches and said she's seen a dragon.\n\nI was at that wedding. I'd just got to the part where it squeaks.\n\n(Earth has dragons. In 1910, rumours of a 'land crocodile' reached a Dutch officer in what is now Indonesia, and he went and got one: the Komodo dragon, up to three metres long. Nobody on Summer has gone to look.)\n\nDo you believe her this time?"
+    },
+    "first_comment": "The school has moved snow to geography. Nobody's touching dragons.",
+    "short": {
+      "version": "E",
+      "kicker": "Summer, part two. A planet for competitive nans.",
+      "title": "It snows here once\nevery eighty years.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.22,
+        1.28
+      ],
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "spec": {
+        "mist": 0.55,
+        "sun_size": 0.08,
+        "sun_y": 0.55,
+        "crowd_x": 0.58,
+        "crowd_gap": 0.09,
+        "crowd_facing": "in",
+        "cartographer": true,
+        "crowd_items": "nothing,nothing,nothing,nothing,nothing,nothing"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "mist": 0.55,
+          "sun_size": 0.08,
+          "sun_y": 0.55,
+          "crowd_x": 0.58,
+          "crowd_gap": 0.09,
+          "crowd_facing": "in",
+          "cartographer": true,
+          "crowd_items": "nothing,umbrella,umbrella,umbrella,umbrella,umbrella"
+        }
+      },
+      "beats": [
+        {
+          "text": "Only Nan had seen it.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.8,
+              1.88
+            ],
+            "focus": [
+              0.36,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_items": "sing,umbrella,umbrella,umbrella,umbrella,umbrella",
+            "crowd_facing": "out",
+            "cartographer": false
+          }
+        },
+        {
+          "text": "Then it snowed again.\nNow everyone has.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.22,
+              1.28
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 0.5,
+            "spec": {
+              "palette": "violet_ice",
+              "snow": true,
+              "particles": "snow",
+              "flake_size": 1.5,
+              "mist": 0.6,
+              "sun_y": 0.58,
+              "sun_size": 0.07
+            }
+          }
+        }
+      ],
+      "end": "Nan says she's seen a dragon.",
+      "end_spec": {
+        "crowd_facing": "left",
+        "cartographer": false
+      },
+      "end_onset": {
+        "at": 1.3,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "hand,umbrella,umbrella,umbrella,umbrella,umbrella"
+        }
+      },
+      "end_zoom": [
+        1.62,
+        1.55
+      ],
+      "end_focus": [
+        0.42,
+        0.62
+      ],
+      "name_y": 0.22,
+      "end_kicker": "For competitive nans.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "042b",
+    "name": "Fond",
+    "subtitle": "part two: the cough",
+    "story": "On Fond, everyone gets one 'I love you'; say it a second time and it comes out as a cough. Sam spent his on his mum, Kath, at the station, the day he left for the city. In the city he met Maya, and held out until February. Then, on her doorstep, he told her anyway, and it came out as a cough. Maya looked at him for a long time. Then she coughed back. She'd spent hers years ago, on a pony.",
+    "facts": {
+      "Day": "23 hours",
+      "Moons": "none",
+      "Gravity": "1.0 g",
+      "Population": "880,000"
+    },
+    "hook": "A planet for mummy's boys.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#couples"
+    ],
+    "spec": {
+      "palette": "violet_ice",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.62,
+      "relief": 0.7,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": null,
+      "sun_y": null,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 0.8,
+      "islands": 0,
+      "trees": "pines",
+      "snow": true,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "snow",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "MIND HOW|YOU GO",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.38,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "His second 'I love you' was a cough.",
+    "episode": {
+      "opener": "Everyone on Fond gets\none 'I love you'.",
+      "beats": [
+        {
+          "text": "Say it twice,\nand it comes out as a cough.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.16
+            ]
+          },
+          "spec": {
+            "sign": "",
+            "cartographer": false,
+            "crowd": 5,
+            "crowd_x": 0.5,
+            "crowd_gap": 0.13,
+            "crowd_facing": "",
+            "crowd_items": "nothing,nothing,shout,nothing,nothing",
+            "spot": "#e9b434",
+            "house_x": 0.12
+          }
+        },
+        {
+          "text": "Sam spent his on his mum,\nthe day he left for the city.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.57,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "sign": "MIND HOW|YOU GO",
+            "house": false,
+            "particles": "none",
+            "cartographer": false,
+            "gag": "",
+            "crowd": 2,
+            "crowd_x": 0.45,
+            "crowd_gap": 0.2,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,sing",
+            "spot": "#e9b434",
+            "stage": 0.72
+          },
+          "note": "the station, last winter, as in part one: the snow stops as he says it"
+        },
+        {
+          "text": "In the city,\nhe met Maya.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.46,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "sign": "",
+            "house": true,
+            "house_x": 0.22,
+            "particles": "snow",
+            "cartographer": false,
+            "gag": "",
+            "crowd": 2,
+            "crowd_x": 0.52,
+            "crowd_gap": 0.28,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,nothing",
+            "spot": "#e9b434",
+            "stage": 0.72
+          }
+        },
+        {
+          "text": "He held out\nuntil February.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.46,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "sign": "",
+            "house": true,
+            "house_x": 0.22,
+            "particles": "none",
+            "cartographer": false,
+            "gag": "",
+            "crowd": 2,
+            "crowd_x": 0.52,
+            "crowd_gap": 0.28,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,nothing",
+            "spot": "#e9b434",
+            "stage": 0.72
+          },
+          "note": "identical camera; the snow has gone"
+        },
+        {
+          "text": "Then, on her doorstep,\nhe told her anyway.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.46,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "sign": "",
+            "house": true,
+            "house_x": 0.22,
+            "particles": "none",
+            "cartographer": false,
+            "gag": "",
+            "crowd": 2,
+            "crowd_x": 0.52,
+            "crowd_gap": 0.28,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,nothing",
+            "spot": "#e9b434",
+            "stage": 0.72
+          }
+        },
+        {
+          "text": "It came out as a cough.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.46,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "sign": "",
+            "house": true,
+            "house_x": 0.22,
+            "particles": "none",
+            "cartographer": false,
+            "gag": "",
+            "crowd": 2,
+            "crowd_x": 0.52,
+            "crowd_gap": 0.28,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,shout",
+            "spot": "#e9b434",
+            "stage": 0.72
+          },
+          "note": "identical camera: his cough, warm and jagged, the colour of the real one"
+        },
+        {
+          "text": "Maya looked at him\nfor a long time.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.56,
+              1.62
+            ],
+            "focus": [
+              0.46,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "lilac_dusk",
+            "sign": "",
+            "house": true,
+            "house_x": 0.22,
+            "particles": "none",
+            "cartographer": false,
+            "gag": "",
+            "crowd": 2,
+            "crowd_x": 0.52,
+            "crowd_gap": 0.28,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,nothing",
+            "spot": "#e9b434",
+            "stage": 0.72
+          }
+        }
+      ],
+      "end": "She coughed back.",
+      "caption": "His only one goes in the first second.\n\nThis is part two of Fond. In part one, Sam left for the city and spent his one 'I love you' on his mum, Kath, on the station platform. She said, 'Take a coat.'\n\nFond is 880,000 people, long snowy winters and one 'I love you' each. Say it a second time and it comes out as a cough, so people keep theirs and say 'Have you got your keys?' instead.\n\nIn the city, Sam met Maya. He held out until February. Then, on her doorstep, he told her anyway, and it came out as a cough. Maya looked at him for a long time. Then she coughed back. She'd spent hers years ago, on a pony called Toffee.\n\nI had a cold the week I was there. Four strangers coughed back.\n\n(The story goes that the novelist Natsume Soseki, teaching English, told a student that nobody in Japan would say 'I love you'; they'd say 'The moon is beautiful, isn't it?' On Fond, you can say that one as often as you like.)\n\nHow long would you have held out?"
+    },
+    "first_comment": "Kath has met Maya. She sent them both home with lozenges.",
+    "short": {
+      "version": "E",
+      "kicker": "Fond, part two. A planet for mummy's boys.",
+      "title": "Everyone here gets\none 'I love you'.",
+      "sub": "",
+      "framing": "medium",
+      "zoom": [
+        1.5,
+        1.56
+      ],
+      "focus": [
+        0.57,
+        0.58
+      ],
+      "spec": {
+        "palette": "polar_night",
+        "sign": "MIND HOW|YOU GO",
+        "house": false,
+        "particles": "snow",
+        "cartographer": false,
+        "gag": "",
+        "crowd": 2,
+        "crowd_x": 0.45,
+        "crowd_gap": 0.2,
+        "crowd_facing": "in",
+        "crowd_items": "nothing,nothing",
+        "spot": "#e9b434",
+        "stage": 0.72
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "polar_night",
+          "sign": "MIND HOW|YOU GO",
+          "house": false,
+          "particles": "none",
+          "cartographer": false,
+          "gag": "",
+          "crowd": 2,
+          "crowd_x": 0.45,
+          "crowd_gap": 0.2,
+          "crowd_facing": "in",
+          "crowd_items": "nothing,sing",
+          "spot": "#e9b434",
+          "stage": 0.72
+        }
+      },
+      "beats": [
+        {
+          "text": "Sam spent his\non his mum.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.46,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "sign": "MIND HOW|YOU GO",
+            "house": false,
+            "particles": "none",
+            "cartographer": false,
+            "gag": "",
+            "crowd": 2,
+            "crowd_x": 0.45,
+            "crowd_gap": 0.2,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,sing",
+            "spot": "#e9b434",
+            "stage": 0.72
+          }
+        },
+        {
+          "text": "He told Maya anyway.\nIt came out as a cough.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.56
+            ],
+            "focus": [
+              0.46,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "sign": "",
+            "house": true,
+            "house_x": 0.22,
+            "particles": "snow",
+            "cartographer": false,
+            "gag": "",
+            "crowd": 2,
+            "crowd_x": 0.52,
+            "crowd_gap": 0.28,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,nothing",
+            "spot": "#e9b434",
+            "stage": 0.72
+          },
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "nothing,shout"
+            }
+          }
+        }
+      ],
+      "end": "She coughed back.",
+      "end_spec": {
+        "crowd_items": "nothing,nothing"
+      },
+      "end_onset": {
+        "at": 0.45,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "shout,nothing"
+        }
+      },
+      "end_zoom": [
+        1.56,
+        1.5
+      ],
+      "end_focus": [
+        0.46,
+        0.6
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For mummy's boys.",
+      "sign": "Every name has a planet."
+    }
   }
 ]
