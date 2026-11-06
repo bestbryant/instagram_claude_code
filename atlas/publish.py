@@ -132,7 +132,16 @@ class Publisher:
                 raise
             params.pop("audio_name")
             c = self._call("POST", f"{self.user_id}/media", **params)["id"]
-        return self._publish(c)
+        try:
+            return self._publish(c)
+        except GraphError as e:
+            # Meta sometimes fails a container with a bare ERROR while the file serves fine
+            # (Milo, 5 Nov: the same URL published on the next try). Retry once with a new container.
+            if not str(e).endswith(" ERROR"):
+                raise
+            time.sleep(30)
+            c = self._call("POST", f"{self.user_id}/media", **params)["id"]
+            return self._publish(c)
 
     def reel_file(self, path, caption, cover_url=None):
         """Upload a local video straight to Meta (resumable upload), no public URL needed."""

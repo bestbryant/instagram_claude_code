@@ -2,6 +2,12 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-06 daily review (12:20 UTC): two quiet posts after the outage; the publisher now retries a bare ERROR
+- **Numbers:** Milo (5 Nov 14:18, short-B name planet, the first Reel with the offer caption): 116 reached at 22 h, 45% skip, 45% watched, 1 like, 0 sends. Orrin (5 Nov 20:10, short-E place planet): 133 reached at 16 h, 44% skip, 40% watched (5.9 of 15 s), 0 likes. Neither left the test pool (300). Followers 10 to 11. 0 stranger comments and 0 requests from about 250 strangers who saw the offer caption. 7 days: 2,484 reached, 14 profile visits (the outage days and the 30 Oct breakout have rolled out of the window).
+- **Against the targets:** both pass skip (60% or less) and watched (40% or more, Orrin only just); both fail sends. Their skip (44-45%) is above E's median (32%), but two Reels posted after a three-day gap are no basis for a format change, so the scheduled reads stand: tight-cut pairs from 8 Nov, the format verdict about 11 Nov, requests on 12 and 19 Nov, two-parters on 16-17 Nov.
+- **Red flags:** one API error. Milo's first container came back ERROR while the file served correctly (raw URL 200; h264/aac, 1080x1920, 17.2 s, 8.3 MB). It was investigated in the same run, retried once and posted. The drop in 7-day reach (3,589 to 2,484) is the outage plus the 30 Oct roll-off, not a change in distribution. Insights were also frozen from 23:09 to 06:10 (identical numbers on fresh API reads for 7 h) and then moved again: Meta's lag, not a stall, noted so a flat night isn't misread later.
+- **Change:** atlas/publish.py now retries a bare container ERROR once, with a new container after 30 s (tested against a simulated failure). Yesterday's slot was saved only because the run was attended; an unattended failure would have cost a slot, and a missed slot can break a dated part-two promise.
+
 ## 2026-11-05 daily review (12:20 UTC): no new posts yet; part twos for the breakouts
 - **Numbers:** nothing has posted since Simon (1 Nov 20:10); Milo, the first Reel with the offer caption, posts at 14:00 today. Followers 10. 7 days (after Instagram's day rolled): 3,589 reached, 15 profile visits. 0 stranger comments, 0 requests.
 - **Against the targets:** reach and follows can't move without posts; the outage cost 6 posts. No red flag fires (the queue is fresh to 5 Dec).
