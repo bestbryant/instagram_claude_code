@@ -660,6 +660,63 @@ def reel_format(entry: dict) -> str:
     return "long" if entry.get("episode") else "postcard"
 
 
+def cmd_follows(a):
+    """Follow conversion per Reel (DIAGNOSIS 2 Nov 09:45 and 4 Nov). Every rise in the follower count between two
+    hourly snapshots is shared among Reels in proportion to each one's reach gain over the previous `--window`
+    hours; a part one and its part two ('003' and '003b') count as one unit. Falls (unfollows) are only totalled."""
+    from bisect import bisect_right
+    from datetime import datetime, timedelta
+    ts = lambda s: datetime.fromisoformat(s)
+    hist = [json.loads(line) for line in (ROOT / "content" / "stats_history.jsonl").read_text().splitlines() if line.strip()]
+    acct = sorted((h for h in hist if "followers" in h and "entry" not in h), key=lambda h: h["t"])
+    unit = lambda e: e[:-1] if e.endswith("b") else e
+    series = {}                                                       # unit -> entry -> [(time, reach)]
+    for h in hist:
+        if h.get("kind") == "reel" and "t" in h:
+            series.setdefault(unit(h["entry"]), {}).setdefault(h["entry"], []).append((ts(h["t"]), h.get("reach") or 0))
+    for u in series.values():
+        for s in u.values():
+            s.sort()
+
+    def reach_at(s, t):
+        i = bisect_right([x[0] for x in s], t)
+        return s[i - 1][1] if i else 0
+
+    credit, gained, lost, unexplained = {}, 0, 0, 0.0
+    for prev, cur in zip(acct, acct[1:]):
+        d = (cur.get("followers") or 0) - (prev.get("followers") or 0)
+        if cur["t"] < a.since:
+            continue
+        if d < 0:
+            lost -= d
+            continue
+        if d == 0:
+            continue
+        gained += d
+        t1 = ts(cur["t"])
+        t0 = t1 - timedelta(hours=a.window)
+        gains = {u: sum(max(0, reach_at(s, t1) - reach_at(s, t0)) for s in ents.values()) for u, ents in series.items()}
+        total = sum(gains.values())
+        if not total:
+            unexplained += d
+            continue
+        for u, g in gains.items():
+            if g:
+                credit[u] = credit.get(u, 0) + d * g / total
+    entries = content_entries()
+    print(f"follower rises {gained}, falls {lost}, unexplained (no Reel gaining reach) {unexplained:g}"
+          + (f", since {a.since}" if a.since else ""))
+    print(f"{'unit':6} {'name':12} {'reach':>6} {'follows':>8} {'per 1,000':>9}")
+    for u in sorted(series, key=lambda u: -credit.get(u, 0)):
+        reach = sum(s[-1][1] for s in series[u].values())
+        c = credit.get(u, 0)
+        if a.since and not c:
+            continue
+        name = (entries.get(u) or {}).get("name", "")
+        two = " (+b)" if any(e.endswith("b") for e in series[u]) else ""
+        print(f"{u:6} {(name + two)[:12]:12} {reach:6d} {c:8.2f} {1000 * c / reach if reach else 0:9.2f}")
+
+
 def cmd_score(a):
     """Stranger-only scoreboard from content/stats_history.jsonl, read at about 48 h (docs/PLAN.md).
 
@@ -855,6 +912,10 @@ def main(argv=None):
     s = sub.add_parser("score", help="stranger-only scoreboard at about 48 h, by format version (no API calls)")
     s.add_argument("--hours", type=float, default=48)
     s.set_defaults(fn=cmd_score)
+    s = sub.add_parser("follows", help="credit each follower rise to Reels by their reach gain over the previous 6 h (no API calls)")
+    s.add_argument("--since", default="", help="only rises after this ISO time, e.g. 2026-11-05")
+    s.add_argument("--window", type=float, default=6, help="hours of reach gain that earn credit")
+    s.set_defaults(fn=cmd_follows)
     s = sub.add_parser("inbox", help="collect name requests from recent comments (Graph API)")
     s.add_argument("--limit", type=int, default=10, help="how many recent posts to scan")
     s.add_argument("--chart", action="store_true", help="also render planets for new requests")
