@@ -27,6 +27,8 @@ SHORT_TAGS = "#worldbuilding #imaginaryworlds #scifiart #conceptart"   # specifi
 # offer, short enough to be read whole (2 Nov: the old lines were cut to a posting-rate claim, and no stranger had
 # ever left a name). Worded a little differently each time so it never reads as a template; open-ended, never a
 # fixed word (Instagram only down-ranks asks for a specific word or emoji)
+OFFER_FIRST = True
+
 PROMISES = ["Leave any name. I'll find its planet.",
             "Leave a name: it gets its own planet.",
             "Every name has a planet. Leave yours.",
@@ -40,11 +42,14 @@ def reel(entry: dict, by: str | None = None) -> str:
     if entry.get("short"):
         # the offer; how it works; then the planet and who it's for, and the episode's setting for anyone who reads on
         ep = entry.get("episode") or {}
-        parts = [PROMISES[sum(map(ord, entry["id"])) % len(PROMISES)] if not by else f"Found for {by}."]
+        planet = f"Invented planet No. {entry['id']}: {entry['name']}. {entry['hook']}"
+        offer = [PROMISES[sum(map(ord, entry["id"])) % len(PROMISES)] if not by else f"Found for {by}."]
         if not by:
-            parts.append(HOW)
-        parts += [f"Invented planet No. {entry['id']}: {entry['name']}. {entry['hook']}",
-                  (ep.get("caption") or entry.get("extra") or entry["story"]).strip()]
+            offer.append(HOW)
+        # OFFER_FIRST: the name offer as caption line 1 (from 5 Nov). The early-stop rule in DIAGNOSIS 8 Nov
+        # flips it to False (planet line first, offer second) if no Reel breaks out by 11 Nov 20:00.
+        parts = offer + [planet] if OFFER_FIRST else [planet] + offer
+        parts.append((ep.get("caption") or entry.get("extra") or entry["story"]).strip())
         parts.append(SHORT_TAGS)
         return "\n\n".join(parts)
     head = f"{entry['hook']} (Imaginary planet No. {entry['id']}: {entry['name']})"
