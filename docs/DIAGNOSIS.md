@@ -2,6 +2,9 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-08 15:10 UTC: Tessel part one breaks out on day two; the early-stop rule is off
+- Tessel part one (No. 019, the dated two-parter, part two tonight 20:00) went from 164 to 371 reached between 13:10 and 15:10, 26 h after posting, with its first 2 likes; followers 11 to 13 in the same hours (credited to Tessel by `atlas follows`). It is the first Reel past 300 since the outage, so by the rule set this morning the caption test runs to its 12 Nov read as planned and OFFER_FIRST stays on. Watch: follows across the pair after part two posts, against Hush (3.1 per 1,000).
+
 ## 2026-11-08 daily review (12:20 UTC): no breakout in six since the outage; an early-stop rule for the caption change
 - **Numbers (since the last review):** Tessel part one (7 Nov 14:08, standard E): 159 reached at 22 h, 33% skip, 58% watched (9.3 of 16 s), 0 likes. Kip (7 Nov 20:09, tight E): 127 at 16 h, 41% skip, 57% watched, 0 likes. Mary at 48 h: 192, fails sends only. Followers 11 (unchanged since 5 Nov). 0 stranger comments, 0 requests from about 900 strangers since the offer caption. The 7-day reach fell from 2,761 to 1,543 at Instagram's 07:00 roll, which is 1 Nov (Simon 1,073 and Hush part two 896) leaving the window, not a drop in distribution.
 - **Tight-cut pairs, first two (not yet a read):** tight Mary and Kip skip 43% and 41% against 34% and 33% for the standard Olive and Tessel the same days; share watched 58% and 57% against 47% and 58%; likes plus sends per 100: 0.5 and 0 against 0 and 0. So far the tight cut loses more viewers in the first seconds and does not earn more likes. The rule (likes plus sends at least double, skip no worse) needs 6 pairs; 4 to go.
