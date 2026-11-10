@@ -2044,5 +2044,747 @@
       "end_kicker": "For mummy's boys.",
       "sign": "Every name has a planet."
     }
+  },
+  {
+    "id": "018b",
+    "name": "Brumm",
+    "subtitle": "part two: the eight miles home",
+    "story": "Gravity on Brumm is twice ours, so by four a child is too heavy to carry far, and in the week they get too heavy, every child gets one Last Carry, wherever they like. Tomas picked the sea, eight miles away, and slept through it. At the sea, his dad turned round. Home was eight miles away too, all of it uphill. There's a bench every half mile on that road, and his dad didn't use one. Tomas woke up in his own bed with sand in his socks. His dad's knees still mention it.",
+    "facts": {
+      "Day": "27 hours",
+      "Moons": "none",
+      "Gravity": "2 g",
+      "Population": "140,000"
+    },
+    "hook": "A planet for whoever carried you.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#dads"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.64,
+      "relief": 0.55,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.72,
+      "sun_y": 0.4,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": true,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 5,
+      "crowd_items": "nothing,nothing,child,nothing,nothing",
+      "crowd_x": 0.0,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "Eight miles to the sea. Eight back. Uphill.",
+    "episode": {
+      "opener": "Gravity's double.\nA child's last carry.",
+      "beats": [
+        {
+          "text": "When a child gets too heavy,\nthey choose where to go.",
+          "shot": "crowd"
+        },
+        {
+          "text": "Tomas picked the sea.\nHe slept through it.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.56,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "sun_x": 0.7,
+            "sun_y": 0.58,
+            "sun_size": 0.06,
+            "water": true,
+            "shore": "left",
+            "house": false,
+            "sign": "",
+            "cartographer": false,
+            "gag": "",
+            "daisies": 0,
+            "crowd": 1,
+            "crowd_x": 0.56,
+            "crowd_gap": 0.09,
+            "crowd_items": "child_asleep",
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "The sea was eight miles away.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.37,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "sun_x": 0.7,
+            "sun_y": 0.58,
+            "sun_size": 0.06,
+            "water": true,
+            "shore": "left",
+            "house": false,
+            "sign": "",
+            "cartographer": false,
+            "gag": "",
+            "daisies": 0,
+            "crowd": 1,
+            "crowd_x": 0.56,
+            "crowd_gap": 0.09,
+            "crowd_items": "child_asleep",
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "And so was home.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.37,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "sun_x": 0.7,
+            "sun_y": 0.58,
+            "sun_size": 0.06,
+            "water": true,
+            "shore": "left",
+            "house": false,
+            "sign": "HOME|8 MI|UPHILL",
+            "cartographer": false,
+            "gag": "",
+            "daisies": 0,
+            "crowd": 1,
+            "crowd_x": 0.56,
+            "crowd_gap": 0.09,
+            "crowd_items": "child_asleep",
+            "crowd_facing": "right"
+          },
+          "note": "turn: the identical camera, one thing changed (the road sign home)"
+        },
+        {
+          "text": "There's a bench every half mile.\nHis dad didn't use one.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.52,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0,
+            "sun_x": 0.7,
+            "sun_y": 0.58,
+            "sun_size": 0.06,
+            "water": false,
+            "shore": "none",
+            "house": false,
+            "sign": "",
+            "cartographer": false,
+            "gag": "",
+            "daisies": 0,
+            "crowd": 1,
+            "crowd_x": 0.62,
+            "crowd_gap": 0.09,
+            "crowd_items": "child_asleep",
+            "crowd_facing": "left",
+            "bright_stars": true
+          }
+        },
+        {
+          "text": "Tomas woke up in his own bed,\nwith sand in his socks.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.42,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0,
+            "sun_x": 0.7,
+            "sun_y": 0.58,
+            "sun_size": 0.06,
+            "water": false,
+            "shore": "none",
+            "house": true,
+            "sign": "",
+            "cartographer": false,
+            "gag": "",
+            "daisies": 0,
+            "crowd": 1,
+            "crowd_x": 0.5,
+            "crowd_gap": 0.09,
+            "crowd_items": "nothing",
+            "crowd_facing": "left",
+            "bright_stars": true,
+            "house_x": 0.36
+          }
+        }
+      ],
+      "end": "His dad's knees still mention it.",
+      "caption": "He's facing the wrong way for home.\n\nThis is part two of Brumm. In part one, Tomas got his Last Carry and picked the sea, eight miles from home. His dad made it. Tomas was asleep by mile six.\n\nBrumm is 140,000 people under twice our gravity. By four, a child is too heavy to carry far, so in the week they get too heavy, every child gets one Last Carry, wherever they like. Most pick the bakery.\n\nAt the sea, his dad turned round. Home was eight miles away too, all of it uphill. There's a bench every half mile on that road. He didn't use one. Tomas woke up in his own bed with sand in his socks. His dad's knees still mention it.\n\nI walked back with them, carrying nothing, and sat on all sixteen benches.\n\n(On Earth, each step of a walk puts more than two and a half times your body weight through the knee. We know because a few people with knee replacements have walked about with sensors inside them. On Brumm, double it, and add Tomas.)\n\nWhen did someone last carry you home asleep?"
+    },
+    "first_comment": "Tomas wants to go back to the sea. His dad has suggested the bakery.",
+    "short": {
+      "version": "E",
+      "kicker": "Brumm, part two. A planet for whoever carried you.",
+      "title": "Gravity's double.\nA child's last carry.",
+      "sub": "",
+      "framing": "crowd",
+      "zoom": [
+        2.0,
+        2.06
+      ],
+      "focus": [
+        0.56,
+        0.62
+      ],
+      "spec": {
+        "palette": "crimson",
+        "suns": 1,
+        "sun_x": 0.7,
+        "sun_y": 0.58,
+        "sun_size": 0.06,
+        "water": true,
+        "shore": "left",
+        "house": false,
+        "sign": "",
+        "cartographer": false,
+        "gag": "",
+        "daisies": 0,
+        "crowd": 1,
+        "crowd_x": 0.56,
+        "crowd_gap": 0.09,
+        "crowd_items": "nothing",
+        "crowd_facing": "right"
+      },
+      "onset": {
+        "at": 0.4,
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_x": 0.7,
+          "sun_y": 0.58,
+          "sun_size": 0.06,
+          "water": true,
+          "shore": "left",
+          "house": false,
+          "sign": "",
+          "cartographer": false,
+          "gag": "",
+          "daisies": 0,
+          "crowd": 1,
+          "crowd_x": 0.56,
+          "crowd_gap": 0.09,
+          "crowd_items": "child_asleep",
+          "crowd_facing": "right"
+        }
+      },
+      "beats": [
+        {
+          "text": "Tomas picked the sea,\neight miles away.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.37,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "sun_x": 0.7,
+            "sun_y": 0.58,
+            "sun_size": 0.06,
+            "water": true,
+            "shore": "left",
+            "house": false,
+            "sign": "",
+            "cartographer": false,
+            "gag": "",
+            "daisies": 0,
+            "crowd": 1,
+            "crowd_x": 0.56,
+            "crowd_gap": 0.09,
+            "crowd_items": "child_asleep",
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "And so was home.",
+          "shot": {
+            "framing": "crowd",
+            "zoom": [
+              1.8,
+              1.86
+            ],
+            "focus": [
+              0.37,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "suns": 1,
+            "sun_x": 0.7,
+            "sun_y": 0.58,
+            "sun_size": 0.06,
+            "water": true,
+            "shore": "left",
+            "house": false,
+            "sign": "",
+            "cartographer": false,
+            "gag": "",
+            "daisies": 0,
+            "crowd": 1,
+            "crowd_x": 0.56,
+            "crowd_gap": 0.09,
+            "crowd_items": "child_asleep",
+            "crowd_facing": "right"
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "auto",
+            "spec": {
+              "sign": "HOME|8 MI|UPHILL"
+            }
+          }
+        }
+      ],
+      "end": "His dad's knees still mention it.",
+      "end_spec": {
+        "palette": "teal_night",
+        "water": false,
+        "shore": "none",
+        "bright_stars": true,
+        "suns": 0,
+        "sign": "",
+        "crowd_x": 0.62,
+        "crowd_facing": "left",
+        "house": false
+      },
+      "end_onset": {
+        "at": 2.5,
+        "spec": {
+          "house": true,
+          "house_x": 0.36
+        }
+      },
+      "end_zoom": [
+        1.66,
+        1.6
+      ],
+      "end_focus": [
+        0.5,
+        0.62
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For whoever carried you.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "046b",
+    "name": "Yonder",
+    "subtitle": "part two: the kettle",
+    "story": "Yonder is flat from pole to pole, with no hills, no bends and no weather to speak of, and the air is so clear that nothing ever goes out of sight. So when Nan leaves, you wave her off at the gate until she's out of sight, the way you do. On Yonder, that takes four days. One Sunday, Nan came to yours, so it was your turn. You swapped arms at teatime; she never has. On day two, you put the kettle on. She was still waving when you came back out. She's been lovely about it.",
+    "facts": {
+      "Day": "28 hours",
+      "Moons": "none",
+      "Gravity": "1.1 g",
+      "Population": "56,000"
+    },
+    "hook": "A planet for the grandkids.",
+    "tags": [
+      "#worldbuilding",
+      "#illustration",
+      "#grandparents"
+    ],
+    "spec": {
+      "palette": "cobalt_noon",
+      "terrain": "dunes",
+      "layers": 3,
+      "horizon": 0.66,
+      "relief": 0.08,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.78,
+      "sun_y": 0.42,
+      "sun_size": 0.04,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.05,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "hand,walk",
+      "crowd_x": 0.5,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.18,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.44,
+      "stage": 0.74
+    },
+    "cover": "Your turn to wave Nan off.",
+    "episode": {
+      "opener": "Nothing here\ngoes out of sight.",
+      "beats": [
+        {
+          "text": "The planet is flat,\nand the air is perfectly clear.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.0,
+              1.06
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "crowd_x": 0.09999999999999998,
+            "crowd_gap": 1.2,
+            "crowd_facing": "in",
+            "crowd_items": "hand,hand",
+            "house_x": 0.8
+          }
+        },
+        {
+          "text": "So when Nan leaves,\nyou wave her off at the gate.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.8,
+              1.9
+            ],
+            "focus": [
+              0.74,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.68,
+            "crowd_gap": 0.07,
+            "crowd_facing": "in",
+            "crowd_items": "nothing,hand",
+            "house_x": 0.8
+          }
+        },
+        {
+          "text": "Until she's out of sight.\nThat takes four days.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.44999999999999996,
+            "crowd_gap": 0.49999999999999994,
+            "crowd_facing": "in",
+            "crowd_items": "hand,hand",
+            "house_x": 0.8
+          }
+        },
+        {
+          "text": "You swap arms at teatime.\nShe never has.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.48,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.44999999999999996,
+            "crowd_gap": 0.49999999999999994,
+            "crowd_facing": "in",
+            "crowd_items": "hand,hand",
+            "house_x": 0.8
+          }
+        },
+        {
+          "text": "Day two, you put the kettle on.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.48,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_x": 0.2,
+            "crowd_gap": 0.49999999999999994,
+            "crowd_facing": "right",
+            "crowd_items": "hand",
+            "house_x": 0.8,
+            "palette": "pastel"
+          },
+          "note": "turn: the identical camera, one figure gone (the gate is empty; Nan still waving)"
+        },
+        {
+          "text": "She was still waving\nwhen you came back out.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.48,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.44999999999999996,
+            "crowd_gap": 0.49999999999999994,
+            "crowd_facing": "in",
+            "crowd_items": "hand,cup",
+            "house_x": 0.8,
+            "palette": "pastel"
+          }
+        }
+      ],
+      "end": "She's been lovely about it.",
+      "caption": "Nan can still see that gate.\n\nThis is part two of Yonder. In part one, Nan waved you off after Sunday lunch, and when you got home four days later, she was still waving.\n\nYonder is 56,000 people on a planet that's flat from pole to pole, with no weather to speak of and air so clear that nothing ever goes out of sight. Waving someone off lasts exactly as long as their walk home.\n\nOne Sunday, Nan came to yours, so it was your turn at the gate. You swapped arms at teatime. She never has. On day two, you put the kettle on. She was still waving when you came back out with the tea. She's been lovely about it.\n\nI made a cup of tea on my last morning there. A man two days' walk away raised his.\n\n(In 2016, a photographer in the Pyrenees took a picture of a mountain in the Alps, 443 kilometres away. On Yonder, you'd still be waving.)\n\nWould you have put the kettle on?"
+    },
+    "first_comment": "She got home on day four, and rang to ask how the tea was.",
+    "short": {
+      "version": "E",
+      "kicker": "Yonder, part two. A planet for the grandkids.",
+      "title": "Nothing here\ngoes out of sight.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.3,
+        1.36
+      ],
+      "focus": [
+        0.48,
+        0.62
+      ],
+      "spec": {
+        "crowd": 2,
+        "crowd_x": 0.09999999999999998,
+        "crowd_gap": 1.2,
+        "crowd_facing": "in",
+        "crowd_items": "hand,hand",
+        "house_x": 0.8
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "auto",
+        "spec": {
+          "crowd": 2,
+          "crowd_x": 0.44999999999999996,
+          "crowd_gap": 0.49999999999999994,
+          "crowd_facing": "in",
+          "crowd_items": "hand,hand",
+          "house_x": 0.8
+        }
+      },
+      "beats": [
+        {
+          "text": "Waving Nan off\ntakes four days.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.08,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.44999999999999996,
+            "crowd_gap": 0.49999999999999994,
+            "crowd_facing": "in",
+            "crowd_items": "hand,hand",
+            "house_x": 0.8
+          }
+        },
+        {
+          "text": "Day two, you put the kettle on.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.48,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.44999999999999996,
+            "crowd_gap": 0.49999999999999994,
+            "crowd_facing": "in",
+            "crowd_items": "hand,hand",
+            "house_x": 0.8,
+            "palette": "pastel"
+          },
+          "onset": {
+            "at": 0.75,
+            "motion": "cut",
+            "spec": {
+              "crowd": 1,
+              "crowd_x": 0.2,
+              "crowd_gap": 0.49999999999999994,
+              "crowd_items": "hand",
+              "crowd_facing": "right"
+            }
+          }
+        }
+      ],
+      "end": "She's been lovely about it.",
+      "end_onset": {
+        "at": 0.45,
+        "motion": "auto",
+        "spec": {
+          "crowd": 2,
+          "crowd_x": 0.44999999999999996,
+          "crowd_gap": 0.49999999999999994,
+          "crowd_facing": "in",
+          "crowd_items": "hand,cup",
+          "house_x": 0.8
+        }
+      },
+      "end_zoom": [
+        1.36,
+        1.3
+      ],
+      "end_focus": [
+        0.48,
+        0.62
+      ],
+      "name_y": 0.2,
+      "end_kicker": "For the grandkids.",
+      "sign": "Every name has a planet."
+    }
   }
 ]

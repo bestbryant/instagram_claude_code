@@ -246,7 +246,8 @@
   "entry": "018",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-18T20:00:00Z"
+  "not_before": "2026-11-18T20:00:00Z",
+  "hold": true
  },
  {
   "day": 2,
@@ -409,13 +410,6 @@
  },
  {
   "day": 8,
-  "entry": "054",
-  "kind": "reel",
-  "not_before": "2026-11-19T20:00:00Z",
-  "note": "short cut, checked"
- },
- {
-  "day": 8,
   "entry": "044",
   "kind": "reel",
   "not_before": "2026-12-01T14:00:00Z",
@@ -468,20 +462,14 @@
   "entry": "046",
   "kind": "reel",
   "not_before": "2026-11-23T20:00:00Z",
-  "note": "short cut, checked"
+  "note": "short cut, checked",
+  "hold": true
  },
  {
   "day": 8,
   "entry": "053",
   "kind": "reel",
   "not_before": "2026-12-03T14:00:00Z",
-  "note": "short cut, checked"
- },
- {
-  "day": 8,
-  "entry": "051",
-  "kind": "reel",
-  "not_before": "2026-11-24T20:00:00Z",
   "note": "short cut, checked"
  },
  {
@@ -789,6 +777,44 @@
    "042",
    "reel"
   ],
+  "note": "short cut, checked"
+ },
+ {
+  "day": 8,
+  "entry": "018b",
+  "kind": "reel",
+  "not_before": "2026-11-19T20:00:00Z",
+  "after": [
+   "018",
+   "reel"
+  ],
+  "hold": true,
+  "note": "short cut, part two (20:00 teaser pilot)"
+ },
+ {
+  "day": 8,
+  "entry": "046b",
+  "kind": "reel",
+  "not_before": "2026-11-24T20:00:00Z",
+  "after": [
+   "046",
+   "reel"
+  ],
+  "hold": true,
+  "note": "short cut, part two (20:00 teaser pilot)"
+ },
+ {
+  "day": 8,
+  "entry": "054",
+  "kind": "reel",
+  "not_before": "2026-12-10T14:00:00Z",
+  "note": "short cut, checked"
+ },
+ {
+  "day": 8,
+  "entry": "051",
+  "kind": "reel",
+  "not_before": "2026-12-10T20:00:00Z",
   "note": "short cut, checked"
  }
 ]
