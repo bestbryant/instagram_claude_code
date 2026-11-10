@@ -115,7 +115,7 @@
     "end": "Then she phones to check.",
     "caption": "Bottom left: Nan, mid-wave.\n\nYonder: 56,000 people, a 28-hour day, no moons, and not one hill. The planet is flat from pole to pole and the air is perfectly clear, so nothing ever goes out of sight. You can watch a friend walk home for days. Lighthouses are mainly ornamental, and hide-and-seek never caught on. When the family leaves after Sunday lunch, Nan stands at the gate and waves until they're out of sight, which takes about four days.\n\nI waved back for the first mile. My arm gave out at mile four.\n\n(On Earth, stand on a beach and the horizon is only about five kilometres away. Every nan on Earth has been waving at a curve.)\n\nWho waves you off?"
   },
-  "first_comment": "Nan has been told she can stop at the corner. There isn't one.",
+  "first_comment": "Nan's coming to yours next. You can see her already.",
   "short": {
     "version": "E",
     "kicker": "A planet for every nan who's still waving.",
@@ -207,10 +207,7 @@
     ],
     "name_y": 0.2,
     "end_kicker": "For every nan who's still waving.",
-    "next": {
-      "name": "Tint",
-      "line": "Colour here leaves with your person."
-    }
+    "sign": "Part two, Tuesday: your turn to wave Nan off."
   },
   "_engine": 5
 }
