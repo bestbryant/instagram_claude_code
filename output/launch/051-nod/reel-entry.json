@@ -224,11 +224,7 @@
       0.52
     ],
     "name_y": 0.1,
-    "end_kicker": "For every dad who's just resting his eyes.",
-    "next": {
-      "name": "Hilary",
-      "line": "Dancing here raises the roof."
-    }
+    "end_kicker": "For every dad who's just resting his eyes."
   },
   "_engine": 5
 }
