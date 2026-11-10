@@ -269,7 +269,11 @@
       0.6
     ],
     "name_y": 0.17,
-    "end_kicker": "For every husband who'll get round to it."
+    "end_kicker": "For every husband who'll get round to it.",
+    "next": {
+      "name": "Umber",
+      "line": "You promise Mum you'll visit more."
+    }
   },
   "_engine": 5
 }
