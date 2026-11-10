@@ -1,0 +1,413 @@
+{
+  "id": "018b",
+  "name": "Brumm",
+  "subtitle": "part two: the eight miles home",
+  "story": "Gravity on Brumm is twice ours, so by four a child is too heavy to carry far, and in the week they get too heavy, every child gets one Last Carry, wherever they like. Tomas picked the sea, eight miles away, and slept through it. At the sea, his dad turned round. Home was eight miles away too, all of it uphill. There's a bench every half mile on that road, and his dad didn't use one. Tomas woke up in his own bed with sand in his socks. His dad's knees still mention it.",
+  "facts": {
+    "Day": "27 hours",
+    "Moons": "none",
+    "Gravity": "2 g",
+    "Population": "140,000"
+  },
+  "hook": "A planet for whoever carried you.",
+  "tags": [
+    "#worldbuilding",
+    "#illustration",
+    "#dads"
+  ],
+  "spec": {
+    "palette": "rose_fog",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.64,
+    "relief": 0.55,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.72,
+    "sun_y": 0.4,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": true,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "nothing,nothing,child,nothing,nothing",
+    "crowd_x": 0.0,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "Eight miles to the sea. Eight back. Uphill.",
+  "episode": {
+    "opener": "Gravity's double.\nA child's last carry.",
+    "beats": [
+      {
+        "text": "When a child gets too heavy,\nthey choose where to go.",
+        "shot": "crowd"
+      },
+      {
+        "text": "Tomas picked the sea.\nHe slept through it.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.56,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_x": 0.7,
+          "sun_y": 0.58,
+          "sun_size": 0.06,
+          "water": true,
+          "shore": "left",
+          "house": false,
+          "sign": "",
+          "cartographer": false,
+          "gag": "",
+          "daisies": 0,
+          "crowd": 1,
+          "crowd_x": 0.56,
+          "crowd_gap": 0.09,
+          "crowd_items": "child_asleep",
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "The sea was eight miles away.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.37,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_x": 0.7,
+          "sun_y": 0.58,
+          "sun_size": 0.06,
+          "water": true,
+          "shore": "left",
+          "house": false,
+          "sign": "",
+          "cartographer": false,
+          "gag": "",
+          "daisies": 0,
+          "crowd": 1,
+          "crowd_x": 0.56,
+          "crowd_gap": 0.09,
+          "crowd_items": "child_asleep",
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "And so was home.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.37,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_x": 0.7,
+          "sun_y": 0.58,
+          "sun_size": 0.06,
+          "water": true,
+          "shore": "left",
+          "house": false,
+          "sign": "HOME|8 MI|UPHILL",
+          "cartographer": false,
+          "gag": "",
+          "daisies": 0,
+          "crowd": 1,
+          "crowd_x": 0.56,
+          "crowd_gap": 0.09,
+          "crowd_items": "child_asleep",
+          "crowd_facing": "right"
+        },
+        "note": "turn: the identical camera, one thing changed (the road sign home)"
+      },
+      {
+        "text": "There's a bench every half mile.\nHis dad didn't use one.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.52,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "sun_x": 0.7,
+          "sun_y": 0.58,
+          "sun_size": 0.06,
+          "water": false,
+          "shore": "none",
+          "house": false,
+          "sign": "",
+          "cartographer": false,
+          "gag": "",
+          "daisies": 0,
+          "crowd": 1,
+          "crowd_x": 0.62,
+          "crowd_gap": 0.09,
+          "crowd_items": "child_asleep",
+          "crowd_facing": "left",
+          "bright_stars": true
+        }
+      },
+      {
+        "text": "Tomas woke up in his own bed,\nwith sand in his socks.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.42,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "sun_x": 0.7,
+          "sun_y": 0.58,
+          "sun_size": 0.06,
+          "water": false,
+          "shore": "none",
+          "house": true,
+          "sign": "",
+          "cartographer": false,
+          "gag": "",
+          "daisies": 0,
+          "crowd": 1,
+          "crowd_x": 0.5,
+          "crowd_gap": 0.09,
+          "crowd_items": "nothing",
+          "crowd_facing": "left",
+          "bright_stars": true,
+          "house_x": 0.36
+        }
+      }
+    ],
+    "end": "His dad's knees still mention it.",
+    "caption": "He's facing the wrong way for home.\n\nThis is part two of Brumm. In part one, Tomas got his Last Carry and picked the sea, eight miles from home. His dad made it. Tomas was asleep by mile six.\n\nBrumm is 140,000 people under twice our gravity. By four, a child is too heavy to carry far, so in the week they get too heavy, every child gets one Last Carry, wherever they like. Most pick the bakery.\n\nAt the sea, his dad turned round. Home was eight miles away too, all of it uphill. There's a bench every half mile on that road. He didn't use one. Tomas woke up in his own bed with sand in his socks. His dad's knees still mention it.\n\nI walked back with them, carrying nothing, and sat on all sixteen benches.\n\n(On Earth, each step of a walk puts more than two and a half times your body weight through the knee. We know because a few people with knee replacements have walked about with sensors inside them. On Brumm, double it, and add Tomas.)\n\nWhen did someone last carry you home asleep?"
+  },
+  "first_comment": "Tomas wants to go back to the sea. His dad has suggested the bakery.",
+  "short": {
+    "version": "E",
+    "kicker": "Brumm, part two. A planet for whoever carried you.",
+    "title": "Gravity's double.\nA child's last carry.",
+    "sub": "",
+    "framing": "crowd",
+    "zoom": [
+      2.0,
+      2.06
+    ],
+    "focus": [
+      0.56,
+      0.62
+    ],
+    "spec": {
+      "palette": "crimson",
+      "suns": 1,
+      "sun_x": 0.7,
+      "sun_y": 0.58,
+      "sun_size": 0.06,
+      "water": true,
+      "shore": "left",
+      "house": false,
+      "sign": "",
+      "cartographer": false,
+      "gag": "",
+      "daisies": 0,
+      "crowd": 1,
+      "crowd_x": 0.56,
+      "crowd_gap": 0.09,
+      "crowd_items": "nothing",
+      "crowd_facing": "right"
+    },
+    "onset": {
+      "at": 0.4,
+      "spec": {
+        "palette": "crimson",
+        "suns": 1,
+        "sun_x": 0.7,
+        "sun_y": 0.58,
+        "sun_size": 0.06,
+        "water": true,
+        "shore": "left",
+        "house": false,
+        "sign": "",
+        "cartographer": false,
+        "gag": "",
+        "daisies": 0,
+        "crowd": 1,
+        "crowd_x": 0.56,
+        "crowd_gap": 0.09,
+        "crowd_items": "child_asleep",
+        "crowd_facing": "right"
+      }
+    },
+    "beats": [
+      {
+        "text": "Tomas picked the sea,\neight miles away.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.37,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_x": 0.7,
+          "sun_y": 0.58,
+          "sun_size": 0.06,
+          "water": true,
+          "shore": "left",
+          "house": false,
+          "sign": "",
+          "cartographer": false,
+          "gag": "",
+          "daisies": 0,
+          "crowd": 1,
+          "crowd_x": 0.56,
+          "crowd_gap": 0.09,
+          "crowd_items": "child_asleep",
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "And so was home.",
+        "shot": {
+          "framing": "crowd",
+          "zoom": [
+            1.8,
+            1.86
+          ],
+          "focus": [
+            0.37,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "suns": 1,
+          "sun_x": 0.7,
+          "sun_y": 0.58,
+          "sun_size": 0.06,
+          "water": true,
+          "shore": "left",
+          "house": false,
+          "sign": "",
+          "cartographer": false,
+          "gag": "",
+          "daisies": 0,
+          "crowd": 1,
+          "crowd_x": 0.56,
+          "crowd_gap": 0.09,
+          "crowd_items": "child_asleep",
+          "crowd_facing": "right"
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "auto",
+          "spec": {
+            "sign": "HOME|8 MI|UPHILL"
+          }
+        }
+      }
+    ],
+    "end": "His dad's knees still mention it.",
+    "end_spec": {
+      "palette": "teal_night",
+      "water": false,
+      "shore": "none",
+      "bright_stars": true,
+      "suns": 0,
+      "sign": "",
+      "crowd_x": 0.62,
+      "crowd_facing": "left",
+      "house": false
+    },
+    "end_onset": {
+      "at": 2.5,
+      "spec": {
+        "house": true,
+        "house_x": 0.36
+      }
+    },
+    "end_zoom": [
+      1.66,
+      1.6
+    ],
+    "end_focus": [
+      0.5,
+      0.62
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For whoever carried you.",
+    "sign": "Every name has a planet."
+  },
+  "_engine": 5
+}

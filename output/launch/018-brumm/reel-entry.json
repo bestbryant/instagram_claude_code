@@ -270,11 +270,9 @@
     "name_y": 0.1,
     "scrim": 0.6,
     "end_kicker": "For everyone who was carried home asleep.",
-    "next": {
-      "name": "Vow",
-      "line": "Weddings here make everything else vanish."
-    },
-    "kicker": "A planet for everyone who was carried home asleep."
+    "kicker": "A planet for everyone who was carried home asleep.",
+    "sign": "Part two, Thursday: his dad turns round."
   },
+  "first_comment": "Mile eight. His dad had a good long look at the sea, for both of them.",
   "_engine": 5
 }

@@ -246,8 +246,7 @@
   "entry": "018",
   "kind": "reel",
   "note": "short cut, checked",
-  "not_before": "2026-11-18T20:00:00Z",
-  "hold": true
+  "not_before": "2026-11-18T20:00:00Z"
  },
  {
   "day": 2,
@@ -788,8 +787,7 @@
    "018",
    "reel"
   ],
-  "hold": true,
-  "note": "short cut, part two (20:00 teaser pilot)"
+  "note": "short cut, checked"
  },
  {
   "day": 8,
