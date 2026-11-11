@@ -175,6 +175,27 @@
     },
     "beats": [
       {
+        "text": "Couples hold hands.\nNot romance. Admin.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.16
+          ],
+          "focus": [
+            0.42,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_x": 0.42,
+          "crowd_gap": 0.052,
+          "crowd_items": "walk,walk",
+          "crowd_facing": "right"
+        }
+      },
+      {
         "text": "Gwen's husband\nwandered off.",
         "shot": {
           "framing": "group",
@@ -207,7 +228,8 @@
           "spec": {
             "crowd_items": "hand,hand,hand,hand,flower,hand,hand"
           }
-        }
+        },
+        "seconds": 3.2
       }
     ],
     "end": "He'd gone to get her flowers.",
@@ -221,9 +243,6 @@
     ],
     "name_y": 0.1,
     "end_kicker": "For husbands who wander off in shops.",
-    "next": {
-      "name": "Figment",
-      "line": "Imaginary friends retire here."
-    }
+    "sign": "Every name has a planet."
   }
 }
