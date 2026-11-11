@@ -167,6 +167,25 @@
         }
       },
       {
+        "text": "At Kev's thirtieth,\nnobody did till midnight.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.18
+          ],
+          "focus": [
+            0.5,
+            0.55
+          ]
+        },
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "flake_size": 1.8
+        }
+      },
+      {
         "text": "Meera said,\n'Love your shoes.'",
         "shot": {
           "framing": "group",
@@ -188,9 +207,17 @@
             "particles": "none",
             "daisies": 90,
             "crowd_facing": "in",
-            "crowd_items": "sing,cup,sing,cup,hand,cup"
+            "crowd_items": "sing,cup,sing,cup,hand,cup",
+            "suns": 1,
+            "flake_size": 1.2
           }
-        }
+        },
+        "spec": {
+          "palette": "teal_night",
+          "suns": 0,
+          "flake_size": 1.8
+        },
+        "seconds": 2.9
       }
     ],
     "end": "Spring by the sausage rolls.",
@@ -204,7 +231,7 @@
     ],
     "name_y": 0.14,
     "end_kicker": "For anyone who'd talk to a lamppost.",
-    "sign": "Every name has its own planet."
+    "sign": "Every name has a planet."
   },
   "_engine": 5
 }
