@@ -266,6 +266,28 @@
             "crowd_x": 0.44,
             "crowd_facing": "right"
           }
+        },
+        "seconds": 2.8
+      },
+      {
+        "text": "The fish was his idea.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.44,
+            0.62
+          ]
+        },
+        "seconds": 2.9,
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "fish",
+          "crowd_x": 0.44,
+          "crowd_facing": "right"
         }
       }
     ],
@@ -280,7 +302,7 @@
     ],
     "name_y": 0.14,
     "end_kicker": "For every mum who's never in the photos.",
-    "sign": "There's a planet for every name."
+    "sign": "Every name has a planet."
   },
   "_engine": 5
 }
