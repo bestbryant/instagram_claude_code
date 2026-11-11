@@ -213,7 +213,33 @@
           "spec": {
             "lanterns": 36
           }
-        }
+        },
+        "seconds": 2.6
+      },
+      {
+        "text": "She says it\na lot.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.55,
+            0.55
+          ]
+        },
+        "spec": {
+          "lanterns": 54
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "rise",
+          "spec": {
+            "lanterns": 90
+          }
+        },
+        "seconds": 2.8
       }
     ],
     "end": "He's never asked her to stop.",
@@ -227,10 +253,7 @@
     ],
     "name_y": 0.12,
     "end_kicker": "For couples with embarrassing pet names.",
-    "next": {
-      "name": "Yonder",
-      "line": "Nan waves until you're out of sight."
-    }
+    "sign": "Every name has a planet."
   },
   "_engine": 5
 }
