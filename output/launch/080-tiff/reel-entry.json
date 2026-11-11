@@ -184,6 +184,28 @@
         }
       },
       {
+        "text": "That was a fox,\napparently.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.33,
+            0.66
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_x": 0.31,
+          "crowd_gap": 0.12,
+          "crowd_items": "nothing,nothing,dog",
+          "crowd_facing": "right"
+        },
+        "seconds": 2.5
+      },
+      {
         "text": "For his sixtieth,\nshe lost on purpose.",
         "shot": {
           "framing": "group",
@@ -202,7 +224,8 @@
           "spec": {
             "sign": "RIGHT:|DEREK"
           }
-        }
+        },
+        "seconds": 3.2
       }
     ],
     "end": "He's had mugs made.",
@@ -216,10 +239,7 @@
     ],
     "name_y": 0.12,
     "end_kicker": "For the one who's always right.",
-    "next": {
-      "name": "Kith",
-      "line": "Houses here follow your best friend."
-    }
+    "sign": "Every name has a planet."
   },
   "_engine": 5
 }
