@@ -178,7 +178,24 @@
         }
       },
       {
-        "text": "Emma went up too.",
+        "text": "Emma ate\nhis half of the cake.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.56,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd_items": "spoon"
+        }
+      },
+      {
+        "text": "At midnight,\nEmma went up too.",
         "shot": {
           "framing": "medium",
           "zoom": [
@@ -191,12 +208,13 @@
           ]
         },
         "onset": {
-          "at": 0.55,
+          "at": 1.1,
           "motion": "rise",
           "spec": {
             "crowd_items": "aloft"
           }
-        }
+        },
+        "seconds": 3.2
       }
     ],
     "end": "Best one they've had.",
@@ -210,9 +228,6 @@
     ],
     "name_y": 0.08,
     "end_kicker": "For whoever forgot the anniversary.",
-    "next": {
-      "name": "Clasp",
-      "line": "Hugs here last as long as you've been apart."
-    }
+    "sign": "Every name has a planet."
   }
 }
