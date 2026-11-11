@@ -224,6 +224,24 @@
           "spec": {
             "crowd_items": "cup,cup,chair,cup,cup"
           }
+        },
+        "seconds": 2.4
+      },
+      {
+        "text": "Brian tried biscuits.\nBiscuits don't count.",
+        "shot": {
+          "framing": "sign",
+          "zoom": [
+            1.7,
+            1.76
+          ],
+          "focus": [
+            0.57,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd_items": "cup,cup,chair,book,cup"
         }
       }
     ],
@@ -241,6 +259,6 @@
     ],
     "name_y": 0.14,
     "end_kicker": "For whoever brings cake to work.",
-    "sign": "There's a planet for every name."
+    "sign": "Every name has a planet."
   }
 }
