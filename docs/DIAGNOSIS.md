@@ -2,6 +2,13 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-11 daily review (12:15 UTC): the tight cut is retired and 18 Reels lengthened; part twos reach a quarter of their part ones
+- **Numbers (since the last review):** Ruby part one closes at 408 reached at 46 h (31% skip, 54% watched, 3 likes, 1 save: 0.25 sends per 100, still under the line). Ruby part two (10 Nov 20:09): 105 at 16 h, 54% skip, 0 likes, after a very slow start (4 reached at 2 h). Isla (tight, 10 Nov 14:13): 125 at 22 h, 42% skip, 0 likes. Followers 16, unchanged in 24 h; since 9 Nov, 4 rises and 1 fall, credited Ruby pair 1.3 (2.5 per 1,000), Fret 0.7, 2 unexplained. 0 name requests and 0 readable stranger comments (about 2,000 strangers since the offer went visible).
+- **Red flags:** none (no Reel under 10 at 12 h, no API errors, skip under 70%, 7-day reach 1,951, level with last week).
+- **Part twos:** both post-outage part twos stalled well below their part ones (Tessel 127 against 372, Ruby 105 against 408), at 20:00, the day after. They exist to convert, not to reach: the Ruby pair converts 2.5 per 1,000, below Hush (3.1) and Tessel (about 3.7). The two-parter read on 16-17 Nov decides whether to keep making them; the pilot (Brumm, Yonder) separates the teaser from the slot.
+- **Change today (01:40, see below):** the tight-cut test called on the evidence, S4b retired, and all 18 queued tight cuts lengthened to about 14 s, re-rendered and checked by 04:45. Norman (14:00) and Stead (tight, 20:00) post today; Amber (12 Nov 14:00) is the first lengthened Reel.
+- **Next:** the request read on 12 Nov (0 so far, so the offer as worded isn't producing requests), then the end-card decision by 15 Nov.
+
 ## 2026-11-11 01:40 UTC: the tight cut has lost; the 18 queued tight Reels get a lengthening pass
 - **Numbers (48 h or nearly):** the five tight cuts posted so far skip 41-48% (Mary 43, Kip 41, Bob 48, Fret 46, Isla 42); their same-day standard partners skip 31-39% (tight loses 4 of 4 settled pairs). Strangers watch the tight cuts 5.8-6.6 s; the standard E Reels of the same fortnight 7-12 s. Likes per 100: tight median 0, standard 0.5-0.7. Breakouts: 0 of 5 tight, against 2 of 6 standard. Every breakout we've had (Hush, Fond, Summer, Simon, Tessel, Ruby) runs 14-18 s with three beats.
 - **Why call it two days early:** the rule (29 Oct) needed likes plus sends per 100 to at least double with skip no worse. Skip is worse in every settled pair and likes are lower, so the last pairs can't pass it; waiting would only shorten the time to fix what's queued. Stead (tonight 20:00) posts as it is, as the sixth pair.
