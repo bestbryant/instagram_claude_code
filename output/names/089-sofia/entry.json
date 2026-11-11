@@ -229,6 +229,25 @@
         }
       },
       {
+        "text": "They slept through\nmost of it.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.47,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "armchair,armchair",
+          "crowd_gap": 0.24
+        },
+        "seconds": 2.6
+      },
+      {
         "text": "By their silver wedding,\nthey touched.",
         "shot": {
           "framing": "wide",
@@ -243,7 +262,7 @@
         },
         "spec": {
           "crowd_items": "armchair,armchair",
-          "crowd_gap": 0.5
+          "crowd_gap": 0.24
         },
         "onset": {
           "at": 0.8,
@@ -251,7 +270,8 @@
           "spec": {
             "crowd_gap": 0.12
           }
-        }
+        },
+        "seconds": 3.0
       }
     ],
     "end": "Nobody can get to the telly.",
@@ -265,9 +285,6 @@
     ],
     "name_y": 0.1,
     "end_kicker": "For couples who sit closer every year.",
-    "next": {
-      "name": "Summer",
-      "line": "It snows here once every eighty years."
-    }
+    "sign": "Every name has a planet."
   }
 }
