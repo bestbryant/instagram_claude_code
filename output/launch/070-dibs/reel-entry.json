@@ -250,6 +250,32 @@
     },
     "beats": [
       {
+        "text": "Kim was tiny.\nShe meant that one sunset.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.54,
+            0.63
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "child",
+          "crowd_x": 0.4,
+          "crowd_facing": "right",
+          "relief": 0.35,
+          "mist": 0.2,
+          "sun_x": 0.68,
+          "sun_y": 0.56,
+          "sun_size": 0.07
+        },
+        "seconds": 3.0
+      },
+      {
         "text": "Nobody else gets one.",
         "shot": {
           "framing": "wide",
@@ -295,7 +321,7 @@
           "crowd_facing": "in"
         },
         "onset": {
-          "at": 1.6,
+          "at": 1.2,
           "motion": "cut",
           "spec": {
             "palette": "crimson",
