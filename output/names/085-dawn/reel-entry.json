@@ -257,6 +257,28 @@
         }
       },
       {
+        "text": "The queue looked\nthe other way.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.75,
+            1.81
+          ],
+          "focus": [
+            0.47,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 6,
+          "crowd_items": "nap,sit,book,nothing,book,nothing",
+          "crowd_x": 0.53,
+          "crowd_gap": 0.05,
+          "crowd_facing": "right",
+          "daisies": 0
+        }
+      },
+      {
         "text": "He didn't wake her.",
         "shot": {
           "framing": "medium",
@@ -289,7 +311,8 @@
             "stars": null,
             "daisies": 60
           }
-        }
+        },
+        "seconds": 2.9
       }
     ],
     "end": "He let the last bus go.",
@@ -303,10 +326,7 @@
     ],
     "name_y": 0.1,
     "end_kicker": "For people who fall asleep on you.",
-    "next": {
-      "name": "Brolly",
-      "line": "Your mum says it'll brighten up."
-    }
+    "sign": "Every name has a planet."
   },
   "_engine": 5
 }
