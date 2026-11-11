@@ -231,6 +231,30 @@
             "flake_size": 3.0,
             "crowd_items": "nap,cup"
           }
+        },
+        "seconds": 2.2
+      },
+      {
+        "text": "The roads closed.\nMolly made soup.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            2.08
+          ],
+          "focus": [
+            0.44,
+            0.66
+          ]
+        },
+        "seconds": 3.0,
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "snow": true,
+          "particles": "snow",
+          "flake_size": 3.0,
+          "crowd_items": "nap,cup"
         }
       }
     ],
@@ -245,10 +269,7 @@
     ],
     "name_y": 0.12,
     "end_kicker": "For every husband with man flu.",
-    "next": {
-      "name": "Brumm",
-      "line": "Every child here gets one last carry."
-    }
+    "sign": "Every name has a planet."
   },
   "_engine": 5
 }
