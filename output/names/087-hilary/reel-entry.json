@@ -242,6 +242,27 @@
         }
       },
       {
+        "text": "To anything.\nEven the shipping forecast.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.15,
+            2.22
+          ],
+          "focus": [
+            0.54,
+            0.555
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "stars": 1.0,
+          "crowd_items": "hand,walk",
+          "crowd_facing": "out"
+        }
+      },
+      {
         "text": "Every night,\nfor decades.",
         "shot": {
           "framing": "wide",
@@ -260,7 +281,8 @@
           "spec": {
             "stage": 0.5
           }
-        }
+        },
+        "seconds": 2.8
       }
     ],
     "end": "The postman's never been fitter.",
@@ -274,10 +296,7 @@
     ],
     "name_y": 0.1,
     "end_kicker": "For couples who dance in the kitchen.",
-    "next": {
-      "name": "Fond",
-      "line": "Everyone here gets one 'I love you'."
-    }
+    "sign": "Every name has a planet."
   },
   "_engine": 5
 }
