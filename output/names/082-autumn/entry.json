@@ -199,6 +199,28 @@
         }
       },
       {
+        "text": "In front of everyone.\nWith his shopping.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.76
+          ],
+          "focus": [
+            0.44,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 6,
+          "crowd_x": 0.44,
+          "crowd_gap": 0.085,
+          "crowd_items": "nothing,nothing,sit,nothing,nothing,nothing",
+          "crowd_facing": "in"
+        },
+        "seconds": 2.8
+      },
+      {
         "text": "Liam went to help.",
         "shot": {
           "framing": "close",
@@ -212,12 +234,13 @@
           ]
         },
         "onset": {
-          "at": 0.55,
+          "at": 0.9,
           "motion": "cut",
           "spec": {
             "crowd_items": "sit,sit"
           }
-        }
+        },
+        "seconds": 3.4
       }
     ],
     "end": "It was mutual.",
@@ -232,9 +255,6 @@
     "name_y": 0.12,
     "end_kicker": "For everyone who knew straight away.",
     "scrim": 0.5,
-    "next": {
-      "name": "Twain",
-      "line": "Here, you can jump to the planet next door."
-    }
+    "sign": "Every name has a planet."
   }
 }
