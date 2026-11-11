@@ -243,6 +243,28 @@
         }
       },
       {
+        "text": "Every time,\nthe sea stayed dark.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.85,
+            1.92
+          ],
+          "focus": [
+            0.27,
+            0.62
+          ]
+        },
+        "spec": {
+          "sea_glow": false,
+          "crowd": 2,
+          "crowd_items": "nothing,nothing",
+          "crowd_x": 0.31,
+          "crowd_gap": 0.075,
+          "crowd_facing": "in"
+        }
+      },
+      {
         "text": "Finally,\nhe went for it.",
         "shot": {
           "framing": "medium",
@@ -269,7 +291,8 @@
           "spec": {
             "sea_glow": true
           }
-        }
+        },
+        "seconds": 3.0
       }
     ],
     "end": "Her dad was out fishing.",
@@ -283,10 +306,7 @@
     ],
     "name_y": 0.1,
     "end_kicker": "For anyone who took ages to make a move.",
-    "next": {
-      "name": "Fetch",
-      "line": "Dad said no dogs."
-    }
+    "sign": "Every name has a planet."
   },
   "_engine": 5
 }
