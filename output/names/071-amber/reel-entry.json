@@ -251,7 +251,31 @@
             "crowd": 0,
             "mist": 0.25
           }
-        }
+        },
+        "seconds": 2.7
+      },
+      {
+        "text": "It's been amber\nsince half-term.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.72,
+            1.78
+          ],
+          "focus": [
+            0.44,
+            0.66
+          ]
+        },
+        "spec": {
+          "palette": "pumpkin",
+          "mist": 0.25,
+          "crowd": 4,
+          "crowd_items": "sit,sit,sit,sit",
+          "crowd_x": 0.42,
+          "crowd_facing": "right"
+        },
+        "seconds": 2.8
       }
     ],
     "end": "Her mum braked all the way.",

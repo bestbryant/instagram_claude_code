@@ -9982,6 +9982,32 @@
       },
       "beats": [
         {
+          "text": "Kim was tiny.\nShe meant that one sunset.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.54,
+              0.63
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "child",
+            "crowd_x": 0.4,
+            "crowd_facing": "right",
+            "relief": 0.35,
+            "mist": 0.2,
+            "sun_x": 0.68,
+            "sun_y": 0.56,
+            "sun_size": 0.07
+          },
+          "seconds": 3.0
+        },
+        {
           "text": "Nobody else gets one.",
           "shot": {
             "framing": "wide",
@@ -10027,7 +10053,7 @@
             "crowd_facing": "in"
           },
           "onset": {
-            "at": 1.6,
+            "at": 1.2,
             "motion": "cut",
             "spec": {
               "palette": "crimson",
@@ -10321,6 +10347,28 @@
               "crowd_x": 0.44,
               "crowd_facing": "right"
             }
+          },
+          "seconds": 2.8
+        },
+        {
+          "text": "The fish was his idea.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.44,
+              0.62
+            ]
+          },
+          "seconds": 2.9,
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "fish",
+            "crowd_x": 0.44,
+            "crowd_facing": "right"
           }
         }
       ],
@@ -10335,7 +10383,7 @@
       ],
       "name_y": 0.14,
       "end_kicker": "For every mum who's never in the photos.",
-      "sign": "There's a planet for every name."
+      "sign": "Every name has a planet."
     }
   },
   {
@@ -10507,6 +10555,25 @@
           }
         },
         {
+          "text": "At Kev's thirtieth,\nnobody did till midnight.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.18
+            ],
+            "focus": [
+              0.5,
+              0.55
+            ]
+          },
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0,
+            "flake_size": 1.8
+          }
+        },
+        {
           "text": "Meera said,\n'Love your shoes.'",
           "shot": {
             "framing": "group",
@@ -10528,9 +10595,17 @@
               "particles": "none",
               "daisies": 90,
               "crowd_facing": "in",
-              "crowd_items": "sing,cup,sing,cup,hand,cup"
+              "crowd_items": "sing,cup,sing,cup,hand,cup",
+              "suns": 1,
+              "flake_size": 1.2
             }
-          }
+          },
+          "spec": {
+            "palette": "teal_night",
+            "suns": 0,
+            "flake_size": 1.8
+          },
+          "seconds": 2.9
         }
       ],
       "end": "Spring by the sausage rolls.",
@@ -10544,7 +10619,7 @@
       ],
       "name_y": 0.14,
       "end_kicker": "For anyone who'd talk to a lamppost.",
-      "sign": "Every name has its own planet."
+      "sign": "Every name has a planet."
     }
   },
   {
@@ -10852,7 +10927,23 @@
               "relief": 0.2,
               "layers": 2
             }
-          }
+          },
+          "seconds": 2.7
+        },
+        {
+          "text": "Ron didn't notice a thing.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.95,
+              2.02
+            ],
+            "focus": [
+              0.42,
+              0.63
+            ]
+          },
+          "seconds": 2.8
         }
       ],
       "end": "She'd had her hair done.",
@@ -10866,10 +10957,7 @@
       ],
       "name_y": 0.1,
       "end_kicker": "For people who'd marry them again.",
-      "next": {
-        "name": "Brumm",
-        "line": "Gravity's double. A child's last carry."
-      }
+      "sign": "Every name has a planet."
     }
   },
   {
@@ -11117,6 +11205,28 @@
           }
         },
         {
+          "text": "Every time,\nthe sea stayed dark.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.85,
+              1.92
+            ],
+            "focus": [
+              0.27,
+              0.62
+            ]
+          },
+          "spec": {
+            "sea_glow": false,
+            "crowd": 2,
+            "crowd_items": "nothing,nothing",
+            "crowd_x": 0.31,
+            "crowd_gap": 0.075,
+            "crowd_facing": "in"
+          }
+        },
+        {
           "text": "Finally,\nhe went for it.",
           "shot": {
             "framing": "medium",
@@ -11143,7 +11253,8 @@
             "spec": {
               "sea_glow": true
             }
-          }
+          },
+          "seconds": 3.0
         }
       ],
       "end": "Her dad was out fishing.",
@@ -11157,10 +11268,7 @@
       ],
       "name_y": 0.1,
       "end_kicker": "For anyone who took ages to make a move.",
-      "next": {
-        "name": "Fetch",
-        "line": "Dad said no dogs."
-      }
+      "sign": "Every name has a planet."
     }
   },
   {
@@ -11378,7 +11486,33 @@
             "spec": {
               "lanterns": 36
             }
-          }
+          },
+          "seconds": 2.6
+        },
+        {
+          "text": "She says it\na lot.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.55,
+              0.55
+            ]
+          },
+          "spec": {
+            "lanterns": 54
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "rise",
+            "spec": {
+              "lanterns": 90
+            }
+          },
+          "seconds": 2.8
         }
       ],
       "end": "He's never asked her to stop.",
@@ -11392,10 +11526,7 @@
       ],
       "name_y": 0.12,
       "end_kicker": "For couples with embarrassing pet names.",
-      "next": {
-        "name": "Yonder",
-        "line": "Nan waves until you're out of sight."
-      }
+      "sign": "Every name has a planet."
     }
   },
   {
@@ -11625,6 +11756,26 @@
           }
         },
         {
+          "text": "His tea's the colour\nof dishwater.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              3.1,
+              3.2
+            ],
+            "focus": [
+              0.4,
+              0.655
+            ]
+          },
+          "spec": {
+            "palette": "sepia",
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.375
+          }
+        },
+        {
           "text": "Friday,\nshe came home.",
           "shot": {
             "framing": "medium",
@@ -11652,7 +11803,8 @@
               "crowd_items": "cup,nothing",
               "crowd_x": 0.42
             }
-          }
+          },
+          "seconds": 2.8
         }
       ],
       "end": "Odd socks, since Monday.",
@@ -11666,10 +11818,7 @@
       ],
       "name_y": 0.1,
       "end_kicker": "For couples who only have weekends.",
-      "next": {
-        "name": "Yonder",
-        "line": "Nothing here goes out of sight."
-      }
+      "sign": "Every name has a planet."
     }
   },
   {
@@ -11849,6 +11998,27 @@
       },
       "beats": [
         {
+          "text": "Couples hold hands.\nNot romance. Admin.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.16
+            ],
+            "focus": [
+              0.42,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_x": 0.42,
+            "crowd_gap": 0.052,
+            "crowd_items": "walk,walk",
+            "crowd_facing": "right"
+          }
+        },
+        {
           "text": "Gwen's husband\nwandered off.",
           "shot": {
             "framing": "group",
@@ -11881,7 +12051,8 @@
             "spec": {
               "crowd_items": "hand,hand,hand,hand,flower,hand,hand"
             }
-          }
+          },
+          "seconds": 3.2
         }
       ],
       "end": "He'd gone to get her flowers.",
@@ -11895,10 +12066,7 @@
       ],
       "name_y": 0.1,
       "end_kicker": "For husbands who wander off in shops.",
-      "next": {
-        "name": "Figment",
-        "line": "Imaginary friends retire here."
-      }
+      "sign": "Every name has a planet."
     }
   },
   {
@@ -12087,6 +12255,28 @@
           }
         },
         {
+          "text": "That was a fox,\napparently.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.33,
+              0.66
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_x": 0.31,
+            "crowd_gap": 0.12,
+            "crowd_items": "nothing,nothing,dog",
+            "crowd_facing": "right"
+          },
+          "seconds": 2.5
+        },
+        {
           "text": "For his sixtieth,\nshe lost on purpose.",
           "shot": {
             "framing": "group",
@@ -12105,7 +12295,8 @@
             "spec": {
               "sign": "RIGHT:|DEREK"
             }
-          }
+          },
+          "seconds": 3.2
         }
       ],
       "end": "He's had mugs made.",
@@ -12119,10 +12310,7 @@
       ],
       "name_y": 0.12,
       "end_kicker": "For the one who's always right.",
-      "next": {
-        "name": "Kith",
-        "line": "Houses here follow your best friend."
-      }
+      "sign": "Every name has a planet."
     }
   },
   {
@@ -12305,7 +12493,24 @@
           }
         },
         {
-          "text": "Emma went up too.",
+          "text": "Emma ate\nhis half of the cake.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.56,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd_items": "spoon"
+          }
+        },
+        {
+          "text": "At midnight,\nEmma went up too.",
           "shot": {
             "framing": "medium",
             "zoom": [
@@ -12318,12 +12523,13 @@
             ]
           },
           "onset": {
-            "at": 0.55,
+            "at": 1.1,
             "motion": "rise",
             "spec": {
               "crowd_items": "aloft"
             }
-          }
+          },
+          "seconds": 3.2
         }
       ],
       "end": "Best one they've had.",
@@ -12337,10 +12543,7 @@
       ],
       "name_y": 0.08,
       "end_kicker": "For whoever forgot the anniversary.",
-      "next": {
-        "name": "Clasp",
-        "line": "Hugs here last as long as you've been apart."
-      }
+      "sign": "Every name has a planet."
     }
   }
 ]
