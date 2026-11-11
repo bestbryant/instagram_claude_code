@@ -303,7 +303,23 @@
             "relief": 0.2,
             "layers": 2
           }
-        }
+        },
+        "seconds": 2.7
+      },
+      {
+        "text": "Ron didn't notice a thing.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.95,
+            2.02
+          ],
+          "focus": [
+            0.42,
+            0.63
+          ]
+        },
+        "seconds": 2.8
       }
     ],
     "end": "She'd had her hair done.",
@@ -317,9 +333,6 @@
     ],
     "name_y": 0.1,
     "end_kicker": "For people who'd marry them again.",
-    "next": {
-      "name": "Brumm",
-      "line": "Gravity's double. A child's last carry."
-    }
+    "sign": "Every name has a planet."
   }
 }
