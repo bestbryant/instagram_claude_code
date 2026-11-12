@@ -2,6 +2,11 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-12 08:20 UTC: the request read, week one: 0 from 2,380 strangers
+- **Numbers:** 14 Reels since the offer became visible (Milo, 5 Nov, to Stead, 11 Nov) reached 2,380 accounts. Their 14 comments are all ours (epilogues and part-two pointers); 0 stranger comments and 0 name requests. Followers 12 to 17 over the same week, all credited to the teased pairs and Fret.
+- **Against the rule set on 2 Nov:** 3 or more requests in a week would have been a signal; 1-2 would run a second week; the rule only ends the test on 0 after two weeks. So the offer (caption line 1 and the 'Every name has a planet.' sign-off) runs its second week as planned, and the 18 lengthened Reels keep that sign-off. Final read 19 Nov: if still 0, the end card goes to each Reel's dedication and caption line 1 back to the planet line (OFFER_FIRST = False) from the next Reels that can be re-rendered in time.
+- **What it already says:** at our size, an open name offer isn't something strangers act on (0 in about 8,700 reached since 2 Nov, counting the pre-visible days). Follows came from the teased two-parters, not from the offer. The end-card decision for 18 Nov onward is therefore: keep the offer until the 19 Nov read (no extra re-render now), and prepare the dedication swap so it can ship on 20 Nov.
+
 ## 2026-11-11 daily review (12:15 UTC): the tight cut is retired and 18 Reels lengthened; part twos reach a quarter of their part ones
 - **Numbers (since the last review):** Ruby part one closes at 408 reached at 46 h (31% skip, 54% watched, 3 likes, 1 save: 0.25 sends per 100, still under the line). Ruby part two (10 Nov 20:09): 105 at 16 h, 54% skip, 0 likes, after a very slow start (4 reached at 2 h). Isla (tight, 10 Nov 14:13): 125 at 22 h, 42% skip, 0 likes. Followers 16, unchanged in 24 h; since 9 Nov, 4 rises and 1 fall, credited Ruby pair 1.3 (2.5 per 1,000), Fret 0.7, 2 unexplained. 0 name requests and 0 readable stranger comments (about 2,000 strangers since the offer went visible).
 - **Red flags:** none (no Reel under 10 at 12 h, no API errors, skip under 70%, 7-day reach 1,951, level with last week).
