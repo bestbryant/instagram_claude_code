@@ -2,6 +2,13 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-12 daily review (12:20 UTC): the last tight pair goes the same way; no breakout in seven untreated Reels
+- **Numbers (since the last review):** Norman (11 Nov 14:11, B name planet, 15 s): 109 at 22 h, 38% skip, 0 likes. Stead (11 Nov 20:09, the last tight cut): 148 at 16 h, 45% skip, 64% watched, 1 like (0.7 per 100). Ruby part two closes at 105 (40 h), 54% skip, but 1 save: 1.0 sends per 100, the first Reel of the month on the sends line. Isla at 46 h: 125, 42% skip, 0.8 sends per 100. Followers 16 to 17 (credited Stead 0.5, Norman 0.5). 0 requests, 0 stranger comments (week-one read at 08:20: 0 from 2,380).
+- **Tight test, final settled pair:** Stead 45% skip against Norman 38% the same day. Tight loses 5 of the 5 standard-against-tight pairs; it beat only a part two (Isla 42% against Ruby part two 54%). The call made yesterday stands. The lengthened Reels start today with Amber (14:00).
+- **Breakouts:** none since Ruby part one (9 Nov). The seven untreated Reels since then reached 105-148. The next teased part one is Bramble (13 Nov 14:00, part two Sat 14 Nov 20:00): the third 14:00 teaser test.
+- **Red flags:** none (7-day reach 1,967 after the weekly roll, no Reel under 10 at 12 h, skip under 70%, no API errors).
+- **Change:** an operating fix from yesterday's evidence. The container restarted at 01:48 UTC the moment the session went idle and killed a running writers' workflow (resumed from its journal, 25 minutes lost), just as it kills background renders. Rule added to BACKLOG 'Rendering': a workflow or render must be waited on in the foreground (scratchpad/wf_wait.sh and qa_wait.sh, each wait under 10 minutes) until it finishes; never end a run with one in the background.
+
 ## 2026-11-12 08:20 UTC: the request read, week one: 0 from 2,380 strangers
 - **Numbers:** 14 Reels since the offer became visible (Milo, 5 Nov, to Stead, 11 Nov) reached 2,380 accounts. Their 14 comments are all ours (epilogues and part-two pointers); 0 stranger comments and 0 name requests. Followers 12 to 17 over the same week, all credited to the teased pairs and Fret.
 - **Against the rule set on 2 Nov:** 3 or more requests in a week would have been a signal; 1-2 would run a second week; the rule only ends the test on 0 after two weeks. So the offer (caption line 1 and the 'Every name has a planet.' sign-off) runs its second week as planned, and the 18 lengthened Reels keep that sign-off. Final read 19 Nov: if still 0, the end card goes to each Reel's dedication and caption line 1 back to the planet line (OFFER_FIRST = False) from the next Reels that can be re-rendered in time.
