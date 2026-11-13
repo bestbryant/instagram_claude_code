@@ -2,6 +2,12 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-13 08:15 UTC: Selk was never distributed (0 views at 12 h)
+- **Symptom:** Selk (No. 007, posted 12 Nov 20:10 UTC, short-E, 14.8 s) has 0 reach and 0 views at 12 h. The longest any earlier Reel sat at 0 views was 4 h (Max); every other Reel had views within 4 h. Amber (posted 6 h earlier) kept gaining all night (to 131), so media insights weren't frozen.
+- **Checked:** the media is published as a Reel (media_product_type REELS, shared to feed), the video and cover processed (media_url, thumbnail_url served), the file matches the others (1080x1920 h264, AAC 48 kHz, 7.1 MB, 14.8 s), the caption is ordinary, and Selk was never posted before in any form (no duplicate). No API error at publish.
+- **Hypotheses:** (1) Instagram held this one Reel back (an integrity or originality review, or a recommendation-eligibility flag on it); (2) an account-level restriction starting with this post; (3) an insights fault on this media only. Only the app shows (1) and (2), so the owner is asked to look (OWNER_TODO, 13 Nov).
+- **Next:** Bramble part one posts at 14:00 as planned (its part two is a dated promise for Saturday). If Bramble has views by 15:10, Selk is a one-off and stays up (no repost: a duplicate would risk more). If Bramble is also at 0 views at 3 h, that's an account-level problem: posting drops to 1 a day and the next posts wait until the cause is known; the Bramble teaser gets a dated correction if its part two can't post usefully.
+
 ## 2026-11-12 daily review (12:20 UTC): the last tight pair goes the same way; no breakout in seven untreated Reels
 - **Numbers (since the last review):** Norman (11 Nov 14:11, B name planet, 15 s): 109 at 22 h, 38% skip, 0 likes. Stead (11 Nov 20:09, the last tight cut): 148 at 16 h, 45% skip, 64% watched, 1 like (0.7 per 100). Ruby part two closes at 105 (40 h), 54% skip, but 1 save: 1.0 sends per 100, the first Reel of the month on the sends line. Isla at 46 h: 125, 42% skip, 0.8 sends per 100. Followers 16 to 17 (credited Stead 0.5, Norman 0.5). 0 requests, 0 stranger comments (week-one read at 08:20: 0 from 2,380).
 - **Tight test, final settled pair:** Stead 45% skip against Norman 38% the same day. Tight loses 5 of the 5 standard-against-tight pairs; it beat only a part two (Isla 42% against Ruby part two 54%). The call made yesterday stands. The lengthened Reels start today with Amber (14:00).
