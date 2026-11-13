@@ -627,6 +627,9 @@ def cmd_stats(a):
         print(f"{x['at'][:16]} {x['entry']:>4} {x['kind']:<8} reach {r:>5}  views {vals.get('views', '-'):>5}  "
               f"likes {vals.get('likes', '-'):>3}  shares {vals.get('shares', '-'):>3}  saves {vals.get('saved', '-'):>3}  "
               f"watch {vals.get('ig_reels_avg_watch_time', '-')}  skip {vals.get('reels_skip_rate', '-')}")
+        if x["kind"] == "reel" and age >= 5 and not vals.get("views"):
+            # no Reel before Selk (12 Nov) went past 4 h without a view; Selk sat at 0 for 12 h+ (not distributed)
+            print(f"ALERT: {x['entry']} has 0 views at {age:.0f} h: likely held back by Instagram (see DIAGNOSIS 13 Nov)")
     acct = p._call("GET", p.user_id, fields="followers_count,media_count")
     # the account funnel over the last 7 days: strangers reached -> profile visits -> follows (follower count). Instagram
     # counts account insights by its own (Pacific) day, so a 24 h window just after its midnight reads 0

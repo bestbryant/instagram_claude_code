@@ -2,6 +2,12 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-13 daily review (12:20 UTC): the first lengthened Reel holds strangers 2 s longer; Selk still unseen
+- **Numbers (since the last review):** Amber (12 Nov 14:12, the first lengthened Reel, 14.1 s): 134 at 22 h, 42% skip, **8.5 s average watch** (the five tight cuts: 5.8-6.6 s; Norman, a 15 s B cut, 6.6 s), 61% watched, 0 likes. Stead (the last tight cut) 181 at 40 h, 42% skip, 7.6 s, 1 like. Norman closes at 109 (46 h), 38% skip. Selk (12 Nov 20:10): **0 views at 16 h** (see 08:15). Followers 17, flat for 36 h. 0 requests, 0 stranger comments.
+- **Reading:** one lengthened Reel is not a verdict, but the first one does what it was made to do: about 2 s more watch per stranger at the same skip and reach. Its 48 h read is tomorrow; the lengthened run continues (Dibs tonight, Victoria tomorrow).
+- **Red flags:** no listed flag fires (one Reel at 0, not three). Selk is being treated as one anyway: owner asked to check it in the app; Bramble (14:00) tells us whether the account is affected.
+- **Change:** `atlas stats` now prints an ALERT for any Reel with 0 views at 5 h or more, so a held-back Reel is caught at the first run past 5 h instead of being noticed by eye (Selk was noticed at 2 h but only judged at 12 h). It fires for Selk now.
+
 ## 2026-11-13 08:15 UTC: Selk was never distributed (0 views at 12 h)
 - **Symptom:** Selk (No. 007, posted 12 Nov 20:10 UTC, short-E, 14.8 s) has 0 reach and 0 views at 12 h. The longest any earlier Reel sat at 0 views was 4 h (Max); every other Reel had views within 4 h. Amber (posted 6 h earlier) kept gaining all night (to 131), so media insights weren't frozen.
 - **Checked:** the media is published as a Reel (media_product_type REELS, shared to feed), the video and cover processed (media_url, thumbnail_url served), the file matches the others (1080x1920 h264, AAC 48 kHz, 7.1 MB, 14.8 s), the caption is ordinary, and Selk was never posted before in any form (no duplicate). No API error at publish.
