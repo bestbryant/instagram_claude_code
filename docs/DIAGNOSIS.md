@@ -2,6 +2,13 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-14 daily review (12:15 UTC): the lengthened Reels hold strangers longer and bring the follows
+- **Numbers (since the last review):** Amber (lengthened, 12 Nov 14:12) closes at 141 (46 h): 42% skip, 8.6 s watched (61%), 0 likes. Dibs (lengthened, 13 Nov 20:09): 232 at 16 h, 35% skip, 8.5 s (60%), 1 like, 154 at 6 h. Bramble part one (teased, posted 15:01 because the run fired late): 111 at 21 h, 29% skip, 7.1 s; no breakout yet (Tessel and Ruby took off on day two). Stead closes at 181, Norman at 109. Selk: 1 reached at 40 h (held back; the owner's in-app check is still open).
+- **Follows:** 17 to 21 since 12 Nov (4 rises, 0 falls), credited Amber 1.8 (12.8 per 1,000), Dibs 1.8 (7.7 per 1,000), Bramble 0.4. The two lengthened Reels converted about 10 per 1,000 together, the best since the Hush pair (3.1) and well above the tight cuts (Stead 3.0, Fret 6.2 on 0.7 follows) and the standalone baseline (about 0.9). Small numbers (4 follows), but the direction matches the watch time: lengthened 8.5-8.6 s against tight 5.8-6.6 s.
+- **Requests:** 0 (week two of the offer test; final read 19 Nov).
+- **Red flags:** none (Selk is the one held Reel; every post since was distributed).
+- **Change:** the lengthened shape becomes the house rule for new writing (HOUSE_RULES S4: three beats with an escalation or a held reaction that is its own laugh, turn by about 7.5 s, about 14 s in all), and batch 8 is now on the backlog to be written to it from 18 Nov, after the two-parter read (16-17 Nov) decides whether it is written as teased pairs.
+
 ## 2026-11-13 daily review (12:20 UTC): the first lengthened Reel holds strangers 2 s longer; Selk still unseen
 - **Numbers (since the last review):** Amber (12 Nov 14:12, the first lengthened Reel, 14.1 s): 134 at 22 h, 42% skip, **8.5 s average watch** (the five tight cuts: 5.8-6.6 s; Norman, a 15 s B cut, 6.6 s), 61% watched, 0 likes. Stead (the last tight cut) 181 at 40 h, 42% skip, 7.6 s, 1 like. Norman closes at 109 (46 h), 38% skip. Selk (12 Nov 20:10): **0 views at 16 h** (see 08:15). Followers 17, flat for 36 h. 0 requests, 0 stranger comments.
 - **Reading:** one lengthened Reel is not a verdict, but the first one does what it was made to do: about 2 s more watch per stranger at the same skip and reach. Its 48 h read is tomorrow; the lengthened run continues (Dibs tonight, Victoria tomorrow).
