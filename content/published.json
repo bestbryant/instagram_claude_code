@@ -508,5 +508,16 @@
     "at": "2026-11-13T20:09:31+00:00",
     "sha1": "11842e4d6cd27a34e17d8ec79b260d5a94a57017",
     "format": "short-E"
+  },
+  {
+    "day": 9,
+    "entry": "068",
+    "kind": "reel",
+    "not_before": "2026-11-14T14:00:00Z",
+    "note": "short cut, checked",
+    "media_id": "18146554708610220",
+    "at": "2026-11-14T14:10:05+00:00",
+    "sha1": "207b98cca9df009690cd7ee01c905c4368101ab9",
+    "format": "short-E"
   }
 ]
