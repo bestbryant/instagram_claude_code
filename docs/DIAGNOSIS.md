@@ -2,6 +2,10 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-14 18:10 UTC: Dibs breaks out, a lengthened, unteased 20:00 Reel
+- **Numbers:** Dibs (13 Nov 20:09, the second lengthened Reel) passed 300 strangers at 22 h: 321 reached, 493 views, 3 likes, 30% skip, 8.8 s average watch, climbing all day (154 at 6 h, 232 at 16 h, 295 at 21 h).
+- **Why it matters:** it is the first breakout since the outage that was neither a teased part one nor a 14:00 post (Tessel and Ruby were both). So the teaser and the 14:00 slot aren't the only route out of the test pool; holding strangers for about 9 s is one too. This supports the lengthened shape (S4, 14 Nov) and weakens 'teaser or nothing'. The two-parter read (16-17 Nov) and the 20:00 teaser pilot (Brumm 18 Nov) still decide whether batch 8 comes as pairs.
+
 ## 2026-11-14 daily review (12:15 UTC): the lengthened Reels hold strangers longer and bring the follows
 - **Numbers (since the last review):** Amber (lengthened, 12 Nov 14:12) closes at 141 (46 h): 42% skip, 8.6 s watched (61%), 0 likes. Dibs (lengthened, 13 Nov 20:09): 232 at 16 h, 35% skip, 8.5 s (60%), 1 like, 154 at 6 h. Bramble part one (teased, posted 15:01 because the run fired late): 111 at 21 h, 29% skip, 7.1 s; no breakout yet (Tessel and Ruby took off on day two). Stead closes at 181, Norman at 109. Selk: 1 reached at 40 h (held back; the owner's in-app check is still open).
 - **Follows:** 17 to 21 since 12 Nov (4 rises, 0 falls), credited Amber 1.8 (12.8 per 1,000), Dibs 1.8 (7.7 per 1,000), Bramble 0.4. The two lengthened Reels converted about 10 per 1,000 together, the best since the Hush pair (3.1) and well above the tight cuts (Stead 3.0, Fret 6.2 on 0.7 follows) and the standalone baseline (about 0.9). Small numbers (4 follows), but the direction matches the watch time: lengthened 8.5-8.6 s against tight 5.8-6.6 s.
