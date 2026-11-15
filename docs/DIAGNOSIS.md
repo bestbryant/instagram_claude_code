@@ -2,6 +2,12 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-15 daily review (12:15 UTC): Dibs settles at 374; the Bramble pair doesn't take off; batch 8's format rule set before the read
+- **Numbers (since the last review):** Dibs (lengthened, 20:00) 371-374 at 40 h, 30% skip, 9.1 s watched (64%), 4 likes (1.1 per 100). Victoria (lengthened, 14 Nov 14:10) 130 at 22 h, 34% skip, 6.7 s, 1 save (0.8 sends per 100). Bramble part one closes at 114 (45 h, 30% skip); Bramble part two (14 Nov 20:10) 114 at 16 h, 45% skip. Amber closes at 141. Followers 21, flat for 30 h (the Dibs breakout added about 140 strangers and no follows). 0 requests (final offer read 19 Nov).
+- **Follows by unit since 13 Nov:** Amber 12.8 per 1,000 (1.8), Dibs 4.8 (1.8), Bramble pair 1.8 (0.4). Teased pairs so far: Hush 3.1, Tessel about 3.7, Ruby 2.5, Bramble 1.8 per 1,000. Breakouts after a teaser: Tessel and Ruby yes, Bramble no; the one unteased lengthened 20:00 Reel (Dibs) did.
+- **Red flags:** none. 7-day reach 1,664 after the weekly roll.
+- **Change (a decision rule, set before the 16-17 Nov two-parter read so it can't bend):** batch 8 is written as lengthened standalone Reels unless the pairs beat them. Pairs win only if, pooled over Hush, Tessel, Ruby, Bramble and the 20:00 pilot's Brumm (19 Nov), they convert at least 1.5x the pooled lengthened singles (Amber, Dibs, Victoria, Likeness, Bill, Thaw) per 1,000 reached, with at least 6 follows between them. Otherwise teasers are kept for at most one pair a week, where a planet's epilogue already implies a scene.
+
 ## 2026-11-14 18:10 UTC: Dibs breaks out, a lengthened, unteased 20:00 Reel
 - **Numbers:** Dibs (13 Nov 20:09, the second lengthened Reel) passed 300 strangers at 22 h: 321 reached, 493 views, 3 likes, 30% skip, 8.8 s average watch, climbing all day (154 at 6 h, 232 at 16 h, 295 at 21 h).
 - **Why it matters:** it is the first breakout since the outage that was neither a teased part one nor a 14:00 post (Tessel and Ruby were both). So the teaser and the 14:00 slot aren't the only route out of the test pool; holding strangers for about 9 s is one too. This supports the lengthened shape (S4, 14 Nov) and weakens 'teaser or nothing'. The two-parter read (16-17 Nov) and the 20:00 teaser pilot (Brumm 18 Nov) still decide whether batch 8 comes as pairs.
