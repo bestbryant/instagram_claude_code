@@ -2,6 +2,11 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-16 14:20 UTC: Grace's first post attempt failed on a jsDelivr 404
+- **Symptom:** the 14:11 run raised `HTTP Error 404` before creating a container; nothing was posted.
+- **Cause:** `_video_url` checks the video on jsDelivr first and fell back to raw.githubusercontent only on a 403 (jsDelivr's answer since 27 Oct). jsDelivr now answers 404 or 503 for the repo, and the raw URL served the file fine.
+- **Fix:** fall back on any jsDelivr error (commit "Video URL: fall back..."). Grace then posted at 14:17 (media 18085518293347896), 17 minutes late. Every Reel since 27 Oct had gone out by the raw URL anyway, so nothing else changes.
+
 ## 2026-11-16 daily review (12:30 UTC): Likeness breaks out at 20:00 too; the two-parter read favours singles; Bill moves to 20:00
 - **Numbers (since the last review):** Likeness (lengthened, 15 Nov 20:09) passed 300 at 11 h and is at 465 at 16 h, still climbing: 29% skip, 8.8 s watched (62%), 4 likes, 1 save, the best Reel since the outage. Miles (15 Nov 14:08, 14.7 s, two beats, version C) closes at 139 (33% skip, 9.8 s watched). Victoria closes at 135, Bramble part two at 117. Followers 21 to 22, credited to Likeness (2.2 per 1,000). 0 requests, 0 stranger comments. 7-day reach 1,907 after the weekly roll.
 - **The two-parter read (16-17 Nov, against the 15 Nov rule):** the pooled pairs (Hush, Tessel, Ruby, Bramble) converted 9.8 follows from 3,286 reached, 3.0 per 1,000. The pooled lengthened singles so far (Amber, Dibs, Victoria, Likeness) converted 4.6 from 1,115, 4.1 per 1,000. That is 0.7x, against the 1.5x bar. Reach tells the same story: part twos reached about a third of their part ones (127, 105, 117 against 375, 409, 116), and the two lengthened singles at 20:00 reached as far as the teased part ones did (374, 465 against 375, 409). For pairs to clear the bar, the Brumm pair (18-19 Nov) would need about 13 follows if Bill and Thaw convert like the singles so far; the best pair ever (Hush) got 6.3. The rule still closes on 20 Nov, unchanged, but batch 8 is now planned as lengthened standalone Reels.
