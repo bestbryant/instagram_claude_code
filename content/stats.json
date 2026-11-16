@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-16T21:08:04+00:00",
+ "fetched_at": "2026-11-16T22:10:04+00:00",
  "followers": 22,
  "posts": {
   "17874537072639047": {
@@ -612,13 +612,13 @@
    "kind": "reel",
    "at": "2026-11-14T14:10:05+00:00",
    "reach": 135,
-   "views": 179,
+   "views": 180,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 1,
-   "ig_reels_avg_watch_time": 6626,
-   "reels_skip_rate": 35.6
+   "ig_reels_avg_watch_time": 6595,
+   "reels_skip_rate": 36
   },
   "18139722805644629": {
    "entry": "011b",
@@ -651,39 +651,39 @@
    "kind": "reel",
    "at": "2026-11-15T20:09:41+00:00",
    "reach": 584,
-   "views": 779,
+   "views": 780,
    "likes": 4,
    "comments": 1,
    "shares": 0,
    "saved": 1,
    "ig_reels_avg_watch_time": 8744,
-   "reels_skip_rate": 29
+   "reels_skip_rate": 28.9
   },
   "18085518293347896": {
    "entry": "037",
    "kind": "reel",
    "at": "2026-11-16T14:17:14+00:00",
-   "reach": 30,
-   "views": 36,
+   "reach": 34,
+   "views": 49,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 4929,
-   "reels_skip_rate": 61.3
+   "ig_reels_avg_watch_time": 5613,
+   "reels_skip_rate": 47.6
   },
   "17967300228236507": {
    "entry": "072",
    "kind": "reel",
    "at": "2026-11-16T20:10:35+00:00",
-   "reach": 0,
-   "views": 2,
+   "reach": 4,
+   "views": 7,
    "likes": 0,
    "comments": 1,
    "shares": 0,
    "saved": 0,
-   "ig_reels_avg_watch_time": 0,
-   "reels_skip_rate": 0
+   "ig_reels_avg_watch_time": 7069,
+   "reels_skip_rate": 33.3
   }
  }
 }
