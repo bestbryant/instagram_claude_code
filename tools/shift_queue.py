@@ -1,0 +1,92 @@
+"""Move every unposted row of the queue later by whole days (the outage rule: never catch up).
+
+    python3 tools/shift_queue.py --days 1            # show what would change
+    python3 tools/shift_queue.py --days 1 --apply    # write schedule.json, comments.json and the content files
+
+It shifts not_before on every unposted schedule row (rows marked fixed_date keep their dates),
+shifts post_at on every unposted comment, and re-dates each unposted part one's teaser
+(short.sign 'Part two, <Weekday>: ...') to the weekday its part two now posts. A part one whose
+teaser changed must be re-rendered and checked before it posts (check_item reports it stale).
+"""
+import argparse
+import json
+import re
+from datetime import datetime, timedelta
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+CONTENT = ROOT / "content"
+CONTENT_FILES = ["launch.json", "names.json", "sequels.json", "charted.json"]
+TEASER = re.compile(r"^Part two, (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday):")
+
+
+def _iso(s):
+    return datetime.fromisoformat(s.replace("Z", "+00:00"))
+
+
+def _z(d):
+    return d.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--days", type=int, required=True)
+    ap.add_argument("--apply", action="store_true")
+    a = ap.parse_args()
+    delta = timedelta(days=a.days)
+
+    schedule = json.loads((CONTENT / "schedule.json").read_text())
+    log = json.loads((CONTENT / "published.json").read_text())
+    done = {(x["entry"], x["kind"]) for x in log}
+    new_slot = {}
+    for row in schedule:
+        if (row["entry"], row["kind"]) in done or row.get("fixed_date") or not row.get("not_before"):
+            continue
+        old = row["not_before"]
+        row["not_before"] = _z(_iso(old) + delta)
+        new_slot[row["entry"]] = _iso(row["not_before"])
+        print(f"{row['entry']:5} {old} -> {row['not_before']}")
+
+    comments = json.loads((CONTENT / "comments.json").read_text())
+    for c in comments:
+        if c.get("posted") or not c.get("post_at"):
+            continue
+        old = c["post_at"]
+        c["post_at"] = _z(_iso(old) + delta)
+        print(f"comment on {c.get('on')}: {old} -> {c['post_at']}")
+
+    rerender = []
+    changed_files = {}
+    for f in CONTENT_FILES:
+        path = CONTENT / f
+        if not path.exists():
+            continue
+        entries = json.loads(path.read_text())
+        dirty = False
+        for e in entries:
+            sign = (e.get("short") or {}).get("sign") or ""
+            m = TEASER.match(sign)
+            if not m or e["id"] not in new_slot or f"{e['id']}b" not in new_slot:
+                continue
+            day = new_slot[f"{e['id']}b"].strftime("%A")
+            if day != m.group(1):
+                e["short"]["sign"] = sign.replace(m.group(1), day, 1)
+                dirty = True
+                rerender.append(e["id"])
+                print(f"teaser {e['id']}: '{sign}' -> '{e['short']['sign']}'")
+        if dirty:
+            changed_files[path] = entries
+
+    if a.apply:
+        dump = lambda obj, ind: json.dumps(obj, indent=ind, ensure_ascii=False) + "\n"
+        (CONTENT / "schedule.json").write_text(dump(schedule, 1))   # the files' own indents (checked 17 Nov)
+        (CONTENT / "comments.json").write_text(dump(comments, 2))
+        for path, entries in changed_files.items():
+            path.write_text(json.dumps(entries, indent=2, ensure_ascii=False) + "\n")
+        print("written." + (f" Re-render and check: {' '.join(rerender)}" if rerender else ""))
+    else:
+        print("dry run (add --apply to write)." + (f" Would need re-renders: {' '.join(rerender)}" if rerender else ""))
+
+
+if __name__ == "__main__":
+    main()
