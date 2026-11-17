@@ -2,6 +2,11 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-17 17:10 UTC: the container restart wiped the scratchpad, including the token
+- **Symptom:** the 17:08 run found the scratchpad empty (uptime 2 min): `ig/token.env` was gone, along with every helper script kept there (render_queue.py, qa_sheet.py, voice_qa.py, recaption.py, room/add_shorts.py, short_preview.py, hook_compare.py, wf_wait.sh, qa_wait.sh). Without IG_ACCESS_TOKEN, `next` and `stats` stop at once.
+- **Cause:** earlier restarts kept the scratchpad; this one didn't. The token and the tools were only ever there by design (never commit the token), so nothing durable held them.
+- **Fix:** the token belongs in the cloud environment's settings, as the environment variable IG_ACCESS_TOKEN, which survives restarts; the owner has been asked (OWNER_TODO, Urgent). The hourly command now sources token.env only if it exists. The helper scripts will be rebuilt in the repo under tools/ (no secrets in them) when they are next needed: the 19 Nov end-card swap and batch 8. Posting is stopped until the token is back: Thaw (17 Nov 20:00) is missed. If the queue falls more than a slot behind, it moves later by whole days, with Brumm's 'Part two, Thursday' teaser fixed to match, per the outage rule.
+
 ## 2026-11-17 daily review (12:30 UTC): the first 3 seconds are the gate; Bill doesn't break out at 20:00
 - **Numbers (since the last review):** Likeness closes at 585 (40 h; insights frozen since 20:00), 29% skip, 8.7 s watched, 1 follow. Grace (16 Nov 14:17, two beats, version B) 117 at 22 h, 45% skip, 5.8 s; it started very slowly (24 at 5 h) and caught up overnight. Bill (lengthened, 16 Nov 20:10, the slot test's first 20:00 Reel) 145 at 16 h, 50% skip, 7.5 s, 1 like, 1 share (the first share since 4 Nov). Followers 22 (no change). 0 requests, 0 stranger comments. 7-day reach 1,993 after the roll.
 - **Slot test:** lengthened Reels at 20:00 have broken out 2 of 3 times (Dibs, Likeness; not Bill), and 0 of 2 at 14:00. It runs on to the 24 Nov read.

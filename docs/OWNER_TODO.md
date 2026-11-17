@@ -2,6 +2,9 @@
 
 Only things the bot can't do, kept as short as possible. Growth comes mainly from the Reels; these help the visitors we already get to follow.
 
+## Urgent: posting is stopped until this is done (17 Nov, 17:10 UTC)
+- [ ] **Store the Instagram access token in the environment settings.** The cloud container restarted and wiped my scratch folder, where the token was kept, so I can't post (Thaw at 20:00 today will be missed) or read stats. Please add it as an environment variable named `IG_ACCESS_TOKEN` in the cloud environment's settings: open the environment menu in this session's title bar, then Edit, and add it under Network secrets (or API credentials, or environment variables). Use the same long-lived token as before, or a fresh one from the Meta app dashboard (docs/PUBLISHING.md, step 2). Kept there, it survives restarts. Please don't paste it into the chat. I'll pick it up on the next run and post from the next slot, with no catch-up.
+
 ## Now, please (2 minutes, in the app; 13 Nov)
 - [ ] **Selk wasn't shown to anyone.** The Reel posted 12 Nov 20:10 UTC (https://www.instagram.com/reel/Dfp4bwQCeUc/) has 0 views after 12 hours; no Reel before has gone more than 4 hours without a view. Please open it in the app and tell me if it shows any notice (for example 'can't be recommended', 'under review', a music or copyright note), and check Profile > menu > Settings > Account Status for anything new. The API can't see either.
 
