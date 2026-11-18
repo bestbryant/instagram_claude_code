@@ -3,7 +3,7 @@
     python3 tools/shift_queue.py --days 1            # show what would change
     python3 tools/shift_queue.py --days 1 --apply    # write schedule.json, comments.json and the content files
 
-It shifts not_before on every unposted schedule row (rows marked fixed_date keep their dates),
+It shifts not_before on every unposted schedule row (rows marked fixed_date or hold keep their dates),
 shifts post_at on every unposted comment, and re-dates each unposted part one's teaser
 (short.sign 'Part two, <Weekday>: ...') to the weekday its part two now posts. A part one whose
 teaser changed must be re-rendered and checked before it posts (check_item reports it stale).
@@ -40,7 +40,7 @@ def main():
     done = {(x["entry"], x["kind"]) for x in log}
     new_slot = {}
     for row in schedule:
-        if (row["entry"], row["kind"]) in done or row.get("fixed_date") or not row.get("not_before"):
+        if (row["entry"], row["kind"]) in done or row.get("fixed_date") or row.get("hold") or not row.get("not_before"):
             continue
         old = row["not_before"]
         row["not_before"] = _z(_iso(old) + delta)
