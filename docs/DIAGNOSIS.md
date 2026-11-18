@@ -2,6 +2,11 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-18 daily review (12:10 UTC): no data, the token is still missing
+- **Numbers:** none since 17 Nov 16:09 (the last full stats). Then: Lull (17 Nov 14:11, two beats, version E) 115 at 2 h, 32% skip, 9.3 s watched, 2 likes, which passes the skip gate; Bill 148 at 20 h; Likeness 585; followers 22; 0 requests. Thaw (17 Nov 20:00) was missed.
+- **Red flag:** posting has been stopped for 19 h (the 'no post in 24 h' flag fires at 20:00 today). The cause is known (DIAGNOSIS 17 Nov 17:10) and it is with the owner (OWNER_TODO, Urgent).
+- **Change (the outage rule, ready to run):** tools/shift_queue.py moves every unposted row and comment later by whole days and re-dates the part-two teasers. The voice model and its libraries are reinstalled (they went with the restart) and tested. If the token is still missing at the 14:00 run, the queue moves one day: Thaw to tonight at 20:00, Molly to 19 Nov 14:00, and the Brumm pair to 19-20 Nov with its teaser re-voiced as 'Part two, Friday' (Yonder's as 'Part two, Wednesday'). Both are re-rendered and checked before they post. The 19 Nov request read and the 20 Nov two-parter rule move with the queue, since they need the API.
+
 ## 2026-11-17 17:10 UTC: the container restart wiped the scratchpad, including the token
 - **Symptom:** the 17:08 run found the scratchpad empty (uptime 2 min): `ig/token.env` was gone, along with every helper script kept there (render_queue.py, qa_sheet.py, voice_qa.py, recaption.py, room/add_shorts.py, short_preview.py, hook_compare.py, wf_wait.sh, qa_wait.sh). Without IG_ACCESS_TOKEN, `next` and `stats` stop at once.
 - **Cause:** earlier restarts kept the scratchpad; this one didn't. The token and the tools were only ever there by design (never commit the token), so nothing durable held them.
