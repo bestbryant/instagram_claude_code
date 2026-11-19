@@ -2,6 +2,11 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-19 daily review (12:10 UTC): day two without the token; shift once, when it returns
+- **Numbers:** none (no API since 17 Nov 17:08). Missed slots: 17 Nov 20:00, 18 Nov 20:00 (Thaw), and today's 14:00 will be missed too. The owner hasn't replied; the ask is at the top of OWNER_TODO.
+- **Red flag:** no post for 45 h. Cause known, fix with the owner.
+- **Change (process):** stop moving the queue every day while the API is down. Each move re-dates the two teasers and costs two re-renders, and nothing can post anyway. The run that first finds the token back will move the queue once, by however many days it is behind (tools/shift_queue.py --days N, with the next unposted row at the next slot), re-render the re-dated part ones (each takes about 4 min, and the first of them is the third Reel in the queue), and post the first row at the next slot. The 20 Nov request read and the two-parter rule then run on the first full day of data after posting resumes.
+
 ## 2026-11-18 daily review (12:10 UTC): no data, the token is still missing
 - **Numbers:** none since 17 Nov 16:09 (the last full stats). Then: Lull (17 Nov 14:11, two beats, version E) 115 at 2 h, 32% skip, 9.3 s watched, 2 likes, which passes the skip gate; Bill 148 at 20 h; Likeness 585; followers 22; 0 requests. Thaw (17 Nov 20:00) was missed.
 - **Red flag:** posting has been stopped for 19 h (the 'no post in 24 h' flag fires at 20:00 today). The cause is known (DIAGNOSIS 17 Nov 17:10) and it is with the owner (OWNER_TODO, Urgent).
