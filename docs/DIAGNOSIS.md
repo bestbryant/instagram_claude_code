@@ -2,6 +2,11 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-20 daily review (12:10 UTC): day three without the token
+- **Numbers:** none; no API since 17 Nov 17:08, no post since 17 Nov 14:11 (Lull). Missed slots so far: 6. The queue is rendered and checked to 11 Dec, so posting can resume within the hour of the token's return.
+- **Red flag:** no post for 70 h. The cause and the fix are unchanged and with the owner (OWNER_TODO, Urgent).
+- **Change:** none possible without the API. The plan for the token's return stands (DIAGNOSIS 19 Nov): move the queue once, re-render the re-dated part ones, post from the next slot.
+
 ## 2026-11-19 daily review (12:10 UTC): day two without the token; shift once, when it returns
 - **Numbers:** none (no API since 17 Nov 17:08). Missed slots: 17 Nov 20:00, 18 Nov 20:00 (Thaw), and today's 14:00 will be missed too. The owner hasn't replied; the ask is at the top of OWNER_TODO.
 - **Red flag:** no post for 45 h. Cause known, fix with the owner.
