@@ -1,0 +1,336 @@
+{
+  "id": "094",
+  "name": "Gary",
+  "subtitle": "every Gary's planet",
+  "story": "On Gary, babies pick their own names. Parents can argue for nine months if they like; the day it arrives, the baby decides, and a board goes up outside the house so the street knows. Ryan wanted Arthur. Megan wanted Theo. They had a list, a shortlist and a fortnight of not speaking. The baby went with Gary. Megan's ex is called Gary. Ryan calls him 'the baby'.",
+  "facts": {
+    "Day": "27 hours",
+    "Moons": "one",
+    "Gravity": "0.9 g",
+    "Population": "5.6 million"
+  },
+  "hook": "A planet for every couple arguing over baby names.",
+  "tags": [
+    "#illustration",
+    "#babynames",
+    "#gary"
+  ],
+  "spec": {
+    "palette": "mint_dawn",
+    "terrain": "dunes",
+    "layers": 4,
+    "horizon": 0.62,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.2,
+    "sun_y": 0.5,
+    "sun_size": 0.04,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 4,
+    "crowd_items": "nothing,child,nothing,nothing",
+    "crowd_x": 0.4,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.1,
+    "stage": 0.74
+  },
+  "cover": "Babies here pick their own names.",
+  "kicker": "Every Gary gets this planet.",
+  "episode": {
+    "opener": "Babies here pick\ntheir own names.",
+    "beats": [
+      {
+        "text": "The day it arrives,\na board goes up.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.505,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "rise",
+          "spec": {
+            "sign": "IT'S A|BRIAN!"
+          }
+        }
+      },
+      {
+        "text": "Ryan wanted Arthur.\nMegan wanted Theo.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.65,
+            1.7
+          ],
+          "focus": [
+            0.55,
+            0.63
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,nothing",
+          "crowd_x": 0.42,
+          "crowd_gap": 0.13,
+          "crowd_facing": "in",
+          "house": true,
+          "house_x": 0.15,
+          "sign": ""
+        }
+      },
+      {
+        "text": "The baby went with Gary.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.65,
+            1.7
+          ],
+          "focus": [
+            0.55,
+            0.63
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,nothing",
+          "crowd_x": 0.42,
+          "crowd_gap": 0.13,
+          "crowd_facing": "in",
+          "house": true,
+          "house_x": 0.15,
+          "sign": ""
+        },
+        "onset": {
+          "at": 0.7,
+          "motion": "rise",
+          "spec": {
+            "sign": "IT'S A|GARY!"
+          }
+        },
+        "note": "the beat-1 camera on Ryan and Megan; their board rises. Turn line"
+      },
+      {
+        "text": "Megan's ex is called Gary.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.3,
+            2.34
+          ],
+          "focus": [
+            0.42,
+            0.645
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,nothing",
+          "crowd_x": 0.42,
+          "crowd_gap": 0.13,
+          "crowd_facing": "in",
+          "house": true,
+          "house_x": 0.15,
+          "sign": ""
+        },
+        "onset": {
+          "at": 1.5,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "nap,child"
+          }
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.3,
+            2.34
+          ],
+          "focus": [
+            0.42,
+            0.645
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "nap,child",
+          "crowd_x": 0.42,
+          "crowd_gap": 0.13,
+          "crowd_facing": "in",
+          "house": true,
+          "house_x": 0.15,
+          "sign": ""
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "Ryan calls him 'the baby'.",
+    "caption": "The one on his shoulders gets the final say.\n\nGary: 5.6 million people, a 27-hour day, one moon, and babies who pick their own names. Parents can argue for nine months if they like. The day it arrives, the baby decides, and a board goes up outside the house so the street knows. Ryan wanted Arthur. Megan wanted Theo. The baby went with Gary.\n\nA friend there let me hold her newborn for a minute. It named itself after me. I haven't been asked back.\n\n(The story goes that the actor Frank Cooper only became Gary because his agent came from Gary, Indiana. Nobody asked Frank either.)\n\nHow long did you two argue over names?"
+  },
+  "first_comment": "The christening's next month. Ryan hasn't invited the other Gary.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every couple arguing over baby names.",
+    "title": "Babies here pick\ntheir own names.",
+    "sub": "",
+    "framing": "medium",
+    "zoom": [
+      1.5,
+      1.55
+    ],
+    "focus": [
+      0.505,
+      0.6
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "sign": "IT'S A|BRIAN!"
+      }
+    },
+    "beats": [
+      {
+        "text": "Ryan wanted Arthur.\nMegan wanted Theo.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.65,
+            1.7
+          ],
+          "focus": [
+            0.55,
+            0.63
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,nothing",
+          "crowd_x": 0.42,
+          "crowd_gap": 0.13,
+          "crowd_facing": "in",
+          "house": true,
+          "house_x": 0.15,
+          "sign": ""
+        }
+      },
+      {
+        "text": "The baby went with Gary.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.65,
+            1.7
+          ],
+          "focus": [
+            0.55,
+            0.63
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,nothing",
+          "crowd_x": 0.42,
+          "crowd_gap": 0.13,
+          "crowd_facing": "in",
+          "house": true,
+          "house_x": 0.15,
+          "sign": ""
+        },
+        "onset": {
+          "at": 0.7,
+          "motion": "rise",
+          "spec": {
+            "sign": "IT'S A|GARY!"
+          }
+        }
+      },
+      {
+        "text": "Megan's ex is called Gary.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.3,
+            2.34
+          ],
+          "focus": [
+            0.42,
+            0.645
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,nothing",
+          "crowd_x": 0.42,
+          "crowd_gap": 0.13,
+          "crowd_facing": "in",
+          "house": true,
+          "house_x": 0.15,
+          "sign": ""
+        },
+        "onset": {
+          "at": 1.5,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "nap,child"
+          }
+        }
+      }
+    ],
+    "end": "Ryan calls him 'the baby'.",
+    "end_zoom": [
+      1.45,
+      1.4
+    ],
+    "end_focus": [
+      0.37,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For every couple arguing over baby names.",
+    "sign": "Every name has a planet."
+  },
+  "_engine": 5
+}

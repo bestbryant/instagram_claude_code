@@ -1,0 +1,290 @@
+{
+  "id": "093",
+  "name": "Bonce",
+  "subtitle": "where best friends go halves on a brain",
+  "story": "On Bonce, best friends share one brain cell, and you can see who's got it: a small light just above their head. It does the thinking for both of them, which is fine as long as nobody asks anything difficult. Becky has it weekdays, for work. Nic gets weekends. One Saturday night they left it in the back of a taxi, and with nothing to think with between them, they did the only thing that made sense. They woke up on Sunday with a dog. They've called him Kebab.",
+  "facts": {
+    "Day": "19 hours",
+    "Moons": "none",
+    "Gravity": "0.8 g",
+    "Population": "3.1 million"
+  },
+  "hook": "A planet for whoever's got the brain cell today.",
+  "tags": [
+    "#worldbuilding",
+    "#bestfriends",
+    "#braincell"
+  ],
+  "spec": {
+    "palette": "lilac_dusk",
+    "terrain": "peaks",
+    "layers": 3,
+    "horizon": 0.8,
+    "relief": 0.35,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.4,
+    "sun_y": 0.64,
+    "sun_size": 0.016,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.5,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.2,
+    "stage": 0.72
+  },
+  "cover": "Best friends here share one brain cell.",
+  "episode": {
+    "opener": "Best friends here\nshare one brain cell.",
+    "beats": [
+      {
+        "text": "You can see who's got it.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.75,
+            1.8
+          ],
+          "focus": [
+            0.5,
+            0.605
+          ]
+        }
+      },
+      {
+        "text": "Becky has it weekdays.\nNic gets weekends.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.15,
+            2.2
+          ],
+          "focus": [
+            0.5,
+            0.615
+          ]
+        },
+        "onset": {
+          "at": 1.7,
+          "motion": "cut",
+          "spec": {
+            "sun_x": 0.6
+          }
+        }
+      },
+      {
+        "text": "They left it in a taxi.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.15,
+            2.2
+          ],
+          "focus": [
+            0.5,
+            0.615
+          ]
+        },
+        "spec": {
+          "sun_x": 0.6
+        },
+        "onset": {
+          "at": 0.7,
+          "motion": "cut",
+          "spec": {
+            "suns": 0
+          }
+        },
+        "note": "identical camera; the light goes out over Nic. Turn line"
+      },
+      {
+        "text": "They woke up with a dog.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.95,
+            1.99
+          ],
+          "focus": [
+            0.5,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "sit,dog,nap",
+          "crowd_gap": 0.14,
+          "suns": 0,
+          "palette": "rose_fog",
+          "mist": 0.45
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.95,
+            1.99
+          ],
+          "focus": [
+            0.5,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "sit,dog,nap",
+          "crowd_gap": 0.14,
+          "suns": 0,
+          "palette": "rose_fog",
+          "mist": 0.45
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "They've called him Kebab.",
+    "caption": "Only one of them is thinking right now.\n\nBonce: 3.1 million people, a 19-hour day, no moons, and best friends who share one brain cell. It sits just above whoever's using it, a small light you can see from across the pub. Becky has it weekdays, for work. Nic gets weekends. It mostly works, as long as nobody asks either of them anything while it's out on loan.\n\nI went out with a pair of them on a Friday. By closing time, I was the one who knew where we lived.\n\n(The human brain has about 86 billion neurons. On Bonce, two people get by on one, and now there's a dog.)\n\nHave you got it today, or have they?"
+  },
+  "first_comment": "The taxi firm sent it back on Monday. Kebab has it now.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for whoever's got the brain cell today.",
+    "title": "Best friends here\nshare one brain cell.",
+    "sub": "",
+    "framing": "medium",
+    "zoom": [
+      1.75,
+      1.8
+    ],
+    "focus": [
+      0.5,
+      0.605
+    ],
+    "spec": {
+      "suns": 0
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "suns": 1,
+        "sun_x": 0.4
+      }
+    },
+    "beats": [
+      {
+        "text": "Becky has it weekdays.\nNic gets weekends.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.15,
+            2.2
+          ],
+          "focus": [
+            0.5,
+            0.615
+          ]
+        },
+        "onset": {
+          "at": 1.7,
+          "motion": "cut",
+          "spec": {
+            "sun_x": 0.6
+          }
+        }
+      },
+      {
+        "text": "They left it in a taxi.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.15,
+            2.2
+          ],
+          "focus": [
+            0.5,
+            0.615
+          ]
+        },
+        "spec": {
+          "sun_x": 0.6
+        },
+        "onset": {
+          "at": 0.7,
+          "motion": "cut",
+          "spec": {
+            "suns": 0
+          }
+        }
+      },
+      {
+        "text": "They woke up with a dog.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.95,
+            1.99
+          ],
+          "focus": [
+            0.5,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "sit,dog,nap",
+          "crowd_gap": 0.14,
+          "suns": 0,
+          "palette": "rose_fog",
+          "mist": 0.45
+        }
+      }
+    ],
+    "end": "They've called him Kebab.",
+    "end_zoom": [
+      1.5,
+      1.44
+    ],
+    "end_focus": [
+      0.5,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For whoever's got the brain cell today.",
+    "sign": "Every name has a planet."
+  }
+}
