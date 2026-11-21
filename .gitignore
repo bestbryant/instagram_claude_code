@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 .env
 *.partial.mp4
+output/_preview/
