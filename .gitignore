@@ -3,3 +3,4 @@ __pycache__/
 .env
 *.partial.mp4
 output/_preview/
+room/*/preview/
