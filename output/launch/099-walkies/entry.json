@@ -1,0 +1,481 @@
+{
+  "id": "099",
+  "name": "Walkies",
+  "subtitle": "where every walk crosses three deserts",
+  "story": "On Walkies, a dog walk goes as far as the dog would like, and it would like three deserts. A red one, a stony one and a frozen one, then home for tea. Dogs do it before lunch. People take a flask. Ian took Pip, his spaniel, out after breakfast. In the third desert, Ian sat down in the snow for a minute, and Pip carried on. Pip was home in time for tea, and had it. Ian's still walking back.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "two",
+    "Gravity": "1.1 g",
+    "Population": "2.1 million"
+  },
+  "hook": "A planet for everyone with a spaniel.",
+  "tags": [
+    "#worldbuilding",
+    "#spaniel",
+    "#dogwalk"
+  ],
+  "spec": {
+    "palette": "rust_desert",
+    "terrain": "dunes",
+    "layers": 5,
+    "horizon": 0.6,
+    "relief": 0.9,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.84,
+    "sun_y": 0.47,
+    "sun_size": 0.085,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "walk,dog",
+    "crowd_x": 0.45,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.08,
+    "stage": 0.72
+  },
+  "cover": "Dog walks here cross three deserts.",
+  "episode": {
+    "opener": "Dog walks here\ncross three deserts.",
+    "beats": [
+      {
+        "text": "A red one, a stony one,\nthen a frozen one.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        }
+      },
+      {
+        "text": "Dogs do it before lunch.\nPeople take a flask.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "terrain": "spires",
+          "layers": 4,
+          "relief": 1.0,
+          "house": false,
+          "trees": "none",
+          "daisies": 0,
+          "suns": 1,
+          "sun_x": 0.74,
+          "sun_y": 0.32,
+          "sun_size": 0.045,
+          "mist": 0.4,
+          "snow": false,
+          "particles": "none",
+          "house_x": 0.0
+        }
+      },
+      {
+        "text": "Ian took Pip out\nafter breakfast.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.26
+          ],
+          "focus": [
+            0.55,
+            0.58
+          ]
+        },
+        "spec": {
+          "palette": "mint_dawn",
+          "terrain": "hills",
+          "layers": 4,
+          "relief": 0.6,
+          "house": true,
+          "house_x": 0.8,
+          "trees": "pines",
+          "suns": 1,
+          "sun_x": 0.3,
+          "sun_y": 0.5,
+          "sun_size": 0.045,
+          "daisies": 14,
+          "mist": 0.4,
+          "snow": false,
+          "particles": "none"
+        }
+      },
+      {
+        "text": "In the third desert,\nIan sat down.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.45,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "terrain": "mesas",
+          "layers": 4,
+          "relief": 0.8,
+          "house": false,
+          "trees": "none",
+          "daisies": 0,
+          "suns": 0,
+          "snow": true,
+          "particles": "snow",
+          "mist": 0.55,
+          "house_x": 0.0
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "cut",
+          "spec": {
+            "palette": "violet_ice",
+            "terrain": "mesas",
+            "layers": 4,
+            "relief": 0.8,
+            "house": false,
+            "trees": "none",
+            "daisies": 0,
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "mist": 0.55,
+            "house_x": 0.0,
+            "crowd_items": "sit,dog",
+            "crowd_gap": 0.3
+          }
+        },
+        "note": "identical camera; Ian sits in the snow, Pip walks on. Turn line"
+      },
+      {
+        "text": "Pip was home\nin time for tea.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.55,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "gold_hour",
+          "terrain": "hills",
+          "layers": 4,
+          "relief": 0.6,
+          "house": true,
+          "house_x": 0.6,
+          "trees": "pines",
+          "suns": 1,
+          "sun_x": 0.25,
+          "sun_y": 0.56,
+          "sun_size": 0.04,
+          "daisies": 14,
+          "mist": 0.4,
+          "snow": false,
+          "particles": "none",
+          "crowd": 1,
+          "crowd_items": "dog",
+          "crowd_x": 0.5,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.55
+          ],
+          "focus": [
+            0.55,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "gold_hour",
+          "terrain": "hills",
+          "layers": 4,
+          "relief": 0.6,
+          "house": true,
+          "house_x": 0.6,
+          "trees": "pines",
+          "suns": 1,
+          "sun_x": 0.25,
+          "sun_y": 0.56,
+          "sun_size": 0.04,
+          "daisies": 14,
+          "mist": 0.4,
+          "snow": false,
+          "particles": "none",
+          "crowd": 1,
+          "crowd_items": "dog",
+          "crowd_x": 0.5,
+          "crowd_facing": "right"
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "Ian's still walking back.",
+    "caption": "Pip has done this walk before.\n\nWalkies: 2.1 million people, about four million dogs, a 25-hour day, two moons, and a dog walk that goes as far as the dog would like: three deserts, a red one, a stony one and a frozen one, then home for tea. Dogs do it before lunch. People take a flask, spare socks and, if they're sensible, the bus fare back.\n\nI borrowed a spaniel for the afternoon. I got as far as the stony one, and she sent a postcard.\n\n(The largest desert on Earth is Antarctica. A desert is about how little falls from the sky, not how hot it is. On Walkies, it's the spaniels' favourite.)\n\nHow many deserts would yours do before tea?"
+  },
+  "first_comment": "Ian's wife walks Pip now. She takes the car.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for everyone with a spaniel.",
+    "title": "Dog walks here\ncross three deserts.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.6,
+      1.66
+    ],
+    "focus": [
+      0.6,
+      0.62
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 4,
+      "relief": 0.6,
+      "house": true,
+      "house_x": 0.8,
+      "trees": "pines",
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.5,
+      "sun_size": 0.045,
+      "daisies": 14,
+      "mist": 0.4,
+      "snow": false,
+      "particles": "none"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "rust_desert",
+        "terrain": "dunes",
+        "layers": 5,
+        "relief": 0.9,
+        "house": false,
+        "trees": "none",
+        "daisies": 0,
+        "suns": 1,
+        "sun_x": 0.8,
+        "sun_y": 0.53,
+        "sun_size": 0.07,
+        "mist": 0.35,
+        "snow": false,
+        "particles": "none",
+        "house_x": 0.0,
+        "crowd": 2,
+        "crowd_items": "walk,dog",
+        "crowd_x": 0.45,
+        "crowd_facing": "right",
+        "crowd_gap": 0.08
+      }
+    },
+    "beats": [
+      {
+        "text": "Pip's a spaniel.\nIan took a flask.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.85,
+            1.9
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "terrain": "spires",
+          "layers": 4,
+          "relief": 1.0,
+          "house": false,
+          "trees": "none",
+          "daisies": 0,
+          "suns": 1,
+          "sun_x": 0.74,
+          "sun_y": 0.32,
+          "sun_size": 0.045,
+          "mist": 0.4,
+          "snow": false,
+          "particles": "none",
+          "house_x": 0.0,
+          "crowd_items": "cup,dog"
+        }
+      },
+      {
+        "text": "In the third desert,\nIan sat down.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.7,
+            1.76
+          ],
+          "focus": [
+            0.46,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "violet_ice",
+          "terrain": "mesas",
+          "layers": 4,
+          "relief": 0.8,
+          "house": false,
+          "trees": "none",
+          "daisies": 0,
+          "suns": 0,
+          "snow": true,
+          "particles": "snow",
+          "mist": 0.55,
+          "house_x": 0.0
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "cut",
+          "spec": {
+            "palette": "violet_ice",
+            "terrain": "mesas",
+            "layers": 4,
+            "relief": 0.8,
+            "house": false,
+            "trees": "none",
+            "daisies": 0,
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "mist": 0.55,
+            "house_x": 0.0,
+            "crowd_items": "sit,dog",
+            "crowd_gap": 0.3
+          }
+        },
+        "seconds": 2.6
+      },
+      {
+        "text": "Pip was home\nin time for tea.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.6,
+            0.62
+          ]
+        },
+        "spec": {
+          "palette": "gold_hour",
+          "terrain": "hills",
+          "layers": 4,
+          "relief": 0.6,
+          "house": true,
+          "house_x": 0.8,
+          "trees": "pines",
+          "suns": 1,
+          "sun_x": 0.36,
+          "sun_y": 0.57,
+          "sun_size": 0.04,
+          "daisies": 14,
+          "mist": 0.4,
+          "snow": false,
+          "particles": "none",
+          "crowd": 1,
+          "crowd_items": "dog",
+          "crowd_x": 0.7,
+          "crowd_facing": "right"
+        },
+        "seconds": 2.6
+      }
+    ],
+    "end": "Ian's still walking back.",
+    "end_spec": {
+      "palette": "violet_ice",
+      "terrain": "mesas",
+      "layers": 4,
+      "relief": 0.8,
+      "house": false,
+      "trees": "none",
+      "daisies": 0,
+      "suns": 0,
+      "snow": true,
+      "particles": "snow",
+      "mist": 0.55,
+      "house_x": 0.0,
+      "crowd": 1,
+      "crowd_items": "walk",
+      "crowd_x": 0.5,
+      "crowd_facing": "left"
+    },
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.5,
+      0.58
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For everyone with a spaniel.",
+    "sign": "Every name has a planet."
+  }
+}

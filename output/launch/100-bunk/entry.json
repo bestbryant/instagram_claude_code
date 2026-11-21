@@ -1,0 +1,309 @@
+{
+  "id": "100",
+  "name": "Bunk",
+  "subtitle": "where everyone's nine at their mum's",
+  "story": "On Bunk, anyone who goes back to their mum's is nine again by the time they're through the door. Not in spirit. Nine: the height, the bedtime, the opinions about crusts. It wears off on the drive home, usually around the services. Gareth's a judge. At Christmas he went home with his brother, and by the doorstep they were both up on their parents' shoulders. He asked for squash. Mum sent them both to bed at eight, and they went. At ten, Gareth asked for a glass of water. He's sentencing someone on Monday.",
+  "facts": {
+    "Day": "22 hours",
+    "Moons": "two",
+    "Gravity": "1.0 g",
+    "Population": "3.4 million"
+  },
+  "hook": "A planet for every grown man in his old bedroom.",
+  "tags": [
+    "#worldbuilding",
+    "#christmas",
+    "#brothers"
+  ],
+  "spec": {
+    "palette": "pumpkin",
+    "terrain": "peaks",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.8,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.26,
+    "sun_y": 0.57,
+    "sun_size": 0.04,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "pines",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "snow",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "child,child",
+    "crowd_x": 0.55,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.73,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.11,
+    "stage": 0.73
+  },
+  "cover": "At Mum's, you're nine again.",
+  "episode": {
+    "opener": "At Mum's,\nyou're nine again.",
+    "beats": [
+      {
+        "text": "Not in spirit. Nine.\nBedtime, crusts, the lot.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.55,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 4,
+          "crowd_items": "walk,walk,nothing,nothing",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.085,
+          "crowd_facing": "in"
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "auto",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,child",
+            "crowd_x": 0.55,
+            "crowd_gap": 0.11,
+            "crowd_facing": "in"
+          }
+        }
+      },
+      {
+        "text": "Gareth's a judge.\nHe asked for squash.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.3,
+            2.36
+          ],
+          "focus": [
+            0.48,
+            0.665
+          ]
+        }
+      },
+      {
+        "text": "Mum sent them both\nto bed at eight.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.7,
+            1.76
+          ],
+          "focus": [
+            0.6,
+            0.64
+          ]
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "cut",
+          "spec": {
+            "palette": "abyss",
+            "suns": 0,
+            "crowd_items": "child_asleep,child_asleep"
+          }
+        },
+        "note": "identical camera; night falls and both brothers fall asleep on their parents' shoulders. Turn line"
+      },
+      {
+        "text": "Gareth asked for\na glass of water.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.3,
+            2.36
+          ],
+          "focus": [
+            0.48,
+            0.665
+          ]
+        },
+        "spec": {
+          "palette": "abyss",
+          "suns": 0,
+          "crowd_items": "child_asleep,child_asleep"
+        },
+        "onset": {
+          "at": 0.7,
+          "motion": "cut",
+          "spec": {
+            "palette": "abyss",
+            "suns": 0,
+            "crowd_items": "child,child_asleep"
+          }
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.3,
+            2.36
+          ],
+          "focus": [
+            0.48,
+            0.665
+          ]
+        },
+        "spec": {
+          "palette": "abyss",
+          "suns": 0,
+          "crowd_items": "child,child_asleep"
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "He's sentencing someone on Monday.",
+    "caption": "They both wiped their feet.\n\nBunk: 3.4 million people, a 22-hour day, two moons, and a rule about going home: step through your mum's front door, and you're nine again. Not in spirit. Nine. The height, the bedtime, the strong feelings about crusts. It wears off on the drive back, usually around the services.\n\nI only went round to my mum's to borrow a stepladder. I came out with a packed lunch.\n\n(Children of nine need nine to twelve hours' sleep a night, according to the American Academy of Sleep Medicine. On Bunk, so do judges.)\n\nWhat time would your mum send you up?"
+  },
+  "first_comment": "His brother's a surgeon. Mum still cuts his sandwiches into triangles.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every grown man in his old bedroom.",
+    "title": "At Mum's,\nyou're nine again.",
+    "sub": "",
+    "framing": "group",
+    "zoom": [
+      1.75,
+      1.8
+    ],
+    "focus": [
+      0.55,
+      0.62
+    ],
+    "spec": {
+      "crowd": 4,
+      "crowd_items": "walk,walk,nothing,nothing",
+      "crowd_x": 0.5,
+      "crowd_gap": 0.085,
+      "crowd_facing": "in"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "auto",
+      "spec": {
+        "crowd": 2,
+        "crowd_items": "child,child",
+        "crowd_x": 0.55,
+        "crowd_gap": 0.11,
+        "crowd_facing": "in"
+      }
+    },
+    "beats": [
+      {
+        "text": "Gareth's a judge.\nHe asked for squash.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.3,
+            2.36
+          ],
+          "focus": [
+            0.48,
+            0.665
+          ]
+        }
+      },
+      {
+        "text": "Mum sent them both\nto bed at eight.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.95,
+            2.0
+          ],
+          "focus": [
+            0.6,
+            0.655
+          ]
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "cut",
+          "spec": {
+            "palette": "abyss",
+            "suns": 0,
+            "crowd_items": "child_asleep,child_asleep"
+          }
+        },
+        "seconds": 2.7
+      },
+      {
+        "text": "Gareth asked for\na glass of water.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.3,
+            2.36
+          ],
+          "focus": [
+            0.48,
+            0.665
+          ]
+        },
+        "spec": {
+          "palette": "abyss",
+          "suns": 0,
+          "crowd_items": "child_asleep,child_asleep"
+        },
+        "onset": {
+          "at": 0.7,
+          "motion": "cut",
+          "spec": {
+            "palette": "abyss",
+            "suns": 0,
+            "crowd_items": "child,child_asleep"
+          }
+        }
+      }
+    ],
+    "end": "He's sentencing someone on Monday.",
+    "end_zoom": [
+      1.5,
+      1.44
+    ],
+    "end_focus": [
+      0.56,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For every grown man in his old bedroom.",
+    "sign": "Every name has a planet."
+  }
+}
