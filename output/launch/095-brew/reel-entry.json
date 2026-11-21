@@ -1,0 +1,337 @@
+{
+  "id": "095",
+  "name": "Brew",
+  "subtitle": "where the kettle calls everyone in",
+  "story": "On Brew, putting the kettle on summons everyone you live with. Flatmates simply appear round you, mugs out, from wherever they were and whatever they were doing. Abbie's flatmates never leave their rooms. She knows them mostly by their microwaves. One night she boiled some for a hot water bottle, just for herself. Nine came. She has four flatmates. One was the landlord, with paperwork. She's bought a coffee machine.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "two",
+    "Gravity": "0.95 g",
+    "Population": "2.4 million"
+  },
+  "hook": "A planet for flatmates who only come out for tea.",
+  "tags": [
+    "#worldbuilding",
+    "#flatmates",
+    "#tea"
+  ],
+  "spec": {
+    "palette": "gold_hour",
+    "terrain": "mesas",
+    "layers": 4,
+    "horizon": 0.62,
+    "relief": 0.55,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.3,
+    "sun_y": 0.58,
+    "sun_size": 0.055,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.35,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 5,
+    "crowd_items": "cup,cup,cup,kettle,cup",
+    "crowd_x": 0.435,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.8,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.085,
+    "stage": 0.74
+  },
+  "cover": "Put the kettle on, and flatmates appear.",
+  "episode": {
+    "opener": "Put the kettle on,\nand flatmates appear.",
+    "beats": [
+      {
+        "text": "Mugs out, from wherever\nthey happen to be.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.5,
+            0.62
+          ]
+        }
+      },
+      {
+        "text": "Abbie's flatmates\nnever leave their rooms.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.7,
+            1.76
+          ],
+          "focus": [
+            0.62,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "sit",
+          "crowd_x": 0.56,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "She knows them mostly\nby their microwaves.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.0,
+            2.06
+          ],
+          "focus": [
+            0.7,
+            0.66
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "sit",
+          "crowd_x": 0.56,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "She boiled some\nfor a hot water bottle.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.15,
+            1.2
+          ],
+          "focus": [
+            0.47,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "kettle",
+          "crowd_x": 0.348,
+          "crowd_facing": "in"
+        },
+        "onset": {
+          "at": 0.8,
+          "motion": "rise",
+          "spec": {
+            "crowd": 9,
+            "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.072,
+            "crowd_facing": "in"
+          }
+        },
+        "note": "identical wide; nine rise along the ledge round the kettle. Turn line"
+      },
+      {
+        "text": "Nine came.\nOne was the landlord.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.2,
+            2.26
+          ],
+          "focus": [
+            0.5,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 9,
+          "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+          "crowd_x": 0.645,
+          "crowd_gap": 0.145,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.15,
+            1.2
+          ],
+          "focus": [
+            0.47,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 9,
+          "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+          "crowd_x": 0.42,
+          "crowd_gap": 0.072,
+          "crowd_facing": "in"
+        },
+        "seconds": 2.2
+      }
+    ],
+    "end": "She's bought a coffee machine.",
+    "caption": "Nobody hears a kettle like a flatmate.\n\nBrew: 2.4 million people, a 25-hour day, two moons, and kettles that summon everyone you live with. Put one on, and your flatmates appear round you with their mugs out, wherever they were and whatever they were doing. Kitchens here are small and very full. Nobody on Brew has ever made a quiet cup of tea.\n\nI rented a room there for a month. I met my flatmates once, at the kettle, every forty minutes.\n\n(In Britain, so many people put the kettle on at the end of a big match on telly that the National Grid plans for it. They call it TV pickup. On Brew, it's called Tuesday.)\n\nHow many mugs would you need at yours?"
+  },
+  "first_comment": "The landlord's started boiling his own. Abbie's moved her coffee machine into her room.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for flatmates who only come out for tea.",
+    "title": "Put the kettle on,\nand flatmates appear.",
+    "sub": "",
+    "framing": "group",
+    "zoom": [
+      1.62,
+      1.68
+    ],
+    "focus": [
+      0.48,
+      0.63
+    ],
+    "spec": {
+      "crowd": 1,
+      "crowd_items": "kettle",
+      "crowd_x": 0.52,
+      "crowd_facing": "left"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "crowd": 5,
+        "crowd_items": "cup,cup,cup,kettle,cup",
+        "crowd_x": 0.435,
+        "crowd_gap": 0.085,
+        "crowd_facing": "in"
+      }
+    },
+    "beats": [
+      {
+        "text": "Abbie knows her flatmates\nby their microwaves.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.75,
+            1.81
+          ],
+          "focus": [
+            0.66,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "sit",
+          "crowd_x": 0.58,
+          "crowd_facing": "right"
+        }
+      },
+      {
+        "text": "She only wanted\na hot water bottle.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.16,
+            1.21
+          ],
+          "focus": [
+            0.47,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "kettle",
+          "crowd_x": 0.348,
+          "crowd_facing": "in"
+        },
+        "onset": {
+          "at": 0.7,
+          "motion": "rise",
+          "spec": {
+            "crowd": 9,
+            "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.072,
+            "crowd_facing": "in"
+          }
+        },
+        "seconds": 2.6
+      },
+      {
+        "text": "Nine came.\nOne was the landlord.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.25,
+            2.31
+          ],
+          "focus": [
+            0.5,
+            0.655
+          ]
+        },
+        "spec": {
+          "crowd": 9,
+          "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+          "crowd_x": 0.645,
+          "crowd_gap": 0.145,
+          "crowd_facing": "in",
+          "suns": 0
+        },
+        "seconds": 2.65
+      }
+    ],
+    "end": "She's bought a coffee machine.",
+    "end_spec": {
+      "crowd": 1,
+      "crowd_items": "cup",
+      "crowd_x": 0.56,
+      "crowd_facing": "right",
+      "crowd_gap": 0.085,
+      "suns": 1
+    },
+    "end_zoom": [
+      1.3,
+      1.22
+    ],
+    "end_focus": [
+      0.6,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For flatmates who only come out for tea.",
+    "sign": "Every name has a planet."
+  },
+  "_engine": 5
+}
