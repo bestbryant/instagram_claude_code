@@ -3,7 +3,8 @@
     python3 tools/shift_queue.py --days 1            # show what would change
     python3 tools/shift_queue.py --days 1 --apply    # write schedule.json, comments.json and the content files
 
-It shifts not_before on every unposted schedule row (rows marked fixed_date or hold keep their dates),
+It shifts not_before on every unposted schedule row (rows marked fixed_date keep their dates, and so do
+held rows whose date has already passed, like a cut parked long ago; a new Reel held until it is checked moves),
 shifts post_at on every unposted comment, and re-dates each unposted part one's teaser
 (short.sign 'Part two, <Weekday>: ...') to the weekday its part two now posts. A part one whose
 teaser changed must be re-rendered and checked before it posts (check_item reports it stale).
@@ -11,7 +12,7 @@ teaser changed must be re-rendered and checked before it posts (check_item repor
 import argparse
 import json
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -39,9 +40,12 @@ def main():
     log = json.loads((CONTENT / "published.json").read_text())
     done = {(x["entry"], x["kind"]) for x in log}
     new_slot = {}
+    now = datetime.now(timezone.utc)
     for row in schedule:
-        if (row["entry"], row["kind"]) in done or row.get("fixed_date") or row.get("hold") or not row.get("not_before"):
+        if (row["entry"], row["kind"]) in done or row.get("fixed_date") or not row.get("not_before"):
             continue
+        if row.get("hold") and _iso(row["not_before"]) < now:     # a row parked long ago (008's process cut), not a
+            continue                                               # new Reel held until it is checked: leave it be
         old = row["not_before"]
         row["not_before"] = _z(_iso(old) + delta)
         new_slot[row["entry"]] = _iso(row["not_before"])
