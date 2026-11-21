@@ -1,0 +1,350 @@
+{
+  "id": "096",
+  "name": "Noel",
+  "subtitle": "every Noel's planet",
+  "story": "On Noel, Christmas lights don't twinkle; they turn night into day. A string round the porch gets you a decent dawn. A whole street gets you mid-morning. Dad did the whole hill. Clive next door had a look at it over the fence, went to the shops and came back with noon. Nobody on the street has had a night since the first of December. They nod off in armchairs on the pavement, in broad daylight, in their coats. Dad's bought a bigger ladder.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "none",
+    "Gravity": "1.1 g",
+    "Population": "890,000"
+  },
+  "hook": "A planet for every dad up a ladder in December.",
+  "tags": [
+    "#illustration",
+    "#christmaslights",
+    "#noel"
+  ],
+  "spec": {
+    "palette": "polar_night",
+    "terrain": "hills",
+    "layers": 3,
+    "horizon": 0.6,
+    "relief": 0.85,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": 0.264,
+    "sun_y": 0.365,
+    "sun_size": 0.075,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": 0.5,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.15,
+    "gag": "moth_roof",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": true,
+    "sign": "",
+    "crowd": 0,
+    "crowd_items": "",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.76,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.7
+  },
+  "cover": "Christmas lights here turn night into day.",
+  "kicker": "Every Noel gets this planet.",
+  "episode": {
+    "opener": "Christmas lights here\nturn night into day.",
+    "beats": [
+      {
+        "text": "A string round the porch\ngets you a decent dawn.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.45,
+            1.5
+          ],
+          "focus": [
+            0.55,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "palette": "mint_dawn",
+            "suns": 1,
+            "sun_x": 0.3,
+            "sun_y": 0.505,
+            "sun_size": 0.065,
+            "mist": 0.05
+          }
+        }
+      },
+      {
+        "text": "Dad did the whole hill\nin lights.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.17
+          ],
+          "focus": [
+            0.5,
+            0.52
+          ]
+        }
+      },
+      {
+        "text": "Clive next door\nwent for noon.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.17
+          ],
+          "focus": [
+            0.5,
+            0.52
+          ]
+        },
+        "onset": {
+          "at": 0.8,
+          "motion": "cut",
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 1,
+            "sun_x": 0.264,
+            "sun_y": 0.365,
+            "sun_size": 0.075,
+            "mist": 0.12
+          }
+        },
+        "note": "identical wide; night cuts to noon with the sun high. Turn line"
+      },
+      {
+        "text": "Nobody's had a night\nsince the first.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.76
+          ],
+          "focus": [
+            0.47,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "cobalt_noon",
+          "suns": 0,
+          "sun_x": 0.264,
+          "sun_y": 0.365,
+          "sun_size": 0.075,
+          "mist": 0.12,
+          "gag": "",
+          "glow_rims": false,
+          "crowd": 4,
+          "crowd_items": "armchair,armchair,armchair,armchair",
+          "crowd_x": 0.43,
+          "crowd_gap": 0.135,
+          "crowd_facing": "right",
+          "house_x": 0.86
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.7,
+            1.76
+          ],
+          "focus": [
+            0.47,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "cobalt_noon",
+          "suns": 0,
+          "sun_x": 0.264,
+          "sun_y": 0.365,
+          "sun_size": 0.075,
+          "mist": 0.12,
+          "gag": "",
+          "glow_rims": false,
+          "crowd": 4,
+          "crowd_items": "armchair,armchair,armchair,armchair",
+          "crowd_x": 0.43,
+          "crowd_gap": 0.135,
+          "crowd_facing": "right",
+          "house_x": 0.86
+        },
+        "seconds": 2.2
+      }
+    ],
+    "end": "Dad's bought a bigger ladder.",
+    "caption": "That glow along the hill is Dad.\n\nNoel: 890,000 people, a 24-hour day, no moons, and Christmas lights bright enough to turn night into day. A string round the porch gets you a decent dawn. A whole street gets you mid-morning. From the first of December the planet doesn't get dark until January, and everybody is very tired and very festive.\n\nI stayed with a family there over Christmas. I asked when it gets dark. They all laughed, then they all yawned.\n\n(The story goes that the first electric Christmas tree lights were put up in 1882 by Edward Johnson, a colleague of Thomas Edison's, in his parlour in New York: eighty bulbs, red, white and blue. The neighbours, presumably, went out and bought eighty-one.)\n\nIs your dad a dawn or a noon?"
+  },
+  "first_comment": "Clive's been seen pricing up a second sun. Dad's measuring the roof.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every dad up a ladder in December.",
+    "title": "Christmas lights here\nturn night into day.",
+    "sub": "",
+    "framing": "medium",
+    "zoom": [
+      1.35,
+      1.4
+    ],
+    "focus": [
+      0.56,
+      0.58
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "mint_dawn",
+        "suns": 1,
+        "sun_x": 0.3,
+        "sun_y": 0.505,
+        "sun_size": 0.065,
+        "mist": 0.05
+      }
+    },
+    "beats": [
+      {
+        "text": "Dad did the whole hill\nin lights.",
+        "text_y": 0.12,
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.15
+          ],
+          "focus": [
+            0.5,
+            0.52
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd": 1,
+          "crowd_items": "hand",
+          "crowd_x": 0.31,
+          "crowd_facing": "right"
+        },
+        "seconds": 2.3
+      },
+      {
+        "text": "Clive next door\nwent for noon.",
+        "text_y": 0.12,
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.15
+          ],
+          "focus": [
+            0.5,
+            0.52
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "suns": 0,
+          "crowd": 1,
+          "crowd_items": "hand",
+          "crowd_x": 0.31,
+          "crowd_facing": "right"
+        },
+        "onset": {
+          "at": 0.8,
+          "motion": "cut",
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 1,
+            "sun_x": 0.264,
+            "sun_y": 0.365,
+            "sun_size": 0.075,
+            "mist": 0.12
+          }
+        },
+        "seconds": 2.6
+      },
+      {
+        "text": "Nobody's had a night\nsince the first of December.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.72,
+            1.78
+          ],
+          "focus": [
+            0.47,
+            0.6
+          ]
+        },
+        "spec": {
+          "palette": "cobalt_noon",
+          "suns": 0,
+          "sun_x": 0.264,
+          "sun_y": 0.365,
+          "sun_size": 0.075,
+          "mist": 0.12,
+          "gag": "",
+          "glow_rims": false,
+          "crowd": 4,
+          "crowd_items": "armchair,armchair,armchair,armchair",
+          "crowd_x": 0.43,
+          "crowd_gap": 0.135,
+          "crowd_facing": "right",
+          "house_x": 0.86
+        },
+        "seconds": 3.0
+      }
+    ],
+    "end": "Dad's bought a bigger ladder.",
+    "end_zoom": [
+      1.45,
+      1.38
+    ],
+    "end_focus": [
+      0.5,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For every dad up a ladder in December.",
+    "sign": "Every name has a planet.",
+    "end_spec": {
+      "gag": "moth_roof",
+      "glow_rims": true,
+      "house_x": 0.76,
+      "crowd": 1,
+      "crowd_items": "hand",
+      "crowd_x": 0.31,
+      "crowd_facing": "right"
+    }
+  },
+  "_engine": 5
+}
