@@ -126,8 +126,8 @@
   "day": 3,
   "entry": "010",
   "kind": "reel",
-  "note": "short cut, checked; moved to the end on 30 Oct for Hush part two",
-  "not_before": "2026-12-08T14:00:00Z"
+  "note": "short cut, checked; moved to the end on 30 Oct for Hush part two; moved later on 21 Nov for batch 8",
+  "not_before": "2026-12-14T14:00:00Z"
  },
  {
   "day": 8,
@@ -168,8 +168,8 @@
   "day": 8,
   "entry": "034",
   "kind": "reel",
-  "note": "short cut, checked; moved to the end on 2 Nov for 019b",
-  "not_before": "2026-12-08T20:00:00Z"
+  "note": "short cut, checked; moved to the end on 2 Nov for 019b; moved later on 21 Nov for batch 8",
+  "not_before": "2026-12-14T20:00:00Z"
  },
  {
   "day": 8,
@@ -182,8 +182,8 @@
   "day": 8,
   "entry": "038",
   "kind": "reel",
-  "note": "short cut, checked; moved to the end on 2 Nov for 031b",
-  "not_before": "2026-12-09T14:00:00Z"
+  "note": "short cut, checked; moved to the end on 2 Nov for 031b; moved later on 21 Nov for batch 8",
+  "not_before": "2026-12-15T14:00:00Z"
  },
  {
   "day": 8,
@@ -210,8 +210,8 @@
   "day": 4,
   "entry": "006",
   "kind": "reel",
-  "note": "short cut, checked; moved to the end on 2 Nov for 011b",
-  "not_before": "2026-12-09T20:00:00Z"
+  "note": "short cut, checked; moved to the end on 2 Nov for 011b; moved later on 21 Nov for batch 8",
+  "not_before": "2026-12-15T20:00:00Z"
  },
  {
   "day": 8,
@@ -238,8 +238,8 @@
   "day": 6,
   "entry": "000",
   "kind": "reel",
-  "note": "short cut, checked",
-  "not_before": "2026-12-01T14:00:00Z"
+  "note": "short cut, checked; moved later on 21 Nov for batch 8",
+  "not_before": "2026-12-01T20:00:00Z"
  },
  {
   "day": 3,
@@ -404,15 +404,15 @@
   "day": 8,
   "entry": "045",
   "kind": "reel",
-  "not_before": "2026-12-01T20:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-02T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
   "entry": "044",
   "kind": "reel",
-  "not_before": "2026-12-02T14:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-03T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
@@ -425,8 +425,8 @@
   "day": 8,
   "entry": "049",
   "kind": "reel",
-  "not_before": "2026-12-02T20:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-04T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
@@ -439,22 +439,22 @@
   "day": 8,
   "entry": "047",
   "kind": "reel",
-  "not_before": "2026-12-03T14:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-05T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
   "entry": "052",
   "kind": "reel",
-  "not_before": "2026-12-10T14:00:00Z",
-  "note": "short cut, checked; moved to the end on 5 Nov for 029b"
+  "not_before": "2026-12-16T14:00:00Z",
+  "note": "short cut, checked; moved to the end on 5 Nov for 029b; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
   "entry": "050",
   "kind": "reel",
-  "not_before": "2026-12-03T20:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-06T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
@@ -467,29 +467,29 @@
   "day": 8,
   "entry": "053",
   "kind": "reel",
-  "not_before": "2026-12-04T14:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-07T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
   "entry": "061",
   "kind": "reel",
-  "not_before": "2026-12-04T20:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-08T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
   "entry": "059",
   "kind": "reel",
-  "not_before": "2026-12-10T20:00:00Z",
-  "note": "short cut, checked; moved to the end on 5 Nov for 042b"
+  "not_before": "2026-12-16T20:00:00Z",
+  "note": "short cut, checked; moved to the end on 5 Nov for 042b; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
   "entry": "058",
   "kind": "reel",
-  "not_before": "2026-12-05T14:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-09T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
@@ -502,8 +502,8 @@
   "day": 8,
   "entry": "055",
   "kind": "reel",
-  "not_before": "2026-12-05T20:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-10T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
@@ -516,8 +516,8 @@
   "day": 8,
   "entry": "062",
   "kind": "reel",
-  "not_before": "2026-12-06T14:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-11T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
@@ -530,8 +530,8 @@
   "day": 8,
   "entry": "057",
   "kind": "reel",
-  "not_before": "2026-12-06T20:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-12T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
@@ -544,15 +544,15 @@
   "day": 8,
   "entry": "063",
   "kind": "reel",
-  "not_before": "2026-12-07T14:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-13T14:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
   "entry": "066",
   "kind": "reel",
-  "not_before": "2026-12-07T20:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-13T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 9,
@@ -803,14 +803,113 @@
   "day": 8,
   "entry": "054",
   "kind": "reel",
-  "not_before": "2026-12-11T14:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-17T14:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
  },
  {
   "day": 8,
   "entry": "051",
   "kind": "reel",
-  "not_before": "2026-12-11T20:00:00Z",
-  "note": "short cut, checked"
+  "not_before": "2026-12-17T20:00:00Z",
+  "note": "short cut, checked; moved later on 21 Nov for batch 8"
+ },
+ {
+  "day": 8,
+  "entry": "091",
+  "kind": "reel",
+  "not_before": "2026-12-01T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "092",
+  "kind": "reel",
+  "not_before": "2026-12-02T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "093",
+  "kind": "reel",
+  "not_before": "2026-12-03T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "094",
+  "kind": "reel",
+  "not_before": "2026-12-04T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "095",
+  "kind": "reel",
+  "not_before": "2026-12-05T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "096",
+  "kind": "reel",
+  "not_before": "2026-12-06T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked",
+  "post_by": "2026-12-23"
+ },
+ {
+  "day": 8,
+  "entry": "097",
+  "kind": "reel",
+  "not_before": "2026-12-07T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "098",
+  "kind": "reel",
+  "not_before": "2026-12-08T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked",
+  "post_by": "2026-12-23"
+ },
+ {
+  "day": 8,
+  "entry": "099",
+  "kind": "reel",
+  "not_before": "2026-12-09T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "100",
+  "kind": "reel",
+  "not_before": "2026-12-10T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "101",
+  "kind": "reel",
+  "not_before": "2026-12-11T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked"
+ },
+ {
+  "day": 8,
+  "entry": "102",
+  "kind": "reel",
+  "not_before": "2026-12-12T14:00:00Z",
+  "hold": true,
+  "note": "short cut, held until rendered and checked",
+  "post_by": "2026-12-23"
  }
 ]

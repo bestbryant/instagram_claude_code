@@ -50,6 +50,8 @@ def main():
         row["not_before"] = _z(_iso(old) + delta)
         new_slot[row["entry"]] = _iso(row["not_before"])
         print(f"{row['entry']:5} {old} -> {row['not_before']}")
+        if row.get("post_by") and row["not_before"][:10] > row["post_by"]:   # a seasonal Reel (Christmas)
+            print(f"  WARNING: {row['entry']} must post by {row['post_by']}: move it earlier by hand (swap with a floating row)")
 
     comments = json.loads((CONTENT / "comments.json").read_text())
     for c in comments:

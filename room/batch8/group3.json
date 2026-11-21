@@ -1,0 +1,1367 @@
+[
+ {
+  "id": "099",
+  "name": "Walkies",
+  "subtitle": "where every walk crosses three deserts",
+  "story": "On Walkies, a dog walk goes as far as the dog would like, and it would like three deserts. A red one, a stony one and a frozen one, then home for tea. Dogs do it before lunch. People take a flask. Ian took Pip, his spaniel, out after breakfast. In the third desert, Ian sat down in the snow for a minute, and Pip carried on. Pip was home in time for tea, and had it. Ian's still walking back.",
+  "facts": {
+   "Day": "25 hours",
+   "Moons": "two",
+   "Gravity": "1.1 g",
+   "Population": "2.1 million"
+  },
+  "hook": "A planet for everyone with a spaniel.",
+  "tags": [
+   "#worldbuilding",
+   "#spaniel",
+   "#dogwalk"
+  ],
+  "spec": {
+   "palette": "rust_desert",
+   "terrain": "dunes",
+   "layers": 5,
+   "horizon": 0.6,
+   "relief": 0.9,
+   "water": false,
+   "shore": "none",
+   "suns": 1,
+   "sun_x": 0.84,
+   "sun_y": 0.47,
+   "sun_size": 0.085,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "none",
+   "snow": false,
+   "figure": false,
+   "lighthouse": false,
+   "house": false,
+   "particles": "none",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.35,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 2,
+   "crowd_items": "walk,dog",
+   "crowd_x": 0.45,
+   "crowd_facing": "right",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.0,
+   "bright_stars": false,
+   "flake_size": 1.0,
+   "crowd_gap": 0.08,
+   "stage": 0.72
+  },
+  "cover": "Dog walks here cross three deserts.",
+  "episode": {
+   "opener": "Dog walks here\ncross three deserts.",
+   "beats": [
+    {
+     "text": "A red one, a stony one,\nthen a frozen one.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.2,
+       1.26
+      ],
+      "focus": [
+       0.5,
+       0.56
+      ]
+     }
+    },
+    {
+     "text": "Dogs do it before lunch.\nPeople take a flask.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.6,
+       1.66
+      ],
+      "focus": [
+       0.45,
+       0.62
+      ]
+     },
+     "spec": {
+      "palette": "crimson",
+      "terrain": "spires",
+      "layers": 4,
+      "relief": 1.0,
+      "house": false,
+      "trees": "none",
+      "daisies": 0,
+      "suns": 1,
+      "sun_x": 0.74,
+      "sun_y": 0.32,
+      "sun_size": 0.045,
+      "mist": 0.4,
+      "snow": false,
+      "particles": "none",
+      "house_x": 0.0
+     }
+    },
+    {
+     "text": "Ian took Pip out\nafter breakfast.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.2,
+       1.26
+      ],
+      "focus": [
+       0.55,
+       0.58
+      ]
+     },
+     "spec": {
+      "palette": "mint_dawn",
+      "terrain": "hills",
+      "layers": 4,
+      "relief": 0.6,
+      "house": true,
+      "house_x": 0.8,
+      "trees": "pines",
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.5,
+      "sun_size": 0.045,
+      "daisies": 14,
+      "mist": 0.4,
+      "snow": false,
+      "particles": "none"
+     }
+    },
+    {
+     "text": "In the third desert,\nIan sat down.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.6,
+       1.66
+      ],
+      "focus": [
+       0.45,
+       0.62
+      ]
+     },
+     "spec": {
+      "palette": "violet_ice",
+      "terrain": "mesas",
+      "layers": 4,
+      "relief": 0.8,
+      "house": false,
+      "trees": "none",
+      "daisies": 0,
+      "suns": 0,
+      "snow": true,
+      "particles": "snow",
+      "mist": 0.55,
+      "house_x": 0.0
+     },
+     "onset": {
+      "at": 0.9,
+      "motion": "cut",
+      "spec": {
+       "palette": "violet_ice",
+       "terrain": "mesas",
+       "layers": 4,
+       "relief": 0.8,
+       "house": false,
+       "trees": "none",
+       "daisies": 0,
+       "suns": 0,
+       "snow": true,
+       "particles": "snow",
+       "mist": 0.55,
+       "house_x": 0.0,
+       "crowd_items": "sit,dog",
+       "crowd_gap": 0.3
+      }
+     },
+     "note": "identical camera; Ian sits in the snow, Pip walks on. Turn line"
+    },
+    {
+     "text": "Pip was home\nin time for tea.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.5,
+       1.55
+      ],
+      "focus": [
+       0.55,
+       0.62
+      ]
+     },
+     "spec": {
+      "palette": "gold_hour",
+      "terrain": "hills",
+      "layers": 4,
+      "relief": 0.6,
+      "house": true,
+      "house_x": 0.6,
+      "trees": "pines",
+      "suns": 1,
+      "sun_x": 0.25,
+      "sun_y": 0.56,
+      "sun_size": 0.04,
+      "daisies": 14,
+      "mist": 0.4,
+      "snow": false,
+      "particles": "none",
+      "crowd": 1,
+      "crowd_items": "dog",
+      "crowd_x": 0.5,
+      "crowd_facing": "right"
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.5,
+       1.55
+      ],
+      "focus": [
+       0.55,
+       0.62
+      ]
+     },
+     "spec": {
+      "palette": "gold_hour",
+      "terrain": "hills",
+      "layers": 4,
+      "relief": 0.6,
+      "house": true,
+      "house_x": 0.6,
+      "trees": "pines",
+      "suns": 1,
+      "sun_x": 0.25,
+      "sun_y": 0.56,
+      "sun_size": 0.04,
+      "daisies": 14,
+      "mist": 0.4,
+      "snow": false,
+      "particles": "none",
+      "crowd": 1,
+      "crowd_items": "dog",
+      "crowd_x": 0.5,
+      "crowd_facing": "right"
+     },
+     "seconds": 2.4
+    }
+   ],
+   "end": "Ian's still walking back.",
+   "caption": "Pip has done this walk before.\n\nWalkies: 2.1 million people, about four million dogs, a 25-hour day, two moons, and a dog walk that goes as far as the dog would like: three deserts, a red one, a stony one and a frozen one, then home for tea. Dogs do it before lunch. People take a flask, spare socks and, if they're sensible, the bus fare back.\n\nI borrowed a spaniel for the afternoon. I got as far as the stony one, and she sent a postcard.\n\n(The largest desert on Earth is Antarctica. A desert is about how little falls from the sky, not how hot it is. On Walkies, it's the spaniels' favourite.)\n\nHow many deserts would yours do before tea?"
+  },
+  "first_comment": "Ian's wife walks Pip now. She takes the car.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for everyone with a spaniel.",
+   "title": "Dog walks here\ncross three deserts.",
+   "sub": "",
+   "framing": "wide",
+   "zoom": [
+    1.6,
+    1.66
+   ],
+   "focus": [
+    0.6,
+    0.62
+   ],
+   "spec": {
+    "palette": "mint_dawn",
+    "terrain": "hills",
+    "layers": 4,
+    "relief": 0.6,
+    "house": true,
+    "house_x": 0.8,
+    "trees": "pines",
+    "suns": 1,
+    "sun_x": 0.3,
+    "sun_y": 0.5,
+    "sun_size": 0.045,
+    "daisies": 14,
+    "mist": 0.4,
+    "snow": false,
+    "particles": "none"
+   },
+   "onset": {
+    "at": 0.4,
+    "motion": "cut",
+    "spec": {
+     "palette": "rust_desert",
+     "terrain": "dunes",
+     "layers": 5,
+     "relief": 0.9,
+     "house": false,
+     "trees": "none",
+     "daisies": 0,
+     "suns": 1,
+     "sun_x": 0.8,
+     "sun_y": 0.53,
+     "sun_size": 0.07,
+     "mist": 0.35,
+     "snow": false,
+     "particles": "none",
+     "house_x": 0.0,
+     "crowd": 2,
+     "crowd_items": "walk,dog",
+     "crowd_x": 0.45,
+     "crowd_facing": "right",
+     "crowd_gap": 0.08
+    }
+   },
+   "beats": [
+    {
+     "text": "Pip's a spaniel.\nIan took a flask.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.85,
+       1.9
+      ],
+      "focus": [
+       0.46,
+       0.62
+      ]
+     },
+     "spec": {
+      "palette": "crimson",
+      "terrain": "spires",
+      "layers": 4,
+      "relief": 1.0,
+      "house": false,
+      "trees": "none",
+      "daisies": 0,
+      "suns": 1,
+      "sun_x": 0.74,
+      "sun_y": 0.32,
+      "sun_size": 0.045,
+      "mist": 0.4,
+      "snow": false,
+      "particles": "none",
+      "house_x": 0.0,
+      "crowd_items": "cup,dog"
+     }
+    },
+    {
+     "text": "In the third desert,\nIan sat down.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.7,
+       1.76
+      ],
+      "focus": [
+       0.46,
+       0.62
+      ]
+     },
+     "spec": {
+      "palette": "violet_ice",
+      "terrain": "mesas",
+      "layers": 4,
+      "relief": 0.8,
+      "house": false,
+      "trees": "none",
+      "daisies": 0,
+      "suns": 0,
+      "snow": true,
+      "particles": "snow",
+      "mist": 0.55,
+      "house_x": 0.0
+     },
+     "onset": {
+      "at": 0.9,
+      "motion": "cut",
+      "spec": {
+       "palette": "violet_ice",
+       "terrain": "mesas",
+       "layers": 4,
+       "relief": 0.8,
+       "house": false,
+       "trees": "none",
+       "daisies": 0,
+       "suns": 0,
+       "snow": true,
+       "particles": "snow",
+       "mist": 0.55,
+       "house_x": 0.0,
+       "crowd_items": "sit,dog",
+       "crowd_gap": 0.3
+      }
+     },
+     "seconds": 2.6
+    },
+    {
+     "text": "Pip was home\nin time for tea.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.6,
+       1.66
+      ],
+      "focus": [
+       0.6,
+       0.62
+      ]
+     },
+     "spec": {
+      "palette": "gold_hour",
+      "terrain": "hills",
+      "layers": 4,
+      "relief": 0.6,
+      "house": true,
+      "house_x": 0.8,
+      "trees": "pines",
+      "suns": 1,
+      "sun_x": 0.36,
+      "sun_y": 0.57,
+      "sun_size": 0.04,
+      "daisies": 14,
+      "mist": 0.4,
+      "snow": false,
+      "particles": "none",
+      "crowd": 1,
+      "crowd_items": "dog",
+      "crowd_x": 0.7,
+      "crowd_facing": "right"
+     },
+     "seconds": 2.6
+    }
+   ],
+   "end": "Ian's still walking back.",
+   "end_spec": {
+    "palette": "violet_ice",
+    "terrain": "mesas",
+    "layers": 4,
+    "relief": 0.8,
+    "house": false,
+    "trees": "none",
+    "daisies": 0,
+    "suns": 0,
+    "snow": true,
+    "particles": "snow",
+    "mist": 0.55,
+    "house_x": 0.0,
+    "crowd": 1,
+    "crowd_items": "walk",
+    "crowd_x": 0.5,
+    "crowd_facing": "left"
+   },
+   "end_zoom": [
+    1.3,
+    1.24
+   ],
+   "end_focus": [
+    0.5,
+    0.58
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For everyone with a spaniel.",
+   "sign": "Every name has a planet."
+  }
+ },
+ {
+  "id": "100",
+  "name": "Bunk",
+  "subtitle": "where everyone's nine at their mum's",
+  "story": "On Bunk, anyone who goes back to their mum's is nine again by the time they're through the door. Not in spirit. Nine: the height, the bedtime, the opinions about crusts. It wears off on the drive home, usually around the services. Gareth's a judge. At Christmas he went home with his brother, and by the doorstep they were both up on their parents' shoulders. He asked for squash. Mum sent them both to bed at eight, and they went. At ten, Gareth asked for a glass of water. He's sentencing someone on Monday.",
+  "facts": {
+   "Day": "22 hours",
+   "Moons": "two",
+   "Gravity": "1.0 g",
+   "Population": "3.4 million"
+  },
+  "hook": "A planet for every grown man in his old bedroom.",
+  "tags": [
+   "#worldbuilding",
+   "#christmas",
+   "#brothers"
+  ],
+  "spec": {
+   "palette": "pumpkin",
+   "terrain": "peaks",
+   "layers": 4,
+   "horizon": 0.6,
+   "relief": 0.8,
+   "water": false,
+   "shore": "none",
+   "suns": 1,
+   "sun_x": 0.26,
+   "sun_y": 0.57,
+   "sun_size": 0.04,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "pines",
+   "snow": true,
+   "figure": false,
+   "lighthouse": false,
+   "house": true,
+   "particles": "snow",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.4,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 2,
+   "crowd_items": "child,child",
+   "crowd_x": 0.55,
+   "crowd_facing": "in",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.73,
+   "bright_stars": false,
+   "flake_size": 1.0,
+   "crowd_gap": 0.11,
+   "stage": 0.73
+  },
+  "cover": "At Mum's, you're nine again.",
+  "episode": {
+   "opener": "At Mum's,\nyou're nine again.",
+   "beats": [
+    {
+     "text": "Not in spirit. Nine.\nBedtime, crusts, the lot.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.3,
+       1.36
+      ],
+      "focus": [
+       0.55,
+       0.6
+      ]
+     },
+     "spec": {
+      "crowd": 4,
+      "crowd_items": "walk,walk,nothing,nothing",
+      "crowd_x": 0.5,
+      "crowd_gap": 0.085,
+      "crowd_facing": "in"
+     },
+     "onset": {
+      "at": 1.0,
+      "motion": "auto",
+      "spec": {
+       "crowd": 2,
+       "crowd_items": "child,child",
+       "crowd_x": 0.55,
+       "crowd_gap": 0.11,
+       "crowd_facing": "in"
+      }
+     }
+    },
+    {
+     "text": "Gareth's a judge.\nHe asked for squash.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.3,
+       2.36
+      ],
+      "focus": [
+       0.48,
+       0.665
+      ]
+     }
+    },
+    {
+     "text": "Mum sent them both\nto bed at eight.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.7,
+       1.76
+      ],
+      "focus": [
+       0.6,
+       0.64
+      ]
+     },
+     "onset": {
+      "at": 0.9,
+      "motion": "cut",
+      "spec": {
+       "palette": "abyss",
+       "suns": 0,
+       "crowd_items": "child_asleep,child_asleep"
+      }
+     },
+     "note": "identical camera; night falls and both brothers fall asleep on their parents' shoulders. Turn line"
+    },
+    {
+     "text": "Gareth asked for\na glass of water.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.3,
+       2.36
+      ],
+      "focus": [
+       0.48,
+       0.665
+      ]
+     },
+     "spec": {
+      "palette": "abyss",
+      "suns": 0,
+      "crowd_items": "child_asleep,child_asleep"
+     },
+     "onset": {
+      "at": 0.7,
+      "motion": "cut",
+      "spec": {
+       "palette": "abyss",
+       "suns": 0,
+       "crowd_items": "child,child_asleep"
+      }
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.3,
+       2.36
+      ],
+      "focus": [
+       0.48,
+       0.665
+      ]
+     },
+     "spec": {
+      "palette": "abyss",
+      "suns": 0,
+      "crowd_items": "child,child_asleep"
+     },
+     "seconds": 2.4
+    }
+   ],
+   "end": "He's sentencing someone on Monday.",
+   "caption": "They both wiped their feet.\n\nBunk: 3.4 million people, a 22-hour day, two moons, and a rule about going home: step through your mum's front door, and you're nine again. Not in spirit. Nine. The height, the bedtime, the strong feelings about crusts. It wears off on the drive back, usually around the services.\n\nI only went round to my mum's to borrow a stepladder. I came out with a packed lunch.\n\n(Children of nine need nine to twelve hours' sleep a night, according to the American Academy of Sleep Medicine. On Bunk, so do judges.)\n\nWhat time would your mum send you up?"
+  },
+  "first_comment": "His brother's a surgeon. Mum still cuts his sandwiches into triangles.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for every grown man in his old bedroom.",
+   "title": "At Mum's,\nyou're nine again.",
+   "sub": "",
+   "framing": "group",
+   "zoom": [
+    1.75,
+    1.8
+   ],
+   "focus": [
+    0.55,
+    0.62
+   ],
+   "spec": {
+    "crowd": 4,
+    "crowd_items": "walk,walk,nothing,nothing",
+    "crowd_x": 0.5,
+    "crowd_gap": 0.085,
+    "crowd_facing": "in"
+   },
+   "onset": {
+    "at": 0.4,
+    "motion": "auto",
+    "spec": {
+     "crowd": 2,
+     "crowd_items": "child,child",
+     "crowd_x": 0.55,
+     "crowd_gap": 0.11,
+     "crowd_facing": "in"
+    }
+   },
+   "beats": [
+    {
+     "text": "Gareth's a judge.\nHe asked for squash.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.3,
+       2.36
+      ],
+      "focus": [
+       0.48,
+       0.665
+      ]
+     }
+    },
+    {
+     "text": "Mum sent them both\nto bed at eight.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.95,
+       2.0
+      ],
+      "focus": [
+       0.6,
+       0.655
+      ]
+     },
+     "onset": {
+      "at": 0.9,
+      "motion": "cut",
+      "spec": {
+       "palette": "abyss",
+       "suns": 0,
+       "crowd_items": "child_asleep,child_asleep"
+      }
+     },
+     "seconds": 2.7
+    },
+    {
+     "text": "Gareth asked for\na glass of water.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.3,
+       2.36
+      ],
+      "focus": [
+       0.48,
+       0.665
+      ]
+     },
+     "spec": {
+      "palette": "abyss",
+      "suns": 0,
+      "crowd_items": "child_asleep,child_asleep"
+     },
+     "onset": {
+      "at": 0.7,
+      "motion": "cut",
+      "spec": {
+       "palette": "abyss",
+       "suns": 0,
+       "crowd_items": "child,child_asleep"
+      }
+     }
+    }
+   ],
+   "end": "He's sentencing someone on Monday.",
+   "end_zoom": [
+    1.5,
+    1.44
+   ],
+   "end_focus": [
+    0.56,
+    0.6
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For every grown man in his old bedroom.",
+   "sign": "Every name has a planet."
+  }
+ },
+ {
+  "id": "101",
+  "name": "Vera",
+  "subtitle": "every Vera's planet",
+  "story": "On Vera, the nosiest neighbour on every street gets a lighthouse. Nobody votes. It just goes up one night beside the right house, and the beam does the rest. Vera's went up over her cottage on the cliff. She knew about the extension at number nine before the builders did. Then Vera went on a cruise, and the lighthouse went with her. For a fortnight, nobody on the street knew anything. When she got back, there'd been two affairs and a conservatory.",
+  "facts": {
+   "Day": "30 hours",
+   "Moons": "none",
+   "Gravity": "0.95 g",
+   "Population": "940,000"
+  },
+  "hook": "A planet for the neighbour who takes in your parcels.",
+  "tags": [
+   "#illustration",
+   "#neighbours",
+   "#vera"
+  ],
+  "spec": {
+   "palette": "teal_night",
+   "terrain": "spires",
+   "layers": 3,
+   "horizon": 0.6,
+   "relief": 0.6,
+   "water": true,
+   "shore": "left",
+   "suns": 0,
+   "sun_x": 0.6,
+   "sun_y": 0.5,
+   "sun_size": 0.05,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "none",
+   "snow": false,
+   "figure": false,
+   "lighthouse": true,
+   "house": true,
+   "particles": "none",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.4,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 0,
+   "crowd_items": "",
+   "crowd_x": 0.0,
+   "crowd_facing": "",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.21,
+   "bright_stars": false,
+   "flake_size": 1.0,
+   "crowd_gap": 0.09,
+   "stage": 0.74
+  },
+  "cover": "The nosiest neighbour gets a lighthouse.",
+  "kicker": "Every Vera gets this planet.",
+  "episode": {
+   "opener": "The nosiest neighbour\ngets a lighthouse.",
+   "beats": [
+    {
+     "text": "Nobody votes.\nIt just goes up one night.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.6,
+       1.66
+      ],
+      "focus": [
+       0.2,
+       0.64
+      ]
+     },
+     "spec": {
+      "lighthouse": false
+     },
+     "onset": {
+      "at": 1.2,
+      "motion": "rise",
+      "spec": {
+       "lighthouse": true
+      }
+     }
+    },
+    {
+     "text": "Vera knew about the extension\nbefore the builders.",
+     "shot": {
+      "framing": "lighthouse",
+      "zoom": [
+       2.2,
+       2.26
+      ],
+      "focus": [
+       0.16,
+       0.64
+      ]
+     }
+    },
+    {
+     "text": "Then Vera went\non a cruise.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.4,
+       1.46
+      ],
+      "focus": [
+       0.3,
+       0.62
+      ]
+     },
+     "onset": {
+      "at": 0.9,
+      "motion": "cut",
+      "spec": {
+       "lighthouse": false
+      }
+     },
+     "note": "identical camera; the lighthouse and its beam go, leaving her cottage. Turn line"
+    },
+    {
+     "text": "For a fortnight,\nnobody knew anything.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.1,
+       1.14
+      ],
+      "focus": [
+       0.5,
+       0.6
+      ]
+     },
+     "spec": {
+      "lighthouse": false
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.1,
+       1.14
+      ],
+      "focus": [
+       0.5,
+       0.6
+      ]
+     },
+     "spec": {
+      "lighthouse": false
+     },
+     "seconds": 2.4
+    }
+   ],
+   "end": "Two affairs and a conservatory.",
+   "caption": "Vera is always in.\n\nVera: 940,000 people, a 30-hour day, no moons, and a lighthouse on every street for whoever's nosiest. Nobody votes. It just goes up one night beside the right house, and the beam does the rest. Ships could use them, in theory. Mostly they're for knowing who's had a delivery.\n\nI stayed one night on Vera's street. By breakfast she knew where I was going next, and had views.\n\n(The story goes that net curtains caught on in Victorian Britain so you could see out without being seen. Vera has never seen the point.)\n\nWhat would the lighthouse have seen on your street this week?"
+  },
+  "first_comment": "Vera's home. She's been round. She says the conservatory faces the wrong way.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for the neighbour who takes in your parcels.",
+   "title": "The nosiest neighbour\ngets a lighthouse.",
+   "sub": "",
+   "framing": "medium",
+   "zoom": [
+    1.6,
+    1.66
+   ],
+   "focus": [
+    0.2,
+    0.64
+   ],
+   "spec": {
+    "lighthouse": false
+   },
+   "onset": {
+    "at": 0.4,
+    "motion": "rise",
+    "spec": {
+     "lighthouse": true
+    }
+   },
+   "beats": [
+    {
+     "text": "Vera knew about the extension\nbefore the builders.",
+     "shot": {
+      "framing": "lighthouse",
+      "zoom": [
+       2.2,
+       2.26
+      ],
+      "focus": [
+       0.16,
+       0.66
+      ]
+     }
+    },
+    {
+     "text": "Then Vera went\non a cruise.",
+     "shot": {
+      "framing": "lighthouse",
+      "zoom": [
+       2.2,
+       2.26
+      ],
+      "focus": [
+       0.16,
+       0.66
+      ]
+     },
+     "onset": {
+      "at": 0.9,
+      "motion": "cut",
+      "spec": {
+       "lighthouse": false
+      }
+     }
+    },
+    {
+     "text": "For a fortnight,\nnobody knew anything.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.1,
+       1.14
+      ],
+      "focus": [
+       0.5,
+       0.6
+      ]
+     },
+     "spec": {
+      "lighthouse": false
+     }
+    }
+   ],
+   "end": "Two affairs and a conservatory.",
+   "end_onset": {
+    "at": 0.6,
+    "motion": "rise",
+    "spec": {
+     "lighthouse": true
+    }
+   },
+   "end_zoom": [
+    1.2,
+    1.16
+   ],
+   "end_focus": [
+    0.4,
+    0.6
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For the neighbour who takes in your parcels.",
+   "sign": "Every name has a planet."
+  }
+ },
+ {
+  "id": "102",
+  "name": "Crumb",
+  "subtitle": "where whoever eats the mince pie does the chimneys",
+  "story": "On Crumb, whoever eats the mince pie left out for Santa becomes Santa until morning. Every chimney on the planet, in whatever they had on. Most dads find out around eleven, with crumbs down their jumper. This year, the kids left out two, and Mum had the other one. The kids had planned it since October. By the time their parents got back down, they'd opened everything. Even Nan's.",
+  "facts": {
+   "Day": "24 hours",
+   "Moons": "one",
+   "Gravity": "0.8 g",
+   "Population": "5.2 million"
+  },
+  "hook": "A planet for every dad who ate the mince pie.",
+  "tags": [
+   "#worldbuilding",
+   "#christmaseve",
+   "#mincepie"
+  ],
+  "spec": {
+   "palette": "lilac_dusk",
+   "terrain": "hills",
+   "layers": 4,
+   "horizon": 0.6,
+   "relief": 0.6,
+   "water": false,
+   "shore": "none",
+   "suns": 0,
+   "sun_x": 0.6,
+   "sun_y": 0.5,
+   "sun_size": 0.05,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "pines",
+   "snow": true,
+   "figure": false,
+   "lighthouse": false,
+   "house": true,
+   "particles": "snow",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.4,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 1,
+   "crowd_items": "aloft",
+   "crowd_x": 0.53,
+   "crowd_facing": "right",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.56,
+   "bright_stars": true,
+   "flake_size": 1.0,
+   "crowd_gap": 0.09,
+   "stage": 0.7
+  },
+  "cover": "Santa's mince pie makes you Santa.",
+  "episode": {
+   "opener": "Santa's mince pie\nmakes you Santa.",
+   "beats": [
+    {
+     "text": "Every chimney on the planet,\nby morning.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.3,
+       1.36
+      ],
+      "focus": [
+       0.52,
+       0.56
+      ]
+     },
+     "spec": {
+      "crowd": 1,
+      "crowd_items": "cup",
+      "crowd_x": 0.44,
+      "crowd_facing": "right",
+      "bright_stars": false
+     },
+     "onset": {
+      "at": 1.0,
+      "motion": "auto",
+      "spec": {
+       "crowd": 1,
+       "crowd_items": "aloft",
+       "crowd_x": 0.53,
+       "crowd_facing": "right",
+       "bright_stars": true
+      }
+     }
+    },
+    {
+     "text": "Most dads find out\naround eleven.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.2,
+       2.26
+      ],
+      "focus": [
+       0.5,
+       0.47
+      ]
+     }
+    },
+    {
+     "text": "This year, the kids\nleft out two.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.6,
+       1.66
+      ],
+      "focus": [
+       0.52,
+       0.53
+      ]
+     },
+     "onset": {
+      "at": 0.9,
+      "motion": "auto",
+      "spec": {
+       "crowd": 2,
+       "crowd_items": "aloft,aloft",
+       "crowd_x": 0.53,
+       "crowd_gap": 0.12,
+       "crowd_facing": "in",
+       "bright_stars": true
+      }
+     },
+     "note": "identical camera; Mum appears in mid-air beside him. Turn line"
+    },
+    {
+     "text": "The kids had planned it\nsince October.",
+     "shot": {
+      "framing": "house",
+      "zoom": [
+       1.9,
+       1.96
+      ],
+      "focus": [
+       0.56,
+       0.64
+      ]
+     },
+     "spec": {
+      "crowd": 0,
+      "crowd_items": "",
+      "bright_stars": true
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "house",
+      "zoom": [
+       1.9,
+       1.96
+      ],
+      "focus": [
+       0.56,
+       0.64
+      ]
+     },
+     "spec": {
+      "crowd": 0,
+      "crowd_items": "",
+      "bright_stars": true
+     },
+     "seconds": 2.4
+    }
+   ],
+   "end": "They'd opened everything. Even Nan's.",
+   "caption": "The sherry was a trap too.\n\nCrumb: 5.2 million people, a 24-hour day, one moon, and one rule on Christmas Eve: whoever eats the mince pie left out for Santa becomes Santa until morning. Every chimney on the planet, in whatever they had on. Most dads find out around eleven, with crumbs down their jumper.\n\nI spent a Christmas Eve with a family there. I tidied up the plate before bed, to be helpful. I did the whole southern hemisphere.\n\n(The story goes that British children leave Father Christmas a mince pie and a glass of sherry, and a carrot for the reindeer. On Crumb, the carrot's the only safe thing on the plate.)\n\nWhat would your kids open first?"
+  },
+  "first_comment": "Nan's was a foot spa. The kids have been taking turns in it all morning.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for every dad who ate the mince pie.",
+   "title": "Santa's mince pie\nmakes you Santa.",
+   "sub": "",
+   "framing": "wide",
+   "zoom": [
+    1.2,
+    1.24
+   ],
+   "focus": [
+    0.53,
+    0.52
+   ],
+   "spec": {
+    "crowd": 1,
+    "crowd_items": "cup",
+    "crowd_x": 0.44,
+    "crowd_facing": "right",
+    "bright_stars": false
+   },
+   "onset": {
+    "at": 0.4,
+    "motion": "auto",
+    "spec": {
+     "crowd": 1,
+     "crowd_items": "aloft",
+     "crowd_x": 0.53,
+     "crowd_facing": "right",
+     "bright_stars": true
+    }
+   },
+   "beats": [
+    {
+     "text": "Every chimney.\nIn his slippers.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.2,
+       2.26
+      ],
+      "focus": [
+       0.53,
+       0.47
+      ]
+     }
+    },
+    {
+     "text": "This year, the kids\nleft out two.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.65,
+       1.7
+      ],
+      "focus": [
+       0.53,
+       0.47
+      ]
+     },
+     "onset": {
+      "at": 0.8,
+      "motion": "auto",
+      "spec": {
+       "crowd": 2,
+       "crowd_items": "aloft,aloft",
+       "crowd_x": 0.53,
+       "crowd_gap": 0.12,
+       "crowd_facing": "in",
+       "bright_stars": true
+      }
+     }
+    },
+    {
+     "text": "First night out in ages.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.2,
+       2.26
+      ],
+      "focus": [
+       0.53,
+       0.47
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "aloft,aloft",
+      "crowd_x": 0.53,
+      "crowd_gap": 0.11,
+      "crowd_facing": "in",
+      "bright_stars": true
+     }
+    }
+   ],
+   "end": "The kids opened everything. Even Nan's.",
+   "end_zoom": [
+    1.3,
+    1.24
+   ],
+   "end_focus": [
+    0.55,
+    0.56
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For every dad who ate the mince pie.",
+   "sign": "Every name has a planet.",
+   "end_spec": {
+    "crowd": 0,
+    "crowd_items": ""
+   }
+  }
+ }
+]

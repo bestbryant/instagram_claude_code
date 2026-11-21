@@ -1,0 +1,1245 @@
+[
+ {
+  "id": "091",
+  "name": "Muddle",
+  "subtitle": "where you are whatever Mum calls you",
+  "story": "On Muddle, you turn into whatever your mum calls you. Get the dog's name by mistake and you're the dog until she sorts it out, which in most houses is after the washing-up. Sunday dinner is the worst of it. Pickle is the family spaniel, and one Sunday Mum called Shaun Pickle, and Shaun was a spaniel. By pudding she'd done all three of her boys. Then Dad offered to help. She was left at the table with a spoon and five spaniels, all sitting very nicely and looking at her. First time they've come when called.",
+  "facts": {
+   "Day": "25 hours",
+   "Moons": "two",
+   "Gravity": "1.0 g",
+   "Population": "2.3 million"
+  },
+  "hook": "A planet for everyone Mum calls by the dog's name.",
+  "tags": [
+   "#worldbuilding",
+   "#mum",
+   "#spaniel"
+  ],
+  "spec": {
+   "palette": "rose_fog",
+   "terrain": "mesas",
+   "layers": 4,
+   "horizon": 0.6,
+   "relief": 0.55,
+   "water": false,
+   "shore": "none",
+   "suns": 1,
+   "sun_x": 0.62,
+   "sun_y": 0.55,
+   "sun_size": 0.045,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "none",
+   "snow": false,
+   "figure": false,
+   "lighthouse": false,
+   "house": true,
+   "particles": "none",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.3,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 6,
+   "crowd_items": "spoon,nothing,nothing,nothing,nothing,dog",
+   "crowd_x": 0.44,
+   "crowd_facing": "in",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.84,
+   "bright_stars": false,
+   "flake_size": 1.0,
+   "crowd_gap": 0.12,
+   "stage": 0.74
+  },
+  "cover": "You turn into whatever Mum calls you.",
+  "episode": {
+   "opener": "You turn into whatever\nMum calls you.",
+   "beats": [
+    {
+     "text": "Call a son by the dog's name,\nand he's the dog.",
+     "shot": {
+      "framing": "group",
+      "zoom": [
+       1.3,
+       1.34
+      ],
+      "focus": [
+       0.455,
+       0.6
+      ]
+     },
+     "onset": {
+      "at": 1.4,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+      }
+     }
+    },
+    {
+     "text": "Mum said 'Pickle'.\nShe meant Shaun.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       1.85,
+       1.92
+      ],
+      "focus": [
+       0.585,
+       0.635
+      ]
+     },
+     "spec": {
+      "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+     }
+    },
+    {
+     "text": "By pudding,\nall three boys were Pickle.",
+     "shot": {
+      "framing": "group",
+      "zoom": [
+       1.3,
+       1.34
+      ],
+      "focus": [
+       0.455,
+       0.6
+      ]
+     },
+     "spec": {
+      "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+     },
+     "onset": {
+      "at": 1.0,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+      }
+     }
+    },
+    {
+     "text": "Then Dad offered to help.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.1,
+       2.16
+      ],
+      "focus": [
+       0.22,
+       0.64
+      ]
+     },
+     "spec": {
+      "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+     },
+     "onset": {
+      "at": 1.2,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "spoon,dog,dog,dog,dog,dog"
+      }
+     },
+     "note": "close on Mum and Dad; Dad becomes the fifth spaniel on a cut. Turn line"
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "group",
+      "zoom": [
+       1.3,
+       1.34
+      ],
+      "focus": [
+       0.455,
+       0.6
+      ]
+     },
+     "spec": {
+      "crowd_items": "spoon,dog,dog,dog,dog,dog"
+     },
+     "seconds": 2.4
+    }
+   ],
+   "end": "First time they've come when called.",
+   "caption": "Count the spaniels. Then count the sons.\n\nMuddle: 2.3 million people, a 25-hour day, two moons, and mums whose mix-ups come true. Get the wrong name from your mum and you turn into whoever she said, until she gets it right, which in most houses is after the washing-up. Sunday dinner is the worst of it. Pickle is the spaniel. By pudding, all three boys were Pickle too.\n\nI stayed with a family there. Mum kept calling me Nathan, her youngest. I spent the weekend nine years old and was sent to bed at eight.\n\n(In 2016, psychologists at Duke University found that people mix up names within a group, family with family, and that the dog's name gets pulled in, but rarely the cat's. On Muddle, that's a lot of spaniels.)\n\nHow many names does your mum try before she gets to yours?"
+  },
+  "first_comment": "They're all coming again next Sunday. Mum's bought a whistle.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for everyone Mum calls by the dog's name.",
+   "title": "You turn into whatever\nMum calls you.",
+   "sub": "",
+   "framing": "group",
+   "zoom": [
+    1.3,
+    1.34
+   ],
+   "focus": [
+    0.455,
+    0.6
+   ],
+   "spec": {},
+   "onset": {
+    "at": 0.4,
+    "motion": "cut",
+    "spec": {
+     "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+    }
+   },
+   "beats": [
+    {
+     "text": "Mum said 'Pickle'.\nShe meant Shaun.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       1.85,
+       1.92
+      ],
+      "focus": [
+       0.585,
+       0.635
+      ]
+     },
+     "spec": {
+      "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+     }
+    },
+    {
+     "text": "By pudding,\nall three boys were Pickle.",
+     "shot": {
+      "framing": "group",
+      "zoom": [
+       1.3,
+       1.34
+      ],
+      "focus": [
+       0.455,
+       0.6
+      ]
+     },
+     "spec": {
+      "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+     },
+     "onset": {
+      "at": 1.0,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+      }
+     }
+    },
+    {
+     "text": "Then Dad offered to help.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.1,
+       2.16
+      ],
+      "focus": [
+       0.22,
+       0.64
+      ]
+     },
+     "spec": {
+      "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+     },
+     "onset": {
+      "at": 1.2,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "spoon,dog,dog,dog,dog,dog"
+      }
+     }
+    }
+   ],
+   "end": "First time they've come when called.",
+   "end_zoom": [
+    1.3,
+    1.24
+   ],
+   "end_focus": [
+    0.455,
+    0.57
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For everyone Mum calls by the dog's name.",
+   "sign": "Every name has a planet."
+  }
+ },
+ {
+  "id": "092",
+  "name": "Gemma",
+  "subtitle": "every Gemma's planet",
+  "story": "On Gemma, twins can't get more than ten feet apart. Walk off in a huff and you snap straight back, shoulder to shoulder, wherever you were going. Twins here share a bedroom, a desk and a bus seat for life, and most of their opinions. Gemma moved to Leeds for work. Jade came too. Then Gemma got married, with her sister pressed against one arm and her husband against the other, and when she threw the bouquet there was only one person in range. Jade caught it. Obviously. The honeymoon was very cosy.",
+  "facts": {
+   "Day": "20 hours",
+   "Moons": "two",
+   "Gravity": "1.1 g",
+   "Population": "1.4 million"
+  },
+  "hook": "A planet for every twin who comes as a set.",
+  "tags": [
+   "#illustration",
+   "#twins",
+   "#gemma"
+  ],
+  "spec": {
+   "palette": "pastel",
+   "terrain": "hills",
+   "layers": 4,
+   "horizon": 0.6,
+   "relief": 0.6,
+   "water": false,
+   "shore": "none",
+   "suns": 1,
+   "sun_x": 0.78,
+   "sun_y": 0.44,
+   "sun_size": 0.045,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 2,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "lone",
+   "snow": false,
+   "figure": false,
+   "lighthouse": false,
+   "house": false,
+   "particles": "none",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.2,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 2,
+   "crowd_items": "nothing,nothing",
+   "crowd_x": 0.5,
+   "crowd_facing": "in",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.0,
+   "bright_stars": false,
+   "flake_size": 1.0,
+   "crowd_gap": 0.05,
+   "stage": 0.74
+  },
+  "cover": "Twins here can't get ten feet apart.",
+  "kicker": "Every Gemma gets this planet.",
+  "episode": {
+   "opener": "Twins here can't get\nten feet apart.",
+   "beats": [
+    {
+     "text": "Walk off in a huff,\nand you snap straight back.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.5,
+       1.95
+      ],
+      "focus": [
+       0.5,
+       0.635
+      ]
+     },
+     "spec": {
+      "crowd_items": "walk,walk",
+      "crowd_facing": "out",
+      "crowd_gap": 0.45
+     },
+     "onset": {
+      "at": 1.2,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "nothing,nothing",
+       "crowd_facing": "in",
+       "crowd_gap": 0.05
+      }
+     }
+    },
+    {
+     "text": "Gemma moved to Leeds.\nJade came too.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.3,
+       1.36
+      ],
+      "focus": [
+       0.56,
+       0.58
+      ]
+     },
+     "spec": {
+      "crowd_items": "walk,walk",
+      "crowd_facing": "right",
+      "crowd_x": 0.42,
+      "crowd_gap": 0.06,
+      "house": true,
+      "house_x": 0.74
+     }
+    },
+    {
+     "text": "Then Gemma got married.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.95,
+       2.0
+      ],
+      "focus": [
+       0.5,
+       0.635
+      ]
+     },
+     "onset": {
+      "at": 1.0,
+      "spec": {
+       "crowd": 3,
+       "crowd_items": "nothing,flower,nothing",
+       "crowd_x": 0.525,
+       "daisies": 30
+      }
+     },
+     "note": "identical camera; a groom rises in on Gemma's other side, with flowers and daisies. Turn line"
+    },
+    {
+     "text": "Jade caught the bouquet.\nObviously.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.75,
+       2.8
+      ],
+      "focus": [
+       0.51,
+       0.66
+      ]
+     },
+     "spec": {
+      "crowd": 3,
+      "crowd_items": "nothing,flower,nothing",
+      "crowd_x": 0.525,
+      "daisies": 30
+     },
+     "onset": {
+      "at": 1.2,
+      "motion": "cut",
+      "spec": {
+       "crowd": 3,
+       "crowd_items": "flower,nothing,nothing",
+       "crowd_x": 0.525,
+       "daisies": 30,
+       "crowd_facing": "left"
+      }
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.95,
+       2.0
+      ],
+      "focus": [
+       0.5,
+       0.635
+      ]
+     },
+     "spec": {
+      "crowd": 3,
+      "crowd_items": "flower,nothing,nothing",
+      "crowd_x": 0.525,
+      "daisies": 30,
+      "crowd_facing": "left"
+     },
+     "seconds": 2.4
+    }
+   ],
+   "end": "The honeymoon was very cosy.",
+   "caption": "Those two aren't getting very far.\n\nGemma: 1.4 million people, a 20-hour day, two moons, and twins who can't get more than ten feet apart. Walk off in a huff and you snap straight back, shoulder to shoulder, wherever you were going. Twins share a bedroom, a desk and a bus seat for life. Gemma moved to Leeds. Jade came too. Then Gemma got married, and the bouquet only had one place to go.\n\nI waited at a bus stop there behind a pair of twins. One wanted the number nine, the other wanted the twelve. They're still at the bus stop.\n\n(The story goes that Twinsburg, Ohio, is named after twin brothers who married sisters, died on the same day and share a grave. On Gemma, that's just good planning.)\n\nCould you share a bus seat for life?"
+  },
+  "first_comment": "Jade's seeing someone now. Gemma says he's lovely. She'd know.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for every twin who comes as a set.",
+   "title": "Twins here can't get\nten feet apart.",
+   "sub": "",
+   "framing": "medium",
+   "zoom": [
+    1.5,
+    1.95
+   ],
+   "focus": [
+    0.5,
+    0.635
+   ],
+   "spec": {
+    "crowd_items": "walk,walk",
+    "crowd_facing": "out",
+    "crowd_gap": 0.45
+   },
+   "onset": {
+    "at": 0.4,
+    "motion": "cut",
+    "spec": {
+     "crowd_items": "nothing,nothing",
+     "crowd_facing": "in",
+     "crowd_gap": 0.05
+    }
+   },
+   "beats": [
+    {
+     "text": "Gemma moved to Leeds.\nJade came too.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.3,
+       1.36
+      ],
+      "focus": [
+       0.56,
+       0.58
+      ]
+     },
+     "spec": {
+      "crowd_items": "walk,walk",
+      "crowd_facing": "right",
+      "crowd_x": 0.42,
+      "crowd_gap": 0.06,
+      "house": true,
+      "house_x": 0.74
+     }
+    },
+    {
+     "text": "Then Gemma got married.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.95,
+       2.0
+      ],
+      "focus": [
+       0.5,
+       0.635
+      ]
+     },
+     "spec": {
+      "crowd_items": "nothing,nothing",
+      "crowd_facing": "in",
+      "crowd_x": 0.5,
+      "crowd_gap": 0.05,
+      "house": false
+     },
+     "onset": {
+      "at": 0.9,
+      "spec": {
+       "crowd": 3,
+       "crowd_items": "nothing,flower,nothing",
+       "crowd_x": 0.525,
+       "daisies": 30
+      }
+     }
+    },
+    {
+     "text": "Jade caught the bouquet.\nObviously.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.75,
+       2.8
+      ],
+      "focus": [
+       0.51,
+       0.66
+      ]
+     },
+     "spec": {
+      "crowd": 3,
+      "crowd_items": "nothing,flower,nothing",
+      "crowd_x": 0.525,
+      "daisies": 30
+     },
+     "onset": {
+      "at": 1.2,
+      "motion": "cut",
+      "spec": {
+       "crowd": 3,
+       "crowd_items": "flower,nothing,nothing",
+       "crowd_x": 0.525,
+       "daisies": 30,
+       "crowd_facing": "left"
+      }
+     }
+    }
+   ],
+   "end": "The honeymoon was very cosy.",
+   "end_zoom": [
+    1.75,
+    1.65
+   ],
+   "end_focus": [
+    0.5,
+    0.625
+   ],
+   "scrim": 0.55,
+   "name_y": 0.1,
+   "end_kicker": "For every twin who comes as a set.",
+   "sign": "Every name has a planet."
+  }
+ },
+ {
+  "id": "093",
+  "name": "Bonce",
+  "subtitle": "where best friends go halves on a brain",
+  "story": "On Bonce, best friends share one brain cell, and you can see who's got it: a small light just above their head. It does the thinking for both of them, which is fine as long as nobody asks anything difficult. Becky has it weekdays, for work. Nic gets weekends. One Saturday night they left it in the back of a taxi, and with nothing to think with between them, they did the only thing that made sense. They woke up on Sunday with a dog. They've called him Kebab.",
+  "facts": {
+   "Day": "19 hours",
+   "Moons": "none",
+   "Gravity": "0.8 g",
+   "Population": "3.1 million"
+  },
+  "hook": "A planet for whoever's got the brain cell today.",
+  "tags": [
+   "#worldbuilding",
+   "#bestfriends",
+   "#braincell"
+  ],
+  "spec": {
+   "palette": "lilac_dusk",
+   "terrain": "peaks",
+   "layers": 3,
+   "horizon": 0.8,
+   "relief": 0.35,
+   "water": false,
+   "shore": "none",
+   "suns": 1,
+   "sun_x": 0.4,
+   "sun_y": 0.64,
+   "sun_size": 0.016,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "none",
+   "snow": false,
+   "figure": false,
+   "lighthouse": false,
+   "house": false,
+   "particles": "none",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.35,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 2,
+   "crowd_items": "nothing,nothing",
+   "crowd_x": 0.5,
+   "crowd_facing": "in",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.0,
+   "bright_stars": false,
+   "flake_size": 1.0,
+   "crowd_gap": 0.2,
+   "stage": 0.72
+  },
+  "cover": "Best friends here share one brain cell.",
+  "episode": {
+   "opener": "Best friends here\nshare one brain cell.",
+   "beats": [
+    {
+     "text": "You can see who's got it.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.75,
+       1.8
+      ],
+      "focus": [
+       0.5,
+       0.605
+      ]
+     }
+    },
+    {
+     "text": "Becky has it weekdays.\nNic gets weekends.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.15,
+       2.2
+      ],
+      "focus": [
+       0.5,
+       0.615
+      ]
+     },
+     "onset": {
+      "at": 1.7,
+      "motion": "cut",
+      "spec": {
+       "sun_x": 0.6
+      }
+     }
+    },
+    {
+     "text": "They left it in a taxi.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.15,
+       2.2
+      ],
+      "focus": [
+       0.5,
+       0.615
+      ]
+     },
+     "spec": {
+      "sun_x": 0.6
+     },
+     "onset": {
+      "at": 0.7,
+      "motion": "cut",
+      "spec": {
+       "suns": 0
+      }
+     },
+     "note": "identical camera; the light goes out over Nic. Turn line"
+    },
+    {
+     "text": "They woke up with a dog.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.95,
+       1.99
+      ],
+      "focus": [
+       0.5,
+       0.64
+      ]
+     },
+     "spec": {
+      "crowd": 3,
+      "crowd_items": "sit,dog,nap",
+      "crowd_gap": 0.14,
+      "suns": 0,
+      "palette": "rose_fog",
+      "mist": 0.45
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.95,
+       1.99
+      ],
+      "focus": [
+       0.5,
+       0.64
+      ]
+     },
+     "spec": {
+      "crowd": 3,
+      "crowd_items": "sit,dog,nap",
+      "crowd_gap": 0.14,
+      "suns": 0,
+      "palette": "rose_fog",
+      "mist": 0.45
+     },
+     "seconds": 2.4
+    }
+   ],
+   "end": "They've called him Kebab.",
+   "caption": "Only one of them is thinking right now.\n\nBonce: 3.1 million people, a 19-hour day, no moons, and best friends who share one brain cell. It sits just above whoever's using it, a small light you can see from across the pub. Becky has it weekdays, for work. Nic gets weekends. It mostly works, as long as nobody asks either of them anything while it's out on loan.\n\nI went out with a pair of them on a Friday. By closing time, I was the one who knew where we lived.\n\n(The human brain has about 86 billion neurons. On Bonce, two people get by on one, and now there's a dog.)\n\nHave you got it today, or have they?"
+  },
+  "first_comment": "The taxi firm sent it back on Monday. Kebab has it now.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for whoever's got the brain cell today.",
+   "title": "Best friends here\nshare one brain cell.",
+   "sub": "",
+   "framing": "medium",
+   "zoom": [
+    1.75,
+    1.8
+   ],
+   "focus": [
+    0.5,
+    0.605
+   ],
+   "spec": {
+    "suns": 0
+   },
+   "onset": {
+    "at": 0.4,
+    "motion": "cut",
+    "spec": {
+     "suns": 1,
+     "sun_x": 0.4
+    }
+   },
+   "beats": [
+    {
+     "text": "Becky has it weekdays.\nNic gets weekends.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.15,
+       2.2
+      ],
+      "focus": [
+       0.5,
+       0.615
+      ]
+     },
+     "onset": {
+      "at": 1.7,
+      "motion": "cut",
+      "spec": {
+       "sun_x": 0.6
+      }
+     }
+    },
+    {
+     "text": "They left it in a taxi.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.15,
+       2.2
+      ],
+      "focus": [
+       0.5,
+       0.615
+      ]
+     },
+     "spec": {
+      "sun_x": 0.6
+     },
+     "onset": {
+      "at": 0.7,
+      "motion": "cut",
+      "spec": {
+       "suns": 0
+      }
+     }
+    },
+    {
+     "text": "They woke up with a dog.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.95,
+       1.99
+      ],
+      "focus": [
+       0.5,
+       0.64
+      ]
+     },
+     "spec": {
+      "crowd": 3,
+      "crowd_items": "sit,dog,nap",
+      "crowd_gap": 0.14,
+      "suns": 0,
+      "palette": "rose_fog",
+      "mist": 0.45
+     }
+    }
+   ],
+   "end": "They've called him Kebab.",
+   "end_zoom": [
+    1.5,
+    1.44
+   ],
+   "end_focus": [
+    0.5,
+    0.6
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For whoever's got the brain cell today.",
+   "sign": "Every name has a planet."
+  }
+ },
+ {
+  "id": "094",
+  "name": "Gary",
+  "subtitle": "every Gary's planet",
+  "story": "On Gary, babies pick their own names. Parents can argue for nine months if they like; the day it arrives, the baby decides, and a board goes up outside the house so the street knows. Ryan wanted Arthur. Megan wanted Theo. They had a list, a shortlist and a fortnight of not speaking. The baby went with Gary. Megan's ex is called Gary. Ryan calls him 'the baby'.",
+  "facts": {
+   "Day": "27 hours",
+   "Moons": "one",
+   "Gravity": "0.9 g",
+   "Population": "5.6 million"
+  },
+  "hook": "A planet for every couple arguing over baby names.",
+  "tags": [
+   "#illustration",
+   "#babynames",
+   "#gary"
+  ],
+  "spec": {
+   "palette": "mint_dawn",
+   "terrain": "dunes",
+   "layers": 4,
+   "horizon": 0.62,
+   "relief": 0.6,
+   "water": false,
+   "shore": "none",
+   "suns": 1,
+   "sun_x": 0.2,
+   "sun_y": 0.5,
+   "sun_size": 0.04,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "none",
+   "snow": false,
+   "figure": false,
+   "lighthouse": false,
+   "house": false,
+   "particles": "none",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.45,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 4,
+   "crowd_items": "nothing,child,nothing,nothing",
+   "crowd_x": 0.4,
+   "crowd_facing": "right",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.0,
+   "bright_stars": false,
+   "flake_size": 1.0,
+   "crowd_gap": 0.1,
+   "stage": 0.74
+  },
+  "cover": "Babies here pick their own names.",
+  "kicker": "Every Gary gets this planet.",
+  "episode": {
+   "opener": "Babies here pick\ntheir own names.",
+   "beats": [
+    {
+     "text": "The day it arrives,\na board goes up.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.5,
+       1.55
+      ],
+      "focus": [
+       0.505,
+       0.6
+      ]
+     },
+     "onset": {
+      "at": 1.0,
+      "motion": "rise",
+      "spec": {
+       "sign": "IT'S A|BRIAN!"
+      }
+     }
+    },
+    {
+     "text": "Ryan wanted Arthur.\nMegan wanted Theo.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.65,
+       1.7
+      ],
+      "focus": [
+       0.55,
+       0.63
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "child,nothing",
+      "crowd_x": 0.42,
+      "crowd_gap": 0.13,
+      "crowd_facing": "in",
+      "house": true,
+      "house_x": 0.15,
+      "sign": ""
+     }
+    },
+    {
+     "text": "The baby went with Gary.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.65,
+       1.7
+      ],
+      "focus": [
+       0.55,
+       0.63
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "child,nothing",
+      "crowd_x": 0.42,
+      "crowd_gap": 0.13,
+      "crowd_facing": "in",
+      "house": true,
+      "house_x": 0.15,
+      "sign": ""
+     },
+     "onset": {
+      "at": 0.7,
+      "motion": "rise",
+      "spec": {
+       "sign": "IT'S A|GARY!"
+      }
+     },
+     "note": "the beat-1 camera on Ryan and Megan; their board rises. Turn line"
+    },
+    {
+     "text": "Megan's ex is called Gary.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.3,
+       2.34
+      ],
+      "focus": [
+       0.42,
+       0.645
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "child,nothing",
+      "crowd_x": 0.42,
+      "crowd_gap": 0.13,
+      "crowd_facing": "in",
+      "house": true,
+      "house_x": 0.15,
+      "sign": ""
+     },
+     "onset": {
+      "at": 1.5,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "nap,child"
+      }
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.3,
+       2.34
+      ],
+      "focus": [
+       0.42,
+       0.645
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "nap,child",
+      "crowd_x": 0.42,
+      "crowd_gap": 0.13,
+      "crowd_facing": "in",
+      "house": true,
+      "house_x": 0.15,
+      "sign": ""
+     },
+     "seconds": 2.4
+    }
+   ],
+   "end": "Ryan calls him 'the baby'.",
+   "caption": "The one on his shoulders gets the final say.\n\nGary: 5.6 million people, a 27-hour day, one moon, and babies who pick their own names. Parents can argue for nine months if they like. The day it arrives, the baby decides, and a board goes up outside the house so the street knows. Ryan wanted Arthur. Megan wanted Theo. The baby went with Gary.\n\nA friend there let me hold her newborn for a minute. It named itself after me. I haven't been asked back.\n\n(The story goes that the actor Frank Cooper only became Gary because his agent came from Gary, Indiana. Nobody asked Frank either.)\n\nHow long did you two argue over names?"
+  },
+  "first_comment": "The christening's next month. Ryan hasn't invited the other Gary.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for every couple arguing over baby names.",
+   "title": "Babies here pick\ntheir own names.",
+   "sub": "",
+   "framing": "medium",
+   "zoom": [
+    1.5,
+    1.55
+   ],
+   "focus": [
+    0.505,
+    0.6
+   ],
+   "spec": {},
+   "onset": {
+    "at": 0.4,
+    "motion": "rise",
+    "spec": {
+     "sign": "IT'S A|BRIAN!"
+    }
+   },
+   "beats": [
+    {
+     "text": "Ryan wanted Arthur.\nMegan wanted Theo.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.65,
+       1.7
+      ],
+      "focus": [
+       0.55,
+       0.63
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "child,nothing",
+      "crowd_x": 0.42,
+      "crowd_gap": 0.13,
+      "crowd_facing": "in",
+      "house": true,
+      "house_x": 0.15,
+      "sign": ""
+     }
+    },
+    {
+     "text": "The baby went with Gary.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.65,
+       1.7
+      ],
+      "focus": [
+       0.55,
+       0.63
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "child,nothing",
+      "crowd_x": 0.42,
+      "crowd_gap": 0.13,
+      "crowd_facing": "in",
+      "house": true,
+      "house_x": 0.15,
+      "sign": ""
+     },
+     "onset": {
+      "at": 0.7,
+      "motion": "rise",
+      "spec": {
+       "sign": "IT'S A|GARY!"
+      }
+     }
+    },
+    {
+     "text": "Megan's ex is called Gary.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.3,
+       2.34
+      ],
+      "focus": [
+       0.42,
+       0.645
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "child,nothing",
+      "crowd_x": 0.42,
+      "crowd_gap": 0.13,
+      "crowd_facing": "in",
+      "house": true,
+      "house_x": 0.15,
+      "sign": ""
+     },
+     "onset": {
+      "at": 1.5,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "nap,child"
+      }
+     }
+    }
+   ],
+   "end": "Ryan calls him 'the baby'.",
+   "end_zoom": [
+    1.45,
+    1.4
+   ],
+   "end_focus": [
+    0.37,
+    0.6
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For every couple arguing over baby names.",
+   "sign": "Every name has a planet."
+  }
+ }
+]

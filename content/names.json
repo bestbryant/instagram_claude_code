@@ -10910,5 +10910,1690 @@
       "scrim": 0.5,
       "sign": "Every name has a planet."
     }
+  },
+  {
+    "id": "092",
+    "name": "Gemma",
+    "subtitle": "every Gemma's planet",
+    "story": "On Gemma, twins can't get more than ten feet apart. Walk off in a huff and you snap straight back, shoulder to shoulder, wherever you were going. Twins here share a bedroom, a desk and a bus seat for life, and most of their opinions. Gemma moved to Leeds for work. Jade came too. Then Gemma got married, with her sister pressed against one arm and her husband against the other, and when she threw the bouquet there was only one person in range. Jade caught it. Obviously. The honeymoon was very cosy.",
+    "facts": {
+      "Day": "20 hours",
+      "Moons": "two",
+      "Gravity": "1.1 g",
+      "Population": "1.4 million"
+    },
+    "hook": "A planet for every twin who comes as a set.",
+    "tags": [
+      "#illustration",
+      "#twins",
+      "#gemma"
+    ],
+    "spec": {
+      "palette": "pastel",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.78,
+      "sun_y": 0.44,
+      "sun_size": 0.045,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 2,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "lone",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.2,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.5,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.05,
+      "stage": 0.74
+    },
+    "cover": "Twins here can't get ten feet apart.",
+    "kicker": "Every Gemma gets this planet.",
+    "episode": {
+      "opener": "Twins here can't get\nten feet apart.",
+      "beats": [
+        {
+          "text": "Walk off in a huff,\nand you snap straight back.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.95
+            ],
+            "focus": [
+              0.5,
+              0.635
+            ]
+          },
+          "spec": {
+            "crowd_items": "walk,walk",
+            "crowd_facing": "out",
+            "crowd_gap": 0.45
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "nothing,nothing",
+              "crowd_facing": "in",
+              "crowd_gap": 0.05
+            }
+          }
+        },
+        {
+          "text": "Gemma moved to Leeds.\nJade came too.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.56,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd_items": "walk,walk",
+            "crowd_facing": "right",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.06,
+            "house": true,
+            "house_x": 0.74
+          }
+        },
+        {
+          "text": "Then Gemma got married.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.95,
+              2.0
+            ],
+            "focus": [
+              0.5,
+              0.635
+            ]
+          },
+          "onset": {
+            "at": 1.0,
+            "spec": {
+              "crowd": 3,
+              "crowd_items": "nothing,flower,nothing",
+              "crowd_x": 0.525,
+              "daisies": 30
+            }
+          },
+          "note": "identical camera; a groom rises in on Gemma's other side, with flowers and daisies. Turn line"
+        },
+        {
+          "text": "Jade caught the bouquet.\nObviously.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.75,
+              2.8
+            ],
+            "focus": [
+              0.51,
+              0.66
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "nothing,flower,nothing",
+            "crowd_x": 0.525,
+            "daisies": 30
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "crowd": 3,
+              "crowd_items": "flower,nothing,nothing",
+              "crowd_x": 0.525,
+              "daisies": 30,
+              "crowd_facing": "left"
+            }
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.95,
+              2.0
+            ],
+            "focus": [
+              0.5,
+              0.635
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "flower,nothing,nothing",
+            "crowd_x": 0.525,
+            "daisies": 30,
+            "crowd_facing": "left"
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "The honeymoon was very cosy.",
+      "caption": "Those two aren't getting very far.\n\nGemma: 1.4 million people, a 20-hour day, two moons, and twins who can't get more than ten feet apart. Walk off in a huff and you snap straight back, shoulder to shoulder, wherever you were going. Twins share a bedroom, a desk and a bus seat for life. Gemma moved to Leeds. Jade came too. Then Gemma got married, and the bouquet only had one place to go.\n\nI waited at a bus stop there behind a pair of twins. One wanted the number nine, the other wanted the twelve. They're still at the bus stop.\n\n(The story goes that Twinsburg, Ohio, is named after twin brothers who married sisters, died on the same day and share a grave. On Gemma, that's just good planning.)\n\nCould you share a bus seat for life?"
+    },
+    "first_comment": "Jade's seeing someone now. Gemma says he's lovely. She'd know.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every twin who comes as a set.",
+      "title": "Twins here can't get\nten feet apart.",
+      "sub": "",
+      "framing": "medium",
+      "zoom": [
+        1.5,
+        1.95
+      ],
+      "focus": [
+        0.5,
+        0.635
+      ],
+      "spec": {
+        "crowd_items": "walk,walk",
+        "crowd_facing": "out",
+        "crowd_gap": 0.45
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "nothing,nothing",
+          "crowd_facing": "in",
+          "crowd_gap": 0.05
+        }
+      },
+      "beats": [
+        {
+          "text": "Gemma moved to Leeds.\nJade came too.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.56,
+              0.58
+            ]
+          },
+          "spec": {
+            "crowd_items": "walk,walk",
+            "crowd_facing": "right",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.06,
+            "house": true,
+            "house_x": 0.74
+          }
+        },
+        {
+          "text": "Then Gemma got married.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.95,
+              2.0
+            ],
+            "focus": [
+              0.5,
+              0.635
+            ]
+          },
+          "spec": {
+            "crowd_items": "nothing,nothing",
+            "crowd_facing": "in",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.05,
+            "house": false
+          },
+          "onset": {
+            "at": 0.9,
+            "spec": {
+              "crowd": 3,
+              "crowd_items": "nothing,flower,nothing",
+              "crowd_x": 0.525,
+              "daisies": 30
+            }
+          }
+        },
+        {
+          "text": "Jade caught the bouquet.\nObviously.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.75,
+              2.8
+            ],
+            "focus": [
+              0.51,
+              0.66
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "nothing,flower,nothing",
+            "crowd_x": 0.525,
+            "daisies": 30
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "crowd": 3,
+              "crowd_items": "flower,nothing,nothing",
+              "crowd_x": 0.525,
+              "daisies": 30,
+              "crowd_facing": "left"
+            }
+          }
+        }
+      ],
+      "end": "The honeymoon was very cosy.",
+      "end_zoom": [
+        1.75,
+        1.65
+      ],
+      "end_focus": [
+        0.5,
+        0.625
+      ],
+      "scrim": 0.55,
+      "name_y": 0.1,
+      "end_kicker": "For every twin who comes as a set.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "094",
+    "name": "Gary",
+    "subtitle": "every Gary's planet",
+    "story": "On Gary, babies pick their own names. Parents can argue for nine months if they like; the day it arrives, the baby decides, and a board goes up outside the house so the street knows. Ryan wanted Arthur. Megan wanted Theo. They had a list, a shortlist and a fortnight of not speaking. The baby went with Gary. Megan's ex is called Gary. Ryan calls him 'the baby'.",
+    "facts": {
+      "Day": "27 hours",
+      "Moons": "one",
+      "Gravity": "0.9 g",
+      "Population": "5.6 million"
+    },
+    "hook": "A planet for every couple arguing over baby names.",
+    "tags": [
+      "#illustration",
+      "#babynames",
+      "#gary"
+    ],
+    "spec": {
+      "palette": "mint_dawn",
+      "terrain": "dunes",
+      "layers": 4,
+      "horizon": 0.62,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.2,
+      "sun_y": 0.5,
+      "sun_size": 0.04,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 4,
+      "crowd_items": "nothing,child,nothing,nothing",
+      "crowd_x": 0.4,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.1,
+      "stage": 0.74
+    },
+    "cover": "Babies here pick their own names.",
+    "kicker": "Every Gary gets this planet.",
+    "episode": {
+      "opener": "Babies here pick\ntheir own names.",
+      "beats": [
+        {
+          "text": "The day it arrives,\na board goes up.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.505,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "rise",
+            "spec": {
+              "sign": "IT'S A|BRIAN!"
+            }
+          }
+        },
+        {
+          "text": "Ryan wanted Arthur.\nMegan wanted Theo.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.65,
+              1.7
+            ],
+            "focus": [
+              0.55,
+              0.63
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,nothing",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.13,
+            "crowd_facing": "in",
+            "house": true,
+            "house_x": 0.15,
+            "sign": ""
+          }
+        },
+        {
+          "text": "The baby went with Gary.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.65,
+              1.7
+            ],
+            "focus": [
+              0.55,
+              0.63
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,nothing",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.13,
+            "crowd_facing": "in",
+            "house": true,
+            "house_x": 0.15,
+            "sign": ""
+          },
+          "onset": {
+            "at": 0.7,
+            "motion": "rise",
+            "spec": {
+              "sign": "IT'S A|GARY!"
+            }
+          },
+          "note": "the beat-1 camera on Ryan and Megan; their board rises. Turn line"
+        },
+        {
+          "text": "Megan's ex is called Gary.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.3,
+              2.34
+            ],
+            "focus": [
+              0.42,
+              0.645
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,nothing",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.13,
+            "crowd_facing": "in",
+            "house": true,
+            "house_x": 0.15,
+            "sign": ""
+          },
+          "onset": {
+            "at": 1.5,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "nap,child"
+            }
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.3,
+              2.34
+            ],
+            "focus": [
+              0.42,
+              0.645
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "nap,child",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.13,
+            "crowd_facing": "in",
+            "house": true,
+            "house_x": 0.15,
+            "sign": ""
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "Ryan calls him 'the baby'.",
+      "caption": "The one on his shoulders gets the final say.\n\nGary: 5.6 million people, a 27-hour day, one moon, and babies who pick their own names. Parents can argue for nine months if they like. The day it arrives, the baby decides, and a board goes up outside the house so the street knows. Ryan wanted Arthur. Megan wanted Theo. The baby went with Gary.\n\nA friend there let me hold her newborn for a minute. It named itself after me. I haven't been asked back.\n\n(The story goes that the actor Frank Cooper only became Gary because his agent came from Gary, Indiana. Nobody asked Frank either.)\n\nHow long did you two argue over names?"
+    },
+    "first_comment": "The christening's next month. Ryan hasn't invited the other Gary.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every couple arguing over baby names.",
+      "title": "Babies here pick\ntheir own names.",
+      "sub": "",
+      "framing": "medium",
+      "zoom": [
+        1.5,
+        1.55
+      ],
+      "focus": [
+        0.505,
+        0.6
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "sign": "IT'S A|BRIAN!"
+        }
+      },
+      "beats": [
+        {
+          "text": "Ryan wanted Arthur.\nMegan wanted Theo.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.65,
+              1.7
+            ],
+            "focus": [
+              0.55,
+              0.63
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,nothing",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.13,
+            "crowd_facing": "in",
+            "house": true,
+            "house_x": 0.15,
+            "sign": ""
+          }
+        },
+        {
+          "text": "The baby went with Gary.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.65,
+              1.7
+            ],
+            "focus": [
+              0.55,
+              0.63
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,nothing",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.13,
+            "crowd_facing": "in",
+            "house": true,
+            "house_x": 0.15,
+            "sign": ""
+          },
+          "onset": {
+            "at": 0.7,
+            "motion": "rise",
+            "spec": {
+              "sign": "IT'S A|GARY!"
+            }
+          }
+        },
+        {
+          "text": "Megan's ex is called Gary.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.3,
+              2.34
+            ],
+            "focus": [
+              0.42,
+              0.645
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,nothing",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.13,
+            "crowd_facing": "in",
+            "house": true,
+            "house_x": 0.15,
+            "sign": ""
+          },
+          "onset": {
+            "at": 1.5,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "nap,child"
+            }
+          }
+        }
+      ],
+      "end": "Ryan calls him 'the baby'.",
+      "end_zoom": [
+        1.45,
+        1.4
+      ],
+      "end_focus": [
+        0.37,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For every couple arguing over baby names.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "096",
+    "name": "Noel",
+    "subtitle": "every Noel's planet",
+    "story": "On Noel, Christmas lights don't twinkle; they turn night into day. A string round the porch gets you a decent dawn. A whole street gets you mid-morning. Dad did the whole hill. Clive next door had a look at it over the fence, went to the shops and came back with noon. Nobody on the street has had a night since the first of December. They nod off in armchairs on the pavement, in broad daylight, in their coats. Dad's bought a bigger ladder.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "none",
+      "Gravity": "1.1 g",
+      "Population": "890,000"
+    },
+    "hook": "A planet for every dad up a ladder in December.",
+    "tags": [
+      "#illustration",
+      "#christmaslights",
+      "#noel"
+    ],
+    "spec": {
+      "palette": "polar_night",
+      "terrain": "hills",
+      "layers": 3,
+      "horizon": 0.6,
+      "relief": 0.85,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": 0.264,
+      "sun_y": 0.365,
+      "sun_size": 0.075,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": 0.5,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.15,
+      "gag": "moth_roof",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": true,
+      "sign": "",
+      "crowd": 0,
+      "crowd_items": "",
+      "crowd_x": 0.0,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.76,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.7
+    },
+    "cover": "Christmas lights here turn night into day.",
+    "kicker": "Every Noel gets this planet.",
+    "episode": {
+      "opener": "Christmas lights here\nturn night into day.",
+      "beats": [
+        {
+          "text": "A string round the porch\ngets you a decent dawn.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.45,
+              1.5
+            ],
+            "focus": [
+              0.55,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "palette": "mint_dawn",
+              "suns": 1,
+              "sun_x": 0.3,
+              "sun_y": 0.505,
+              "sun_size": 0.065,
+              "mist": 0.05
+            }
+          }
+        },
+        {
+          "text": "Dad did the whole hill\nin lights.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.17
+            ],
+            "focus": [
+              0.5,
+              0.52
+            ]
+          }
+        },
+        {
+          "text": "Clive next door\nwent for noon.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.17
+            ],
+            "focus": [
+              0.5,
+              0.52
+            ]
+          },
+          "onset": {
+            "at": 0.8,
+            "motion": "cut",
+            "spec": {
+              "palette": "cobalt_noon",
+              "suns": 1,
+              "sun_x": 0.264,
+              "sun_y": 0.365,
+              "sun_size": 0.075,
+              "mist": 0.12
+            }
+          },
+          "note": "identical wide; night cuts to noon with the sun high. Turn line"
+        },
+        {
+          "text": "Nobody's had a night\nsince the first.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.76
+            ],
+            "focus": [
+              0.47,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 0,
+            "sun_x": 0.264,
+            "sun_y": 0.365,
+            "sun_size": 0.075,
+            "mist": 0.12,
+            "gag": "",
+            "glow_rims": false,
+            "crowd": 4,
+            "crowd_items": "armchair,armchair,armchair,armchair",
+            "crowd_x": 0.43,
+            "crowd_gap": 0.135,
+            "crowd_facing": "right",
+            "house_x": 0.86
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.7,
+              1.76
+            ],
+            "focus": [
+              0.47,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 0,
+            "sun_x": 0.264,
+            "sun_y": 0.365,
+            "sun_size": 0.075,
+            "mist": 0.12,
+            "gag": "",
+            "glow_rims": false,
+            "crowd": 4,
+            "crowd_items": "armchair,armchair,armchair,armchair",
+            "crowd_x": 0.43,
+            "crowd_gap": 0.135,
+            "crowd_facing": "right",
+            "house_x": 0.86
+          },
+          "seconds": 2.2
+        }
+      ],
+      "end": "Dad's bought a bigger ladder.",
+      "caption": "That glow along the hill is Dad.\n\nNoel: 890,000 people, a 24-hour day, no moons, and Christmas lights bright enough to turn night into day. A string round the porch gets you a decent dawn. A whole street gets you mid-morning. From the first of December the planet doesn't get dark until January, and everybody is very tired and very festive.\n\nI stayed with a family there over Christmas. I asked when it gets dark. They all laughed, then they all yawned.\n\n(The story goes that the first electric Christmas tree lights were put up in 1882 by Edward Johnson, a colleague of Thomas Edison's, in his parlour in New York: eighty bulbs, red, white and blue. The neighbours, presumably, went out and bought eighty-one.)\n\nIs your dad a dawn or a noon?"
+    },
+    "first_comment": "Clive's been seen pricing up a second sun. Dad's measuring the roof.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every dad up a ladder in December.",
+      "title": "Christmas lights here\nturn night into day.",
+      "sub": "",
+      "framing": "medium",
+      "zoom": [
+        1.35,
+        1.4
+      ],
+      "focus": [
+        0.56,
+        0.58
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "mint_dawn",
+          "suns": 1,
+          "sun_x": 0.3,
+          "sun_y": 0.505,
+          "sun_size": 0.065,
+          "mist": 0.05
+        }
+      },
+      "beats": [
+        {
+          "text": "Dad did the whole hill\nin lights.",
+          "text_y": 0.12,
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.15
+            ],
+            "focus": [
+              0.5,
+              0.52
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "crowd": 1,
+            "crowd_items": "hand",
+            "crowd_x": 0.31,
+            "crowd_facing": "right"
+          },
+          "seconds": 2.3
+        },
+        {
+          "text": "Clive next door\nwent for noon.",
+          "text_y": 0.12,
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.15
+            ],
+            "focus": [
+              0.5,
+              0.52
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "suns": 0,
+            "crowd": 1,
+            "crowd_items": "hand",
+            "crowd_x": 0.31,
+            "crowd_facing": "right"
+          },
+          "onset": {
+            "at": 0.8,
+            "motion": "cut",
+            "spec": {
+              "palette": "cobalt_noon",
+              "suns": 1,
+              "sun_x": 0.264,
+              "sun_y": 0.365,
+              "sun_size": 0.075,
+              "mist": 0.12
+            }
+          },
+          "seconds": 2.6
+        },
+        {
+          "text": "Nobody's had a night\nsince the first of December.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.72,
+              1.78
+            ],
+            "focus": [
+              0.47,
+              0.6
+            ]
+          },
+          "spec": {
+            "palette": "cobalt_noon",
+            "suns": 0,
+            "sun_x": 0.264,
+            "sun_y": 0.365,
+            "sun_size": 0.075,
+            "mist": 0.12,
+            "gag": "",
+            "glow_rims": false,
+            "crowd": 4,
+            "crowd_items": "armchair,armchair,armchair,armchair",
+            "crowd_x": 0.43,
+            "crowd_gap": 0.135,
+            "crowd_facing": "right",
+            "house_x": 0.86
+          },
+          "seconds": 3.0
+        }
+      ],
+      "end": "Dad's bought a bigger ladder.",
+      "end_zoom": [
+        1.45,
+        1.38
+      ],
+      "end_focus": [
+        0.5,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For every dad up a ladder in December.",
+      "sign": "Every name has a planet.",
+      "end_spec": {
+        "gag": "moth_roof",
+        "glow_rims": true,
+        "house_x": 0.76,
+        "crowd": 1,
+        "crowd_items": "hand",
+        "crowd_x": 0.31,
+        "crowd_facing": "right"
+      }
+    }
+  },
+  {
+    "id": "098",
+    "name": "June",
+    "subtitle": "every June's planet",
+    "story": "On June, showers last a season. The water's lovely; it's just that the year carries on outside without you. June went in on the first of June. Her brother Rob waited at the door with his towel. The daisies went, then the leaves, then the snow came, and Rob sat down. She came out on Christmas Eve, pink and very relaxed. Rob had grown a beard. She'd used all the hot water.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "three",
+      "Gravity": "0.9 g",
+      "Population": "640,000"
+    },
+    "hook": "A planet for everyone with a sister and one bathroom.",
+    "tags": [
+      "#illustration",
+      "#siblings",
+      "#june"
+    ],
+    "spec": {
+      "palette": "violet_ice",
+      "terrain": "peaks",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.75,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": 0.3,
+      "sun_y": 0.55,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": true,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "snow",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.45,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.43,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.6,
+      "bright_stars": false,
+      "flake_size": 1.2,
+      "crowd_gap": 0.07,
+      "stage": 0.74
+    },
+    "cover": "Your sister's showers here last a season.",
+    "kicker": "Every June gets this planet.",
+    "episode": {
+      "opener": "Your sister's showers\nhere last a season.",
+      "beats": [
+        {
+          "text": "June went in\non the first of June.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.52,
+              0.63
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "snow": false,
+            "particles": "none",
+            "daisies": 60,
+            "suns": 1,
+            "sun_x": 0.3,
+            "sun_y": 0.55,
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.43,
+            "crowd_facing": "right",
+            "mist": 0.35
+          }
+        },
+        {
+          "text": "Her brother Rob\nwaited with his towel.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.16
+            ],
+            "focus": [
+              0.47,
+              0.645
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "snow": false,
+            "particles": "none",
+            "daisies": 60,
+            "suns": 1,
+            "sun_x": 0.3,
+            "sun_y": 0.55,
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.43,
+            "crowd_facing": "right",
+            "mist": 0.35
+          }
+        },
+        {
+          "text": "The daisies went.\nThen the snow came.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.52,
+              0.63
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "snow": false,
+            "particles": "none",
+            "daisies": 60,
+            "suns": 1,
+            "sun_x": 0.3,
+            "sun_y": 0.55,
+            "crowd": 1,
+            "crowd_items": "nothing",
+            "crowd_x": 0.43,
+            "crowd_facing": "right",
+            "mist": 0.35
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "palette": "violet_ice",
+              "snow": true,
+              "particles": "snow",
+              "daisies": 0,
+              "suns": 0,
+              "mist": 0.45
+            }
+          }
+        },
+        {
+          "text": "She came out\non Christmas Eve.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.16
+            ],
+            "focus": [
+              0.47,
+              0.645
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "snow": true,
+            "particles": "snow",
+            "daisies": 0,
+            "suns": 0,
+            "stars": 0.6,
+            "crowd_items": "sit"
+          },
+          "onset": {
+            "at": 0.7,
+            "motion": "rise",
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "sit,nothing",
+              "crowd_x": 0.465,
+              "crowd_facing": "in"
+            }
+          },
+          "note": "identical door close at night; June rises in beside Rob. Turn line"
+        },
+        {
+          "text": "Rob had grown a beard.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.15,
+              1.2
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "snow": true,
+            "particles": "snow",
+            "daisies": 0,
+            "suns": 0,
+            "stars": 0.6,
+            "crowd": 2,
+            "crowd_items": "sit,nothing",
+            "crowd_x": 0.465,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.15,
+              1.2
+            ],
+            "focus": [
+              0.5,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "snow": true,
+            "particles": "snow",
+            "daisies": 0,
+            "suns": 0,
+            "stars": 0.6,
+            "crowd": 2,
+            "crowd_items": "sit,nothing",
+            "crowd_x": 0.465,
+            "crowd_facing": "in"
+          },
+          "seconds": 2.2
+        }
+      ],
+      "end": "She'd used all the hot water.",
+      "caption": "Rob's waiting for the bathroom.\n\nJune: 640,000 people, a 25-hour day, three moons, and showers that last a season. Step in, and the year carries on outside without you. A quick rinse takes a week. A long soak, you miss a birthday. Families book the bathroom like a holiday, and whoever's second always loses.\n\nI had one shower there, a quick one. I came out to find my hire car had been towed in the spring.\n\n(The story goes that the month of June is named after Juno, the Roman goddess of marriage. On June, it's named after the bathroom.)\n\nHow long would you wait outside the door?"
+    },
+    "first_comment": "Rob's had the bathroom since Boxing Day. June says she can wait.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for everyone with a sister and one bathroom.",
+      "title": "Your sister's showers\nhere last a season.",
+      "sub": "",
+      "framing": "medium",
+      "zoom": [
+        1.75,
+        1.81
+      ],
+      "focus": [
+        0.5,
+        0.635
+      ],
+      "spec": {
+        "palette": "crimson",
+        "snow": false,
+        "particles": "none",
+        "daisies": 60,
+        "suns": 1,
+        "sun_x": 0.3,
+        "sun_y": 0.55,
+        "crowd": 1,
+        "crowd_items": "nothing",
+        "crowd_x": 0.43,
+        "crowd_facing": "right",
+        "mist": 0.35
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "violet_ice",
+          "snow": true,
+          "particles": "snow",
+          "daisies": 0,
+          "suns": 0,
+          "mist": 0.45
+        }
+      },
+      "beats": [
+        {
+          "text": "Rob queued for the bathroom\nfrom the first of June.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.15,
+              2.21
+            ],
+            "focus": [
+              0.48,
+              0.645
+            ]
+          },
+          "spec": {
+            "crowd_items": "sit"
+          },
+          "seconds": 3.0
+        },
+        {
+          "text": "June came out\non Christmas Eve.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.15,
+              2.21
+            ],
+            "focus": [
+              0.48,
+              0.645
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "snow": true,
+            "particles": "snow",
+            "daisies": 0,
+            "suns": 0,
+            "stars": 0.6,
+            "crowd_items": "sit"
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "rise",
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "sit,nothing",
+              "crowd_x": 0.465,
+              "crowd_facing": "in"
+            }
+          },
+          "seconds": 2.6
+        },
+        {
+          "text": "Rob had grown a beard.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.12,
+              1.17
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          },
+          "spec": {
+            "palette": "polar_night",
+            "snow": true,
+            "particles": "snow",
+            "daisies": 0,
+            "suns": 0,
+            "stars": 0.6,
+            "crowd": 2,
+            "crowd_items": "sit,nothing",
+            "crowd_x": 0.465,
+            "crowd_facing": "in"
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "She'd used all the hot water.",
+      "end_zoom": [
+        1.2,
+        1.14
+      ],
+      "end_focus": [
+        0.5,
+        0.58
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For everyone with a sister and one bathroom.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "101",
+    "name": "Vera",
+    "subtitle": "every Vera's planet",
+    "story": "On Vera, the nosiest neighbour on every street gets a lighthouse. Nobody votes. It just goes up one night beside the right house, and the beam does the rest. Vera's went up over her cottage on the cliff. She knew about the extension at number nine before the builders did. Then Vera went on a cruise, and the lighthouse went with her. For a fortnight, nobody on the street knew anything. When she got back, there'd been two affairs and a conservatory.",
+    "facts": {
+      "Day": "30 hours",
+      "Moons": "none",
+      "Gravity": "0.95 g",
+      "Population": "940,000"
+    },
+    "hook": "A planet for the neighbour who takes in your parcels.",
+    "tags": [
+      "#illustration",
+      "#neighbours",
+      "#vera"
+    ],
+    "spec": {
+      "palette": "teal_night",
+      "terrain": "spires",
+      "layers": 3,
+      "horizon": 0.6,
+      "relief": 0.6,
+      "water": true,
+      "shore": "left",
+      "suns": 0,
+      "sun_x": 0.6,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": true,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 0,
+      "crowd_items": "",
+      "crowd_x": 0.0,
+      "crowd_facing": "",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.21,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.74
+    },
+    "cover": "The nosiest neighbour gets a lighthouse.",
+    "kicker": "Every Vera gets this planet.",
+    "episode": {
+      "opener": "The nosiest neighbour\ngets a lighthouse.",
+      "beats": [
+        {
+          "text": "Nobody votes.\nIt just goes up one night.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.2,
+              0.64
+            ]
+          },
+          "spec": {
+            "lighthouse": false
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "rise",
+            "spec": {
+              "lighthouse": true
+            }
+          }
+        },
+        {
+          "text": "Vera knew about the extension\nbefore the builders.",
+          "shot": {
+            "framing": "lighthouse",
+            "zoom": [
+              2.2,
+              2.26
+            ],
+            "focus": [
+              0.16,
+              0.64
+            ]
+          }
+        },
+        {
+          "text": "Then Vera went\non a cruise.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.4,
+              1.46
+            ],
+            "focus": [
+              0.3,
+              0.62
+            ]
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "lighthouse": false
+            }
+          },
+          "note": "identical camera; the lighthouse and its beam go, leaving her cottage. Turn line"
+        },
+        {
+          "text": "For a fortnight,\nnobody knew anything.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "lighthouse": false
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "lighthouse": false
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "Two affairs and a conservatory.",
+      "caption": "Vera is always in.\n\nVera: 940,000 people, a 30-hour day, no moons, and a lighthouse on every street for whoever's nosiest. Nobody votes. It just goes up one night beside the right house, and the beam does the rest. Ships could use them, in theory. Mostly they're for knowing who's had a delivery.\n\nI stayed one night on Vera's street. By breakfast she knew where I was going next, and had views.\n\n(The story goes that net curtains caught on in Victorian Britain so you could see out without being seen. Vera has never seen the point.)\n\nWhat would the lighthouse have seen on your street this week?"
+    },
+    "first_comment": "Vera's home. She's been round. She says the conservatory faces the wrong way.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for the neighbour who takes in your parcels.",
+      "title": "The nosiest neighbour\ngets a lighthouse.",
+      "sub": "",
+      "framing": "medium",
+      "zoom": [
+        1.6,
+        1.66
+      ],
+      "focus": [
+        0.2,
+        0.64
+      ],
+      "spec": {
+        "lighthouse": false
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "lighthouse": true
+        }
+      },
+      "beats": [
+        {
+          "text": "Vera knew about the extension\nbefore the builders.",
+          "shot": {
+            "framing": "lighthouse",
+            "zoom": [
+              2.2,
+              2.26
+            ],
+            "focus": [
+              0.16,
+              0.66
+            ]
+          }
+        },
+        {
+          "text": "Then Vera went\non a cruise.",
+          "shot": {
+            "framing": "lighthouse",
+            "zoom": [
+              2.2,
+              2.26
+            ],
+            "focus": [
+              0.16,
+              0.66
+            ]
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "lighthouse": false
+            }
+          }
+        },
+        {
+          "text": "For a fortnight,\nnobody knew anything.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.1,
+              1.14
+            ],
+            "focus": [
+              0.5,
+              0.6
+            ]
+          },
+          "spec": {
+            "lighthouse": false
+          }
+        }
+      ],
+      "end": "Two affairs and a conservatory.",
+      "end_onset": {
+        "at": 0.6,
+        "motion": "rise",
+        "spec": {
+          "lighthouse": true
+        }
+      },
+      "end_zoom": [
+        1.2,
+        1.16
+      ],
+      "end_focus": [
+        0.4,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For the neighbour who takes in your parcels.",
+      "sign": "Every name has a planet."
+    }
   }
 ]

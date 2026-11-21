@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "095",
+  "name": "Brew",
+  "subtitle": "where the kettle calls everyone in",
+  "story": "On Brew, putting the kettle on summons everyone you live with. Flatmates simply appear round you, mugs out, from wherever they were and whatever they were doing. Abi's flatmates never leave their rooms. She knows them mostly by their microwaves. One night she boiled some for a hot water bottle, just for herself. Nine came. She has four flatmates. One was the landlord, with paperwork. She's bought a coffee machine.",
+  "facts": {
+   "Day": "25 hours",
+   "Moons": "two",
+   "Gravity": "0.95 g",
+   "Population": "2.4 million"
+  },
+  "hook": "A planet for flatmates who only come out for tea.",
+  "tags": [
+   "#worldbuilding",
+   "#flatmates",
+   "#tea"
+  ],
+  "spec": {
+   "palette": "gold_hour",
+   "terrain": "mesas",
+   "layers": 4,
+   "horizon": 0.62,
+   "relief": 0.55,
+   "water": false,
+   "shore": "none",
+   "suns": 1,
+   "sun_x": 0.3,
+   "sun_y": 0.58,
+   "sun_size": 0.055,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "none",
+   "snow": false,
+   "figure": false,
+   "lighthouse": false,
+   "house": true,
+   "particles": "none",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.35,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 5,
+   "crowd_items": "cup,cup,cup,kettle,cup",
+   "crowd_x": 0.435,
+   "crowd_facing": "in",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.8,
+   "bright_stars": false,
+   "flake_size": 1.0,
+   "crowd_gap": 0.085,
+   "stage": 0.74
+  },
+  "cover": "Put the kettle on, and flatmates appear.",
+  "episode": {
+   "opener": "Put the kettle on,\nand flatmates appear.",
+   "beats": [
+    {
+     "text": "Mugs out, from wherever\nthey happen to be.",
+     "shot": {
+      "framing": "group",
+      "zoom": [
+       1.55,
+       1.6
+      ],
+      "focus": [
+       0.5,
+       0.62
+      ]
+     }
+    },
+    {
+     "text": "Abi's flatmates\nnever leave their rooms.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.7,
+       1.76
+      ],
+      "focus": [
+       0.62,
+       0.64
+      ]
+     },
+     "spec": {
+      "crowd": 1,
+      "crowd_items": "sit",
+      "crowd_x": 0.56,
+      "crowd_facing": "right"
+     }
+    },
+    {
+     "text": "She knows them mostly\nby their microwaves.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.0,
+       2.06
+      ],
+      "focus": [
+       0.7,
+       0.66
+      ]
+     },
+     "spec": {
+      "crowd": 1,
+      "crowd_items": "sit",
+      "crowd_x": 0.56,
+      "crowd_facing": "right"
+     }
+    },
+    {
+     "text": "She boiled some\nfor a hot water bottle.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.15,
+       1.2
+      ],
+      "focus": [
+       0.47,
+       0.6
+      ]
+     },
+     "spec": {
+      "crowd": 1,
+      "crowd_items": "kettle",
+      "crowd_x": 0.348,
+      "crowd_facing": "in"
+     },
+     "onset": {
+      "at": 0.8,
+      "motion": "rise",
+      "spec": {
+       "crowd": 9,
+       "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+       "crowd_x": 0.42,
+       "crowd_gap": 0.072,
+       "crowd_facing": "in"
+      }
+     },
+     "note": "identical wide; nine rise along the ledge round the kettle. Turn line"
+    },
+    {
+     "text": "Nine came.\nOne was the landlord.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.2,
+       2.26
+      ],
+      "focus": [
+       0.5,
+       0.64
+      ]
+     },
+     "spec": {
+      "crowd": 9,
+      "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+      "crowd_x": 0.645,
+      "crowd_gap": 0.145,
+      "crowd_facing": "in"
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.15,
+       1.2
+      ],
+      "focus": [
+       0.47,
+       0.6
+      ]
+     },
+     "spec": {
+      "crowd": 9,
+      "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+      "crowd_x": 0.42,
+      "crowd_gap": 0.072,
+      "crowd_facing": "in"
+     },
+     "seconds": 2.2
+    }
+   ],
+   "end": "She's bought a coffee machine.",
+   "caption": "Nobody hears a kettle like a flatmate.\n\nBrew: 2.4 million people, a 25-hour day, two moons, and kettles that summon everyone you live with. Put one on, and your flatmates appear round you with their mugs out, wherever they were and whatever they were doing. Kitchens here are small and very full. Nobody on Brew has ever made a quiet cup of tea.\n\nI rented a room there for a month. I met my flatmates once, at the kettle, every forty minutes.\n\n(In Britain, so many people put the kettle on at the end of a big match on telly that the National Grid plans for it. They call it TV pickup. On Brew, it's called Tuesday.)\n\nHow many mugs would you need at yours?"
+  },
+  "first_comment": "The landlord's started boiling his own. Abi's moved her coffee machine into her room.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for flatmates who only come out for tea.",
+   "title": "Put the kettle on,\nand flatmates appear.",
+   "sub": "",
+   "framing": "group",
+   "zoom": [
+    1.62,
+    1.68
+   ],
+   "focus": [
+    0.48,
+    0.63
+   ],
+   "spec": {
+    "crowd": 1,
+    "crowd_items": "kettle",
+    "crowd_x": 0.52,
+    "crowd_facing": "left"
+   },
+   "onset": {
+    "at": 0.4,
+    "motion": "rise",
+    "spec": {
+     "crowd": 5,
+     "crowd_items": "cup,cup,cup,kettle,cup",
+     "crowd_x": 0.435,
+     "crowd_gap": 0.085,
+     "crowd_facing": "in"
+    }
+   },
+   "beats": [
+    {
+     "text": "Abi knows her flatmates\nby their microwaves.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.75,
+       1.81
+      ],
+      "focus": [
+       0.66,
+       0.64
+      ]
+     },
+     "spec": {
+      "crowd": 1,
+      "crowd_items": "sit",
+      "crowd_x": 0.58,
+      "crowd_facing": "right"
+     }
+    },
+    {
+     "text": "She only wanted\na hot water bottle.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.16,
+       1.21
+      ],
+      "focus": [
+       0.47,
+       0.6
+      ]
+     },
+     "spec": {
+      "crowd": 1,
+      "crowd_items": "kettle",
+      "crowd_x": 0.348,
+      "crowd_facing": "in"
+     },
+     "onset": {
+      "at": 0.7,
+      "motion": "rise",
+      "spec": {
+       "crowd": 9,
+       "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+       "crowd_x": 0.42,
+       "crowd_gap": 0.072,
+       "crowd_facing": "in"
+      }
+     },
+     "seconds": 2.6
+    },
+    {
+     "text": "Nine came.\nOne was the landlord.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.25,
+       2.31
+      ],
+      "focus": [
+       0.5,
+       0.655
+      ]
+     },
+     "spec": {
+      "crowd": 9,
+      "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+      "crowd_x": 0.645,
+      "crowd_gap": 0.145,
+      "crowd_facing": "in",
+      "suns": 0
+     },
+     "seconds": 2.65
+    }
+   ],
+   "end": "She's bought a coffee machine.",
+   "end_spec": {
+    "crowd": 1,
+    "crowd_items": "cup",
+    "crowd_x": 0.56,
+    "crowd_facing": "right",
+    "crowd_gap": 0.085,
+    "suns": 1
+   },
+   "end_zoom": [
+    1.3,
+    1.22
+   ],
+   "end_focus": [
+    0.6,
+    0.6
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For flatmates who only come out for tea.",
+   "sign": "Every name has a planet."
+  }
+ },
+ {
+  "id": "096",
+  "name": "Noel",
+  "subtitle": "every Noel's planet",
+  "story": "On Noel, Christmas lights don't twinkle; they turn night into day. A string round the porch gets you a decent dawn. A whole street gets you mid-morning. Dad did the whole hill. Clive next door had a look at it over the fence, went to the shops and came back with noon. Nobody on the street has had a night since the first of December. They nod off in armchairs on the pavement, in broad daylight, in their coats. Dad's bought a bigger ladder.",
+  "facts": {
+   "Day": "24 hours",
+   "Moons": "none",
+   "Gravity": "1.1 g",
+   "Population": "890,000"
+  },
+  "hook": "A planet for every dad up a ladder in December.",
+  "tags": [
+   "#illustration",
+   "#christmaslights",
+   "#noel"
+  ],
+  "spec": {
+   "palette": "polar_night",
+   "terrain": "hills",
+   "layers": 3,
+   "horizon": 0.6,
+   "relief": 0.85,
+   "water": false,
+   "shore": "none",
+   "suns": 0,
+   "sun_x": 0.264,
+   "sun_y": 0.365,
+   "sun_size": 0.075,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": 0.5,
+   "islands": 0,
+   "trees": "none",
+   "snow": false,
+   "figure": false,
+   "lighthouse": false,
+   "house": true,
+   "particles": "none",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.15,
+   "gag": "moth_roof",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": true,
+   "sign": "",
+   "crowd": 0,
+   "crowd_items": "",
+   "crowd_x": 0.0,
+   "crowd_facing": "",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.76,
+   "bright_stars": false,
+   "flake_size": 1.0,
+   "crowd_gap": 0.09,
+   "stage": 0.7
+  },
+  "cover": "Christmas lights here turn night into day.",
+  "kicker": "Every Noel gets this planet.",
+  "episode": {
+   "opener": "Christmas lights here\nturn night into day.",
+   "beats": [
+    {
+     "text": "A string round the porch\ngets you a decent dawn.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.45,
+       1.5
+      ],
+      "focus": [
+       0.55,
+       0.6
+      ]
+     },
+     "onset": {
+      "at": 1.0,
+      "motion": "cut",
+      "spec": {
+       "palette": "mint_dawn",
+       "suns": 1,
+       "sun_x": 0.3,
+       "sun_y": 0.505,
+       "sun_size": 0.065,
+       "mist": 0.05
+      }
+     }
+    },
+    {
+     "text": "Dad did the whole hill\nin lights.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.12,
+       1.17
+      ],
+      "focus": [
+       0.5,
+       0.52
+      ]
+     }
+    },
+    {
+     "text": "Clive next door\nwent for noon.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.12,
+       1.17
+      ],
+      "focus": [
+       0.5,
+       0.52
+      ]
+     },
+     "onset": {
+      "at": 0.8,
+      "motion": "cut",
+      "spec": {
+       "palette": "cobalt_noon",
+       "suns": 1,
+       "sun_x": 0.264,
+       "sun_y": 0.365,
+       "sun_size": 0.075,
+       "mist": 0.12
+      }
+     },
+     "note": "identical wide; night cuts to noon with the sun high. Turn line"
+    },
+    {
+     "text": "Nobody's had a night\nsince the first.",
+     "shot": {
+      "framing": "group",
+      "zoom": [
+       1.7,
+       1.76
+      ],
+      "focus": [
+       0.47,
+       0.6
+      ]
+     },
+     "spec": {
+      "palette": "cobalt_noon",
+      "suns": 0,
+      "sun_x": 0.264,
+      "sun_y": 0.365,
+      "sun_size": 0.075,
+      "mist": 0.12,
+      "gag": "",
+      "glow_rims": false,
+      "crowd": 4,
+      "crowd_items": "armchair,armchair,armchair,armchair",
+      "crowd_x": 0.43,
+      "crowd_gap": 0.135,
+      "crowd_facing": "right",
+      "house_x": 0.86
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "group",
+      "zoom": [
+       1.7,
+       1.76
+      ],
+      "focus": [
+       0.47,
+       0.6
+      ]
+     },
+     "spec": {
+      "palette": "cobalt_noon",
+      "suns": 0,
+      "sun_x": 0.264,
+      "sun_y": 0.365,
+      "sun_size": 0.075,
+      "mist": 0.12,
+      "gag": "",
+      "glow_rims": false,
+      "crowd": 4,
+      "crowd_items": "armchair,armchair,armchair,armchair",
+      "crowd_x": 0.43,
+      "crowd_gap": 0.135,
+      "crowd_facing": "right",
+      "house_x": 0.86
+     },
+     "seconds": 2.2
+    }
+   ],
+   "end": "Dad's bought a bigger ladder.",
+   "caption": "That glow along the hill is Dad.\n\nNoel: 890,000 people, a 24-hour day, no moons, and Christmas lights bright enough to turn night into day. A string round the porch gets you a decent dawn. A whole street gets you mid-morning. From the first of December the planet doesn't get dark until January, and everybody is very tired and very festive.\n\nI stayed with a family there over Christmas. I asked when it gets dark. They all laughed, then they all yawned.\n\n(The story goes that the first electric Christmas tree lights were put up in 1882 by Edward Johnson, a colleague of Thomas Edison's, in his parlour in New York: eighty bulbs, red, white and blue. The neighbours, presumably, went out and bought eighty-one.)\n\nIs your dad a dawn or a noon?"
+  },
+  "first_comment": "Clive's been seen pricing up a second sun. Dad's measuring the roof.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for every dad up a ladder in December.",
+   "title": "Christmas lights here\nturn night into day.",
+   "sub": "",
+   "framing": "medium",
+   "zoom": [
+    1.35,
+    1.4
+   ],
+   "focus": [
+    0.56,
+    0.58
+   ],
+   "spec": {},
+   "onset": {
+    "at": 0.4,
+    "motion": "cut",
+    "spec": {
+     "palette": "mint_dawn",
+     "suns": 1,
+     "sun_x": 0.3,
+     "sun_y": 0.505,
+     "sun_size": 0.065,
+     "mist": 0.05
+    }
+   },
+   "beats": [
+    {
+     "text": "Dad did the whole hill\nin lights.",
+     "text_y": 0.12,
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.1,
+       1.15
+      ],
+      "focus": [
+       0.5,
+       0.52
+      ]
+     },
+     "spec": {
+      "palette": "polar_night",
+      "suns": 0,
+      "crowd": 1,
+      "crowd_items": "hand",
+      "crowd_x": 0.31,
+      "crowd_facing": "right"
+     },
+     "seconds": 2.3
+    },
+    {
+     "text": "Clive next door\nwent for noon.",
+     "text_y": 0.12,
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.1,
+       1.15
+      ],
+      "focus": [
+       0.5,
+       0.52
+      ]
+     },
+     "spec": {
+      "palette": "polar_night",
+      "suns": 0,
+      "crowd": 1,
+      "crowd_items": "hand",
+      "crowd_x": 0.31,
+      "crowd_facing": "right"
+     },
+     "onset": {
+      "at": 0.8,
+      "motion": "cut",
+      "spec": {
+       "palette": "cobalt_noon",
+       "suns": 1,
+       "sun_x": 0.264,
+       "sun_y": 0.365,
+       "sun_size": 0.075,
+       "mist": 0.12
+      }
+     },
+     "seconds": 2.6
+    },
+    {
+     "text": "Nobody's had a night\nsince the first of December.",
+     "shot": {
+      "framing": "group",
+      "zoom": [
+       1.72,
+       1.78
+      ],
+      "focus": [
+       0.47,
+       0.6
+      ]
+     },
+     "spec": {
+      "palette": "cobalt_noon",
+      "suns": 0,
+      "sun_x": 0.264,
+      "sun_y": 0.365,
+      "sun_size": 0.075,
+      "mist": 0.12,
+      "gag": "",
+      "glow_rims": false,
+      "crowd": 4,
+      "crowd_items": "armchair,armchair,armchair,armchair",
+      "crowd_x": 0.43,
+      "crowd_gap": 0.135,
+      "crowd_facing": "right",
+      "house_x": 0.86
+     },
+     "seconds": 3.0
+    }
+   ],
+   "end": "Dad's bought a bigger ladder.",
+   "end_zoom": [
+    1.45,
+    1.38
+   ],
+   "end_focus": [
+    0.5,
+    0.6
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For every dad up a ladder in December.",
+   "sign": "Every name has a planet.",
+   "end_spec": {
+    "gag": "moth_roof",
+    "glow_rims": true,
+    "house_x": 0.76,
+    "crowd": 1,
+    "crowd_items": "hand",
+    "crowd_x": 0.31,
+    "crowd_facing": "right"
+   }
+  }
+ },
+ {
+  "id": "097",
+  "name": "Peep",
+  "subtitle": "where peekaboo isn't pretend",
+  "story": "On Peep, peekaboo really works. Cover your eyes and you're gone; uncover them and you're back, usually exactly where you were. Babies here run the house. Maisie's dad did it all afternoon, in and out of the garden, until he fell asleep sitting up. Then Maisie covered her eyes. Mum looked everywhere: the shed, the car, under the sofa, twice. Maisie was on her shoulders the whole time. She's a teenager now. She reappears for lifts.",
+  "facts": {
+   "Day": "22 hours",
+   "Moons": "one",
+   "Gravity": "0.8 g",
+   "Population": "1.1 million"
+  },
+  "hook": "A planet for every toddler who thinks you can't see them.",
+  "tags": [
+   "#worldbuilding",
+   "#newdad",
+   "#peekaboo"
+  ],
+  "spec": {
+   "palette": "rose_fog",
+   "terrain": "spires",
+   "layers": 4,
+   "horizon": 0.6,
+   "relief": 0.55,
+   "water": false,
+   "shore": "none",
+   "suns": 1,
+   "sun_x": 0.22,
+   "sun_y": 0.5,
+   "sun_size": 0.05,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "none",
+   "snow": false,
+   "figure": false,
+   "lighthouse": false,
+   "house": true,
+   "particles": "none",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.5,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 2,
+   "crowd_items": "child,nap",
+   "crowd_x": 0.5,
+   "crowd_facing": "in",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.82,
+   "bright_stars": false,
+   "flake_size": 1.0,
+   "crowd_gap": 0.12,
+   "stage": 0.74
+  },
+  "cover": "Peekaboo here really works.",
+  "episode": {
+   "opener": "Peekaboo here\nreally works.",
+   "beats": [
+    {
+     "text": "Cover your eyes,\nand you're gone.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.55,
+       1.6
+      ],
+      "focus": [
+       0.55,
+       0.62
+      ]
+     },
+     "spec": {
+      "crowd_items": "child,nothing"
+     },
+     "onset": {
+      "at": 1.0,
+      "motion": "cut",
+      "spec": {
+       "crowd": 1,
+       "crowd_items": "child",
+       "crowd_x": 0.44
+      }
+     }
+    },
+    {
+     "text": "Dad's done it\nall afternoon.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.1,
+       2.16
+      ],
+      "focus": [
+       0.5,
+       0.64
+      ]
+     }
+    },
+    {
+     "text": "Then Maisie\ncovered her eyes.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.1,
+       2.16
+      ],
+      "focus": [
+       0.5,
+       0.64
+      ]
+     },
+     "onset": {
+      "at": 1.1,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "nothing,nap"
+      }
+     },
+     "note": "identical close; Maisie goes from Mum's shoulders. Turn line"
+    },
+    {
+     "text": "Mum looked everywhere.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.2,
+       1.25
+      ],
+      "focus": [
+       0.55,
+       0.6
+      ]
+     },
+     "spec": {
+      "crowd_items": "walk,nap",
+      "crowd_facing": "out"
+     }
+    },
+    {
+     "text": "She was on her shoulders.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.6,
+       1.66
+      ],
+      "focus": [
+       0.52,
+       0.62
+      ]
+     },
+     "spec": {
+      "crowd_items": "walk,nap",
+      "crowd_facing": "out"
+     },
+     "onset": {
+      "at": 0.6,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "child,nap",
+       "crowd_facing": "in"
+      }
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.6,
+       1.66
+      ],
+      "focus": [
+       0.52,
+       0.62
+      ]
+     },
+     "seconds": 2.2
+    }
+   ],
+   "end": "She's a teenager. Reappears for lifts.",
+   "caption": "Keep an eye on Dad.\n\nPeep: 1.1 million people, a 22-hour day, one moon, and peekaboo that really works. Cover your eyes and you're gone; uncover them and you're back, usually where you left yourself. Babies here run the house. Parents spend whole afternoons blinking in and out of the garden, and grandparents are advised to sit down first.\n\nI played it once with a baby on a train. I came back two stops later.\n\n(Child psychologists reckon babies only work out that things still exist when they can't see them at somewhere around eight months. It's called object permanence. On Peep, it's optional.)\n\nHow long could you keep it up?"
+  },
+  "first_comment": "Her little brother's just learned it. Dad's been gone since Thursday.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for every toddler who thinks you can't see them.",
+   "title": "Peekaboo here\nreally works.",
+   "sub": "",
+   "framing": "medium",
+   "zoom": [
+    1.85,
+    1.91
+   ],
+   "focus": [
+    0.53,
+    0.635
+   ],
+   "spec": {
+    "crowd_items": "child,nothing"
+   },
+   "onset": {
+    "at": 0.4,
+    "motion": "cut",
+    "spec": {
+     "crowd": 1,
+     "crowd_items": "child",
+     "crowd_x": 0.44
+    }
+   },
+   "beats": [
+    {
+     "text": "Dad's done it\nall afternoon.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.15,
+       2.21
+      ],
+      "focus": [
+       0.5,
+       0.645
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "child,nap",
+      "crowd_x": 0.5
+     }
+    },
+    {
+     "text": "Then Maisie\ncovered her eyes.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.15,
+       2.21
+      ],
+      "focus": [
+       0.5,
+       0.645
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "child,nap",
+      "crowd_x": 0.5
+     },
+     "onset": {
+      "at": 1.4,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "nothing,nap"
+      }
+     },
+     "seconds": 2.4
+    },
+    {
+     "text": "Mum looked everywhere.\nMaisie was on her shoulders.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.55,
+       1.6
+      ],
+      "focus": [
+       0.56,
+       0.62
+      ]
+     },
+     "spec": {
+      "crowd": 2,
+      "crowd_items": "walk,nap",
+      "crowd_x": 0.5,
+      "crowd_facing": "out"
+     },
+     "onset": {
+      "at": 1.6,
+      "motion": "cut",
+      "spec": {
+       "crowd_items": "child,nap",
+       "crowd_facing": "in"
+      }
+     },
+     "seconds": 3.4
+    }
+   ],
+   "end": "She's a teenager. Reappears for lifts.",
+   "end_zoom": [
+    1.4,
+    1.32
+   ],
+   "end_focus": [
+    0.55,
+    0.6
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For every toddler who thinks you can't see them.",
+   "sign": "Every name has a planet.",
+   "end_spec": {
+    "crowd_items": "nothing,nap",
+    "crowd_facing": "in"
+   }
+  }
+ },
+ {
+  "id": "098",
+  "name": "June",
+  "subtitle": "every June's planet",
+  "story": "On June, showers last a season. The water's lovely; it's just that the year carries on outside without you. June went in on the first of June. Her brother Rob waited at the door with his towel. The daisies went, then the leaves, then the snow came, and Rob sat down. She came out on Christmas Eve, pink and very relaxed. Rob had grown a beard. She'd used all the hot water.",
+  "facts": {
+   "Day": "25 hours",
+   "Moons": "three",
+   "Gravity": "0.9 g",
+   "Population": "640,000"
+  },
+  "hook": "A planet for everyone with a sister and one bathroom.",
+  "tags": [
+   "#illustration",
+   "#siblings",
+   "#june"
+  ],
+  "spec": {
+   "palette": "violet_ice",
+   "terrain": "peaks",
+   "layers": 4,
+   "horizon": 0.6,
+   "relief": 0.75,
+   "water": false,
+   "shore": "none",
+   "suns": 0,
+   "sun_x": 0.3,
+   "sun_y": 0.55,
+   "sun_size": 0.05,
+   "giant": false,
+   "ring": false,
+   "giant_size": 0.24,
+   "giant_x": null,
+   "giant_y": null,
+   "moons": 0,
+   "big_moon": false,
+   "aurora": false,
+   "stars": null,
+   "islands": 0,
+   "trees": "none",
+   "snow": true,
+   "figure": false,
+   "lighthouse": false,
+   "house": true,
+   "particles": "snow",
+   "glass_waves": false,
+   "lanterns": 0,
+   "moths": 0,
+   "mist": 0.45,
+   "gag": "",
+   "cartographer": false,
+   "spot": "",
+   "glow_rims": false,
+   "sign": "",
+   "crowd": 1,
+   "crowd_items": "nothing",
+   "crowd_x": 0.43,
+   "crowd_facing": "right",
+   "daisies": 0,
+   "lamp": false,
+   "moon_window": false,
+   "sea_glow": false,
+   "house_x": 0.6,
+   "bright_stars": false,
+   "flake_size": 1.2,
+   "crowd_gap": 0.07,
+   "stage": 0.74
+  },
+  "cover": "Your sister's showers here last a season.",
+  "kicker": "Every June gets this planet.",
+  "episode": {
+   "opener": "Your sister's showers\nhere last a season.",
+   "beats": [
+    {
+     "text": "June went in\non the first of June.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.6,
+       1.66
+      ],
+      "focus": [
+       0.52,
+       0.63
+      ]
+     },
+     "spec": {
+      "palette": "crimson",
+      "snow": false,
+      "particles": "none",
+      "daisies": 60,
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.55,
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.43,
+      "crowd_facing": "right",
+      "mist": 0.35
+     }
+    },
+    {
+     "text": "Her brother Rob\nwaited with his towel.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.1,
+       2.16
+      ],
+      "focus": [
+       0.47,
+       0.645
+      ]
+     },
+     "spec": {
+      "palette": "crimson",
+      "snow": false,
+      "particles": "none",
+      "daisies": 60,
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.55,
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.43,
+      "crowd_facing": "right",
+      "mist": 0.35
+     }
+    },
+    {
+     "text": "The daisies went.\nThen the snow came.",
+     "shot": {
+      "framing": "medium",
+      "zoom": [
+       1.6,
+       1.66
+      ],
+      "focus": [
+       0.52,
+       0.63
+      ]
+     },
+     "spec": {
+      "palette": "crimson",
+      "snow": false,
+      "particles": "none",
+      "daisies": 60,
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.55,
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.43,
+      "crowd_facing": "right",
+      "mist": 0.35
+     },
+     "onset": {
+      "at": 1.2,
+      "motion": "cut",
+      "spec": {
+       "palette": "violet_ice",
+       "snow": true,
+       "particles": "snow",
+       "daisies": 0,
+       "suns": 0,
+       "mist": 0.45
+      }
+     }
+    },
+    {
+     "text": "She came out\non Christmas Eve.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.1,
+       2.16
+      ],
+      "focus": [
+       0.47,
+       0.645
+      ]
+     },
+     "spec": {
+      "palette": "polar_night",
+      "snow": true,
+      "particles": "snow",
+      "daisies": 0,
+      "suns": 0,
+      "stars": 0.6,
+      "crowd_items": "sit"
+     },
+     "onset": {
+      "at": 0.7,
+      "motion": "rise",
+      "spec": {
+       "crowd": 2,
+       "crowd_items": "sit,nothing",
+       "crowd_x": 0.465,
+       "crowd_facing": "in"
+      }
+     },
+     "note": "identical door close at night; June rises in beside Rob. Turn line"
+    },
+    {
+     "text": "Rob had grown a beard.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.15,
+       1.2
+      ],
+      "focus": [
+       0.5,
+       0.58
+      ]
+     },
+     "spec": {
+      "palette": "polar_night",
+      "snow": true,
+      "particles": "snow",
+      "daisies": 0,
+      "suns": 0,
+      "stars": 0.6,
+      "crowd": 2,
+      "crowd_items": "sit,nothing",
+      "crowd_x": 0.465,
+      "crowd_facing": "in"
+     }
+    },
+    {
+     "text": "",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.15,
+       1.2
+      ],
+      "focus": [
+       0.5,
+       0.58
+      ]
+     },
+     "spec": {
+      "palette": "polar_night",
+      "snow": true,
+      "particles": "snow",
+      "daisies": 0,
+      "suns": 0,
+      "stars": 0.6,
+      "crowd": 2,
+      "crowd_items": "sit,nothing",
+      "crowd_x": 0.465,
+      "crowd_facing": "in"
+     },
+     "seconds": 2.2
+    }
+   ],
+   "end": "She'd used all the hot water.",
+   "caption": "Rob's waiting for the bathroom.\n\nJune: 640,000 people, a 25-hour day, three moons, and showers that last a season. Step in, and the year carries on outside without you. A quick rinse takes a week. A long soak, you miss a birthday. Families book the bathroom like a holiday, and whoever's second always loses.\n\nI had one shower there, a quick one. I came out to find my hire car had been towed in the spring.\n\n(The story goes that the month of June is named after Juno, the Roman goddess of marriage. On June, it's named after the bathroom.)\n\nHow long would you wait outside the door?"
+  },
+  "first_comment": "Rob's had the bathroom since Boxing Day. June says she can wait.",
+  "short": {
+   "version": "E",
+   "kicker": "A planet for everyone with a sister and one bathroom.",
+   "title": "Your sister's showers\nhere last a season.",
+   "sub": "",
+   "framing": "medium",
+   "zoom": [
+    1.75,
+    1.81
+   ],
+   "focus": [
+    0.5,
+    0.635
+   ],
+   "spec": {
+    "palette": "crimson",
+    "snow": false,
+    "particles": "none",
+    "daisies": 60,
+    "suns": 1,
+    "sun_x": 0.3,
+    "sun_y": 0.55,
+    "crowd": 1,
+    "crowd_items": "nothing",
+    "crowd_x": 0.43,
+    "crowd_facing": "right",
+    "mist": 0.35
+   },
+   "onset": {
+    "at": 0.4,
+    "motion": "cut",
+    "spec": {
+     "palette": "violet_ice",
+     "snow": true,
+     "particles": "snow",
+     "daisies": 0,
+     "suns": 0,
+     "mist": 0.45
+    }
+   },
+   "beats": [
+    {
+     "text": "Rob queued for the bathroom\nfrom the first of June.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.15,
+       2.21
+      ],
+      "focus": [
+       0.48,
+       0.645
+      ]
+     },
+     "spec": {
+      "crowd_items": "sit"
+     },
+     "seconds": 3.0
+    },
+    {
+     "text": "June came out\non Christmas Eve.",
+     "shot": {
+      "framing": "close",
+      "zoom": [
+       2.15,
+       2.21
+      ],
+      "focus": [
+       0.48,
+       0.645
+      ]
+     },
+     "spec": {
+      "palette": "polar_night",
+      "snow": true,
+      "particles": "snow",
+      "daisies": 0,
+      "suns": 0,
+      "stars": 0.6,
+      "crowd_items": "sit"
+     },
+     "onset": {
+      "at": 0.6,
+      "motion": "rise",
+      "spec": {
+       "crowd": 2,
+       "crowd_items": "sit,nothing",
+       "crowd_x": 0.465,
+       "crowd_facing": "in"
+      }
+     },
+     "seconds": 2.6
+    },
+    {
+     "text": "Rob had grown a beard.",
+     "shot": {
+      "framing": "wide",
+      "zoom": [
+       1.12,
+       1.17
+      ],
+      "focus": [
+       0.5,
+       0.56
+      ]
+     },
+     "spec": {
+      "palette": "polar_night",
+      "snow": true,
+      "particles": "snow",
+      "daisies": 0,
+      "suns": 0,
+      "stars": 0.6,
+      "crowd": 2,
+      "crowd_items": "sit,nothing",
+      "crowd_x": 0.465,
+      "crowd_facing": "in"
+     },
+     "seconds": 2.4
+    }
+   ],
+   "end": "She'd used all the hot water.",
+   "end_zoom": [
+    1.2,
+    1.14
+   ],
+   "end_focus": [
+    0.5,
+    0.58
+   ],
+   "name_y": 0.1,
+   "end_kicker": "For everyone with a sister and one bathroom.",
+   "sign": "Every name has a planet."
+  }
+ }
+]

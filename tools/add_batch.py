@@ -6,6 +6,9 @@
 
 Name planets (a top-level kicker "Every <name> gets this planet.") go to content/names.json, place planets to
 content/launch.json. New rows go at the end of the queue, two a day at 14:00 and 20:00 UTC, in id order, held.
+With --slot 14 --from 2026-12-01 they take that one slot a day from that date instead, and the unposted rows
+they displace move later, keeping their order (rows with a fixed_date or an 'after' keep their dates).
+--post-by ID=YYYY-MM-DD marks a seasonal Reel; tools/shift_queue.py warns if a shift moves it past that date.
 """
 import argparse
 import json
@@ -85,6 +88,9 @@ def main():
     ap.add_argument("files", nargs="*")
     ap.add_argument("--apply", action="store_true")
     ap.add_argument("--release", nargs="+", metavar="ID")
+    ap.add_argument("--slot", type=int, choices=SLOTS)
+    ap.add_argument("--from", dest="start")
+    ap.add_argument("--post-by", nargs="*", default=[], metavar="ID=DATE")
     a = ap.parse_args()
     schedule = json.loads((CONTENT / "schedule.json").read_text())
 
@@ -128,15 +134,42 @@ def main():
     (CONTENT / "names.json").write_text(json.dumps(names, indent=2, ensure_ascii=False) + "\n")
     (CONTENT / "launch.json").write_text(json.dumps(launch, indent=2, ensure_ascii=False) + "\n")
 
-    last = max(datetime.fromisoformat(r["not_before"].replace("Z", "+00:00"))
-               for r in schedule if r["kind"] == "reel" and r.get("not_before") and not r.get("fixed_date"))
-    t = last
-    for e in batch:
-        h = next((s for s in SLOTS if s > t.hour), None)
-        t = (t.replace(hour=h) if h else (t + timedelta(days=1)).replace(hour=SLOTS[0])).replace(minute=0, second=0)
-        schedule.append({"day": 8, "entry": e["id"], "kind": "reel", "not_before": t.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                         "hold": True, "note": "short cut, held until rendered and checked"})
-        print(f"queued {e['id']} {e['name']} at {t:%a %d %b %H:%M} UTC (held)")
+    iso = lambda r: datetime.fromisoformat(r["not_before"].replace("Z", "+00:00"))
+    z = lambda t: t.strftime("%Y-%m-%dT%H:%M:%SZ")
+    post_by = dict(x.split("=", 1) for x in a.post_by)
+    new_rows = [{"day": 8, "entry": e["id"], "kind": "reel", "not_before": "", "hold": True,
+                 "note": "short cut, held until rendered and checked"} for e in batch]
+    for r in new_rows:
+        if r["entry"] in post_by:
+            r["post_by"] = post_by[r["entry"]]
+    if a.slot:
+        start = datetime.fromisoformat(a.start + "T00:00:00+00:00")
+        done = {(x["entry"], x["kind"]) for x in json.loads((CONTENT / "published.json").read_text())}
+        moving = sorted([r for r in schedule if r["kind"] == "reel" and r.get("not_before") and not r.get("hold")
+                         and not r.get("fixed_date") and not r.get("after") and (r["entry"], r["kind"]) not in done
+                         and iso(r) >= start], key=iso)
+        pinned = {r["not_before"] for r in schedule if r["kind"] == "reel" and (r["entry"], r["kind"]) not in done
+                  and (r.get("fixed_date") or r.get("after")) and r.get("not_before") and iso(r) >= start}
+        fresh, old = list(new_rows), list(moving)
+        t = start.replace(hour=SLOTS[0])
+        while fresh or old:
+            if z(t) not in pinned:
+                pick = fresh if (t.hour == a.slot and fresh) or not old else old
+                pick.pop(0)["not_before"] = z(t)
+            h = next((s_ for s_ in SLOTS if s_ > t.hour), None)
+            t = t.replace(hour=h) if h else (t + timedelta(days=1)).replace(hour=SLOTS[0])
+        for r in moving:
+            r["note"] = (r.get("note", "") + f"; moved later on {datetime.now():%d %b} for batch 8").lstrip("; ")
+    else:
+        t = max(iso(r) for r in schedule if r["kind"] == "reel" and r.get("not_before") and not r.get("fixed_date"))
+        for r in new_rows:
+            h = next((s_ for s_ in SLOTS if s_ > t.hour), None)
+            t = (t.replace(hour=h) if h else (t + timedelta(days=1)).replace(hour=SLOTS[0])).replace(minute=0, second=0)
+            r["not_before"] = z(t)
+    schedule.extend(new_rows)
+    names_by_id = {e["id"]: e["name"] for e in batch}
+    for r in new_rows:
+        print(f"queued {r['entry']} {names_by_id[r['entry']]} at {r['not_before']} (held)" + (f", post by {r['post_by']}" if r.get("post_by") else ""))
     (CONTENT / "schedule.json").write_text(json.dumps(schedule, indent=1, ensure_ascii=False) + "\n")
     print("written: content/names.json, content/launch.json, content/schedule.json")
 

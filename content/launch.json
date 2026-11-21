@@ -12545,5 +12545,2328 @@
       "end_kicker": "For whoever forgot the anniversary.",
       "sign": "Every name has a planet."
     }
+  },
+  {
+    "id": "091",
+    "name": "Muddle",
+    "subtitle": "where you are whatever Mum calls you",
+    "story": "On Muddle, you turn into whatever your mum calls you. Get the dog's name by mistake and you're the dog until she sorts it out, which in most houses is after the washing-up. Sunday dinner is the worst of it. Pickle is the family spaniel, and one Sunday Mum called Shaun Pickle, and Shaun was a spaniel. By pudding she'd done all three of her boys. Then Dad offered to help. She was left at the table with a spoon and five spaniels, all sitting very nicely and looking at her. First time they've come when called.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "two",
+      "Gravity": "1.0 g",
+      "Population": "2.3 million"
+    },
+    "hook": "A planet for everyone Mum calls by the dog's name.",
+    "tags": [
+      "#worldbuilding",
+      "#mum",
+      "#spaniel"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "mesas",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.55,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.62,
+      "sun_y": 0.55,
+      "sun_size": 0.045,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.3,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 6,
+      "crowd_items": "spoon,nothing,nothing,nothing,nothing,dog",
+      "crowd_x": 0.44,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.84,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.12,
+      "stage": 0.74
+    },
+    "cover": "You turn into whatever Mum calls you.",
+    "episode": {
+      "opener": "You turn into whatever\nMum calls you.",
+      "beats": [
+        {
+          "text": "Call a son by the dog's name,\nand he's the dog.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.3,
+              1.34
+            ],
+            "focus": [
+              0.455,
+              0.6
+            ]
+          },
+          "onset": {
+            "at": 1.4,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+            }
+          }
+        },
+        {
+          "text": "Mum said 'Pickle'.\nShe meant Shaun.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.85,
+              1.92
+            ],
+            "focus": [
+              0.585,
+              0.635
+            ]
+          },
+          "spec": {
+            "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+          }
+        },
+        {
+          "text": "By pudding,\nall three boys were Pickle.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.3,
+              1.34
+            ],
+            "focus": [
+              0.455,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+            }
+          }
+        },
+        {
+          "text": "Then Dad offered to help.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.16
+            ],
+            "focus": [
+              0.22,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "spoon,dog,dog,dog,dog,dog"
+            }
+          },
+          "note": "close on Mum and Dad; Dad becomes the fifth spaniel on a cut. Turn line"
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.3,
+              1.34
+            ],
+            "focus": [
+              0.455,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "spoon,dog,dog,dog,dog,dog"
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "First time they've come when called.",
+      "caption": "Count the spaniels. Then count the sons.\n\nMuddle: 2.3 million people, a 25-hour day, two moons, and mums whose mix-ups come true. Get the wrong name from your mum and you turn into whoever she said, until she gets it right, which in most houses is after the washing-up. Sunday dinner is the worst of it. Pickle is the spaniel. By pudding, all three boys were Pickle too.\n\nI stayed with a family there. Mum kept calling me Nathan, her youngest. I spent the weekend nine years old and was sent to bed at eight.\n\n(In 2016, psychologists at Duke University found that people mix up names within a group, family with family, and that the dog's name gets pulled in, but rarely the cat's. On Muddle, that's a lot of spaniels.)\n\nHow many names does your mum try before she gets to yours?"
+    },
+    "first_comment": "They're all coming again next Sunday. Mum's bought a whistle.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for everyone Mum calls by the dog's name.",
+      "title": "You turn into whatever\nMum calls you.",
+      "sub": "",
+      "framing": "group",
+      "zoom": [
+        1.3,
+        1.34
+      ],
+      "focus": [
+        0.455,
+        0.6
+      ],
+      "spec": {},
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+        }
+      },
+      "beats": [
+        {
+          "text": "Mum said 'Pickle'.\nShe meant Shaun.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              1.85,
+              1.92
+            ],
+            "focus": [
+              0.585,
+              0.635
+            ]
+          },
+          "spec": {
+            "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+          }
+        },
+        {
+          "text": "By pudding,\nall three boys were Pickle.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.3,
+              1.34
+            ],
+            "focus": [
+              0.455,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+            }
+          }
+        },
+        {
+          "text": "Then Dad offered to help.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.16
+            ],
+            "focus": [
+              0.22,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+          },
+          "onset": {
+            "at": 1.2,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "spoon,dog,dog,dog,dog,dog"
+            }
+          }
+        }
+      ],
+      "end": "First time they've come when called.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.455,
+        0.57
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For everyone Mum calls by the dog's name.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "093",
+    "name": "Bonce",
+    "subtitle": "where best friends go halves on a brain",
+    "story": "On Bonce, best friends share one brain cell, and you can see who's got it: a small light just above their head. It does the thinking for both of them, which is fine as long as nobody asks anything difficult. Becky has it weekdays, for work. Nic gets weekends. One Saturday night they left it in the back of a taxi, and with nothing to think with between them, they did the only thing that made sense. They woke up on Sunday with a dog. They've called him Kebab.",
+    "facts": {
+      "Day": "19 hours",
+      "Moons": "none",
+      "Gravity": "0.8 g",
+      "Population": "3.1 million"
+    },
+    "hook": "A planet for whoever's got the brain cell today.",
+    "tags": [
+      "#worldbuilding",
+      "#bestfriends",
+      "#braincell"
+    ],
+    "spec": {
+      "palette": "lilac_dusk",
+      "terrain": "peaks",
+      "layers": 3,
+      "horizon": 0.8,
+      "relief": 0.35,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.4,
+      "sun_y": 0.64,
+      "sun_size": 0.016,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "nothing,nothing",
+      "crowd_x": 0.5,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.2,
+      "stage": 0.72
+    },
+    "cover": "Best friends here share one brain cell.",
+    "episode": {
+      "opener": "Best friends here\nshare one brain cell.",
+      "beats": [
+        {
+          "text": "You can see who's got it.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.75,
+              1.8
+            ],
+            "focus": [
+              0.5,
+              0.605
+            ]
+          }
+        },
+        {
+          "text": "Becky has it weekdays.\nNic gets weekends.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.15,
+              2.2
+            ],
+            "focus": [
+              0.5,
+              0.615
+            ]
+          },
+          "onset": {
+            "at": 1.7,
+            "motion": "cut",
+            "spec": {
+              "sun_x": 0.6
+            }
+          }
+        },
+        {
+          "text": "They left it in a taxi.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.15,
+              2.2
+            ],
+            "focus": [
+              0.5,
+              0.615
+            ]
+          },
+          "spec": {
+            "sun_x": 0.6
+          },
+          "onset": {
+            "at": 0.7,
+            "motion": "cut",
+            "spec": {
+              "suns": 0
+            }
+          },
+          "note": "identical camera; the light goes out over Nic. Turn line"
+        },
+        {
+          "text": "They woke up with a dog.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.95,
+              1.99
+            ],
+            "focus": [
+              0.5,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "sit,dog,nap",
+            "crowd_gap": 0.14,
+            "suns": 0,
+            "palette": "rose_fog",
+            "mist": 0.45
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.95,
+              1.99
+            ],
+            "focus": [
+              0.5,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "sit,dog,nap",
+            "crowd_gap": 0.14,
+            "suns": 0,
+            "palette": "rose_fog",
+            "mist": 0.45
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "They've called him Kebab.",
+      "caption": "Only one of them is thinking right now.\n\nBonce: 3.1 million people, a 19-hour day, no moons, and best friends who share one brain cell. It sits just above whoever's using it, a small light you can see from across the pub. Becky has it weekdays, for work. Nic gets weekends. It mostly works, as long as nobody asks either of them anything while it's out on loan.\n\nI went out with a pair of them on a Friday. By closing time, I was the one who knew where we lived.\n\n(The human brain has about 86 billion neurons. On Bonce, two people get by on one, and now there's a dog.)\n\nHave you got it today, or have they?"
+    },
+    "first_comment": "The taxi firm sent it back on Monday. Kebab has it now.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for whoever's got the brain cell today.",
+      "title": "Best friends here\nshare one brain cell.",
+      "sub": "",
+      "framing": "medium",
+      "zoom": [
+        1.75,
+        1.8
+      ],
+      "focus": [
+        0.5,
+        0.605
+      ],
+      "spec": {
+        "suns": 0
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "suns": 1,
+          "sun_x": 0.4
+        }
+      },
+      "beats": [
+        {
+          "text": "Becky has it weekdays.\nNic gets weekends.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.15,
+              2.2
+            ],
+            "focus": [
+              0.5,
+              0.615
+            ]
+          },
+          "onset": {
+            "at": 1.7,
+            "motion": "cut",
+            "spec": {
+              "sun_x": 0.6
+            }
+          }
+        },
+        {
+          "text": "They left it in a taxi.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.15,
+              2.2
+            ],
+            "focus": [
+              0.5,
+              0.615
+            ]
+          },
+          "spec": {
+            "sun_x": 0.6
+          },
+          "onset": {
+            "at": 0.7,
+            "motion": "cut",
+            "spec": {
+              "suns": 0
+            }
+          }
+        },
+        {
+          "text": "They woke up with a dog.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.95,
+              1.99
+            ],
+            "focus": [
+              0.5,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "sit,dog,nap",
+            "crowd_gap": 0.14,
+            "suns": 0,
+            "palette": "rose_fog",
+            "mist": 0.45
+          }
+        }
+      ],
+      "end": "They've called him Kebab.",
+      "end_zoom": [
+        1.5,
+        1.44
+      ],
+      "end_focus": [
+        0.5,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For whoever's got the brain cell today.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "095",
+    "name": "Brew",
+    "subtitle": "where the kettle calls everyone in",
+    "story": "On Brew, putting the kettle on summons everyone you live with. Flatmates simply appear round you, mugs out, from wherever they were and whatever they were doing. Abi's flatmates never leave their rooms. She knows them mostly by their microwaves. One night she boiled some for a hot water bottle, just for herself. Nine came. She has four flatmates. One was the landlord, with paperwork. She's bought a coffee machine.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "two",
+      "Gravity": "0.95 g",
+      "Population": "2.4 million"
+    },
+    "hook": "A planet for flatmates who only come out for tea.",
+    "tags": [
+      "#worldbuilding",
+      "#flatmates",
+      "#tea"
+    ],
+    "spec": {
+      "palette": "gold_hour",
+      "terrain": "mesas",
+      "layers": 4,
+      "horizon": 0.62,
+      "relief": 0.55,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.58,
+      "sun_size": 0.055,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 5,
+      "crowd_items": "cup,cup,cup,kettle,cup",
+      "crowd_x": 0.435,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.8,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.085,
+      "stage": 0.74
+    },
+    "cover": "Put the kettle on, and flatmates appear.",
+    "episode": {
+      "opener": "Put the kettle on,\nand flatmates appear.",
+      "beats": [
+        {
+          "text": "Mugs out, from wherever\nthey happen to be.",
+          "shot": {
+            "framing": "group",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.5,
+              0.62
+            ]
+          }
+        },
+        {
+          "text": "Abi's flatmates\nnever leave their rooms.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.7,
+              1.76
+            ],
+            "focus": [
+              0.62,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "sit",
+            "crowd_x": 0.56,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "She knows them mostly\nby their microwaves.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.0,
+              2.06
+            ],
+            "focus": [
+              0.7,
+              0.66
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "sit",
+            "crowd_x": 0.56,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "She boiled some\nfor a hot water bottle.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.15,
+              1.2
+            ],
+            "focus": [
+              0.47,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "kettle",
+            "crowd_x": 0.348,
+            "crowd_facing": "in"
+          },
+          "onset": {
+            "at": 0.8,
+            "motion": "rise",
+            "spec": {
+              "crowd": 9,
+              "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+              "crowd_x": 0.42,
+              "crowd_gap": 0.072,
+              "crowd_facing": "in"
+            }
+          },
+          "note": "identical wide; nine rise along the ledge round the kettle. Turn line"
+        },
+        {
+          "text": "Nine came.\nOne was the landlord.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.2,
+              2.26
+            ],
+            "focus": [
+              0.5,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd": 9,
+            "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+            "crowd_x": 0.645,
+            "crowd_gap": 0.145,
+            "crowd_facing": "in"
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.15,
+              1.2
+            ],
+            "focus": [
+              0.47,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 9,
+            "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+            "crowd_x": 0.42,
+            "crowd_gap": 0.072,
+            "crowd_facing": "in"
+          },
+          "seconds": 2.2
+        }
+      ],
+      "end": "She's bought a coffee machine.",
+      "caption": "Nobody hears a kettle like a flatmate.\n\nBrew: 2.4 million people, a 25-hour day, two moons, and kettles that summon everyone you live with. Put one on, and your flatmates appear round you with their mugs out, wherever they were and whatever they were doing. Kitchens here are small and very full. Nobody on Brew has ever made a quiet cup of tea.\n\nI rented a room there for a month. I met my flatmates once, at the kettle, every forty minutes.\n\n(In Britain, so many people put the kettle on at the end of a big match on telly that the National Grid plans for it. They call it TV pickup. On Brew, it's called Tuesday.)\n\nHow many mugs would you need at yours?"
+    },
+    "first_comment": "The landlord's started boiling his own. Abi's moved her coffee machine into her room.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for flatmates who only come out for tea.",
+      "title": "Put the kettle on,\nand flatmates appear.",
+      "sub": "",
+      "framing": "group",
+      "zoom": [
+        1.62,
+        1.68
+      ],
+      "focus": [
+        0.48,
+        0.63
+      ],
+      "spec": {
+        "crowd": 1,
+        "crowd_items": "kettle",
+        "crowd_x": 0.52,
+        "crowd_facing": "left"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "rise",
+        "spec": {
+          "crowd": 5,
+          "crowd_items": "cup,cup,cup,kettle,cup",
+          "crowd_x": 0.435,
+          "crowd_gap": 0.085,
+          "crowd_facing": "in"
+        }
+      },
+      "beats": [
+        {
+          "text": "Abi knows her flatmates\nby their microwaves.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.75,
+              1.81
+            ],
+            "focus": [
+              0.66,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "sit",
+            "crowd_x": 0.58,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "She only wanted\na hot water bottle.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.16,
+              1.21
+            ],
+            "focus": [
+              0.47,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "kettle",
+            "crowd_x": 0.348,
+            "crowd_facing": "in"
+          },
+          "onset": {
+            "at": 0.7,
+            "motion": "rise",
+            "spec": {
+              "crowd": 9,
+              "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+              "crowd_x": 0.42,
+              "crowd_gap": 0.072,
+              "crowd_facing": "in"
+            }
+          },
+          "seconds": 2.6
+        },
+        {
+          "text": "Nine came.\nOne was the landlord.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.25,
+              2.31
+            ],
+            "focus": [
+              0.5,
+              0.655
+            ]
+          },
+          "spec": {
+            "crowd": 9,
+            "crowd_items": "cup,cup,cup,kettle,book,cup,cup,cup,cup",
+            "crowd_x": 0.645,
+            "crowd_gap": 0.145,
+            "crowd_facing": "in",
+            "suns": 0
+          },
+          "seconds": 2.65
+        }
+      ],
+      "end": "She's bought a coffee machine.",
+      "end_spec": {
+        "crowd": 1,
+        "crowd_items": "cup",
+        "crowd_x": 0.56,
+        "crowd_facing": "right",
+        "crowd_gap": 0.085,
+        "suns": 1
+      },
+      "end_zoom": [
+        1.3,
+        1.22
+      ],
+      "end_focus": [
+        0.6,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For flatmates who only come out for tea.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "097",
+    "name": "Peep",
+    "subtitle": "where peekaboo isn't pretend",
+    "story": "On Peep, peekaboo really works. Cover your eyes and you're gone; uncover them and you're back, usually exactly where you were. Babies here run the house. Maisie's dad did it all afternoon, in and out of the garden, until he fell asleep sitting up. Then Maisie covered her eyes. Mum looked everywhere: the shed, the car, under the sofa, twice. Maisie was on her shoulders the whole time. She's a teenager now. She reappears for lifts.",
+    "facts": {
+      "Day": "22 hours",
+      "Moons": "one",
+      "Gravity": "0.8 g",
+      "Population": "1.1 million"
+    },
+    "hook": "A planet for every toddler who thinks you can't see them.",
+    "tags": [
+      "#worldbuilding",
+      "#newdad",
+      "#peekaboo"
+    ],
+    "spec": {
+      "palette": "rose_fog",
+      "terrain": "spires",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.55,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.22,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.5,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "child,nap",
+      "crowd_x": 0.5,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.82,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.12,
+      "stage": 0.74
+    },
+    "cover": "Peekaboo here really works.",
+    "episode": {
+      "opener": "Peekaboo here\nreally works.",
+      "beats": [
+        {
+          "text": "Cover your eyes,\nand you're gone.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.55,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_items": "child,nothing"
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "cut",
+            "spec": {
+              "crowd": 1,
+              "crowd_items": "child",
+              "crowd_x": 0.44
+            }
+          }
+        },
+        {
+          "text": "Dad's done it\nall afternoon.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.16
+            ],
+            "focus": [
+              0.5,
+              0.64
+            ]
+          }
+        },
+        {
+          "text": "Then Maisie\ncovered her eyes.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.1,
+              2.16
+            ],
+            "focus": [
+              0.5,
+              0.64
+            ]
+          },
+          "onset": {
+            "at": 1.1,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "nothing,nap"
+            }
+          },
+          "note": "identical close; Maisie goes from Mum's shoulders. Turn line"
+        },
+        {
+          "text": "Mum looked everywhere.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.25
+            ],
+            "focus": [
+              0.55,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd_items": "walk,nap",
+            "crowd_facing": "out"
+          }
+        },
+        {
+          "text": "She was on her shoulders.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.52,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd_items": "walk,nap",
+            "crowd_facing": "out"
+          },
+          "onset": {
+            "at": 0.6,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "child,nap",
+              "crowd_facing": "in"
+            }
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.52,
+              0.62
+            ]
+          },
+          "seconds": 2.2
+        }
+      ],
+      "end": "She's a teenager. Reappears for lifts.",
+      "caption": "Keep an eye on Dad.\n\nPeep: 1.1 million people, a 22-hour day, one moon, and peekaboo that really works. Cover your eyes and you're gone; uncover them and you're back, usually where you left yourself. Babies here run the house. Parents spend whole afternoons blinking in and out of the garden, and grandparents are advised to sit down first.\n\nI played it once with a baby on a train. I came back two stops later.\n\n(Child psychologists reckon babies only work out that things still exist when they can't see them at somewhere around eight months. It's called object permanence. On Peep, it's optional.)\n\nHow long could you keep it up?"
+    },
+    "first_comment": "Her little brother's just learned it. Dad's been gone since Thursday.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every toddler who thinks you can't see them.",
+      "title": "Peekaboo here\nreally works.",
+      "sub": "",
+      "framing": "medium",
+      "zoom": [
+        1.85,
+        1.91
+      ],
+      "focus": [
+        0.53,
+        0.635
+      ],
+      "spec": {
+        "crowd_items": "child,nothing"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "child",
+          "crowd_x": 0.44
+        }
+      },
+      "beats": [
+        {
+          "text": "Dad's done it\nall afternoon.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.15,
+              2.21
+            ],
+            "focus": [
+              0.5,
+              0.645
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,nap",
+            "crowd_x": 0.5
+          }
+        },
+        {
+          "text": "Then Maisie\ncovered her eyes.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.15,
+              2.21
+            ],
+            "focus": [
+              0.5,
+              0.645
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "child,nap",
+            "crowd_x": 0.5
+          },
+          "onset": {
+            "at": 1.4,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "nothing,nap"
+            }
+          },
+          "seconds": 2.4
+        },
+        {
+          "text": "Mum looked everywhere.\nMaisie was on her shoulders.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.55,
+              1.6
+            ],
+            "focus": [
+              0.56,
+              0.62
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "walk,nap",
+            "crowd_x": 0.5,
+            "crowd_facing": "out"
+          },
+          "onset": {
+            "at": 1.6,
+            "motion": "cut",
+            "spec": {
+              "crowd_items": "child,nap",
+              "crowd_facing": "in"
+            }
+          },
+          "seconds": 3.4
+        }
+      ],
+      "end": "She's a teenager. Reappears for lifts.",
+      "end_zoom": [
+        1.4,
+        1.32
+      ],
+      "end_focus": [
+        0.55,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For every toddler who thinks you can't see them.",
+      "sign": "Every name has a planet.",
+      "end_spec": {
+        "crowd_items": "nothing,nap",
+        "crowd_facing": "in"
+      }
+    }
+  },
+  {
+    "id": "099",
+    "name": "Walkies",
+    "subtitle": "where every walk crosses three deserts",
+    "story": "On Walkies, a dog walk goes as far as the dog would like, and it would like three deserts. A red one, a stony one and a frozen one, then home for tea. Dogs do it before lunch. People take a flask. Ian took Pip, his spaniel, out after breakfast. In the third desert, Ian sat down in the snow for a minute, and Pip carried on. Pip was home in time for tea, and had it. Ian's still walking back.",
+    "facts": {
+      "Day": "25 hours",
+      "Moons": "two",
+      "Gravity": "1.1 g",
+      "Population": "2.1 million"
+    },
+    "hook": "A planet for everyone with a spaniel.",
+    "tags": [
+      "#worldbuilding",
+      "#spaniel",
+      "#dogwalk"
+    ],
+    "spec": {
+      "palette": "rust_desert",
+      "terrain": "dunes",
+      "layers": 5,
+      "horizon": 0.6,
+      "relief": 0.9,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.84,
+      "sun_y": 0.47,
+      "sun_size": 0.085,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "none",
+      "snow": false,
+      "figure": false,
+      "lighthouse": false,
+      "house": false,
+      "particles": "none",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.35,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "walk,dog",
+      "crowd_x": 0.45,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.0,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.08,
+      "stage": 0.72
+    },
+    "cover": "Dog walks here cross three deserts.",
+    "episode": {
+      "opener": "Dog walks here\ncross three deserts.",
+      "beats": [
+        {
+          "text": "A red one, a stony one,\nthen a frozen one.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.5,
+              0.56
+            ]
+          }
+        },
+        {
+          "text": "Dogs do it before lunch.\nPeople take a flask.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.45,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "terrain": "spires",
+            "layers": 4,
+            "relief": 1.0,
+            "house": false,
+            "trees": "none",
+            "daisies": 0,
+            "suns": 1,
+            "sun_x": 0.74,
+            "sun_y": 0.32,
+            "sun_size": 0.045,
+            "mist": 0.4,
+            "snow": false,
+            "particles": "none",
+            "house_x": 0.0
+          }
+        },
+        {
+          "text": "Ian took Pip out\nafter breakfast.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.2,
+              1.26
+            ],
+            "focus": [
+              0.55,
+              0.58
+            ]
+          },
+          "spec": {
+            "palette": "mint_dawn",
+            "terrain": "hills",
+            "layers": 4,
+            "relief": 0.6,
+            "house": true,
+            "house_x": 0.8,
+            "trees": "pines",
+            "suns": 1,
+            "sun_x": 0.3,
+            "sun_y": 0.5,
+            "sun_size": 0.045,
+            "daisies": 14,
+            "mist": 0.4,
+            "snow": false,
+            "particles": "none"
+          }
+        },
+        {
+          "text": "In the third desert,\nIan sat down.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.45,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "terrain": "mesas",
+            "layers": 4,
+            "relief": 0.8,
+            "house": false,
+            "trees": "none",
+            "daisies": 0,
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "mist": 0.55,
+            "house_x": 0.0
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "palette": "violet_ice",
+              "terrain": "mesas",
+              "layers": 4,
+              "relief": 0.8,
+              "house": false,
+              "trees": "none",
+              "daisies": 0,
+              "suns": 0,
+              "snow": true,
+              "particles": "snow",
+              "mist": 0.55,
+              "house_x": 0.0,
+              "crowd_items": "sit,dog",
+              "crowd_gap": 0.3
+            }
+          },
+          "note": "identical camera; Ian sits in the snow, Pip walks on. Turn line"
+        },
+        {
+          "text": "Pip was home\nin time for tea.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.55,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "gold_hour",
+            "terrain": "hills",
+            "layers": 4,
+            "relief": 0.6,
+            "house": true,
+            "house_x": 0.6,
+            "trees": "pines",
+            "suns": 1,
+            "sun_x": 0.25,
+            "sun_y": 0.56,
+            "sun_size": 0.04,
+            "daisies": 14,
+            "mist": 0.4,
+            "snow": false,
+            "particles": "none",
+            "crowd": 1,
+            "crowd_items": "dog",
+            "crowd_x": 0.5,
+            "crowd_facing": "right"
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.5,
+              1.55
+            ],
+            "focus": [
+              0.55,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "gold_hour",
+            "terrain": "hills",
+            "layers": 4,
+            "relief": 0.6,
+            "house": true,
+            "house_x": 0.6,
+            "trees": "pines",
+            "suns": 1,
+            "sun_x": 0.25,
+            "sun_y": 0.56,
+            "sun_size": 0.04,
+            "daisies": 14,
+            "mist": 0.4,
+            "snow": false,
+            "particles": "none",
+            "crowd": 1,
+            "crowd_items": "dog",
+            "crowd_x": 0.5,
+            "crowd_facing": "right"
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "Ian's still walking back.",
+      "caption": "Pip has done this walk before.\n\nWalkies: 2.1 million people, about four million dogs, a 25-hour day, two moons, and a dog walk that goes as far as the dog would like: three deserts, a red one, a stony one and a frozen one, then home for tea. Dogs do it before lunch. People take a flask, spare socks and, if they're sensible, the bus fare back.\n\nI borrowed a spaniel for the afternoon. I got as far as the stony one, and she sent a postcard.\n\n(The largest desert on Earth is Antarctica. A desert is about how little falls from the sky, not how hot it is. On Walkies, it's the spaniels' favourite.)\n\nHow many deserts would yours do before tea?"
+    },
+    "first_comment": "Ian's wife walks Pip now. She takes the car.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for everyone with a spaniel.",
+      "title": "Dog walks here\ncross three deserts.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.6,
+        1.66
+      ],
+      "focus": [
+        0.6,
+        0.62
+      ],
+      "spec": {
+        "palette": "mint_dawn",
+        "terrain": "hills",
+        "layers": 4,
+        "relief": 0.6,
+        "house": true,
+        "house_x": 0.8,
+        "trees": "pines",
+        "suns": 1,
+        "sun_x": 0.3,
+        "sun_y": 0.5,
+        "sun_size": 0.045,
+        "daisies": 14,
+        "mist": 0.4,
+        "snow": false,
+        "particles": "none"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "cut",
+        "spec": {
+          "palette": "rust_desert",
+          "terrain": "dunes",
+          "layers": 5,
+          "relief": 0.9,
+          "house": false,
+          "trees": "none",
+          "daisies": 0,
+          "suns": 1,
+          "sun_x": 0.8,
+          "sun_y": 0.53,
+          "sun_size": 0.07,
+          "mist": 0.35,
+          "snow": false,
+          "particles": "none",
+          "house_x": 0.0,
+          "crowd": 2,
+          "crowd_items": "walk,dog",
+          "crowd_x": 0.45,
+          "crowd_facing": "right",
+          "crowd_gap": 0.08
+        }
+      },
+      "beats": [
+        {
+          "text": "Pip's a spaniel.\nIan took a flask.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.85,
+              1.9
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "crimson",
+            "terrain": "spires",
+            "layers": 4,
+            "relief": 1.0,
+            "house": false,
+            "trees": "none",
+            "daisies": 0,
+            "suns": 1,
+            "sun_x": 0.74,
+            "sun_y": 0.32,
+            "sun_size": 0.045,
+            "mist": 0.4,
+            "snow": false,
+            "particles": "none",
+            "house_x": 0.0,
+            "crowd_items": "cup,dog"
+          }
+        },
+        {
+          "text": "In the third desert,\nIan sat down.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.7,
+              1.76
+            ],
+            "focus": [
+              0.46,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "violet_ice",
+            "terrain": "mesas",
+            "layers": 4,
+            "relief": 0.8,
+            "house": false,
+            "trees": "none",
+            "daisies": 0,
+            "suns": 0,
+            "snow": true,
+            "particles": "snow",
+            "mist": 0.55,
+            "house_x": 0.0
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "palette": "violet_ice",
+              "terrain": "mesas",
+              "layers": 4,
+              "relief": 0.8,
+              "house": false,
+              "trees": "none",
+              "daisies": 0,
+              "suns": 0,
+              "snow": true,
+              "particles": "snow",
+              "mist": 0.55,
+              "house_x": 0.0,
+              "crowd_items": "sit,dog",
+              "crowd_gap": 0.3
+            }
+          },
+          "seconds": 2.6
+        },
+        {
+          "text": "Pip was home\nin time for tea.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.6,
+              0.62
+            ]
+          },
+          "spec": {
+            "palette": "gold_hour",
+            "terrain": "hills",
+            "layers": 4,
+            "relief": 0.6,
+            "house": true,
+            "house_x": 0.8,
+            "trees": "pines",
+            "suns": 1,
+            "sun_x": 0.36,
+            "sun_y": 0.57,
+            "sun_size": 0.04,
+            "daisies": 14,
+            "mist": 0.4,
+            "snow": false,
+            "particles": "none",
+            "crowd": 1,
+            "crowd_items": "dog",
+            "crowd_x": 0.7,
+            "crowd_facing": "right"
+          },
+          "seconds": 2.6
+        }
+      ],
+      "end": "Ian's still walking back.",
+      "end_spec": {
+        "palette": "violet_ice",
+        "terrain": "mesas",
+        "layers": 4,
+        "relief": 0.8,
+        "house": false,
+        "trees": "none",
+        "daisies": 0,
+        "suns": 0,
+        "snow": true,
+        "particles": "snow",
+        "mist": 0.55,
+        "house_x": 0.0,
+        "crowd": 1,
+        "crowd_items": "walk",
+        "crowd_x": 0.5,
+        "crowd_facing": "left"
+      },
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.5,
+        0.58
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For everyone with a spaniel.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "100",
+    "name": "Bunk",
+    "subtitle": "where everyone's nine at their mum's",
+    "story": "On Bunk, anyone who goes back to their mum's is nine again by the time they're through the door. Not in spirit. Nine: the height, the bedtime, the opinions about crusts. It wears off on the drive home, usually around the services. Gareth's a judge. At Christmas he went home with his brother, and by the doorstep they were both up on their parents' shoulders. He asked for squash. Mum sent them both to bed at eight, and they went. At ten, Gareth asked for a glass of water. He's sentencing someone on Monday.",
+    "facts": {
+      "Day": "22 hours",
+      "Moons": "two",
+      "Gravity": "1.0 g",
+      "Population": "3.4 million"
+    },
+    "hook": "A planet for every grown man in his old bedroom.",
+    "tags": [
+      "#worldbuilding",
+      "#christmas",
+      "#brothers"
+    ],
+    "spec": {
+      "palette": "pumpkin",
+      "terrain": "peaks",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.8,
+      "water": false,
+      "shore": "none",
+      "suns": 1,
+      "sun_x": 0.26,
+      "sun_y": 0.57,
+      "sun_size": 0.04,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "pines",
+      "snow": true,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "snow",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 2,
+      "crowd_items": "child,child",
+      "crowd_x": 0.55,
+      "crowd_facing": "in",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.73,
+      "bright_stars": false,
+      "flake_size": 1.0,
+      "crowd_gap": 0.11,
+      "stage": 0.73
+    },
+    "cover": "At Mum's, you're nine again.",
+    "episode": {
+      "opener": "At Mum's,\nyou're nine again.",
+      "beats": [
+        {
+          "text": "Not in spirit. Nine.\nBedtime, crusts, the lot.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.55,
+              0.6
+            ]
+          },
+          "spec": {
+            "crowd": 4,
+            "crowd_items": "walk,walk,nothing,nothing",
+            "crowd_x": 0.5,
+            "crowd_gap": 0.085,
+            "crowd_facing": "in"
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "auto",
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "child,child",
+              "crowd_x": 0.55,
+              "crowd_gap": 0.11,
+              "crowd_facing": "in"
+            }
+          }
+        },
+        {
+          "text": "Gareth's a judge.\nHe asked for squash.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.3,
+              2.36
+            ],
+            "focus": [
+              0.48,
+              0.665
+            ]
+          }
+        },
+        {
+          "text": "Mum sent them both\nto bed at eight.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.7,
+              1.76
+            ],
+            "focus": [
+              0.6,
+              0.64
+            ]
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "palette": "abyss",
+              "suns": 0,
+              "crowd_items": "child_asleep,child_asleep"
+            }
+          },
+          "note": "identical camera; night falls and both brothers fall asleep on their parents' shoulders. Turn line"
+        },
+        {
+          "text": "Gareth asked for\na glass of water.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.3,
+              2.36
+            ],
+            "focus": [
+              0.48,
+              0.665
+            ]
+          },
+          "spec": {
+            "palette": "abyss",
+            "suns": 0,
+            "crowd_items": "child_asleep,child_asleep"
+          },
+          "onset": {
+            "at": 0.7,
+            "motion": "cut",
+            "spec": {
+              "palette": "abyss",
+              "suns": 0,
+              "crowd_items": "child,child_asleep"
+            }
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.3,
+              2.36
+            ],
+            "focus": [
+              0.48,
+              0.665
+            ]
+          },
+          "spec": {
+            "palette": "abyss",
+            "suns": 0,
+            "crowd_items": "child,child_asleep"
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "He's sentencing someone on Monday.",
+      "caption": "They both wiped their feet.\n\nBunk: 3.4 million people, a 22-hour day, two moons, and a rule about going home: step through your mum's front door, and you're nine again. Not in spirit. Nine. The height, the bedtime, the strong feelings about crusts. It wears off on the drive back, usually around the services.\n\nI only went round to my mum's to borrow a stepladder. I came out with a packed lunch.\n\n(Children of nine need nine to twelve hours' sleep a night, according to the American Academy of Sleep Medicine. On Bunk, so do judges.)\n\nWhat time would your mum send you up?"
+    },
+    "first_comment": "His brother's a surgeon. Mum still cuts his sandwiches into triangles.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every grown man in his old bedroom.",
+      "title": "At Mum's,\nyou're nine again.",
+      "sub": "",
+      "framing": "group",
+      "zoom": [
+        1.75,
+        1.8
+      ],
+      "focus": [
+        0.55,
+        0.62
+      ],
+      "spec": {
+        "crowd": 4,
+        "crowd_items": "walk,walk,nothing,nothing",
+        "crowd_x": 0.5,
+        "crowd_gap": 0.085,
+        "crowd_facing": "in"
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "auto",
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,child",
+          "crowd_x": 0.55,
+          "crowd_gap": 0.11,
+          "crowd_facing": "in"
+        }
+      },
+      "beats": [
+        {
+          "text": "Gareth's a judge.\nHe asked for squash.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.3,
+              2.36
+            ],
+            "focus": [
+              0.48,
+              0.665
+            ]
+          }
+        },
+        {
+          "text": "Mum sent them both\nto bed at eight.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.95,
+              2.0
+            ],
+            "focus": [
+              0.6,
+              0.655
+            ]
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "cut",
+            "spec": {
+              "palette": "abyss",
+              "suns": 0,
+              "crowd_items": "child_asleep,child_asleep"
+            }
+          },
+          "seconds": 2.7
+        },
+        {
+          "text": "Gareth asked for\na glass of water.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.3,
+              2.36
+            ],
+            "focus": [
+              0.48,
+              0.665
+            ]
+          },
+          "spec": {
+            "palette": "abyss",
+            "suns": 0,
+            "crowd_items": "child_asleep,child_asleep"
+          },
+          "onset": {
+            "at": 0.7,
+            "motion": "cut",
+            "spec": {
+              "palette": "abyss",
+              "suns": 0,
+              "crowd_items": "child,child_asleep"
+            }
+          }
+        }
+      ],
+      "end": "He's sentencing someone on Monday.",
+      "end_zoom": [
+        1.5,
+        1.44
+      ],
+      "end_focus": [
+        0.56,
+        0.6
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For every grown man in his old bedroom.",
+      "sign": "Every name has a planet."
+    }
+  },
+  {
+    "id": "102",
+    "name": "Crumb",
+    "subtitle": "where whoever eats the mince pie does the chimneys",
+    "story": "On Crumb, whoever eats the mince pie left out for Santa becomes Santa until morning. Every chimney on the planet, in whatever they had on. Most dads find out around eleven, with crumbs down their jumper. This year, the kids left out two, and Mum had the other one. The kids had planned it since October. By the time their parents got back down, they'd opened everything. Even Nan's.",
+    "facts": {
+      "Day": "24 hours",
+      "Moons": "one",
+      "Gravity": "0.8 g",
+      "Population": "5.2 million"
+    },
+    "hook": "A planet for every dad who ate the mince pie.",
+    "tags": [
+      "#worldbuilding",
+      "#christmaseve",
+      "#mincepie"
+    ],
+    "spec": {
+      "palette": "lilac_dusk",
+      "terrain": "hills",
+      "layers": 4,
+      "horizon": 0.6,
+      "relief": 0.6,
+      "water": false,
+      "shore": "none",
+      "suns": 0,
+      "sun_x": 0.6,
+      "sun_y": 0.5,
+      "sun_size": 0.05,
+      "giant": false,
+      "ring": false,
+      "giant_size": 0.24,
+      "giant_x": null,
+      "giant_y": null,
+      "moons": 0,
+      "big_moon": false,
+      "aurora": false,
+      "stars": null,
+      "islands": 0,
+      "trees": "pines",
+      "snow": true,
+      "figure": false,
+      "lighthouse": false,
+      "house": true,
+      "particles": "snow",
+      "glass_waves": false,
+      "lanterns": 0,
+      "moths": 0,
+      "mist": 0.4,
+      "gag": "",
+      "cartographer": false,
+      "spot": "",
+      "glow_rims": false,
+      "sign": "",
+      "crowd": 1,
+      "crowd_items": "aloft",
+      "crowd_x": 0.53,
+      "crowd_facing": "right",
+      "daisies": 0,
+      "lamp": false,
+      "moon_window": false,
+      "sea_glow": false,
+      "house_x": 0.56,
+      "bright_stars": true,
+      "flake_size": 1.0,
+      "crowd_gap": 0.09,
+      "stage": 0.7
+    },
+    "cover": "Santa's mince pie makes you Santa.",
+    "episode": {
+      "opener": "Santa's mince pie\nmakes you Santa.",
+      "beats": [
+        {
+          "text": "Every chimney on the planet,\nby morning.",
+          "shot": {
+            "framing": "wide",
+            "zoom": [
+              1.3,
+              1.36
+            ],
+            "focus": [
+              0.52,
+              0.56
+            ]
+          },
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "cup",
+            "crowd_x": 0.44,
+            "crowd_facing": "right",
+            "bright_stars": false
+          },
+          "onset": {
+            "at": 1.0,
+            "motion": "auto",
+            "spec": {
+              "crowd": 1,
+              "crowd_items": "aloft",
+              "crowd_x": 0.53,
+              "crowd_facing": "right",
+              "bright_stars": true
+            }
+          }
+        },
+        {
+          "text": "Most dads find out\naround eleven.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.2,
+              2.26
+            ],
+            "focus": [
+              0.5,
+              0.47
+            ]
+          }
+        },
+        {
+          "text": "This year, the kids\nleft out two.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.6,
+              1.66
+            ],
+            "focus": [
+              0.52,
+              0.53
+            ]
+          },
+          "onset": {
+            "at": 0.9,
+            "motion": "auto",
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "aloft,aloft",
+              "crowd_x": 0.53,
+              "crowd_gap": 0.12,
+              "crowd_facing": "in",
+              "bright_stars": true
+            }
+          },
+          "note": "identical camera; Mum appears in mid-air beside him. Turn line"
+        },
+        {
+          "text": "The kids had planned it\nsince October.",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.56,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "crowd_items": "",
+            "bright_stars": true
+          }
+        },
+        {
+          "text": "",
+          "shot": {
+            "framing": "house",
+            "zoom": [
+              1.9,
+              1.96
+            ],
+            "focus": [
+              0.56,
+              0.64
+            ]
+          },
+          "spec": {
+            "crowd": 0,
+            "crowd_items": "",
+            "bright_stars": true
+          },
+          "seconds": 2.4
+        }
+      ],
+      "end": "They'd opened everything. Even Nan's.",
+      "caption": "The sherry was a trap too.\n\nCrumb: 5.2 million people, a 24-hour day, one moon, and one rule on Christmas Eve: whoever eats the mince pie left out for Santa becomes Santa until morning. Every chimney on the planet, in whatever they had on. Most dads find out around eleven, with crumbs down their jumper.\n\nI spent a Christmas Eve with a family there. I tidied up the plate before bed, to be helpful. I did the whole southern hemisphere.\n\n(The story goes that British children leave Father Christmas a mince pie and a glass of sherry, and a carrot for the reindeer. On Crumb, the carrot's the only safe thing on the plate.)\n\nWhat would your kids open first?"
+    },
+    "first_comment": "Nan's was a foot spa. The kids have been taking turns in it all morning.",
+    "short": {
+      "version": "E",
+      "kicker": "A planet for every dad who ate the mince pie.",
+      "title": "Santa's mince pie\nmakes you Santa.",
+      "sub": "",
+      "framing": "wide",
+      "zoom": [
+        1.2,
+        1.24
+      ],
+      "focus": [
+        0.53,
+        0.52
+      ],
+      "spec": {
+        "crowd": 1,
+        "crowd_items": "cup",
+        "crowd_x": 0.44,
+        "crowd_facing": "right",
+        "bright_stars": false
+      },
+      "onset": {
+        "at": 0.4,
+        "motion": "auto",
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "aloft",
+          "crowd_x": 0.53,
+          "crowd_facing": "right",
+          "bright_stars": true
+        }
+      },
+      "beats": [
+        {
+          "text": "Every chimney.\nIn his slippers.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.2,
+              2.26
+            ],
+            "focus": [
+              0.53,
+              0.47
+            ]
+          }
+        },
+        {
+          "text": "This year, the kids\nleft out two.",
+          "shot": {
+            "framing": "medium",
+            "zoom": [
+              1.65,
+              1.7
+            ],
+            "focus": [
+              0.53,
+              0.47
+            ]
+          },
+          "onset": {
+            "at": 0.8,
+            "motion": "auto",
+            "spec": {
+              "crowd": 2,
+              "crowd_items": "aloft,aloft",
+              "crowd_x": 0.53,
+              "crowd_gap": 0.12,
+              "crowd_facing": "in",
+              "bright_stars": true
+            }
+          }
+        },
+        {
+          "text": "First night out in ages.",
+          "shot": {
+            "framing": "close",
+            "zoom": [
+              2.2,
+              2.26
+            ],
+            "focus": [
+              0.53,
+              0.47
+            ]
+          },
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "aloft,aloft",
+            "crowd_x": 0.53,
+            "crowd_gap": 0.11,
+            "crowd_facing": "in",
+            "bright_stars": true
+          }
+        }
+      ],
+      "end": "The kids opened everything. Even Nan's.",
+      "end_zoom": [
+        1.3,
+        1.24
+      ],
+      "end_focus": [
+        0.55,
+        0.56
+      ],
+      "name_y": 0.1,
+      "end_kicker": "For every dad who ate the mince pie.",
+      "sign": "Every name has a planet.",
+      "end_spec": {
+        "crowd": 0,
+        "crowd_items": ""
+      }
+    }
   }
 ]
