@@ -1,0 +1,320 @@
+{
+  "id": "097",
+  "name": "Peep",
+  "subtitle": "where peekaboo isn't pretend",
+  "story": "On Peep, peekaboo really works. Cover your eyes and you're gone; uncover them and you're back, usually exactly where you were. Babies here run the house. Maisie's dad did it all afternoon, in and out of the garden, until he fell asleep sitting up. Then Maisie covered her eyes. Mum looked everywhere: the shed, the car, under the sofa, twice. Maisie was on her shoulders the whole time. She's a teenager now. She reappears for lifts.",
+  "facts": {
+    "Day": "22 hours",
+    "Moons": "one",
+    "Gravity": "0.8 g",
+    "Population": "1.1 million"
+  },
+  "hook": "A planet for every toddler who thinks you can't see them.",
+  "tags": [
+    "#worldbuilding",
+    "#newdad",
+    "#peekaboo"
+  ],
+  "spec": {
+    "palette": "rose_fog",
+    "terrain": "spires",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.55,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.22,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.5,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "child,nap",
+    "crowd_x": 0.5,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.82,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.12,
+    "stage": 0.74
+  },
+  "cover": "Peekaboo here really works.",
+  "episode": {
+    "opener": "Peekaboo here\nreally works.",
+    "beats": [
+      {
+        "text": "Cover your eyes,\nand you're gone.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.55,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "child,nothing"
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "child",
+            "crowd_x": 0.44
+          }
+        }
+      },
+      {
+        "text": "Dad's done it\nall afternoon.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.16
+          ],
+          "focus": [
+            0.5,
+            0.64
+          ]
+        }
+      },
+      {
+        "text": "Then Maisie\ncovered her eyes.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.16
+          ],
+          "focus": [
+            0.5,
+            0.64
+          ]
+        },
+        "onset": {
+          "at": 1.1,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "nothing,nap"
+          }
+        },
+        "note": "identical close; Maisie goes from Mum's shoulders. Turn line"
+      },
+      {
+        "text": "Mum looked everywhere.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.2,
+            1.25
+          ],
+          "focus": [
+            0.55,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "walk,nap",
+          "crowd_facing": "out"
+        }
+      },
+      {
+        "text": "She was on her shoulders.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.52,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd_items": "walk,nap",
+          "crowd_facing": "out"
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "child,nap",
+            "crowd_facing": "in"
+          }
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.52,
+            0.62
+          ]
+        },
+        "seconds": 2.2
+      }
+    ],
+    "end": "She's a teenager. Reappears for lifts.",
+    "caption": "Keep an eye on Dad.\n\nPeep: 1.1 million people, a 22-hour day, one moon, and peekaboo that really works. Cover your eyes and you're gone; uncover them and you're back, usually where you left yourself. Babies here run the house. Parents spend whole afternoons blinking in and out of the garden, and grandparents are advised to sit down first.\n\nI played it once with a baby on a train. I came back two stops later.\n\n(Child psychologists reckon babies only work out that things still exist when they can't see them at somewhere around eight months. It's called object permanence. On Peep, it's optional.)\n\nHow long could you keep it up?"
+  },
+  "first_comment": "Her little brother's just learned it. Dad's been gone since Thursday.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every toddler who thinks you can't see them.",
+    "title": "Peekaboo here\nreally works.",
+    "sub": "",
+    "framing": "medium",
+    "zoom": [
+      1.85,
+      1.91
+    ],
+    "focus": [
+      0.53,
+      0.635
+    ],
+    "spec": {
+      "crowd_items": "child,nothing"
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd": 1,
+        "crowd_items": "child",
+        "crowd_x": 0.44
+      }
+    },
+    "beats": [
+      {
+        "text": "Dad's done it\nall afternoon.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.15,
+            2.21
+          ],
+          "focus": [
+            0.5,
+            0.645
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,nap",
+          "crowd_x": 0.5
+        }
+      },
+      {
+        "text": "Then Maisie\ncovered her eyes.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.15,
+            2.21
+          ],
+          "focus": [
+            0.5,
+            0.645
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "child,nap",
+          "crowd_x": 0.5
+        },
+        "onset": {
+          "at": 1.4,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "nothing,nap"
+          }
+        },
+        "seconds": 2.4
+      },
+      {
+        "text": "Mum looked everywhere.\nMaisie was on her shoulders.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.55,
+            1.6
+          ],
+          "focus": [
+            0.56,
+            0.62
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "walk,nap",
+          "crowd_x": 0.5,
+          "crowd_facing": "out"
+        },
+        "onset": {
+          "at": 1.6,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "child,nap",
+            "crowd_facing": "in"
+          }
+        },
+        "seconds": 3.4
+      }
+    ],
+    "end": "She's a teenager. Reappears for lifts.",
+    "end_zoom": [
+      1.4,
+      1.32
+    ],
+    "end_focus": [
+      0.55,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For every toddler who thinks you can't see them.",
+    "sign": "Every name has a planet.",
+    "end_spec": {
+      "crowd_items": "nothing,nap",
+      "crowd_facing": "in"
+    }
+  },
+  "_engine": 5
+}

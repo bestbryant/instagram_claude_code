@@ -1,0 +1,396 @@
+{
+  "id": "098",
+  "name": "June",
+  "subtitle": "every June's planet",
+  "story": "On June, showers last a season. The water's lovely; it's just that the year carries on outside without you. June went in on the first of June. Her brother Rob waited at the door with his towel. The daisies went, then the leaves, then the snow came, and Rob sat down. She came out on Christmas Eve, pink and very relaxed. Rob had grown a beard. She'd used all the hot water.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "three",
+    "Gravity": "0.9 g",
+    "Population": "640,000"
+  },
+  "hook": "A planet for everyone with a sister and one bathroom.",
+  "tags": [
+    "#illustration",
+    "#siblings",
+    "#june"
+  ],
+  "spec": {
+    "palette": "violet_ice",
+    "terrain": "peaks",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.75,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": 0.3,
+    "sun_y": 0.55,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "snow",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.45,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "nothing",
+    "crowd_x": 0.43,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.6,
+    "bright_stars": false,
+    "flake_size": 1.2,
+    "crowd_gap": 0.07,
+    "stage": 0.74
+  },
+  "cover": "Your sister's showers here last a season.",
+  "kicker": "Every June gets this planet.",
+  "episode": {
+    "opener": "Your sister's showers\nhere last a season.",
+    "beats": [
+      {
+        "text": "June went in\non the first of June.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.52,
+            0.63
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "snow": false,
+          "particles": "none",
+          "daisies": 60,
+          "suns": 1,
+          "sun_x": 0.3,
+          "sun_y": 0.55,
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.43,
+          "crowd_facing": "right",
+          "mist": 0.35
+        }
+      },
+      {
+        "text": "Her brother Rob\nwaited with his towel.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.16
+          ],
+          "focus": [
+            0.47,
+            0.645
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "snow": false,
+          "particles": "none",
+          "daisies": 60,
+          "suns": 1,
+          "sun_x": 0.3,
+          "sun_y": 0.55,
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.43,
+          "crowd_facing": "right",
+          "mist": 0.35
+        }
+      },
+      {
+        "text": "The daisies went.\nThen the snow came.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.52,
+            0.63
+          ]
+        },
+        "spec": {
+          "palette": "crimson",
+          "snow": false,
+          "particles": "none",
+          "daisies": 60,
+          "suns": 1,
+          "sun_x": 0.3,
+          "sun_y": 0.55,
+          "crowd": 1,
+          "crowd_items": "nothing",
+          "crowd_x": 0.43,
+          "crowd_facing": "right",
+          "mist": 0.35
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "palette": "violet_ice",
+            "snow": true,
+            "particles": "snow",
+            "daisies": 0,
+            "suns": 0,
+            "mist": 0.45
+          }
+        }
+      },
+      {
+        "text": "She came out\non Christmas Eve.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.16
+          ],
+          "focus": [
+            0.47,
+            0.645
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "snow": true,
+          "particles": "snow",
+          "daisies": 0,
+          "suns": 0,
+          "stars": 0.6,
+          "crowd_items": "sit"
+        },
+        "onset": {
+          "at": 0.7,
+          "motion": "rise",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "sit,nothing",
+            "crowd_x": 0.465,
+            "crowd_facing": "in"
+          }
+        },
+        "note": "identical door close at night; June rises in beside Rob. Turn line"
+      },
+      {
+        "text": "Rob had grown a beard.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.15,
+            1.2
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "snow": true,
+          "particles": "snow",
+          "daisies": 0,
+          "suns": 0,
+          "stars": 0.6,
+          "crowd": 2,
+          "crowd_items": "sit,nothing",
+          "crowd_x": 0.465,
+          "crowd_facing": "in"
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.15,
+            1.2
+          ],
+          "focus": [
+            0.5,
+            0.58
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "snow": true,
+          "particles": "snow",
+          "daisies": 0,
+          "suns": 0,
+          "stars": 0.6,
+          "crowd": 2,
+          "crowd_items": "sit,nothing",
+          "crowd_x": 0.465,
+          "crowd_facing": "in"
+        },
+        "seconds": 2.2
+      }
+    ],
+    "end": "She'd used all the hot water.",
+    "caption": "Rob's waiting for the bathroom.\n\nJune: 640,000 people, a 25-hour day, three moons, and showers that last a season. Step in, and the year carries on outside without you. A quick rinse takes a week. A long soak, you miss a birthday. Families book the bathroom like a holiday, and whoever's second always loses.\n\nI had one shower there, a quick one. I came out to find my hire car had been towed in the spring.\n\n(The story goes that the month of June is named after Juno, the Roman goddess of marriage. On June, it's named after the bathroom.)\n\nHow long would you wait outside the door?"
+  },
+  "first_comment": "Rob's had the bathroom since Boxing Day. June says she can wait.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for everyone with a sister and one bathroom.",
+    "title": "Your sister's showers\nhere last a season.",
+    "sub": "",
+    "framing": "medium",
+    "zoom": [
+      1.75,
+      1.81
+    ],
+    "focus": [
+      0.5,
+      0.635
+    ],
+    "spec": {
+      "palette": "crimson",
+      "snow": false,
+      "particles": "none",
+      "daisies": 60,
+      "suns": 1,
+      "sun_x": 0.3,
+      "sun_y": 0.55,
+      "crowd": 1,
+      "crowd_items": "nothing",
+      "crowd_x": 0.43,
+      "crowd_facing": "right",
+      "mist": 0.35
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "palette": "violet_ice",
+        "snow": true,
+        "particles": "snow",
+        "daisies": 0,
+        "suns": 0,
+        "mist": 0.45
+      }
+    },
+    "beats": [
+      {
+        "text": "Rob queued for the bathroom\nfrom the first of June.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.15,
+            2.21
+          ],
+          "focus": [
+            0.48,
+            0.645
+          ]
+        },
+        "spec": {
+          "crowd_items": "sit"
+        },
+        "seconds": 3.0
+      },
+      {
+        "text": "June came out\non Christmas Eve.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.15,
+            2.21
+          ],
+          "focus": [
+            0.48,
+            0.645
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "snow": true,
+          "particles": "snow",
+          "daisies": 0,
+          "suns": 0,
+          "stars": 0.6,
+          "crowd_items": "sit"
+        },
+        "onset": {
+          "at": 0.6,
+          "motion": "rise",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "sit,nothing",
+            "crowd_x": 0.465,
+            "crowd_facing": "in"
+          }
+        },
+        "seconds": 2.6
+      },
+      {
+        "text": "Rob had grown a beard.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.12,
+            1.17
+          ],
+          "focus": [
+            0.5,
+            0.56
+          ]
+        },
+        "spec": {
+          "palette": "polar_night",
+          "snow": true,
+          "particles": "snow",
+          "daisies": 0,
+          "suns": 0,
+          "stars": 0.6,
+          "crowd": 2,
+          "crowd_items": "sit,nothing",
+          "crowd_x": 0.465,
+          "crowd_facing": "in"
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "She'd used all the hot water.",
+    "end_zoom": [
+      1.2,
+      1.14
+    ],
+    "end_focus": [
+      0.5,
+      0.58
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For everyone with a sister and one bathroom.",
+    "sign": "Every name has a planet."
+  }
+}
