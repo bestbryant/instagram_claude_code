@@ -1,0 +1,285 @@
+{
+  "id": "091",
+  "name": "Muddle",
+  "subtitle": "where you are whatever Mum calls you",
+  "story": "On Muddle, you turn into whatever your mum calls you. Get the dog's name by mistake and you're the dog until she sorts it out, which in most houses is after the washing-up. Sunday dinner is the worst of it. Pickle is the family spaniel, and one Sunday Mum called Shaun Pickle, and Shaun was a spaniel. By pudding she'd done all three of her boys. Then Dad offered to help. She was left at the table with a spoon and five spaniels, all sitting very nicely and looking at her. First time they've come when called.",
+  "facts": {
+    "Day": "25 hours",
+    "Moons": "two",
+    "Gravity": "1.0 g",
+    "Population": "2.3 million"
+  },
+  "hook": "A planet for everyone Mum calls by the dog's name.",
+  "tags": [
+    "#worldbuilding",
+    "#mum",
+    "#spaniel"
+  ],
+  "spec": {
+    "palette": "rose_fog",
+    "terrain": "mesas",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.55,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.62,
+    "sun_y": 0.55,
+    "sun_size": 0.045,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.3,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 6,
+    "crowd_items": "spoon,nothing,nothing,nothing,nothing,dog",
+    "crowd_x": 0.44,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.84,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.12,
+    "stage": 0.74
+  },
+  "cover": "You turn into whatever Mum calls you.",
+  "episode": {
+    "opener": "You turn into whatever\nMum calls you.",
+    "beats": [
+      {
+        "text": "Call a son by the dog's name,\nand he's the dog.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.3,
+            1.34
+          ],
+          "focus": [
+            0.455,
+            0.6
+          ]
+        },
+        "onset": {
+          "at": 1.4,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+          }
+        }
+      },
+      {
+        "text": "Mum said 'Pickle'.\nShe meant Shaun.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.85,
+            1.92
+          ],
+          "focus": [
+            0.585,
+            0.635
+          ]
+        },
+        "spec": {
+          "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+        }
+      },
+      {
+        "text": "By pudding,\nall three boys were Pickle.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.3,
+            1.34
+          ],
+          "focus": [
+            0.455,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+          }
+        }
+      },
+      {
+        "text": "Then Dad offered to help.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.16
+          ],
+          "focus": [
+            0.22,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "spoon,dog,dog,dog,dog,dog"
+          }
+        },
+        "note": "close on Mum and Dad; Dad becomes the fifth spaniel on a cut. Turn line"
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.3,
+            1.34
+          ],
+          "focus": [
+            0.455,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "spoon,dog,dog,dog,dog,dog"
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "First time they've come when called.",
+    "caption": "Count the spaniels. Then count the sons.\n\nMuddle: 2.3 million people, a 25-hour day, two moons, and mums whose mix-ups come true. Get the wrong name from your mum and you turn into whoever she said, until she gets it right, which in most houses is after the washing-up. Sunday dinner is the worst of it. Pickle is the spaniel. By pudding, all three boys were Pickle too.\n\nI stayed with a family there. Mum kept calling me Nathan, her youngest. I spent the weekend nine years old and was sent to bed at eight.\n\n(In 2016, psychologists at Duke University found that people mix up names within a group, family with family, and that the dog's name gets pulled in, but rarely the cat's. On Muddle, that's a lot of spaniels.)\n\nHow many names does your mum try before she gets to yours?"
+  },
+  "first_comment": "They're all coming again next Sunday. Mum's bought a whistle.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for everyone Mum calls by the dog's name.",
+    "title": "You turn into whatever\nMum calls you.",
+    "sub": "",
+    "framing": "group",
+    "zoom": [
+      1.3,
+      1.34
+    ],
+    "focus": [
+      0.455,
+      0.6
+    ],
+    "spec": {},
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+      }
+    },
+    "beats": [
+      {
+        "text": "Mum said 'Pickle'.\nShe meant Shaun.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            1.85,
+            1.92
+          ],
+          "focus": [
+            0.585,
+            0.635
+          ]
+        },
+        "spec": {
+          "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+        }
+      },
+      {
+        "text": "By pudding,\nall three boys were Pickle.",
+        "shot": {
+          "framing": "group",
+          "zoom": [
+            1.3,
+            1.34
+          ],
+          "focus": [
+            0.455,
+            0.6
+          ]
+        },
+        "spec": {
+          "crowd_items": "spoon,nothing,nothing,dog,nothing,dog"
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+          }
+        }
+      },
+      {
+        "text": "Then Dad offered to help.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.1,
+            2.16
+          ],
+          "focus": [
+            0.22,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd_items": "spoon,nothing,dog,dog,dog,dog"
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "spoon,dog,dog,dog,dog,dog"
+          }
+        }
+      }
+    ],
+    "end": "First time they've come when called.",
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.455,
+      0.57
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For everyone Mum calls by the dog's name.",
+    "sign": "Every name has a planet."
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "id": "092",
+  "name": "Gemma",
+  "subtitle": "every Gemma's planet",
+  "story": "On Gemma, twins can't get more than ten feet apart. Walk off in a huff and you snap straight back, shoulder to shoulder, wherever you were going. Twins here share a bedroom, a desk and a bus seat for life, and most of their opinions. Gemma moved to Leeds for work. Jade came too. Then Gemma got married, with her sister pressed against one arm and her husband against the other, and when she threw the bouquet there was only one person in range. Jade caught it. Obviously. The honeymoon was very cosy.",
+  "facts": {
+    "Day": "20 hours",
+    "Moons": "two",
+    "Gravity": "1.1 g",
+    "Population": "1.4 million"
+  },
+  "hook": "A planet for every twin who comes as a set.",
+  "tags": [
+    "#illustration",
+    "#twins",
+    "#gemma"
+  ],
+  "spec": {
+    "palette": "pastel",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 1,
+    "sun_x": 0.78,
+    "sun_y": 0.44,
+    "sun_size": 0.045,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 2,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "lone",
+    "snow": false,
+    "figure": false,
+    "lighthouse": false,
+    "house": false,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.2,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 2,
+    "crowd_items": "nothing,nothing",
+    "crowd_x": 0.5,
+    "crowd_facing": "in",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.0,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.05,
+    "stage": 0.74
+  },
+  "cover": "Twins here can't get ten feet apart.",
+  "kicker": "Every Gemma gets this planet.",
+  "episode": {
+    "opener": "Twins here can't get\nten feet apart.",
+    "beats": [
+      {
+        "text": "Walk off in a huff,\nand you snap straight back.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.5,
+            1.95
+          ],
+          "focus": [
+            0.5,
+            0.635
+          ]
+        },
+        "spec": {
+          "crowd_items": "walk,walk",
+          "crowd_facing": "out",
+          "crowd_gap": 0.45
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "crowd_items": "nothing,nothing",
+            "crowd_facing": "in",
+            "crowd_gap": 0.05
+          }
+        }
+      },
+      {
+        "text": "Gemma moved to Leeds.\nJade came too.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.56,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd_items": "walk,walk",
+          "crowd_facing": "right",
+          "crowd_x": 0.42,
+          "crowd_gap": 0.06,
+          "house": true,
+          "house_x": 0.74
+        }
+      },
+      {
+        "text": "Then Gemma got married.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.95,
+            2.0
+          ],
+          "focus": [
+            0.5,
+            0.635
+          ]
+        },
+        "onset": {
+          "at": 1.0,
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "nothing,flower,nothing",
+            "crowd_x": 0.525,
+            "daisies": 30
+          }
+        },
+        "note": "identical camera; a groom rises in on Gemma's other side, with flowers and daisies. Turn line"
+      },
+      {
+        "text": "Jade caught the bouquet.\nObviously.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.75,
+            2.8
+          ],
+          "focus": [
+            0.51,
+            0.66
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "nothing,flower,nothing",
+          "crowd_x": 0.525,
+          "daisies": 30
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "flower,nothing,nothing",
+            "crowd_x": 0.525,
+            "daisies": 30,
+            "crowd_facing": "left"
+          }
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.95,
+            2.0
+          ],
+          "focus": [
+            0.5,
+            0.635
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "flower,nothing,nothing",
+          "crowd_x": 0.525,
+          "daisies": 30,
+          "crowd_facing": "left"
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "The honeymoon was very cosy.",
+    "caption": "Those two aren't getting very far.\n\nGemma: 1.4 million people, a 20-hour day, two moons, and twins who can't get more than ten feet apart. Walk off in a huff and you snap straight back, shoulder to shoulder, wherever you were going. Twins share a bedroom, a desk and a bus seat for life. Gemma moved to Leeds. Jade came too. Then Gemma got married, and the bouquet only had one place to go.\n\nI waited at a bus stop there behind a pair of twins. One wanted the number nine, the other wanted the twelve. They're still at the bus stop.\n\n(The story goes that Twinsburg, Ohio, is named after twin brothers who married sisters, died on the same day and share a grave. On Gemma, that's just good planning.)\n\nCould you share a bus seat for life?"
+  },
+  "first_comment": "Jade's seeing someone now. Gemma says he's lovely. She'd know.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every twin who comes as a set.",
+    "title": "Twins here can't get\nten feet apart.",
+    "sub": "",
+    "framing": "medium",
+    "zoom": [
+      1.5,
+      1.95
+    ],
+    "focus": [
+      0.5,
+      0.635
+    ],
+    "spec": {
+      "crowd_items": "walk,walk",
+      "crowd_facing": "out",
+      "crowd_gap": 0.45
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "cut",
+      "spec": {
+        "crowd_items": "nothing,nothing",
+        "crowd_facing": "in",
+        "crowd_gap": 0.05
+      }
+    },
+    "beats": [
+      {
+        "text": "Gemma moved to Leeds.\nJade came too.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.56,
+            0.58
+          ]
+        },
+        "spec": {
+          "crowd_items": "walk,walk",
+          "crowd_facing": "right",
+          "crowd_x": 0.42,
+          "crowd_gap": 0.06,
+          "house": true,
+          "house_x": 0.74
+        }
+      },
+      {
+        "text": "Then Gemma got married.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.95,
+            2.0
+          ],
+          "focus": [
+            0.5,
+            0.635
+          ]
+        },
+        "spec": {
+          "crowd_items": "nothing,nothing",
+          "crowd_facing": "in",
+          "crowd_x": 0.5,
+          "crowd_gap": 0.05,
+          "house": false
+        },
+        "onset": {
+          "at": 0.9,
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "nothing,flower,nothing",
+            "crowd_x": 0.525,
+            "daisies": 30
+          }
+        }
+      },
+      {
+        "text": "Jade caught the bouquet.\nObviously.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.75,
+            2.8
+          ],
+          "focus": [
+            0.51,
+            0.66
+          ]
+        },
+        "spec": {
+          "crowd": 3,
+          "crowd_items": "nothing,flower,nothing",
+          "crowd_x": 0.525,
+          "daisies": 30
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "cut",
+          "spec": {
+            "crowd": 3,
+            "crowd_items": "flower,nothing,nothing",
+            "crowd_x": 0.525,
+            "daisies": 30,
+            "crowd_facing": "left"
+          }
+        }
+      }
+    ],
+    "end": "The honeymoon was very cosy.",
+    "end_zoom": [
+      1.75,
+      1.65
+    ],
+    "end_focus": [
+      0.5,
+      0.625
+    ],
+    "scrim": 0.55,
+    "name_y": 0.1,
+    "end_kicker": "For every twin who comes as a set.",
+    "sign": "Every name has a planet."
+  },
+  "_engine": 5
+}
