@@ -1,0 +1,304 @@
+{
+  "id": "102",
+  "name": "Crumb",
+  "subtitle": "where whoever eats the mince pie does the chimneys",
+  "story": "On Crumb, whoever eats the mince pie left out for Santa becomes Santa until morning. Every chimney on the planet, in whatever they had on. Most dads find out around eleven, with crumbs down their jumper. This year, the kids left out two, and Mum had the other one. The kids had planned it since October. By the time their parents got back down, they'd opened everything. Even Nan's.",
+  "facts": {
+    "Day": "24 hours",
+    "Moons": "one",
+    "Gravity": "0.8 g",
+    "Population": "5.2 million"
+  },
+  "hook": "A planet for every dad who ate the mince pie.",
+  "tags": [
+    "#worldbuilding",
+    "#christmaseve",
+    "#mincepie"
+  ],
+  "spec": {
+    "palette": "lilac_dusk",
+    "terrain": "hills",
+    "layers": 4,
+    "horizon": 0.6,
+    "relief": 0.6,
+    "water": false,
+    "shore": "none",
+    "suns": 0,
+    "sun_x": 0.6,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "pines",
+    "snow": true,
+    "figure": false,
+    "lighthouse": false,
+    "house": true,
+    "particles": "snow",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 1,
+    "crowd_items": "aloft",
+    "crowd_x": 0.53,
+    "crowd_facing": "right",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.56,
+    "bright_stars": true,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.7
+  },
+  "cover": "Santa's mince pie makes you Santa.",
+  "episode": {
+    "opener": "Santa's mince pie\nmakes you Santa.",
+    "beats": [
+      {
+        "text": "Every chimney on the planet,\nby morning.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.3,
+            1.36
+          ],
+          "focus": [
+            0.52,
+            0.56
+          ]
+        },
+        "spec": {
+          "crowd": 1,
+          "crowd_items": "cup",
+          "crowd_x": 0.44,
+          "crowd_facing": "right",
+          "bright_stars": false
+        },
+        "onset": {
+          "at": 1.0,
+          "motion": "auto",
+          "spec": {
+            "crowd": 1,
+            "crowd_items": "aloft",
+            "crowd_x": 0.53,
+            "crowd_facing": "right",
+            "bright_stars": true
+          }
+        }
+      },
+      {
+        "text": "Most dads find out\naround eleven.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.2,
+            2.26
+          ],
+          "focus": [
+            0.5,
+            0.47
+          ]
+        }
+      },
+      {
+        "text": "This year, the kids\nleft out two.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.52,
+            0.53
+          ]
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "auto",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "aloft,aloft",
+            "crowd_x": 0.53,
+            "crowd_gap": 0.12,
+            "crowd_facing": "in",
+            "bright_stars": true
+          }
+        },
+        "note": "identical camera; Mum appears in mid-air beside him. Turn line"
+      },
+      {
+        "text": "The kids had planned it\nsince October.",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.56,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "crowd_items": "",
+          "bright_stars": true
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "house",
+          "zoom": [
+            1.9,
+            1.96
+          ],
+          "focus": [
+            0.56,
+            0.64
+          ]
+        },
+        "spec": {
+          "crowd": 0,
+          "crowd_items": "",
+          "bright_stars": true
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "They'd opened everything. Even Nan's.",
+    "caption": "The sherry was a trap too.\n\nCrumb: 5.2 million people, a 24-hour day, one moon, and one rule on Christmas Eve: whoever eats the mince pie left out for Santa becomes Santa until morning. Every chimney on the planet, in whatever they had on. Most dads find out around eleven, with crumbs down their jumper.\n\nI spent a Christmas Eve with a family there. I tidied up the plate before bed, to be helpful. I did the whole southern hemisphere.\n\n(The story goes that British children leave Father Christmas a mince pie and a glass of sherry, and a carrot for the reindeer. On Crumb, the carrot's the only safe thing on the plate.)\n\nWhat would your kids open first?"
+  },
+  "first_comment": "Nan's was a foot spa. The kids have been taking turns in it all morning.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for every dad who ate the mince pie.",
+    "title": "Santa's mince pie\nmakes you Santa.",
+    "sub": "",
+    "framing": "wide",
+    "zoom": [
+      1.2,
+      1.24
+    ],
+    "focus": [
+      0.53,
+      0.52
+    ],
+    "spec": {
+      "crowd": 1,
+      "crowd_items": "cup",
+      "crowd_x": 0.44,
+      "crowd_facing": "right",
+      "bright_stars": false
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "auto",
+      "spec": {
+        "crowd": 1,
+        "crowd_items": "aloft",
+        "crowd_x": 0.53,
+        "crowd_facing": "right",
+        "bright_stars": true
+      }
+    },
+    "beats": [
+      {
+        "text": "Every chimney.\nIn his slippers.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.2,
+            2.26
+          ],
+          "focus": [
+            0.53,
+            0.47
+          ]
+        }
+      },
+      {
+        "text": "This year, the kids\nleft out two.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.65,
+            1.7
+          ],
+          "focus": [
+            0.53,
+            0.47
+          ]
+        },
+        "onset": {
+          "at": 0.8,
+          "motion": "auto",
+          "spec": {
+            "crowd": 2,
+            "crowd_items": "aloft,aloft",
+            "crowd_x": 0.53,
+            "crowd_gap": 0.12,
+            "crowd_facing": "in",
+            "bright_stars": true
+          }
+        }
+      },
+      {
+        "text": "First night out in ages.",
+        "shot": {
+          "framing": "close",
+          "zoom": [
+            2.2,
+            2.26
+          ],
+          "focus": [
+            0.53,
+            0.47
+          ]
+        },
+        "spec": {
+          "crowd": 2,
+          "crowd_items": "aloft,aloft",
+          "crowd_x": 0.53,
+          "crowd_gap": 0.11,
+          "crowd_facing": "in",
+          "bright_stars": true
+        }
+      }
+    ],
+    "end": "The kids opened everything. Even Nan's.",
+    "end_zoom": [
+      1.3,
+      1.24
+    ],
+    "end_focus": [
+      0.55,
+      0.56
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For every dad who ate the mince pie.",
+    "sign": "Every name has a planet.",
+    "end_spec": {
+      "crowd": 0,
+      "crowd_items": ""
+    }
+  },
+  "_engine": 5
+}

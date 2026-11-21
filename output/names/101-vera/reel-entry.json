@@ -1,0 +1,273 @@
+{
+  "id": "101",
+  "name": "Vera",
+  "subtitle": "every Vera's planet",
+  "story": "On Vera, the nosiest neighbour on every street gets a lighthouse. Nobody votes. It just goes up one night beside the right house, and the beam does the rest. Vera's went up over her cottage on the cliff. She knew about the extension at number nine before the builders did. Then Vera went on a cruise, and the lighthouse went with her. For a fortnight, nobody on the street knew anything. When she got back, there'd been two affairs and a conservatory.",
+  "facts": {
+    "Day": "30 hours",
+    "Moons": "none",
+    "Gravity": "0.95 g",
+    "Population": "940,000"
+  },
+  "hook": "A planet for the neighbour who takes in your parcels.",
+  "tags": [
+    "#illustration",
+    "#neighbours",
+    "#vera"
+  ],
+  "spec": {
+    "palette": "teal_night",
+    "terrain": "spires",
+    "layers": 3,
+    "horizon": 0.6,
+    "relief": 0.6,
+    "water": true,
+    "shore": "left",
+    "suns": 0,
+    "sun_x": 0.6,
+    "sun_y": 0.5,
+    "sun_size": 0.05,
+    "giant": false,
+    "ring": false,
+    "giant_size": 0.24,
+    "giant_x": null,
+    "giant_y": null,
+    "moons": 0,
+    "big_moon": false,
+    "aurora": false,
+    "stars": null,
+    "islands": 0,
+    "trees": "none",
+    "snow": false,
+    "figure": false,
+    "lighthouse": true,
+    "house": true,
+    "particles": "none",
+    "glass_waves": false,
+    "lanterns": 0,
+    "moths": 0,
+    "mist": 0.4,
+    "gag": "",
+    "cartographer": false,
+    "spot": "",
+    "glow_rims": false,
+    "sign": "",
+    "crowd": 0,
+    "crowd_items": "",
+    "crowd_x": 0.0,
+    "crowd_facing": "",
+    "daisies": 0,
+    "lamp": false,
+    "moon_window": false,
+    "sea_glow": false,
+    "house_x": 0.21,
+    "bright_stars": false,
+    "flake_size": 1.0,
+    "crowd_gap": 0.09,
+    "stage": 0.74
+  },
+  "cover": "The nosiest neighbour gets a lighthouse.",
+  "kicker": "Every Vera gets this planet.",
+  "episode": {
+    "opener": "The nosiest neighbour\ngets a lighthouse.",
+    "beats": [
+      {
+        "text": "Nobody votes.\nIt just goes up one night.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.6,
+            1.66
+          ],
+          "focus": [
+            0.2,
+            0.64
+          ]
+        },
+        "spec": {
+          "lighthouse": false
+        },
+        "onset": {
+          "at": 1.2,
+          "motion": "rise",
+          "spec": {
+            "lighthouse": true
+          }
+        }
+      },
+      {
+        "text": "Vera knew about the extension\nbefore the builders.",
+        "shot": {
+          "framing": "lighthouse",
+          "zoom": [
+            2.2,
+            2.26
+          ],
+          "focus": [
+            0.16,
+            0.64
+          ]
+        }
+      },
+      {
+        "text": "Then Vera went\non a cruise.",
+        "shot": {
+          "framing": "medium",
+          "zoom": [
+            1.4,
+            1.46
+          ],
+          "focus": [
+            0.3,
+            0.62
+          ]
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "cut",
+          "spec": {
+            "lighthouse": false
+          }
+        },
+        "note": "identical camera; the lighthouse and its beam go, leaving her cottage. Turn line"
+      },
+      {
+        "text": "For a fortnight,\nnobody knew anything.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.14
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "lighthouse": false
+        }
+      },
+      {
+        "text": "",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.14
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "lighthouse": false
+        },
+        "seconds": 2.4
+      }
+    ],
+    "end": "Two affairs and a conservatory.",
+    "caption": "Vera is always in.\n\nVera: 940,000 people, a 30-hour day, no moons, and a lighthouse on every street for whoever's nosiest. Nobody votes. It just goes up one night beside the right house, and the beam does the rest. Ships could use them, in theory. Mostly they're for knowing who's had a delivery.\n\nI stayed one night on Vera's street. By breakfast she knew where I was going next, and had views.\n\n(The story goes that net curtains caught on in Victorian Britain so you could see out without being seen. Vera has never seen the point.)\n\nWhat would the lighthouse have seen on your street this week?"
+  },
+  "first_comment": "Vera's home. She's been round. She says the conservatory faces the wrong way.",
+  "short": {
+    "version": "E",
+    "kicker": "A planet for the neighbour who takes in your parcels.",
+    "title": "The nosiest neighbour\ngets a lighthouse.",
+    "sub": "",
+    "framing": "medium",
+    "zoom": [
+      1.6,
+      1.66
+    ],
+    "focus": [
+      0.2,
+      0.64
+    ],
+    "spec": {
+      "lighthouse": false
+    },
+    "onset": {
+      "at": 0.4,
+      "motion": "rise",
+      "spec": {
+        "lighthouse": true
+      }
+    },
+    "beats": [
+      {
+        "text": "Vera knew about the extension\nbefore the builders.",
+        "shot": {
+          "framing": "lighthouse",
+          "zoom": [
+            2.2,
+            2.26
+          ],
+          "focus": [
+            0.16,
+            0.66
+          ]
+        }
+      },
+      {
+        "text": "Then Vera went\non a cruise.",
+        "shot": {
+          "framing": "lighthouse",
+          "zoom": [
+            2.2,
+            2.26
+          ],
+          "focus": [
+            0.16,
+            0.66
+          ]
+        },
+        "onset": {
+          "at": 0.9,
+          "motion": "cut",
+          "spec": {
+            "lighthouse": false
+          }
+        }
+      },
+      {
+        "text": "For a fortnight,\nnobody knew anything.",
+        "shot": {
+          "framing": "wide",
+          "zoom": [
+            1.1,
+            1.14
+          ],
+          "focus": [
+            0.5,
+            0.6
+          ]
+        },
+        "spec": {
+          "lighthouse": false
+        }
+      }
+    ],
+    "end": "Two affairs and a conservatory.",
+    "end_onset": {
+      "at": 0.6,
+      "motion": "rise",
+      "spec": {
+        "lighthouse": true
+      }
+    },
+    "end_zoom": [
+      1.2,
+      1.16
+    ],
+    "end_focus": [
+      0.4,
+      0.6
+    ],
+    "name_y": 0.1,
+    "end_kicker": "For the neighbour who takes in your parcels.",
+    "sign": "Every name has a planet."
+  },
+  "_engine": 5
+}

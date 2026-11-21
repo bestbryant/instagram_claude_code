@@ -890,16 +890,14 @@
   "entry": "101",
   "kind": "reel",
   "not_before": "2026-12-11T14:00:00Z",
-  "hold": true,
-  "note": "short cut, held until rendered and checked"
+  "note": "short cut, checked"
  },
  {
   "day": 8,
   "entry": "102",
   "kind": "reel",
   "not_before": "2026-12-12T14:00:00Z",
-  "hold": true,
-  "note": "short cut, held until rendered and checked",
+  "note": "short cut, checked",
   "post_by": "2026-12-23"
  }
 ]
