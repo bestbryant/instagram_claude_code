@@ -2,6 +2,13 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-22 daily review (12:20 UTC): day five without the token; the name offer ends on its own rule
+- **Numbers:** none; no API since 17 Nov 17:08, no post since Lull (17 Nov 14:11). With today's 14:00, 10 slots missed.
+- **Red flag:** no post for 118 h. Cause and fix unchanged and with the owner (OWNER_TODO, Urgent). The container restarted again at 12:08 (uptime 0 min); this time the voice libraries and model caches survived, and the tools now live in the repo.
+- **Change (the end-card swap, by the rule set on 2 Nov and restated 12 Nov):** two weeks of the visible name offer with 0 requests ends it. Week one: 0 from 2,380 strangers (12 Nov read). Week two, to the last read before the outage (12-17 Nov): 0 requests and 0 stranger comments from about 1,800 more (Amber, Victoria, Dibs, Miles, Likeness, Grace, Bill, Lull and the part twos). No Reel has posted since Lull, so the two days the outage hides can only add tail reach; the 19 Nov read is taken now rather than waiting for the API. Done: the sign-off 'Every name has a planet.' comes off all 32 queued Reels that carried it, and each one's own dedication (end_kicker: 'For every husband with man flu.', 'For the grandkids.') shows on the end card instead; OFFER_FIRST = False, so caption line 1 is the planet again and the offer moves to line 2, where a request can still come and is still honoured. Captions of all 59 queued Reels rebuilt (tools/recaption.py); the 32 re-render in posting order now, while the machine is idle.
+- **Why it should help:** the end card is the last thing read before the loop or the swipe, and a dedication names who to send it to (rule S2, the send line), where the offer asked for something nobody gave. The last voiced line is now the laugh (the end line), and each Reel is about 1.4 s shorter.
+- **How we'll know:** sends and likes per 100 strangers on the swapped Reels against the 12 lengthened offer Reels of 12-17 Nov; requests and stranger comments are still logged in every review.
+
 ## 2026-11-21 daily review (12:20 UTC): day four without the token; batch 8 written, rendered and checked in the gap
 - **Numbers:** none; no API since 17 Nov 17:08, no post since Lull (17 Nov 14:11). With today's 14:00, 8 slots missed. Followers were 22 at the last read.
 - **Red flag:** no post for 94 h. Cause and fix unchanged and with the owner (OWNER_TODO, Urgent). The recovery plan of 19 Nov stands.
