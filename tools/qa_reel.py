@@ -2,6 +2,7 @@
 
     python3 tools/qa_reel.py 091 092                 # every check
     python3 tools/qa_reel.py --no-voice 091          # skip the transcript (frames, size and freshness only)
+    python3 tools/qa_reel.py --ends 076 083 090      # also one sheet of every Reel's end card (after an end-card change)
 
 Per Reel it checks:
 - FRESH: the render matches the content (check_item: not stale, not missing, cover present, preflight passes);
@@ -125,6 +126,8 @@ def qa(entry_id: str, entries: dict, rows: dict, do_voice: bool) -> dict:
         else:
             marks.append((what, starts[i] + s.seconds * 0.6))
     marks = [(lab, min(ts, res["seconds"] - 0.05)) for lab, ts in marks]
+    res["end_at"] = min(starts[-1] + shots[-1].seconds * 0.7, res["seconds"] - 0.05)
+    res["mp4"] = str(mp4)
     cols = 4
     rows_n = (len(marks) + cols - 1) // cols
     sheet = Image.new("RGB", (cols * (TW + 8) + 8, rows_n * (TH + 34) + 8), (24, 24, 28))
@@ -153,7 +156,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("ids", nargs="+")
     ap.add_argument("--no-voice", action="store_true")
+    ap.add_argument("--ends", action="store_true", help="also write one sheet of all the end cards")
     a = ap.parse_args()
+    ends = []
     entries = content_entries()
     rows = {r["entry"]: r for r in json.loads(SCHEDULE.read_text()) if r["kind"] == "reel"}
     for i in a.ids:
@@ -172,6 +177,20 @@ def main():
             print(f"   heard: {r['heard']}")
         if "sheet" in r:
             print(f"   sheet: {r['sheet']}")
+        if "mp4" in r:
+            ends.append((f"{r['id']} {r['name']}", r["mp4"], r["end_at"]))
+    if a.ends and ends:
+        cols, w, h = 6, 240, 427
+        rows_n = (len(ends) + cols - 1) // cols
+        sheet = Image.new("RGB", (cols * (w + 6) + 6, rows_n * (h + 26) + 6), (24, 24, 28))
+        d = ImageDraw.Draw(sheet)
+        for k, (lab, mp4, ts) in enumerate(ends):
+            x, y = 6 + (k % cols) * (w + 6), 6 + (k // cols) * (h + 26)
+            sheet.paste(_frame(Path(mp4), ts).resize((w, h), Image.LANCZOS), (x, y + 20))
+            d.text((x + 3, y + 4), lab, fill=(235, 235, 235))
+        path = ROOT / "output" / "_preview" / f"ends_{ends[0][0].split()[0]}-{ends[-1][0].split()[0]}.jpg"
+        sheet.save(path, quality=88)
+        print(f"end cards: {path}")
 
 
 if __name__ == "__main__":
