@@ -27,7 +27,7 @@ SHORT_TAGS = "#worldbuilding #imaginaryworlds #scifiart #conceptart"   # specifi
 # offer, short enough to be read whole (2 Nov: the old lines were cut to a posting-rate claim, and no stranger had
 # ever left a name). Worded a little differently each time so it never reads as a template; open-ended, never a
 # fixed word (Instagram only down-ranks asks for a specific word or emoji)
-OFFER_FIRST = True
+OFFER_FIRST = False   # 22 Nov: 0 requests in two weeks of the offer as line 1 (DIAGNOSIS 22 Nov); the planet line leads again
 
 PROMISES = ["Leave any name. I'll find its planet.",
             "Leave a name: it gets its own planet.",
