@@ -176,7 +176,7 @@
         "seconds": 2.4
       }
     ],
-    "end": "They've called him Kebab.",
+    "end": "They've called the dog Kebab.",
     "caption": "Only one of them is thinking right now.\n\nBonce: 3.1 million people, a 19-hour day, no moons, and best friends who share one brain cell. It sits just above whoever's using it, a small light you can see from across the pub. Becky has it weekdays, for work. Nic gets weekends. It mostly works, as long as nobody asks either of them anything while it's out on loan.\n\nI went out with a pair of them on a Friday. By closing time, I was the one who knew where we lived.\n\n(The human brain has about 86 billion neurons. On Bonce, two people get by on one, and now there's a dog.)\n\nHave you got it today, or have they?"
   },
   "first_comment": "The taxi firm sent it back on Monday. Kebab has it now.",
@@ -274,7 +274,7 @@
         }
       }
     ],
-    "end": "They've called him Kebab.",
+    "end": "They've called the dog Kebab.",
     "end_zoom": [
       1.5,
       1.44
@@ -284,8 +284,7 @@
       0.6
     ],
     "name_y": 0.1,
-    "end_kicker": "For whoever's got the brain cell today.",
-    "sign": "Every name has a planet."
+    "end_kicker": "For whoever's got the brain cell today."
   },
   "_engine": 5
 }
