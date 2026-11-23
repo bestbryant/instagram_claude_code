@@ -2,6 +2,13 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-23 daily review (12:20 UTC): day six without the token; it isn't configured anywhere, and this session couldn't see it if it were
+- **Numbers:** none; no API since 17 Nov 17:08, no post since Lull (17 Nov 14:11). With today's 14:00, 12 slots missed.
+- **Red flag:** no post for 142 h. The container restarted again at 12:08.
+- **Diagnosis (new):** the environment documentation says settings added to the environment reach *new* sessions, and this hourly routine resumes the same long-lived session every hour. So a token added after 17 Nov would be invisible here, and 'not in env' every hour proved nothing about whether the owner had acted. Tested two ways: (1) a fresh diagnostic session in the same environment (session_01KuJmNYvEVcHb55myFmy62Y, read-only, printed no values) also reports IG_ACCESS_TOKEN, IG_USER_ID and IG_GRAPH_HOST not set; (2) an unauthenticated read-only call to /me on graph.instagram.com and graph.facebook.com is refused, so no network secret is being added to requests either. The token is genuinely not configured; the fix is still the owner's.
+- **Change (process):** recovery no longer depends on this session seeing the variable. The owner's urgent item now says to tell me in chat once it's added; then I check from a fresh session at once and, if it's there, move the hourly routine to start a new session each run (every run's state lives in the repo, so nothing is lost), with the queue shift and re-renders of 19 Nov done on the first run. Fallback if the owner adds it without saying: a fresh-session check every 6 hours (the runs after 00, 06, 12 and 18 UTC), about 0.15 USD each.
+- **How we'll know:** the first fresh-session check that reports the variable set and /me OK.
+
 ## 2026-11-22 daily review (12:20 UTC): day five without the token; the name offer ends on its own rule
 - **Numbers:** none; no API since 17 Nov 17:08, no post since Lull (17 Nov 14:11). With today's 14:00, 10 slots missed.
 - **Red flag:** no post for 118 h. Cause and fix unchanged and with the owner (OWNER_TODO, Urgent). The container restarted again at 12:08 (uptime 0 min); this time the voice libraries and model caches survived, and the tools now live in the repo.
