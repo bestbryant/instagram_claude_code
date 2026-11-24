@@ -2,6 +2,13 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-24 daily review (12:20 UTC): day seven without the token; recovery made one command
+- **Numbers:** none; no API since 17 Nov 17:08, no post since Lull (17 Nov 14:11). With today's 14:00, 14 slots missed. Followers were 22 at the last read.
+- **Red flag:** no post for 166 h. Fresh-session checks at 18:00, 00:00, 06:00 and 12:00 all report IG_ACCESS_TOKEN not set, so the owner hasn't added it yet (and hasn't written since 17 Nov). The container restarted again at 12:08.
+- **Change (process):** `tools/shift_queue.py --auto` now works out the outage shift itself: the fewest whole days that put the next unposted row in the future. Dry run at 12:15: 6 days behind, Thaw moves to 24 Nov 20:00, pointer comments move with their part twos, and the two dated teasers re-date (Brumm 'Part two, Thursday', Yonder 'Part two, Tuesday') and need re-renders (tools/render_ids.py 018 046, about 10 minutes each, then tools/qa_reel.py). So the first run that finds the token can shift, re-render the teasers and post the next slot without hand arithmetic.
+- **Seasonal watch:** each day of outage pushes the Christmas Reels a day later. At today's shift Crumb would post 18 Dec; it passes its 23 Dec deadline if the token is still missing on 30 Nov, and shift_queue then warns, so it is moved forward by hand.
+- **How we'll know:** the first fresh-session check that finds the token, then the first post back.
+
 ## 2026-11-23 daily review (12:20 UTC): day six without the token; it isn't configured anywhere, and this session couldn't see it if it were
 - **Numbers:** none; no API since 17 Nov 17:08, no post since Lull (17 Nov 14:11). With today's 14:00, 12 slots missed.
 - **Red flag:** no post for 142 h. The container restarted again at 12:08.

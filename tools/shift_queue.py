@@ -2,6 +2,8 @@
 
     python3 tools/shift_queue.py --days 1            # show what would change
     python3 tools/shift_queue.py --days 1 --apply    # write schedule.json, comments.json and the content files
+    python3 tools/shift_queue.py --auto              # after an outage: the fewest whole days that put the next
+                                                     # unposted row in the future (add --apply to write)
 
 It shifts not_before on every unposted schedule row (rows marked fixed_date keep their dates, and so do
 held rows whose date has already passed, like a cut parked long ago; a new Reel held until it is checked moves),
@@ -31,14 +33,31 @@ def _z(d):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--days", type=int, required=True)
+    ap.add_argument("--days", type=int)
+    ap.add_argument("--auto", action="store_true", help="shift by the fewest whole days that put the next unposted row "
+                    "at least 30 minutes in the future")
     ap.add_argument("--apply", action="store_true")
     a = ap.parse_args()
-    delta = timedelta(days=a.days)
 
     schedule = json.loads((CONTENT / "schedule.json").read_text())
     log = json.loads((CONTENT / "published.json").read_text())
     done = {(x["entry"], x["kind"]) for x in log}
+    if a.auto:
+        now = datetime.now(timezone.utc)
+        floating = [_iso(r["not_before"]) for r in schedule if r["kind"] == "reel" and (r["entry"], r["kind"]) not in done
+                    and r.get("not_before") and not r.get("fixed_date") and not (r.get("hold") and _iso(r["not_before"]) < now)]
+        first = min(floating)
+        days = 0
+        while first + timedelta(days=days) < now + timedelta(minutes=30):
+            days += 1
+        print(f"next unposted row: {_z(first)}; behind by {days} day(s); it moves to {_z(first + timedelta(days=days))}")
+        if days == 0:
+            print("nothing to shift")
+            return
+        a.days = days
+    if a.days is None:
+        ap.error("give --days N or --auto")
+    delta = timedelta(days=a.days)
     new_slot = {}
     now = datetime.now(timezone.utc)
     for row in schedule:
