@@ -2,6 +2,12 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-25 daily review (12:20 UTC): day eight without the token; the Christmas Reels protect themselves
+- **Numbers:** none; no API since 17 Nov 17:08, no post since Lull (17 Nov 14:11). With today's 14:00, 16 slots missed.
+- **Red flag:** no post for 190 h. Fresh-session checks at 18:00, 00:00, 06:00 and 12:00 all report IG_ACCESS_TOKEN not set; the owner hasn't written since 17 Nov.
+- **Change (process):** the outage shift used to warn when it pushed a Christmas Reel past its post_by date and leave the fix to a hand edit. Now `tools/shift_queue.py` swaps that Reel's slot with the latest ordinary floating Reel that still lands on or before the date, so every slot stays filled and the seasonal Reel keeps its season. Tested dry: at today's 7-day shift nothing needs to move (Crumb 19 Dec); at a 14-day shift Crumb would land on 26 Dec and swaps with Melody to post 23 Dec 20:00, with Melody moving to 26 Dec. Noel and June are safe until about 10 and 8 days later still.
+- **How we'll know:** the first shift after the token returns prints any 'seasonal:' swaps, and Noel, June and Crumb post on or before 23 Dec.
+
 ## 2026-11-24 daily review (12:20 UTC): day seven without the token; recovery made one command
 - **Numbers:** none; no API since 17 Nov 17:08, no post since Lull (17 Nov 14:11). With today's 14:00, 14 slots missed. Followers were 22 at the last read.
 - **Red flag:** no post for 166 h. Fresh-session checks at 18:00, 00:00, 06:00 and 12:00 all report IG_ACCESS_TOKEN not set, so the owner hasn't added it yet (and hasn't written since 17 Nov). The container restarted again at 12:08.

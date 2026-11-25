@@ -69,8 +69,24 @@ def main():
         row["not_before"] = _z(_iso(old) + delta)
         new_slot[row["entry"]] = _iso(row["not_before"])
         print(f"{row['entry']:5} {old} -> {row['not_before']}")
-        if row.get("post_by") and row["not_before"][:10] > row["post_by"]:   # a seasonal Reel (Christmas)
-            print(f"  WARNING: {row['entry']} must post by {row['post_by']}: move it earlier by hand (swap with a floating row)")
+
+
+    # a seasonal Reel (post_by, e.g. Christmas) that the shift pushed past its date swaps slots with the latest ordinary
+    # floating Reel that still lands on or before that date, so every slot stays filled and nothing misses its season
+    moved = [r for r in schedule if r["kind"] == "reel" and (r["entry"], r["kind"]) not in done and r.get("not_before")
+             and not r.get("fixed_date") and not r.get("after") and r["entry"] in new_slot]
+    for row in sorted((r for r in moved if r.get("post_by")), key=lambda r: r["post_by"]):
+        if row["not_before"][:10] <= row["post_by"]:
+            continue
+        swaps = [r for r in moved if not r.get("post_by") and r["not_before"][:10] <= row["post_by"]
+                 and r["not_before"] < row["not_before"]]
+        if not swaps:
+            print(f"  WARNING: {row['entry']} must post by {row['post_by']} and no ordinary Reel is early enough to swap with")
+            continue
+        other = max(swaps, key=lambda r: r["not_before"])
+        print(f"  seasonal: {row['entry']} {row['not_before']} <-> {other['entry']} {other['not_before']} (post by {row['post_by']})")
+        row["not_before"], other["not_before"] = other["not_before"], row["not_before"]
+        new_slot[row["entry"]], new_slot[other["entry"]] = _iso(row["not_before"]), _iso(other["not_before"])
 
     comments = json.loads((CONTENT / "comments.json").read_text())
     for c in comments:
