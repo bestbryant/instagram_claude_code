@@ -2,6 +2,7 @@
 
     python3 tools/render_ids.py 018 046          # render in order, one at a time
     python3 tools/render_ids.py --force 018      # render even if the output matches the content
+    python3 tools/render_ids.py --list           # list every unposted Reel (held ones too) that is stale or missing
 
 Same job as `python -m atlas prepare`, but for chosen ids. Logs 'done: <id>' or 'failed: <id>' per id.
 """
@@ -12,19 +13,32 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from atlas.__main__ import CONTENT_FILES, OUT, SCHEDULE, _find, _prepare_job, check_item, content_entries, slug  # noqa: E402
+from atlas.__main__ import CONTENT_FILES, LOG, OUT, SCHEDULE, _find, _group, _prepare_job, check_item, content_entries, slug  # noqa: E402
 
 
 def main():
     args = sys.argv[1:]
     force = "--force" in args
-    ids = [a for a in args if a != "--force"]
+    ids = [a for a in args if a not in ("--force", "--list")]
     entries = content_entries()
+    if "--list" in args:
+        done = {(x["entry"], x["kind"]) for x in json.loads(LOG.read_text())}
+        n = 0
+        for r in json.loads(SCHEDULE.read_text()):
+            if r["kind"] != "reel" or (r["entry"], "reel") in done or r["entry"] not in entries:
+                continue
+            problem = check_item(r, _find(r), entries)
+            if problem:
+                n += 1
+                print(f"{r['entry']} {entries[r['entry']]['name']} ({r.get('not_before', '')}"
+                      f"{', held' if r.get('hold') else ''}): {problem}")
+        print(f"{n} queued Reel(s) need rendering")
+        return
     groups = {}
     for f in CONTENT_FILES:
         path = ROOT / "content" / f
         if path.exists():
-            groups.update({e["id"]: ("launch" if f == "launch.json" else Path(f).stem) for e in json.loads(path.read_text())})
+            groups.update({e["id"]: _group(f) for e in json.loads(path.read_text())})
     rows = {r["entry"]: r for r in json.loads(SCHEDULE.read_text()) if r["kind"] == "reel"}
     for i in ids:
         e = entries.get(i)

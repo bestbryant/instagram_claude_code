@@ -321,11 +321,15 @@ def first_name_only(name: str) -> str:
     return name
 
 
+REQUEST_LEAD_HOURS = 24   # time to write a voiced planet for a request, render and check it (docs/ROUTINE.md step 5)
+
+
 def queue_request(entry_id: str, by: str, now=None) -> str:
-    """Give a requested planet's Reel the first queued slot at least 6 h away (time to render and check it).
+    """Give a requested planet's Reel the first queued slot at least REQUEST_LEAD_HOURS away.
     The queue keeps its slot times (two a day: content/schedule.json not_before) and everything from that slot on
-    moves one slot later; fixed nights (rows marked fixed_date, e.g. Halloween) keep theirs. The row is held until
-    the Reel has been checked (scratchpad/room/add_shorts.py --release ID)."""
+    moves one slot later. Fixed nights (rows marked fixed_date, e.g. Halloween) and teased pairs (a part two, the row
+    with 'after', and the part one whose end card names its weekday) keep theirs. The row is held until the Reel has been checked
+    (python3 tools/add_batch.py --release ID)."""
     from datetime import datetime, time, timedelta, timezone
     now = now or datetime.now(timezone.utc)
     sched = json.loads(SCHEDULE.read_text())
@@ -333,19 +337,26 @@ def queue_request(entry_id: str, by: str, now=None) -> str:
     when = lambda r: datetime.fromisoformat(r["not_before"].replace("Z", "+00:00"))
     stamp = lambda t: t.strftime("%Y-%m-%dT%H:%M:%SZ")
     live = [r for r in sched if r.get("not_before") and r["kind"] == "reel" and not r.get("hold") and (r["entry"], r["kind"]) not in posted]
-    later = sorted((r for r in live if not r.get("fixed_date") and when(r) >= now + timedelta(hours=6)), key=when)
+    lead = now + timedelta(hours=REQUEST_LEAD_HOURS)
+    part_ones = {tuple(r["after"]) for r in live if r.get("after")}
+    keep = lambda r: r.get("fixed_date") or r.get("after") or (r["entry"], r["kind"]) in part_ones
+    later = sorted((r for r in live if not keep(r) and when(r) >= lead), key=when)
+    pinned = {when(r) for r in live if keep(r) and when(r) >= lead}
     if later:
         slots = [when(r) for r in later]
         # one more slot at the end: the same time of day as two slots back (the queue runs two a day), a day later
         end = (slots[-2] if len(slots) > 1 else slots[-1]) + timedelta(days=1)
-        slots.append(end if end > slots[-1] else slots[-1] + timedelta(days=1))
+        end = end if end > slots[-1] else slots[-1] + timedelta(days=1)
+        while end in pinned:
+            end += timedelta(days=1)
+        slots.append(end)
         for r, t in zip(later, slots[1:]):
             r["not_before"] = stamp(t)
         slot = slots[0]
     else:
-        day = (now + timedelta(hours=6)).date()
+        day = lead.date()
         slot = datetime.combine(day, time(SLOT_HOUR), timezone.utc)
-        if slot < now + timedelta(hours=6):
+        if slot < lead:
             slot += timedelta(days=1)
     row = {"day": later[0]["day"] if later else 1, "entry": entry_id, "kind": "reel", "hold": True,
            "note": f"request from {by}: held until rendered and checked", "not_before": stamp(slot)}
@@ -403,6 +414,12 @@ def cmd_inbox(a):
 
 
 LAUNCH_DAY = "2026-10-18"   # schedule day 1
+
+
+def _group(content_file: str) -> str:
+    """The output folder for a content file's entries (the one _find looks in): request planets
+    (content/charted.json) live in output/requests."""
+    return {"launch.json": "launch", "charted.json": "requests"}.get(content_file, Path(content_file).stem)
 
 
 def _find(item):
@@ -834,7 +851,7 @@ def cmd_prepare(a):
     for f in CONTENT_FILES:
         path = ROOT / "content" / f
         if path.exists():
-            groups.update({e["id"]: ("launch" if f == "launch.json" else Path(f).stem) for e in json.loads(path.read_text())})
+            groups.update({e["id"]: _group(f) for e in json.loads(path.read_text())})
     jobs = {}
     for item in schedule:
         if (item["entry"], item["kind"]) in done or item.get("hold") or (not a.all and item["day"] > today + a.days):

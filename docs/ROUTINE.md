@@ -32,9 +32,11 @@ three entries in docs/DIAGNOSIS.md, and docs/HOUSE_RULES.md before writing any p
    so in one line, and go on to step 7.
 2. **API hold.** If `content/API_HOLD` exists and its `until` is in the future, make no API calls this run (skip
    steps 4-6). Once it has expired, delete it and try once.
-3. **Render and check.** Only when something is stale or new (`python -m atlas prepare --days 1` lists and renders
-   what is due soon). For chosen ids, use `python3 tools/render_ids.py ID...`. It takes about 9 minutes a Reel,
-   or about 10 each with two running in parallel on 4 CPUs.
+3. **Render and check.** `python3 tools/render_ids.py --list` lists every unposted Reel, held ones included, whose
+   output is stale or missing. Render chosen ids with `python3 tools/render_ids.py ID...`; it skips fresh ones.
+   That takes about 9 minutes a Reel, or about 10 each with two running in parallel on 4 CPUs.
+   Don't use `python -m atlas prepare`: it picks rows by their old `day` numbers, so it would render the whole
+   queue, and it skips held rows.
    A container left idle is reclaimed, and that kills background renders. So run renders in the foreground in
    calls of under 10 minutes, or in the background with a harness-tracked wait (Bash `run_in_background` with an
    until-loop on the log's `done:`/`failed:` lines). Never end a run with a render still going.
@@ -51,7 +53,7 @@ three entries in docs/DIAGNOSIS.md, and docs/HOUSE_RULES.md before writing any p
    - Only checked, released Reels post. Never post in bursts.
    - **Outage (the queue is behind by more than a slot): never catch up.** First run
      `python3 tools/shift_queue.py --auto`; it moves every unposted row later by the fewest whole days. Read the
-     dry run: it re-dates "Part two, <day>" teasers and their pointer comments, and it swaps a seasonal Reel back
+     dry run: it re-dates "Part two, <day>" teasers, moves their pointer comments' post times, and swaps a seasonal Reel back
      before its `post_by` date. Then run it with `--apply`. Re-render and check the teasers it lists
      ("Would need re-renders"), then commit and push before posting.
    - On any block error (code 368, or 200 with subcode 2207051), stop posting, go back to one a day and log it in
@@ -60,14 +62,23 @@ three entries in docs/DIAGNOSIS.md, and docs/HOUSE_RULES.md before writing any p
      slot, post a dated correction comment on part one.
    - Scheduled comments in content/comments.json post when due. When the output says "PIN THIS", tell the
      owner, because the API can't pin.
-5. **Comments and requests.** `python -m atlas inbox --chart`.
-   - A new name request: reply at once on our post, in voice and undated ("It's on the list. Its planet's
-     coming."). Then write it a voiced E name planet as for a batch (a writer and a stranger judge; preview it with
-     `tools/short_preview.py`; ear-check the name, else use the template). Render it into
-     `output/requests/<id>-<name>`, keep its entry in content/charted.json, and queue it HELD at the first slot at
-     least 24 h away; the queue behind it moves one slot later.
-   - Check it, release it, commit and push, tell the owner, and reply once more with the day. After it posts,
-     reply once to the requester: brief and specific, no asks.
+5. **Comments and requests.** `python -m atlas inbox` collects name requests from comments into
+   content/requests.json and lists them.
+   - To reply on our own post, use
+     `python3 -c "from atlas.publish import Publisher; print(Publisher().comment('MEDIA_ID', 'TEXT'))"`.
+     The `media_id` is in content/requests.json (or content/published.json). Never comment anywhere else.
+   - A new name request: first reply at once, in voice and undated ("It's on the list. Its planet's coming.").
+   - Then run `python -m atlas inbox --chart --no-reel`. For each `new` request, it writes a template entry to
+     content/charted.json, with `discovered_by` set so the Reel scores as its own format, "request", outside the
+     tests. It also makes `output/requests/<id>-<name>` without a Reel and queues the row HELD at the first slot
+     at least 24 h away. The queue behind moves one slot later, while fixed nights and teased pairs keep their
+     dates. Don't queue it again.
+   - Then replace that template entry, keeping its `id`, `name` and `discovered_by`, with a hand-written voiced E
+     name planet written as for a batch: a writer and a stranger judge, previewed with `tools/short_preview.py`.
+     Ear-check that the narrator says the name right; if it doesn't, keep the template.
+   - Render it with `python3 tools/render_ids.py ID`, which writes to output/requests. Check it with
+     `tools/qa_reel.py`, release it, commit and push, tell the owner, and reply once more with the day.
+   - After it posts, reply once to the requester: brief and specific, no asks.
    - Mark each `check` item "new" or "answer" by reading it. Skip offensive names, celebrities and private full
      names. Never auto-reply to offensive, public-figure, brand or grief names. List `needs_owner` items for the
      owner. Reply by hand to genuine comments on our own posts: brief and specific, no asks.
@@ -77,7 +88,11 @@ three entries in docs/DIAGNOSIS.md, and docs/HOUSE_RULES.md before writing any p
    - Judge each Reel at 48 h on stranger numbers only, by format. The pass lines are: skip 60% or less; at least
      40% watched; at least 1 share or save per 100 reached. Also compare likes per 100, breakouts (past 300
      strangers) and slot.
-   - Credit follows with `python -m atlas follows --since <date>`.
+   - Follow conversion: stranger comments and name requests per 1,000 reached, per Reel. Credit follows with
+     `python -m atlas follows --since <the day of the last daily review>` (it credits follows in proportion to
+     each Reel's reach gain and counts a two-parter as one unit).
+   - Go back to one a day if the median 48 h stranger reach per Reel falls by a third over a week (BACKLOG
+     "Posting rate"), as well as on a block error.
    - Check the red flags in BACKLOG "Operating principles" every run. If one fires, investigate it in the same
      run, log it in docs/DIAGNOSIS.md (newest first) and act.
    - **Daily review**, in the first run after 12:00 UTC:
@@ -85,8 +100,9 @@ three entries in docs/DIAGNOSIS.md, and docs/HOUSE_RULES.md before writing any p
      - write a dated DIAGNOSIS entry;
      - make at least one evidence-backed change (docs/RESEARCH.md, docs/PLAN.md);
      - tell the owner the one-line result.
-7. **Never idle.** Move the top unfinished item in "Now" in docs/BACKLOG.md forward. Keep at least 3 days of
-   rendered, checked Reels queued. New batches follow room/batch8/BRIEF.md and the tools named there.
+7. **Never idle.** Move the top unfinished item in "Now" in docs/BACKLOG.md forward. Keep a week of rendered,
+   checked Reels queued at the current rate, so an outage never empties the feed. Below 3 days, writing the next
+   batch comes before anything else. New batches follow room/batch8/BRIEF.md and the tools named there.
 8. **Commit and push** every changed content, output and docs file. Give a short status only when something
    posted, a request came in, a diagnosis or experiment changed something, a backlog item finished, or something
    needs the owner. Otherwise stay quiet.
@@ -99,15 +115,18 @@ the task.
 ## Handover: when the token comes back
 Environment settings reach only sessions created after the setting is saved. The session that has run the
 routine since October is woken by its scheduled task, so it can't see a token added later. That session checks
-for the token from a brand-new session every 6 hours, or at once if the owner writes. When it finds the token:
-1. Run `python3 tools/shift_queue.py --auto`, read the dry run, then run it again with `--apply`.
-2. Re-render and check the teasers it names (`tools/render_ids.py`, then `tools/qa_reel.py`), release them, then
-   commit and push.
-3. Create one new operator session in the same environment (create_session). Its first message: "You run the
-   hourly routine for @atlas.in.elsewhere. Read docs/ROUTINE.md and the files it names, then do this hour's run
-   now." That session can see `IG_ACCESS_TOKEN`.
+for the token from a brand-new session every 6 hours, or at once if the owner writes. When it finds the token,
+it does these steps in order, so that only one session ever runs the routine:
+1. Disable the old hourly task (trig_01EWxa1i8G49fZoBaeGVPSiz) with update_trigger enabled=false, and stop the
+   6-hourly token checks.
+2. Run `python3 tools/shift_queue.py --auto`, read the dry run, then run it again with `--apply`. Re-render and
+   check the teasers it names (`tools/render_ids.py`, then `tools/qa_reel.py`), then commit and push. Choose the
+   time so that this finishes before the next slot, or the shift has to move one more day.
+3. Create one new operator session in the same environment (create_session). That session can see
+   `IG_ACCESS_TOKEN`. Its first message: "You run the hourly routine for @atlas.in.elsewhere. Read
+   docs/ROUTINE.md and the files it names, then do this hour's run now. The queue was already shifted for the
+   outage at <time> (commit <sha>), and <ids> were re-rendered and checked, so don't shift it again."
 4. Create a scheduled task that fires into that session (create_trigger with `persistent_session_id` set to it,
-   cron `8 * * * *`). Its prompt: "Hourly run: pull, then follow docs/ROUTINE.md." Then disable the old hourly
-   task (trig_01EWxa1i8G49fZoBaeGVPSiz) with update_trigger enabled=false. One session, woken hourly, keeps its
-   context between runs and costs far less than a new session every hour.
+   cron `8 * * * *`). Its prompt: "Hourly run: pull, then follow docs/ROUTINE.md." One session, woken hourly,
+   keeps its context between runs and costs far less than a new session every hour.
 5. Remove the Urgent item from docs/OWNER_TODO.md, log the handover in DIAGNOSIS, and tell the owner in one line.
