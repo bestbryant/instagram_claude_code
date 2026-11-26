@@ -2,6 +2,13 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-26 daily review (12:30 UTC): day nine without the token; the routine moves into the repo
+- **Numbers:** none. There have been no API calls since 17 Nov 17:08 and no post since Lull (17 Nov 14:11). With today's 14:00 slot, 18 slots are missed. `tools/shift_queue.py --auto` now gives an 8-day shift (the next row, 18 Nov 20:00, moves to 26 Nov 20:00), with no seasonal swap needed yet: Crumb lands on 20 Dec, before its 23 Dec date.
+- **Red flag:** no post for 214 h. The fresh-session checks at 18:00, 00:00, 06:00 and 12:00 all report `IG_ACCESS_TOKEN` not set. The owner hasn't written since 17 Nov.
+- **Finding:** the hourly scheduled task still names eight scratch-folder paths: the token file, `render_queue.py` and `.ids`, `qa_wait.sh`, `qa_sheet.py`, `voice_qa.py`, `room/add_shorts.py` and `recaption.py`. All eight are missing (checked 12:15); the 17 Nov restart wiped them. Their replacements are in `tools/`, and this session knows that, but the token can only be seen from a new session, which has no memory of it. A new session following the old wording would fail at the render, QA and release steps.
+- **Change (process):** `docs/ROUTINE.md` is now the complete routine, written for a session with no memory. It covers the hard rules, the eight hourly steps with the `tools/` commands, the narrator and transcriber install, and the handover. The handover is one operator session, created after the token is set and woken hourly by a new scheduled task, with the old task disabled. That is cheaper than a new session every hour, and it keeps context between runs. Two independent checkers compared it against the repo and against the old wording.
+- **How we'll know:** the operator session's first run posts from the next slot without asking how anything works, and its commits use only `tools/` paths.
+
 ## 2026-11-25 daily review (12:20 UTC): day eight without the token; the Christmas Reels protect themselves
 - **Numbers:** none; no API since 17 Nov 17:08, no post since Lull (17 Nov 14:11). With today's 14:00, 16 slots missed.
 - **Red flag:** no post for 190 h. Fresh-session checks at 18:00, 00:00, 06:00 and 12:00 all report IG_ACCESS_TOKEN not set; the owner hasn't written since 17 Nov.
