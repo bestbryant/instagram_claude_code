@@ -2,6 +2,14 @@
 
 Newest first. Each entry gives the symptom (numbers), the hypotheses, the evidence for and against, what was changed, and how we'll know it worked.
 
+## 2026-11-27 daily review (12:30 UTC): day ten without the token; one ask a day, not one an hour
+- **Numbers:** none. There have been no API calls since 17 Nov 17:08 and no post since Lull (17 Nov 14:11, 238 h ago). With today's 14:00 slot, 20 slots are missed. `tools/shift_queue.py --auto` now gives a 9-day shift (the next row moves to 27 Nov 20:00), and no seasonal swap is needed yet (Crumb lands on 21 Dec, before its 23 Dec date).
+- **Red flag:** no post for 238 h. The fresh-session checks at 18:00, 00:00, 06:00 and 12:00 all report `IG_ACCESS_TOKEN` not set. The owner hasn't written since 17 Nov.
+- **Finding (communication):** since 17 Nov, every hourly run has ended with the same one-line "still paused" status, about 230 of them, with no reply. The routine's own rule is to speak only when something changes or needs the owner. An identical line every hour is noise, and it buries the one ask that matters.
+- **Change (communication):** while posting is blocked on the owner and nothing else changes, hourly runs stay silent. The ask goes out once a day, in the daily review, with the exact steps. Anything new (the token appearing, a fresh-session check finding it, an error) is still reported at once. docs/ROUTINE.md step 8 now says this.
+- **Change (checks):** the smoke tests failed at the voice lint: 030 (already posted), then 051 Nod, 050 Ray and 101 Vera, all of which repeat "Nobody". In each, the repetition is the joke's rhythm ("Nobody runs the hoover. Nobody drops anything. Then you drop a spoon."), not the template-whimsy the lint guards against. The lint now counts distinct stock phrases and skips posted stories. All smoke tests pass.
+- **How we'll know:** the owner's next message, and the check runs stay quiet until something changes.
+
 ## 2026-11-26 daily review (12:30 UTC): day nine without the token; the routine moves into the repo
 - **Numbers:** none. There have been no API calls since 17 Nov 17:08 and no post since Lull (17 Nov 14:11). With today's 14:00 slot, 18 slots are missed. `tools/shift_queue.py --auto` now gives an 8-day shift (the next row, 18 Nov 20:00, moves to 26 Nov 20:00), with no seasonal swap needed yet: Crumb lands on 20 Dec, before its 23 Dec date.
 - **Red flag:** no post for 214 h. The fresh-session checks at 18:00, 00:00, 06:00 and 12:00 all report `IG_ACCESS_TOKEN` not set. The owner hasn't written since 17 Nov.

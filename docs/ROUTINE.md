@@ -105,7 +105,8 @@ three entries in docs/DIAGNOSIS.md, and docs/HOUSE_RULES.md before writing any p
    batch comes before anything else. New batches follow room/batch8/BRIEF.md and the tools named there.
 8. **Commit and push** every changed content, output and docs file. Give a short status only when something
    posted, a request came in, a diagnosis or experiment changed something, a backlog item finished, or something
-   needs the owner. Otherwise stay quiet.
+   needs the owner. Otherwise stay quiet. While something is blocked on the owner and nothing has changed, ask once
+   a day in the daily review, not every hour (DIAGNOSIS 27 Nov).
 
 ## Keep it lean
 The weekly usage limit once took the account dark for 58 hours. Hourly runs should cost little. Run a

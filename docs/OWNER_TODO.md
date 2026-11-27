@@ -2,7 +2,7 @@
 
 Only things the bot can't do, kept as short as possible. Growth comes mainly from the Reels; these help the visitors we already get to follow.
 
-## Urgent: posting is stopped until this is done (since 17 Nov, 17:10 UTC; checked again 23 Nov)
+## Urgent: posting is stopped until this is done (since 17 Nov, 17:10 UTC; still not set on 27 Nov 12:09 UTC)
 - [ ] **Store the Instagram access token in the environment settings, then tell me in chat that it's done.** The cloud container restarted on 17 Nov and wiped my scratch folder, where the token was kept, so I can't post or read stats. As of 23 Nov 12:10 UTC it is still not set: I checked from a brand-new session in this environment, which is where new settings show up. Please add an environment variable named `IG_ACCESS_TOKEN` in the cloud environment's settings: open the environment menu in this session's title bar, then Edit, and add it as an environment variable (a Network secret won't work here, because the code sends the token itself). Use the same long-lived token as before, or a fresh one from the Meta app dashboard (docs/PUBLISHING.md, step 2). Please don't paste it into the chat.
   - **Then send me a short message** (for example "token added"). Settings only reach *new* sessions, and my hourly run resumes this one, so a message lets me pick it up from a fresh session straight away instead of within 6 hours. The queue (59 Reels, checked, to 17 Dec) then moves forward by however many days were missed and posting resumes from the next slot, with no catch-up.
 
